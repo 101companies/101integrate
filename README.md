@@ -12,7 +12,7 @@ You need a bunch of Python packages and some NLP support.
 
 This is taken care of by this command:
 
-    download-deps:
+    make download-deps
 
 When the NLTK downloader pops up, select all corpora for download.
 
