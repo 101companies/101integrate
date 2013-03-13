@@ -1,0 +1,55 @@
+\section{TOP 30 most frequent terms}
+\label{S:Top30FrequentTerms}
+
+In this section we show the top 30 terms in a sense of the absolute frequency in which these terms appear in the books. We summarize the view by showing the \textit{union} of the terms from all books using a visual percentile-based approach (\autoref{F:unionTopFrequenciesVisual}) The union contains 65 terms among those 120 from all books.  
+
+We operate on the indexes and books content prepared as described in \S\ref{S:PreparingContent}. We manually extract the words which start with the upper case according to the Haskell naming conventions(module names, typeclass names) and put them into a whitelist. The whitelist maps the original term as it appears in the index to the exact abbreviation. For example, we have multiple index entries such as \textit{System.Directory module}, \textit{System.Directory library}, \textit{System.Directory} which form one entry in a whitelist -- \textit{System.Directory}. At the end the whitelist contains 55 items. We don't apply any stemming or lemmatization techniques to the whitelist entries.
+
+In a similar way we build a mapping file by means of applying the config file with pre-/postfixes should be matched in the terms.
+As a result of this step, we "fix" 72 terms. E.g. \textit{partial applications of} $\rightarrow$ \textit{partial applications}
+
+To compute top 30 terms for each book we lower all non-abbreviations and apply the same lemmatization technique to the texts of the books as previously described for terms. That is, we split the text into words, lemmatize each word, and join the lemmatized words. E.g. \textit{partial applications} reduced to \textit{partial application}. For a given book and term we count the number of occurrences of the lemmatized term in the lemmatized text of the book.
+
+\begin{table*}[h!]
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\input{data/perBook/Craft/topFrequency.tex}
+\caption{\craftTag{}: TOP 30 frequent terms}
+\label{T:top30FrequentTermsCraft}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\input{data/perBook/LYAH/topFrequency.tex}
+\caption{\lyahTag{}: TOP 30 frequent terms}
+\label{T:top30FrequentTermsLYAH}
+\end{minipage}
+\end{table*}
+
+\begin{table*}[h!]
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\input{data/perBook/PIH/topFrequency.tex}
+\caption{\pihTag{}: TOP 30 frequent terms}
+\label{T:top30FrequentTermsLYAH}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\input{data/perBook/RWH/topFrequency.tex}
+\caption{\rwhTag{}: TOP 30 frequent terms}
+\label{T:top30FrequentTermsRWH}
+\end{minipage}
+\end{table*}
+
+\begin{table}[ht]
+\begin{center}
+\scalebox{0.8}{
+	\input{data/allBooks/unionTopFrequenciesVisual.tex}
+}
+\caption{Union of TOP 30 frequent terms from the books. empty cell - no occurrence in the given book.}
+\oneDot{} -- frequency is 1. \belowMdot{} -- below median but larger than 1. \greaterMdot{} -- greater or above median.
+\ensuremath{\topNdot{}} -- in the top 5.
+\label{F:unionTopFrequenciesVisual}
+\end{center}
+\end{table}

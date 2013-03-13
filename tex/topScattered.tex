@@ -1,0 +1,71 @@
+\section{Top scattered terms}
+\label{S:Top30ScatteredTerms}
+
+In this section we show all terms which are scattered across more than 80\% of the chapters.  We summarize the view by showing the \textit{union} of the terms from all books using a visual percentile-based approach (\autoref{F:unionTopScatternessVisual}). Those terms which are also the most frequent are \textbf{bolded}. The union contains 52 terms among those 132 from all books. 
+
+\begin{table*}[h!]
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\begin{tabular}{lr}
+  \hline
+    Term & Chapters (\%) \\ 
+  \hline
+    \input{data/perBook/Craft/topScattered.tex}
+   \hline
+\end{tabular} 
+\caption{\craftTag{}: scattered terms}
+\label{T:top30scatteredCraft}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\begin{tabular}{lr}
+  \hline
+    Term & Chapters (\%) \\ 
+  \hline
+    \input{data/perBook/LYAH/topScattered.tex}
+   \hline
+\end{tabular} 
+\caption{\lyahTag{}: scattered terms}
+\label{T:top30scatteredRWH}
+\end{minipage}
+\end{table*}
+
+\begin{table*}[h!]
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\begin{tabular}{lr}
+  \hline
+    Term & Chapters (\%) \\ 
+  \hline
+    \input{data/perBook/PIH/topScattered.tex}
+   \hline
+\end{tabular} 
+\caption{\pihTag{}: scattered terms}
+\label{T:top30scatteredPIH}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\begin{tabular}{lr}
+  \hline
+    Term & Chapters (\%) \\ 
+  \hline
+    \input{data/perBook/RWH/topScattered.tex}
+   \hline
+\end{tabular} 
+\caption{\rwhTag{}: scattered terms}
+\label{T:top30scatteredRWH}
+\end{minipage}
+\end{table*}
+
+\begin{table}[ht]
+\begin{center}
+\scalebox{0.8}{
+  \input{data/allBooks/unionTopScatternessVisual.tex}
+}
+\caption{Union of TOP 30 scattered terms from the books.}
+ Empty cell - no occurrence in the given book. \oneDot{} -- frequency is 1. \belowMdot{} -- below median but larger than 1. \greaterMdot{} -- greater or above median. \topNdot{} -- in the top 5.
+\label{F:unionTopScatternessVisual}
+\end{center}
+\end{table}

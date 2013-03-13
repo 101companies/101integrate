@@ -1,0 +1,76 @@
+\documentclass{myllncs}
+
+
+\usepackage{amsmath}
+\usepackage{boxedminipage}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{url}
+\usepackage{xstring}
+\usepackage{listings}
+\usepackage{comment}
+\usepackage{fmtcount}
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{longtable}
+\usepackage{cite}
+\usepackage{natbib}
+\usepackage{latexsym}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{enumitem}
+%\restylefloat{table}
+
+\input{macros.tex}
+
+
+\usepackage[unicode,bookmarks=false,pdfstartview={FitH},%
+            colorlinks,linkcolor=blue,urlcolor=blue,citecolor=blue,%
+            pdfauthor={},%backref=page,%
+            pdftitle={}]{hyperref}
+
+\begin{document}
+
+\title{--- APPENDIX ---}
+\subtitle{Vocabulary engineering for\\ the documentation of program chrestomathies}
+
+\author{Ralf L{\"a}mmel \and Thomas Schmorleiz \and Andrei Varanovich}
+\institute{Software Languages Team, Universit\"at Koblenz-Landau, Germany}
+
+\maketitle
+%\begin{abstract}
+%\end{abstract}
+%grep -oh "\w*\\index{[^}]*}" * *.tex
+
+%\begin{table*}[h!]
+%\begin{minipage}[b]{0.5\linewidth}
+%\centering
+%TODO
+%\end{minipage}
+%\hspace{0.5cm}
+%\begin{minipage}[b]{0.5\linewidth}
+%\centering
+%TODO
+%\end{minipage}
+%\end{table*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{appendix/summary.tex}
+
+\input{appendix/preparations.tex}
+
+\input{appendix/top30.tex}
+
+\clearpage
+\input{appendix/chapterProfiles.tex}
+
+\clearpage
+\input{appendix/topScattered.tex}
+
+\clearpage
+\input{appendix/mapping.tex}
+
+%\input{data/ranks.tex}
+
+\end{document}

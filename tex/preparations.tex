@@ -1,0 +1,31 @@
+\section{Preparing the conent and indexes}
+\label{S:PreparingContent}
+
+\subsection*{Indexes}
+
+The original indexes were obtained in two different ways. For the books which were provided with the \textit{TeX} sources (\pihTag{}, \craftTag{}), we extracted all entries of type "\\index\{TERM\}". For the other books (\lyahTag{} and \rwhTag{}), we manually extracted the terms "as-is" from e-books' indexes. To this end, we obtained a uniform representation of the "raw index data". To underline the diversity of terms, here we list some of them: \textit{equational reasoning}, \textit{list}, \textit{JSON}, \textit{function}, \textit{foldr}, \textit{Monad}, \textit{accumulator}, \textit{type-based testing}. We don't apply any judgments on the grounds of how (potentially) important the term might be. We refine the data, removing duplicates and symbols (such as \ensuremath{\Rightarrow}, \ensuremath{\neq}, etc.). We also don't take into account all subentries (contexts) in the form of, e.g. "associativity: using with monads", where we define "usign with monads" as a \textit{context}. In the indexes such entries rendered with the "tab" ident; or \textit{a!b} in latex (where \textit{b} is a context). Hence, we have a refined index data. We expect \textit{false positive} terms at this point, e.g. general English words, which are subject to automatic exclusion on the next steps. We also don't change the form of the word, keeping all pre-/postfixes and plurals (e.g. \textit{partial applications of}). All refined indexes are available on-line \url{https://docs.google.com/spreadsheet/ccc?key=0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E}
+
+\autoref{T:IndexMetrics} summarizes the index metrics.
+
+\begin{table}[ht!]
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+  \hline
+Book & Original Index Entries & Sub-entries & Final Entries \\ 
+  \hline
+    \craftTag{} & 1088 & 534 & 696 \\
+    \pihTag{} & 1468 & 210 & 191 \\ 
+    \rwhTag{} & 1244 & 346 & 1049 \\ 
+    \lyahTag{} & 1241 & 691 & 170 \\ 
+   \hline
+\end{tabular}
+\caption{Index metrics}
+\label{T:IndexMetrics}
+\end{center}
+\end{table}
+
+\subsection*{Books}
+
+To prepare the contents of the books we used several techniques to extract the relevant content. Since we focus on the vocabularies and thus on the textual contents we decided to exclude all code samples. Here it is important to admit that some terms, such as names of the  functions, which are included in the indexes can represent more general concepts, such as \textit{catamorphism} being generalization of \textit{fold} on lists. We cannot apply the same logic to all functions from the source code fragments, thus we don't include vocabulary extraction from the source code into the scope of this study as it would require understanding the context of source code snippet and non-trivial mapping to the abstract concepts. 
+
+For the on-line HTML books (\lyahTag{} and \rwhTag{}) we downloaded the chapters and processed them to exclude HTML containers with class attributes that indicate code samples. By using this technique we also excluded navigational noise like headers or tables of contents. For \pihTag{} and \craftTag{} we used the provided TeX files. In case of \pihTag{} we first spitted the input TeX file into chapters files.. We then processed it by removing environments that were identified to hold code samples.
