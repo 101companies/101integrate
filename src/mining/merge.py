@@ -42,7 +42,7 @@ def areSimilar(term1, term2):
 # merge term indecies
 allTerms = {}
 resInfos = json.loads(open("config/config.json", 'rb').read())
-commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/general/rank.csv", 'rU'), delimiter=','))[:int(sys.argv[-2])])
+commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(sys.argv[-2])])
 
 changedByPattern = []
 
