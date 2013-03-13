@@ -1,6 +1,6 @@
 library("xtable")
 
-rank <- read.csv("../../data/general/rank.csv", header=F)
+rank <- read.csv("../../data/allbooks/cache/rank.csv", header=F)
 names(rank) <- c("Term", "Rank")
 
 print(xtable(rank[0:30,], label = 'ranks',, 
