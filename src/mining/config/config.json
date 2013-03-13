@@ -1,0 +1,57 @@
+{
+	"RWH" :{
+		"crawl": "true",
+       	 	"ext": ".html",
+       	 	"urlBase": "http://book.realworldhaskell.org/read/",
+		"posElements" : ["h2", "p"],
+		"posAttr" : "id",
+        		"exclude-elements": ["pre"],
+        		"exclude-classes": ["toc", "navfooter", "rwhfooter", "navheader"],
+		"kind" : "../../books",
+		"title" : "Real World Haskell",
+		"folder" : "RWH",
+		"index" : "Index.csv",
+		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}]
+	},
+	"PIH": {
+		"crawl": "false",
+		"kind": "books",
+		"cite": "Hutton, Graham. \"$$$,\" in Programming in Haskell. Cambridge University Press, 2007.",
+		"title": "Programming in Haskell",
+		"folder": "PIH",
+		"index": "Index.csv",
+		"exclude-env" : ["calc", "displaymath", "array", "hugs", "tabbing", "itemizedhugs"],
+		"exclude-patterns": [{"pos":"suffix", "string":" of"}, {"pos":"suffix", "string":" and"}]
+	},
+	"Craft" : {
+		"crawl": "false",
+		"kind": "books",
+		"cite": "Thompson, Simon. \"$$$,\" in \"Haskell: The Craft of Functional Programming. Addison-Welsey.\" Reading (1999).",
+		"title": "Haskell: Craft of functional programming",
+       		"exclude-env" : ["alltt"],
+		"folder": "Craft",
+		"index": "Index.csv",
+		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}, {"pos":"prefix", "string":"as "}, {"pos":"prefix","string":"a "}, {"pos":"suffix", "string":" and"}]
+	},
+	"LYAH": {
+		"crawl": "false",
+         		"ext": "",
+         		"urlBase": "http://learnyouahaskell.com/",
+		"posElements" : ["a"],
+		"posAttr" : "name",
+        		"exclude-elements": ["pre", "script"],
+        		"exclude-classes": ["footdiv", "fixed"],
+		"kind" : "books",
+		"title" : "Learn you a Haskell!",
+		"folder" : "LYAH",
+		"index" : "Index.csv",
+		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}]
+	},
+    "OnlyIndex" : {
+        "kind" : "../../data/allbooks",
+        "folder" : "./",
+		"title" : "Combined Index",
+		"index" : "Index.csv",
+		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}]
+	}
+}

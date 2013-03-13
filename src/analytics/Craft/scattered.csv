@@ -1,0 +1,1418 @@
+"","Term","Chapters"
+"1","above",100
+"2","type",100
+"3","order",100
+"4","result",100
+"5","haskell",100
+"6","example",100
+"7","name",100
+"8","argument",100
+"9","take",100
+"10","show",100
+"11","where",100
+"12","function",100
+"13","program",100
+"14","list",100
+"15","section",100
+"16","definition",100
+"17","input",100
+"18","integer",100
+"19","value",100
+"20","time",95
+"21","programming",95
+"22","expression",95
+"23","number",95
+"24","writing",89
+"25","just",89
+"26","read",89
+"27","return",89
+"28","error",89
+"29","application",89
+"30","implementation",89
+"31","length",89
+"32","instance",89
+"33","character",84
+"34","variable",84
+"35","pattern",84
+"36","output",84
+"37","behaviour",84
+"38","string",84
+"39","GHCi",79
+"40","parameter",79
+"41","operator",79
+"42","built-in",79
+"43","design",79
+"44","calculation",79
+"45","sum",74
+"46","message",74
+"47","model",74
+"48","text",74
+"49","module",74
+"50","otherwise",74
+"51","prelude",74
+"52","int",74
+"53","even",68
+"54","case study",68
+"55","map",68
+"56","equation",68
+"57","set",68
+"58","code",68
+"59","boolean",68
+"60","data type",68
+"61","bool",68
+"62","testing",63
+"63","recursion",63
+"64","class",63
+"65","picture",63
+"66","declaration",63
+"67","file",63
+"68","recursive",63
+"69","context",63
+"70","state",63
+"71","join",58
+"72","function definition",58
+"73","functional programming",58
+"74","binary",58
+"75","programming language",58
+"76","condition",58
+"77","action",58
+"78","evaluation",58
+"79","nothing",58
+"80","reverse",58
+"81","constant",58
+"82","higher-order function",58
+"83","process",58
+"84","local",58
+"85","table",58
+"86","constructor",58
+"87","syntax",53
+"88","head",53
+"89","maximum",53
+"90","product",53
+"91","equality",53
+"92","clause",53
+"93","tail",53
+"94","standard prelude",53
+"95","square",47
+"96","default",47
+"97","char",47
+"98","readable",47
+"99","proof",47
+"100","repeat",47
+"101","calculator",42
+"102","infix",42
+"103","tree",42
+"104","algebraic type",42
+"105","base case",42
+"106","explicit",42
+"107","GHC",42
+"108","recursive definition",42
+"109","convention",42
+"110","function application",42
+"111","running",42
+"112","concat",42
+"113","algebraic",42
+"114","minimum",42
+"115","script",42
+"116","functions for",42
+"117","bit",42
+"118","sorting",42
+"119","local definition",42
+"120","literal",42
+"121","list comprehension",37
+"122","filter",37
+"123","tuple",37
+"124","lazy",37
+"125","comprehension",37
+"126","type definition",37
+"127","float",37
+"128","text processing",37
+"129","primitive recursion",37
+"130","pattern matching",37
+"131","abstract data type",37
+"132","type variable",37
+"133","comment",37
+"134","reasoning",37
+"135","documentation",37
+"136","interface",37
+"137","constraint",37
+"138","partial",37
+"139","identifier",37
+"140","type error",37
+"141","recursive function",37
+"142","data structure",37
+"143","software",37
+"144","guard",37
+"145","typed",32
+"146","expr",32
+"147","type declaration",32
+"148","monad",32
+"149","exception",32
+"150","IO",32
+"151","reuse",32
+"152","naming",32
+"153","conditional equation",32
+"154","conjunction",32
+"155","print",32
+"156","function composition",32
+"157","mapping",32
+"158","store",32
+"159","relation",32
+"160","understanding",32
+"161","database",32
+"162","transformation",32
+"163","arithmetic",32
+"164","type class",32
+"165","unzip",32
+"166","zip",32
+"167","hiding",32
+"168","handle",32
+"169","identity",32
+"170","polymorphism",32
+"171","command",32
+"172","ADT",32
+"173","type name",26
+"174","combining",26
+"175","lazy evaluation",26
+"176","signature",26
+"177","coding",26
+"178","pattern match",26
+"179","simplification",26
+"180","or function",26
+"181","id",26
+"182","eq",26
+"183","ord",26
+"184","generalization",26
+"185","import",26
+"186","termination",26
+"187","mod",26
+"188","compiler",26
+"189","folding",26
+"190","modelling",26
+"191","overloading",26
+"192","loop",26
+"193","elem",26
+"194","getline",26
+"195","foldr",26
+"196","factorial",26
+"197","operator section",26
+"198","induction",26
+"199","putstr",26
+"200","divide and conquer",26
+"201","record",26
+"202","Prelude.hs",26
+"203","init",21
+"204","fibonacci number",21
+"205","abstraction",21
+"206","complexity",21
+"207","restriction",21
+"208","type checking",21
+"209","keyword",21
+"210","recursive type",21
+"211","palindrome",21
+"212","flexible",21
+"213","program development",21
+"214","beside",21
+"215","parsing",21
+"216","floating",21
+"217","invertcolour",21
+"218","div",21
+"219","scope",21
+"220","drop",21
+"221","type system",21
+"222","resource",21
+"223","parse",21
+"224","package",21
+"225","deriving",21
+"226","fractional",21
+"227","horse",21
+"228","algebraic data type",21
+"229","debugging",21
+"230","null",21
+"231","enumerated type",21
+"232","stack",21
+"233","I/O",21
+"234","fold",21
+"235","binary tree",21
+"236","converting",21
+"237","structural induction",21
+"238","zipwith",21
+"239","pitfall",21
+"240","interpreter",21
+"241","boolean expression",21
+"242","export",21
+"243","random number",21
+"244","limit",21
+"245","vector",16
+"246","supermarket billing",16
+"247","programming with",16
+"248","infinite list",16
+"249","layout",16
+"250","replicate",16
+"251","nil",16
+"252","System.IO",16
+"253","fixity",16
+"254","program error",16
+"255","curry",16
+"256","graph",16
+"257","binary function",16
+"258","standard library",16
+"259","queue",16
+"260","sharing",16
+"261","floating-point number",16
+"262","max",16
+"263","maybe",16
+"264","fliph",16
+"265","window",16
+"266","qualified",16
+"267","lambda",16
+"268","type constructor",16
+"269","partial application",16
+"270","infix form",16
+"271","synonym",16
+"272","filtering",16
+"273","type synonym",16
+"274","binding power",16
+"275","executable",16
+"276","interact",16
+"277","odd",16
+"278","outmess",16
+"279","concatenate",16
+"280","creating",16
+"281","uncurry",16
+"282","side-effect",16
+"283","handling",16
+"284","assignment",16
+"285","simulation",16
+"286","integral",16
+"287","searching",16
+"288","parser",16
+"289","glasgow haskell compiler",16
+"290","inmess",16
+"291","offside rule",16
+"292","lazy language",16
+"293","input/output",16
+"294","object-oriented",16
+"295","general recursion",16
+"296","dictionary",16
+"297","strict",16
+"298","glasgow haskell",16
+"299","undefined value",16
+"300","information hiding",16
+"301","associativity",16
+"302","type signature",16
+"303","sequencing",16
+"304","enum",16
+"305","maxthree",16
+"306","dynamic",11
+"307","product type",11
+"308","specification",11
+"309","string type",11
+"310","signum",11
+"311","regular expression",11
+"312","I/O and",11
+"313","overloaded literal",11
+"314","num",11
+"315","sort function",11
+"316","dropwhile",11
+"317","specialization",11
+"318","transformer",11
+"319","recursive case",11
+"320","substitution",11
+"321","fst",11
+"322","concept",11
+"323","global",11
+"324","newtype",11
+"325","undefinedness",11
+"326","logical",11
+"327","serverstate",11
+"328","arithmetic expression",11
+"329","substring",11
+"330","search tree",11
+"331","pointer",11
+"332","ant",11
+"333","lambda expression",11
+"334","hoogle",11
+"335","huffman code",11
+"336","second function",11
+"337","extensionality principle",11
+"338","op",11
+"339","ab",11
+"340","takewhile",11
+"341","domain-specific language",11
+"342","installing",11
+"343","return function",11
+"344","type inference",11
+"345","functor",11
+"346","thread",11
+"347","the state monad",11
+"348","encoding",11
+"349","assumption",11
+"350","forward composition",11
+"351","Mac OS X",11
+"352","queuestate",11
+"353","applicative",11
+"354","google",11
+"355","type-checking",11
+"356","random value",11
+"357","splitat",11
+"358","edit distance",11
+"359","module header",11
+"360","isdigit",11
+"361","state monad",11
+"362","guideline",11
+"363","boolean value",11
+"364","pattern of computation",11
+"365","closing",11
+"366","snd",11
+"367","type annotation",11
+"368","invariant",11
+"369","hardware",11
+"370","primitive recursive function",11
+"371","haskell.org",11
+"372","editing",11
+"373","disjunction",11
+"374","imperative programming",11
+"375","const",5
+"376","derived instance",5
+"377","monad transformer",5
+"378","decoding",5
+"379","getchar",5
+"380","reserved word",5
+"381","error handling",5
+"382","datatype",5
+"383","curried function",5
+"384","feedback",5
+"385","directory",5
+"386","symbolic evaluation",5
+"387","quickcheck function",5
+"388","Coding.hs",5
+"389","property-based testing",5
+"390","memoization",5
+"391","strings and character",5
+"392","threeequal",5
+"393","downloading support material",5
+"394","monad law",5
+"395","mapping over",5
+"396","implication",5
+"397","filename",5
+"398","preprocessor",5
+"399","syntax error",5
+"400","monomorphism restriction",5
+"401","advantage of functional programming",5
+"402","haskell 98",5
+"403","type class constraint",5
+"404","conditional expression",5
+"405","unification",5
+"406","currying",5
+"407","data-directed programming",5
+"408","combining function",5
+"409","category theory",5
+"410","core",5
+"411","foldr1",5
+"412","strong type",5
+"413","pseudo-random number",5
+"414","sum type",5
+"415","rendering",5
+"416","program transformation",5
+"417","IO monad",5
+"418","putstrln",5
+"419","blackhorse",5
+"420","NTree",5
+"421","mutable array",5
+"422","intensionality",5
+"423","join function",5
+"424","conversion between types",5
+"425","fmap",5
+"426","barcode",5
+"427","hamming number",5
+"428","properties as function",5
+"429","binary search tree",5
+"430","stream",5
+"431","purity",5
+"432","inheritance",5
+"433","pure",5
+"434","strictness",5
+"435","date",5
+"436","lifting",5
+"437","first function",5
+"438","qualifier",5
+"439","definedness",5
+"440","saving",5
+"441","visibility of definitions",5
+"442","XML",5
+"443","universal quantifier",5
+"444","exclusive or",5
+"445","class declaration",5
+"446","space leak",5
+"447","System.Random",5
+"448","strict and lazy",5
+"449","arbitrary function",5
+"450","unicode",5
+"451","mathematical induction",5
+"452","toupper",5
+"453","floating point operator",5
+"454","rational type",5
+"455","floating point",5
+"456","class constraint",5
+"457","juxtaposition",5
+"458","escape character",5
+"459","syntactic sugar",5
+"460","uncurrying",5
+"461","scientific notation",5
+"462","mutable",5
+"463","union type",5
+"464","idempotence",5
+"465","buffering",5
+"466","dummy value at errors",5
+"467","understanding program",5
+"468","linking",5
+"469","numeric conversion",5
+"470","domain-specific language for",5
+"471","monomorphism",5
+"472","list of successes method",5
+"473","liftm",5
+"474","free variable",5
+"475","selector",5
+"476","lazy function",5
+"477","backtracking",5
+"478","local function",5
+"479","profiling",5
+"480","lookuptable",5
+"481","fold function",5
+"482","pythagorean triple",5
+"483","print function",5
+"484","truth table",5
+"485","temporary",5
+"486","local variable",5
+"487","expression type|see",5
+"488","readability",5
+"489","backquote",5
+"490","iterate",5
+"491","dynamic programming",5
+"492","HCode",5
+"493","monotype",5
+"494","laziness",5
+"495","query",5
+"496","inclusive or",5
+"497","foldl",5
+"498","prefix form",5
+"499","reverse function",5
+"500","decodemessage",5
+"501","program modification",5
+"502","negation",5
+"503","common pattern",5
+"504","maximal common subsequence",5
+"505","pixel",5
+"506","monadic value",5
+"507","successor",5
+"508","ASCII coding",5
+"509","matrix",5
+"510","command-line",5
+"511","showtype",5
+"512","min",5
+"513","enumerating",5
+"514","rotatehorse",5
+"515","kleisli composition",5
+"516","evaluation order",5
+"517","quantifier",5
+"518","moggi",5
+"519","finiteness",5
+"520","greedy algorithm",5
+"521","accumulator",5
+"522","infinity",5
+"523","quadratic equation",5
+"524","lookup function",5
+"525","qualified import",5
+"526","infix version of a function",5
+"527","socket",5
+"528","negate",5
+"529","genericity",5
+"530","Standard ML",5
+"531","iterator type",0
+"532","impure function",0
+"533","function for 2nd",0
+"534","updatelookupwithkey type",0
+"535","polymorphic list type",0
+"536","splitat function",0
+"537","anchored regular expression",0
+"538","decoding barcode",0
+"539","blockbuffering mode (buffermode)",0
+"540","prepare function",0
+"541","ST (state thread) monad",0
+"542","runparse function",0
+"543","vs. space",0
+"544","p5 (raw) netpbm image format",0
+"545","Data.Dynamic module",0
+"546","tan function",0
+"547","overlappinginstances 2nd",0
+"548","type parameter",0
+"549","binding function [see (>>=) operator]",0
+"550","byetstring module",0
+"551","enumeration notation",0
+"552","putstrln function 2nd 3rd",0
+"553","regexcontex typeclass",0
+"554","unlifted function",0
+"555","local functions/global variable",0
+"556","System.Directory library",0
+"557","infix function",0
+"558","polymorphic testing",0
+"559","python 2nd 3rd",0
+"560","two-dimensional vector",0
+"561","getdirectorycontents function",0
+"562","numeric types 2nd",0
+"563","alternatives (value constructors)",0
+"564","foreignfunctioninterface",0
+"565","pretty printer",0
+"566","raw (p5) netpbm format",0
+"567","nomonomorphismrestriction language extension",0
+"568","SQL (Structured Query Language)",0
+"569","queries (database)",0
+"570","do expression",0
+"571","immutable array",0
+"572","structures 2nd 3rd [see also data structures]",0
+"573","hfilesize function",0
+"574","temporary file",0
+"575","id function",0
+"576","open world assumption",0
+"577","square brackets ([ ])",0
+"578","defining and using new",0
+"579","jenkins hash function",0
+"580","splitting line",0
+"581","PGM file",0
+"582","lambda calculu",0
+"583","foldr function",0
+"584","autocommit mode (databases)",0
+"585","right value",0
+"586","setfiletimes function",0
+"587","parse type 2nd",0
+"588","runtime option",0
+"589","regexp [see regular expressions]",0
+"590","type-based testing",0
+"591","throw function",0
+"592","IO type",0
+"593","memory location",0
+"594","tointeger function",0
+"595","maybe monad",0
+"596","hanging lambda",0
+"597","derivedatatypeable",0
+"598","realtofrac function",0
+"599","multiline literal",0
+"600","frominteger function",0
+"601","Data.Map module 2nd",0
+"602","parallel programs 2nd",0
+"603","shared pattern",0
+"604","multiline string literal",0
+"605","shiftr function",0
+"606","logging",0
+"607","hugs interpreter",0
+"608",">>",0
+"609","idempotency",0
+"610","IConnection typeclass",0
+"611","prefix notation",0
+"612","value comparison",0
+"613",">>= (bind) function",0
+"614","any newtype constructor",0
+"615","word type",0
+"616","isalpha",0
+"617","atomically block",0
+"618","x:xs pattern",0
+"619","representing datum",0
+"620","pi value",0
+"621","matching on",0
+"622","fractional division (/) option",0
+"623","question mark (?)",0
+"624","parsebyte function",0
+"625","commutativity",0
+"626","latency",0
+"627","seq function",0
+"628","test datum",0
+"629","prompt directive (ghci)",0
+"630","ternary type",0
+"631","return keyword",0
+"632","synonyms (types)",0
+"633","try keyword",0
+"634","recursive data structure",0
+"635","HPC (Haskell Program Coverage)",0
+"636","digittoint",0
+"637","UPC-A barcodes",0
+"638","do notation",0
+"639","ix type",0
+"640","Control.Monad.Trans module",0
+"641","cons operator",0
+"642","pcre.h header file",0
+"643","directories and file",0
+"644","hseek function",0
+"645","logbase function",0
+"646","closing file handle",0
+"647","3d vector type",0
+"648","list monad",0
+"649","lifted function",0
+"650","program termination",0
+"651","Control.Exception module 2nd 3rd",0
+"652","LINE pragma",0
+"653","Haskell Foreign Function Interface (FFI)",0
+"654","eratosthene",0
+"655","types and purity",0
+"656","identity parser",0
+"657","text I/O",0
+"658","Product id of barcodes",0
+"659","I/O (input/output) and",0
+"660","seek pointer",0
+"661","shell scripting",0
+"662","internal module",0
+"663","pack function",0
+"664","maybe type",0
+"665","exception type",0
+"666","processing [see file processing]",0
+"667","System.FilePath module 2nd",0
+"668","record syntax 2nd",0
+"669","monoid instance",0
+"670","boilerplate code",0
+"671","bytestring module",0
+"672","boolean logic",0
+"673","custom data types for",0
+"674","Data.Traversable module",0
+"675","MVar type 2nd 3rd",0
+"676","listing directories with",0
+"677","-sstderr RTS option 2nd",0
+"678","state monads 2nd 3rd",0
+"679","isalphanum",0
+"680","emptydatadecl",0
+"681","file modification",0
+"682","compiling source code",0
+"683","C PCRE API",0
+"684","nobuffering mode (buffermode)",0
+"685","permissive type",0
+"686","Build-Depends field",0
+"687","anonymous (lambda) functions 2nd",0
+"688","pure error handling",0
+"689","gen environment",0
+"690","nothing value",0
+"691","newtype declaration",0
+"692","SELECT statement",0
+"693","monad stack",0
+"694","fusion",0
+"695","zipwith function",0
+"696","the list monad",0
+"697","reading/modifying state",0
+"698","transformer stacking",0
+"699","starvation",0
+"700","toupper function",0
+"701","withtransaction function",0
+"702","openbinarytempfile function",0
+"703","Haskell Program Coverage (HPC)",0
+"704","quicksort algorithm",0
+"705","Data.Monoid module",0
+"706","Data.Sequence module",0
+"707","overlappinginstances language extension",0
+"708","automatic derivation",0
+"709","precedence and associativity",0
+"710","left-biased function",0
+"711","word64 type",0
+"712","getmodificationtime function",0
+"713","Control.Parallel.Strategies module",0
+"714","ghc compiler 2nd",0
+"715","type class instance",0
+"716","DST (Daylight Saving Time)",0
+"717","randomr function",0
+"718","else keyword",0
+"719","putst function",0
+"720","subclassing",0
+"721","implicit state 2nd",0
+"722","templates (c++)",0
+"723","vs. tab character",0
+"724","closed world assumption",0
+"725","traverse function 2nd",0
+"726","UTC (Coordinated Universal Time)",0
+"727","sfetchallrows' function",0
+"728","wild card",0
+"729","main loop (GUI programming)",0
+"730","thunk",0
+"731","-fvia-C GHC option",0
+"732","Foreign.C.String module 2nd",0
+"733","equational reasoning",0
+"734","immutable state",0
+"735","enum keyword (C/C++)",0
+"736","thread map",0
+"737","miranda",0
+"738","applicative operator",0
+"739","insert function",0
+"740","cases (value constructors)",0
+"741","linebuffering mode (buffermode)",0
+"742","map function",0
+"743","printf (c) option",0
+"744","p3 (plain) netpbm image format",0
+"745","isspace",0
+"746","predicate",0
+"747","implicit state",0
+"748","associativity of operators",0
+"749","control-with-character escapes",0
+"750","universal newline support",0
+"751","numeric 2nd",0
+"752","programming environment",0
+"753","structural recursion",0
+"754","accumulation",0
+"755","typeclasses 2nd",0
+"756","pipe (|)",0
+"757","true boolean value",0
+"758","GET method (HTTP)",0
+"759","parse type",0
+"760","intergral",0
+"761","ubuntu linux",0
+"762","mempty",0
+"763","NF (normal form)",0
+"764","whitespace in expressions",0
+"765","language extension",0
+"766","shift function",0
+"767","pair (2-tuple)",0
+"768","GHC-Options property",0
+"769","prelude module 2nd",0
+"770","parsec helper function",0
+"771","leaky code",0
+"772","head function 2nd 3rd",0
+"773","concat function 2nd 3rd",0
+"774","Data.Foldable module 2nd",0
+"775","otherwise expression",0
+"776","PostgreSQL",0
+"777","hash tables 2nd",0
+"778","poke function",0
+"779","return calls 2nd",0
+"780","indice of arrays",0
+"781","right-associative signature",0
+"782","custom data type for errors",0
+"783","logical or (||)",0
+"784","set comprehension",0
+"785","international language support",0
+"786","Control.Applicative module",0
+"787","cl compiler",0
+"788","JSON typeclass",0
+"789","monadic use",0
+"790","combinator function",0
+"791","waiting for other threads",0
+"792","character class",0
+"793","non-strict evaluation",0
+"794","System.Posix.Files module",0
+"795","polymorphic types 2nd",0
+"796","bison command",0
+"797","user IDs (UIDs)",0
+"798","ADT (abstract data types)",0
+"799","partial function",0
+"800","taking advantage",0
+"801","well typed rule",0
+"802","folding over arrays",0
+"803","web site",0
+"804","programming paradigm",0
+"805","shadowing",0
+"806","FFI (Haskell Foreign Function Interface)",0
+"807","putstr function",0
+"808","HTTP request",0
+"809","maybet monad transformer 2nd",0
+"810","then and else branch",0
+"811","operator precedence",0
+"812","rawsystem function 2nd",0
+"813","mode based testing",0
+"814","derivedatatypeable language",0
+"815","patternguard",0
+"816","Data.Function module",0
+"817","handlejust function",0
+"818","islower",0
+"819","isupper",0
+"820","enumeration type",0
+"821","flexibleinstance",0
+"822","domino effect",0
+"823","hug",0
+"824","-funbox-strict-fields option 2nd",0
+"825","concurrent programming with threads",0
+"826","turning two into many",0
+"827","diffarray type",0
+"828","headers (HTTP)",0
+"829","ptr type",0
+"830","getst function",0
+"831","object file",0
+"832","import directive 2nd",0
+"833","pcre_exec function",0
+"834","exhaustive pattern",0
+"835","monads and 2nd",0
+"836","struct keyword (C/C++)",0
+"837","data keyword",0
+"838","main thread waiting for other threads",0
+"839","stateful computation",0
+"840","runtime statistic",0
+"841","tail function 2nd 3rd 4th",0
+"842","lazy I/O",0
+"843","grayscale image format 2nd",0
+"844","typed pointer",0
+"845",":reload command",0
+"846","API design",0
+"847","HUnit library",0
+"848","external program",0
+"849","sequential sorting",0
+"850","Data.Ratio module",0
+"851","functional picture",0
+"852","filterm",0
+"853","split function",0
+"854","waitfor function",0
+"855","Data.Bits module",0
+"856","text I/O and",0
+"857","foldl and foldr function",0
+"858","generics (java)",0
+"859","typeable typeclass",0
+"860","variable naming",0
+"861","formal parameter",0
+"862","passing datum between c and haskell",0
+"863","source file",0
+"864","string-handling",0
+"865","filter function 2nd",0
+"866","safe keyword",0
+"867","ASCII control code",0
+"868","generalizednewtypederiving 2nd 3rd",0
+"869","algebraic data structure",0
+"870","rnf function",0
+"871","mainloop keyword",0
+"872","monoid",0
+"873","unlines function 2nd",0
+"874","manufacturer ID of barcodes",0
+"875","malloc c function",0
+"876","stdin function",0
+"877","spine for maps",0
+"878","System.Time module",0
+"879","triple (3-tuple)",0
+"880","serialization",0
+"881","lists and tuple",0
+"882","Text.Regex.Posix module",0
+"883","hsc2hs command",0
+"884","interface file",0
+"885","float type",0
+"886","PCRE (Perl-compatible regular expression)",0
+"887","continuation",0
+"888","quot function",0
+"889","GUI (graphical user interface) programming",0
+"890","INSERT query",0
+"891","side effect",0
+"892","project idea",0
+"893","specializing for IO",0
+"894","ranges (pattern matching)",0
+"895","lists 2nd 3rd 4th",0
+"896","java programming language",0
+"897","Control.Parallel module",0
+"898","modification time",0
+"899","exceptions 2nd",0
+"900","System.Random module",0
+"901","concatenation",0
+"902","word8 type",0
+"903","System.Exit module",0
+"904","left value 2nd",0
+"905","bangpattern",0
+"906","standard module",0
+"907","lazy reading from databases",0
+"908","static type",0
+"909","haselfmagic function",0
+"910","floating-point operator",0
+"911","report flag (hpc)",0
+"912","interact function",0
+"913","System.IO library",0
+"914","line constructor",0
+"915","adding safely to PCRE",0
+"916","bounded type class",0
+"917","typesynonyminstances 2nd",0
+"918","deconstructor",0
+"919","getprocessstatus function",0
+"920","readint function 2nd",0
+"921","fedora linux",0
+"922","composition|see{function composition",0
+"923","metadata (database)",0
+"924","module declaration",0
+"925","podcatcher",0
+"926","constant applicative forms (CAFs)",0
+"927","quickcheck 2nd",0
+"928","peek function",0
+"929","multiparamtypeclass",0
+"930","take function",0
+"931","line function",0
+"932","forkmanaged function",0
+"933","statet monad transformer",0
+"934","subtype polymorphism",0
+"935","child socket",0
+"936","identity transformation (foldr)",0
+"937","foldr function 2nd",0
+"938","shared-state",0
+"939","inductive case",0
+"940","EAN-13 barcodes",0
+"941","numeric escape",0
+"942","solution map",0
+"943","delete function",0
+"944","writer type",0
+"945","evaluation strategy",0
+"946","Parsec CSV file",0
+"947","recip function",0
+"948","split-base Cabal flag",0
+"949","help command (ghci)",0
+"950",":set prompt 2nd",0
+"951","openfile function 2nd",0
+"952","high-order function",0
+"953","pivot",0
+"954","generalizednewtypederiving extension 2nd",0
+"955","filename matching",0
+"956","pcre_fullinfo function",0
+"957","gtk2h",0
+"958","modifyMVar function",0
+"959","I/O (input/output)",0
+"960","components (types)",0
+"961","multitasking",0
+"962","nondeterministic value",0
+"963","sin function",0
+"964","bloom filter",0
+"965","discriminated union",0
+"966","applicative style",0
+"967","first-class citizen",0
+"968","GUI programming",0
+"969","unsafeIOToSTM function",0
+"970","handle function",0
+"971","vs. I/O",0
+"972","logical and (&&)",0
+"973","either type",0
+"974","projection function",0
+"975","association list",0
+"976","hprint function",0
+"977","CPP",0
+"978","STM (software transactional memory)",0
+"979","pcre_compile function",0
+"980","sqrt function",0
+"981","fromrational function",0
+"982","declarations (module)",0
+"983","maybe implementation",0
+"984","withforeignptr function",0
+"985","inductive/recursive case",0
+"986","ruby",0
+"987","lift function 2nd",0
+"988","out of scope",0
+"989","functor typeclass",0
+"990","balancing",0
+"991","inttodigit",0
+"992","reader monad",0
+"993","mapreduce",0
+"994","two-dimensional array",0
+"995","systems programming",0
+"996","PCRE libraries and",0
+"997","syslog",0
+"998","UDP",0
+"999","form function",0
+"1000","ghemawat",0
+"1001","maxbound function",0
+"1002","escaping text",0
+"1003","color image",0
+"1004","bounded variable",0
+"1005","escaping",0
+"1006","metadatum",0
+"1007","writert monad transformer",0
+"1008","supplying random number",0
+"1009","System.IO.Error module",0
+"1010","Exposed-Modules field",0
+"1011","programmable semicolon",0
+"1012","coercion",0
+"1013","overlapping instance",0
+"1014","JSON (JavaScript Object Notation)",0
+"1015","UIDs (user IDs)",0
+"1016","STM monad",0
+"1017","sepby function",0
+"1018","h function",0
+"1019","group function",0
+"1020","partial application of functions",0
+"1021","number system of barcodes",0
+"1022","case expression",0
+"1023","xor function",0
+"1024","binding c to haskell",0
+"1025","unsafePerformIO function",0
+"1026","JSON typclass",0
+"1027","applicative value",0
+"1028","readfile function 2nd 3rd",0
+"1029","scan",0
+"1030","seekmode parameter (htell)",0
+"1031","mapm",0
+"1032","applicative law",0
+"1033","total function",0
+"1034","Reverse Polish Notation (RPN)",0
+"1035","GHC (Glasgow Haskell Compiler)",0
+"1036","making instance",0
+"1037","maxium function",0
+"1038","using multiple",0
+"1039","sqlvalues type",0
+"1040","parameterized",0
+"1041","stacking multiple",0
+"1042","log function",0
+"1043","lookaheads (regular expressions)",0
+"1044","monadstate typeclass",0
+"1045","arbitrary typeclass 2nd 3rd",0
+"1046","unsafe keyword",0
+"1047","tab (\t) character",0
+"1048","truncate function 2nd",0
+"1049","hclose function 2nd",0
+"1050","initializing",0
+"1051","pwd command",0
+"1052","using strong type",0
+"1053","c preprocessor",0
+"1054","unix-compat package",0
+"1055","mapreduce (google)",0
+"1056","high-level wrapper",0
+"1057","deferred computation",0
+"1058","opentempfile function",0
+"1059","left-associative",0
+"1060","Data.Array module",0
+"1061","pure code",0
+"1062","laziness and space leak",0
+"1063","sizing safely",0
+"1064","marshaling",0
+"1065","netpbm file format 2nd",0
+"1066","-fvia-C option",0
+"1067","text mode",0
+"1068","LANGUAGE pragma",0
+"1069","System.Posix module",0
+"1070","high-order",0
+"1071","explicit recursion",0
+"1072","drivers (HDBC)",0
+"1073","putchar",0
+"1074","event-driven programming",0
+"1075","describetable function",0
+"1076","file processing",0
+"1077","readln",0
+"1078","parametric polymorphism",0
+"1079","patternguards language extension",0
+"1080","Data.Char module",0
+"1081","unwords function",0
+"1082","marshaling datum",0
+"1083","readert monad layer",0
+"1084","scheme",0
+"1085","typesynonyminstances language extension 2nd",0
+"1086","(>>=) function and 2nd 3rd",0
+"1087",".tix file",0
+"1088","System.Environment module",0
+"1089","declaring instance",0
+"1090","fst function 2nd",0
+"1091","Glasgow Haskell Compiler (GHC)",0
+"1092","monadreader typeclass",0
+"1093","event-driven",0
+"1094","weak head normal form (WHNF) 2nd 3rd",0
+"1095","Data.Typeable module",0
+"1096","Structured Query Language (SQL)",0
+"1097","duck typing",0
+"1098","writechan function",0
+"1099","redex",0
+"1100","tocalendartime function",0
+"1101","grain size",0
+"1102","ODBC driver",0
+"1103","JavaScript Object Notation [See JSON]",0
+"1104","impure code",0
+"1105","enum typeclass",0
+"1106","-fhpc flag",0
+"1107","loosely coupled",0
+"1108","GTK+ development environment",0
+"1109","GHC.Conc module 2nd",0
+"1110","c programming",0
+"1111","word16 type",0
+"1112","foldl1",0
+"1113","Map.insert function",0
+"1114","lifting function",0
+"1115","threaded runtime",0
+"1116","throwing",0
+"1117","anonymous type",0
+"1118","strict type",0
+"1119","underscore character (_)",0
+"1120","force function",0
+"1121","writefile function",0
+"1122","algebraic expression",0
+"1123","system message",0
+"1124","zipper",0
+"1125","OverlappingInstances/TypeSynonymInstances language extension",0
+"1126","word32 type",0
+"1127","mapm function 2nd",0
+"1128","undefined symbol",0
+"1129","parsechar function",0
+"1130","command-line editing",0
+"1131","shadowing parameter",0
+"1132","applicative functor",0
+"1133","double hashing",0
+"1134","buffermode type",0
+"1135","union keyword (C/C++)",0
+"1136","strict and lazy bytestring",0
+"1137","getstatus function",0
+"1138","folding from left",0
+"1139","show typeclass",0
+"1140","toUTCTime function",0
+"1141","master socket",0
+"1142",".hs source file",0
+"1143","space leaks 2nd 3rd",0
+"1144","cheap modification",0
+"1145","MySQL",0
+"1146","communication between 2nd",0
+"1147","zero-width escape sequence",0
+"1148","System.Win32 module",0
+"1149","the reader monad",0
+"1150","point (.) character",0
+"1151","normal form (NF)",0
+"1152","IConnection function",0
+"1153","minbound function",0
+"1154","pseudorandom value generation",0
+"1155","partial type monad instance",0
+"1156","new identity",0
+"1157","values (undefined)",0
+"1158","gettables function",0
+"1159","Data.List module",0
+"1160","mplus function",0
+"1161","record syntax",0
+"1162","connecting",0
+"1163","FFI binding",0
+"1164","purity 2nd 3rd [see also pure functions]",0
+"1165","ghci interpreter 2nd",0
+"1166","defining new",0
+"1167","parsetimes function",0
+"1168","dynamic exception",0
+"1169","plusptr function",0
+"1170","concurrent programs 2nd",0
+"1171","where clause 2nd",0
+"1172","POST method (HTTP)",0
+"1173","perl",0
+"1174","span",0
+"1175","type keyword",0
+"1176","find command",0
+"1177","PCRE library and",0
+"1178","chr",0
+"1179","RSS format",0
+"1180","randoms function",0
+"1181","wadler",0
+"1182","rem function",0
+"1183","\t (tab) character",0
+"1184","Control.Arrow module",0
+"1185","magic number",0
+"1186","foreign import declaration",0
+"1187","alist (association lists)",0
+"1188","null value",0
+"1189","takewhile function",0
+"1190","torational function",0
+"1191","lazy reading",0
+"1192","let expression",0
+"1193","parsec",0
+"1194","monadtrans class",0
+"1195","dispatch function",0
+"1196",":type command 2nd",0
+"1197","compact function",0
+"1198","oracle",0
+"1199","value constructor",0
+"1200","objects 2nd",0
+"1201","composite data type",0
+"1202","blending c with haskell",0
+"1203","CSV file",0
+"1204","quality assurance",0
+"1205","main function",0
+"1206","lines function 2nd 3rd",0
+"1207","zip function",0
+"1208","maps 2nd 3rd",0
+"1209","recip",0
+"1210","bounded typeclass",0
+"1211","binary datum",0
+"1212","lambda function",0
+"1213","emptydatadecls language extension",0
+"1214","foldm",0
+"1215","line-aligned chunk",0
+"1216","head normal form (HNF)",0
+"1217","dates and time",0
+"1218","x86_64 assembly",0
+"1219","map type",0
+"1220","htell function",0
+"1221","membe",0
+"1222","System.Directory module",0
+"1223","folding from right",0
+"1224","transformer stacking order",0
+"1225","memory management",0
+"1226","monadic expression",0
+"1227","Foreign.Ptr module",0
+"1228","listarray function",0
+"1229","getstdrandom function",0
+"1230","foldl function",0
+"1231","conditional with guards",0
+"1232","control.Concurrent",0
+"1233","explicit type declaration",0
+"1234","loop function",0
+"1235","symbol table",0
+"1236","as-pattern",0
+"1237","tail recursion",0
+"1238","PRNG (pseudorandom number generator)",0
+"1239","mutable reference",0
+"1240","data structures 2nd 3rd",0
+"1241","generator expression",0
+"1242","elements function",0
+"1243","glob pattern",0
+"1244","positional type",0
+"1245","left fold function",0
+"1246","Foreign.Marshal.Array module",0
+"1247","FreeBSD",0
+"1248","round function",0
+"1249","FDs (file descriptors)",0
+"1250","type instance",0
+"1251","environment (programming)",0
+"1252","ELF object file",0
+"1253","RGB image",0
+"1254","injector function",0
+"1255","left identity [see (>>=) operator]",0
+"1256","wild card pattern",0
+"1257","blending with c",0
+"1258","tails function",0
+"1259","plain (p3) netpbm format",0
+"1260","synchronizing variable",0
+"1261","WHNF (weak head normal form) 2nd 3rd",0
+"1262","\r (carriage return) character",0
+"1263","fold' function",0
+"1264","unary operator (-)",0
+"1265","chunk",0
+"1266","list management",0
+"1267","variables 2nd",0
+"1268","mulitcore programming",0
+"1269","liftm function 2nd 3rd 4th",0
+"1270","input/output [See I/O]",0
+"1271","actual parameter",0
+"1272","global variable",0
+"1273","invisible data dependency",0
+"1274","database engine",0
+"1275","file descriptors (FDs)",0
+"1276","Daylight Saving Time (DST)",0
+"1277","bytestring",0
+"1278","allocating datum",0
+"1279","stub version of types/functions",0
+"1280","hgetcontents function",0
+"1281","mtl library 2nd",0
+"1282","doc data type",0
+"1283","Control.Monad.Error module 2nd 3rd",0
+"1284","point-free style",0
+"1285","debian linux",0
+"1286","fmap function 2nd",0
+"1287","sqlerror type",0
+"1288","showhex function",0
+"1289","stdout function",0
+"1290","pseudorandom number generator (PRNG)",0
+"1291","Haskell DataBase Connectivity system (HDBC)",0
+"1292","normal form datum",0
+"1293","tolower",0
+"1294","Coordinated Universal Time (UTC)",0
+"1295","pure function",0
+"1296","barcode recognition",0
+"1297","shiftl function",0
+"1298","deleting/renaming",0
+"1299","length function 2nd",0
+"1300","monad type class",0
+"1301","immutable list",0
+"1302","common pattern in monads",0
+"1303","right identity [see (>>=) operator]",0
+"1304","single quotes (')",0
+"1305","infop type 2nd",0
+"1306","System.Cmd module",0
+"1307","suffixes function",0
+"1308","writer monad",0
+"1309","single-character escape code",0
+"1310","type inference 2nd",0
+"1311","garbage collecting",0
+"1312","string literal",0
+"1313","read typeclass",0
+"1314","replicate function",0
+"1315","gcc compiler",0
+"1316","ill typed rule",0
+"1317","lend function",0
+"1318","conditional evaluation 2nd",0
+"1319","timediff type",0
+"1320","association lists 2nd",0
+"1321","widget descriptions saved a",0
+"1322","composable functor",0
+"1323","finding statu",0
+"1324","typeclass",0
+"1325","nomonomorphismrestriction 2nd",0
+"1326","foreignptr type",0
+"1327","link time",0
+"1328","forkprocess function",0
+"1329","casual parsing for",0
+"1330","top level name",0
+"1331","environment variable",0
+"1332","point-free expression",0
+"1333","transforming input",0
+"1334","hputstrln function",0
+"1335","applicative type class",0
+"1336","HNF (head normal form)",0
+"1337","URL-encoded query string",0
+"1338","monadplus typeclass",0
+"1339","foldl function 2nd",0
+"1340","functionaldependency",0
+"1341","parameterized types 2nd",0
+"1342","snd function",0
+"1343","getclocktime function",0
+"1344","flex",0
+"1345","pythagoras's theorem",0
+"1346","arrays 2nd 3rd",0
+"1347","tables (hash) 2nd",0
+"1348","compiling source",0
+"1349","parse wrapper",0
+"1350","flexiblecontext",0
+"1351","Adler-32 checksum",0
+"1352","transactions (database)",0
+"1353","reporting",0
+"1354","key-value pair",0
+"1355","distributivity",0
+"1356","mzero",0
+"1357","numeric library",0
+"1358","module function",0
+"1359","filesystem",0
+"1360","TCP",0
+"1361",".hsc files 2nd",0
+"1362","runST function",0
+"1363","runghc program",0
+"1364","System.Directory module 2nd 3rd",0
+"1365","string function",0
+"1366","monads 2nd",0
+"1367","deadlocks 2nd",0
+"1368","fromintegral function 2nd",0
+"1369","callback function",0
+"1370","elem function",0
+"1371","Control.Monad module 2nd",0
+"1372","widgets (GUI programming)",0
+"1373","shape of functors",0
+"1374","monomorphic property",0
+"1375","web client programming",0
+"1376","testing [see quality assurance]",0
+"1377","multiplication (*) option",0
+"1378","monadplus",0
+"1379","CAFs (constant applicative forms)",0
+"1380","non-threaded runtime",0
+"1381","pipes (redirection)",0
+"1382","glade",0
+"1383","context of failure",0
+"1384","boolean algebra",0
+"1385","Data.ByteString.Lazy.Char8 module",0
+"1386","networking",0
+"1387","reduction",0
+"1388","newtype wrapper",0
+"1389","strict evaluation 2nd",0
+"1390","MonadIO typeclass",0
+"1391","overlapping",0
+"1392","RPN (Reverse Polish Notation)",0
+"1393","embedded domain specific language",0
+"1394","Graphics.UI.Gtk.Graphics.UI.Gtk.Glade module",0
+"1395","Database.HDBC module",0
+"1396","stderr function",0
+"1397","c programming language 2nd 3rd",0
+"1398","boilerplate 2nd",0
+"1399","redirection (pipes)",0
+"1400","types 2nd 3rd",0
+"1401","Graphics.UI.Gtk module",0
+"1402","row datum",0
+"1403","newtype keyword",0
+"1404","subtraction (-) option",0
+"1405","binary I/O",0
+"1406","unboxed value in arrays",0
+"1407","hsc2h",0
+"1408","prop_one_present function",0
+"1409","foreign module",0
+"1410","HPC",0
+"1411","lock order inversion",0
+"1412","quickquery' function 2nd",0
+"1413","scaled value",0
+"1414","mconcat",0
+"1415","codemessage",0
+"1416","Data.List.lookup function",0
+"1417","POSIX regular expression",0

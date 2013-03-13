@@ -1,0 +1,71 @@
+instance of,instance
+monads and,monads
+suffixes function and,suffixes function
+GUI programming and,GUI programming
+data structures and,data structures
+JSON typclasses and,JSON typclasses
+bytestring modules and,bytestring modules
+strings and,strings
+state monad and,state monad
+parsec helper functions and,parsec helper functions
+regular expressions and,regular expressions
+monadic use of,monadic use
+hgetcontents function and,hgetcontents function
+PGM files and,PGM files
+barcode recognition and,barcode recognition
+random values and,random values
+foldl function and,foldl function
+newtype declarations and,newtype declarations
+transformer stacking order and,transformer stacking order
+recursive types and,recursive types
+tuples and,tuples
+using strong types and,using strong types
+newtype keyword and,newtype keyword
+inductive/recursive case and,inductive/recursive case
+fold functions and,fold functions
+transformer stacking and,transformer stacking
+monads and,monads
+error handling and,error handling
+JSON typeclasses and,JSON typeclasses
+type definitions and,type definitions
+algebraic data types and,algebraic data types
+list monads and,list monads
+taking advantage of,taking advantage
+universal newline support and,universal newline support
+implicit state and,implicit state
+parsec and,parsec
+finding status of,finding status
+exceptions and,exceptions
+foldr function and,foldr function
+laziness and,laziness
+partial applications of,partial applications
+mapreduce and,mapreduce
+CSV files and,CSV files
+monomorphism and,monomorphism
+record syntax and,record syntax
+Parsec CSV files and,Parsec CSV files
+operator precedence and,operator precedence
+splitting lines of,splitting lines
+starvation and,starvation
+transforming input and,transforming input
+lists and,lists
+type variables and,type variables
+sequencing and,sequencing
+purity and,purity
+c preprocessor and,c preprocessor
+boolean values and,boolean values
+hsc2hs and,hsc2hs
+polymorphism and,polymorphism
+OverlappingInstances/TypeSynonymInstances language extensions and,OverlappingInstances/TypeSynonymInstances language extensions
+functions and,functions
+maps and,maps
+control.Concurrent module,control.Concurrent
+file processing and,file processing
+file modifications and,file modifications
+STM monad and,STM monad
+test data and,test data
+color images and,color images
+typeclasses and,typeclasses
+readability of,readability
+threads and,threads
+closing file handles and,closing file handles

@@ -1,0 +1,1049 @@
+TimeDiff type
+SeekMode parameter (hTell)
+code
+partial
+blending C with Haskell
+global
+dynamic
+algebraic data types
+interface files
+total functions
+"API design, handling"
+CPP
+expressions
+"tuples, writing"
+Monads and
+map function
+"System.Directory module, using"
+high-order functions
+Reverse Polish Notation (RPN)
+language extensions
+FFI (Haskell Foreign Function Interface)
+tail
+"Parse type, writing for"
+MVar type 2nd 3rd
+quality assurance
+text
+"infix form, using arithmetic operators and"
+lift function 2nd
+resources
+suffixes function and
+main function
+"calculators, using as"
+lists 2nd 3rd 4th
+join function
+"URL-encoded query strings, parsing"
+"files, sizing safely"
+"podcatcher, building"
+partial application of functions
+prepare function
+control-with-character escapes
+handling
+forkProcess function
+associativity of operators
+concurrent programming with threads
+numeric 2nd
+pure functions
+throw function
+programming environment
+elements function
+random values
+System.Posix module
+toCalendarTime function
+forM function
+writeChan function
+structural recursion
+length function 2nd
+True Boolean value
+GUI programming and
+xor function
+partial type Monad instances
+PatternGuards language extension
+data structures and
+STM (software transactional memory)
+pretty printers
+Data.Dynamic module
+toUTCTime function
+tan function
+built-in
+dates and times
+PCRE libraries and
+fold
+FFI binding
+Word16 type
+typeclasses 2nd
+main thread waiting for other threads
+threaded runtime
+TypeSynonymInstances language extension 2nd
+errors
+escaping text
+getProcessStatus function
+standard module
+SQL (Structured Query Language)
+mutable arrays
+prefix form
+"LANGUAGE pragmas, binding languages"
+decoding
+anonymous types
+getDirectoryContents function
+seq function
+interpreters
+UIDs (user IDs)
+right-associative signatures
+metadata
+"UDP, communicating with"
+shiftR function
+JSON typclasses and
+escaping
+Enum typeclass
+DST (Daylight Saving Time)
+normal form (NF)
+hGetContents function
+then and else branches
+understanding
+CSV files
+enumeration notation
+"models, using as"
+ByteString modules and
+offside rule
+Read typeclass
+Float type
+association lists 2nd
+Control.Monad.Trans module
+mulitcore programming
+LINE pragma
+Arbitrary typeclass 2nd 3rd
+"lifting, avoiding with"
+"currying, using partial functions"
+"substrings, binding C with Haskell"
+infix functions
+shiftL function
+implementation
+hClose function 2nd
+folding from right
+GTK+ development environment
+fmap function 2nd
+Exposed-Modules field
+strings and
+closed world assumptions
+undefined values
+maps 2nd 3rd
+Foreign modules
+polymorphic testing
+Writer monad
+programmable semicolon
+Foreign.Ptr module
+chunks
+coercion
+combinator functions
+state monad and
+pair (2-tuple)
+SELECT statements
+"underscore character (_), matching wild cards"
+struct keyword (C/C++)
+GHC-Options property
+combining functions
+type-based testing
+exceptions 2nd
+handles
+Parsec helper functions and
+"question mark (?), matching characters with"
+NF (normal form)
+mapM function 2nd
+scope
+magic numbers
+Daylight Saving Time (DST)
+Product IDs of barcodes
+"TCP, communicating with"
+string literals
+two-dimensional vectors
+head function 2nd 3rd
+putSt function
+strictness
+concat function 2nd 3rd
+projection functions
+Data.Foldable module 2nd
+Java programming language
+.hs source files
+otherwise expression
+representing data
+RPN (Reverse Polish Notation)
+case expression
+"data type, defining [See also types]"
+Right value
+poke function
+Monoid instance
+functional programming
+BlockBuffering mode (BufferMode)
+installing
+HNF (head normal form)
+impure functions
+guards
+foreign import declarations
+sepBy function
+master sockets
+concepts
+exceptions
+getSt function
+closing
+Control.Parallel module
+GeneralizedNewtypeDeriving extension 2nd
+wild card patterns
+file processing
+foldl function 2nd
+GUI (graphical user interface) programming
+transactions (database)
+Prelude module 2nd
+metadata (database)
+Parse type 2nd
+"marshaling data, binding C to Haskell"
+Data.Function module
+synonyms (types)
+tail recursion
+lists and tuples
+error handling
+return calls 2nd
+logical or (||)
+ST (state thread) monad
+left identity [See (>>=) operator]
+glob patterns
+recursive
+id function
+open world assumption
+ELF object files
+shared patterns
+anonymous (lambda) functions 2nd
+international language support
+point-free expressions
+"lists, using"
+Control.Applicative module
+pure
+defining and using new
+ForeignFunctionInterface
+"API design, handling errors through"
+modifyMVar function
+updateLookupWithKey type
+cl compiler
+Monads and 2nd
+shadowing parameters
+FunctionalDependencies
+binary
+typed
+RSS format
+"types, adding safety to"
+predicates
+serialization
+maxium function
+regular expressions and
+using multiple
+lifting functions
+"lazy functions, writing"
+Haskell DataBase Connectivity system (HDBC)
+minBound function
+read
+JSON (JavaScript Object Notation)
+explicit
+monadic use of
+parameterized
+"glob patterns, translating into"
+grain sizes
+hTell function
+log function
+Foreign.Marshal.Array module
+first function
+color images
+find command
+"exhaustive patterns, as a constructor"
+round function
+runParse function
+"headers (HTTP), parsing"
+non-strict evaluation
+P5 (raw) netpbm image format
+withTransaction function
+:reload command
+hGetContents function and
+synonyms
+discriminated unions
+immutable states
+"constants, binding C to Haskell"
+"HTTP requests, parsing"
+split-base Cabal flag
+Doc data type
+System.Posix.Files module
+environment variables
+Structured Query Language (SQL)
+internal modules
+MonadReader typeclass
+writing
+continuations
+manufacturer ID of barcodes
+Maybe monads
+initializing
+redirection (pipes)
+pwd command
+toUpper function
+PGM files and
+blending with C
+OverlappingInstances language extension
+MaybeT monad transformer 2nd
+"algebraic data types, analogues to"
+programming with
+Jenkins hash functions
+pipes (redirection)
+Hugs interpreter
+strict evaluation 2nd
+handleJust function
+barcode recognition and
+unix-compat package
+buffering
+"type synonyms, making"
+dynamic exceptions
+toRational function
+"regular expressions, translating from"
+FlexibleInstances
+"Ghemawat, Jeffrey"
+invariants
+directories
+pcre_exec function
+common patterns in monads
+pure error handling
+monomorphic properties
+mtl library 2nd
+tables (hash) 2nd
+filenames
+passing data between C and Haskell
+state monads 2nd 3rd
+showHex function
+constraints
+splitAt function
+Haskell Foreign Function Interface (FFI)
+unary operator (-)
+Glasgow Haskell Compiler (GHC)
+Exception type
+data structures 2nd 3rd
+Data.Array module
+pure code
+"definitions, writing"
+random values and
+identity parsers
+getModificationTime function
+callback functions
+Parse wrapper
+loops
+sizing safely
+naming
+square brackets ([ ])
+marshaling
+pseudorandom number generator (PRNG)
+shadowing
+command-line
+constructors
+"packages, creating"
+input/output [See I/O]
+sockets
+ghci
+Typeable typeclass
+RegexContex typeclass
+BufferMode type
+foldl and foldr functions
+-fvia-C option
+parseByte function
+evaluation
+unboxed values in arrays
+Left value 2nd
+Data.Map module 2nd
+PGM files
+reverse function
+foldl function and
+WriterT monad transformer
+high-order
+"color images, parsing"
+:set prompt 2nd
+fusion
+explicit recursion
+infix
+single-character escape codes
+mode based testing
+autocommit mode (databases)
+"Debian Linux, installing GHC/Haskell libraries"
+newtype declarations and
+event-driven programming
+getTables function
+messages
+"base case, induction"
+times
+Ptr type
+openFile function 2nd
+permissive types
+System.IO.Error module
+transformer stacking order and
+recursive types and
+stacking multiple
+tuples and
+Python 2nd 3rd
+directories and files
+using strong types and
+OverlappingInstances 2nd
+idempotency
+instances
+union keyword (C/C++)
+queries (database)
+Ternary type
+structures 2nd 3rd [See also data structures]
+"readable, writing"
+Data.Char module
+"lists, passing empty"
+space leaks 2nd 3rd
+PatternGuards
+newtype keyword and
+"FreeBSD, installing GHC/Haskell libraries"
+prefix notation
+strict
+parametric polymorphism
+interact
+common patterns
+Functor typeclass
+lifting
+weak head normal form (WHNF) 2nd 3rd
+show
+well typed rules
+GHC (Glasgow Haskell Compiler)
+partial functions
+value comparisons
+report flag (hpc)
+(>>=) function and 2nd 3rd
+garbage collecting
+ghci interpreter 2nd
+describeTable function
+supplying random numbers
+EmptyDataDecls
+inductive/recursive case and
+fold functions and
+transformer stacking and
+-funbox-strict-fields option 2nd
+fst function 2nd
+linking
+Word32 type
+values (undefined)
+syslog
+invisible data dependencies
+pointers
+readInt function 2nd
+monads and
+domain-specific language for
+withForeignPtr function
+Monads
+matching on
+type signatures
+error handling and
+point-free style
+turning two into many
+identity transformation (foldr)
+JSON typeclasses and
+Haskell 98
+debugging
+"Moggi, Eugenio"
+alternatives (value constructors)
+event-driven
+left fold functions
+FlexibleContexts
+"HPC, measuring test coverage with"
+type definitions and
+"high-level wrappers, blending C with Haskell"
+out of scope
+Word type
+"filesystems, searching"
+algebraic data types and
+lambda functions
+setFileTimes function
+product types
+import directive 2nd
+ForeignPtr type
+Data.Typeable module
+functors
+applicative
+MonadIO typeclass
+else keyword
+Nil
+listing directories with
+P3 (plain) netpbm image format
+type variables
+WHNF (weak head normal form) 2nd 3rd
+module declarations
+help command (ghci)
+stdout function
+tab (\t) character
+zipWith function
+filter function 2nd
+declaring instances
+return keyword
+thread maps
+list Monads and
+taking advantage of
+transformer stacking
+universal newline support and
+data keyword
+POSIX regular expressions
+duck typing
+thunks
+implicit state and
+Parsec and
+algebraic
+finding status of
+tail function 2nd 3rd 4th
+"pipe (|), separating value constructors"
+"memory management, binding C to Haskell"
+filesystems
+whitespace in expressions
+exceptions and
+impure code
+anchored regular expressions
+System.Environment module
+Google
+enumerating
+InfoP type 2nd
+plusPtr function
+parseChar function
+DeriveDataTypeable
+-fhpc flag
+unsafe keyword
+"databases, reading from"
+writeFile function
+grayscale image format 2nd
+foldr function and
+databases
+monad transformers
+realToFrac function
+local functions/global variables
+signatures
+UPC-A barcodes
+allocating data
+laziness and
+data types
+numeric types 2nd
+syntax
+deleting/renaming
+monads
+I/O and
+child sockets
+MySQL
+putStr function
+database engines
+backtracking
+tails function
+sequential sorting
+Data.Ratio module
+polymorphic types 2nd
+parameters
+force function
+GHC.Conc module 2nd
+local function
+"arithmetic expressions, writing"
+unlines function 2nd
+x86_64 assembly
+"row data, working with"
+"text mode, reading files"
+partial applications of
+split function
+raw (P5) netpbm format
+sum types
+embedded domain specific languages
+pcre.h header file
+local
+Data.Bits module
+text I/O and
+exports
+mapping over
+indices of arrays
+"Wadler, Philip"
+lazy languages
+shift function
+ByetString module
+components (types)
+quickCheck function
+.hsc files 2nd
+bison command
+getStatus function
+monads and 2nd
+ASCII control codes
+prompt directive (ghci)
+Iterator type
+string-handling
+hsc2hs
+System.Cmd module
+fold functions
+single quotes (')
+widgets (GUI programming)
+Oracle
+strict types
+safe keyword
+toInteger function
+queries
+hPrint function
+compilers
+program termination
+type inference 2nd
+primitive recursive functions
+deconstructors
+runtime options
+Control.Exception module 2nd 3rd
+throwing
+MapReduce and
+testing
+CSV files and
+C programming
+NoMonomorphismRestriction language extension
+monomorphism and
+JavaScript Object Notation [See JSON]
+property-based testing
+right identity [See (>>=) operator]
+record syntax and
+mainloop keyword
+replicate function
+new identities
+module headers
+gcc compiler
+System.Time module
+Parsec CSV files and
+decoding barcodes
+"parsers, handling"
+unwords function
+pi value
+conditional evaluation 2nd
+state
+classes
+lend function
+"expressions, passing"
+operator precedence and
+sort function
+objects 2nd
+MonadState typeclass
+zero-width escape sequences
+lazy
+profiling
+creating
+DeriveDataTypeable language
+custom data types for
+Numeric library
+triple (3-tuple)
+functions for 2nd
+Text.Regex.Posix module
+memory locations
+generics (Java)
+preprocessor
+processing [See file processing]
+pixels
+composable functors
+lazy evaluations
+I/O (input/output) and
+dates
+fractional division (/) option
+local variables
+null values
+Show typeclass
+"executables, creating"
+declarations (module)
+hsc2hs command
+Boolean logic
+polymorphic list types
+making instances
+threads
+"Fedora Linux, installing GHC/Haskell libraries"
+casual parsing for
+liftM function 2nd 3rd 4th
+shell scripting
+typeclasses
+query (database)
+"restrictions, relaxing"
+mutable references
+pack function
+ranges (pattern matching)
+quot function
+seek pointers
+temporary files
+two-dimensional arrays
+waiting for other threads
+MonadPlus typeclass
+monadic values
+h functions
+global variables
+conditional with guards
+command-line editing
+strings
+"data types, creating"
+binding C to Haskell
+list comprehensions
+splitting lines of
+floating-point numbers
+custom data types for errors
+starvation and
+flexible
+print function
+alist (association lists)
+XML
+value constructors
+MonadPlus and
+pivots
+System.FilePath module 2nd
+listArray function
+monomorphism restriction
+"line-aligned chunks, finding"
+normal form data
+applicative functor
+record syntax 2nd
+sqrt function
+vs. spaces
+sFetchAllRows' function
+DiffArray type
+MultiParamTypeClasses
+double hashing
+enumeration types
+injector functions
+transforming input and
+EmptyDataDecls language extension
+templates (C++)
+systems programming
+snd function
+lists and
+.tix files
+newtype keyword
+"definitions, constraints on"
+lifted functions
+boilerplate code
+rawSystem function 2nd
+type variables and
+text I/O
+folding from left
+"guidelines, using"
+maxBound function
+or function
+flex
+"recursive case, induction"
+System.Random module
+"scaled values, managing"
+"monad stack, replacing"
+quickQuery' function 2nd
+"Mac OS X, installing GHC/Haskell libraries"
+plain (P3) netpbm format
+LineBuffering mode (BufferMode)
+subtraction (-) option
+"CSV files, parsing"
+lookaheads (regular expressions)
+Data.Traversable module
+reuse
+strings and characters
+System.Exit module
+qualified imports
+recursion
+openBinaryTempFile function
+second function
+compiling source
+immutable lists
+purity 2nd 3rd [See also pure functions]
+object files
+fromRational function
+arbitrary function
+ODBC drivers
+multiline string literals
+-sstderr RTS option 2nd
+SqlValues type
+random numbers
+sequencing and
+left-biased functions
+Adler-32 checksum
+temporary
+CAFs (constant applicative forms)
+latency
+rnf function
+reporting
+functions
+Glade
+binding function [See (>>=) operator]
+running
+concurrent programs 2nd
+characters
+C programming language 2nd 3rd
+stack
+purity and
+"external programs, running with"
+polymorphism
+interact function
+character classes
+truncate function 2nd
+compiling source code
+hanging lambdas
+"latency, hiding"
+marshaling data
+:type command 2nd
+SqlError type
+user IDs (UIDs)
+PRNG (pseudorandom number generator)
+monads 2nd
+System.IO library
+monoids
+\t (tab) character
+universal newline support
+hSeek function
+System.Directory library
+fromIntegral function 2nd
+actions
+adding safely to PCRE
+hasElfMagic function
+"Windows, installing GHC/Haskell libraries"
+runghc program
+composite data types
+Word64 type
+type keyword
+recursive types
+unsafeIOToSTM function
+Perl
+Map type
+generator expressions
+C preprocessor and
+laziness and space leaks
+pattern matching
+atomically blocks
+communication between 2nd
+"interfaces, making code modular 2nd"
+key-value pairs
+System.Directory module 2nd 3rd
+Boolean values and
+ReaderT monad layer
+tuples
+string function
+System.Win32 module
+lines function 2nd 3rd
+leaky code
+hsc2hs and
+"Ubuntu Linux, installing GHC/Haskell libraries"
+point (.) character
+randomR function
+polymorphism and
+GET method (HTTP)
+HPC (Haskell Program Coverage)
+OverlappingInstances/TypeSynonymInstances language extensions and
+shared-state
+pseudorandom value generation
+widget descriptions saved as
+loop function
+parameterized types 2nd
+INSERT queries
+undefined symbols
+I/O
+functions and
+fromInteger function
+C PCRE API
+runtime statistics
+GeneralizedNewtypeDeriving 2nd 3rd
+sequencing
+using
+fold' function
+lookup function
+reading/modifying state
+peek function
+regular expressions
+UTC (Coordinated Universal Time)
+Line constructor
+side effects
+as-patterns
+parseTimes function
+syntactic sugar
+enum keyword (C/C++)
+"mutable, creating"
+MonadTrans class
+elem function
+RGB images
+hPutStrLn function
+numeric escapes
+file descriptors (FDs)
+maps and
+synchronizing variable
+"functions, passing to"
+control.Concurrent module
+head normal form (HNF)
+multiplication (*) option
+line function
+Control.Monad module 2nd
+searching
+malloc C function
+type constructors
+hFileSize function
+ill typed rules
+pcre_compile function
+functions for
+file processing and
+Data.List module
+shape of functors
+category theory
+types and purity
+mplus function
+Data.Monoid module
+NoBuffering mode (BufferMode)
+static types
+try keyword
+connecting
+web client programming
+Data.Sequence module
+Ruby
+transformers
+Bounded typeclass
+automatic derivation
+foldr function 2nd
+vs. tab characters
+precedence and associativity
+inductive case
+main loop (GUI programming)
+runST function
+cheap modifications
+EAN-13 barcodes
+IConnection typeclass
+escape characters
+file modifications and
+logBase function
+Quicksort algorithm
+Word8 type
+non-threaded runtime
+Build-Depends fields
+starvation
+STM monad and
+delete function
+deadlocks 2nd
+forkManaged function
+strong types
+source files
+positional types
+"random values, generating"
+defining new
+regexp [See regular expressions]
+String type
+Control.Parallel.Strategies module
+stub versions of types/functions
+IConnection function
+recip function
+Gen environment
+spines for maps
+immutable arrays
+types 2nd 3rd
+take function
+parsing
+where clause 2nd
+rendering
+test data and
+IO type
+Data.ByteString.Lazy.Char8 module
+ADT (abstract data types)
+zip function
+Haskell Program Coverage (HPC)
+barcodes
+waitFor function
+networking
+bounded variables
+readFile function 2nd 3rd
+BangPatterns
+PCRE library and
+constant applicative forms (CAFs)
+"binary data, parsing"
+filename matching
+pcre_fullinfo function
+"bloom filters, building"
+randoms function
+Control.Monad.Error module 2nd 3rd
+NoMonomorphismRestriction 2nd
+ghc compiler 2nd
+sections
+TypeSynonymInstances 2nd
+color images and
+files
+unlifted functions
+getClockTime function
+I/O (input/output)
+solution maps
+rem function
+"link time, using multiple cores"
+overlapping
+lazy I/O
+lazy reading from databases
+implicit state 2nd
+multiline literals
+gtk2hs
+"Parsec, using instead of"
+Control.Arrow module
+editing
+overlapping instances
+IO monad
+putStrLn function 2nd 3rd
+environment (programming)
+variable naming
+Graphics.UI.Gtk.Graphics.UI.Gtk.Glade module
+MapReduce (Google)
+sin function
+"external programs, running"
+Glasgow Haskell
+Database.HDBC module
+traverse function 2nd
+variables 2nd
+stderr function
+POST method (HTTP)
+boilerplate 2nd
+top level names
+testing [See quality assurance]
+wild card
+PCRE (Perl-compatible regular expression)
+Graphics.UI.Gtk module
+unsafePerformIO function
+subtype polymorphism
+evaluation strategies
+Parsec
+lazy reading
+"instances, writing"
+typeclasses and
+printf (C) option
+modification times
+stdin function
+Rational type
+-fvia-C GHC option
+Foreign.C.String module 2nd
+Map.insert function
+identities
+handle function
+binary I/O
+Coordinated Universal Time (UTC)
+lazy functions
+parallel programs 2nd
+netpbm file format 2nd
+readability of
+openTempFile function
+"numbers, supplying"
+threads and
+operators
+arithmetic
+FDs (file descriptors)
+arrays 2nd 3rd
+lock order inversion
+suffixes function
+vs. I/O
+HUnit library
+cases (value constructors)
+hash tables 2nd
+\r (carriage return) character
+number systems of barcodes
+typed pointers
+StateT monad transformer
+takeWhile function
+QuickCheck 2nd
+folding over arrays
+getStdRandom function
+PostgreSQL
+Ix type
+group function
+Data.List.lookup function
+modules
+closing file handles and
+prop_one_present function
+compact function
+pattern matches
+logical and (&&)
+cores
+"drivers (HDBC), installing"
+insert function
+"loops, working with"

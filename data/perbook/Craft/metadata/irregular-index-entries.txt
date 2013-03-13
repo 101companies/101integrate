@@ -1,0 +1,371 @@
+algebraic type!vs ADT
+primitive recursion!template
+design!index example
+classes!context
+error handling!error transmission
+monad!and imperative programming
+conventions!type comments in module headers
+classes!general form of definition
+function definition!layout
+parsing!top-level parser
+modules!export list
+abstract data type!queue!as list
+algebraic type!proofs
+pattern matching!repeated variables
+overloading!advantages of
+structural induction!trees
+modules!instance declarations
+monad!trees
+programming language!high-level
+substitution!duplication on
+I/O!returning a value
+graph!path in
+I/O!running a program
+type checking!and classes
+factorial!complexity of
+pattern matching!variables
+Web site!for Haskell
+design!list functions
+relation!family relations
+relation!transitive
+lists!tail
+pattern matching!literals
+parsing!monad
+errors!type abstraction
+value!defined
+function!number of arguments
+type!monomorphic
+evaluation!step-by-step
+layout!recommended
+lists!as processes
+lists!as sets
+parsing!basic parsers
+simulation!experimenting
+graph!routes through
+constructor!infix
+classes!and types
+guard!calculation
+induction!generalizing the goal
+monad!definition
+classes!instance
+tree!numeric
+overloading!literals
+induction!choice of induction variable
+type checking!polymorphic definitions
+pattern of computation!over lists
+sets!operations
+monad!identity
+function!first-class citizen
+equality!on pairs
+order!total
+algebraic type!alternatives
+programming paradigms!comparison
+design!and algebraic types
+abstract data type!queue
+structural induction!for lists
+evaluation!interrupt
+lists!partially defined
+induction!induction step
+evaluation!interruption
+I/O!files
+graph!search!depth-first
+constructor!unary
+numbers!random
+design!types
+abstract data type!queue!as two lists
+constraint!in type checking
+pattern matching!constructors
+polymorphism!and overloading
+overloaded literals!integer
+conventions!module file names
+polymorphism!function definition
+equation!conditional
+proof!abstract data types and
+list comprehensions!generator
+induction!induction hypothesis
+[28.05.12 23:57:27] Thomas Schmorleiz: I/O!capturing values read
+polymorphism!type checking
+abstract data type!sets
+design!and infinite lists
+proof!and safety-critical situations
+name!qualified
+function!higher-order
+I/O!errors
+proof!libraries of theorems
+case studies!Huffman codes
+errors!offside rule
+errors!module
+pattern matching!sequentiality of
+induction!justification of
+function application!syntax
+functional programming!pure
+proof!higher-level
+proof!higher-order functions
+primitive recursion!base case
+recursion!top-down
+I/O!local definitions
+parameter!formal
+relation!transitive closure
+recursion!base case
+instance!of variable
+type error!in application
+sorting!merge sort
+tree!binary
+pattern!wild card
+type checking!rule of cancellation
+name!overloading of
+Haskell!implementations
+proof!and testing
+list comprehensions!library database
+search tree!operations
+overloading!and polymorphism
+type checking!polymorphic function application
+behaviour!time
+classes!type checking
+monad!parsing
+algebraic type!general form
+errors!error message
+numbers!floating-point
+classes!putting together
+lists!as Pascal type
+design!iterative
+pitfalls!negative literals
+store!as a list
+type!most general
+value!error
+order!partial
+Haskell!prospects
+pattern!refutable
+complexity!space
+modules!structure diagram
+list comprehensions!infinite generators
+function!prefix
+function application!partial
+value!undefined
+complexity!linear
+lists!infinite!approximation to
+function!box diagram
+abstract data type!search tree!deletion
+associativity!left/right
+errors!syntax
+operator!calculation
+"Curry, Haskell B.!biography"
+operator!definitions of
+pattern matching!sequentiality
+design!type classes
+classes!and algebraic types
+constructor!pattern matching
+algebraic type!polymorphic
+design!divide and conquer
+operator!table of properties
+lists!and sets
+sets!behaviour of implementations
+monad!properties
+lists!minimum of
+lists!approach taken
+function!strict
+lists!constructor
+numbers!natural numbers
+coding!prefix codes
+classes!derived
+pattern matching!calculation
+conventions!list variables
+operator!infix
+search tree!deletion
+abstract data type!modifying implementation
+function composition!associative
+lists!finite/partial
+case studies!simulation
+modules!errors
+modules!ADT via export list
+list comprehensions!pitfalls
+list comprehensions!syntax
+lists!infinite
+folding!and primitive recursion
+operator!type checking
+definition!function
+complexity!quadratic
+function!lazy
+function!binary
+lists!permutations
+list comprehensions!test
+abstraction!type
+I/O!imperative programs
+numbers!floating point
+pitfalls!list comprehensions
+classes!numeric
+type!base
+modules!import list
+Haskell!Haskell 2010
+numbers!integers
+calculation!guards
+modules!introduction
+type declaration!for function
+errors!and classes
+design!what if
+context!multiple
+design!and behaviour
+function!curried
+partial application!type of
+type!abstract
+recursion!and calculation
+case studies!pictures
+I/O!basics
+design!function composition
+name!value
+case studies!calculator
+type checking!function definitions
+recursion!justification
+numbers!defined
+conventions!types specified
+local definitions!calculation
+testing!black box
+imperative programming!and monads
+name!type
+numbers!prime
+design!bottom up
+recursion!primitive
+store!as a ADT
+list comprehensions!multiple generators
+calculation!over graphs
+lists!defined
+abstract data type!and classes
+function!selector
+type checking!constraints
+classes!and ADTs
+recursion!general
+type checking!instance error
+equality!infinite lists
+inheritance!multiple
+design!modules
+parameter!actual
+sets!product
+classes!as adjective
+recursion!bottom-up
+relation!composition
+pitfalls!infinite list generators
+conventions!local type declarations
+design!choices in
+lists!partial
+program development!in practice
+overloading!reason for
+classes!default definitions
+structural induction!expression type
+identifier!reserved
+operator!as function
+monad!advantages of monads
+error handling!error trapping
+type!numeric types
+type!importance of types
+function definition!general form
+abstract data type!search tree
+parsing!combinators
+text processing!splitting into words
+Web site!sites with further information
+sorting!quicksort
+sorting!insertion
+Haskell!further features
+proof!by cases
+operator!binding power of
+error handling!error type
+evaluation!definedness of
+testing!special cases
+operator!associativity of
+list comprehensions!calculation rules
+lists!head
+lists!bisection of
+errors!program
+type error!ADT
+primitive recursion!recursive case
+design!top-down
+folding!designing folds
+function!inverse
+function definition!as description
+behaviour!space
+induction!for lists
+sets!and lists
+testing!library database
+graph!strongly connected components
+classes!overriding defaults
+I/O!loops and recursion
+function!definition of polymorphic
+parsing!library
+coding!Huffman
+induction!finding proofs
+instance!different uses in Haskell
+induction!base case
+design!data-directed
+testing!white box
+recursion!mutual
+tree!branch length
+type!constraint
+function composition!as pipeline
+graph!search
+pattern matching!in expressions
+partial application!and currying
+type!instance
+lists!defining functions
+function!infix
+variable!type
+function!infix version of
+instance!of class
+numbers!integer literals
+type checking!polymorphic
+monad!failure in
+complexity!time
+store!as function
+list comprehensions!refutable patterns
+type error!instance error
+pattern!consistent with type
+calculation!rules
+testing!testing groups
+I/O!output
+abstract data type!signature
+currying!reasons for
+proof!non-primitive recursive
+parsing!expressions
+abstract data type!store
+monad!state
+variable!free
+testing!and proof
+proof!algebraic types
+I/O!as lazy lists
+design!Huffman coding system
+recursion!recursion step
+tree!balanced
+instance!derived
+function!overloaded
+calculation!and recursion
+definition!visibility of
+errors!type
+simulation!the queue
+primitive recursion!and folding
+relation!operations
+pattern matching!conformal
+function!definition
+graph!search!breadth-first
+abstract data type!search tree!insertion
+Boolean!guard
+constructor!binary
+syntax!of application
+algebraic type!pattern matching
+proof!function level
+modules!interface documentation
+type checking!monomorphic
+function definition!general case!single equation
+list comprehensions!infinite
+design!error handling
+conventions!type variable names
+search tree!insertion
+pattern matching!algebraic type
+higher-order function!proofs
+value!literal
+proof!as documentation
+constructor!nullary
+pattern matching!wildcard
+simulation!the server
+coding!tree
+function!representing properties
+design!abstract data types
+recursive type!mutually recursive
+tuples!and lists

@@ -1,0 +1,14 @@
+http://learnyouahaskell.com/introduction
+http://learnyouahaskell.com/starting-out
+http://learnyouahaskell.com/types-and-typeclasses
+http://learnyouahaskell.com/syntax-in-functions
+http://learnyouahaskell.com/recursion
+http://learnyouahaskell.com/higher-order-functions
+http://learnyouahaskell.com/modules
+http://learnyouahaskell.com/making-our-own-types-and-typeclasses
+http://learnyouahaskell.com/input-and-output
+http://learnyouahaskell.com/functionally-solving-problems
+http://learnyouahaskell.com/functors-applicative-functors-and-monoids
+http://learnyouahaskell.com/a-fistful-of-monads
+http://learnyouahaskell.com/for-a-few-monads-more
+http://learnyouahaskell.com/zippers

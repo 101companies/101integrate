@@ -1,0 +1,17 @@
+{"chapters":
+	[{"file":"chapter3.tex", "title": "First steps"},
+	{"file":"chapter4.tex", "title": "Types and classes"},
+	{"file":"chapter5.tex", "title": "Defining functions"},
+	{"file":"chapter6.tex", "title": "List comprehensions"},
+	{"file":"chapter7.tex", "title": "Recursive functions"},
+	{"file":"chapter8.tex", "title": "Higher-order functions"},
+	{"file":"chapter9.tex", "title": "Functional parsers"},
+	{"file":"chapter10.tex", "title": "Interactive programs"},
+	{"file":"chapter11.tex", "title": "Declaring types and classes"},
+	{"file":"chapter12.tex", "title": "The countdown problem"},
+	{"file":"chapter13.tex", "title": "Lazy evaluation"},
+	{"file":"chapter14.tex", "title": "Reasoning about programs"}
+	]
+}
+
+

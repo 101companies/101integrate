@@ -1,0 +1,71 @@
+Kind,IndexTerm,WikiTerm,Comment,Opinion,Resolution
+TERM,action,Action,,ok,
+TERM,algebraic,Algebraic data type,,ok,
+TERM,algebraic type,Algebraic data type,,ok,
+TERM,base case,Base case,,ok,
+TERM,bool,Boolean type,,discuss,deferred
+TERM,calculation,Calculation,,ok,
+TERM,class,Type class,,ok,
+TERM,code,Code,,ok,
+TERM,coding,Coding,,discuss,redirect
+TERM,command,Command,,ok,
+TERM,complexity,Complexity,,ok,
+TERM,constructor,Data constructor,,ok,
+TERM,database,Database,,ok,
+TERM,design,Software design,,discuss,ok(programDesignMoreApplicable)
+TERM,equality,Equality,,ok,
+TERM,evaluation,Model of evaluation,,discuss,ok(differentChapter)
+TERM,file,File,,ok,
+TERM,filter,Filter function,,ok,
+TERM,float,Float type,,discuss,deferred
+TERM,folding,Fold,,ok,
+TERM,foldr,Fold function,,ok,
+TERM,GHCi,Technology:GHCi,,ok,
+TERM,guard,Guard,,ok,
+TERM,head,Head of the list,,discuss,ok(notSoLongPlease)
+TERM,I/O,Input/output,,withdraw,ok
+TERM,induction,Induction,,ok,
+TERM,IO,Input/output,,withdraw,ok
+TERM,local,Local scope,,ok,
+TERM,map,Map function,,ok,
+TERM,maximum,Extremum,,discuss,add
+TERM,model,Model,,discuss,add(Data model because it is one popular meaning)
+TERM,module,Module,,ok,
+TERM,monad,Monad,,ok,
+TERM,operator,Arithmetic operator,,discuss,perhapsAddSpecialKindsOfoperators
+TERM,package,Package,,ok,
+TERM,parser,Parser,,ok,
+TERM,partial,generalEnglish,,ok,
+TERM,partial application,Partial application,,ok,
+TERM,pattern matching,Pattern matching,,ok,
+TERM,picture,Picture,,ok,
+TERM,prelude,Prelude,,ok,
+TERM,proof,Proof,,ok,
+TERM,queue,Queue,,ok,
+TERM,random,Random value,,discuss,perhaps(random data)
+TERM,recursion,Recursion,,ok,
+TERM,regular expression,Regular expression,,ok,
+TERM,set,Set,,ok,
+TERM,state,State,,ok,
+TERM,strict,Strict evaluation,,ok,
+TERM,testing,Testing,,ok,
+TERM,text,Text,,ok,
+TERM,tree,Tree,,ok,
+TERM,tuple,Tuple,,ok,
+TERM,type checking,Type checking,,ok,
+TITLE,Algebraic.types,,,,
+TITLE,Reasoning.about.programs,,,,
+TITLE,Programming.with.lists,,,,
+TITLE,Overloading..type.classes.and.type.checking,,,,
+TITLE,Domain.Specific.Languages,,,,
+TITLE,Lazy.programming,,,,
+TITLE,Developing.higher.order.program,,,,
+TITLE,Defining.functions.over.lists,,,,
+TITLE,Generalization..patterns.of.computation,,,,
+TITLE,Data.types..tuples.and.lists,,,,
+TITLE,Getting.started.with.Haskell.and.GHCi,,,,
+TITLE,Designing.and.writing.programs,,,,
+TITLE,Case.study..Huffman.codes,,,,
+TITLE,Time.and.space.behaviour,,,,
+TITLE,Programming.with.monads,,,,
+TITLE,Playing.the.game..I.O.in.Haskell,,,,

@@ -1,0 +1,35 @@
+"","Term","Starting.Out","Types.and.Typeclasses","Syntax.in.Functions","Recursion","Higher.Order.Functions","Modules","Making.Our.Own.Types.and.Typeclasses","Input.and.Output","Functors..Applicative.Functors.and.Monoids","A.Fistful.of.Monads","For.a.Few.Monads.More","Zippers"
+"1","accumulator",NA,NA,NA,NA,36,NA,NA,NA,NA,NA,NA,NA
+"2","applicative",NA,NA,NA,NA,NA,NA,NA,NA,68,32,NA,NA
+"3","class",NA,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"4","comprehension",23,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"5","condition",NA,NA,NA,18,NA,NA,NA,NA,NA,NA,NA,NA
+"6","constructor",NA,NA,NA,NA,NA,NA,95,NA,48,NA,NA,NA
+"7","context",NA,NA,NA,NA,NA,NA,NA,NA,NA,54,61,NA
+"8","data structure",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,11
+"9","declaration",NA,10,NA,NA,NA,NA,52,NA,NA,NA,NA,NA
+"10","exception",NA,NA,NA,NA,NA,NA,NA,48,NA,NA,NA,NA
+"11","expression",NA,17,22,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"12","factorial",NA,NA,10,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"13","file",NA,NA,NA,NA,NA,NA,NA,138,NA,NA,NA,48
+"14","filter",NA,NA,NA,NA,16,NA,NA,NA,NA,NA,NA,NA
+"15","fold",NA,NA,NA,NA,45,NA,NA,NA,NA,NA,NA,NA
+"16","functor",NA,NA,NA,NA,NA,NA,NA,NA,98,NA,NA,NA
+"17","guard",NA,NA,24,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"18","I/O",NA,NA,NA,NA,NA,NA,NA,203,NA,NA,NA,NA
+"19","input",NA,NA,NA,NA,NA,NA,NA,54,NA,NA,NA,NA
+"20","list comprehension",12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"21","map",NA,NA,NA,NA,16,27,NA,NA,NA,NA,NA,NA
+"22","maximum",NA,NA,NA,21,NA,NA,NA,NA,NA,NA,NA,NA
+"23","module",NA,NA,NA,NA,NA,69,NA,NA,NA,NA,NA,NA
+"24","monad",NA,NA,NA,NA,NA,NA,NA,NA,NA,55,87,NA
+"25","monadic value",NA,NA,NA,NA,NA,NA,NA,NA,NA,41,47,NA
+"26","newtype",NA,NA,NA,NA,NA,NA,NA,NA,48,NA,NA,NA
+"27","pattern matching",NA,NA,19,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"28","predicate",11,NA,NA,NA,NA,25,NA,NA,NA,NA,NA,NA
+"29","recursion",NA,NA,NA,15,NA,NA,NA,NA,NA,NA,NA,NA
+"30","stack",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,47,NA
+"31","tail",NA,NA,NA,16,NA,NA,NA,NA,NA,NA,NA,NA
+"32","tree",NA,NA,NA,NA,NA,NA,66,NA,NA,NA,NA,149
+"33","typeclass",NA,14,NA,NA,NA,NA,51,NA,NA,NA,NA,NA
+"34","zipper",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,28

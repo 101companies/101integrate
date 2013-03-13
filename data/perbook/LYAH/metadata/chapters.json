@@ -1,0 +1,16 @@
+{"chapters":
+   [{"file":"starting-out.txt", "title": "Starting Out"},
+    {"file":"types-and-typeclasses.txt", "title": "Types and Typeclasses"},
+    {"file":"syntax-in-functions.txt", "title": "Syntax in Functions"},
+    {"file":"recursion.txt", "title": "Recursion"},
+    {"file":"higher-order-functions.txt", "title": "Higher Order Functions"},
+    {"file":"modules.txt", "title": "Modules"},
+    {"file":"making-our-own-types-and-typeclasses.txt", "title": "Making Our Own Types and Typeclasses"},
+    {"file":"input-and-output.txt", "title": "Input and Output"},
+    {"file":"functors-applicative-functors-and-monoids.txt", "title": "Functors, Applicative Functors and Monoids"},
+    {"file":"a-fistful-of-monads.txt", "title": "A Fistful of Monads"},
+    {"file":"for-a-few-monads-more.txt", "title": "For a Few Monads More"},
+    {"file":"zippers.txt", "title": "Zippers"}]
+}
+
+

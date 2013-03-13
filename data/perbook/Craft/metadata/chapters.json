@@ -1,0 +1,22 @@
+{"chapters":
+	[{"file":"2.tex", "title": "Getting started with Haskell and GHCi"},
+	 {"file":"3.tex", "title": "Basic types and definitions"},
+	 {"file":"4.tex", "title": "Designing and writing programs"},
+	 {"file":"5.tex", "title": "Data types, tuples and lists"},
+	 {"file":"6.tex", "title": "Programming with lists"},
+	 {"file":"7.tex", "title": "Defining functions over lists"},
+	 {"file":"8.tex", "title": "Playing the game: I/O in Haskell"},
+	 {"file":"9.tex", "title": "Reasoning about programs"},  
+	 {"file":"10.tex", "title": "Generalization: patterns of computation"},
+	 {"file":"11.tex", "title": "Higher-order functions"},
+	 {"file":"12.tex", "title": "Developing higher-order programs"}, 
+	 {"file":"13.tex", "title": "Overloading, type classes and type checking"},
+	 {"file":"14.tex", "title": "Algebraic types"},
+	 {"file":"15.tex", "title": "Case study: Huffman codes"}, 
+	 {"file":"16.tex", "title": "Abstract data types"},
+	 {"file":"17.tex", "title": "Lazy programming"},
+	 {"file":"18.tex", "title": "Programming with monads"},
+	 {"file":"19.tex", "title": "Domain-Specific Languages"},
+	 {"file":"20.tex", "title": "Time and space behaviour"}]
+}
+ 

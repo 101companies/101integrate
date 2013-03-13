@@ -1,0 +1,10 @@
+List of data files that combine somehow all books
+
+Important files
+- unionTopFrequencies* ... union of the most frequent terms over all books
+- unionScatterness* ... union of the most scattered terms over all books
+- consolidatedMapping.tex ... ???
+
+Auxiliary files
+- ranks.tex ... ranking of words (including general English)
+
