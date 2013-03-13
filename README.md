@@ -1,15 +1,6 @@
 # Summary
 
-This repo contributes to the 101companies Project. 101integrate is a framework for the integration of knowledge resources. At this point, the framework specifically addresses vocabulary integration and cross-referencing betweem Haskell textbooks and 101wiki.
-
-# Non-online resources
-
-2 out of 4 Haskell books are not available online. If you have offline access to them, please link them as follows. We assume that the books' sources are available per a "haskellbooks" folder. For example, you may have this folder in your Dropbox directory.
-
-    cd data/perbook/PIH
-    ln -s ~/Dropbox/haskellbooks/clean/PIH/contents
-    cd ../Craft
-    ln -s ~/Dropbox/haskellbooks/clean/Craft/contents
+This repo contributes to the 101companies Project. 101integrate is a framework for the integration of knowledge resources. At this point, the framework specifically addresses vocabulary integration and cross-referencing betweem Haskell textbooks and 101wiki. Currently, 4 Haskell textbooks are supported.
 
 # Tool dependencies
 
@@ -17,17 +8,34 @@ Make sure all dependencies are installed.
 
 You need System R: http://www.r-project.org/
 
-Execute these commands:
+You need a bunch of Python packages and some NLP support.
 
-    cd src
-    make download-deps
+This is taken care of by this command:
+
+    download-deps:
 
 When the NLTK downloader pops up, select all corpora for download.
 
+# Online textbooks
+
+2 of the supported textbooks are available online. They are not included into the repo. They must be downloaded with the following command:
+
+# Offline textbooks
+
+2 of the supported textbooks are not available online. If you have offline access to them, please link them as demonstrated by the make target "link-books". That is, if the books' sources are available per a "haskellbooks" folder in your dropbox, then the following command suffices:
+
+    make link-books
+
+Most likely, you don't have access to the books' sources. In this case, the scripts need to be adjusted to ignore these books. We will make the process adaptive so that you don't need to bother, but for the moment you need to.
+
 # Mining and analyzing
+
+Run these commands:
 
     make mine
     make analyze
+
+These commands will create various data files in data/allbooks and data/perbook/*.
 
 # Mining phase
 
