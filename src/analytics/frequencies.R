@@ -14,7 +14,9 @@ print(args)
 folder <- args[1]
 print(folder)
 
-frequencies <- read.csv(paste("../../data/perbook/",folder,"/frequenciesMerged.csv", sep=""), sep=";")
+dataRoot <- "../../data"
+
+frequencies <- read.csv(paste(dataRoot, "/perbook/", folder, "/frequenciesMerged.csv", sep=""), sep=";")
 print(frequencies)
 sorterFreq = frequencies[with(frequencies, order(-frequencies$Frequency)),]
 
@@ -48,10 +50,10 @@ top30 <- top30[order(top30$Term),]
 #      size="small", scalebox=0.7,
 #      file=paste(folder, '/topFrequency.tex', sep = ""))
 
-write.csv(top30, paste(folder, '/topFrequency.csv', sep = ""))
+write.csv(top30, paste(dataRoot, "/perbook/", folder, '/topFrequency.csv', sep = ""))
 
 print(folder)
-frequenciesDistribution <- read.csv(paste("../../data/perbook/", folder, "/frequenciesDistributionmerged.csv", sep=""), sep=";", quote="\"")
+frequenciesDistribution <- read.csv(paste(dataRoot, "/perbook/", folder, "/frequenciesDistributionmerged.csv", sep=""), sep=";", quote="\"")
 
 #the following line should be uncommented if R studio is used
 #frequenciesDistribution <- read.csv("~/projects/101nonpublic/tools/icfp2012/books/Craft/frequenciesDistributionmerged.csv",sep=";", quote="\"", head=TRUE)
@@ -97,8 +99,8 @@ names(scattered) <- c("Term", "Chapters")
 
 names(top20percent) <- c("Term", "Chapters")
 row.names(top20percent) <- seq(nrow(top20percent))
-write.csv(top20percent, paste(folder, '/topScattered.csv', sep = ""))
-write.csv(scattered, paste(folder, '/scattered.csv', sep = ""))
+write.csv(top20percent, paste(dataRoot, "/perbook/", folder, '/topScattered.csv', sep = ""))
+write.csv(scattered, paste(dataRoot, "/perbook/", folder, '/scattered.csv', sep = ""))
 # end
 
 rows.in.a1.that.are.not.in.a2  <- function(a1,a2){
@@ -168,12 +170,12 @@ pv <- cast(localTerms, Term ~ Chapter)
 pivot <- pv[order(pv$Term),]
 
 #print(xtable(pivot))
-print(xtable(pivot, label=paste('F:', folder, 'chaptersProfile', sep = ""), caption=paste(folder,": chapter profiles. Top 5 terms per chapter (excluding TOP scattered terms)", sep = "")),
-      file=paste(folder, '/', folder, '.numbers', sep = ""),
-      include.rownames=FALSE, size="small", scalebox=0.3,
-      rotate.colnames=TRUE) #floating.environment='sidewaystable'
+#print(xtable(pivot, label=paste('F:', folder, 'chaptersProfile', sep = ""), caption=paste(folder,": chapter profiles. Top 5 terms per chapter (excluding TOP scattered terms)", sep = "")),
+#      file=paste(folder, '/', folder, '.numbers', sep = ""),
+#      include.rownames=FALSE, size="small", scalebox=0.3,
+#      rotate.colnames=TRUE) #floating.environment='sidewaystable'
 
-write.csv(pivot, paste(folder, '/chaptersProfile.csv', sep = ""))
+write.csv(pivot, paste(dataRoot, "/perbook/", folder, '/chaptersProfile.csv', sep = ""))
 
 compareNA <- function(v1,v2) {
   # This function returns TRUE wherever elements are the same, including NA's,
@@ -230,11 +232,13 @@ cn1 <- append(cn, "Term", after=0)
 colnames(res1) <- cn1
 
 
-print(xtable(res1, label=paste('F:', folder, 'chaptersProfileVisual', sep = ""), caption=paste(folder,": chapter profiles. Top 5 terms per chapter (excluding TOP scattered terms)", sep = "")),
-      file=paste(folder, '/', folder, '.visual', sep = ""),
-      sanitize.text.function = function(x){x},
-      include.rownames=FALSE, size="small", scalebox=0.3,
-      rotate.colnames=TRUE)
+#print(xtable(res1, label=paste('F:', folder, 'chaptersProfileVisual', sep = ""), caption=paste(folder,": chapter profiles. Top 5 terms per chapter (excluding TOP scattered terms)", sep = "")),
+#      file=paste(folder, '/', folder, '.visual', sep = ""),
+#      sanitize.text.function = function(x){x},
+#      include.rownames=FALSE, size="small", scalebox=0.3,
+#      rotate.colnames=TRUE)
+
+write.csv(res1, paste(dataRoot, "/perbook/", folder, '/chaptersProfileVisual.csv', sep = ""))
 
 #g <- graph.empty()
 

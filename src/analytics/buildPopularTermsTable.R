@@ -1,16 +1,16 @@
 library("xtable")
 
-#~/projects/101nonpublic/tools/icfp2012/analytics/
-topFrequencyCraft <- read.csv("Craft/topFrequency.csv")
-topFrequencyPih <- read.csv("PIH/topFrequency.csv")
-topFrequencyRwh <- read.csv("RWH/topFrequency.csv")
-topFrequencyLyah <- read.csv("LYAH/topFrequency.csv")
+dataRoot <- "../../data"
 
-#~/projects/101nonpublic/tools/icfp2012
-frequencyCraft <- read.csv("../../data/perbook/Craft/frequenciesmerged.csv", sep=";")
-frequencyPih <- read.csv("../../data/perbook/PIH/frequenciesmerged.csv", sep=";")
-frequencyRwh <- read.csv("../../data/perbook/RWH/frequenciesmerged.csv", sep=";")
-frequencyLyah <- read.csv("../../data/perbook/LYAH/frequenciesmerged.csv", sep=";")
+topFrequencyCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/topFrequency.csv", sep=""))
+topFrequencyPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/topFrequency.csv", sep=""))
+topFrequencyRwh <- read.csv(paste(dataRoot, "/perbook/", "RWH/topFrequency.csv", sep=""))
+topFrequencyLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/topFrequency.csv", sep=""))
+
+frequencyCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/frequenciesmerged.csv", sep=""), sep=";")
+frequencyPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/frequenciesmerged.csv", sep=""), sep=";")
+frequencyRwh <- read.csv(paste(dataRoot, "/perbook/", "RWH/frequenciesmerged.csv", sep=""), sep=";")
+frequencyLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/frequenciesmerged.csv", sep=""), sep=";")
 
 frequencyCraft <- subset(frequencyCraft, select=c(1,4))
 frequencyPih <- subset(frequencyPih, select=c(1,4))
@@ -38,12 +38,12 @@ for(t in union$Term) if(t %in% as.vector(frequencyPih$Term)) union[which(union$T
 for(t in union$Term) if(t %in% as.vector(frequencyRwh$Term)) union[which(union$Term == t),4] <- frequencyRwh[which(frequencyRwh$Term == t),2]
 for(t in union$Term) if(t %in% as.vector(frequencyLyah$Term)) union[which(union$Term == t),5] <- frequencyLyah[which(frequencyLyah$Term == t),2]
 
-write.csv(union, "unionTopFrequencies.csv")
+write.csv(union, paste(dataRoot, "/allbooks/", "/unionTopFrequencies.csv", sep=""))
 
-print(xtable(union, label=paste('F:unionTopFrequencies', sep = ""), caption="Union of TOP 30 frequent terms from the books"),
-      file="unionTopFrequencies.tex", scalebox=0.7,
-      include.rownames=FALSE,  
-      rotate.colnames=FALSE)
+#print(xtable(union, label=paste('F:unionTopFrequencies', sep = ""), caption="Union of TOP 30 frequent terms from the books"),
+#      file="unionTopFrequencies.tex", scalebox=0.7,
+#      include.rownames=FALSE,  
+#      rotate.colnames=FALSE)
 
 #- One column per book showing popularity per book in a percentile-based manner:
 #* empty cell = no occurrence in the given book
@@ -94,15 +94,17 @@ res <- cbind(res, data.frame(lyahColumn))
 
 names(res) <- c("Term", "Craft", "PIH", "RWH", "LYAH")
 
-print(xtable(res, label=paste('F:unionTopFrequenciesVisual', sep = ""), 
-             caption="Union of TOP 30 frequent terms from the books. empty cell - no occurrence in the given book.
-        \\oneDot{} -- frequency is 1.
-        \\belowMdot{} -- below median but larger than 1.
-        \\greaterMdot{} -- greater or above median.
-        \\ensuremath{\\topNdot{}} -- in the top 5.", latex.environment="center"),
-      file="unionTopFrequenciesVisual.tex",
-      sanitize.text.function = function(x){x},
-      scalebox=0.8, include.rownames=FALSE,  
-      rotate.colnames=FALSE)
+#print(xtable(res, label=paste('F:unionTopFrequenciesVisual', sep = ""), 
+#             caption="Union of TOP 30 frequent terms from the books. empty cell - no occurrence in the given book.
+#        \\oneDot{} -- frequency is 1.
+#        \\belowMdot{} -- below median but larger than 1.
+#        \\greaterMdot{} -- greater or above median.
+#        \\ensuremath{\\topNdot{}} -- in the top 5.", latex.environment="center"),
+#      file="unionTopFrequenciesVisual.tex",
+#      sanitize.text.function = function(x){x},
+#      scalebox=0.8, include.rownames=FALSE,  
+#      rotate.colnames=FALSE)
+
+write.csv(res, paste(dataRoot, "/allbooks/", "unionTopFrequenciesVisual.csv", sep=""))
 
 print(qCraft)

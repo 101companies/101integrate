@@ -3,7 +3,7 @@ BOOKS = LYAH RWH Craft PIH
 analyze:
 	make frequencies
 	make popular
-	make move
+	#make move
 
 prepare:
 	R < dependencies.R --no-save
@@ -17,6 +17,7 @@ popular:
 	R < buildPopularTermsTable.R --no-save
 	R < buildPopularScatteredTermsTable.R --no-save
 	R < rank.R --no-save
+
 move:
 	mv Craft/Craft.numbers ../../data/perbook/Craft/chapterProfile.numbers.tex
 	mv Craft/Craft.visual ../../data/perbook/Craft/chapterProfile.visual.tex
@@ -43,7 +44,7 @@ move:
 	mv unionTopFrequencies.tex ../../data/allbooks/
 	mv unionTopFrequencies.csv ../../data/allbooks/
 	mv unionTopFrequenciesVisual.tex ../../data/allbooks/
-	
+
 	mv unionTopScatterness.tex ../../data/allbooks/
 	mv unionTopScatterness.csv ../../data/allbooks/
 	mv unionTopScatternessVisual.tex ../../data/allbooks/

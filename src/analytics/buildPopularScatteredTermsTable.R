@@ -1,16 +1,18 @@
 library("xtable")
 
-topScatteredCraft <- read.csv("Craft/topScattered.csv")
-topScatteredPih <- read.csv("PIH/topScattered.csv")
-topScatteredRhw <- read.csv("RWH/topScattered.csv")
-topScatteredLyah <- read.csv("LYAH/topScattered.csv")
+dataRoot <- "../../data"
 
-scatteredCraft <- read.csv("Craft/scattered.csv")
-scatteredPih <- read.csv("PIH/scattered.csv")
-scatteredRwh <- read.csv("RWH/scattered.csv")
-scatteredLyah <- read.csv("LYAH/scattered.csv")
+topScatteredCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/topScattered.csv", sep=""))
+topScatteredPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/topScattered.csv", sep=""))
+topScatteredRhw <- read.csv(paste(dataRoot, "/perbook/", "RWH/topScattered.csv", sep=""))
+topScatteredLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/topScattered.csv", sep=""))
 
-unionTopFrequencies <- read.csv("unionTopFrequencies.csv", stringsAsFactors=FALSE)
+scatteredCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/scattered.csv", sep=""), sep=",")
+scatteredPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/scattered.csv", sep=""), sep=",")
+scatteredRwh <- read.csv(paste(dataRoot, "/perbook/", "RWH/scattered.csv", sep=""), sep=",")
+scatteredLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/scattered.csv", sep=""), sep=",")
+
+unionTopFrequencies <- read.csv(paste(dataRoot, "/allbooks/", "unionTopFrequencies.csv", sep=""), sep=",", stringsAsFactors=FALSE)
 topFrequentTerms <- as.vector(unionTopFrequencies$Term)
 
 scatteredCraft <- subset(scatteredCraft, select=c(2,3))
@@ -37,12 +39,12 @@ for(t in union$Term) if(t %in% as.vector(scatteredPih$Term)) union[which(union$T
 for(t in union$Term) if(t %in% as.vector(scatteredRwh$Term)) union[which(union$Term == t),4] <- scatteredRwh[which(scatteredRwh$Term == t),2]
 for(t in union$Term) if(t %in% as.vector(scatteredLyah$Term)) union[which(union$Term == t),5] <- scatteredLyah[which(scatteredLyah$Term == t),2]
 
-write.csv(union, "unionTopScatterness.csv")
+write.csv(union, paste(dataRoot, "/allbooks/", "unionTopScatterness.csv", sep=""))
 
-print(xtable(union, caption="Union of the terms scattered more than over 80\\% of the chapters"),
-      file="unionTopScatterness.tex",
-      include.rownames=FALSE,  
-      rotate.colnames=FALSE)
+#print(xtable(union, caption="Union of the terms scattered more than over 80\\% of the chapters"),
+#      file="unionTopScatterness.tex",
+#      include.rownames=FALSE,  
+#      rotate.colnames=FALSE)
 
 #- One column per book showing popularity per book in a percentile-based manner:
 #* empty cell = no occurrence in the given book
@@ -107,14 +109,16 @@ res <- cbind(res, data.frame(lyahColumn))
 
 names(res) <- c("Term", "Craft", "PIH", "RWH", "LYAH")
 
-print(xtable(res, label=paste('F:unionTopScatternessVisual', sep = ""), 
-             caption="Union of TOP 30 scattered terms from the books. empty cell - no occurrence in the given book.
-        \\oneDot{} -- frequency is 1.
-             \\belowMdot{} -- below median but larger than 1.
-             \\greaterMdot{} -- greater or above median.
-             \\topNdot{} -- in the top 5.", latex.environment="center"),
-      file="unionTopScatternessVisual.tex",
-      scalebox=0.8,
-      sanitize.text.function = function(x){x},
-      include.rownames=FALSE,  
-      rotate.colnames=FALSE)
+#print(xtable(res, label=paste('F:unionTopScatternessVisual', sep = ""), 
+#             caption="Union of TOP 30 scattered terms from the books. empty cell - no occurrence in the given book.
+#        \\oneDot{} -- frequency is 1.
+#             \\belowMdot{} -- below median but larger than 1.
+#             \\greaterMdot{} -- greater or above median.
+#             \\topNdot{} -- in the top 5.", latex.environment="center"),
+#      file="unionTopScatternessVisual.tex",
+#      scalebox=0.8,
+#      sanitize.text.function = function(x){x},
+#      include.rownames=FALSE,  
+#      rotate.colnames=FALSE)
+write.csv(res, paste(dataRoot, "/allbooks/", "unionTopScatternessVisual.csv", sep=""))
+
