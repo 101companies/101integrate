@@ -44,9 +44,10 @@ sorterFreq = frequencies[with(frequencies, order(-frequencies$Frequency)),]
 top30 <-  subset(sorterFreq[0:30,], select=c(1,4))
 row.names(top30) <- seq(nrow(top30))
 top30 <- top30[order(top30$Term),]
-print(xtable(top30, label=paste('F:', folder, 'topFrequency', sep = ""), caption=paste("Top 30 terms from ", folder, sep = "")), include.rownames=FALSE, 
-      size="small", scalebox=0.7,
-      file=paste(folder, '/topFrequency.tex', sep = ""))
+#print(xtable(top30, label=paste('F:', folder, 'topFrequency', sep = ""), caption=paste("Top 30 terms from ", folder, sep = "")), include.rownames=FALSE, 
+#      size="small", scalebox=0.7,
+#      file=paste(folder, '/topFrequency.tex', sep = ""))
+
 write.csv(top30, paste(folder, '/topFrequency.csv', sep = ""))
 
 print(folder)
@@ -90,9 +91,9 @@ names(top20percent) <- c("Term", "Chapters (%)")
 scattered <- subset(sorterRes, select=c(2,3))
 names(scattered) <- c("Term", "Chapters")
 
-print(xtable(top20percent, label=paste('F:', folder, 'topScattered', sep = ""), caption=paste(folder,": terms scattered across more than 80\\% chapters", sep = "")),
-      file=paste(folder, '/topScattered.tex', sep = ""),
-      scalebox=0.7, include.rownames=FALSE)
+#print(xtable(top20percent, label=paste('F:', folder, 'topScattered', sep = ""), caption=paste(folder,": terms scattered across more than 80\\% chapters", sep = "")),
+#      file=paste(folder, '/topScattered.tex', sep = ""),
+#      scalebox=0.7, include.rownames=FALSE)
 
 names(top20percent) <- c("Term", "Chapters")
 row.names(top20percent) <- seq(nrow(top20percent))
