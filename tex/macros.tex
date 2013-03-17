@@ -1,0 +1,137 @@
+% 101
+
+\newcommand{\oneohone}{\textsf{101companies}}
+
+% Tags for the books
+
+\newcommand{\craftTag}{\textsf{CRAFT}}
+\newcommand{\pihTag}{\textsf{PIH}}
+\newcommand{\rwhTag}{\textsf{RWH}}
+\newcommand{\lyahTag}{\textsf{LYAH}}
+
+% TeX generation
+
+\newcommand{\zeroCell}{--}
+\newcommand{\falseCell}{--}
+\newcommand{\trueCell}{\checkmark}
+\newcommand{\linkok}[1]{\protect\href{#1}{\checkmark}}
+\newcommand{\verticalCell}[1]{\begin{sideways}#1\end{sideways}}
+\newcommand{\tableNl}{\\\hline}
+\newcommand{\addMargin}[1]{\ \ #1\ \ }
+\newcommand{\headline}[1]{\footnotesize#1}
+\newcommand{\wikipage}[1]{\wikiref{#1}{\emph{#1}}}
+\newcommand{\implementationName}[1]{\wikiref{101implementation:#1}{\emph{#1}}}
+\newcommand{\categoryName}[1]{\wikiref{Category:#1}{\emph{#1}}}
+\newcommand{\languageName}[1]{\wikiref{Language:#1}{\emph{#1}}}
+\newcommand{\technologyName}[1]{\wikiref{Technology:#1}{\emph{#1}}}
+\newcommand{\featureName}[1]{\wikiref{101feature:#1}{\emph{#1}}}
+\newcommand{\termName}[1]{\wikiref{#1}{\emph{#1}}}
+\newcommand{\baseuri}{http://101companies.org/index.php}
+\newcommand{\wikiref}[2]{%
+  \protect\StrSubstitute{#1}{ }{_}[\wikiuri]%
+  \protect\href{\baseuri/\wikiuri}{\emph{#2}}}
+
+% listings package
+
+\lstdefinelanguage{haskell}{%
+  numbers=none,
+  morekeywords={do,module,qualified,import,let,case,of,in,class,instance,data,newtype,where,otherwise,deriving,type,extends,public,forall},
+  sensitive=true,
+  morecomment=[l]{--},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+}
+
+\lstset{%
+  frame=none,
+  xleftmargin=2pt,
+  stepnumber=1,
+  numbers=left,
+  numbersep=5pt,
+  numberstyle=\ttfamily\tiny\color[gray]{0.3},
+  belowcaptionskip=\bigskipamount,
+  captionpos=b,
+  escapeinside={*'}{'*},
+  language=haskell,
+  tabsize=2,
+  emphstyle={\bf},
+  commentstyle=\it,
+  stringstyle=\mdseries\rmfamily,
+  showspaces=false,
+  keywordstyle=\bfseries\rmfamily,
+  columns=flexible,
+  basicstyle=\small\sffamily,
+  showstringspaces=false,
+  morecomment=[l]\%,
+}
+
+%\newcommand\emptyDot{}
+%\newcommand\oneDot{$\cdot$}
+%\newcommand\belowMdot{$\odot$}
+%\newcommand\greaterMdot{$\circ$}
+%\newcommand\topNdot{$\bigcirc$}
+
+\newcommand\emptyDot{}
+\newcommand\oneDot{\scaleBullet{.33}}
+\newcommand\belowMdot{\scaleBullet{.6}}
+\newcommand\greaterMdot{\scaleBullet{1}}
+\newcommand\topNdot{\scaleBullet{1.5}}
+\newcommand{\scaleBullet}[1]{\scalebox{#1}{\mbox{\ensuremath{\bullet}}}}
+
+%\newcommand{\noBullet}{}
+%\newcommand{\tinyBullet}{\scaleBullet{.33}}
+%\newcommand{\smallBullet}{\scaleBullet{.6}}
+%\newcommand{\medianBullet}{\scaleBullet{1}}
+%\newcommand{\bigBullet}{\scaleBullet{1.5}}
+%\newcommand{\scaleBullet}[1]{\scalebox{#1}{\mbox{\ensuremath{\bullet}}}}
+%\newcommand{\maxBullet}{{\large\ensuremath{{}_{\blacksquare}}}}
+
+\newcommand\andrei[1]{\textit{\textbf{av}:#1}}
+\newcommand\thomas[1]{\textit{\textbf{ts}:#1}}
+
+%macros to support tex generated from the 101wiki
+
+
+\newcommand{\wikiuqref}[1]{\wikiref{#1}{#1}}
+\newcommand{\wikitref}[1]{\wikiref{Technology:#1}{\textsf{#1}}}
+\newcommand{\wikilref}[1]{\wikiref{Language:#1}{\textsf{#1}}}
+\newcommand{\wikifref}[1]{\wikiref{101feature:#1}{\emph{101feature} \textsf{#1}}}
+\newcommand{\wikiiref}[1]{\wikiref{101implementation:#1}{\emph{101implementation} \textsf{#1}}}
+\newcommand{\wikicref}[1]{\wikiref{101companies:#1}{\emph{101companies} #1}}
+\newcommand{\wikicontribref}[1]{\wikiref{101contributor:#1}{#1}}
+
+\newenvironment{itemizei}{%
+\begin{list}{\labelitemi}{\leftmargin=1em}%
+\setlength{\itemsep}{1pt}%
+\setlength{\parskip}{1pt}%
+}{%
+\end{list}%
+}
+\newenvironment{itemizeii}{%
+\begin{list}{\labelitemii}{\leftmargin=1em}\noskip%
+}{%
+\end{list}%
+}
+\newenvironment{itemizeiii}{%
+\begin{list}{\labelitemiii}{\leftmargin=1em}\noskip%
+}{%
+\end{list}%
+}
+
+%\newcommand{\wikiiref}[1]{\wikiref{101implementation:#1}{101implementation:#1}}
+%\newcommand{\wikicref}[1]{\wikiref{101companies:#1}{\emph{101companies} #1}}
+%\newcommand{\wikimacro}[3]{{\csname#1#2#3\endcsname}}
+%\newcommand{\wikiuref}[1]{\wikiref{#1}{#1}}
+%\newcommand{\wikiref}[2]{%
+%  \protect\StrSubstitute{#1}{ }{_}[\wikiuri]%
+%  \protect\href{\baseuri/\wikiuri}{#2}}
+%\newcommand{\wikiref}[2]{\href{\baseuri/#1}{#2}}
+%\newcommand{\wterm}[2]{#1\footnote{\scriptsize\url{#2}}}
+%\newcommand{\wterm}[2]{\textsf{#1} \hfill {\tiny\url{#2}}}
+
+\newcommand{\texgen}{tex}
+
+%\input{\texgen/matrix/latex/macros.tex}
+%\input{\texgen/shared/macros.tex}
+%\input{\texgen/dump/data/macros.tex}
+%\input{\texgen/content/data/macros.t

@@ -2,11 +2,12 @@
 #coding=utf-8
 
 import argparse
-import django
-from django.template import Template, Context
+from jinja2 import Environment, FileSystemLoader
 import csv
 
 if __name__ == "__main__":
+    env = Environment(line_statement_prefix='#', loader=FileSystemLoader('templates'), trim_blocks=True)
+
     parser = argparse.ArgumentParser()
     parser.add_argument('-in', '--input', help='input csv file')
     parser.add_argument('-tmpl', '--template', help='latex template')
@@ -20,34 +21,31 @@ if __name__ == "__main__":
         exit(-1)
 
     if not args.template:
-        print "LaTex template was not specified, default is used"
-        args.template = "table_template.tex"
+        print "LaTex template was not specified, default (tabular_template.tex) is used"
+        args.template = "tabular_template.tex"
 
-    if not args.caption:
-        print "Please specify the caption"
-        exit(-1)
+    #if not args.caption:
+    #    print "Please specify the caption"
+    #    exit(-1)
 
-    if not args.label:
-        print "Please specify the label"
-        exit(-1)
-
-    # This line is required for Django configuration
-    django.conf.settings.configure()
+    #if not args.label:
+    #    print "Please specify the label"
+    #    exit(-1)
 
     # Open and read CSV file
-    fid = open(args.input)
+    fid = open(args.input, 'rU')
     reader = csv.reader(fid)
 
     # Open and read template
-    with open(args.template) as f:
-        t = Template(f.read())
+    t = env.get_template(args.template)
 
     # Define context with the table data
     head = reader.next()
-    c = Context({"head": head, "table": reader, "caption": args.caption, "label": args.label})
+    #c = Context({"head": head, "table": reader, "caption": args.caption, "label": args.label})
 
     # Render template
-    output = t.render(c)
+    #output = t.render(c)
+    output = t.render(head=head, table=reader, caption=args.caption, label=args.label)
 
     fid.close()
 
