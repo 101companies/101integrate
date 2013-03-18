@@ -53,13 +53,38 @@ for i,x in enumerate(realcnamesraw):
 
 rawChapters = {}
 stemmedChapters = {}
+rawChaptersParts = {}
+stemmedChaptersParts = {}
+structure = []
 listing = realcnamesl
+posRegex = re.compile("(.*)\\$\\$\\$")
 for l in listing:
 	if not l.startswith(".") and l in realcnames:
 		chapter = open(resourcebase + sys.argv[7] + l).read()
 		rawChapters[l] = chapter
 		print "Stemming chapter in", l
-		stemmedChapters[l] = " " + " ".join(map(lambda t: lmtzr.lemmatize(t).lower(), nltk.wordpunct_tokenize(chapter))) + " "
+		stemmedChapter = " " + " ".join(map(lambda t: lmtzr.lemmatize(t).lower(), nltk.wordpunct_tokenize(chapter))) + " "
+		stemmedChapters[l] = stemmedChapter
+		stemmedChaptersParts[l] = {}
+		cstructure = {'chapterid' : l}
+		rawChaptersParts[l] = {}
+		partids = []
+ 		for i, part in enumerate(chapter.split('$$$$')):
+			poss = posRegex.findall(part)
+			if poss:
+				partid = poss[0].replace(' ','')
+			else:
+				partid = ''
+			rawChaptersParts[l][partid] = part
+			partids.append(partid)
+		cstructure['partids'] = partids
+		structure.append(cstructure)
+ 		for i, part in enumerate(stemmedChapter.split('$$$$')):
+			stemmedChaptersParts[l][partids[i]] = part
+
+
+
+
 
 terms = []
 for row in index:
@@ -84,13 +109,22 @@ for term in terms:
 
 freqAll = {}
 freqAllDistribution = {}
+freqAllDistributionDeep = {}
 for abbTerm in abbTerms:
 	freq = 0
 	freqDist = {}
-	for rawChapter in rawChapters:
+	freqDistDeep = []
+	for rawChaptero in structure:
+		rawChapter = rawChaptero['chapterid']
 		c = rawChapters[rawChapter].count(abbTerm)
 		freq = freq + c
 		freqDist[rawChapter] = c
+		freqDistDeepC = []
+
+		for partid in rawChaptero['partids']:
+			freqDistDeepC.append(rawChaptersParts[rawChapter][partid].count(abbTerm))
+		freqDistDeep.append(freqDistDeepC)
+	freqAllDistributionDeep[abbTerm] = freqDistDeep
 	freqAll[abbTerm] = freq
 	freqAllDistribution[abbTerm] = freqDist
 
@@ -98,10 +132,17 @@ for stemmedTermName in stemmedTerms:
 	stemmedTerm = stemmedTerms[stemmedTermName]
 	freq = 0
 	freqDist = {}
-	for stemmedChapter in stemmedChapters:
+	freqDistDeep = []
+	for stemmedChaptero in structure:
+		stemmedChapter = stemmedChaptero['chapterid']
 		c = stemmedChapters[stemmedChapter].count(" " + stemmedTerm + " ")
 		freq = freq + c
 		freqDist[stemmedChapter] = c
+		freqDistDeepC = []
+		for partid in stemmedChaptero['partids']:
+			freqDistDeepC.append(stemmedChaptersParts[stemmedChapter][partid].count(stemmedTerm))
+		freqDistDeep.append(freqDistDeepC)
+	freqAllDistributionDeep[stemmedTerm] = freqDistDeep
 	freqAll[stemmedTerm] = freq
 	freqAllDistribution[stemmedTerm] = freqDist
 
@@ -140,3 +181,6 @@ for freq in freqAllDistribution:
 
 f = open(resourcebase + "/frequenciesDistribution" + postfix + ".json", 'write')
 f.write(json.dumps(freqAllDistribution))
+
+f = open(resourcebase + "/frequenciesDistributionDeep" + postfix + ".json", 'write')
+f.write(json.dumps({'structure' : structure, 'distribution' : freqAllDistributionDeep}))

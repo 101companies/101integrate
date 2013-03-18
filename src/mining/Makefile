@@ -7,6 +7,8 @@ mine:
 	make mergeindecies
 	make frequencies
 	make mergedfrequencies
+
+backlink:
 	make backlinksMappings
 	make mergeBacklinkMappings
 
@@ -39,7 +41,7 @@ mergedfrequencies:
 
 backlinksMappings:
 	for b in ${BOOKS}; do \
-		python backlinksMapper.py "$$b" ../../data/perbook/ frequenciesDistributionMerged.json contents/ 5; \
+		python backlinksMapper.py "$$b" ../../data/perbook/ frequenciesDistributionDeepMerged.json contents/ 5; \
 	done
 
 mergeBacklinkMappings:
