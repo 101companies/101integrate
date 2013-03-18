@@ -19,6 +19,10 @@ popular:
 	R < rank.R --no-save
 
 tex:
+	for b in ${BOOKS}; do \
+		./csv2tex.py --input ../../data/perbook/"$$b"/chapterProfile.numbers.csv --template "tabular_template_with_hlines.tex" ; \
+		./csv2tex.py --input ../../data/perbook/"$$b"/chapterProfile.visual.csv --template "tabular_template_with_hlines.tex" ; \
+	done
 	#mv Craft/Craft.numbers ../../data/perbook/Craft/chapterProfile.numbers.tex
 	#mv Craft/Craft.visual ../../data/perbook/Craft/chapterProfile.visual.tex
 
