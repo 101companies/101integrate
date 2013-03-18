@@ -31,6 +31,8 @@ def getRefinedHtml(url, exElem, exClasses, posElements, posAttr):
 
 				for posTag in doc.findAll(posElement, {posAttr: True}):
 					posTag.insert(0, "$$$$" + posTag[posAttr] + "$$$ ")
+					posTag.name = "a"
+
 			return doc
 		except ExpatError, e:
 			#print "Can't extract content of " + url + " properly."

@@ -50,6 +50,11 @@ mine:
 analyze:
 	cd src/analytics; make analyze
 
+# Run backlinking scripts
+backlink:
+	cd src/mining; make backlink
+
+
 # Clean it all
 clean:
 	cd data/allbooks; rm -f *.tex *.csv *.json *.png *.html
