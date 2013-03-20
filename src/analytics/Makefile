@@ -58,5 +58,4 @@ tex:
 	#mv unionTopScatternessVisual.tex ../../data/allbooks/
 
 	#mv ranks.tex ../../data/allbooks/	
-	#./csv2tex.py --input ../../data/allbooks/cache/rank.csv --caption "Union Top Frequencies" --label "t:union"
-
+	./csv2tex.py --input ../../data/allbooks/cache/rank.csv --template "tabular_template.tex"

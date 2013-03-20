@@ -11,4 +11,4 @@ names(rank) <- c("Term", "Rank")
 #             size="small", scalebox=0.7,
 #             file=paste('ranks.tex', sep = ""))
 
-write.csv(rank[0:30,], paste(dataRoot, "/allbooks/", "rank.csv", sep=""))
+write.csv(rank[0:30,], paste(dataRoot, "/allbooks/cache/", "rank.csv", sep=""))
