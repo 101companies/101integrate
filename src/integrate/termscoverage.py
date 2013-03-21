@@ -17,8 +17,8 @@ haskellThemes = ['Data_modeling_with_Haskell', 'Generic_programming_in_Haskell',
 
 for theme in haskellThemes:
   print theme + '\n'
-  haskellThemeInstances = query(allThemeInstances). \
+  terms = query(allThemeInstances). \
   where(lambda page: filter(lambda p: p['p'] == 'Theme' and p['n'] == theme, page['page']['instanceOf'])). \
-  select(lambda page: filter(lambda term: not ':' in term , page['page']['internal_links'])). \
+  select(lambda page: { 'contribution' : page['page']['page']['n'], 'concepts': filter(lambda term: not ':' in term , page['page']['internal_links']) }). \
   to_list()
-  print haskellThemeInstances
+  print terms
