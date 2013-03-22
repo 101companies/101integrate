@@ -1,4 +1,4 @@
-    \begin{tabular} {{ '{|' }}{% for col in head %}c{% if not loop.last %}|{% endif %}{% endfor %}{{ '|}' }}  
+    \begin{tabular} {% block header %} {{ '{|' }}{% for col in head %}c{% if not loop.last %}|{% endif %}{% endfor %}{{ '|}' }}  {% endblock %} 
     \hline
     {% for col in head %} \textbf{ {{col}} } {% if not loop.last %}&{% endif %} {% endfor %} 
     \\

@@ -175,7 +175,6 @@ pivot <- pv[order(pv$Term),]
 #      include.rownames=FALSE, size="small", scalebox=0.3,
 #      rotate.colnames=TRUE) #floating.environment='sidewaystable'
 
-write.csv(pivot, paste(dataRoot, "/perbook/", folder, '/chaptersProfile.csv', sep = ""))
 
 compareNA <- function(v1,v2) {
   # This function returns TRUE wherever elements are the same, including NA's,
@@ -238,7 +237,13 @@ colnames(res1) <- cn1
 #      include.rownames=FALSE, size="small", scalebox=0.3,
 #      rotate.colnames=TRUE)
 
-write.csv(res1, paste(dataRoot, "/perbook/", folder, '/chaptersProfileVisual.csv', sep = ""))
+#replacing NA with SPACE
+pivot[is.na(pivot)] <- ' '
+write.csv(pivot, paste(dataRoot, "/perbook/", folder, '/chapterProfile.numbers.csv', sep = ""))
+
+#replacing NA with SPACE
+res1[is.na(res1)] <- ' '
+write.csv(res1, paste(dataRoot, "/perbook/", folder, '/chapterProfile.visual.csv', sep = ""))
 
 #g <- graph.empty()
 

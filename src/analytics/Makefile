@@ -19,6 +19,10 @@ popular:
 	R < rank.R --no-save
 
 tex:
+	for b in ${BOOKS}; do \
+		./csv2tex.py --input ../../data/perbook/"$$b"/chapterProfile.numbers.csv --template "tabular_template_with_hlines.tex" ; \
+		./csv2tex.py --input ../../data/perbook/"$$b"/chapterProfile.visual.csv --template "tabular_template_with_hlines.tex" ; \
+	done
 	#mv Craft/Craft.numbers ../../data/perbook/Craft/chapterProfile.numbers.tex
 	#mv Craft/Craft.visual ../../data/perbook/Craft/chapterProfile.visual.tex
 
@@ -39,6 +43,11 @@ tex:
 	for b in ${BOOKS}; do \
 		./csv2tex.py --input ../../data/perbook/"$$b"/topFrequency.csv --template "tabular_template.tex" ; \
 	done
+
+	for b in ${BOOKS}; do \
+		./csv2tex.py --input ../../data/perbook/"$$b"/topScattered.csv --template "tabular_template.tex" ; \
+	done
+
 	#mv RWH/topScattered.tex ../../data/perbook/RWH/topScattered.tex
 	#mv LYAH/topScattered.tex ../../data/perbook/LYAH/topScattered.tex
 	#mv Craft/topScattered.tex ../../data/perbook/Craft/topScattered.tex
@@ -50,9 +59,10 @@ tex:
 	#mv unionTopFrequencies.csv ../../data/allbooks/
 	#mv unionTopFrequenciesVisual.tex ../../data/allbooks/
 
+	./csv2tex.py --input ../../data/allbooks/unionTopScatternessVisual.csv --template "tabular_template.tex" #--caption "Union Top Frequencies" --label "t:union"
+
 	#mv unionTopScatterness.csv ../../data/allbooks/
 	#mv unionTopScatternessVisual.tex ../../data/allbooks/
 
 	#mv ranks.tex ../../data/allbooks/	
-	#./csv2tex.py --input ../../data/allbooks/cache/rank.csv --caption "Union Top Frequencies" --label "t:union"
-
+	./csv2tex.py --input ../../data/allbooks/rank.csv --template "tabular_template.tex"

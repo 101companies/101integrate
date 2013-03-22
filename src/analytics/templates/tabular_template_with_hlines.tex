@@ -1,0 +1,14 @@
+\begin{tabular} {% block header %} {{ '{|' }}{% for col in head %}c{% if not loop.last %}|{% endif %}{% endfor %}{{ '|}' }}  {% endblock %} 
+\hline
+{% for col in head %} \textbf{ {{col}} } {% if not loop.last %}&{% endif %} {% endfor %} 
+\\
+\hline
+{% for row in table %}
+    {% for cell in row %}
+        {{cell}}{% if not loop.last %} & {% endif %}
+    {% endfor %}
+    \\
+    \hline
+{% endfor %}
+%\hline
+\end{tabular}
