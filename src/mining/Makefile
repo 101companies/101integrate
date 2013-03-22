@@ -11,6 +11,7 @@ mine:
 backlink:
 	make backlinksMappings
 	make mergeBacklinkMappings
+	make mergeMappings
 
 # Clean online books once after download
 cleanOnlineBooks:
@@ -47,5 +48,11 @@ backlinksMappings:
 mergeBacklinkMappings:
 	python mergeBacklinks.py $(DATAFOLDER) perbook/ $(foreach r,$(BOOKS), $(r)) allbooks/
 
+mergeMappings:
+	python mergeMappings.py $(DATAFOLDER) perbook/ $(foreach r,$(BOOKS), $(r)) allbooks/
+
 deployBacklinks:
-	scp  ../../data/allbooks/backlinks.json worker@black42.uni-koblenz.de:~/101worker/services/termResources/
+	scp  ../../data/allbooks/backlinks.json ../../data/allbooks/mapping.json worker@black42.uni-koblenz.de:~/101worker/services/termResources/
+
+make termCoverage:
+	python termCoverage.py $(DATAFOLDER)/allbooks/
