@@ -54,6 +54,9 @@ analyze:
 backlink:
 	cd src/mining; make backlink
 
+coverageTables:
+	cd src/integrate; make coverageTables
+
 
 # Clean it all
 clean:
