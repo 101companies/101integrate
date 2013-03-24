@@ -1,4 +1,4 @@
 DATAFOLDER = ../../data/
 
 make coverageTables:
-	python termscoverage.py $(DATAFOLDER) allbooks/
+	python termsCoverage.py $(DATAFOLDER) allbooks/
