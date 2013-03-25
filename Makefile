@@ -38,6 +38,7 @@ download-deps:
 	sudo easy_install html2text
 	sudo easy_install gdata
 	sudo easy_install jinja2
+	sudo easy_install mako
 
 bootstrap:
 	cd src; python bootstrap.py
