@@ -1,3 +1,5 @@
+include src/Makefile.vars
+
 # Books available online
 ONLINEBOOKS = RWH LYAH
 
@@ -46,7 +48,20 @@ mine:
 
 # Run analytics scripts
 analyze:
+	make from-cache
 	cd src/analytics; make analyze
+
+# Copies post processed data to cache
+from-cache:
+	for b in ${NON_LINKED_BOOKS}; do \
+		cp data/perbook/$$b/cache/frequenciesDistribution.csv  data/perbook/"$$b"/ ;\
+	done
+
+# Copies post-processed data, required for analytics, to cache
+to-cache:
+	for b in ${BOOKS}; do \
+		cp data/perbook/$$b/frequenciesDistribution.csv  data/perbook/"$$b"/cache ;\
+	done
 
 # Run backlinking scripts
 backlink:

@@ -10,9 +10,12 @@ def get_immediate_subdirectories(dir):
             if os.path.isdir(os.path.join(dir, name))]
 
 books = []
+nonLinkedBooks = []
 for bookDir in get_immediate_subdirectories('../data/perbook'):
   if os.path.exists('../data/perbook/' + bookDir + '/contents'):
     books.append(bookDir)
-
-print books 	
-with open ('Makefile.vars', 'w') as f: f.write ('BOOKS = ' + ' '.join(books))
+  else:
+  	nonLinkedBooks.append(bookDir)
+  	  	
+with open ('Makefile.vars', 'w') as f: 
+	f.write ('BOOKS = ' + ' '.join(books) + '\n NON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))

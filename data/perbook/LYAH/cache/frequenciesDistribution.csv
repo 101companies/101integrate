@@ -1,0 +1,157 @@
+Term;Stemmed;Variations;Starting Out;Types and Typeclasses;Syntax in Functions;Recursion;Higher Order Functions;Modules;Making Our Own Types and Typeclasses;Input and Output;Functors, Applicative Functors and Monoids;A Fistful of Monads;For a Few Monads More;Zippers
+pattern matching;pattern matching;pattern matching;0;0;19;5;3;0;5;4;2;10;3;1
+concept;concept;concept;0;0;1;0;1;0;5;0;1;2;1;0
+filterm;filterm;filterm;0;0;0;0;0;0;0;0;0;0;1;0
+laziness;laziness;laziness;0;0;0;0;3;0;1;4;1;0;0;0
+bounded type class;bounded type class;bounded type class;0;0;0;0;0;0;0;0;0;0;0;0
+state monad;state monad;state monad;0;0;0;0;0;0;0;0;0;0;7;0
+do notation;do notation;do notation;0;0;0;0;0;0;0;0;0;1;1;0
+converting;converting;converting;0;0;0;0;0;3;3;0;2;1;1;0
+type instance;type instance;type instances, type instance;0;0;0;0;0;0;5;0;1;0;0;0
+maybe implementation;maybe implementation;maybe implementation;0;0;0;0;0;0;0;0;0;0;0;0
+monad law;monad law;monad laws, monad law;0;0;0;0;0;0;0;0;0;6;4;0
+monad type class;monad type class;monad type class;0;0;0;0;0;0;0;0;0;1;0;0
+applicative law;applicative law;applicative laws, applicative law;0;0;0;0;0;0;0;0;1;0;0;0
+cons operator;con operator;cons operator;1;0;0;0;0;0;0;0;0;0;0;0
+nothing value;nothing value;nothing value;0;0;0;0;0;0;0;0;0;0;0;0
+newtype declaration;newtype declaration;newtype declarations, newtype declaration;0;0;0;0;0;0;0;0;0;0;0;0
+case expression;case expression;case expressions, case expression;0;0;7;0;0;0;0;0;0;0;0;0
+infix function;infix function;infix function;3;1;0;0;2;0;0;2;1;1;0;0
+the reader monad;the reader monad;the reader monad;0;0;0;0;0;0;0;0;0;0;3;0
+derived instance;derived instance;derived instances, derived instance;0;0;0;0;0;0;1;0;1;0;0;0
+class constraint;class constraint;class constraints, class constraint;0;5;0;1;1;0;9;0;7;1;2;0
+monadic value;monadic value;monadic values, monadic value;0;0;0;0;0;0;0;0;0;41;47;0
+boolean expression;boolean expression;boolean expressions, boolean expression;0;0;1;0;0;0;0;0;0;0;0;0
+higher-order function;higher-order function;higher-order function;0;0;0;0;2;0;0;0;0;0;0;0
+balancing;balancing;balancing;0;0;0;0;0;0;0;0;0;4;1;1
+the list monad;the list monad;the list monad;0;0;0;0;0;0;0;0;0;5;4;0
+conjunction;conjunction;conjunction;0;0;0;0;0;0;0;0;0;1;0;0
+newtype;newtype;newtype;0;0;0;0;0;0;0;0;48;0;1;0
+condition;condition;conditions, condition;3;0;3;18;2;0;3;2;3;0;1;0
+list comprehension;list comprehension;list comprehension;12;1;8;1;7;0;0;2;4;10;0;0
+sorting;sorting;sorting;0;0;0;2;0;0;0;0;0;0;0;0
+reader monad;reader monad;reader monad;0;0;0;0;0;0;0;0;0;0;3;0
+binary function;binary function;binary function;0;0;0;0;13;1;0;0;14;0;10;0
+3d vector type;3d vector type;3d vector type;0;0;0;0;0;0;1;0;0;0;0;0
+deferred computation;deferred computation;deferred computation;0;0;0;0;0;0;0;0;0;0;0;0
+writer monad;writer monad;writer monad;0;0;0;0;0;0;0;0;0;0;0;0
+left-associative;left-associative;left-associative;0;0;0;0;1;0;2;0;3;0;0;0
+type name;type name;type names, type name;0;0;0;0;0;0;1;0;1;0;0;0
+boolean algebra;boolean algebra;boolean algebra;1;0;0;0;0;0;0;0;0;0;0;0
+list;list;list;161;10;41;95;102;167;83;89;188;71;141;59
+type class instance;type class instance;type class instance;0;0;0;0;0;0;0;0;1;0;0;0
+searching;searching;searching;0;0;0;0;0;3;1;0;0;0;0;2
+functor;functor;functor;0;0;0;0;0;0;12;0;98;8;11;0
+algebraic data structure;algebraic data structure;algebraic data structure;0;0;0;0;0;0;1;0;0;0;0;0
+fold;fold;fold;0;0;0;0;45;12;2;0;12;0;10;0
+type parameter;type parameter;type parameter;0;0;0;0;0;0;31;0;14;0;3;0
+export;export;export;0;0;0;0;0;20;8;3;3;0;1;0
+combining;combining;combining;2;0;0;0;0;0;0;0;0;0;0;0
+type signature;type signature;type signature;0;4;0;1;4;6;7;10;3;0;1;0
+recursive data structure;recursive data structure;recursive data structure;0;0;0;0;0;0;1;0;0;0;0;0
+type declaration;type declaration;type declaration;0;9;1;0;10;1;28;4;6;0;0;0
+monoid;monoid;monoid;0;0;0;0;0;0;0;0;36;0;33;0
+section;section;sections, section;3;0;4;0;5;2;6;6;8;2;5;1
+decoding;decoding;decoding;0;0;0;0;0;1;0;0;0;0;0;0
+GHCi;ghci;GHCi;10;4;1;0;4;5;3;10;3;0;2;0
+import;import;import;0;0;0;0;0;24;3;2;1;0;0;0
+dictionary;dictionary;dictionaries, dictionary;0;0;0;0;0;1;0;0;1;0;0;0
+algebraic expression;algebraic expression;algebraic expressions, algebraic expression;0;0;0;0;0;0;0;0;0;0;0;0
+enum;enum;enum;0;1;0;0;0;0;0;0;0;0;0;0
+intergral;intergral;intergral;0;0;0;0;0;0;0;0;0;0;0;0
+monadplus;monadplus;monadplus;0;0;0;0;0;0;0;0;0;0;0;0
+type system;type system;type system;0;2;0;0;0;0;2;4;2;0;0;0
+type variable;type variable;type variables, type variable;0;6;0;0;0;0;3;0;3;0;0;0
+zipper;zipper;zipper;0;0;0;0;0;0;0;0;0;0;0;28
+logging;logging;logging;0;0;0;0;0;0;0;0;0;0;4;0
+package;package;package;0;0;0;0;0;0;0;0;0;0;4;0
+mempty;mempty;mempty;0;0;0;0;0;0;0;0;2;0;0;0
+recursive definition;recursive definition;recursive definition;0;0;0;0;0;0;0;2;0;0;0;0
+writer type;writer type;writer type;0;0;0;0;0;0;0;0;0;0;1;0
+type synonym;type synonym;type synonym;0;0;0;0;0;0;15;3;5;3;0;5
+context of failure;context of failure;context of failure;0;0;0;0;0;0;0;0;0;1;1;0
+bytestring;bytestring;bytestrings, bytestring;0;0;0;0;0;0;0;18;0;0;0;0
+the state monad;the state monad;the state monad;0;0;0;0;0;0;0;0;0;0;7;0
+lambda;lambda;lambda;0;0;0;0;15;0;0;5;2;17;6;0
+filtering;filtering;filtering;1;0;0;0;5;2;0;1;1;2;0;0
+saving;saving;saving;0;0;0;0;1;0;0;0;0;0;0;0
+>>;>>;>>;0;0;0;0;0;0;0;0;0;0;0;0
+encoding;encoding;encoding;0;0;0;0;0;2;0;0;0;0;0;0
+monad;monad;monad;0;0;0;0;0;0;0;1;1;55;87;6
+value constructor;value constructor;value constructors, value constructor;0;0;0;0;0;0;39;0;19;0;0;0
+guard;guard;guard;0;0;24;2;0;0;0;4;0;1;0;0
+haskell;haskell;haskell;25;11;7;10;9;14;32;30;24;6;16;5
+type constructor;type constructor;type constructor;0;0;0;0;0;0;33;1;15;0;0;0
+comprehension;comprehension;comprehensions, comprehension;23;1;8;1;7;0;0;2;4;10;0;0
+hoogle;hoogle;hoogle;0;0;0;0;0;1;0;0;0;0;0;0
+message;message;message;1;0;0;0;0;3;1;3;0;2;1;0
+type keyword;type keyword;type keyword;0;0;0;0;0;0;0;0;0;0;0;0
+zip;zip;zip;4;0;0;3;0;4;0;1;10;0;0;1
+>>= (bind) function;>>= ( bind ) function;>>= (bind) function;0;0;0;0;0;0;0;0;0;0;0;0
+associativity;associativity;associativity;0;0;0;0;0;0;0;0;1;2;0;0
+any newtype constructor;any newtype constructor;any newtype constructor;0;0;0;0;0;0;0;0;0;0;0;0
+type annotation;type annotation;type annotations, type annotation;0;2;0;0;0;0;3;1;2;0;0;0
+boolean value;boolean value;boolean values, boolean value;0;0;0;0;2;3;1;5;1;1;0;0
+applicative type class;applicative type class;applicative type class;0;0;0;0;0;0;0;0;0;0;0;0
+newtype wrapper;newtype wrapper;newtype wrapper;0;0;0;0;0;0;0;0;0;0;0;0
+class declaration;class declaration;class declarations, class declaration;0;0;0;0;0;0;0;0;0;1;0;0
+tuple;tuple;tuple;8;4;1;0;0;2;0;5;9;5;19;1
+subclassing;subclassing;subclassing;0;0;0;0;0;0;1;0;0;0;0;0
+side effect;side effect;side effect;0;0;0;0;0;0;0;0;0;0;0;0
+applicative functor;applicative functor;applicative functor;0;0;0;0;0;0;0;0;14;6;4;0
+list management;list management;list management;0;0;0;0;0;0;0;0;0;0;0;0
+multitasking;multitasking;multitasking;0;0;0;0;0;0;0;0;0;0;0;0
+folding;folding;folding;0;0;0;0;1;1;2;0;3;0;9;0
+specializing for IO;specializing for io;specializing for IO;0;0;0;0;0;0;0;0;0;0;0;0
+x:xs pattern;x : x pattern;x:xs pattern;0;0;0;0;0;0;0;0;0;0;0;0
+nondeterministic value;nondeterministic value;nondeterministic values, nondeterministic value;0;0;0;0;0;0;0;0;0;0;0;0
+join;join;join;1;1;0;0;1;1;0;5;3;1;2;0
+explicit type declaration;explicit type declaration;explicit type declaration;0;1;0;0;0;0;0;0;0;0;0;0
+functional programming;functional programming;functional programming;1;0;0;1;3;0;0;1;0;0;0;0
+algebraic data type;algebraic data type;algebraic data type;0;0;0;0;0;1;5;1;4;0;0;0
+tree;tree;tree;0;0;3;2;0;3;66;5;29;1;0;149
+binary search tree;binary search tree;binary search tree;0;0;0;0;0;0;8;2;0;0;0;0
+accumulator;accumulator;accumulator;0;0;0;0;36;4;2;0;4;0;10;0
+module;module;module;0;0;0;0;0;69;8;6;3;0;4;0
+infinite list;infinite list;infinite lists, infinite list;8;0;0;4;7;3;0;3;2;0;0;0
+arithmetic expression;arithmetic expression;arithmetic expressions, arithmetic expression;0;0;0;0;0;0;0;0;0;0;0;0
+strict and lazy bytestring;strict and lazy bytestring;strict and lazy bytestrings, strict and lazy bytestring;0;0;0;0;0;0;0;0;0;0;0;0
+recursive function;recursive function;recursive function;0;0;1;2;2;1;0;0;0;0;0;0
+applicative value;applicative value;applicative value;0;0;0;0;0;0;0;0;0;4;3;0
+function;function;function;83;34;72;18;254;127;124;157;313;155;221;36
+do expression;do expression;do expressions, do expression;0;0;0;0;0;0;0;0;0;0;0;0
+applicative style;applicative style;applicative style;0;0;0;0;0;0;0;0;15;2;1;0
+monadic expression;monadic expression;monadic expressions, monadic expression;0;0;0;0;0;0;0;0;0;0;0;0
+maybe type;maybe type;maybe type;0;0;0;0;0;0;0;0;0;0;0;0
+scan;scan;scan;0;0;0;0;2;0;0;0;0;0;0;0
+foldm;foldm;foldm;0;0;0;0;0;0;0;0;0;0;1;0
+concatenation;concatenation;concatenation;0;0;0;0;0;0;0;0;1;0;0;0
+strict and lazy;strict and lazy;strict and lazy;0;0;0;0;0;0;0;1;0;0;0;0
+let expression;let expression;let expressions, let expression;0;0;0;0;0;0;0;0;0;0;0;0
+as-pattern;as-pattern;as-pattern;0;0;0;0;0;0;1;0;0;0;0;0
+return function;return function;return function;0;0;0;0;2;0;0;0;0;0;0;0
+applicative;applicative;applicative;0;0;0;0;0;0;0;0;68;32;15;0
+set comprehension;set comprehension;set comprehension;2;0;0;0;0;0;0;0;0;0;0;0
+liftm;liftm;liftm;0;0;0;0;0;0;0;0;0;0;1;0
+mapm;mapm;mapm;0;0;0;0;0;0;0;1;0;0;0;0
+instance;instance;instance;4;1;2;6;3;5;77;9;119;17;48;1
+take;take;take;36;13;10;18;81;45;74;98;133;73;68;26
+map;map;map;0;1;0;0;16;27;23;11;26;7;7;0
+type class;type class;type class;0;0;0;0;0;0;1;0;28;23;11;0
+dispatch function;dispatch function;dispatch function;0;0;0;0;0;0;0;0;0;0;0;0
+stateful computation;stateful computation;stateful computations, stateful computation;0;0;0;0;0;0;0;0;0;0;44;0
+type class constraint;type class constraint;type class constraint;0;0;0;0;0;0;0;0;0;0;0;0
+mconcat;mconcat;mconcat;0;0;0;0;0;0;0;0;0;0;0;0
+applicative operator;applicative operator;applicative operator;0;0;0;0;0;0;0;0;1;1;0;0
+lifting;lifting;lifting;0;0;0;0;0;0;0;0;1;0;0;0
+I/O;I/O;I/O;0;0;0;0;0;0;0;203;44;6;0;0
+mzero;mzero;mzero;0;0;0;0;0;0;0;0;0;0;0;0
+datatype;datatype;datatype;0;0;0;0;0;1;0;0;0;0;0;0
+zipwith;zipwith;zipwith;0;0;0;0;0;0;0;0;0;0;0;0
+module function;module function;module functions, module function;0;0;0;0;0;0;0;0;0;0;0;0
+loosely coupled;loosely coupled;loosely coupled;0;0;0;0;0;1;0;0;0;0;0;0
+association list;association list;association list;0;0;0;0;0;16;5;3;1;0;0;0
+curried function;curried function;curried functions, curried function;0;0;0;0;3;0;0;0;1;0;0;0
+GHC;ghc;GHC;1;0;0;0;0;0;0;1;0;0;0;0
+either type;either type;either type;0;0;0;0;0;0;0;0;0;0;0;0
+type inference;type inference;type inference;0;1;0;0;0;0;1;0;0;0;0;0

@@ -1,0 +1,319 @@
+Term;Stemmed;Variations;Getting started with Haskell and GHCi;Basic types and definitions;Designing and writing programs;Data types, tuples and lists;Programming with lists;Defining functions over lists;Playing the game: I/O in Haskell;Reasoning about programs;Generalization: patterns of computation;Higher-order functions;Developing higher-order programs;Overloading, type classes and type checking;Algebraic types;Case study: Huffman codes;Abstract data types;Lazy programming;Programming with monads;Domain-Specific Languages;Time and space behaviour
+comment;comment;comment;10;0;0;0;1;0;0;0;0;0;2;2;0;3;2;0;0;1;0
+floating point;floating point;floating point;0;7;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+otherwise;otherwise;otherwise;0;5;1;4;2;3;1;0;0;1;1;1;3;0;3;4;1;1;0
+case study;case study;case studies, case study;1;0;0;1;1;4;0;0;10;5;5;0;3;6;3;8;4;3;0
+feedback;feedback;feedback;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+just;just;just;0;4;8;2;3;6;9;4;3;10;6;7;13;3;3;3;6;5;0
+haskell.org;haskell.org;haskell.org;2;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+boolean;boolean;booleans, boolean;0;12;1;3;0;0;0;1;1;1;2;3;2;0;1;2;0;1;1
+declaration;declaration;declaration;1;2;5;1;2;0;0;1;0;0;2;36;5;0;6;0;3;2;0
+lambda expression;lambda expression;lambda expression;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;2;0;0;0
+syntax;syntax;syntax;6;7;0;1;0;0;1;0;0;6;1;1;3;0;0;4;0;5;0
+primitive recursion;primitive recursion;primitive recursion;0;0;9;0;0;13;0;3;15;1;0;0;10;0;0;1;0;0;0
+currying;currying;currying;0;0;0;0;0;0;0;0;0;7;0;0;0;0;0;0;0;0;0
+maximal common subsequence;maximal common subsequence;maximal common subsequence;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;5
+relation;relation;relations, relation;0;2;0;0;0;0;0;0;0;0;1;1;0;0;43;2;0;0;1
+fliph;fliph;fliph;0;0;0;0;6;0;0;0;0;7;0;0;0;0;0;0;0;1;0
+conversion between types;conversion between type;conversion between types;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+interpreter;interpreter;interpreter;1;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;2;0
+rotatehorse;rotatehorse;rotatehorse;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+local definition;local definition;local definitions, local definition;0;0;15;0;1;0;5;0;0;4;1;0;0;0;0;3;0;3;1
+reasoning;reasoning;reasoning;0;0;0;0;0;0;1;6;0;2;1;0;2;0;0;1;0;0;1
+backtracking;backtracking;backtracking;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0
+general recursion;general recursion;general recursion;0;0;3;0;0;3;0;0;0;0;0;0;1;0;0;0;0;0;0
+kleisli composition;kleisli composition;kleisli composition;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0
+data-directed programming;data-directed programming;data-directed programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0
+layout;layout;layout;0;11;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0
+integral;integral;integral;0;2;0;0;0;0;0;0;0;0;0;3;1;0;0;0;0;0;0
+instance;instance;instance;0;6;6;9;11;6;3;0;9;8;8;103;24;2;26;16;12;15;4
+implementation;implementation;implementation;2;3;0;2;10;4;3;2;0;1;1;5;1;8;72;6;5;12;19
+graph;graph;graph;0;0;0;0;0;0;0;0;0;1;0;0;0;0;21;15;0;0;0
+evaluation order;evaluation order;evaluation order;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0
+search tree;search tree;search tree;0;0;0;0;0;0;0;0;0;0;0;0;0;0;30;0;0;0;5
+character;character;characters, character;0;37;1;6;11;7;4;0;8;8;25;6;10;20;0;8;2;5;1
+universal quantifier;universal quantifier;universal quantifier;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0
+functional picture;functional picture;functional pictures, functional picture;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+binding power;binding power;binding power;0;9;0;0;0;0;0;0;0;3;0;0;0;0;0;1;0;0;0
+program;program;program;24;7;26;11;10;5;79;22;3;12;49;5;16;4;4;29;68;15;21
+Standard ML;standard ml;Standard ML;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+input;input;input;7;10;15;6;8;6;37;7;11;14;6;9;7;3;7;23;30;4;4
+transformation;transformation;transformation;0;0;0;0;5;0;0;0;4;6;0;0;1;0;0;3;0;3;0
+pitfall;pitfall;pitfalls, pitfall;0;5;0;4;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0
+ASCII coding;ascii coding;ASCII coding;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+unzip;unzip;unzip;0;0;0;1;3;2;0;1;1;1;0;0;0;0;0;0;0;0;0
+scientific notation;scientific notation;scientific notation;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type checking;type checking;type checking;0;0;0;1;1;0;0;0;0;1;0;47;0;0;0;0;0;0;0
+mathematical induction;mathematical induction;mathematical induction;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0
+factorial;factorial;factorial;0;0;12;0;0;2;0;2;0;0;0;0;0;0;0;10;0;0;6
+coding;coding;coding;0;4;0;0;0;0;0;0;0;0;0;1;0;29;1;0;0;0;1
+composition|see{function composition;composition | see { function composition;composition|see{function composition;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fractional;fractional;fractional;0;4;0;0;1;0;0;0;0;0;1;3;0;0;0;0;0;0;0
+operator section;operator section;operator sections, operator section;0;0;0;0;0;0;0;0;0;13;2;0;1;0;0;1;0;0;2
+floating;floating;floating;0;18;0;0;0;0;0;0;0;0;2;9;0;0;0;0;1;0;0
+I/O;I/O;I/O;2;0;0;0;0;0;64;0;0;0;0;0;0;0;0;0;31;1;0
+qualified;qualified;qualified;0;2;0;0;0;1;0;0;0;0;0;0;0;14;0;0;0;0;0
+unification;unification;unification;0;0;0;0;0;0;0;0;0;0;0;15;0;0;0;0;0;0;0
+import;import;import;7;3;0;0;2;0;0;0;0;0;0;0;0;25;2;0;0;0;0
+sequencing;sequencing;sequencing;0;0;0;0;0;0;3;0;0;0;1;0;0;0;0;0;8;0;0
+integer;integer;integer;15;55;40;18;11;9;18;3;11;18;3;35;10;1;13;16;16;1;10
+quantifier;quantifier;quantifier;0;0;0;0;0;0;0;5;0;0;0;0;0;0;0;0;0;0;0
+pattern matching;pattern matching;pattern matching;0;2;0;11;0;21;0;0;0;0;0;1;3;0;5;4;0;0;0
+formal parameter;formal parameter;formal parameter;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+definedness;definedness;definedness;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0
+string;string;strings, string;0;32;3;44;17;32;11;0;6;3;45;12;24;6;0;13;3;34;1
+compiler;compiler;compiler;3;0;0;0;0;0;1;0;0;0;0;1;0;0;1;0;0;2;0
+list comprehension;list comprehension;list comprehensions, list comprehension;0;0;0;22;5;5;0;0;8;0;5;0;0;0;0;28;1;0;0
+sorting;sorting;sorting;0;0;0;0;0;7;1;0;2;1;4;2;0;5;0;0;0;0;5
+equality;equality;equality;0;13;2;1;0;1;0;3;0;3;0;47;2;0;10;4;0;0;0
+name;name;name;10;24;5;19;29;6;14;2;5;6;4;5;17;34;9;3;14;12;1
+induction;induction;induction;0;0;0;0;0;0;0;73;0;17;0;0;22;0;0;15;0;0;1
+exclusive or;exclusive or;exclusive or;0;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+list;list;lists, list;4;1;4;144;81;131;13;44;110;41;84;40;40;20;101;278;24;14;69
+queue;queue;queue;0;0;0;0;0;0;0;0;0;0;0;0;1;0;79;12;0;0;0
+juxtaposition;juxtaposition;juxtaposition;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0
+domain-specific language;domain-specific language;domain-specific languages, domain-specific language;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;4;0
+overloaded literal;overloaded literal;overloaded literals, overloaded literal;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0
+vector;vector;vector;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;4;0;1;0
+invertcolour;invertcolour;invertcolour;1;0;0;0;1;0;0;0;3;0;1;0;0;0;0;0;0;0;0
+numeric conversion;numeric conversion;numeric conversions, numeric conversion;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+output;output;output;2;3;0;2;2;2;29;0;2;10;8;3;4;0;5;17;16;5;7
+implication;implication;implication;0;0;0;0;0;0;0;5;0;0;0;0;0;0;0;0;0;0;0
+identifier;identifier;identifier;0;7;0;0;2;0;0;0;0;1;1;1;0;1;0;0;0;1;0
+where;where;where;4;12;40;13;8;13;11;11;19;20;20;15;16;7;21;31;23;11;20
+functional programming;functional programming;functional programming;2;1;0;0;0;0;2;1;2;1;1;1;0;0;0;6;2;3;0
+abstract data type;abstract data type;abstract data type;0;0;0;0;0;0;0;0;0;0;0;1;1;4;62;2;2;0;3
+fmap;fmap;fmap;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0
+set;set;sets, set;5;3;5;3;3;0;0;3;0;0;3;9;0;0;107;4;5;4;10
+unicode;unicode;unicode;0;8;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+expression type|see;expression type | see;expression type|see;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+map;map;map;1;0;0;0;1;0;1;0;25;45;9;5;5;0;2;6;3;1;5
+foldr;foldr;foldr;0;0;0;0;0;0;0;0;24;6;0;12;0;0;2;0;0;0;16
+program development;program development;program development;1;0;0;0;0;1;0;0;0;0;8;0;1;0;0;0;0;0;0
+testing;testing;testing;0;2;25;3;1;1;1;14;0;0;0;0;1;1;1;2;0;2;0
+recursive type;recursive type;recursive type;0;0;0;1;0;0;0;0;0;0;0;0;6;0;0;2;0;1;0
+functor;functor;functor;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;5;0;0
+operator;operator;operator;0;50;0;3;3;2;1;0;5;42;7;9;12;1;0;14;7;3;5
+finiteness;finiteness;finiteness;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0
+web site;web site;web site;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+design;design;design;2;0;15;2;5;12;1;0;0;0;10;2;14;14;16;8;2;5;2
+result;result;result;8;34;25;17;12;13;24;12;20;36;15;32;22;8;7;53;43;7;28
+standard library;standard library;standard libraries, standard library;6;1;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ADT;adt;ADT;0;0;0;2;0;0;0;0;0;0;0;1;1;0;27;2;1;0;0
+symbolic evaluation;symbolic evaluation;symbolic evaluation;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0
+lazy evaluation;lazy evaluation;lazy evaluation;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;24;0;2;5
+eq;eq;eq;0;0;0;0;0;0;0;0;0;1;0;37;1;0;3;1;0;0;0
+eratosthene;eratosthene;eratosthenes, eratosthene;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+programming paradigm;programming paradigm;programming paradigms, programming paradigm;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+function definition;function definition;function definition;0;7;9;1;2;4;0;4;1;5;4;6;0;1;0;0;0;0;0
+downloading support material;downloading support material;downloading support materials, downloading support material;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+matrix;matrix;matrix;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;9;0;0;0
+Prelude.hs;Prelude.hs;Prelude.hs;4;1;0;2;1;0;0;0;0;0;0;3;0;0;0;0;0;0;0
+type-checking;type-checking;type-checking;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0
+pointer;pointer;pointer;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+specification;specification;specification;0;0;2;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0
+inmess;inmess;inmess;0;0;0;0;0;0;0;0;0;0;0;0;2;0;8;1;0;0;0
+signature;signature;signature;0;0;0;0;1;0;0;0;0;0;0;17;0;0;63;0;1;1;0
+GHCi;ghci;GHCi;78;9;2;4;6;0;3;1;0;1;1;9;1;1;0;1;3;1;0
+state;state;state;0;1;0;0;1;0;0;8;1;5;0;2;3;3;5;6;44;4;0
+above;above;above;2;3;4;4;14;1;1;4;1;2;7;5;7;6;4;10;4;3;6
+actual parameter;actual parameter;actual parameter;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+invariant;invariant;invariant;0;0;0;0;1;0;0;0;0;0;0;0;0;0;3;0;0;0;0
+binary tree;binary tree;binary tree;0;0;0;0;0;0;0;0;0;0;0;0;2;0;2;0;1;0;1
+product type;product type;product type;0;0;0;4;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+evaluation;evaluation;evaluation;5;3;2;5;0;0;0;11;0;0;0;2;0;0;1;51;1;2;8
+quadratic equation;quadratic equation;quadratic equation;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+programming language;programming language;programming language;0;0;1;1;1;0;1;0;1;3;4;1;0;0;0;4;1;10;0
+concatenate;concatenate;concatenate;0;0;0;0;0;0;0;0;1;0;1;0;0;1;0;0;0;0;0
+floating point operator;floating point operator;floating point operators, floating point operator;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+join;join;join;0;0;0;2;8;2;0;2;1;0;2;0;3;0;8;0;3;1;1
+enum;enum;enum;0;0;0;0;0;0;0;0;0;0;0;3;1;0;0;2;0;0;0
+horse;horse;horse;4;0;2;0;1;0;0;0;0;0;0;0;0;0;0;0;0;4;0
+supermarket billing;supermarket billing;supermarket billing;0;0;0;0;5;0;0;0;4;1;0;0;0;0;0;0;0;0;0
+system message;system message;system messages, system message;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hamming number;hamming number;hamming numbers, hamming number;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0
+palindrome;palindrome;palindrome;0;0;0;0;0;1;4;0;0;0;2;0;0;0;0;0;0;1;0
+type variable;type variable;type variable;0;1;0;1;6;0;0;0;1;0;1;14;3;0;0;0;0;0;0
+substitution;substitution;substitution;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;8;0;0;0
+undefinedness;undefinedness;undefinedness;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0
+ord;ord;ord;0;0;1;0;0;0;0;0;1;0;0;17;1;0;7;0;0;0;0
+infix version of a function;infix version of a function;infix version of a function;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+prelude;prelude;prelude;13;12;1;6;27;12;6;5;6;1;1;9;0;7;0;4;0;0;0
+algebraic type;algebraic type;algebraic type;0;0;0;13;0;0;0;0;0;1;0;0;38;1;3;2;1;1;0
+hiding;hiding;hiding;0;2;0;0;1;0;0;0;0;0;0;1;0;5;5;0;0;1;0
+behaviour;behaviour;behaviour;0;3;0;1;1;3;1;4;1;7;8;2;2;0;4;1;2;3;27
+folding;folding;folding;0;0;0;0;0;1;0;0;18;2;0;0;0;0;1;0;0;0;12
+reverse;reverse;reverse;0;0;0;0;5;2;0;7;3;11;2;0;0;1;3;7;1;0;3
+constraint;constraint;constraint;0;0;0;1;5;0;0;0;0;1;0;30;2;0;2;0;0;3;0
+membe;membe;membe;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pythagoras's theorem;pythagoras ' s theorem;pythagoras's theorem;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+simulation;simulation;simulation;0;0;0;0;0;0;0;0;0;0;0;0;7;0;18;18;0;0;0
+type error;type error;type error;3;1;0;5;0;0;0;0;0;2;0;7;0;0;2;0;0;1;0
+Coding.hs;Coding.hs;Coding.hs;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0
+understanding program;understanding program;understanding programs, understanding program;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0
+nothing;nothing;nothing;0;1;0;0;1;0;3;1;0;0;1;2;13;0;6;1;1;3;0
+lookuptable;lookuptable;lookuptable;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+context;context;context;3;1;2;0;0;0;1;0;1;2;0;27;1;1;5;2;0;2;0
+constructor;constructor;constructor;0;3;0;23;0;11;0;0;0;1;0;3;35;3;8;1;7;11;0
+action;action;actions, action;1;0;0;0;2;2;25;0;0;1;0;4;1;1;1;0;7;1;0
+properties as function;property a function;properties as functions, properties as function;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0
+sum type;sum type;sum type;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0
+curry;curry;curry;0;0;0;1;0;0;0;0;0;17;0;2;0;0;0;0;0;0;0
+pattern;pattern;pattern;0;2;5;24;1;57;2;1;14;2;9;7;5;0;11;29;0;4;3
+software;software;software;2;0;1;0;0;0;0;1;2;0;0;0;3;1;1;0;0;0;0
+conditional expression;conditional expression;conditional expression;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+intensionality;intensionality;intensionality;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0
+stream;stream;stream;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+monad;monad;monad;0;0;0;0;3;0;1;0;0;0;0;2;1;0;0;0;95;17;0
+clause;clause;clause;0;4;13;1;0;0;0;0;0;3;0;2;1;0;1;7;0;1;2
+free variable;free variable;free variable;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0
+idempotence;idempotence;idempotence;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0
+number;number;numbers, number;0;52;50;29;10;12;14;4;5;15;33;20;21;5;15;78;15;14;20
+parsing;parsing;parsing;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;27;13;2;0
+offside rule;offside rule;offside rule;0;5;2;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+guard;guard;guard;0;33;8;0;0;3;0;0;1;0;0;2;0;0;0;6;0;0;1
+square;square;square;8;2;14;2;0;0;0;0;4;1;0;0;1;0;0;3;0;0;4
+decodemessage;decodemessage;decodemessage;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+greedy algorithm;greedy algorithm;greedy algorithm;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2
+negate;negate;negate;0;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+table;table;table;1;7;11;2;3;2;0;0;0;0;0;2;1;9;0;0;9;0;9
+function composition;function composition;function composition;0;0;0;0;0;0;0;0;0;15;5;1;1;1;0;0;1;0;0
+lambda calculu;lambda calculu;lambda calculus, lambda calculu;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+huffman code;huffman code;huffman codes, huffman code;0;0;0;0;0;0;0;0;0;0;0;0;0;7;0;0;0;0;3
+function application;function application;function application;1;5;0;0;0;1;0;0;0;8;0;9;0;0;0;3;0;3;1
+zip;zip;zip;0;0;0;0;8;7;0;0;4;3;2;0;0;0;0;1;0;0;0
+script;script;script;11;5;7;2;3;0;0;0;0;0;1;3;0;5;0;0;0;0;0
+associativity;associativity;associativity;0;8;0;0;0;0;0;0;0;0;0;0;2;0;0;2;0;0;0
+partial application;partial application;partial application;0;0;0;0;0;0;0;0;0;35;3;0;0;1;0;0;0;0;0
+maybe;maybe;maybe;0;0;0;0;0;0;0;0;0;0;0;0;28;0;2;0;6;0;0
+side-effect;side-effect;side-effect;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;3;4;0
+calculation;calculation;calculation;0;11;13;3;0;5;1;1;1;1;5;0;3;4;6;38;7;0;27
+literal;literal;literal;0;19;0;1;0;3;0;0;0;1;0;7;2;0;0;4;0;1;0
+assumption;assumption;assumptions, assumption;0;0;0;0;1;0;0;8;0;0;0;0;0;0;0;0;0;0;0
+enumerated type;enumerated type;enumerated type;0;0;1;7;0;0;0;0;0;0;0;1;2;0;0;0;0;0;0
+convention;convention;conventions, convention;1;4;2;0;2;3;0;0;2;0;0;0;0;1;3;0;0;0;0
+show;show;show;3;13;4;8;3;2;8;15;6;11;3;32;22;1;15;21;11;8;19
+length;length;length;1;0;1;8;27;13;1;28;6;0;9;8;3;2;4;6;1;3;17
+scheme;scheme;scheme;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type;type;type;27;65;46;192;113;9;36;6;42;58;42;454;221;28;196;57;61;55;5
+filter;filter;filter;0;0;0;1;0;0;0;0;22;18;3;1;0;0;2;4;0;0;0
+store;store;store;0;1;0;0;0;0;0;0;0;0;1;0;0;0;57;2;9;0;1
+serverstate;serverstate;serverstate;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8;2;0;0;0
+function;function;function;16;114;127;107;150;102;58;41;159;302;131;134;106;50;108;98;57;67;68
+dummy value at errors;dummy value at error;dummy values at errors, dummy value at errors;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+hug;hug;hugs, hug;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+bit;bit;bit;0;2;0;0;1;0;2;0;0;0;1;1;0;11;0;1;1;0;0
+divide and conquer;divide and conquer;divide and conquer;0;0;3;0;0;1;0;0;0;0;0;0;0;2;2;0;0;0;2
+definition;definition;definition;22;61;115;52;31;57;22;21;34;59;47;95;52;44;36;35;33;13;16
+modelling;modelling;modelling;0;0;0;3;0;0;0;0;1;0;1;0;4;0;0;0;0;3;0
+selector;selector;selector;0;0;0;5;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+overloading;overloading;overloading;0;7;0;0;5;0;0;0;0;0;0;18;4;0;0;0;0;2;0
+module;module;modules, module;40;5;3;4;22;0;3;0;0;0;1;4;1;107;18;0;2;2;3
+forward composition;forward composition;forward composition;0;0;0;0;0;0;0;0;0;5;1;0;0;0;0;0;0;0;0
+scope;scope;scope;0;1;8;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0
+project idea;project idea;project ideas, project idea;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+program transformation;program transformation;program transformation;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0
+text processing;text processing;text processing;0;0;0;0;1;9;0;0;6;1;2;0;0;0;0;0;0;1;2
+uncurrying;uncurrying;uncurrying;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0
+ant;ant;ant;3;0;0;0;0;0;0;0;0;0;0;0;0;10;0;0;0;0;0
+showtype;showtype;showtype;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0
+truth table;truth table;truth table;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+keyword;keyword;keyword;1;0;0;2;0;0;0;0;0;0;0;0;1;3;0;0;0;0;0
+fixity;fixity;fixity;0;3;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;2;0
+default;default;default;3;0;0;0;2;0;1;2;0;0;0;21;4;3;0;2;2;0;0
+expr;expr;expr;0;0;0;0;0;0;0;0;0;0;0;2;14;0;2;13;1;2;0
+equation;equation;equation;0;15;6;0;0;10;0;11;1;9;2;4;5;0;2;19;0;1;7
+database;database;database;0;0;0;32;14;0;0;0;6;0;0;1;7;0;2;0;0;0;0
+tree;tree;tree;0;0;0;1;0;0;0;0;0;0;0;0;59;47;73;1;17;1;18
+inclusive or;inclusive or;inclusive or;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pattern of computation;pattern of computation;pattern of computation;0;0;0;0;0;0;0;0;7;0;0;0;0;0;0;0;0;0;1
+reserved word;reserved word;reserved words, reserved word;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+record;record;records, record;1;0;0;6;0;0;0;0;0;0;0;0;3;0;2;0;1;0;0
+System.Random;System.Random;System.Random;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0
+limit;limit;limit;0;0;0;1;0;0;0;0;0;0;0;0;0;0;10;0;0;1;1
+infinite list;infinite list;infinite lists, infinite list;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;45;0;0;3
+error;error;errors, error;27;14;8;7;1;2;0;4;1;4;1;22;43;0;6;3;6;3;1
+standard prelude;standard prelude;standard prelude;6;1;0;1;1;0;4;1;0;1;1;4;0;0;0;3;0;0;0
+export;export;export;1;0;0;0;3;0;0;0;0;0;0;0;0;12;5;0;0;0;0
+HCode;hcode;HCode;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+zipwith;zipwith;zipwith;0;0;0;0;1;0;0;0;8;0;3;0;0;0;0;7;0;0;0
+proof;proof;proof;0;0;4;0;0;0;0;86;1;23;1;0;16;2;2;13;0;0;0
+debugging;debugging;debugging;0;0;0;0;1;0;0;3;0;0;0;0;0;0;0;0;0;1;1
+program error;program error;program error;3;0;0;0;0;0;0;0;0;0;0;0;2;0;0;1;0;0;0
+first-class citizen;first-class citizen;first-class citizens, first-class citizen;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+process;process;processes, process;0;0;1;0;1;0;0;3;1;0;0;3;3;5;4;21;0;3;2
+calculator;calculator;calculator;0;1;0;1;0;0;0;0;0;0;1;0;5;0;7;5;15;4;0
+syntax error;syntax error;syntax error;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+argument;argument;argument;1;29;7;11;7;17;4;4;15;78;10;26;12;5;9;33;7;2;20
+generalization;generalization;generalization;0;0;0;0;0;0;0;2;7;1;2;0;0;0;1;0;0;0;0
+parse;parse;parse;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;14;6;2;0
+advantage of functional programming;advantage of functional programming;advantages of functional programming, advantage of functional programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+conditional equation;conditional equation;conditional equation;0;3;4;0;0;2;0;0;0;0;1;1;0;0;0;4;0;0;0
+NTree;ntree;NTree;0;0;0;0;0;0;0;0;0;0;0;0;11;0;0;0;0;0;0
+queuestate;queuestate;queuestate;0;0;0;0;0;0;0;0;0;0;0;0;0;0;13;1;0;0;0
+error handling;error handling;error handling;0;0;0;0;0;0;0;0;0;0;0;0;10;0;0;0;0;0;0
+program modification;program modification;program modification;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0
+monotype;monotype;monotype;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0
+visibility of definitions;visibility of definition;visibility of definitions;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+qualifier;qualifier;qualifier;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;5;0;0;0
+edit distance;edit distance;edit distance;0;0;0;0;0;0;0;0;0;0;0;0;13;0;0;0;0;0;1
+list of successes method;list of success method;list of successes method;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+specialization;specialization;specialization;0;0;0;0;0;0;0;1;0;3;0;0;0;0;0;0;0;0;0
+inheritance;inheritance;inheritance;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0
+recursion;recursion;recursion;0;0;51;0;0;30;2;6;16;4;3;0;19;0;2;3;2;3;0
+tuple;tuple;tuples, tuple;0;0;0;24;0;1;0;0;0;1;0;0;1;0;0;1;3;0;1
+maxthree;maxthree;maxthree;0;5;15;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+num;num;num;0;0;0;0;0;0;0;0;0;0;0;6;0;0;0;0;5;0;0
+fibonacci number;fibonacci number;fibonacci numbers, fibonacci number;0;0;3;3;0;0;0;0;0;0;0;0;0;0;0;3;0;0;2
+beside;beside;beside;0;0;0;0;10;0;0;0;2;0;0;0;0;0;0;1;0;0;1
+application;application;application;1;8;1;3;1;3;0;0;4;64;7;18;1;1;2;9;1;4;4
+input/output;input/output;input/output;1;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;1;0
+pythagorean triple;pythagorean triple;pythagorean triple;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;7;0;0;0
+command;command;command;28;0;0;0;8;0;4;0;0;0;0;0;0;0;0;6;9;1;0
+threeequal;threeequal;threeequal;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+genericity;genericity;genericity;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parameter;parameter;parameter;0;0;0;1;1;1;1;0;7;1;3;4;2;2;2;5;5;1;2
+dynamic programming;dynamic programming;dynamic programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;7
+outmess;outmess;outmess;0;0;0;0;0;0;0;0;0;0;0;0;2;0;8;2;0;0;0
+picture;picture;pictures, picture;16;1;10;2;102;0;0;3;14;11;32;2;2;0;0;0;0;38;0
+haskell;haskell;haskell;48;47;23;20;49;6;18;4;10;33;10;66;8;10;11;17;17;55;5
+abstraction;abstraction;abstraction;0;0;0;0;0;0;0;0;0;15;1;0;0;0;5;2;0;0;0
+structural induction;structural induction;structural induction;0;0;0;0;0;0;0;7;0;4;0;0;11;0;0;3;0;0;0
+backquote;backquote;backquote;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+max;max;max;0;7;16;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+type class;type class;type classes, type class;0;2;0;0;0;0;0;0;0;0;0;21;3;0;3;0;1;1;0
+type synonym;type synonym;type synonym;0;0;0;2;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+mapping;mapping;mapping;0;0;0;0;0;0;0;0;8;1;2;0;1;0;2;0;0;1;0
+deriving;deriving;deriving;0;0;1;1;0;0;0;0;0;2;0;1;0;0;0;0;0;0;0
+pseudo-random number;pseudo-random number;pseudo-random numbers, pseudo-random number;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+hardware;hardware;hardware;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;9;0
+extensionality principle;extensionality principle;extensionality principle;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0;0
+value;value;value;3;43;44;21;8;26;40;22;14;13;7;20;34;2;35;63;38;26;34
+miranda;miranda;miranda;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+variable;variable;variable;1;8;7;9;11;17;5;15;1;0;1;25;3;0;21;11;6;0;3
+type declaration;type declaration;type declaration;0;0;4;0;2;0;0;1;0;0;2;10;0;0;1;0;0;0;0
+floating-point operator;floating-point operator;floating-point operators, floating-point operator;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+class;class;classes, class;0;2;0;0;1;1;2;0;0;1;0;170;34;1;21;4;9;3;0
+identity;identity;identity;0;0;0;0;1;0;0;2;0;6;0;0;0;3;0;0;13;0;1
+polymorphism;polymorphism;polymorphism;0;0;0;0;10;0;0;0;1;0;1;6;0;1;0;2;0;0;0
+imperative programming;imperative programming;imperative programming;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;2;0;0
+glasgow haskell compiler;glasgow haskell compiler;glasgow haskell compiler;2;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0
+blackhorse;blackhorse;blackhorse;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+codemessage;codemessage;codemessage;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+read;read;reads, read;1;13;2;11;3;1;40;4;0;5;5;21;4;1;1;6;15;1;0
+expression;expression;expression;17;18;3;4;0;8;9;6;1;11;22;45;47;1;4;62;9;47;12
+System.IO;System.IO;System.IO;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;5;1;0
+documentation;documentation;documentation;9;0;0;0;16;0;0;0;0;0;1;2;0;6;0;0;1;0;2
+memoization;memoization;memoization;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3
+order;order;order;2;2;2;2;8;7;4;5;14;31;13;2;8;14;13;13;5;6;11
+object-oriented;object-oriented;object-oriented;0;0;0;0;0;0;0;0;0;0;0;5;1;0;0;0;0;1;0
+complexity;complexity;complexity;0;0;0;2;0;0;0;0;0;0;1;0;0;1;0;0;0;0;48
+higher-order function;higher-order function;higher-order function;0;0;0;0;1;0;1;0;8;11;7;0;3;1;1;1;1;3;0
+information hiding;information hiding;information hiding;0;0;0;0;0;0;0;0;0;0;0;1;0;4;3;0;0;0;0
+union type;union type;union type;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0
+GHC;ghc;GHC;7;0;0;0;2;0;1;0;1;0;0;5;0;2;0;0;0;3;3
+termination;termination;termination;0;0;2;0;0;0;1;3;0;0;0;0;1;0;0;0;0;1;0
+op;op;ops, op;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;3;0;0;0
+interface;interface;interface;3;0;0;0;2;0;0;0;0;0;0;9;0;8;9;0;5;1;0
+simplification;simplification;simplification;0;0;0;0;0;0;0;1;0;0;1;2;0;0;3;0;0;2;0
+space leak;space leak;space leak;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3
