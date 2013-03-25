@@ -75,5 +75,5 @@ for language in languages:
   	where(lambda page: filter(lambda p: p['p'] == 'Language' and p['n'] == language and 'internal_links' in page['page'], page['page']['uses'])). \
   	select(lambda page: {'name': page['page']['page']['n'], 'links': page['page']['internal_links']}). \
   	to_list()
-  	createTable(dict([(c['name'],c['links']) for c in contribs]), 'Language', language)
+  	createTable(dict([(c['name'],c['links']) for c in contribs]), 'Languages', language)
 
