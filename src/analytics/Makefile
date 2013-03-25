@@ -1,4 +1,4 @@
-BOOKS = LYAH RWH Craft PIH
+include ../Makefile.vars
 
 analyze:
 	make frequencies
@@ -9,7 +9,7 @@ prepare:
 	R < dependencies.R --no-save
 
 frequencies:	
-	for b in ${BOOKS}; do \
+	for b in ${ALL_BOOKS}; do \
 		R < frequencies.R --no-save --args ""$$b""; \
 	done
 
@@ -19,7 +19,7 @@ popular:
 	R < rank.R --no-save
 
 tex:
-	for b in ${BOOKS}; do \
+	for b in ${ALL_BOOKS}; do \
 		./csv2tex.py --input ../../data/perbook/"$$b"/chapterProfile.numbers.csv --template "tabular_template_with_hlines.tex" ; \
 		./csv2tex.py --input ../../data/perbook/"$$b"/chapterProfile.visual.csv --template "tabular_template_with_hlines.tex" ; \
 	done
@@ -40,11 +40,11 @@ tex:
 	#mv RWH/topFrequency.tex ../../data/perbook/RWH/topFrequency.tex
 	#mv PIH/topFrequency.tex ../../data/perbook/PIH/topFrequency.tex
 
-	for b in ${BOOKS}; do \
+	for b in ${ALL_BOOKS}; do \
 		./csv2tex.py --input ../../data/perbook/"$$b"/topFrequency.csv --template "tabular_template.tex" ; \
 	done
 
-	for b in ${BOOKS}; do \
+	for b in ${ALL_BOOKS}; do \
 		./csv2tex.py --input ../../data/perbook/"$$b"/topScattered.csv --template "tabular_template.tex" ; \
 	done
 

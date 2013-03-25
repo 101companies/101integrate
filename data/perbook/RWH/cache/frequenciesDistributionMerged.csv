@@ -1,0 +1,1419 @@
+Term;Stemmed;Variations;Getting started;Types and functions;Defining types, streamlining functions;Functional programming;Writing a library: working with JSON data;Using typeclasses;Input and output;Efficient file processing, regular expressions, and file name matching;I/O case study: a library for searching the filesystem;Code case study: parsing a binary data format;Testing and quality assurance;Barcode recognition;Data structures;Monads;Programming with monads;The Parsec parsing library;The foreign function interface;Monad transformers;Error handling;Systems programming;Working with databases;Web client programming;GUI programming;Basic concurrent and parallel programming;Profiling and tuning for performance;Advanced library design: building a Bloom filter;Network programming;Software transactional memory
+iterator type;iterator type;iterator type;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+impure function;impure function;impure functions, impure function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+dynamic;dynamic;dynamic;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;7;0;0;0;0;0;0;0;0;0
+function for 2nd;function for 2nd;functions for 2nd, function for 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+updatelookupwithkey type;updatelookupwithkey type;updatelookupwithkey type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+const;const;const;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0
+polymorphic list type;polymorphic list type;polymorphic list types, polymorphic list type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+splitat function;splitat function;splitat function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+derived instance;derived instance;derived instances, derived instance;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+anchored regular expression;anchored regular expression;anchored regular expressions, anchored regular expression;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+decoding barcode;decoding barcode;decoding barcodes, decoding barcode;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+blockbuffering mode (buffermode);blockbuffering mode ( buffermode );blockbuffering mode (buffermode);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+prepare function;prepare function;prepare function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+list comprehension;list comprehension;list comprehensions, list comprehension;0;0;0;0;0;0;0;0;0;0;0;4;0;4;0;0;0;0;0;0;0;0;0;0;0;4;0;0
+product type;product type;product types, product type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ST (state thread) monad;st ( state thread ) monad;ST (state thread) monad;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+vector;vector;vector;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;8;0;0;0;0;0;0;0;0;0;0;0
+runparse function;runparse function;runparse function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+vs. space;vs. space;vs. spaces, vs. space;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+p5 (raw) netpbm image format;p5 ( raw ) netpbm image format;p5 (raw) netpbm image format;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.Dynamic module;Data.Dynamic module;Data.Dynamic module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tan function;tan function;tan function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+overlappinginstances 2nd;overlappinginstances 2nd;overlappinginstances 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type parameter;type parameter;type parameter;0;2;0;0;0;2;0;0;1;4;0;1;0;2;2;0;0;10;0;0;0;0;0;0;0;0;0;0
+monad transformer;monad transformer;monad transformers, monad transformer;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;63;5;0;0;0;0;0;0;0;0;2
+even;even;even;5;6;4;9;3;5;17;1;3;3;0;12;3;7;5;6;4;3;3;3;7;0;1;6;0;5;2;4
+specification;specification;specification;0;0;0;0;0;0;0;0;0;0;1;0;0;0;1;2;0;0;0;0;1;0;0;1;1;0;0;0
+decoding;decoding;decoding;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+binding function [see (>>=) operator];binding function [ see (>>=) operator ];binding function [see (>>=) operator];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+above;above;above;9;3;7;13;3;3;2;8;6;4;0;8;2;9;5;2;2;2;2;1;1;0;1;11;0;1;0;6
+byetstring module;byetstring module;byetstring module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+enumeration notation;enumeration notation;enumeration notation;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+operator precedence;operator precedence;operator precedence;3;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+algebraic type;algebraic type;algebraic type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+regexcontex typeclass;regexcontex typeclass;regexcontex typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+unlifted function;unlifted function;unlifted functions, unlifted function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+local functions/global variable;local functions/global variable;local functions/global variables, local functions/global variable;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.Directory library;System.Directory library;System.Directory library;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+infix function;infix function;infix functions, infix function;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+polymorphic testing;polymorphic testing;polymorphic testing;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+getchar;getchar;getchar;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+python 2nd 3rd;python 2nd 3rd;python 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+init;init;init;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+two-dimensional vector;two-dimensional vector;two-dimensional vectors, two-dimensional vector;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+getdirectorycontents function;getdirectorycontents function;getdirectorycontents function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+numeric types 2nd;numeric type 2nd;numeric types 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type;type;types, type;42;215;179;37;56;168;38;51;35;56;40;63;50;135;80;18;117;50;49;21;15;6;11;33;34;50;0;12
+toUTCTime function;toutctime function;toUTCTime function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+alternatives (value constructors);alternative ( value constructor );alternatives (value constructors);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+reserved word;reserved word;reserved words, reserved word;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foreignfunctioninterface;foreignfunctioninterface;foreignfunctioninterface;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pretty printer;pretty printer;pretty printers, pretty printer;0;0;0;0;6;0;0;0;0;0;5;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+raw (p5) netpbm format;raw ( p5 ) netpbm format;raw (p5) netpbm format;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+join;join;join;0;0;1;1;0;0;1;1;0;0;0;0;0;4;1;0;0;0;0;0;0;0;0;2;0;0;0;0
+nomonomorphismrestriction language extension;nomonomorphismrestriction language extension;nomonomorphismrestriction language extension;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+SQL (Structured Query Language);sql ( structured query language );SQL (Structured Query Language);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+queries (database);query ( database );queries (database);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+do expression;do expression;do expressions, do expression;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+immutable array;immutable array;immutable arrays, immutable array;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;5;0;0
+structures 2nd 3rd [see also data structures];structure 2nd 3rd [ see also data structure ];structures 2nd 3rd [see also data structures];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hfilesize function;hfilesize function;hfilesize function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+error handling;error handling;error handling;0;0;0;1;0;1;2;1;0;0;0;0;0;0;0;1;0;0;12;0;3;0;0;0;0;0;0;0
+temporary file;temporary file;temporary files, temporary file;0;0;0;0;0;0;7;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+id function;id function;id function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+open world assumption;open world assumption;open world assumption;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+square brackets ([ ]);square bracket ([ ]);square brackets ([ ]);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fibonacci number;fibonacci number;fibonacci numbers, fibonacci number;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+defining and using new;defining and using new;defining and using new;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+jenkins hash function;jenkins hash function;jenkins hash functions, jenkins hash function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0
+splitting line;splitting line;splitting lines, splitting line;0;0;0;3;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+PGM file;pgm file;PGM files, PGM file;0;0;0;0;0;0;0;0;0;7;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+abstraction;abstraction;abstraction;0;2;0;2;0;0;0;0;1;3;0;0;0;0;1;0;3;3;0;0;2;0;0;0;2;0;0;0
+typed;typed;typed;2;11;0;0;3;0;0;1;0;0;0;0;0;0;0;0;5;0;1;1;1;0;0;0;0;0;0;1
+lambda calculu;lambda calculu;lambda calculus, lambda calculu;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+datatype;datatype;datatype;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foldr function;foldr function;foldr function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+complexity;complexity;complexity;0;0;0;0;0;0;0;0;0;1;0;0;0;1;0;0;1;1;1;0;0;0;0;1;1;1;0;1
+curried function;curried function;curried functions, curried function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+autocommit mode (databases);autocommit mode ( database );autocommit mode (databases);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+order;order;order;0;2;3;9;2;3;3;3;8;3;1;3;5;4;1;1;1;6;3;1;2;0;0;7;2;3;1;1
+restriction;restriction;restrictions, restriction;0;1;0;1;1;13;0;1;0;1;0;1;0;0;1;0;0;1;1;0;0;0;0;0;0;1;0;0
+feedback;feedback;feedback;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1
+right value;right value;right value;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+setfiletimes function;setfiletimes function;setfiletimes function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parse type 2nd;parse type 2nd;parse type 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+runtime option;runtime option;runtime options, runtime option;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0
+regexp [see regular expressions];regexp [ see regular expression ];regexp [see regular expressions];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+writing;writing;writing;5;7;6;9;6;1;11;4;7;6;4;6;1;8;3;6;6;3;0;5;2;0;1;3;1;2;1;0
+type-based testing;type-based testing;type-based testing;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+throw function;throw function;throw function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type checking;type checking;type checking;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0
+programming with;programming with;programming with;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;0;0;0;1;2;0;0;0;0
+IO type;io type;IO type;0;0;0;0;0;0;1;1;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+memory location;memory location;memory locations, memory location;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tointeger function;tointeger function;tointeger function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+maybe monad;maybe monad;maybe monads, maybe monad;0;0;0;0;0;0;0;0;0;0;0;0;0;5;1;0;0;1;1;0;0;0;0;0;0;0;0;0
+type name;type name;type names, type name;1;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0
+hanging lambda;hanging lambda;hanging lambdas, hanging lambda;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+derivedatatypeable;derivedatatypeable;derivedatatypeable;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0
+directory;directory;directories, directory;0;4;0;0;5;0;11;21;46;0;1;0;2;0;0;0;0;6;0;17;0;2;1;0;0;1;0;0
+combining;combining;combining;0;0;0;0;0;0;0;0;0;0;1;3;0;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0
+symbolic evaluation;symbolic evaluation;symbolic evaluation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lazy evaluation;lazy evaluation;lazy evaluations, lazy evaluation;0;3;0;0;0;0;1;0;0;0;0;2;0;0;0;0;0;0;4;0;0;0;0;0;3;0;0;0
+juxtaposition;juxtaposition;juxtaposition;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+realtofrac function;realtofrac function;realtofrac function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+multiline literal;multiline literal;multiline literals, multiline literal;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+GHCi;ghci;ghci, GHCi;58;13;14;8;7;19;14;10;2;0;2;10;8;2;5;9;5;2;17;4;2;2;0;2;0;0;3;3
+frominteger function;frominteger function;frominteger function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+quickcheck function;quickcheck function;quickcheck function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.Map module 2nd;Data.Map module 2nd;Data.Map module 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parallel programs 2nd;parallel program 2nd;parallel programs 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+shared pattern;shared pattern;shared patterns, shared pattern;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+multiline string literal;multiline string literal;multiline string literals, multiline string literal;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+infix;infix;infix;5;0;0;13;0;0;0;1;1;1;0;0;0;1;0;1;0;0;0;1;0;0;0;0;0;0;0;0
+shiftr function;shiftr function;shiftr function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+logging;logging;logging;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;1;0;0;0;3;0
+filter;filter;filter;0;0;0;14;0;0;2;0;10;0;2;1;1;0;1;0;0;0;1;3;0;1;0;0;0;46;0;0
+Coding.hs;Coding.hs;Coding.hs;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+signature;signature;signatures, signature;0;20;4;6;8;1;0;5;3;2;0;7;0;12;2;2;3;6;1;0;0;0;0;1;0;1;0;0
+hugs interpreter;hug interpreter;hugs interpreter;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+>>;>>;>>;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+coding;coding;coding;0;1;0;1;0;0;0;0;2;0;0;0;0;5;0;0;0;0;0;0;0;0;0;2;0;0;0;0
+idempotency;idempotency;idempotency;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+IConnection typeclass;iconnection typeclass;IConnection typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+prefix notation;prefix notation;prefix notation;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+value comparison;value comparison;value comparisons, value comparison;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+>>= (bind) function;>>= ( bind ) function;>>= (bind) function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+any newtype constructor;any newtype constructor;any newtype constructor;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+word type;word type;word type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+isalpha;isalpha;isalpha;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+string type;string type;string type;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+atomically block;atomically block;atomically blocks, atomically block;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+signum;signum;signum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+x:xs pattern;x : x pattern;x:xs pattern;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+regular expression;regular expression;regular expressions, regular expression;0;0;0;0;0;0;0;22;0;0;0;0;0;0;0;7;39;0;0;2;0;0;0;1;0;0;0;0
+keyword;keyword;keyword;0;4;8;1;1;13;1;0;2;1;0;0;0;5;0;0;4;0;0;0;0;0;0;0;0;0;0;0
+expr;expr;expr;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+representing datum;representing datum;representing data, representing datum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tree;tree;tree;0;0;11;0;2;0;0;0;6;5;0;18;3;0;0;0;0;3;0;0;0;0;2;0;0;0;0;0
+property-based testing;property-based testing;property-based testing;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pi value;pi value;pi value;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+matching on;matching on;matching on;0;0;2;2;0;1;0;1;0;1;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0
+infinite list;infinite list;infinite lists, infinite list;1;1;0;1;0;0;0;0;0;0;0;0;0;1;4;0;0;0;6;0;0;0;0;0;0;1;0;0
+fractional division (/) option;fractional division (/) option;fractional division (/) option;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+question mark (?);question mark (?);question mark (?);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parsebyte function;parsebyte function;parsebyte function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+putstr;putstr;putstr;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+elem;elem;elem;0;0;0;4;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0
+commutativity;commutativity;commutativity;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pattern match;pattern match;pattern matches, pattern match;0;0;8;2;3;4;0;0;0;1;0;2;0;2;0;0;1;0;0;0;0;0;0;1;0;0;0;0
+latency;latency;latency;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;1;1
+strings and character;string and character;strings and characters, strings and character;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+seq function;seq function;seq function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tuple;tuple;tuples, tuple;0;12;13;2;0;1;2;5;0;2;0;9;1;10;0;0;0;0;0;0;0;0;0;0;5;2;0;0
+test datum;test datum;test data, test datum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+prompt directive (ghci);prompt directive ( ghci );prompt directive (ghci);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ternary type;ternary type;ternary type;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+threeequal;threeequal;threeequal;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+return keyword;return keyword;return keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+synonyms (types);synonym ( type );synonyms (types);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+recursive type;recursive type;recursive types, recursive type;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+try keyword;try keyword;try keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+recursive data structure;recursive data structure;recursive data structure;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+downloading support material;downloading support material;downloading support materials, downloading support material;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+HPC (Haskell Program Coverage);hpc ( haskell program coverage );HPC (Haskell Program Coverage);0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+digittoint;digittoint;digittoint;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+sum;sum;sum;0;1;3;4;0;0;0;3;0;0;1;3;0;0;0;0;0;0;0;0;0;0;0;0;12;0;0;0
+UPC-A barcodes;UPC-A barcodes;UPC-A barcodes;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+syntax;syntax;syntax;4;3;14;1;0;0;2;9;1;3;1;4;0;7;0;0;7;0;1;2;1;1;0;1;0;0;0;0
+I/O and;I/O and;I/O and;0;0;0;0;0;0;4;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1
+do notation;do notation;do notation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monad law;monad law;monad laws, monad law;0;0;0;0;0;0;0;0;0;0;0;0;0;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+palindrome;palindrome;palindrome;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+layout;layout;layout;0;0;6;0;2;0;0;0;4;0;0;1;0;4;0;0;0;1;0;0;0;0;2;0;0;2;0;0
+ix type;ix type;ix type;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Control.Monad.Trans module;Control.Monad.Trans module;Control.Monad.Trans module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+cons operator;con operator;cons operator;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+case study;case study;case studies, case study;0;0;0;0;0;0;0;0;1;1;1;4;0;3;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+pcre.h header file;pcre.h header file;pcre.h header file;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mapping over;mapping over;mapping over;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+directories and file;directory and file;directories and files, directories and file;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+hseek function;hseek function;hseek function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+logbase function;logbase function;logbase function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+closing file handle;closing file handle;closing file handles, closing file handle;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+3d vector type;3d vector type;3d vector type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+list monad;list monad;list monads, list monad;0;0;0;0;0;0;0;0;0;0;0;0;0;6;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+overloaded literal;overloaded literal;overloaded literals, overloaded literal;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+implication;implication;implication;0;0;0;1;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0
+lifted function;lifted function;lifted functions, lifted function;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+program termination;program termination;program termination;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+Control.Exception module 2nd 3rd;Control.Exception module 2nd 3rd;Control.Exception module 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mtl library 2nd;mtl library 2nd;mtl library 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+LINE pragma;line pragma;LINE pragma;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+num;num;num;2;0;0;0;0;9;0;0;0;0;0;0;11;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+result;result;result;3;28;11;20;10;11;46;24;22;18;11;12;7;58;18;27;25;15;19;7;9;4;2;14;10;6;1;5
+Haskell Foreign Function Interface (FFI);haskell foreign function interface ( ffi );Haskell Foreign Function Interface (FFI);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+eratosthene;eratosthene;eratosthenes, eratosthene;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type declaration;type declaration;type declaration;0;0;3;0;3;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0
+types and purity;type and purity;types and purity;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+filename;filename;filenames, filename;0;0;0;0;0;0;7;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+identity parser;identity parser;identity parsers, identity parser;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+text I/O;text I/O;text I/O;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+sort function;sort function;sort function;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lazy;lazy;lazy;0;4;1;1;0;2;17;12;1;2;0;3;1;1;0;0;0;0;4;1;11;0;0;10;11;1;1;0
+Product id of barcodes;product id of barcodes;Product IDs of barcodes, Product id of barcodes;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+preprocessor;preprocessor;preprocessor;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8;0;0;0;0;0;0;0;0;0;0;0
+I/O (input/output) and;I/O (input/output) and;I/O (input/output) and;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+seek pointer;seek pointer;seek pointers, seek pointer;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+shell scripting;shell scripting;shell scripting;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+monad;monad;monads, monad;0;2;0;0;0;0;13;0;7;2;3;1;1;182;111;15;2;171;38;0;0;0;0;3;0;13;0;16
+internal module;internal module;internal modules, internal module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+pack function;pack function;pack function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+comprehension;comprehension;comprehensions, comprehension;0;0;0;0;0;0;0;0;0;0;0;4;0;4;0;0;0;0;0;0;0;0;0;0;0;4;0;0
+type definition;type definition;type definitions, type definition;0;0;2;0;0;0;0;0;0;6;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+maybe type;maybe type;maybe type;0;0;5;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+exception type;exception type;exception type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0
+simplification;simplification;simplification;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+replicate;replicate;replicate;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+putstrln function 2nd 3rd;putstrln function 2nd 3rd;putstrln function 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+flexible;flexible;flexible;0;0;0;0;1;0;0;0;0;3;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0
+dropwhile;dropwhile;dropwhile;0;0;0;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+processing [see file processing];processing [ see file processing ];processing [see file processing];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+syntax error;syntax error;syntax error;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+System.FilePath module 2nd;System.FilePath module 2nd;System.FilePath module 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monomorphism restriction;monomorphism restriction;monomorphism restriction;0;0;0;0;0;8;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+record syntax 2nd;record syntax 2nd;record syntax 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monoid instance;monoid instance;monoid instance;0;0;0;0;0;0;0;0;0;0;1;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+exception;exception;exceptions, exception;0;0;0;0;0;5;5;18;12;0;1;0;0;3;0;0;0;1;113;2;6;0;1;6;0;0;0;5
+program development;program development;program development;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+boilerplate code;boilerplate code;boilerplate code;0;0;0;1;0;0;0;0;0;2;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0
+or function;or function;or function;1;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+bytestring module;bytestring module;bytestring modules, bytestring module;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+advantage of functional programming;advantage of functional programming;advantages of functional programming, advantage of functional programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+boolean logic;boolean logic;boolean logic;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+IO;io;IO;0;3;0;0;0;0;44;3;18;0;0;1;0;9;19;1;6;14;30;2;1;0;0;5;0;3;0;9
+custom data types for;custom data type for;custom data types for;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+id;id;id;0;0;2;3;0;0;0;0;3;2;0;4;2;0;1;0;0;0;0;0;0;0;2;1;0;0;0;0
+Data.Traversable module;Data.Traversable module;Data.Traversable module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+specialization;specialization;specialization;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+recursion;recursion;recursion;0;4;0;13;0;0;1;1;0;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0;2;0;0;0
+beside;beside;beside;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+MVar type 2nd 3rd;mvar type 2nd 3rd;MVar type 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+haskell 98;haskell 98;haskell 98;1;0;0;0;0;9;0;0;0;3;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+listing directories with;listing directory with;listing directories with;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+-sstderr RTS option 2nd;-sstderr RTS option 2nd;-sstderr RTS option 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+nil;nil;nil;0;0;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+state monads 2nd 3rd;state monad 2nd 3rd;state monads 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+isalphanum;isalphanum;isalphanum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+emptydatadecl;emptydatadecl;emptydatadecls, emptydatadecl;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type class constraint;type class constraint;type class constraint;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+file modification;file modification;file modifications, file modification;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+compiling source code;compiling source code;compiling source code;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.IO;System.IO;System.IO;0;0;0;0;0;0;3;0;1;0;0;0;0;0;0;0;1;0;8;0;0;0;0;0;0;0;0;0
+C PCRE API;C PCRE API;C PCRE API;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+unification;unification;unification;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+nobuffering mode (buffermode);nobuffering mode ( buffermode );nobuffering mode (buffermode);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+just;just;just;3;5;10;14;3;10;18;3;7;11;4;8;9;17;6;11;16;5;15;9;5;2;3;7;1;7;4;6
+permissive type;permissive type;permissive types, permissive type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Build-Depends field;Build-Depends field;Build-Depends fields, Build-Depends field;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+currying;currying;currying;0;0;0;4;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+anonymous (lambda) functions 2nd;anonymous ( lambda ) function 2nd;anonymous (lambda) functions 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+transformer;transformer;transformers, transformer;0;0;0;0;0;0;0;0;0;0;0;0;0;1;2;0;0;80;7;0;0;0;0;0;0;1;0;2
+data-directed programming;data-directed programming;data-directed programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pure error handling;pure error handling;pure error handling;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+gen environment;gen environment;gen environment;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+nothing value;nothing value;nothing value;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+character;character;characters, character;12;1;7;7;26;3;15;23;2;3;4;0;0;1;2;37;3;0;0;1;5;0;0;1;1;1;2;3
+newtype declaration;newtype declaration;newtype declarations, newtype declaration;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+recursive case;recursive case;recursive case;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+reuse;reuse;reuse;0;0;0;4;0;1;1;0;1;0;0;1;1;1;1;0;1;0;1;0;0;0;0;0;0;1;0;0
+SELECT statement;select statement;SELECT statements, SELECT statement;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0
+monad stack;monad stack;monad stack;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;6;1;0;0;0;0;0;0;0;0;0
+fusion;fusion;fusion;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;1;0;0
+zipwith function;zipwith function;zipwith function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+combining function;combining function;combining functions, combining function;0;0;0;0;0;0;0;0;0;0;1;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+the list monad;the list monad;the list monad;0;0;0;0;0;0;0;0;0;0;0;0;0;6;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+reading/modifying state;reading/modifying state;reading/modifying state;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+transformer stacking;transformer stacking;transformer stacking;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+fixity;fixity;fixity;1;0;0;0;0;0;0;0;3;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+starvation;starvation;starvation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8;0;0;0;0
+toupper function;toupper function;toupper function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+withtransaction function;withtransaction function;withtransaction function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type class instance;type class instance;type class instance;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+program error;program error;program error;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Haskell Program Coverage (HPC);haskell program coverage ( hpc );Haskell Program Coverage (HPC);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+quicksort algorithm;quicksort algorithm;quicksort algorithm;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+category theory;category theory;category theory;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.Monoid module;Data.Monoid module;Data.Monoid module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.Sequence module;Data.Sequence module;Data.Sequence module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+core;core;cores, core;0;0;0;0;2;1;1;0;0;0;1;1;0;5;0;0;3;1;0;0;0;0;1;42;12;5;0;0
+overlappinginstances language extension;overlappinginstances language extension;overlappinginstances language extension;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+automatic derivation;automatic derivation;automatic derivation;0;0;0;0;0;2;0;0;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0
+precedence and associativity;precedence and associativity;precedence and associativity;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+left-biased function;left-biased function;left-biased functions, left-biased function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foldr1;foldr1;foldr1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+substitution;substitution;substitution;0;2;0;0;1;0;0;0;1;0;0;0;0;3;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+word64 type;word64 type;word64 type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+strong type;strong type;strong types, strong type;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+getmodificationtime function;getmodificationtime function;getmodificationtime function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pseudo-random number;pseudo-random number;pseudo-random numbers, pseudo-random number;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+sum type;sum type;sum types, sum type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+curry;curry;curry;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Control.Parallel.Strategies module;Control.Parallel.Strategies module;Control.Parallel.Strategies module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+float;float;float;0;4;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parsing;parsing;parsing;1;0;0;0;0;4;1;1;0;43;0;8;1;6;1;34;0;4;3;0;0;1;0;0;0;0;0;2
+rendering;rendering;rendering;0;0;0;0;17;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+haskell;haskell;haskell;48;93;41;52;29;50;69;33;26;11;13;18;21;25;11;8;124;8;12;34;10;6;10;29;19;24;8;3
+base case;base case;base case;0;0;0;4;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+writechan function;writechan function;writechan function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ghc compiler 2nd;ghc compiler 2nd;ghc compiler 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+openbinarytempfile function;openbinarytempfile function;openbinarytempfile function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+DST (Daylight Saving Time);dst ( daylight saving time );DST (Daylight Saving Time);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+head;head;head;0;10;2;18;2;0;0;1;0;0;1;0;3;0;0;0;0;0;0;0;0;0;0;13;2;0;0;1
+randomr function;randomr function;randomr function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+else keyword;else keyword;else keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+putst function;putst function;putst function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+subclassing;subclassing;subclassing;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+implicit state 2nd;implicit state 2nd;implicit state 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+program transformation;program transformation;program transformation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+templates (c++);template ( c ++);templates (c++);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+vs. tab character;vs. tab character;vs. tab characters, vs. tab character;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+maximum;maximum;maximum;0;0;0;1;1;1;0;2;0;3;0;1;0;0;0;0;0;4;0;0;0;0;0;0;3;1;0;0
+closed world assumption;closed world assumption;closed world assumptions, closed world assumption;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+traverse function 2nd;traverse function 2nd;traverse function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+UTC (Coordinated Universal Time);utc ( coordinated universal time );UTC (Coordinated Universal Time);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+IO monad;io monad;IO monad;0;2;0;0;0;0;7;0;5;0;0;0;0;8;9;1;2;7;10;0;0;0;0;1;0;2;0;5
+sfetchallrows' function;sfetchallrows ' function;sfetchallrows' function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+wild card;wild card;wild card;0;0;11;5;0;2;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+putstrln;putstrln;putstrln;1;0;0;0;0;2;18;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;1;0;0;0;0
+main loop (GUI programming);main loop ( gui programming );main loop (GUI programming);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+blackhorse;blackhorse;blackhorse;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+thunk;thunk;thunks, thunk;0;6;0;8;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;1;3;0;0
+NTree;ntree;NTree;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+-fvia-C GHC option;-fvia-C GHC option;-fvia-C GHC option;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Foreign.C.String module 2nd;Foreign.C.String module 2nd;Foreign.C.String module 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+floating;floating;floating;7;3;1;0;1;14;0;0;0;0;0;0;1;0;0;1;2;0;1;0;0;0;0;0;7;0;0;0
+equational reasoning;equational reasoning;equational reasoning;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+immutable state;immutable state;immutable states, immutable state;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+enum keyword (C/C++);enum keyword (C/C++);enum keyword (C/C++);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+picture;picture;pictures, picture;0;2;0;0;0;0;1;0;0;0;0;2;0;0;1;0;0;0;0;0;0;0;0;1;0;0;0;0
+thread map;thread map;thread maps, thread map;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+mutable array;mutable array;mutable arrays, mutable array;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0
+miranda;miranda;miranda;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+variable;variable;variable;8;36;41;13;4;1;5;5;8;2;0;2;1;8;4;4;3;1;1;0;0;0;1;4;2;2;0;5
+fst;fst;fst;0;6;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+time;time;times, time;4;12;5;15;6;6;15;6;2;4;0;9;10;7;8;3;14;4;0;42;7;1;0;19;30;6;5;11
+applicative operator;applicative operator;applicative operator;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+intensionality;intensionality;intensionality;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+insert function;insert function;insert function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+concept;concept;concepts, concept;0;1;2;0;1;0;1;0;0;0;0;0;2;0;0;1;0;0;0;2;1;0;0;0;0;0;0;0
+out of scope;out of scope;out of scope;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+cases (value constructors);case ( value constructor );cases (value constructors);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+linebuffering mode (buffermode);linebuffering mode ( buffermode );linebuffering mode (buffermode);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+map function;map function;map function;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+printf (c) option;printf ( c ) option;printf (c) option;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+graph;graph;graph;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;7;0;0;0
+case expression;case expression;case expressions, case expression;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+p3 (plain) netpbm image format;p3 ( plain ) netpbm image format;p3 (plain) netpbm image format;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+isspace;isspace;isspace;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+predicate;predicate;predicates, predicate;0;13;0;18;0;0;0;0;39;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+scientific notation;scientific notation;scientific notation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+string;string;strings, string;17;13;15;32;28;30;36;50;0;19;1;12;12;13;19;17;28;6;7;16;16;3;2;0;1;4;0;2
+associativity of operators;associativity of operator;associativity of operators;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+control-with-character escapes;control-with-character escapes;control-with-character escapes;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+universal newline support;universal newline support;universal newline support;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+numeric 2nd;numeric 2nd;numeric 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+newtype;newtype;newtype;0;0;0;0;0;23;0;0;0;2;0;0;2;2;12;0;10;5;1;0;0;0;0;1;0;0;0;2
+programming environment;programming environment;programming environment;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+binary function;binary function;binary function;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+structural recursion;structural recursion;structural recursion;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+invertcolour;invertcolour;invertcolour;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+div;div;div;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+accumulation;accumulation;accumulation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+conversion between types;conversion between type;conversion between types;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+standard library;standard library;standard libraries, standard library;2;0;0;2;0;0;0;2;2;0;0;3;0;2;2;0;2;1;0;0;0;0;0;0;1;0;0;0
+typeclasses 2nd;typeclasses 2nd;typeclasses 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pipe (|);pipe (|);pipe (|);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+true boolean value;true boolean value;true boolean value;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+GET method (HTTP);get method ( http );GET method (HTTP);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fmap;fmap;fmap;0;0;0;0;0;0;0;0;0;24;0;2;0;9;0;1;0;2;0;0;0;0;0;0;0;0;0;0
+barcode;barcode;barcodes, barcode;0;0;0;0;0;0;0;0;0;0;0;30;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parse type;parse type;parse type;0;0;0;0;0;0;0;0;0;3;0;0;0;2;0;0;0;3;0;0;0;0;0;0;0;0;0;0
+intergral;intergral;intergral;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+undefinedness;undefinedness;undefinedness;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ubuntu linux;ubuntu linux;ubuntu linux;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mempty;mempty;mempty;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hamming number;hamming number;hamming numbers, hamming number;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+example;example;examples, example;11;22;24;20;7;19;40;7;9;9;8;16;16;19;8;12;8;9;23;10;16;4;6;21;10;6;4;5
+queue;queue;queue;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3
+properties as function;property a function;properties as functions, properties as function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+NF (normal form);nf ( normal form );NF (normal form);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+whitespace in expressions;whitespace in expression;whitespace in expressions;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+logical;logical;logical;3;3;0;2;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0
+language extension;language extension;language extensions, language extension;0;0;0;0;0;9;0;0;0;0;0;0;0;0;5;0;2;1;2;0;0;0;0;0;2;0;0;2
+shift function;shift function;shift function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pair (2-tuple);pair (2-tuple);pair (2-tuple);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+GHC-Options property;GHC-Options property;GHC-Options property;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+prelude module 2nd;prelude module 2nd;prelude module 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+scope;scope;scope;1;0;7;0;0;0;0;0;2;0;0;0;0;0;2;0;2;0;0;0;0;0;0;0;0;0;0;0
+parsec helper function;parsec helper function;parsec helper functions, parsec helper function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+leaky code;leaky code;leaky code;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+serverstate;serverstate;serverstate;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+sharing;sharing;sharing;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0
+head function 2nd 3rd;head function 2nd 3rd;head function 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+concat function 2nd 3rd;concat function 2nd 3rd;concat function 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.Foldable module 2nd;Data.Foldable module 2nd;Data.Foldable module 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+otherwise expression;otherwise expression;otherwise expression;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+PostgreSQL;postgresql;PostgreSQL;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0
+hash tables 2nd;hash table 2nd;hash tables 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+poke function;poke function;poke function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+functional programming;functional programming;functional programming;0;1;0;6;1;0;0;1;0;0;1;0;1;0;0;0;0;1;0;0;0;0;0;1;0;0;0;0
+floating-point number;floating-point number;floating-point numbers, floating-point number;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+binary search tree;binary search tree;binary search tree;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+arithmetic expression;arithmetic expression;arithmetic expressions, arithmetic expression;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+return calls 2nd;return call 2nd;return calls 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+stream;stream;stream;0;0;0;0;0;0;1;0;1;0;0;0;0;0;1;2;0;0;0;0;0;0;0;5;4;0;2;0
+indice of arrays;indice of array;indices of arrays, indice of arrays;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+right-associative signature;right-associative signature;right-associative signatures, right-associative signature;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+substring;substring;substrings, substring;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;0;11;0;0;0;0;0;0;0;0;0;0;0
+custom data type for errors;custom data type for error;custom data types for errors, custom data type for errors;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+purity;purity;purity;0;6;0;0;0;0;1;0;1;0;1;0;0;2;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+logical or (||);logical or (||);logical or (||);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+inheritance;inheritance;inheritance;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+general recursion;general recursion;general recursion;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+international language support;international language support;international language support;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Control.Applicative module;Control.Applicative module;Control.Applicative module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pure;pure;pure;0;7;0;2;2;1;46;2;4;1;0;3;3;12;9;0;18;9;8;2;0;0;0;1;2;1;0;1
+parameter;parameter;parameters, parameter;0;5;6;12;3;7;12;2;2;6;1;3;3;11;12;1;2;15;1;0;11;0;1;3;0;4;0;1
+cl compiler;cl compiler;cl compiler;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+map;map;maps, map;0;0;1;15;0;1;6;1;0;8;1;58;23;15;0;0;0;1;2;1;0;0;0;14;0;0;0;2
+product;product;product;0;0;0;0;0;0;0;0;0;0;2;3;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+strictness;strictness;strictness;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;3;12;1;0;0
+max;max;max;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+JSON typeclass;json typeclass;JSON typeclasses, JSON typeclass;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monadic use;monadic use;monadic use;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0
+date;date;dates, date;0;0;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;1;0;7;1;0;0;0;0;0;0;0
+lifting;lifting;lifting;0;1;0;0;0;0;0;0;7;3;0;1;0;2;2;1;0;3;1;0;0;0;0;0;0;2;0;0
+maybe;maybe;maybe;0;0;13;1;0;3;1;1;3;9;0;2;2;25;13;1;1;10;23;0;3;0;0;0;0;0;0;1
+explicit;explicit;explicit;0;1;5;10;11;7;0;1;0;3;0;1;0;4;0;1;2;3;1;0;0;0;0;0;4;1;0;2
+combinator function;combinator function;combinator functions, combinator function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+first function;first function;first function;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0
+waiting for other threads;waiting for other thread;waiting for other threads;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+GHC;ghc;GHC;22;0;3;3;30;14;1;1;0;1;2;2;0;0;4;0;1;1;1;3;1;0;0;17;17;21;0;1
+character class;character class;character classes, character class;0;0;0;0;0;0;0;4;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+non-strict evaluation;non-strict evaluation;non-strict evaluation;0;1;0;3;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+search tree;search tree;search tree;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+primitive recursion;primitive recursion;primitive recursion;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fliph;fliph;fliph;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pointer;pointer;pointers, pointer;0;0;0;0;1;0;1;0;0;0;0;0;2;0;0;0;52;0;0;0;0;0;0;1;0;4;0;0
+System.Posix.Files module;System.Posix.Files module;System.Posix.Files module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+polymorphic types 2nd;polymorphic type 2nd;polymorphic types 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+window;window;windows, window;1;0;0;0;3;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;27;0;0;0;0;1
+bison command;bison command;bison command;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+user IDs (UIDs);user ids ( uids );user IDs (UIDs);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+qualifier;qualifier;qualifier;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ADT (abstract data types);adt ( abstract data type );ADT (abstract data types);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+qualified;qualified;qualified;0;0;0;0;0;0;0;6;0;0;0;1;4;0;0;0;1;0;1;0;0;0;0;0;0;4;0;0
+pattern matching;pattern matching;pattern matching;0;0;16;5;2;1;0;2;0;7;0;1;1;0;0;0;3;0;0;0;0;0;2;0;0;2;0;0
+definedness;definedness;definedness;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+equality;equality;equality;0;0;3;0;0;13;0;0;0;0;1;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0
+name;name;name;10;15;49;28;48;9;13;43;26;6;0;6;9;10;10;4;9;6;2;3;4;2;4;9;3;17;0;4
+partial function;partial function;partial functions, partial function;0;1;0;8;0;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+drop;drop;drop;0;6;1;7;0;0;0;2;2;1;0;1;0;1;0;0;1;0;0;0;0;0;0;1;2;2;0;0
+type system;type system;type system;0;29;4;1;0;0;1;1;1;2;1;1;1;1;1;0;8;1;1;0;0;0;0;0;0;3;0;2
+square;square;square;1;2;1;12;0;2;0;1;0;0;0;0;2;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+taking advantage;taking advantage;taking advantage;0;0;0;0;0;0;0;0;0;1;0;1;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+well typed rule;well typed rule;well typed rules, well typed rule;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+folding over arrays;folding over array;folding over arrays;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+web site;web site;web site;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+naming;naming;naming;0;2;4;0;2;1;1;1;2;0;1;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0
+eq;eq;eq;0;0;1;0;0;5;0;0;0;2;0;0;2;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0
+programming paradigm;programming paradigm;programming paradigms, programming paradigm;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+shadowing;shadowing;shadowing;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+FFI (Haskell Foreign Function Interface);ffi ( haskell foreign function interface );FFI (Haskell Foreign Function Interface);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+putstr function;putstr function;putstr function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+HTTP request;http request;HTTP requests, HTTP request;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;5;0;0;0;0;0;0;0;0;0;0;0;0
+maybet monad transformer 2nd;maybet monad transformer 2nd;maybet monad transformer 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+then and else branch;then and else branch;then and else branches, then and else branch;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+supermarket billing;supermarket billing;supermarket billing;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ord;ord;ord;0;0;0;0;0;6;0;0;0;4;0;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+rawsystem function 2nd;rawsystem function 2nd;rawsystem function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mode based testing;mode based testing;mode based testing;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+derivedatatypeable language;derivedatatypeable language;derivedatatypeable language;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+programming;programming;programming;3;7;1;12;2;1;3;3;4;0;2;0;2;1;4;2;4;4;3;3;1;1;7;16;2;0;0;3
+patternguard;patternguard;patternguards, patternguard;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.Function module;Data.Function module;Data.Function module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+recursive definition;recursive definition;recursive definition;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+handlejust function;handlejust function;handlejust function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+islower;islower;islower;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+isupper;isupper;isupper;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lambda;lambda;lambda;0;0;0;16;0;0;2;0;1;3;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+saving;saving;saving;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0
+enumeration type;enumeration type;enumeration types, enumeration type;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+clause;clause;clause;0;0;13;7;2;0;0;5;3;0;0;0;0;1;1;0;0;2;0;1;1;0;0;0;0;0;0;0
+flexibleinstance;flexibleinstance;flexibleinstances, flexibleinstance;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type constructor;type constructor;type constructors, type constructor;0;0;9;0;1;3;0;0;1;0;0;0;0;17;2;1;0;3;0;0;0;0;0;1;0;0;0;0
+message;message;messages, message;13;2;5;0;3;3;0;3;2;4;0;0;0;7;1;7;2;2;8;0;4;1;3;4;0;0;19;1
+partial application;partial application;partial applications, partial application;0;0;0;2;0;0;1;0;4;0;0;2;5;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+convention;convention;conventions, convention;1;1;4;3;1;1;0;2;2;0;1;2;0;0;0;0;2;1;1;0;0;0;0;1;1;1;0;0
+domino effect;domino effect;domino effect;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hug;hug;hugs, hug;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+-funbox-strict-fields option 2nd;-funbox-strict-fields option 2nd;-funbox-strict-fields option 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+concurrent programming with threads;concurrent programming with thread;concurrent programming with threads;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+turning two into many;turning two into many;turning two into many;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+diffarray type;diffarray type;diffarray type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+function application;function application;function application;0;6;1;4;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+headers (HTTP);header ( http );headers (HTTP);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+argument;argument;argument;4;32;14;49;9;3;8;12;18;8;0;11;0;7;3;3;21;0;5;7;1;1;0;10;3;6;0;13
+generalization;generalization;generalization;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ant;ant;ant;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ptr type;ptr type;ptr type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+conditional equation;conditional equation;conditional equation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+getst function;getst function;getst function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+object file;object file;object files, object file;0;0;0;0;6;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+import directive 2nd;import directive 2nd;import directive 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+any;any;any;7;12;12;21;13;15;12;13;11;2;4;15;4;15;13;9;4;5;11;3;9;3;1;9;6;6;2;8
+visibility of definitions;visibility of definition;visibility of definitions;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+exhaustive pattern;exhaustive pattern;exhaustive patterns, exhaustive pattern;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monads and 2nd;monad and 2nd;monads and 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+take;take;take;3;14;6;43;11;9;33;9;19;10;4;19;10;14;8;9;13;6;8;10;4;3;4;19;5;4;0;6
+struct keyword (C/C++);struct keyword (C/C++);struct keyword (C/C++);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+data keyword;data keyword;data keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+main thread waiting for other threads;main thread waiting for other thread;main thread waiting for other threads;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+stateful computation;stateful computation;stateful computations, stateful computation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+runtime statistic;runtime statistic;runtime statistics, runtime statistic;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0
+tail function 2nd 3rd 4th;tail function 2nd 3rd 4th;tail function 2nd 3rd 4th;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+infix form;infix form;infix form;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+synonym;synonym;synonyms, synonym;2;0;7;2;0;4;0;1;4;0;0;6;0;6;0;2;1;5;0;0;0;0;0;1;0;0;0;0
+lazy I/O;lazy I/O;lazy I/O;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;5;0;0;0;0
+grayscale image format 2nd;grayscale image format 2nd;grayscale image format 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pattern;pattern;patterns, pattern;0;1;85;34;8;8;0;42;2;14;0;6;1;13;3;3;17;5;1;0;1;0;2;5;6;5;0;9
+typed pointer;typed pointer;typed pointers, typed pointer;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0
+:reload command;: reload command;:reload command;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+show;show;show;2;2;1;2;0;47;7;0;1;5;0;7;7;6;2;1;2;1;3;5;1;1;1;1;0;3;2;1
+API design;api design;API design;0;0;0;0;0;0;0;1;1;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+HUnit library;hunit library;HUnit library;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lambda expression;lambda expression;lambda expression;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+external program;external program;external programs, external program;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0
+XML;xml;XML;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;15;11;0;0;0;0;0
+sequential sorting;sequential sorting;sequential sorting;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+Data.Ratio module;Data.Ratio module;Data.Ratio module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+universal quantifier;universal quantifier;universal quantifier;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+functional picture;functional picture;functional pictures, functional picture;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+filterm;filterm;filterm;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+split function;split function;split function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+waitfor function;waitfor function;waitfor function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.Bits module;Data.Bits module;Data.Bits module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+text I/O and;text I/O and;text I/O and;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foldl and foldr function;foldl and foldr function;foldl and foldr functions, foldl and foldr function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+generics (java);generic ( java );generics (java);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+typeable typeclass;typeable typeclass;typeable typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0
+dynamic programming;dynamic programming;dynamic programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+conjunction;conjunction;conjunction;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+formal parameter;formal parameter;formal parameter;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+passing datum between c and haskell;passing datum between c and haskell;passing data between c and haskell, passing datum between c and haskell;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+source file;source file;source files, source file;2;10;9;3;16;2;0;4;3;0;1;2;1;0;2;0;9;0;0;1;0;0;1;1;0;4;0;0
+resource;resource;resources, resource;0;0;0;0;0;2;2;0;7;0;0;0;0;0;0;0;2;0;0;1;0;0;1;8;4;0;0;0
+string-handling;string-handling;string-handling;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+filter function 2nd;filter function 2nd;filter function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+exclusive or;exclusive or;exclusive or;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+safe keyword;safe keyword;safe keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ASCII control code;ascii control code;ASCII control codes, ASCII control code;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+where;where;where;5;8;30;12;11;6;3;2;9;9;3;12;4;8;7;2;9;2;2;3;3;0;1;3;6;3;3;0
+abstract data type;abstract data type;abstract data type;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+algebraic data structure;algebraic data structure;algebraic data structure;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+rnf function;rnf function;rnf function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mainloop keyword;mainloop keyword;mainloop keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monoid;monoid;monoids, monoid;0;0;0;0;0;0;0;0;0;0;2;0;13;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0
+unlines function 2nd;unlines function 2nd;unlines function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+manufacturer ID of barcodes;manufacturer id of barcodes;manufacturer ID of barcodes;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+malloc c function;malloc c function;malloc c function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+stdin function;stdin function;stdin function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+import;import;import;0;0;0;1;9;1;1;10;0;1;2;1;5;0;2;1;13;0;2;1;0;0;3;1;1;14;0;0
+spine for maps;spine for map;spines for maps, spine for maps;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.Time module;System.Time module;System.Time module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+triple (3-tuple);triple (3-tuple);triple (3-tuple);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+serialization;serialization;serialization;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lists and tuple;list and tuple;lists and tuples, lists and tuple;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Text.Regex.Posix module;Text.Regex.Posix module;Text.Regex.Posix module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hsc2hs command;hsc2hs command;hsc2hs command;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+interface file;interface file;interface files, interface file;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+expression;expression;expressions, expression;37;86;38;27;8;7;3;25;13;5;1;6;20;12;8;9;42;0;1;2;0;0;0;10;5;5;0;5
+type variable;type variable;type variables, type variable;0;16;2;0;0;0;0;0;0;1;0;0;0;4;3;0;0;1;1;0;0;0;0;0;0;0;0;0
+float type;float type;float type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+PCRE (Perl-compatible regular expression);PCRE (Perl-compatible regular expression);PCRE (Perl-compatible regular expression);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+filtering;filtering;filtering;0;0;0;2;0;0;1;0;0;0;1;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+continuation;continuation;continuations, continuation;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0
+quot function;quot function;quot function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hoogle;hoogle;hoogle;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+huffman code;huffman code;huffman codes, huffman code;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+GUI (graphical user interface) programming;gui ( graphical user interface ) programming;GUI (graphical user interface) programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+INSERT query;insert query;INSERT queries, INSERT query;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0
+class declaration;class declaration;class declarations, class declaration;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+side effect;side effect;side effects, side effect;0;8;0;0;0;0;16;1;4;0;0;0;0;2;2;0;11;0;0;0;0;0;0;0;1;0;0;0
+space leak;space leak;space leak;0;0;0;10;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0
+declaration;declaration;declaration;0;0;10;0;8;7;0;1;2;2;0;0;1;0;4;1;6;4;0;0;0;0;0;0;0;4;0;1
+project idea;project idea;project ideas, project idea;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+specializing for IO;specializing for io;specializing for IO;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ranges (pattern matching);range ( pattern matching );ranges (pattern matching);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lists 2nd 3rd 4th;list 2nd 3rd 4th;lists 2nd 3rd 4th;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+java programming language;java programming language;java programming language;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.Random;System.Random;System.Random;0;0;0;0;0;0;0;0;0;0;0;0;0;3;2;0;0;0;0;0;0;0;0;0;0;0;0;0
+Control.Parallel module;Control.Parallel module;Control.Parallel module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+modification time;modification time;modification times, modification time;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0
+exceptions 2nd;exception 2nd;exceptions 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+strict and lazy;strict and lazy;strict and lazy;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0
+System.Random module;System.Random module;System.Random module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+concatenation;concatenation;concatenation;0;0;0;0;2;0;1;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parse;parse;parse;2;0;2;0;0;7;0;0;1;41;0;0;0;9;1;18;1;8;1;2;2;6;0;0;0;0;0;2
+word8 type;word8 type;word8 type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+binary;binary;binary;3;0;4;0;0;0;4;4;2;11;0;7;8;4;0;0;1;1;0;0;0;0;0;0;1;0;0;0
+System.Exit module;System.Exit module;System.Exit module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+second function;second function;second function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+left value 2nd;left value 2nd;left value 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+arbitrary function;arbitrary function;arbitrary function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+bangpattern;bangpattern;bangpatterns, bangpattern;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+standard module;standard module;standard module;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lazy reading from databases;lazy reading from database;lazy reading from databases;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+static type;static type;static types, static type;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+haselfmagic function;haselfmagic function;haselfmagic function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+running;running;running;1;1;0;0;0;1;3;1;0;0;5;0;0;1;1;1;1;0;0;7;1;0;5;6;4;0;2;1
+floating-point operator;floating-point operator;floating-point operators, floating-point operator;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+report flag (hpc);report flag ( hpc );report flag (hpc);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+interact function;interact function;interact function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+termination;termination;termination;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;1;0;0;0;0
+model;model;models, model;0;1;0;0;1;0;0;0;0;0;8;0;0;0;0;0;0;0;0;0;0;0;1;6;2;0;0;1
+System.IO library;System.IO library;System.IO library;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+conditional expression;conditional expression;conditional expression;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+line constructor;line constructor;line constructor;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+adding safely to PCRE;adding safely to PCRE;adding safely to PCRE;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+bounded type class;bounded type class;bounded type class;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+unicode;unicode;unicode;0;1;0;1;3;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+typesynonyminstances 2nd;typesynonyminstances 2nd;typesynonyminstances 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+deconstructor;deconstructor;deconstructors, deconstructor;0;0;0;0;0;1;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+getprocessstatus function;getprocessstatus function;getprocessstatus function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+readint function 2nd;readint function 2nd;readint function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fedora linux;fedora linux;fedora linux;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mathematical induction;mathematical induction;mathematical induction;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+read;read;reads, read;5;9;4;17;0;38;30;4;3;6;0;3;2;8;3;3;0;3;3;4;10;1;0;6;1;3;0;3
+composition|see{function composition;composition | see { function composition;composition|see{function composition;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+metadata (database);metadata ( database );metadata (database);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+module declaration;module declaration;module declarations, module declaration;0;0;0;0;5;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+mod;mod;mod;0;2;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+podcatcher;podcatcher;podcatcher;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;2;0;0;0;0;1
+constant applicative forms (CAFs);constant applicative form ( cafs );constant applicative forms (CAFs);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+quickcheck 2nd;quickcheck 2nd;quickcheck 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+peek function;peek function;peek function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+multiparamtypeclass;multiparamtypeclass;multiparamtypeclasses, multiparamtypeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+output;output;output;4;1;0;2;7;2;30;0;0;0;6;3;1;1;0;3;3;0;8;20;1;1;0;0;3;4;2;0
+parsetimes function;parsetimes function;parsetimes function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+take function;take function;take function;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+toupper;toupper;toupper;0;0;0;2;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+line function;line function;line function;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0
+forkmanaged function;forkmanaged function;forkmanaged function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+statet monad transformer;statet monad transformer;statet monad transformer;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+subtype polymorphism;subtype polymorphism;subtype polymorphism;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+child socket;child socket;child sockets, child socket;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+identity transformation (foldr);identity transformation ( foldr );identity transformation (foldr);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+programming language;programming language;programming language;3;4;0;2;0;0;3;1;1;0;0;0;0;0;0;1;2;0;1;1;0;0;0;4;0;0;0;0
+floating point operator;floating point operator;floating point operators, floating point operator;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foldr function 2nd;foldr function 2nd;foldr function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+shared-state;shared-state;shared-state;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+inductive case;inductive case;inductive case;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+EAN-13 barcodes;EAN-13 barcodes;EAN-13 barcodes;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+numeric escape;numeric escape;numeric escapes, numeric escape;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+solution map;solution map;solution maps, solution map;0;0;0;0;0;0;0;0;0;0;0;13;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+package;package;packages, package;4;0;0;0;50;0;1;2;1;2;0;0;0;1;2;0;0;0;1;0;2;0;2;2;0;25;0;2
+delete function;delete function;delete function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+writer type;writer type;writer type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+evaluation strategy;evaluation strategy;evaluation strategies, evaluation strategy;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;5;2;0;0;0
+type synonym;type synonym;type synonyms, type synonym;0;0;5;0;0;1;0;0;2;0;0;4;0;4;0;0;1;3;0;0;0;0;0;0;0;0;0;0
+extensionality principle;extensionality principle;extensionality principle;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+op;op;ops, op;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Parsec CSV file;parsec csv file;Parsec CSV files, Parsec CSV file;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+recip function;recip function;recip function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+split-base Cabal flag;split-base Cabal flag;split-base Cabal flag;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+help command (ghci);help command ( ghci );help command (ghci);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+:set prompt 2nd;: set prompt 2nd;:set prompt 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+openfile function 2nd;openfile function 2nd;openfile function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+high-order function;high-order function;high-order functions, high-order function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+operator;operator;operators, operator;40;8;1;9;0;12;7;8;8;8;1;2;19;0;2;4;2;0;0;1;0;1;0;0;0;1;0;0
+pivot;pivot;pivots, pivot;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0;0
+generalizednewtypederiving extension 2nd;generalizednewtypederiving extension 2nd;generalizednewtypederiving extension 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+strict;strict;strict;0;6;0;6;0;0;0;8;1;1;0;4;1;0;0;0;3;1;0;0;3;0;0;11;22;0;0;0
+pcre_fullinfo function;pcre_fullinfo function;pcre_fullinfo function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+gtk2h;gtk2h;gtk2hs, gtk2h;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+rational type;rational type;rational type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+modifyMVar function;modifymvar function;modifyMVar function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+I/O (input/output);I/O (input/output);I/O (input/output);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+components (types);component ( type );components (types);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+multitasking;multitasking;multitasking;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+nondeterministic value;nondeterministic value;nondeterministic values, nondeterministic value;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+default;default;default;3;3;2;0;0;11;5;2;1;2;3;0;1;2;0;0;4;1;1;1;2;0;0;5;2;2;1;0
+sin function;sin function;sin function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+bloom filter;bloom filter;bloom filters, bloom filter;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;37;0;0
+discriminated union;discriminated union;discriminated unions, discriminated union;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ab;ab;abs, ab;0;0;0;0;0;1;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+applicative style;applicative style;applicative style;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0
+first-class citizen;first-class citizen;first-class citizens, first-class citizen;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+GUI programming;gui programming;GUI programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+file;file;files, file;6;14;12;30;44;5;89;36;52;22;9;4;6;2;13;15;23;0;4;30;4;18;25;38;4;25;0;5
+unsafeIOToSTM function;unsafeiotostm function;unsafeIOToSTM function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+handle function;handle function;handle function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+takewhile;takewhile;takewhile;0;0;0;4;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+vs. I/O;vs. I/O;vs. I/O;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+logical and (&&);logical and (&&);logical and (&&);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+deriving;deriving;deriving;0;0;3;0;0;1;0;0;0;0;0;0;0;0;2;0;0;2;2;0;0;0;0;0;0;0;0;0
+either type;either type;either type;0;0;0;0;0;3;0;2;0;0;0;0;0;1;0;0;0;2;0;0;0;0;0;0;0;0;0;0
+concat;concat;concat;0;0;0;3;8;0;0;0;4;0;1;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+algebraic;algebraic;algebraic;0;0;21;3;2;0;0;0;2;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1
+projection function;projection function;projection functions, projection function;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+prop_one_present function;prop_one_present function;prop_one_present function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hprint function;hprint function;hprint function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+CPP;cpp;CPP;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;7;0;0;0;0;0;0;0;0;0;0;0
+STM (software transactional memory);stm ( software transactional memory );STM (software transactional memory);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pcre_compile function;pcre_compile function;pcre_compile function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+sqrt function;sqrt function;sqrt function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+floating point;floating point;floating point;7;3;1;0;1;2;0;0;0;0;0;0;0;0;0;1;2;0;0;0;0;0;0;0;7;0;0;0
+fromrational function;fromrational function;fromrational function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+declarations (module);declaration ( module );declarations (module);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+reasoning;reasoning;reasoning;0;3;0;2;0;0;0;0;0;0;2;1;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0
+maybe implementation;maybe implementation;maybe implementation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+withforeignptr function;withforeignptr function;withforeignptr function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+inductive/recursive case;inductive/recursive case;inductive/recursive case;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ruby;ruby;ruby;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+binding power;binding power;binding power;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tail;tail;tail;0;10;1;27;0;0;1;5;1;0;0;1;3;0;0;0;1;0;5;0;0;0;0;0;3;0;0;0
+program;program;program;9;8;5;10;11;4;52;4;8;3;6;1;3;3;3;11;8;2;9;37;7;7;15;49;62;2;7;9
+lift function 2nd;lift function 2nd;lift function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+global;global;global;0;5;1;0;3;0;3;0;0;0;0;0;0;4;0;0;1;1;0;0;0;0;0;0;0;1;0;0
+class constraint;class constraint;class constraints, class constraint;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+functor typeclass;functor typeclass;functor typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+print;print;print;10;4;6;1;6;3;6;2;1;0;0;2;0;2;2;0;2;0;9;1;1;0;0;8;0;2;1;2
+balancing;balancing;balancing;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+inttodigit;inttodigit;inttodigit;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+condition;condition;conditions, condition;0;0;1;1;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;3
+reader monad;reader monad;reader monad;0;0;0;0;0;0;0;0;0;0;0;0;0;0;6;0;0;4;0;0;0;0;0;0;0;0;0;0
+list;list;lists, list;24;56;55;211;36;23;11;32;29;4;37;49;65;47;25;14;18;4;19;12;10;1;1;30;53;17;0;9
+mapreduce;mapreduce;mapreduce;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;7;0;0;0;0
+function definition;function definition;function definition;0;1;1;5;0;1;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+domain-specific language;domain-specific language;domain-specific languages, domain-specific language;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+two-dimensional array;two-dimensional array;two-dimensional arrays, two-dimensional array;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+systems programming;system programming;systems programming;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+built-in;built-in;built-in;0;0;2;1;0;1;0;1;0;0;0;0;2;1;0;0;0;0;1;0;0;0;0;1;0;0;0;0
+PCRE libraries and;PCRE libraries and;PCRE libraries and;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+syslog;syslog;syslog;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;14;0
+design;design;design;0;1;0;0;3;0;0;1;1;0;0;2;0;2;1;0;2;3;0;0;1;0;7;1;0;3;0;0
+form function;form function;form function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ghemawat;ghemawat;ghemawat;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+maxbound function;maxbound function;maxbound function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+escaping text;escaping text;escaping text;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+color image;color image;color images, color image;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+section;section;sections, section;3;6;11;21;3;11;21;2;5;3;0;6;6;11;10;7;3;2;7;3;5;2;4;4;3;5;1;0
+fractional;fractional;fractional;0;0;0;0;0;9;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+bounded variable;bounded variable;bounded variables, bounded variable;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+escaping;escaping;escaping;3;0;0;0;4;2;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;0;0
+metadatum;metadatum;metadata, metadatum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+writert monad transformer;writert monad transformer;writert monad transformer;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+behaviour;behaviour;behaviour;2;9;0;0;1;2;0;2;1;2;3;1;1;7;1;2;1;3;0;0;0;0;0;0;0;1;0;0
+supplying random number;supplying random number;supplying random numbers, supplying random number;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.IO.Error module;System.IO.Error module;System.IO.Error module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+escape character;escape character;escape characters, escape character;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+action;action;actions, action;1;2;2;2;0;0;70;3;17;0;0;0;1;36;21;1;0;9;5;1;0;0;5;6;0;3;0;17
+Exposed-Modules field;Exposed-Modules field;Exposed-Modules field;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+programmable semicolon;programmable semicolon;programmable semicolon;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+function composition;function composition;function composition;0;0;0;1;2;1;1;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+coercion;coercion;coercion;0;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+executable;executable;executables, executable;0;0;0;2;9;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;2;0;0;0;0
+overlapping instance;overlapping instance;overlapping instances, overlapping instance;0;0;0;0;0;10;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+JSON (JavaScript Object Notation);json ( javascript object notation );JSON (JavaScript Object Notation);0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+UIDs (user IDs);uids ( user ids );UIDs (user IDs);0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+STM monad;stm monad;STM monad;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;6
+syntactic sugar;syntactic sugar;syntactic sugar;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+sepby function;sepby function;sepby function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+h function;h function;h functions, h function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+group function;group function;group function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+partial application of functions;partial application of function;partial application of functions;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+number system of barcodes;number system of barcodes;number systems of barcodes, number system of barcodes;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+text processing;text processing;text processing;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+uncurrying;uncurrying;uncurrying;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+xor function;xor function;xor function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+equation;equation;equation;0;0;12;8;1;0;0;0;4;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+installing;installing;installing;1;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;2;1;0;1;0;0;0
+binding c to haskell;binding c to haskell;binding c to haskell;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+unsafePerformIO function;unsafeperformio function;unsafePerformIO function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+JSON typclass;json typclass;JSON typclasses, JSON typclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+applicative value;applicative value;applicative value;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+readfile function 2nd 3rd;readfile function 2nd 3rd;readfile function 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+scan;scan;scan;0;0;2;0;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0
+minimum;minimum;minimum;0;0;0;0;0;2;0;0;0;0;3;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+seekmode parameter (htell);seekmode parameter ( htell );seekmode parameter (htell);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+implicit state;implicit state;implicit state;0;0;0;0;0;0;0;0;0;1;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+return function;return function;return function;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+join function;join function;join function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+recursive;recursive;recursive;0;7;6;20;5;0;2;7;2;0;0;0;1;0;0;0;2;0;0;0;0;0;0;0;5;0;0;0
+mapm;mapm;mapm;0;0;0;0;0;0;4;0;11;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+applicative law;applicative law;applicative laws, applicative law;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mutable;mutable;mutable;0;0;0;0;0;0;0;0;0;0;0;5;0;1;1;0;0;2;0;0;0;0;0;1;0;20;0;2
+total function;total function;total functions, total function;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Reverse Polish Notation (RPN);reverse polish notation ( rpn );Reverse Polish Notation (RPN);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mapping;mapping;mapping;0;0;0;3;0;0;0;0;0;0;1;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0
+GHC (Glasgow Haskell Compiler);ghc ( glasgow haskell compiler );GHC (Glasgow Haskell Compiler);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+making instance;making instance;making instances, making instance;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+maxium function;maxium function;maxium function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+using multiple;using multiple;using multiple;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0
+sqlvalues type;sqlvalues type;sqlvalues type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+documentation;documentation;documentation;0;0;0;1;1;0;1;4;0;0;0;1;2;0;0;0;2;0;0;0;1;0;5;0;0;0;0;0
+parameterized;parameterized;parameterized;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1
+stacking multiple;stacking multiple;stacking multiple;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+log function;log function;log function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lookaheads (regular expressions);lookaheads ( regular expression );lookaheads (regular expressions);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+union type;union type;union type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type inference;type inference;type inference;0;4;0;0;3;0;0;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0;1;0;1;0;0;0
+monadstate typeclass;monadstate typeclass;monadstate typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0
+arbitrary typeclass 2nd 3rd;arbitrary typeclass 2nd 3rd;arbitrary typeclass 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+unsafe keyword;unsafe keyword;unsafe keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tab (\t) character;tab (\ t ) character;tab (\t) character;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+truncate function 2nd;truncate function 2nd;truncate function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hclose function 2nd;hclose function 2nd;hclose function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+initializing;initializing;initializing;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0
+pwd command;pwd command;pwd command;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+using strong type;using strong type;using strong types, using strong type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+c preprocessor;c preprocessor;c preprocessor;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0
+return;return;return;1;31;13;50;6;16;55;23;27;10;1;16;7;58;17;23;11;2;22;16;12;3;7;13;4;8;0;9
+idempotence;idempotence;idempotence;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+unix-compat package;unix-compat package;unix-compat package;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+buffering;buffering;buffering;0;0;0;0;0;0;16;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0
+mapreduce (google);mapreduce ( google );mapreduce (google);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+high-level wrapper;high-level wrapper;high-level wrappers, high-level wrapper;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+dummy value at errors;dummy value at error;dummy values at errors, dummy value at errors;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+deferred computation;deferred computation;deferred computation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+opentempfile function;opentempfile function;opentempfile function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+left-associative;left-associative;left-associative;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.Array module;Data.Array module;Data.Array module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pure code;pure code;pure code;0;2;0;0;1;0;15;1;0;0;0;0;0;1;0;0;1;3;3;0;0;0;0;1;0;0;0;0
+functor;functor;functors, functor;0;0;0;0;0;0;0;0;0;24;0;2;1;8;0;4;0;0;0;0;0;0;0;0;0;0;0;0
+laziness and space leak;laziness and space leak;laziness and space leaks, laziness and space leak;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+sizing safely;sizing safely;sizing safely;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+marshaling;marshaling;marshaling;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+netpbm file format 2nd;netpbm file format 2nd;netpbm file format 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+-fvia-C option;-fvia-C option;-fvia-C option;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+evaluation;evaluation;evaluation;1;20;4;7;1;0;1;3;0;0;0;2;2;4;0;0;0;0;9;0;0;0;0;19;11;0;0;0
+text mode;text mode;text mode;0;0;0;5;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+LANGUAGE pragma;language pragma;LANGUAGE pragmas, LANGUAGE pragma;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;1;0;0;0
+System.Posix module;System.Posix module;System.Posix module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+high-order;high-order;high-order;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+understanding program;understanding program;understanding programs, understanding program;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+explicit recursion;explicit recursion;explicit recursion;0;0;0;7;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+drivers (HDBC);driver ( hdbc );drivers (HDBC);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+definition;definition;definitions, definition;3;5;20;32;18;13;0;12;7;18;2;3;2;29;7;4;5;2;0;0;0;0;1;5;0;4;0;3
+putchar;putchar;putchar;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+thread;thread;threads, thread;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;2;0;0;8;100;1;1;3;24
+event-driven programming;event-driven programming;event-driven programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+describetable function;describetable function;describetable function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+file processing;file processing;file processing;0;0;0;1;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;1;0;0;0;0
+readln;readln;readln;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parametric polymorphism;parametric polymorphism;parametric polymorphism;0;5;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+the state monad;the state monad;the state monad;0;0;0;0;0;0;0;0;0;0;0;0;0;17;12;0;0;2;1;0;0;0;0;0;0;1;0;0
+patternguards language extension;patternguards language extension;patternguards language extension;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+encoding;encoding;encoding;0;0;0;0;1;0;0;0;0;0;1;11;0;0;1;1;2;0;0;0;0;0;0;0;0;0;0;0
+number;number;numbers, number;30;16;5;13;12;11;7;6;5;9;3;15;15;15;30;11;6;7;3;9;5;1;0;20;12;15;2;4
+linking;linking;linking;0;0;0;0;2;0;1;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0
+Data.Char module;Data.Char module;Data.Char module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+unwords function;unwords function;unwords function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+marshaling datum;marshaling datum;marshaling data, marshaling datum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+horse;horse;horse;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+script;script;script;1;1;0;1;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0
+interact;interact;interact;0;0;0;1;0;0;10;0;0;0;0;0;1;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0
+readert monad layer;readert monad layer;readert monad layer;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+assumption;assumption;assumptions, assumption;0;0;0;1;0;2;0;0;0;1;0;3;0;0;1;0;0;0;0;0;0;0;1;1;0;0;0;1
+scheme;scheme;scheme;0;0;0;0;0;0;0;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+typesynonyminstances language extension 2nd;typesynonyminstances language extension 2nd;typesynonyminstances language extension 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+store;store;store;1;0;1;2;2;1;5;0;1;1;0;1;10;1;0;0;1;1;0;2;1;3;2;0;0;2;1;0
+(>>=) function and 2nd 3rd;(>>=) function and 2nd 3rd;(>>=) function and 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+.tix file;.tix file;.tix files, .tix file;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.Environment module;System.Environment module;System.Environment module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+forward composition;forward composition;forward composition;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+declaring instance;declaring instance;declaring instances, declaring instance;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fst function 2nd;fst function 2nd;fst function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Glasgow Haskell Compiler (GHC);glasgow haskell compiler ( ghc );Glasgow Haskell Compiler (GHC);1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+numeric conversion;numeric conversion;numeric conversions, numeric conversion;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+algebraic data type;algebraic data type;algebraic data types, algebraic data type;0;0;20;3;2;0;0;0;2;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1
+monadreader typeclass;monadreader typeclass;monadreader typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0
+domain-specific language for;domain-specific language for;domain-specific language for;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monomorphism;monomorphism;monomorphism;0;0;0;0;0;9;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+debugging;debugging;debugging;3;1;0;0;1;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1
+event-driven;event-driven;event-driven;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+weak head normal form (WHNF) 2nd 3rd;weak head normal form ( whnf ) 2nd 3rd;weak head normal form (WHNF) 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+null;null;null;0;2;5;3;1;0;0;0;0;0;1;0;0;0;0;0;4;0;0;0;7;0;0;0;0;0;0;0
+Data.Typeable module;Data.Typeable module;Data.Typeable module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Structured Query Language (SQL);structured query language ( sql );Structured Query Language (SQL);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+list of successes method;list of success method;list of successes method;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+odd;odd;odd;0;1;0;2;0;0;0;0;2;0;0;5;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+liftm;liftm;liftm;0;0;0;0;0;0;0;0;2;0;1;0;0;10;3;1;0;2;0;0;0;0;0;0;0;0;0;0
+outmess;outmess;outmess;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+duck typing;duck typing;duck typing;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+redex;redex;redex;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tocalendartime function;tocalendartime function;tocalendartime function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+grain size;grain size;grain sizes, grain size;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0
+free variable;free variable;free variable;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+nothing;nothing;nothing;1;0;4;3;3;5;11;4;3;3;0;1;1;15;1;3;3;2;8;1;1;0;2;6;0;2;0;3
+ODBC driver;odbc driver;ODBC drivers, ODBC driver;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0
+selector;selector;selector;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+JavaScript Object Notation [See JSON];javascript object notation [ see json ];JavaScript Object Notation [See JSON];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+impure code;impure code;impure code;0;3;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+enum typeclass;enum typeclass;enum typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+-fhpc flag;-fhpc flag;-fhpc flag;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+loosely coupled;loosely coupled;loosely coupled;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+GTK+ development environment;gtk + development environment;GTK+ development environment;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+lazy function;lazy function;lazy functions, lazy function;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0
+relation;relation;relations, relation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+backtracking;backtracking;backtracking;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0
+GHC.Conc module 2nd;GHC.Conc module 2nd;GHC.Conc module 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+local function;local function;local function;0;0;4;2;0;0;0;0;3;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+c programming;c programming;c programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+word16 type;word16 type;word16 type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foldl1;foldl1;foldl1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Map.insert function;Map.insert function;Map.insert function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lifting function;lifting function;lifting functions, lifting function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+compiler;compiler;compilers, compiler;3;17;9;0;13;21;6;5;0;4;1;4;2;2;6;0;9;5;0;0;0;0;0;3;13;9;0;0
+Mac OS X;mac os x;Mac OS X;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+functions for;function for;functions for;0;0;2;2;1;1;1;4;1;0;2;2;3;2;1;0;1;1;1;0;1;0;0;0;2;0;0;0
+threaded runtime;threaded runtime;threaded runtime;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;13;0;0;0;0
+set;set;sets, set;3;1;2;1;3;4;2;2;1;3;7;7;2;1;3;1;1;2;1;12;7;1;9;0;3;11;3;0
+throwing;throwing;throwing;0;1;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;5;0;0;0;0;0;0;0;0;0
+anonymous type;anonymous type;anonymous types, anonymous type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+strict type;strict type;strict types, strict type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+underscore character (_);underscore character ( _ );underscore character (_);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+force function;force function;force function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+writefile function;writefile function;writefile function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+concatenate;concatenate;concatenate;1;1;0;0;3;0;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+profiling;profiling;profiling;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;28;5;0;0
+creating;creating;creating;0;0;2;1;3;0;1;0;0;0;0;1;2;0;1;0;1;2;0;1;1;1;1;4;0;4;0;1
+algebraic expression;algebraic expression;algebraic expressions, algebraic expression;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+system message;system message;system messages, system message;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+uncurry;uncurry;uncurry;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+interface;interface;interfaces, interface;1;1;0;0;2;1;0;0;0;0;3;0;0;2;9;0;10;2;2;5;3;0;11;0;0;6;1;0
+understanding;understanding;understanding;1;6;0;3;1;0;1;0;0;1;0;0;0;2;0;0;0;2;2;0;0;0;0;1;2;0;0;0
+zipper;zipper;zipper;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+folding;folding;folding;0;0;0;4;0;0;0;0;2;0;0;7;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+reverse;reverse;reverse;0;0;1;3;1;0;0;1;1;0;0;1;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+OverlappingInstances/TypeSynonymInstances language extension;OverlappingInstances/TypeSynonymInstances language extension;OverlappingInstances/TypeSynonymInstances language extensions, OverlappingInstances/TypeSynonymInstances language extension;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lookuptable;lookuptable;lookuptable;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+transactions (database);transaction ( database );transactions (database);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+word32 type;word32 type;word32 type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+mapm function 2nd;mapm function 2nd;mapm function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fold function;fold function;fold functions, fold function;0;0;0;0;0;0;0;0;2;0;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+undefined symbol;undefined symbol;undefined symbols, undefined symbol;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parsechar function;parsechar function;parsechar function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+command-line editing;command-line editing;command-line editing;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+side-effect;side-effect;side-effect;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+shadowing parameter;shadowing parameter;shadowing parameters, shadowing parameter;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+enumerated type;enumerated type;enumerated type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pythagorean triple;pythagorean triple;pythagorean triple;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+print function;print function;print function;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+modelling;modelling;modelling;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+overloading;overloading;overloading;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+applicative functor;applicative functor;applicative functor;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0
+handling;handling;handling;0;1;0;3;0;2;6;6;0;1;0;1;0;0;0;2;0;1;23;4;3;0;1;1;0;0;2;0
+truth table;truth table;truth tables, truth table;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+double hashing;double hashing;double hashing;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0
+buffermode type;buffermode type;buffermode type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+error;error;errors, error;13;15;17;7;10;13;9;13;3;7;3;5;0;4;6;17;19;4;63;2;11;3;3;2;1;4;0;2
+union keyword (C/C++);union keyword (C/C++);union keyword (C/C++);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+strict and lazy bytestring;strict and lazy bytestring;strict and lazy bytestrings, strict and lazy bytestring;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+loop;loop;loops, loop;0;4;0;26;0;1;3;5;12;1;1;0;0;2;1;0;6;0;1;0;0;0;7;0;31;10;3;1
+getstatus function;getstatus function;getstatus function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+folding from left;folding from left;folding from left;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+show typeclass;show typeclass;show typeclass;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+calculator;calculator;calculators, calculator;3;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+master socket;master socket;master sockets, master socket;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+queuestate;queuestate;queuestate;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+.hs source file;.hs source file;.hs source files, .hs source file;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+temporary;temporary;temporary;1;0;0;0;0;0;11;1;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+applicative;applicative;applicative;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;26;0;0;0;0;0;0;0;0;1;0;0;0
+assignment;assignment;assignment;0;0;0;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+space leaks 2nd 3rd;space leak 2nd 3rd;space leaks 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+stack;stack;stacks, stack;0;0;0;2;9;0;2;0;0;3;0;0;4;0;0;0;2;37;4;1;1;0;1;0;8;1;0;0
+I/O;I/O;I/O;0;1;0;3;1;1;86;6;8;0;0;0;0;6;8;0;0;0;11;0;2;0;1;9;0;0;0;8
+database;database;databases, database;0;1;2;0;6;0;0;0;0;1;0;0;2;0;1;1;0;0;3;0;98;21;7;3;0;0;1;1
+cheap modification;cheap modification;cheap modifications, cheap modification;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+memoization;memoization;memoization;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+local variable;local variable;local variables, local variable;0;0;3;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+MySQL;mysql;MySQL;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8;0;0;0;0;0;0;0
+communication between 2nd;communication between 2nd;communication between 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+zero-width escape sequence;zero-width escape sequence;zero-width escape sequences, zero-width escape sequence;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.Win32 module;System.Win32 module;System.Win32 module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+input;input;input;6;3;4;35;1;4;37;3;2;6;5;7;4;2;1;19;18;0;12;13;1;0;2;3;3;8;0;1
+the reader monad;the reader monad;the reader monad;0;0;0;0;0;0;0;0;0;0;0;0;0;0;5;0;0;4;0;0;0;0;0;0;0;0;0;0
+transformation;transformation;transformation;0;0;0;1;0;0;1;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;1;3;1;0;0
+point (.) character;point (.) character;point (.) character;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+normal form (NF);normal form ( nf );normal form (NF);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+IConnection function;iconnection function;IConnection function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+minbound function;minbound function;minbound function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pseudorandom value generation;pseudorandom value generation;pseudorandom value generation;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+partial type monad instance;partial type monad instance;partial type monad instances, partial type monad instance;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+integer;integer;integer;11;10;3;3;1;32;1;2;0;0;3;2;5;2;0;0;7;0;2;3;0;0;0;0;3;1;0;1
+bit;bit;bit;1;8;1;7;2;16;6;0;1;1;0;18;3;1;0;5;1;1;2;1;1;0;0;1;2;34;0;0
+sorting;sorting;sorting;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;7;0;0;0;0
+new identity;new identity;new identities, new identity;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+newtype wrapper;newtype wrapper;newtype wrapper;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+values (undefined);value ( undefined );values (undefined);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+google;google;google;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0
+expression type|see;expression type | see;expression type|see;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+gettables function;gettables function;gettables function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.List module;Data.List module;Data.List module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type-checking;type-checking;type-checking;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mplus function;mplus function;mplus function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+record syntax;record syntax;record syntax;0;0;7;0;0;0;0;0;1;3;0;4;0;3;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+connecting;connecting;connecting;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;4;0;0;0;0;0;0;0
+FFI binding;ffi binding;FFI binding;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;7;0;0;0;0;0;0;0;0;3;0;0
+random value;random value;random values, random value;0;0;0;0;0;0;0;0;0;0;4;0;0;9;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+purity 2nd 3rd [see also pure functions];purity 2nd 3rd [ see also pure function ];purity 2nd 3rd [see also pure functions];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+readability;readability;readability;0;1;4;7;0;0;0;1;4;2;0;1;1;2;0;2;0;0;0;0;0;0;0;0;0;0;0;0
+splitat;splitat;splitat;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+constraint;constraint;constraints, constraint;0;0;0;0;1;0;0;0;0;19;3;3;1;3;7;0;0;0;0;0;0;0;0;0;1;0;0;0
+ghci interpreter 2nd;ghci interpreter 2nd;ghci interpreter 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+simulation;simulation;simulation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+edit distance;edit distance;edit distance;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+backquote;backquote;backquote;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+defining new;defining new;defining new;0;0;0;0;0;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+dynamic exception;dynamic exception;dynamic exceptions, dynamic exception;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;5;0;0;0;0;0;0;0;0;0
+plusptr function;plusptr function;plusptr function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+concurrent programs 2nd;concurrent program 2nd;concurrent programs 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+integral;integral;integral;1;0;0;0;0;17;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;1;1;0;0
+where clause 2nd;where clause 2nd;where clause 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+POST method (HTTP);post method ( http );POST method (HTTP);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+iterate;iterate;iterate;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+perl;perl;perl;1;2;0;3;0;0;1;10;0;0;0;1;0;0;0;0;3;0;0;1;0;0;0;0;0;0;0;0
+span;span;span;0;2;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type keyword;type keyword;type keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+find command;find command;find command;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+PCRE library and;PCRE library and;PCRE library and;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+chr;chr;chr;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+RSS format;rss format;RSS format;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
+randoms function;randoms function;randoms function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+wadler;wadler;wadler;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+rem function;rem function;rem function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+\t (tab) character;\ t ( tab ) character;\t (tab) character;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+searching;searching;searching;0;0;0;1;0;0;0;0;3;0;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+module header;module header;module headers, module header;0;0;0;0;2;1;0;0;0;0;0;0;1;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0
+Control.Arrow module;Control.Arrow module;Control.Arrow module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+magic number;magic number;magic numbers, magic number;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+variable naming;variable naming;variable naming;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foreign import declaration;foreign import declaration;foreign import declarations, foreign import declaration;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0
+alist (association lists);alist ( association list );alist (association lists);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+null value;null value;null values, null value;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0
+HCode;hcode;HCode;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+takewhile function;takewhile function;takewhile function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+torational function;torational function;torational function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+constant;constant;constants, constant;2;0;0;4;0;1;0;1;0;0;2;1;3;1;0;0;15;1;1;0;2;0;0;0;8;0;0;0
+lazy reading;lazy reading;lazy reading;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;7;0;0;0;0;0;1;0
+parser;parser;parsers, parser;0;1;0;0;0;5;0;0;0;25;0;2;0;1;1;68;0;0;10;0;0;4;0;1;0;0;0;0
+char;char;char;3;16;0;3;11;12;0;5;0;1;0;1;0;0;0;12;3;0;0;0;0;0;0;0;0;1;0;0
+let expression;let expression;let expressions, let expression;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+isdigit;isdigit;isdigit;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parsec;parsec;parsec;0;0;0;0;0;3;0;0;0;2;0;0;0;0;0;42;0;0;1;0;0;0;0;0;0;0;0;0
+monotype;monotype;monotype;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monadtrans class;monadtrans class;monadtrans class;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+application;application;application;2;22;5;16;5;1;3;4;4;0;0;7;6;3;4;1;1;2;2;0;1;3;5;5;1;6;4;0
+arithmetic;arithmetic;arithmetic;4;0;0;1;0;1;0;0;0;0;0;0;4;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0
+type class;type class;type classes, type class;0;0;0;0;0;0;0;0;0;0;0;0;1;0;5;0;2;2;0;0;0;0;0;0;0;0;0;0
+dispatch function;dispatch function;dispatch function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+:type command 2nd;: type command 2nd;:type command 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+glasgow haskell compiler;glasgow haskell compiler;glasgow haskell compiler;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+compact function;compact function;compact function;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+oracle;oracle;oracle;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0
+value constructor;value constructor;value constructors, value constructor;0;0;25;1;3;3;0;0;0;1;0;0;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+objects 2nd;object 2nd;objects 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+composite data type;composite data type;composite data types, composite data type;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+code;code;code;8;29;17;49;35;14;25;15;38;30;33;29;14;52;43;9;45;18;11;10;5;10;7;35;29;29;3;25
+partial;partial;partial;0;1;0;15;0;0;2;0;4;0;0;4;5;1;0;0;0;1;1;0;1;0;0;0;0;0;0;0
+blending c with haskell;blending c with haskell;blending c with haskell;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+laziness;laziness;laziness;0;1;0;1;0;0;2;0;0;0;0;4;0;0;0;0;0;0;9;1;0;0;0;0;1;0;0;0
+CSV file;csv file;CSV files, CSV file;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8;0;0;0;0;0;0;0;0;0;0;0;0
+state monad;state monad;state monad;0;0;0;0;0;0;0;0;0;0;0;0;0;20;14;0;0;7;2;0;0;0;0;0;0;1;0;1
+query;query;queries, query;0;0;0;0;0;0;0;0;2;1;0;0;0;0;1;1;0;0;1;2;31;1;0;0;0;4;0;0
+quality assurance;quality assurance;quality assurance;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+getline;getline;getline;0;0;0;0;0;0;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+main function;main function;main function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lines function 2nd 3rd;line function 2nd 3rd;lines function 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+unzip;unzip;unzip;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+zip function;zip function;zip function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+maps 2nd 3rd;map 2nd 3rd;maps 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+higher-order function;higher-order function;higher-order function;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+recip;recip;recip;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+bounded typeclass;bounded typeclass;bounded typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+binary datum;binary datum;binary data, binary datum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lambda function;lambda function;lambda functions, lambda function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foldr;foldr;foldr;0;0;0;25;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+emptydatadecls language extension;emptydatadecls language extension;emptydatadecls language extension;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+inclusive or;inclusive or;inclusive or;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fold;fold;fold;0;0;0;26;1;0;0;0;15;0;3;9;3;0;0;0;1;0;0;0;1;0;0;5;12;0;0;0
+foldl;foldl;foldl;0;0;0;38;0;0;0;0;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;6;0;0;0
+foldm;foldm;foldm;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+line-aligned chunk;line-aligned chunk;line-aligned chunks, line-aligned chunk;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+head normal form (HNF);head normal form ( hnf );head normal form (HNF);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+dates and time;date and time;dates and times, dates and time;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;5;0;0;0;0;0;0;0;0
+inmess;inmess;inmess;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+prefix form;prefix form;prefix form;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+x86_64 assembly;x86_64 assembly;x86_64 assembly;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+binary tree;binary tree;binary trees, binary tree;0;0;4;0;0;0;0;0;0;1;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+map type;map type;map type;0;0;0;0;0;0;0;0;0;1;0;3;2;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+htell function;htell function;htell function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+offside rule;offside rule;offside rule;0;0;5;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+membe;membe;membe;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.Directory module;System.Directory module;System.Directory module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+implementation;implementation;implementation;4;0;3;6;2;18;2;2;3;8;6;3;2;9;13;1;5;7;7;5;0;0;1;4;5;3;3;0
+folding from right;folding from right;folding from right;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+transformer stacking order;transformer stacking order;transformer stacking order;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+proof;proof;proof;0;0;0;0;0;0;0;0;0;1;0;0;0;0;2;0;1;0;0;0;0;0;0;0;0;0;0;0
+monadic expression;monadic expression;monadic expressions, monadic expression;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+boolean;boolean;booleans, boolean;5;1;0;0;0;0;0;0;1;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+Foreign.Ptr module;Foreign.Ptr module;Foreign.Ptr module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+listarray function;listarray function;listarray function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+reverse function;reverse function;reverse function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+getstdrandom function;getstdrandom function;getstdrandom function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+zip;zip;zip;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foldl function;foldl function;foldl function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+readable;readable;readable;0;0;2;6;2;2;0;0;1;0;0;2;0;2;0;4;0;0;1;0;0;0;0;0;0;1;0;0
+decodemessage;decodemessage;decodemessage;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+guideline;guideline;guidelines, guideline;0;0;0;0;1;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+calculation;calculation;calculation;0;0;0;1;0;0;0;0;0;0;0;0;3;0;0;0;0;0;1;6;0;0;0;1;0;0;0;0
+boolean value;boolean value;boolean values, boolean value;2;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+conditional with guards;conditional with guard;conditional with guards;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hiding;hiding;hiding;0;0;1;0;0;0;0;0;0;0;0;0;0;4;4;0;1;1;0;0;0;0;0;1;0;3;0;0
+control.Concurrent;control.Concurrent;control.Concurrent;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+explicit type declaration;explicit type declaration;explicit type declaration;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+program modification;program modification;program modification;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pattern of computation;pattern of computation;pattern of computation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+loop function;loop function;loop function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+closing;closing;closing;1;0;1;0;5;0;3;4;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;2;0;0;0;0
+symbol table;symbol table;symbol table;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+memory management;memory management;memory management;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;3
+process;process;processes, process;0;1;1;4;4;1;4;0;3;0;1;2;0;0;0;1;2;0;0;24;2;1;0;4;2;0;1;0
+as-pattern;as-pattern;as-patterns, as-pattern;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tail recursion;tail recursion;tail recursion;0;0;0;3;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+PRNG (pseudorandom number generator);prng ( pseudorandom number generator );PRNG (pseudorandom number generator);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mutable reference;mutable reference;mutable references, mutable reference;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0
+negation;negation;negation;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lazy language;lazy language;lazy languages, lazy language;0;0;1;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0
+input/output;input/output;input/output;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+common pattern;common pattern;common patterns, common pattern;0;0;0;2;0;0;0;0;0;0;0;0;0;0;1;0;0;2;0;0;0;0;0;0;0;0;0;0
+data structures 2nd 3rd;data structure 2nd 3rd;data structures 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+generator expression;generator expression;generator expressions, generator expression;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+elements function;element function;elements function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+glob pattern;glob pattern;glob patterns, glob pattern;0;0;0;0;0;0;0;14;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+maximal common subsequence;maximal common subsequence;maximal common subsequence;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+positional type;positional type;positional types, positional type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+left fold function;left fold function;left fold functions, left fold function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+object-oriented;object-oriented;object-oriented;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Foreign.Marshal.Array module;Foreign.Marshal.Array module;Foreign.Marshal.Array module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+FreeBSD;freebsd;FreeBSD;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+set comprehension;set comprehension;set comprehension;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+round function;round function;round function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+FDs (file descriptors);fds ( file descriptor );FDs (file descriptors);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+interpreter;interpreter;interpreters, interpreter;7;2;3;0;1;2;0;1;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0
+type instance;type instance;type instances, type instance;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+environment (programming);environment ( programming );environment (programming);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pixel;pixel;pixels, pixel;0;0;0;0;0;0;1;0;0;3;0;10;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ELF object file;elf object file;ELF object files, ELF object file;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+RGB image;rgb image;RGB images, RGB image;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monadic value;monadic value;monadic values, monadic value;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+factorial;factorial;factorial;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+injector function;injector function;injector functions, injector function;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+operator section;operator section;operator sections, operator section;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+left identity [see (>>=) operator];left identity [ see (>>=) operator ];left identity [see (>>=) operator];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+wild card pattern;wild card pattern;wild card patterns, wild card pattern;0;0;3;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+successor;successor;successor;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+blending with c;blending with c;blending with c;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tails function;tail function;tails function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+plain (p3) netpbm format;plain ( p3 ) netpbm format;plain (p3) netpbm format;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+synchronizing variable;synchronizing variable;synchronizing variable;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+WHNF (weak head normal form) 2nd 3rd;whnf ( weak head normal form ) 2nd 3rd;WHNF (weak head normal form) 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+\r (carriage return) character;\ r ( carriage return ) character;\r (carriage return) character;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fold' function;fold ' function;fold' function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+pcre_exec function;pcre_exec function;pcre_exec function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+identifier;identifier;identifier;1;0;1;0;0;1;0;0;0;0;0;1;0;0;1;2;0;0;0;0;0;1;0;0;0;0;0;0
+unary operator (-);unary operator (-);unary operator (-);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+chunk;chunk;chunks, chunk;0;0;0;0;0;0;5;4;0;0;1;1;2;0;0;0;1;0;0;0;1;0;0;19;0;5;0;0
+snd;snd;snd;0;2;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+list management;list management;list management;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+variables 2nd;variable 2nd;variables 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+structural induction;structural induction;structural induction;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mulitcore programming;mulitcore programming;mulitcore programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ASCII coding;ascii coding;ASCII coding;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+liftm function 2nd 3rd 4th;liftm function 2nd 3rd 4th;liftm function 2nd 3rd 4th;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+matrix;matrix;matrix;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Prelude.hs;Prelude.hs;Prelude.hs;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+input/output [See I/O];input/output [See I/O];input/output [See I/O];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+actual parameter;actual parameter;actual parameter;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+global variable;global variable;global variables, global variable;0;4;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+induction;induction;induction;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+dictionary;dictionary;dictionaries, dictionary;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+invisible data dependency;invisible data dependency;invisible data dependencies, invisible data dependency;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+data type;data type;data types, data type;0;4;32;3;3;4;0;1;2;3;7;4;0;1;0;0;12;0;2;0;2;1;0;0;12;0;0;1
+database engine;database engine;database engines, database engine;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;6;0;0;0;0;0;0;0
+file descriptors (FDs);file descriptor ( fds );file descriptors (FDs);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Daylight Saving Time (DST);daylight saving time ( dst );Daylight Saving Time (DST);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
+length;length;length;1;5;4;11;3;0;1;4;0;2;0;13;3;3;0;1;2;1;0;1;0;0;0;7;14;13;0;0
+bytestring;bytestring;bytestrings, bytestring;0;0;0;0;0;0;0;32;0;9;0;0;0;3;0;0;19;0;2;0;0;0;0;2;0;9;0;0
+filename matching;filename matching;filename matching;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+allocating datum;allocating datum;allocating data, allocating datum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+stub version of types/functions;stub version of types/functions;stub versions of types/functions, stub version of types/functions;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type annotation;type annotation;type annotations, type annotation;1;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0
+glasgow haskell;glasgow haskell;glasgow haskell;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hgetcontents function;hgetcontents function;hgetcontents function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+UDP;udp;UDP;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;23;0
+testing;testing;testing;1;1;0;1;0;1;1;0;0;0;26;0;0;0;2;0;0;0;0;0;0;0;0;0;0;4;1;0
+doc data type;doc data type;doc data type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Control.Monad.Error module 2nd 3rd;Control.Monad.Error module 2nd 3rd;Control.Monad.Error module 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+showtype;showtype;showtype;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+point-free style;point-free style;point-free style;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+debian linux;debian linux;debian linux;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+fmap function 2nd;fmap function 2nd;fmap function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+sqlerror type;sqlerror type;sqlerror type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+showhex function;showhex function;showhex function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+min;min;min;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+undefined value;undefined value;undefined values, undefined value;1;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+information hiding;information hiding;information hiding;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+stdout function;stdout function;stdout function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+instance;instance;instances, instance;2;1;3;4;3;97;5;8;3;23;10;8;23;19;37;3;2;42;9;10;8;0;0;6;0;20;0;10
+pseudorandom number generator (PRNG);pseudorandom number generator ( prng );pseudorandom number generator (PRNG);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+Haskell DataBase Connectivity system (HDBC);haskell database connectivity system ( hdbc );Haskell DataBase Connectivity system (HDBC);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+normal form datum;normal form datum;normal form data, normal form datum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tolower;tolower;tolower;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Coordinated Universal Time (UTC);coordinated universal time ( utc );Coordinated Universal Time (UTC);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+enumerating;enumerating;enumerating;1;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+zipwith;zipwith;zipwith;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+pure function;pure function;pure functions, pure function;0;3;0;0;0;0;9;0;0;0;0;0;0;5;3;0;4;4;1;0;0;0;0;0;0;0;0;1
+text;text;text;7;2;2;12;11;0;4;23;2;4;3;0;0;0;1;4;1;0;0;0;0;2;6;1;2;3;1;1
+barcode recognition;barcode recognition;barcode recognition;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+shiftl function;shiftl function;shiftl function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+deleting/renaming;deleting/renaming;deleting/renaming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+length function 2nd;length function 2nd;length function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+rotatehorse;rotatehorse;rotatehorse;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+kleisli composition;kleisli composition;kleisli composition;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monad type class;monad type class;monad type class;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+evaluation order;evaluation order;evaluation order;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0
+local;local;local;1;0;11;3;0;0;0;0;4;0;0;1;0;2;1;0;5;1;0;9;0;0;0;0;0;1;3;0
+pitfall;pitfall;pitfalls, pitfall;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+handle;handle;handles, handle;0;0;0;5;0;4;33;5;16;0;0;2;4;0;7;2;0;1;6;7;5;3;3;17;0;1;9;2
+immutable list;immutable list;immutable lists, immutable list;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+common pattern in monads;common pattern in monad;common patterns in monads, common pattern in monads;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+right identity [see (>>=) operator];right identity [ see (>>=) operator ];right identity [see (>>=) operator];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+quantifier;quantifier;quantifier;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+single quotes (');single quote (');single quotes (');0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+infop type 2nd;infop type 2nd;infop type 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.Cmd module;System.Cmd module;System.Cmd module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+suffixes function;suffix function;suffixes function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+writer monad;writer monad;writer monad;0;0;0;0;0;0;0;0;0;0;0;0;1;2;5;0;0;5;0;0;0;0;0;0;0;0;0;0
+single-character escape code;single-character escape code;single-character escape codes, single-character escape code;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+type inference 2nd;type inference 2nd;type inference 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+garbage collecting;garbage collecting;garbage collecting;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+moggi;moggi;moggi;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0
+module;module;modules, module;9;0;3;7;60;11;3;34;7;4;3;15;16;13;21;9;9;4;10;11;1;6;4;12;3;24;0;5
+string literal;string literal;string literals, string literal;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+finiteness;finiteness;finiteness;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+converting;converting;converting;0;0;0;0;0;7;1;0;0;0;0;2;2;0;0;0;0;0;0;3;0;1;0;0;0;0;0;0
+type signature;type signature;type signatures, type signature;0;13;4;5;7;1;0;5;3;1;0;7;0;11;2;1;3;3;1;0;0;0;0;1;0;1;0;0
+read typeclass;read typeclass;read typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+replicate function;replicate function;replicate function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+gcc compiler;gcc compiler;gcc compiler;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ill typed rule;ill typed rule;ill typed rules, ill typed rule;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+local definition;local definition;local definitions, local definition;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+state;state;state;0;2;1;0;0;0;7;0;1;30;4;1;0;83;21;0;5;20;5;1;1;0;0;6;21;3;0;7
+lend function;lend function;lend function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+invariant;invariant;invariants, invariant;0;0;0;0;0;0;0;0;0;0;11;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;8
+conditional evaluation 2nd;conditional evaluation 2nd;conditional evaluation 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+timediff type;timediff type;timediff type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+association lists 2nd;association list 2nd;association lists 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+widget descriptions saved a;widget description saved a;widget descriptions saved as, widget descriptions saved a;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+composable functor;composable functor;composable functors, composable functor;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+finding statu;finding statu;finding status, finding statu;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+typeclass;typeclass;typeclasses, typeclass;0;0;0;0;0;44;0;4;0;3;2;1;4;15;30;2;0;10;4;2;1;0;0;3;0;6;0;2
+nomonomorphismrestriction 2nd;nomonomorphismrestriction 2nd;nomonomorphismrestriction 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foreignptr type;foreignptr type;foreignptr type;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+link time;link time;link time;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+comment;comment;comment;0;2;0;0;0;2;0;0;0;0;0;1;0;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0
+type error;type error;type error;0;8;0;0;1;0;1;0;0;0;0;0;0;0;1;0;3;0;0;0;0;0;0;0;0;1;0;0
+forkprocess function;forkprocess function;forkprocess function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+otherwise;otherwise;otherwise;0;2;5;4;3;0;3;1;4;3;2;5;2;4;1;5;2;1;3;1;1;0;0;4;0;5;0;1
+casual parsing for;casual parsing for;casual parsing for;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+top level name;top level name;top level names, top level name;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+environment variable;environment variable;environment variables, environment variable;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+point-free expression;point-free expression;point-free expressions, point-free expression;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+greedy algorithm;greedy algorithm;greedy algorithm;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+table;table;table;0;0;0;0;0;4;2;0;0;0;0;18;2;0;0;0;1;0;0;0;16;2;1;0;0;2;0;0
+transforming input;transforming input;transforming input;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+associativity;associativity;associativity;5;0;0;0;0;0;0;0;1;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+literal;literal;literal;2;0;3;0;0;2;4;1;0;1;0;0;1;0;0;0;2;0;0;0;0;2;0;0;1;0;0;0
+hputstrln function;hputstrln function;hputstrln function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+applicative type class;applicative type class;applicative type class;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+HNF (head normal form);hnf ( head normal form );HNF (head normal form);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+URL-encoded query string;URL-encoded query string;URL-encoded query strings, URL-encoded query string;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+monadplus typeclass;monadplus typeclass;monadplus typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+foldl function 2nd;foldl function 2nd;foldl function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+functionaldependency;functionaldependency;functionaldependencies, functionaldependency;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+value;value;value;17;74;124;38;56;35;25;16;10;30;14;49;10;64;41;17;50;3;12;16;10;0;2;27;21;53;0;12
+parameterized types 2nd;parameterized type 2nd;parameterized types 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+accumulator;accumulator;accumulator;0;0;0;19;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;3;0;0;0
+snd function;snd function;snd function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+prelude;prelude;prelude;8;0;1;13;2;30;0;2;0;1;0;2;1;3;0;0;1;3;1;0;0;0;0;0;0;9;0;0
+recursive function;recursive function;recursive function;0;0;0;8;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+getclocktime function;getclocktime function;getclocktime function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+flex;flex;flex;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+pythagoras's theorem;pythagoras ' s theorem;pythagoras's theorem;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+arrays 2nd 3rd;array 2nd 3rd;arrays 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+tables (hash) 2nd;table ( hash ) 2nd;tables (hash) 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hardware;hardware;hardware;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;3;0;0;0;0;0;0;0;2;0;0;0
+compiling source;compiling source;compiling source;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+parse wrapper;parse wrapper;parse wrapper;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+flexiblecontext;flexiblecontext;flexiblecontexts, flexiblecontext;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Adler-32 checksum;Adler-32 checksum;Adler-32 checksum;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+infinity;infinity;infinity;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0
+context;context;context;1;1;2;0;0;0;1;2;3;0;1;1;0;1;2;0;0;0;2;0;0;0;0;0;0;0;0;0
+quadratic equation;quadratic equation;quadratic equation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+reporting;reporting;reporting;0;0;1;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;1;0;0;0
+key-value pair;key-value pair;key-value pairs, key-value pair;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0
+distributivity;distributivity;distributivity;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+identity;identity;identities, identity;0;0;0;1;3;4;0;0;0;5;0;0;4;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+polymorphism;polymorphism;polymorphism;0;22;1;0;0;1;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mzero;mzero;mzero;0;0;0;0;0;0;0;0;0;0;0;0;0;0;9;1;0;0;1;0;0;0;0;0;0;0;0;0
+numeric library;numeric library;numeric library;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lookup function;lookup function;lookup function;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+module function;module function;module functions, module function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+command;command;command;19;1;3;6;12;1;10;0;2;0;2;1;0;0;0;0;1;0;0;30;0;4;6;4;2;1;1;2
+filesystem;filesystem;filesystems, filesystem;0;0;0;0;0;0;0;3;5;0;0;0;0;0;1;0;0;0;0;1;0;0;0;1;0;1;0;0
+primitive recursive function;primitive recursive function;primitive recursive functions, primitive recursive function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+haskell.org;haskell.org;haskell.org;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0
+TCP;tcp;TCP;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;27;0
+.hsc files 2nd;.hsc files 2nd;.hsc files 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+runST function;runst function;runST function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+runghc program;runghc program;runghc program;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+ADT;adt;ADT;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+System.Directory module 2nd 3rd;System.Directory module 2nd 3rd;System.Directory module 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+string function;string function;string function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monads 2nd;monad 2nd;monads 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+data structure;data structure;data structures, data structure;0;1;0;0;0;4;0;0;0;1;1;6;3;0;1;0;4;0;1;0;0;0;0;0;4;6;0;0
+deadlocks 2nd;deadlock 2nd;deadlocks 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+boolean expression;boolean expression;boolean expressions, boolean expression;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+sequencing;sequencing;sequencing;0;0;0;0;0;0;1;0;0;0;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+fromintegral function 2nd;fromintegral function 2nd;fromintegral function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+callback function;callback function;callback functions, callback function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;0;0;0;0;0
+elem function;elem function;elem function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Control.Monad module 2nd;Control.Monad module 2nd;Control.Monad module 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+qualified import;qualified import;qualified imports, qualified import;0;0;0;0;0;0;0;5;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+widgets (GUI programming);widget ( gui programming );widgets (GUI programming);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+export;export;exports, export;0;0;0;1;8;9;0;0;0;1;0;1;2;1;3;2;2;1;1;0;0;0;2;3;1;8;0;0
+shape of functors;shape of functors;shape of functors;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monomorphic property;monomorphic property;monomorphic properties, monomorphic property;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+web client programming;web client programming;web client programming;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;2;0;0;0;0;1
+testing [see quality assurance];testing [ see quality assurance ];testing [see quality assurance];0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+multiplication (*) option;multiplication (*) option;multiplication (*) option;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+enum;enum;enum;0;0;4;0;0;1;0;0;0;0;0;0;0;0;0;0;4;0;0;1;0;0;0;0;0;0;0;0
+infix version of a function;infix version of a function;infix version of a function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+monadplus;monadplus;monadplus;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+CAFs (constant applicative forms);cafs ( constant applicative form );CAFs (constant applicative forms);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+non-threaded runtime;non-threaded runtime;non-threaded runtime;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0;0
+socket;socket;sockets, socket;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;12;0
+pipes (redirection);pipe ( redirection );pipes (redirection);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+glade;glade;glade;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;37;0;0;0;0;0
+maxthree;maxthree;maxthree;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+constructor;constructor;constructors, constructor;0;0;71;17;17;32;0;1;3;4;3;0;7;26;12;2;8;6;2;0;1;0;0;9;6;5;0;6
+context of failure;context of failure;context of failure;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+software;software;software;0;1;1;0;3;0;0;0;0;0;0;1;0;1;1;0;0;0;0;1;2;1;0;4;0;0;0;6
+guard;guard;guards, guard;0;1;18;6;0;0;0;1;0;0;0;9;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;11
+boolean algebra;boolean algebra;boolean algebra;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.ByteString.Lazy.Char8 module;Data.ByteString.Lazy.Char8 module;Data.ByteString.Lazy.Char8 module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+negate;negate;negate;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
+networking;networking;networking;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;3;0
+reduction;reduction;reduction;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;2;0;0;0
+function;function;functions, function;12;113;76;290;71;54;88;98;100;105;45;74;50;145;50;49;90;32;53;38;33;8;41;52;15;82;3;42
+strict evaluation 2nd;strict evaluation 2nd;strict evaluation 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+MonadIO typeclass;monadio typeclass;MonadIO typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+divide and conquer;divide and conquer;divide and conquer;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+random number;random number;random numbers, random number;0;0;0;0;0;0;0;0;0;0;2;0;0;5;20;0;0;0;0;0;0;0;0;7;0;0;0;0
+overlapping;overlapping;overlapping;0;0;0;0;0;10;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;1;0;0
+RPN (Reverse Polish Notation);rpn ( reverse polish notation );RPN (Reverse Polish Notation);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+embedded domain specific language;embedded domain specific language;embedded domain specific languages, embedded domain specific language;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+editing;editing;editing;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0
+Graphics.UI.Gtk.Graphics.UI.Gtk.Glade module;Graphics.UI.Gtk.Graphics.UI.Gtk.Glade module;Graphics.UI.Gtk.Graphics.UI.Gtk.Glade module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+record;record;records, record;0;1;9;0;0;1;1;0;1;4;0;4;3;13;0;2;1;7;0;0;0;0;2;2;0;1;1;0
+Database.HDBC module;Database.HDBC module;Database.HDBC module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+limit;limit;limit;0;1;2;2;0;1;0;0;2;0;0;1;1;0;0;0;0;0;0;0;1;0;0;3;1;0;0;1
+stderr function;stderr function;stderr function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+standard prelude;standard prelude;standard prelude;1;0;0;3;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+c programming language 2nd 3rd;c programming language 2nd 3rd;c programming language 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+boilerplate 2nd;boilerplate 2nd;boilerplate 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+redirection (pipes);redirection ( pipe );redirection (pipes);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+types 2nd 3rd;type 2nd 3rd;types 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Graphics.UI.Gtk module;Graphics.UI.Gtk module;Graphics.UI.Gtk module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+int;int;int;0;14;7;0;1;16;2;3;0;3;0;4;6;1;2;0;3;5;3;0;0;0;0;2;5;1;0;0
+row datum;row datum;row data, row datum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+newtype keyword;newtype keyword;newtype keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+subtraction (-) option;subtraction (-) option;subtraction (-) option;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+binary I/O;binary I/O;binary I/O;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+unboxed value in arrays;unboxed value in array;unboxed values in arrays, unboxed value in arrays;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+hsc2h;hsc2h;hsc2hs, hsc2h;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+association list;association list;association list;0;0;0;0;1;0;0;0;0;0;0;0;12;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0
+bool;bool;bool;4;12;6;2;0;5;1;2;11;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;2
+foreign module;foreign module;foreign modules, foreign module;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+HPC;hpc;HPC;0;0;0;0;0;0;0;0;0;0;10;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+genericity;genericity;genericity;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+lock order inversion;lock order inversion;lock order inversion;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+repeat;repeat;repeat;1;0;1;0;0;0;0;0;0;2;0;1;0;2;0;0;0;0;0;0;0;0;0;1;0;0;0;1
+class;class;classes, class;0;1;2;1;0;11;1;8;0;0;4;1;5;2;9;0;7;4;2;3;0;0;0;1;2;1;0;2
+quickquery' function 2nd;quickquery ' function 2nd;quickquery' function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+scaled value;scaled value;scaled values, scaled value;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+mconcat;mconcat;mconcat;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+disjunction;disjunction;disjunction;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+command-line;command-line;command-line;0;0;0;0;0;0;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0;3;3;0;0;0;0;0
+codemessage;codemessage;codemessage;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Data.List.lookup function;Data.List.lookup function;Data.List.lookup function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+POSIX regular expression;posix regular expression;POSIX regular expressions, POSIX regular expression;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Standard ML;standard ml;Standard ML;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+imperative programming;imperative programming;imperative programming;0;2;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0

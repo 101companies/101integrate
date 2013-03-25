@@ -53,7 +53,7 @@ top30 <- top30[order(top30$Term),]
 write.csv(top30, paste(dataRoot, "/perbook/", folder, '/topFrequency.csv', sep = ""))
 
 print(folder)
-frequenciesDistribution <- read.csv(paste(dataRoot, "/perbook/", folder, "/frequenciesDistributionmerged.csv", sep=""), sep=";", quote="\"")
+frequenciesDistribution <- read.csv(paste(dataRoot, "/perbook/", folder, "/frequenciesDistributionMerged.csv", sep=""), sep=";", quote="\"")
 
 #the following line should be uncommented if R studio is used
 #frequenciesDistribution <- read.csv("~/projects/101nonpublic/tools/icfp2012/books/Craft/frequenciesDistributionmerged.csv",sep=";", quote="\"", head=TRUE)

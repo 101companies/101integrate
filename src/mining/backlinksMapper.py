@@ -20,7 +20,7 @@ structure = distributionraw['structure']
 hasUrl = 'urlBase' in resInfos[resourcename]
 filesn = {}
 print "Backlinking", resourcename, "..."
-profileReader = csv.reader(open(resourcebase + 'chaptersProfile.csv'), delimiter=',')
+profileReader = csv.reader(open(resourcebase + 'chapterProfile.numbers.csv'), delimiter=',')
 profile = {}
 for row in profileReader:
 	profile[row[1]] = row[2:]

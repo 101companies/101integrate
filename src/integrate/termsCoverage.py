@@ -9,6 +9,8 @@ import json
 from asq.initiators import query
 from mako.template import Template
 
+from constants import *
+
 root = sys.argv[1]
 resourcebase = root + sys.argv[2]
 mapping = json.loads(open(resourcebase + 'mapping.json', 'rb').read())
@@ -58,8 +60,6 @@ def createTable(contribs, classification, classname):
 
 allThemeInstances = query(pages).where(lambda page: ('instanceOf' in page['page']) and (filter(lambda p: p['p'] == 'Theme', page['page']['instanceOf']))).to_list()
 allLanguageUsers = query(pages).where(lambda page: ('uses' in page['page']) and (filter(lambda p: p['p'] == 'Language', page['page']['uses']))).to_list()
-themes = ['Haskell_data', 'Haskell_genericity ', 'Haskell_potpourri', 'Haskell_introduction']
-languages = ['Haskell']
 
 for theme in themes:
 	print 'Table for', theme

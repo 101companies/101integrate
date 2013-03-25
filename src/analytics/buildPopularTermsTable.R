@@ -7,10 +7,10 @@ topFrequencyPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/topFrequency.csv",
 topFrequencyRwh <- read.csv(paste(dataRoot, "/perbook/", "RWH/topFrequency.csv", sep=""))
 topFrequencyLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/topFrequency.csv", sep=""))
 
-frequencyCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/frequenciesmerged.csv", sep=""), sep=";")
-frequencyPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/frequenciesmerged.csv", sep=""), sep=";")
-frequencyRwh <- read.csv(paste(dataRoot, "/perbook/", "RWH/frequenciesmerged.csv", sep=""), sep=";")
-frequencyLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/frequenciesmerged.csv", sep=""), sep=";")
+frequencyCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/frequenciesMerged.csv", sep=""), sep=";")
+frequencyPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/frequenciesMerged.csv", sep=""), sep=";")
+frequencyRwh <- read.csv(paste(dataRoot, "/perbook/", "RWH/frequenciesMerged.csv", sep=""), sep=";")
+frequencyLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/frequenciesMerged.csv", sep=""), sep=";")
 
 frequencyCraft <- subset(frequencyCraft, select=c(1,4))
 frequencyPih <- subset(frequencyPih, select=c(1,4))

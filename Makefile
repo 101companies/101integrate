@@ -1,11 +1,7 @@
+include src/Makefile.vars
+
 # Books available online
 ONLINEBOOKS = RWH LYAH
-
-# Books not available online
-OFFLINEBOOKS = PIH Craft
-
-# All books
-ALLBOOKS = ${ONLINEBOOKS} ${OFFLINEBOOKS}
 
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
@@ -41,6 +37,11 @@ download-deps:
 	sudo easy_install inflect
 	sudo easy_install html2text
 	sudo easy_install gdata
+	sudo easy_install jinja2
+	sudo easy_install mako
+
+bootstrap:
+	cd src; python bootstrap.py
 
 # Run mining scripts
 mine:
@@ -48,7 +49,22 @@ mine:
 
 # Run analytics scripts
 analyze:
+	make from-cache
 	cd src/analytics; make analyze
+
+# Copies post processed data to cache
+from-cache:
+	for b in ${NON_LINKED_BOOKS}; do \
+		cp data/perbook/$$b/cache/frequenciesMerged.csv  data/perbook/"$$b"/ ;\
+		cp data/perbook/$$b/cache/frequenciesDistributionMerged.csv  data/perbook/"$$b"/ ;\
+	done
+
+# Copies post-processed data, required for analytics, to cache
+to-cache:
+	for b in ${LINKED_BOOKS}; do \
+		cp data/perbook/$$b/frequenciesMerged.csv  data/perbook/"$$b"/cache ;\
+		cp data/perbook/$$b/frequenciesDistributionMerged.csv  data/perbook/"$$b"/cache ;\
+	done
 
 # Run backlinking scripts
 backlink:
@@ -57,11 +73,10 @@ backlink:
 coverageTables:
 	cd src/integrate; make coverageTables
 
-
 # Clean it all
 clean:
 	cd data/allbooks; rm -f *.tex *.csv *.json *.png *.html
-	for b in ${ALLBOOKS}; do \
+	for b in ${ALL_BOOKS}; do \
 		cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ;\
 		cd ../../.. ;\
 	done

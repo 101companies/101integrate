@@ -1,0 +1,1419 @@
+Term;Stemmed;Variations;Frequency
+iterator type;iterator type;iterator type;1
+impure function;impure function;impure functions, impure function;0
+dynamic;dynamic;dynamic;10
+function for 2nd;function for 2nd;functions for 2nd, function for 2nd;0
+updatelookupwithkey type;updatelookupwithkey type;updatelookupwithkey type;0
+const;const;const;4
+polymorphic list type;polymorphic list type;polymorphic list types, polymorphic list type;0
+splitat function;splitat function;splitat function;0
+derived instance;derived instance;derived instances, derived instance;1
+anchored regular expression;anchored regular expression;anchored regular expressions, anchored regular expression;0
+decoding barcode;decoding barcode;decoding barcodes, decoding barcode;0
+blockbuffering mode (buffermode);blockbuffering mode ( buffermode );blockbuffering mode (buffermode);0
+prepare function;prepare function;prepare function;0
+list comprehension;list comprehension;list comprehensions, list comprehension;12
+product type;product type;product types, product type;0
+ST (state thread) monad;st ( state thread ) monad;ST (state thread) monad;0
+vector;vector;vector;10
+runparse function;runparse function;runparse function;0
+vs. space;vs. space;vs. spaces, vs. space;0
+p5 (raw) netpbm image format;p5 ( raw ) netpbm image format;p5 (raw) netpbm image format;0
+Data.Dynamic module;Data.Dynamic module;Data.Dynamic module;0
+tan function;tan function;tan function;0
+overlappinginstances 2nd;overlappinginstances 2nd;overlappinginstances 2nd;0
+type parameter;type parameter;type parameter;24
+monad transformer;monad transformer;monad transformers, monad transformer;72
+even;even;even;127
+specification;specification;specification;7
+decoding;decoding;decoding;3
+binding function [see (>>=) operator];binding function [ see (>>=) operator ];binding function [see (>>=) operator];0
+above;above;above;111
+byetstring module;byetstring module;byetstring module;0
+enumeration notation;enumeration notation;enumeration notation;2
+operator precedence;operator precedence;operator precedence;4
+algebraic type;algebraic type;algebraic type;0
+regexcontex typeclass;regexcontex typeclass;regexcontex typeclass;0
+unlifted function;unlifted function;unlifted functions, unlifted function;0
+local functions/global variable;local functions/global variable;local functions/global variables, local functions/global variable;0
+System.Directory library;System.Directory library;System.Directory library;0
+infix function;infix function;infix functions, infix function;1
+polymorphic testing;polymorphic testing;polymorphic testing;1
+getchar;getchar;getchar;0
+python 2nd 3rd;python 2nd 3rd;python 2nd 3rd;0
+init;init;init;3
+two-dimensional vector;two-dimensional vector;two-dimensional vectors, two-dimensional vector;1
+getdirectorycontents function;getdirectorycontents function;getdirectorycontents function;0
+numeric types 2nd;numeric type 2nd;numeric types 2nd;0
+type;type;types, type;1661
+toUTCTime function;toutctime function;toUTCTime function;0
+alternatives (value constructors);alternative ( value constructor );alternatives (value constructors);0
+reserved word;reserved word;reserved words, reserved word;0
+foreignfunctioninterface;foreignfunctioninterface;foreignfunctioninterface;0
+pretty printer;pretty printer;pretty printers, pretty printer;11
+raw (p5) netpbm format;raw ( p5 ) netpbm format;raw (p5) netpbm format;0
+join;join;join;11
+nomonomorphismrestriction language extension;nomonomorphismrestriction language extension;nomonomorphismrestriction language extension;0
+SQL (Structured Query Language);sql ( structured query language );SQL (Structured Query Language);0
+queries (database);query ( database );queries (database);0
+do expression;do expression;do expressions, do expression;0
+immutable array;immutable array;immutable arrays, immutable array;8
+structures 2nd 3rd [see also data structures];structure 2nd 3rd [ see also data structure ];structures 2nd 3rd [see also data structures];0
+hfilesize function;hfilesize function;hfilesize function;0
+error handling;error handling;error handling;21
+temporary file;temporary file;temporary files, temporary file;8
+id function;id function;id function;0
+open world assumption;open world assumption;open world assumption;2
+square brackets ([ ]);square bracket ([ ]);square brackets ([ ]);0
+fibonacci number;fibonacci number;fibonacci numbers, fibonacci number;0
+defining and using new;defining and using new;defining and using new;1
+jenkins hash function;jenkins hash function;jenkins hash functions, jenkins hash function;3
+splitting line;splitting line;splitting lines, splitting line;4
+PGM file;pgm file;PGM files, PGM file;7
+abstraction;abstraction;abstraction;19
+typed;typed;typed;26
+lambda calculu;lambda calculu;lambda calculus, lambda calculu;0
+datatype;datatype;datatype;1
+foldr function;foldr function;foldr function;0
+complexity;complexity;complexity;9
+curried function;curried function;curried functions, curried function;0
+autocommit mode (databases);autocommit mode ( database );autocommit mode (databases);0
+order;order;order;78
+restriction;restriction;restrictions, restriction;23
+feedback;feedback;feedback;2
+right value;right value;right value;0
+setfiletimes function;setfiletimes function;setfiletimes function;0
+parse type 2nd;parse type 2nd;parse type 2nd;0
+runtime option;runtime option;runtime options, runtime option;2
+regexp [see regular expressions];regexp [ see regular expression ];regexp [see regular expressions];0
+writing;writing;writing;114
+type-based testing;type-based testing;type-based testing;1
+throw function;throw function;throw function;0
+type checking;type checking;type checking;3
+programming with;programming with;programming with;6
+IO type;io type;IO type;3
+memory location;memory location;memory locations, memory location;2
+tointeger function;tointeger function;tointeger function;0
+maybe monad;maybe monad;maybe monads, maybe monad;8
+type name;type name;type names, type name;6
+hanging lambda;hanging lambda;hanging lambdas, hanging lambda;2
+derivedatatypeable;derivedatatypeable;derivedatatypeable;1
+directory;directory;directories, directory;117
+combining;combining;combining;7
+symbolic evaluation;symbolic evaluation;symbolic evaluation;0
+lazy evaluation;lazy evaluation;lazy evaluations, lazy evaluation;13
+juxtaposition;juxtaposition;juxtaposition;0
+realtofrac function;realtofrac function;realtofrac function;0
+multiline literal;multiline literal;multiline literals, multiline literal;0
+GHCi;ghci;ghci, GHCi;221
+frominteger function;frominteger function;frominteger function;0
+quickcheck function;quickcheck function;quickcheck function;0
+Data.Map module 2nd;Data.Map module 2nd;Data.Map module 2nd;0
+parallel programs 2nd;parallel program 2nd;parallel programs 2nd;0
+shared pattern;shared pattern;shared patterns, shared pattern;1
+multiline string literal;multiline string literal;multiline string literals, multiline string literal;0
+infix;infix;infix;24
+shiftr function;shiftr function;shiftr function;0
+logging;logging;logging;6
+filter;filter;filter;82
+Coding.hs;Coding.hs;Coding.hs;0
+signature;signature;signatures, signature;84
+hugs interpreter;hug interpreter;hugs interpreter;0
+>>;>>;>>;3
+coding;coding;coding;11
+idempotency;idempotency;idempotency;3
+IConnection typeclass;iconnection typeclass;IConnection typeclass;0
+prefix notation;prefix notation;prefix notation;4
+value comparison;value comparison;value comparisons, value comparison;1
+>>= (bind) function;>>= ( bind ) function;>>= (bind) function;0
+any newtype constructor;any newtype constructor;any newtype constructor;0
+word type;word type;word type;0
+isalpha;isalpha;isalpha;0
+string type;string type;string type;4
+atomically block;atomically block;atomically blocks, atomically block;0
+signum;signum;signum;0
+x:xs pattern;x : x pattern;x:xs pattern;0
+regular expression;regular expression;regular expressions, regular expression;71
+keyword;keyword;keyword;40
+expr;expr;expr;0
+representing datum;representing datum;representing data, representing datum;0
+tree;tree;tree;50
+property-based testing;property-based testing;property-based testing;1
+pi value;pi value;pi value;0
+matching on;matching on;matching on;10
+infinite list;infinite list;infinite lists, infinite list;15
+fractional division (/) option;fractional division (/) option;fractional division (/) option;0
+question mark (?);question mark (?);question mark (?);0
+parsebyte function;parsebyte function;parsebyte function;0
+putstr;putstr;putstr;4
+elem;elem;elem;7
+commutativity;commutativity;commutativity;0
+pattern match;pattern match;pattern matches, pattern match;24
+latency;latency;latency;3
+strings and character;string and character;strings and characters, strings and character;0
+seq function;seq function;seq function;0
+tuple;tuple;tuples, tuple;64
+test datum;test datum;test data, test datum;0
+prompt directive (ghci);prompt directive ( ghci );prompt directive (ghci);0
+ternary type;ternary type;ternary type;2
+threeequal;threeequal;threeequal;0
+return keyword;return keyword;return keyword;0
+synonyms (types);synonym ( type );synonyms (types);0
+recursive type;recursive type;recursive types, recursive type;2
+try keyword;try keyword;try keyword;0
+recursive data structure;recursive data structure;recursive data structure;0
+downloading support material;downloading support material;downloading support materials, downloading support material;0
+HPC (Haskell Program Coverage);hpc ( haskell program coverage );HPC (Haskell Program Coverage);1
+digittoint;digittoint;digittoint;0
+sum;sum;sum;27
+UPC-A barcodes;UPC-A barcodes;UPC-A barcodes;1
+syntax;syntax;syntax;62
+I/O and;I/O and;I/O and;7
+do notation;do notation;do notation;0
+monad law;monad law;monad laws, monad law;6
+palindrome;palindrome;palindrome;2
+layout;layout;layout;22
+ix type;ix type;ix type;1
+Control.Monad.Trans module;Control.Monad.Trans module;Control.Monad.Trans module;0
+cons operator;con operator;cons operator;0
+case study;case study;case studies, case study;11
+pcre.h header file;pcre.h header file;pcre.h header file;0
+mapping over;mapping over;mapping over;1
+directories and file;directory and file;directories and files, directories and file;3
+hseek function;hseek function;hseek function;0
+logbase function;logbase function;logbase function;0
+closing file handle;closing file handle;closing file handles, closing file handle;1
+3d vector type;3d vector type;3d vector type;0
+list monad;list monad;list monads, list monad;7
+overloaded literal;overloaded literal;overloaded literals, overloaded literal;0
+implication;implication;implication;4
+lifted function;lifted function;lifted functions, lifted function;1
+program termination;program termination;program termination;1
+Control.Exception module 2nd 3rd;Control.Exception module 2nd 3rd;Control.Exception module 2nd 3rd;0
+mtl library 2nd;mtl library 2nd;mtl library 2nd;0
+LINE pragma;line pragma;LINE pragma;0
+num;num;num;23
+result;result;result;443
+Haskell Foreign Function Interface (FFI);haskell foreign function interface ( ffi );Haskell Foreign Function Interface (FFI);0
+eratosthene;eratosthene;eratosthenes, eratosthene;0
+type declaration;type declaration;type declaration;8
+types and purity;type and purity;types and purity;1
+filename;filename;filenames, filename;8
+identity parser;identity parser;identity parsers, identity parser;1
+text I/O;text I/O;text I/O;1
+sort function;sort function;sort function;2
+lazy;lazy;lazy;84
+Product id of barcodes;product id of barcodes;Product IDs of barcodes, Product id of barcodes;0
+preprocessor;preprocessor;preprocessor;8
+I/O (input/output) and;I/O (input/output) and;I/O (input/output) and;0
+seek pointer;seek pointer;seek pointers, seek pointer;1
+shell scripting;shell scripting;shell scripting;2
+monad;monad;monads, monad;580
+internal module;internal module;internal modules, internal module;1
+pack function;pack function;pack function;0
+comprehension;comprehension;comprehensions, comprehension;12
+type definition;type definition;type definitions, type definition;11
+maybe type;maybe type;maybe type;8
+exception type;exception type;exception type;1
+simplification;simplification;simplification;2
+replicate;replicate;replicate;2
+putstrln function 2nd 3rd;putstrln function 2nd 3rd;putstrln function 2nd 3rd;0
+flexible;flexible;flexible;6
+dropwhile;dropwhile;dropwhile;6
+processing [see file processing];processing [ see file processing ];processing [see file processing];0
+syntax error;syntax error;syntax error;1
+System.FilePath module 2nd;System.FilePath module 2nd;System.FilePath module 2nd;0
+monomorphism restriction;monomorphism restriction;monomorphism restriction;8
+record syntax 2nd;record syntax 2nd;record syntax 2nd;0
+monoid instance;monoid instance;monoid instance;4
+exception;exception;exceptions, exception;178
+program development;program development;program development;0
+boilerplate code;boilerplate code;boilerplate code;5
+or function;or function;or function;3
+bytestring module;bytestring module;bytestring modules, bytestring module;1
+advantage of functional programming;advantage of functional programming;advantages of functional programming, advantage of functional programming;0
+boolean logic;boolean logic;boolean logic;3
+IO;io;IO;168
+custom data types for;custom data type for;custom data types for;0
+id;id;id;20
+Data.Traversable module;Data.Traversable module;Data.Traversable module;0
+specialization;specialization;specialization;0
+recursion;recursion;recursion;23
+beside;beside;beside;0
+MVar type 2nd 3rd;mvar type 2nd 3rd;MVar type 2nd 3rd;0
+haskell 98;haskell 98;haskell 98;14
+listing directories with;listing directory with;listing directories with;0
+-sstderr RTS option 2nd;-sstderr RTS option 2nd;-sstderr RTS option 2nd;0
+nil;nil;nil;6
+state monads 2nd 3rd;state monad 2nd 3rd;state monads 2nd 3rd;0
+isalphanum;isalphanum;isalphanum;0
+emptydatadecl;emptydatadecl;emptydatadecls, emptydatadecl;0
+type class constraint;type class constraint;type class constraint;0
+file modification;file modification;file modifications, file modification;1
+compiling source code;compiling source code;compiling source code;0
+System.IO;System.IO;System.IO;13
+C PCRE API;C PCRE API;C PCRE API;1
+unification;unification;unification;0
+nobuffering mode (buffermode);nobuffering mode ( buffermode );nobuffering mode (buffermode);0
+just;just;just;219
+permissive type;permissive type;permissive types, permissive type;0
+Build-Depends field;Build-Depends field;Build-Depends fields, Build-Depends field;0
+currying;currying;currying;5
+anonymous (lambda) functions 2nd;anonymous ( lambda ) function 2nd;anonymous (lambda) functions 2nd;0
+transformer;transformer;transformers, transformer;93
+data-directed programming;data-directed programming;data-directed programming;0
+pure error handling;pure error handling;pure error handling;0
+gen environment;gen environment;gen environment;1
+nothing value;nothing value;nothing value;0
+character;character;characters, character;160
+newtype declaration;newtype declaration;newtype declarations, newtype declaration;1
+recursive case;recursive case;recursive case;4
+reuse;reuse;reuse;14
+SELECT statement;select statement;SELECT statements, SELECT statement;2
+monad stack;monad stack;monad stack;7
+fusion;fusion;fusion;4
+zipwith function;zipwith function;zipwith function;0
+combining function;combining function;combining functions, combining function;4
+the list monad;the list monad;the list monad;7
+reading/modifying state;reading/modifying state;reading/modifying state;0
+transformer stacking;transformer stacking;transformer stacking;1
+fixity;fixity;fixity;5
+starvation;starvation;starvation;8
+toupper function;toupper function;toupper function;0
+withtransaction function;withtransaction function;withtransaction function;0
+type class instance;type class instance;type class instance;0
+program error;program error;program error;0
+Haskell Program Coverage (HPC);haskell program coverage ( hpc );Haskell Program Coverage (HPC);0
+quicksort algorithm;quicksort algorithm;quicksort algorithm;1
+category theory;category theory;category theory;2
+Data.Monoid module;Data.Monoid module;Data.Monoid module;0
+Data.Sequence module;Data.Sequence module;Data.Sequence module;0
+core;core;cores, core;75
+overlappinginstances language extension;overlappinginstances language extension;overlappinginstances language extension;0
+automatic derivation;automatic derivation;automatic derivation;4
+precedence and associativity;precedence and associativity;precedence and associativity;4
+left-biased function;left-biased function;left-biased functions, left-biased function;0
+foldr1;foldr1;foldr1;0
+substitution;substitution;substitution;8
+word64 type;word64 type;word64 type;0
+strong type;strong type;strong types, strong type;2
+getmodificationtime function;getmodificationtime function;getmodificationtime function;0
+pseudo-random number;pseudo-random number;pseudo-random numbers, pseudo-random number;0
+sum type;sum type;sum types, sum type;0
+curry;curry;curry;2
+Control.Parallel.Strategies module;Control.Parallel.Strategies module;Control.Parallel.Strategies module;0
+float;float;float;8
+parsing;parsing;parsing;110
+rendering;rendering;rendering;19
+haskell;haskell;haskell;835
+base case;base case;base case;6
+writechan function;writechan function;writechan function;0
+ghc compiler 2nd;ghc compiler 2nd;ghc compiler 2nd;0
+openbinarytempfile function;openbinarytempfile function;openbinarytempfile function;0
+DST (Daylight Saving Time);dst ( daylight saving time );DST (Daylight Saving Time);0
+head;head;head;53
+randomr function;randomr function;randomr function;0
+else keyword;else keyword;else keyword;0
+putst function;putst function;putst function;0
+subclassing;subclassing;subclassing;1
+implicit state 2nd;implicit state 2nd;implicit state 2nd;0
+program transformation;program transformation;program transformation;0
+templates (c++);template ( c ++);templates (c++);0
+vs. tab character;vs. tab character;vs. tab characters, vs. tab character;0
+maximum;maximum;maximum;17
+closed world assumption;closed world assumption;closed world assumptions, closed world assumption;0
+traverse function 2nd;traverse function 2nd;traverse function 2nd;0
+UTC (Coordinated Universal Time);utc ( coordinated universal time );UTC (Coordinated Universal Time);0
+IO monad;io monad;IO monad;59
+sfetchallrows' function;sfetchallrows ' function;sfetchallrows' function;0
+wild card;wild card;wild card;21
+putstrln;putstrln;putstrln;24
+main loop (GUI programming);main loop ( gui programming );main loop (GUI programming);0
+blackhorse;blackhorse;blackhorse;0
+thunk;thunk;thunks, thunk;21
+NTree;ntree;NTree;0
+-fvia-C GHC option;-fvia-C GHC option;-fvia-C GHC option;0
+Foreign.C.String module 2nd;Foreign.C.String module 2nd;Foreign.C.String module 2nd;0
+floating;floating;floating;38
+equational reasoning;equational reasoning;equational reasoning;0
+immutable state;immutable state;immutable states, immutable state;1
+enum keyword (C/C++);enum keyword (C/C++);enum keyword (C/C++);0
+picture;picture;pictures, picture;7
+thread map;thread map;thread maps, thread map;1
+mutable array;mutable array;mutable arrays, mutable array;5
+miranda;miranda;miranda;0
+variable;variable;variable;161
+fst;fst;fst;8
+time;time;times, time;251
+applicative operator;applicative operator;applicative operator;0
+intensionality;intensionality;intensionality;0
+insert function;insert function;insert function;0
+concept;concept;concepts, concept;11
+out of scope;out of scope;out of scope;2
+cases (value constructors);case ( value constructor );cases (value constructors);0
+linebuffering mode (buffermode);linebuffering mode ( buffermode );linebuffering mode (buffermode);0
+map function;map function;map function;1
+printf (c) option;printf ( c ) option;printf (c) option;0
+graph;graph;graph;9
+case expression;case expression;case expressions, case expression;1
+p3 (plain) netpbm image format;p3 ( plain ) netpbm image format;p3 (plain) netpbm image format;0
+isspace;isspace;isspace;1
+predicate;predicate;predicates, predicate;71
+scientific notation;scientific notation;scientific notation;0
+string;string;strings, string;399
+associativity of operators;associativity of operator;associativity of operators;0
+control-with-character escapes;control-with-character escapes;control-with-character escapes;0
+universal newline support;universal newline support;universal newline support;0
+numeric 2nd;numeric 2nd;numeric 2nd;0
+newtype;newtype;newtype;60
+programming environment;programming environment;programming environment;0
+binary function;binary function;binary function;2
+structural recursion;structural recursion;structural recursion;2
+invertcolour;invertcolour;invertcolour;0
+div;div;div;1
+accumulation;accumulation;accumulation;1
+conversion between types;conversion between type;conversion between types;0
+standard library;standard library;standard libraries, standard library;19
+typeclasses 2nd;typeclasses 2nd;typeclasses 2nd;0
+pipe (|);pipe (|);pipe (|);0
+true boolean value;true boolean value;true boolean value;0
+GET method (HTTP);get method ( http );GET method (HTTP);0
+fmap;fmap;fmap;38
+barcode;barcode;barcodes, barcode;30
+parse type;parse type;parse type;8
+intergral;intergral;intergral;0
+undefinedness;undefinedness;undefinedness;0
+ubuntu linux;ubuntu linux;ubuntu linux;0
+mempty;mempty;mempty;0
+hamming number;hamming number;hamming numbers, hamming number;0
+example;example;examples, example;369
+queue;queue;queue;3
+properties as function;property a function;properties as functions, properties as function;0
+NF (normal form);nf ( normal form );NF (normal form);0
+whitespace in expressions;whitespace in expression;whitespace in expressions;0
+logical;logical;logical;13
+language extension;language extension;language extensions, language extension;23
+shift function;shift function;shift function;0
+pair (2-tuple);pair (2-tuple);pair (2-tuple);0
+GHC-Options property;GHC-Options property;GHC-Options property;0
+prelude module 2nd;prelude module 2nd;prelude module 2nd;0
+scope;scope;scope;14
+parsec helper function;parsec helper function;parsec helper functions, parsec helper function;1
+leaky code;leaky code;leaky code;0
+serverstate;serverstate;serverstate;0
+sharing;sharing;sharing;2
+head function 2nd 3rd;head function 2nd 3rd;head function 2nd 3rd;0
+concat function 2nd 3rd;concat function 2nd 3rd;concat function 2nd 3rd;0
+Data.Foldable module 2nd;Data.Foldable module 2nd;Data.Foldable module 2nd;0
+otherwise expression;otherwise expression;otherwise expression;0
+PostgreSQL;postgresql;PostgreSQL;3
+hash tables 2nd;hash table 2nd;hash tables 2nd;0
+poke function;poke function;poke function;0
+functional programming;functional programming;functional programming;13
+floating-point number;floating-point number;floating-point numbers, floating-point number;0
+binary search tree;binary search tree;binary search tree;0
+arithmetic expression;arithmetic expression;arithmetic expressions, arithmetic expression;1
+return calls 2nd;return call 2nd;return calls 2nd;0
+stream;stream;stream;16
+indice of arrays;indice of array;indices of arrays, indice of arrays;0
+right-associative signature;right-associative signature;right-associative signatures, right-associative signature;0
+substring;substring;substrings, substring;13
+custom data type for errors;custom data type for error;custom data types for errors, custom data type for errors;0
+purity;purity;purity;12
+logical or (||);logical or (||);logical or (||);0
+inheritance;inheritance;inheritance;0
+general recursion;general recursion;general recursion;0
+international language support;international language support;international language support;0
+Control.Applicative module;Control.Applicative module;Control.Applicative module;0
+pure;pure;pure;134
+parameter;parameter;parameters, parameter;124
+cl compiler;cl compiler;cl compiler;0
+map;map;maps, map;149
+product;product;product;7
+strictness;strictness;strictness;18
+max;max;max;0
+JSON typeclass;json typeclass;JSON typeclasses, JSON typeclass;2
+monadic use;monadic use;monadic use;1
+date;date;dates, date;11
+lifting;lifting;lifting;23
+maybe;maybe;maybe;112
+explicit;explicit;explicit;57
+combinator function;combinator function;combinator functions, combinator function;0
+first function;first function;first function;4
+waiting for other threads;waiting for other thread;waiting for other threads;1
+GHC;ghc;GHC;146
+character class;character class;character classes, character class;5
+non-strict evaluation;non-strict evaluation;non-strict evaluation;5
+search tree;search tree;search tree;0
+primitive recursion;primitive recursion;primitive recursion;0
+fliph;fliph;fliph;0
+pointer;pointer;pointers, pointer;61
+System.Posix.Files module;System.Posix.Files module;System.Posix.Files module;0
+polymorphic types 2nd;polymorphic type 2nd;polymorphic types 2nd;0
+window;window;windows, window;34
+bison command;bison command;bison command;0
+user IDs (UIDs);user ids ( uids );user IDs (UIDs);0
+qualifier;qualifier;qualifier;0
+ADT (abstract data types);adt ( abstract data type );ADT (abstract data types);0
+qualified;qualified;qualified;17
+pattern matching;pattern matching;pattern matching;42
+definedness;definedness;definedness;0
+equality;equality;equality;19
+name;name;name;349
+partial function;partial function;partial functions, partial function;11
+drop;drop;drop;27
+type system;type system;type system;59
+square;square;square;22
+taking advantage;taking advantage;taking advantage;4
+well typed rule;well typed rule;well typed rules, well typed rule;0
+folding over arrays;folding over array;folding over arrays;1
+web site;web site;web site;1
+naming;naming;naming;16
+eq;eq;eq;12
+programming paradigm;programming paradigm;programming paradigms, programming paradigm;0
+shadowing;shadowing;shadowing;4
+FFI (Haskell Foreign Function Interface);ffi ( haskell foreign function interface );FFI (Haskell Foreign Function Interface);0
+putstr function;putstr function;putstr function;0
+HTTP request;http request;HTTP requests, HTTP request;5
+maybet monad transformer 2nd;maybet monad transformer 2nd;maybet monad transformer 2nd;0
+then and else branch;then and else branch;then and else branches, then and else branch;0
+supermarket billing;supermarket billing;supermarket billing;0
+ord;ord;ord;12
+rawsystem function 2nd;rawsystem function 2nd;rawsystem function 2nd;0
+mode based testing;mode based testing;mode based testing;0
+derivedatatypeable language;derivedatatypeable language;derivedatatypeable language;0
+programming;programming;programming;91
+patternguard;patternguard;patternguards, patternguard;0
+Data.Function module;Data.Function module;Data.Function module;0
+recursive definition;recursive definition;recursive definition;1
+handlejust function;handlejust function;handlejust function;0
+islower;islower;islower;0
+isupper;isupper;isupper;1
+lambda;lambda;lambda;23
+saving;saving;saving;2
+enumeration type;enumeration type;enumeration types, enumeration type;1
+clause;clause;clause;36
+flexibleinstance;flexibleinstance;flexibleinstances, flexibleinstance;0
+type constructor;type constructor;type constructors, type constructor;38
+message;message;messages, message;94
+partial application;partial application;partial applications, partial application;15
+convention;convention;conventions, convention;25
+domino effect;domino effect;domino effect;0
+hug;hug;hugs, hug;1
+-funbox-strict-fields option 2nd;-funbox-strict-fields option 2nd;-funbox-strict-fields option 2nd;0
+concurrent programming with threads;concurrent programming with thread;concurrent programming with threads;1
+turning two into many;turning two into many;turning two into many;0
+diffarray type;diffarray type;diffarray type;0
+function application;function application;function application;12
+headers (HTTP);header ( http );headers (HTTP);0
+argument;argument;argument;248
+generalization;generalization;generalization;0
+ant;ant;ant;0
+ptr type;ptr type;ptr type;0
+conditional equation;conditional equation;conditional equation;0
+getst function;getst function;getst function;0
+object file;object file;object files, object file;7
+import directive 2nd;import directive 2nd;import directive 2nd;0
+any;any;any;245
+visibility of definitions;visibility of definition;visibility of definitions;0
+exhaustive pattern;exhaustive pattern;exhaustive patterns, exhaustive pattern;2
+monads and 2nd;monad and 2nd;monads and 2nd;0
+take;take;take;303
+struct keyword (C/C++);struct keyword (C/C++);struct keyword (C/C++);0
+data keyword;data keyword;data keyword;0
+main thread waiting for other threads;main thread waiting for other thread;main thread waiting for other threads;0
+stateful computation;stateful computation;stateful computations, stateful computation;0
+runtime statistic;runtime statistic;runtime statistics, runtime statistic;3
+tail function 2nd 3rd 4th;tail function 2nd 3rd 4th;tail function 2nd 3rd 4th;0
+infix form;infix form;infix form;1
+synonym;synonym;synonyms, synonym;41
+lazy I/O;lazy I/O;lazy I/O;5
+grayscale image format 2nd;grayscale image format 2nd;grayscale image format 2nd;0
+pattern;pattern;patterns, pattern;271
+typed pointer;typed pointer;typed pointers, typed pointer;3
+:reload command;: reload command;:reload command;0
+show;show;show;111
+API design;api design;API design;4
+HUnit library;hunit library;HUnit library;1
+lambda expression;lambda expression;lambda expression;1
+external program;external program;external programs, external program;4
+XML;xml;XML;26
+sequential sorting;sequential sorting;sequential sorting;1
+Data.Ratio module;Data.Ratio module;Data.Ratio module;0
+universal quantifier;universal quantifier;universal quantifier;0
+functional picture;functional picture;functional pictures, functional picture;0
+filterm;filterm;filterm;1
+split function;split function;split function;0
+waitfor function;waitfor function;waitfor function;0
+Data.Bits module;Data.Bits module;Data.Bits module;0
+text I/O and;text I/O and;text I/O and;0
+foldl and foldr function;foldl and foldr function;foldl and foldr functions, foldl and foldr function;0
+generics (java);generic ( java );generics (java);0
+typeable typeclass;typeable typeclass;typeable typeclass;1
+dynamic programming;dynamic programming;dynamic programming;0
+conjunction;conjunction;conjunction;0
+formal parameter;formal parameter;formal parameter;0
+passing datum between c and haskell;passing datum between c and haskell;passing data between c and haskell, passing datum between c and haskell;0
+source file;source file;source files, source file;71
+resource;resource;resources, resource;27
+string-handling;string-handling;string-handling;2
+filter function 2nd;filter function 2nd;filter function 2nd;0
+exclusive or;exclusive or;exclusive or;1
+safe keyword;safe keyword;safe keyword;0
+ASCII control code;ascii control code;ASCII control codes, ASCII control code;0
+generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;0
+where;where;where;166
+abstract data type;abstract data type;abstract data type;1
+algebraic data structure;algebraic data structure;algebraic data structure;0
+rnf function;rnf function;rnf function;0
+mainloop keyword;mainloop keyword;mainloop keyword;0
+monoid;monoid;monoids, monoid;18
+unlines function 2nd;unlines function 2nd;unlines function 2nd;0
+manufacturer ID of barcodes;manufacturer id of barcodes;manufacturer ID of barcodes;0
+malloc c function;malloc c function;malloc c function;0
+stdin function;stdin function;stdin function;0
+import;import;import;69
+spine for maps;spine for map;spines for maps, spine for maps;0
+System.Time module;System.Time module;System.Time module;0
+triple (3-tuple);triple (3-tuple);triple (3-tuple);0
+serialization;serialization;serialization;3
+lists and tuple;list and tuple;lists and tuples, lists and tuple;0
+Text.Regex.Posix module;Text.Regex.Posix module;Text.Regex.Posix module;0
+hsc2hs command;hsc2hs command;hsc2hs command;0
+interface file;interface file;interface files, interface file;1
+expression;expression;expressions, expression;375
+type variable;type variable;type variables, type variable;28
+float type;float type;float type;0
+PCRE (Perl-compatible regular expression);PCRE (Perl-compatible regular expression);PCRE (Perl-compatible regular expression);0
+filtering;filtering;filtering;5
+continuation;continuation;continuations, continuation;3
+quot function;quot function;quot function;0
+hoogle;hoogle;hoogle;0
+huffman code;huffman code;huffman codes, huffman code;0
+GUI (graphical user interface) programming;gui ( graphical user interface ) programming;GUI (graphical user interface) programming;0
+INSERT query;insert query;INSERT queries, INSERT query;1
+class declaration;class declaration;class declarations, class declaration;0
+side effect;side effect;side effects, side effect;45
+space leak;space leak;space leak;14
+declaration;declaration;declaration;51
+project idea;project idea;project ideas, project idea;0
+specializing for IO;specializing for io;specializing for IO;0
+ranges (pattern matching);range ( pattern matching );ranges (pattern matching);0
+lists 2nd 3rd 4th;list 2nd 3rd 4th;lists 2nd 3rd 4th;0
+java programming language;java programming language;java programming language;0
+System.Random;System.Random;System.Random;5
+Control.Parallel module;Control.Parallel module;Control.Parallel module;0
+modification time;modification time;modification times, modification time;2
+exceptions 2nd;exception 2nd;exceptions 2nd;0
+strict and lazy;strict and lazy;strict and lazy;3
+System.Random module;System.Random module;System.Random module;0
+concatenation;concatenation;concatenation;6
+parse;parse;parse;103
+word8 type;word8 type;word8 type;0
+binary;binary;binary;50
+System.Exit module;System.Exit module;System.Exit module;0
+second function;second function;second function;1
+left value 2nd;left value 2nd;left value 2nd;0
+arbitrary function;arbitrary function;arbitrary function;1
+bangpattern;bangpattern;bangpatterns, bangpattern;0
+standard module;standard module;standard module;1
+lazy reading from databases;lazy reading from database;lazy reading from databases;0
+static type;static type;static types, static type;1
+haselfmagic function;haselfmagic function;haselfmagic function;0
+running;running;running;42
+floating-point operator;floating-point operator;floating-point operators, floating-point operator;0
+report flag (hpc);report flag ( hpc );report flag (hpc);0
+interact function;interact function;interact function;0
+termination;termination;termination;5
+model;model;models, model;20
+System.IO library;System.IO library;System.IO library;0
+conditional expression;conditional expression;conditional expression;1
+line constructor;line constructor;line constructor;0
+adding safely to PCRE;adding safely to PCRE;adding safely to PCRE;0
+bounded type class;bounded type class;bounded type class;0
+unicode;unicode;unicode;6
+typesynonyminstances 2nd;typesynonyminstances 2nd;typesynonyminstances 2nd;0
+deconstructor;deconstructor;deconstructors, deconstructor;2
+getprocessstatus function;getprocessstatus function;getprocessstatus function;0
+readint function 2nd;readint function 2nd;readint function 2nd;0
+fedora linux;fedora linux;fedora linux;0
+mathematical induction;mathematical induction;mathematical induction;1
+read;read;reads, read;169
+composition|see{function composition;composition | see { function composition;composition|see{function composition;0
+metadata (database);metadata ( database );metadata (database);0
+module declaration;module declaration;module declarations, module declaration;6
+mod;mod;mod;4
+podcatcher;podcatcher;podcatcher;7
+constant applicative forms (CAFs);constant applicative form ( cafs );constant applicative forms (CAFs);0
+quickcheck 2nd;quickcheck 2nd;quickcheck 2nd;0
+peek function;peek function;peek function;0
+multiparamtypeclass;multiparamtypeclass;multiparamtypeclasses, multiparamtypeclass;0
+output;output;output;102
+parsetimes function;parsetimes function;parsetimes function;0
+take function;take function;take function;1
+toupper;toupper;toupper;5
+line function;line function;line function;3
+forkmanaged function;forkmanaged function;forkmanaged function;0
+statet monad transformer;statet monad transformer;statet monad transformer;0
+subtype polymorphism;subtype polymorphism;subtype polymorphism;2
+child socket;child socket;child sockets, child socket;0
+identity transformation (foldr);identity transformation ( foldr );identity transformation (foldr);0
+programming language;programming language;programming language;23
+floating point operator;floating point operator;floating point operators, floating point operator;0
+foldr function 2nd;foldr function 2nd;foldr function 2nd;0
+shared-state;shared-state;shared-state;0
+inductive case;inductive case;inductive case;1
+EAN-13 barcodes;EAN-13 barcodes;EAN-13 barcodes;3
+numeric escape;numeric escape;numeric escapes, numeric escape;0
+solution map;solution map;solution maps, solution map;13
+package;package;packages, package;97
+delete function;delete function;delete function;0
+writer type;writer type;writer type;0
+evaluation strategy;evaluation strategy;evaluation strategies, evaluation strategy;9
+type synonym;type synonym;type synonyms, type synonym;20
+extensionality principle;extensionality principle;extensionality principle;0
+op;op;ops, op;4
+Parsec CSV file;parsec csv file;Parsec CSV files, Parsec CSV file;0
+recip function;recip function;recip function;0
+split-base Cabal flag;split-base Cabal flag;split-base Cabal flag;0
+help command (ghci);help command ( ghci );help command (ghci);0
+:set prompt 2nd;: set prompt 2nd;:set prompt 2nd;0
+openfile function 2nd;openfile function 2nd;openfile function 2nd;0
+high-order function;high-order function;high-order functions, high-order function;0
+operator;operator;operators, operator;134
+pivot;pivot;pivots, pivot;6
+generalizednewtypederiving extension 2nd;generalizednewtypederiving extension 2nd;generalizednewtypederiving extension 2nd;0
+strict;strict;strict;67
+pcre_fullinfo function;pcre_fullinfo function;pcre_fullinfo function;0
+gtk2h;gtk2h;gtk2hs, gtk2h;0
+rational type;rational type;rational type;0
+modifyMVar function;modifymvar function;modifyMVar function;0
+I/O (input/output);I/O (input/output);I/O (input/output);0
+components (types);component ( type );components (types);0
+multitasking;multitasking;multitasking;0
+nondeterministic value;nondeterministic value;nondeterministic values, nondeterministic value;0
+default;default;default;54
+sin function;sin function;sin function;0
+bloom filter;bloom filter;bloom filters, bloom filter;38
+discriminated union;discriminated union;discriminated unions, discriminated union;1
+ab;ab;abs, ab;4
+applicative style;applicative style;applicative style;3
+first-class citizen;first-class citizen;first-class citizens, first-class citizen;0
+GUI programming;gui programming;GUI programming;1
+file;file;files, file;535
+unsafeIOToSTM function;unsafeiotostm function;unsafeIOToSTM function;0
+handle function;handle function;handle function;0
+takewhile;takewhile;takewhile;5
+vs. I/O;vs. I/O;vs. I/O;1
+logical and (&&);logical and (&&);logical and (&&);0
+deriving;deriving;deriving;10
+either type;either type;either type;8
+concat;concat;concat;20
+algebraic;algebraic;algebraic;32
+projection function;projection function;projection functions, projection function;1
+prop_one_present function;prop_one_present function;prop_one_present function;0
+hprint function;hprint function;hprint function;0
+CPP;cpp;CPP;8
+STM (software transactional memory);stm ( software transactional memory );STM (software transactional memory);0
+pcre_compile function;pcre_compile function;pcre_compile function;0
+sqrt function;sqrt function;sqrt function;0
+floating point;floating point;floating point;24
+fromrational function;fromrational function;fromrational function;0
+declarations (module);declaration ( module );declarations (module);0
+reasoning;reasoning;reasoning;10
+maybe implementation;maybe implementation;maybe implementation;0
+withforeignptr function;withforeignptr function;withforeignptr function;0
+inductive/recursive case;inductive/recursive case;inductive/recursive case;0
+ruby;ruby;ruby;3
+binding power;binding power;binding power;0
+tail;tail;tail;58
+program;program;program;355
+lift function 2nd;lift function 2nd;lift function 2nd;0
+global;global;global;19
+class constraint;class constraint;class constraints, class constraint;1
+functor typeclass;functor typeclass;functor typeclass;0
+print;print;print;71
+balancing;balancing;balancing;4
+inttodigit;inttodigit;inttodigit;0
+condition;condition;conditions, condition;7
+reader monad;reader monad;reader monad;10
+list;list;lists, list;892
+mapreduce;mapreduce;mapreduce;7
+function definition;function definition;function definition;11
+domain-specific language;domain-specific language;domain-specific languages, domain-specific language;0
+two-dimensional array;two-dimensional array;two-dimensional arrays, two-dimensional array;2
+systems programming;system programming;systems programming;3
+built-in;built-in;built-in;10
+PCRE libraries and;PCRE libraries and;PCRE libraries and;0
+syslog;syslog;syslog;14
+design;design;design;28
+form function;form function;form function;0
+ghemawat;ghemawat;ghemawat;0
+maxbound function;maxbound function;maxbound function;0
+escaping text;escaping text;escaping text;0
+color image;color image;color images, color image;0
+section;section;sections, section;165
+fractional;fractional;fractional;11
+bounded variable;bounded variable;bounded variables, bounded variable;0
+escaping;escaping;escaping;12
+metadatum;metadatum;metadata, metadatum;0
+writert monad transformer;writert monad transformer;writert monad transformer;1
+behaviour;behaviour;behaviour;39
+supplying random number;supplying random number;supplying random numbers, supplying random number;1
+System.IO.Error module;System.IO.Error module;System.IO.Error module;0
+escape character;escape character;escape characters, escape character;1
+action;action;actions, action;202
+Exposed-Modules field;Exposed-Modules field;Exposed-Modules field;0
+programmable semicolon;programmable semicolon;programmable semicolon;2
+function composition;function composition;function composition;8
+coercion;coercion;coercion;6
+executable;executable;executables, executable;15
+overlapping instance;overlapping instance;overlapping instances, overlapping instance;10
+JSON (JavaScript Object Notation);json ( javascript object notation );JSON (JavaScript Object Notation);1
+UIDs (user IDs);uids ( user ids );UIDs (user IDs);1
+STM monad;stm monad;STM monad;6
+syntactic sugar;syntactic sugar;syntactic sugar;3
+sepby function;sepby function;sepby function;0
+h function;h function;h functions, h function;0
+group function;group function;group function;0
+partial application of functions;partial application of function;partial application of functions;0
+number system of barcodes;number system of barcodes;number systems of barcodes, number system of barcodes;0
+text processing;text processing;text processing;1
+uncurrying;uncurrying;uncurrying;0
+xor function;xor function;xor function;0
+equation;equation;equation;27
+installing;installing;installing;10
+binding c to haskell;binding c to haskell;binding c to haskell;0
+unsafePerformIO function;unsafeperformio function;unsafePerformIO function;0
+JSON typclass;json typclass;JSON typclasses, JSON typclass;0
+applicative value;applicative value;applicative value;0
+readfile function 2nd 3rd;readfile function 2nd 3rd;readfile function 2nd 3rd;0
+scan;scan;scan;9
+minimum;minimum;minimum;6
+seekmode parameter (htell);seekmode parameter ( htell );seekmode parameter (htell);0
+implicit state;implicit state;implicit state;4
+return function;return function;return function;1
+join function;join function;join function;0
+recursive;recursive;recursive;57
+mapm;mapm;mapm;16
+applicative law;applicative law;applicative laws, applicative law;0
+mutable;mutable;mutable;32
+total function;total function;total functions, total function;2
+Reverse Polish Notation (RPN);reverse polish notation ( rpn );Reverse Polish Notation (RPN);0
+mapping;mapping;mapping;6
+GHC (Glasgow Haskell Compiler);ghc ( glasgow haskell compiler );GHC (Glasgow Haskell Compiler);0
+making instance;making instance;making instances, making instance;0
+maxium function;maxium function;maxium function;0
+using multiple;using multiple;using multiple;3
+sqlvalues type;sqlvalues type;sqlvalues type;0
+documentation;documentation;documentation;18
+parameterized;parameterized;parameterized;1
+stacking multiple;stacking multiple;stacking multiple;1
+log function;log function;log function;0
+lookaheads (regular expressions);lookaheads ( regular expression );lookaheads (regular expressions);0
+union type;union type;union type;0
+type inference;type inference;type inference;11
+monadstate typeclass;monadstate typeclass;monadstate typeclass;2
+arbitrary typeclass 2nd 3rd;arbitrary typeclass 2nd 3rd;arbitrary typeclass 2nd 3rd;0
+unsafe keyword;unsafe keyword;unsafe keyword;0
+tab (\t) character;tab (\ t ) character;tab (\t) character;0
+truncate function 2nd;truncate function 2nd;truncate function 2nd;0
+hclose function 2nd;hclose function 2nd;hclose function 2nd;0
+initializing;initializing;initializing;2
+pwd command;pwd command;pwd command;0
+using strong type;using strong type;using strong types, using strong type;0
+c preprocessor;c preprocessor;c preprocessor;4
+return;return;return;461
+idempotence;idempotence;idempotence;0
+unix-compat package;unix-compat package;unix-compat package;0
+buffering;buffering;buffering;17
+mapreduce (google);mapreduce ( google );mapreduce (google);0
+high-level wrapper;high-level wrapper;high-level wrappers, high-level wrapper;0
+dummy value at errors;dummy value at error;dummy values at errors, dummy value at errors;0
+deferred computation;deferred computation;deferred computation;0
+opentempfile function;opentempfile function;opentempfile function;0
+left-associative;left-associative;left-associative;0
+Data.Array module;Data.Array module;Data.Array module;0
+pure code;pure code;pure code;28
+functor;functor;functors, functor;39
+laziness and space leak;laziness and space leak;laziness and space leaks, laziness and space leak;0
+sizing safely;sizing safely;sizing safely;0
+marshaling;marshaling;marshaling;0
+netpbm file format 2nd;netpbm file format 2nd;netpbm file format 2nd;0
+-fvia-C option;-fvia-C option;-fvia-C option;0
+evaluation;evaluation;evaluation;84
+text mode;text mode;text mode;6
+LANGUAGE pragma;language pragma;LANGUAGE pragmas, LANGUAGE pragma;3
+System.Posix module;System.Posix module;System.Posix module;0
+high-order;high-order;high-order;0
+understanding program;understanding program;understanding programs, understanding program;0
+explicit recursion;explicit recursion;explicit recursion;8
+drivers (HDBC);driver ( hdbc );drivers (HDBC);0
+definition;definition;definitions, definition;195
+putchar;putchar;putchar;0
+thread;thread;threads, thread;141
+event-driven programming;event-driven programming;event-driven programming;0
+describetable function;describetable function;describetable function;0
+file processing;file processing;file processing;5
+readln;readln;readln;0
+parametric polymorphism;parametric polymorphism;parametric polymorphism;5
+the state monad;the state monad;the state monad;33
+patternguards language extension;patternguards language extension;patternguards language extension;0
+encoding;encoding;encoding;17
+number;number;numbers, number;287
+linking;linking;linking;6
+Data.Char module;Data.Char module;Data.Char module;0
+unwords function;unwords function;unwords function;0
+marshaling datum;marshaling datum;marshaling data, marshaling datum;0
+horse;horse;horse;0
+script;script;script;8
+interact;interact;interact;14
+readert monad layer;readert monad layer;readert monad layer;0
+assumption;assumption;assumptions, assumption;11
+scheme;scheme;scheme;2
+typesynonyminstances language extension 2nd;typesynonyminstances language extension 2nd;typesynonyminstances language extension 2nd;0
+store;store;store;39
+(>>=) function and 2nd 3rd;(>>=) function and 2nd 3rd;(>>=) function and 2nd 3rd;0
+.tix file;.tix file;.tix files, .tix file;1
+System.Environment module;System.Environment module;System.Environment module;0
+forward composition;forward composition;forward composition;0
+declaring instance;declaring instance;declaring instances, declaring instance;0
+fst function 2nd;fst function 2nd;fst function 2nd;0
+Glasgow Haskell Compiler (GHC);glasgow haskell compiler ( ghc );Glasgow Haskell Compiler (GHC);1
+numeric conversion;numeric conversion;numeric conversions, numeric conversion;0
+algebraic data type;algebraic data type;algebraic data types, algebraic data type;31
+monadreader typeclass;monadreader typeclass;monadreader typeclass;2
+domain-specific language for;domain-specific language for;domain-specific language for;0
+monomorphism;monomorphism;monomorphism;9
+debugging;debugging;debugging;8
+event-driven;event-driven;event-driven;1
+weak head normal form (WHNF) 2nd 3rd;weak head normal form ( whnf ) 2nd 3rd;weak head normal form (WHNF) 2nd 3rd;0
+null;null;null;23
+Data.Typeable module;Data.Typeable module;Data.Typeable module;0
+Structured Query Language (SQL);structured query language ( sql );Structured Query Language (SQL);0
+list of successes method;list of success method;list of successes method;0
+odd;odd;odd;11
+liftm;liftm;liftm;19
+outmess;outmess;outmess;0
+duck typing;duck typing;duck typing;1
+redex;redex;redex;0
+tocalendartime function;tocalendartime function;tocalendartime function;0
+grain size;grain size;grain sizes, grain size;3
+free variable;free variable;free variable;1
+nothing;nothing;nothing;86
+ODBC driver;odbc driver;ODBC drivers, ODBC driver;1
+selector;selector;selector;0
+JavaScript Object Notation [See JSON];javascript object notation [ see json ];JavaScript Object Notation [See JSON];0
+impure code;impure code;impure code;4
+enum typeclass;enum typeclass;enum typeclass;0
+-fhpc flag;-fhpc flag;-fhpc flag;0
+loosely coupled;loosely coupled;loosely coupled;0
+GTK+ development environment;gtk + development environment;GTK+ development environment;1
+lazy function;lazy function;lazy functions, lazy function;2
+relation;relation;relations, relation;0
+backtracking;backtracking;backtracking;3
+GHC.Conc module 2nd;GHC.Conc module 2nd;GHC.Conc module 2nd;0
+local function;local function;local function;11
+c programming;c programming;c programming;0
+word16 type;word16 type;word16 type;0
+foldl1;foldl1;foldl1;0
+Map.insert function;Map.insert function;Map.insert function;0
+lifting function;lifting function;lifting functions, lifting function;0
+compiler;compiler;compilers, compiler;132
+Mac OS X;mac os x;Mac OS X;2
+functions for;function for;functions for;28
+threaded runtime;threaded runtime;threaded runtime;13
+set;set;sets, set;93
+throwing;throwing;throwing;7
+anonymous type;anonymous type;anonymous types, anonymous type;0
+strict type;strict type;strict types, strict type;1
+underscore character (_);underscore character ( _ );underscore character (_);0
+force function;force function;force function;0
+writefile function;writefile function;writefile function;0
+concatenate;concatenate;concatenate;7
+profiling;profiling;profiling;35
+creating;creating;creating;27
+algebraic expression;algebraic expression;algebraic expressions, algebraic expression;0
+system message;system message;system messages, system message;0
+uncurry;uncurry;uncurry;0
+interface;interface;interfaces, interface;59
+understanding;understanding;understanding;22
+zipper;zipper;zipper;0
+folding;folding;folding;14
+reverse;reverse;reverse;10
+OverlappingInstances/TypeSynonymInstances language extension;OverlappingInstances/TypeSynonymInstances language extension;OverlappingInstances/TypeSynonymInstances language extensions, OverlappingInstances/TypeSynonymInstances language extension;0
+lookuptable;lookuptable;lookuptable;0
+transactions (database);transaction ( database );transactions (database);0
+word32 type;word32 type;word32 type;1
+mapm function 2nd;mapm function 2nd;mapm function 2nd;0
+fold function;fold function;fold functions, fold function;5
+undefined symbol;undefined symbol;undefined symbols, undefined symbol;1
+parsechar function;parsechar function;parsechar function;0
+command-line editing;command-line editing;command-line editing;0
+side-effect;side-effect;side-effect;3
+shadowing parameter;shadowing parameter;shadowing parameters, shadowing parameter;0
+enumerated type;enumerated type;enumerated type;0
+pythagorean triple;pythagorean triple;pythagorean triple;0
+print function;print function;print function;1
+modelling;modelling;modelling;0
+overloading;overloading;overloading;2
+applicative functor;applicative functor;applicative functor;3
+handling;handling;handling;57
+truth table;truth table;truth tables, truth table;0
+double hashing;double hashing;double hashing;2
+buffermode type;buffermode type;buffermode type;0
+error;error;errors, error;256
+union keyword (C/C++);union keyword (C/C++);union keyword (C/C++);0
+strict and lazy bytestring;strict and lazy bytestring;strict and lazy bytestrings, strict and lazy bytestring;0
+loop;loop;loops, loop;115
+getstatus function;getstatus function;getstatus function;0
+folding from left;folding from left;folding from left;0
+show typeclass;show typeclass;show typeclass;2
+calculator;calculator;calculators, calculator;4
+master socket;master socket;master sockets, master socket;0
+queuestate;queuestate;queuestate;0
+.hs source file;.hs source file;.hs source files, .hs source file;0
+temporary;temporary;temporary;14
+applicative;applicative;applicative;28
+assignment;assignment;assignment;2
+space leaks 2nd 3rd;space leak 2nd 3rd;space leaks 2nd 3rd;0
+stack;stack;stacks, stack;75
+I/O;I/O;I/O;151
+database;database;databases, database;148
+cheap modification;cheap modification;cheap modifications, cheap modification;1
+memoization;memoization;memoization;0
+local variable;local variable;local variables, local variable;5
+MySQL;mysql;MySQL;8
+communication between 2nd;communication between 2nd;communication between 2nd;0
+zero-width escape sequence;zero-width escape sequence;zero-width escape sequences, zero-width escape sequence;0
+System.Win32 module;System.Win32 module;System.Win32 module;0
+input;input;input;200
+the reader monad;the reader monad;the reader monad;9
+transformation;transformation;transformation;9
+point (.) character;point (.) character;point (.) character;0
+normal form (NF);normal form ( nf );normal form (NF);0
+IConnection function;iconnection function;IConnection function;0
+minbound function;minbound function;minbound function;0
+pseudorandom value generation;pseudorandom value generation;pseudorandom value generation;1
+partial type monad instance;partial type monad instance;partial type monad instances, partial type monad instance;0
+integer;integer;integer;92
+bit;bit;bit;113
+sorting;sorting;sorting;10
+new identity;new identity;new identities, new identity;2
+newtype wrapper;newtype wrapper;newtype wrapper;0
+values (undefined);value ( undefined );values (undefined);0
+google;google;google;2
+expression type|see;expression type | see;expression type|see;0
+gettables function;gettables function;gettables function;0
+Data.List module;Data.List module;Data.List module;0
+type-checking;type-checking;type-checking;0
+mplus function;mplus function;mplus function;0
+record syntax;record syntax;record syntax;19
+connecting;connecting;connecting;6
+FFI binding;ffi binding;FFI binding;10
+random value;random value;random values, random value;13
+purity 2nd 3rd [see also pure functions];purity 2nd 3rd [ see also pure function ];purity 2nd 3rd [see also pure functions];0
+readability;readability;readability;25
+splitat;splitat;splitat;2
+constraint;constraint;constraints, constraint;38
+ghci interpreter 2nd;ghci interpreter 2nd;ghci interpreter 2nd;0
+simulation;simulation;simulation;0
+edit distance;edit distance;edit distance;0
+backquote;backquote;backquote;0
+defining new;defining new;defining new;2
+dynamic exception;dynamic exception;dynamic exceptions, dynamic exception;5
+plusptr function;plusptr function;plusptr function;0
+concurrent programs 2nd;concurrent program 2nd;concurrent programs 2nd;0
+integral;integral;integral;21
+where clause 2nd;where clause 2nd;where clause 2nd;0
+POST method (HTTP);post method ( http );POST method (HTTP);0
+iterate;iterate;iterate;2
+perl;perl;perl;22
+span;span;span;5
+type keyword;type keyword;type keyword;0
+find command;find command;find command;1
+PCRE library and;PCRE library and;PCRE library and;0
+chr;chr;chr;0
+RSS format;rss format;RSS format;1
+randoms function;randoms function;randoms function;0
+wadler;wadler;wadler;2
+rem function;rem function;rem function;0
+\t (tab) character;\ t ( tab ) character;\t (tab) character;0
+searching;searching;searching;8
+module header;module header;module headers, module header;7
+Control.Arrow module;Control.Arrow module;Control.Arrow module;0
+magic number;magic number;magic numbers, magic number;2
+variable naming;variable naming;variable naming;1
+foreign import declaration;foreign import declaration;foreign import declarations, foreign import declaration;2
+alist (association lists);alist ( association list );alist (association lists);0
+null value;null value;null values, null value;2
+HCode;hcode;HCode;0
+takewhile function;takewhile function;takewhile function;0
+torational function;torational function;torational function;0
+constant;constant;constants, constant;42
+lazy reading;lazy reading;lazy reading;9
+parser;parser;parsers, parser;118
+char;char;char;68
+let expression;let expression;let expressions, let expression;0
+isdigit;isdigit;isdigit;0
+parsec;parsec;parsec;48
+monotype;monotype;monotype;0
+monadtrans class;monadtrans class;monadtrans class;1
+application;application;application;113
+arithmetic;arithmetic;arithmetic;11
+type class;type class;type classes, type class;10
+dispatch function;dispatch function;dispatch function;0
+:type command 2nd;: type command 2nd;:type command 2nd;0
+glasgow haskell compiler;glasgow haskell compiler;glasgow haskell compiler;1
+compact function;compact function;compact function;1
+oracle;oracle;oracle;2
+value constructor;value constructor;value constructors, value constructor;36
+objects 2nd;object 2nd;objects 2nd;0
+composite data type;composite data type;composite data types, composite data type;3
+code;code;code;667
+partial;partial;partial;35
+blending c with haskell;blending c with haskell;blending c with haskell;0
+laziness;laziness;laziness;19
+CSV file;csv file;CSV files, CSV file;8
+state monad;state monad;state monad;45
+query;query;queries, query;44
+quality assurance;quality assurance;quality assurance;2
+getline;getline;getline;6
+main function;main function;main function;0
+lines function 2nd 3rd;line function 2nd 3rd;lines function 2nd 3rd;0
+unzip;unzip;unzip;0
+zip function;zip function;zip function;0
+maps 2nd 3rd;map 2nd 3rd;maps 2nd 3rd;0
+higher-order function;higher-order function;higher-order function;1
+recip;recip;recip;1
+bounded typeclass;bounded typeclass;bounded typeclass;0
+binary datum;binary datum;binary data, binary datum;0
+lambda function;lambda function;lambda functions, lambda function;0
+foldr;foldr;foldr;27
+emptydatadecls language extension;emptydatadecls language extension;emptydatadecls language extension;0
+inclusive or;inclusive or;inclusive or;0
+fold;fold;fold;76
+foldl;foldl;foldl;46
+foldm;foldm;foldm;0
+line-aligned chunk;line-aligned chunk;line-aligned chunks, line-aligned chunk;1
+head normal form (HNF);head normal form ( hnf );head normal form (HNF);0
+dates and time;date and time;dates and times, dates and time;5
+inmess;inmess;inmess;0
+prefix form;prefix form;prefix form;0
+x86_64 assembly;x86_64 assembly;x86_64 assembly;1
+binary tree;binary tree;binary trees, binary tree;7
+map type;map type;map type;7
+htell function;htell function;htell function;0
+offside rule;offside rule;offside rule;6
+membe;membe;membe;0
+System.Directory module;System.Directory module;System.Directory module;0
+implementation;implementation;implementation;122
+folding from right;folding from right;folding from right;0
+transformer stacking order;transformer stacking order;transformer stacking order;1
+proof;proof;proof;4
+monadic expression;monadic expression;monadic expressions, monadic expression;0
+boolean;boolean;booleans, boolean;10
+Foreign.Ptr module;Foreign.Ptr module;Foreign.Ptr module;0
+listarray function;listarray function;listarray function;0
+reverse function;reverse function;reverse function;0
+getstdrandom function;getstdrandom function;getstdrandom function;0
+zip;zip;zip;4
+foldl function;foldl function;foldl function;0
+readable;readable;readable;23
+decodemessage;decodemessage;decodemessage;0
+guideline;guideline;guidelines, guideline;3
+calculation;calculation;calculation;12
+boolean value;boolean value;boolean values, boolean value;3
+conditional with guards;conditional with guard;conditional with guards;0
+hiding;hiding;hiding;15
+control.Concurrent;control.Concurrent;control.Concurrent;0
+explicit type declaration;explicit type declaration;explicit type declaration;0
+program modification;program modification;program modification;0
+pattern of computation;pattern of computation;pattern of computation;0
+loop function;loop function;loop function;1
+closing;closing;closing;17
+symbol table;symbol table;symbol table;0
+memory management;memory management;memory management;7
+process;process;processes, process;58
+as-pattern;as-pattern;as-patterns, as-pattern;4
+tail recursion;tail recursion;tail recursion;5
+PRNG (pseudorandom number generator);prng ( pseudorandom number generator );PRNG (pseudorandom number generator);0
+mutable reference;mutable reference;mutable references, mutable reference;3
+negation;negation;negation;1
+lazy language;lazy language;lazy languages, lazy language;4
+input/output;input/output;input/output;0
+common pattern;common pattern;common patterns, common pattern;5
+data structures 2nd 3rd;data structure 2nd 3rd;data structures 2nd 3rd;0
+generator expression;generator expression;generator expressions, generator expression;3
+elements function;element function;elements function;0
+glob pattern;glob pattern;glob patterns, glob pattern;16
+maximal common subsequence;maximal common subsequence;maximal common subsequence;0
+positional type;positional type;positional types, positional type;0
+left fold function;left fold function;left fold functions, left fold function;0
+object-oriented;object-oriented;object-oriented;1
+Foreign.Marshal.Array module;Foreign.Marshal.Array module;Foreign.Marshal.Array module;0
+FreeBSD;freebsd;FreeBSD;1
+set comprehension;set comprehension;set comprehension;0
+round function;round function;round function;0
+FDs (file descriptors);fds ( file descriptor );FDs (file descriptors);0
+interpreter;interpreter;interpreters, interpreter;18
+type instance;type instance;type instances, type instance;1
+environment (programming);environment ( programming );environment (programming);0
+pixel;pixel;pixels, pixel;14
+ELF object file;elf object file;ELF object files, ELF object file;1
+RGB image;rgb image;RGB images, RGB image;1
+monadic value;monadic value;monadic values, monadic value;3
+factorial;factorial;factorial;0
+injector function;injector function;injector functions, injector function;2
+operator section;operator section;operator sections, operator section;0
+left identity [see (>>=) operator];left identity [ see (>>=) operator ];left identity [see (>>=) operator];0
+wild card pattern;wild card pattern;wild card patterns, wild card pattern;4
+successor;successor;successor;1
+blending with c;blending with c;blending with c;0
+tails function;tail function;tails function;0
+plain (p3) netpbm format;plain ( p3 ) netpbm format;plain (p3) netpbm format;0
+synchronizing variable;synchronizing variable;synchronizing variable;1
+WHNF (weak head normal form) 2nd 3rd;whnf ( weak head normal form ) 2nd 3rd;WHNF (weak head normal form) 2nd 3rd;0
+\r (carriage return) character;\ r ( carriage return ) character;\r (carriage return) character;0
+fold' function;fold ' function;fold' function;0
+pcre_exec function;pcre_exec function;pcre_exec function;0
+identifier;identifier;identifier;8
+unary operator (-);unary operator (-);unary operator (-);0
+chunk;chunk;chunks, chunk;39
+snd;snd;snd;3
+list management;list management;list management;0
+variables 2nd;variable 2nd;variables 2nd;0
+structural induction;structural induction;structural induction;0
+mulitcore programming;mulitcore programming;mulitcore programming;0
+ASCII coding;ascii coding;ASCII coding;0
+liftm function 2nd 3rd 4th;liftm function 2nd 3rd 4th;liftm function 2nd 3rd 4th;0
+matrix;matrix;matrix;0
+Prelude.hs;Prelude.hs;Prelude.hs;0
+input/output [See I/O];input/output [See I/O];input/output [See I/O];0
+actual parameter;actual parameter;actual parameter;0
+global variable;global variable;global variables, global variable;7
+induction;induction;induction;1
+dictionary;dictionary;dictionaries, dictionary;1
+invisible data dependency;invisible data dependency;invisible data dependencies, invisible data dependency;1
+data type;data type;data types, data type;94
+database engine;database engine;database engines, database engine;7
+file descriptors (FDs);file descriptor ( fds );file descriptors (FDs);0
+Daylight Saving Time (DST);daylight saving time ( dst );Daylight Saving Time (DST);1
+length;length;length;89
+bytestring;bytestring;bytestrings, bytestring;76
+filename matching;filename matching;filename matching;0
+allocating datum;allocating datum;allocating data, allocating datum;0
+stub version of types/functions;stub version of types/functions;stub versions of types/functions, stub version of types/functions;0
+type annotation;type annotation;type annotations, type annotation;5
+glasgow haskell;glasgow haskell;glasgow haskell;1
+hgetcontents function;hgetcontents function;hgetcontents function;0
+UDP;udp;UDP;23
+testing;testing;testing;38
+doc data type;doc data type;doc data type;0
+Control.Monad.Error module 2nd 3rd;Control.Monad.Error module 2nd 3rd;Control.Monad.Error module 2nd 3rd;0
+showtype;showtype;showtype;0
+point-free style;point-free style;point-free style;2
+debian linux;debian linux;debian linux;0
+fmap function 2nd;fmap function 2nd;fmap function 2nd;0
+sqlerror type;sqlerror type;sqlerror type;0
+showhex function;showhex function;showhex function;0
+min;min;min;0
+undefined value;undefined value;undefined values, undefined value;2
+information hiding;information hiding;information hiding;1
+stdout function;stdout function;stdout function;0
+instance;instance;instances, instance;356
+pseudorandom number generator (PRNG);pseudorandom number generator ( prng );pseudorandom number generator (PRNG);1
+Haskell DataBase Connectivity system (HDBC);haskell database connectivity system ( hdbc );Haskell DataBase Connectivity system (HDBC);0
+normal form datum;normal form datum;normal form data, normal form datum;0
+tolower;tolower;tolower;0
+Coordinated Universal Time (UTC);coordinated universal time ( utc );Coordinated Universal Time (UTC);0
+enumerating;enumerating;enumerating;2
+zipwith;zipwith;zipwith;2
+pure function;pure function;pure functions, pure function;30
+text;text;text;92
+barcode recognition;barcode recognition;barcode recognition;2
+shiftl function;shiftl function;shiftl function;0
+deleting/renaming;deleting/renaming;deleting/renaming;0
+length function 2nd;length function 2nd;length function 2nd;0
+rotatehorse;rotatehorse;rotatehorse;0
+kleisli composition;kleisli composition;kleisli composition;0
+monad type class;monad type class;monad type class;1
+evaluation order;evaluation order;evaluation order;1
+local;local;local;42
+pitfall;pitfall;pitfalls, pitfall;2
+handle;handle;handles, handle;132
+immutable list;immutable list;immutable lists, immutable list;1
+common pattern in monads;common pattern in monad;common patterns in monads, common pattern in monads;1
+right identity [see (>>=) operator];right identity [ see (>>=) operator ];right identity [see (>>=) operator];0
+quantifier;quantifier;quantifier;0
+single quotes (');single quote (');single quotes (');0
+infop type 2nd;infop type 2nd;infop type 2nd;0
+System.Cmd module;System.Cmd module;System.Cmd module;0
+suffixes function;suffix function;suffixes function;0
+writer monad;writer monad;writer monad;13
+single-character escape code;single-character escape code;single-character escape codes, single-character escape code;0
+type inference 2nd;type inference 2nd;type inference 2nd;0
+garbage collecting;garbage collecting;garbage collecting;0
+moggi;moggi;moggi;1
+module;module;modules, module;304
+string literal;string literal;string literals, string literal;1
+finiteness;finiteness;finiteness;0
+converting;converting;converting;16
+type signature;type signature;type signatures, type signature;69
+read typeclass;read typeclass;read typeclass;0
+replicate function;replicate function;replicate function;0
+gcc compiler;gcc compiler;gcc compiler;0
+ill typed rule;ill typed rule;ill typed rules, ill typed rule;0
+local definition;local definition;local definitions, local definition;0
+state;state;state;219
+lend function;lend function;lend function;0
+invariant;invariant;invariants, invariant;19
+conditional evaluation 2nd;conditional evaluation 2nd;conditional evaluation 2nd;0
+timediff type;timediff type;timediff type;0
+association lists 2nd;association list 2nd;association lists 2nd;0
+widget descriptions saved a;widget description saved a;widget descriptions saved as, widget descriptions saved a;0
+composable functor;composable functor;composable functors, composable functor;0
+finding statu;finding statu;finding status, finding statu;0
+typeclass;typeclass;typeclasses, typeclass;133
+nomonomorphismrestriction 2nd;nomonomorphismrestriction 2nd;nomonomorphismrestriction 2nd;0
+foreignptr type;foreignptr type;foreignptr type;0
+link time;link time;link time;1
+comment;comment;comment;7
+type error;type error;type error;15
+forkprocess function;forkprocess function;forkprocess function;0
+otherwise;otherwise;otherwise;62
+casual parsing for;casual parsing for;casual parsing for;0
+top level name;top level name;top level names, top level name;0
+environment variable;environment variable;environment variables, environment variable;2
+point-free expression;point-free expression;point-free expressions, point-free expression;0
+greedy algorithm;greedy algorithm;greedy algorithm;0
+table;table;table;48
+transforming input;transforming input;transforming input;0
+associativity;associativity;associativity;8
+literal;literal;literal;19
+hputstrln function;hputstrln function;hputstrln function;0
+applicative type class;applicative type class;applicative type class;0
+HNF (head normal form);hnf ( head normal form );HNF (head normal form);0
+URL-encoded query string;URL-encoded query string;URL-encoded query strings, URL-encoded query string;1
+monadplus typeclass;monadplus typeclass;monadplus typeclass;0
+foldl function 2nd;foldl function 2nd;foldl function 2nd;0
+functionaldependency;functionaldependency;functionaldependencies, functionaldependency;0
+value;value;value;826
+parameterized types 2nd;parameterized type 2nd;parameterized types 2nd;0
+accumulator;accumulator;accumulator;23
+snd function;snd function;snd function;0
+prelude;prelude;prelude;77
+recursive function;recursive function;recursive function;9
+getclocktime function;getclocktime function;getclocktime function;0
+flex;flex;flex;1
+pythagoras's theorem;pythagoras ' s theorem;pythagoras's theorem;0
+arrays 2nd 3rd;array 2nd 3rd;arrays 2nd 3rd;0
+tables (hash) 2nd;table ( hash ) 2nd;tables (hash) 2nd;0
+hardware;hardware;hardware;6
+compiling source;compiling source;compiling source;0
+parse wrapper;parse wrapper;parse wrapper;0
+flexiblecontext;flexiblecontext;flexiblecontexts, flexiblecontext;0
+Adler-32 checksum;Adler-32 checksum;Adler-32 checksum;1
+infinity;infinity;infinity;1
+context;context;context;17
+quadratic equation;quadratic equation;quadratic equation;0
+reporting;reporting;reporting;4
+key-value pair;key-value pair;key-value pairs, key-value pair;2
+distributivity;distributivity;distributivity;0
+identity;identity;identities, identity;20
+polymorphism;polymorphism;polymorphism;26
+mzero;mzero;mzero;11
+numeric library;numeric library;numeric library;0
+lookup function;lookup function;lookup function;1
+module function;module function;module functions, module function;0
+command;command;command;108
+filesystem;filesystem;filesystems, filesystem;12
+primitive recursive function;primitive recursive function;primitive recursive functions, primitive recursive function;0
+haskell.org;haskell.org;haskell.org;2
+TCP;tcp;TCP;27
+.hsc files 2nd;.hsc files 2nd;.hsc files 2nd;0
+runST function;runst function;runST function;0
+runghc program;runghc program;runghc program;0
+ADT;adt;ADT;2
+System.Directory module 2nd 3rd;System.Directory module 2nd 3rd;System.Directory module 2nd 3rd;0
+string function;string function;string function;0
+monads 2nd;monad 2nd;monads 2nd;0
+data structure;data structure;data structures, data structure;32
+deadlocks 2nd;deadlock 2nd;deadlocks 2nd;0
+boolean expression;boolean expression;boolean expressions, boolean expression;0
+sequencing;sequencing;sequencing;3
+fromintegral function 2nd;fromintegral function 2nd;fromintegral function 2nd;0
+callback function;callback function;callback functions, callback function;3
+elem function;elem function;elem function;0
+Control.Monad module 2nd;Control.Monad module 2nd;Control.Monad module 2nd;0
+qualified import;qualified import;qualified imports, qualified import;8
+widgets (GUI programming);widget ( gui programming );widgets (GUI programming);0
+export;export;exports, export;46
+shape of functors;shape of functors;shape of functors;0
+monomorphic property;monomorphic property;monomorphic properties, monomorphic property;1
+web client programming;web client programming;web client programming;5
+testing [see quality assurance];testing [ see quality assurance ];testing [see quality assurance];0
+multiplication (*) option;multiplication (*) option;multiplication (*) option;0
+enum;enum;enum;10
+infix version of a function;infix version of a function;infix version of a function;0
+monadplus;monadplus;monadplus;1
+CAFs (constant applicative forms);cafs ( constant applicative form );CAFs (constant applicative forms);0
+non-threaded runtime;non-threaded runtime;non-threaded runtime;4
+socket;socket;sockets, socket;13
+pipes (redirection);pipe ( redirection );pipes (redirection);0
+glade;glade;glade;37
+maxthree;maxthree;maxthree;0
+constructor;constructor;constructors, constructor;238
+context of failure;context of failure;context of failure;0
+software;software;software;22
+guard;guard;guards, guard;48
+boolean algebra;boolean algebra;boolean algebra;0
+Data.ByteString.Lazy.Char8 module;Data.ByteString.Lazy.Char8 module;Data.ByteString.Lazy.Char8 module;0
+negate;negate;negate;2
+networking;networking;networking;5
+reduction;reduction;reduction;3
+function;function;functions, function;1909
+strict evaluation 2nd;strict evaluation 2nd;strict evaluation 2nd;0
+MonadIO typeclass;monadio typeclass;MonadIO typeclass;1
+divide and conquer;divide and conquer;divide and conquer;1
+random number;random number;random numbers, random number;34
+overlapping;overlapping;overlapping;12
+RPN (Reverse Polish Notation);rpn ( reverse polish notation );RPN (Reverse Polish Notation);0
+embedded domain specific language;embedded domain specific language;embedded domain specific languages, embedded domain specific language;1
+editing;editing;editing;7
+Graphics.UI.Gtk.Graphics.UI.Gtk.Glade module;Graphics.UI.Gtk.Graphics.UI.Gtk.Glade module;Graphics.UI.Gtk.Graphics.UI.Gtk.Glade module;0
+record;record;records, record;53
+Database.HDBC module;Database.HDBC module;Database.HDBC module;0
+limit;limit;limit;16
+stderr function;stderr function;stderr function;0
+standard prelude;standard prelude;standard prelude;6
+c programming language 2nd 3rd;c programming language 2nd 3rd;c programming language 2nd 3rd;0
+boilerplate 2nd;boilerplate 2nd;boilerplate 2nd;0
+redirection (pipes);redirection ( pipe );redirection (pipes);0
+types 2nd 3rd;type 2nd 3rd;types 2nd 3rd;0
+Graphics.UI.Gtk module;Graphics.UI.Gtk module;Graphics.UI.Gtk module;0
+int;int;int;78
+row datum;row datum;row data, row datum;0
+newtype keyword;newtype keyword;newtype keyword;0
+subtraction (-) option;subtraction (-) option;subtraction (-) option;0
+binary I/O;binary I/O;binary I/O;1
+unboxed value in arrays;unboxed value in array;unboxed values in arrays, unboxed value in arrays;0
+hsc2h;hsc2h;hsc2hs, hsc2h;0
+association list;association list;association list;15
+bool;bool;bool;49
+foreign module;foreign module;foreign modules, foreign module;0
+HPC;hpc;HPC;10
+genericity;genericity;genericity;0
+lock order inversion;lock order inversion;lock order inversion;1
+repeat;repeat;repeat;9
+class;class;classes, class;67
+quickquery' function 2nd;quickquery ' function 2nd;quickquery' function 2nd;0
+scaled value;scaled value;scaled values, scaled value;1
+mconcat;mconcat;mconcat;0
+disjunction;disjunction;disjunction;0
+command-line;command-line;command-line;9
+codemessage;codemessage;codemessage;0
+Data.List.lookup function;Data.List.lookup function;Data.List.lookup function;0
+POSIX regular expression;posix regular expression;POSIX regular expressions, POSIX regular expression;1
+Standard ML;standard ml;Standard ML;0
+imperative programming;imperative programming;imperative programming;3
