@@ -45,7 +45,7 @@ def createTable(contribs, classification, classname):
 			n = split[-1].lower()
 			p = split[0].lower() if len(split) > 1 else ''
 			ls = query(pages).\
-				where(lambda page: handlePrefix(page['page']['page']['p']) == p.lower() and page['page']['page']['n'].lower() == n). \
+				where(lambda page: handlePrefix(page['page']['page']['p']) == p.lower() and page['page']['page']['n'].lower() == n and 'internal_links' in page['page']). \
 				select(lambda page: map(lambda l: l.split('::')[-1].lower(),page['page']['internal_links'])). \
 			to_list()
 			clevel1Links.extend(ls[0] if ls else [])
