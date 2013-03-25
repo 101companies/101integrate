@@ -2,4 +2,6 @@ data/perbook/Craft/contents
 data/perbook/LYAH/contents/
 data/perbook/PIH/contents
 data/perbook/RWH/contents/
+data/languages
+data/themes
 *.pyc
