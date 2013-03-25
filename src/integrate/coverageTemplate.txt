@@ -10,9 +10,6 @@ sortedTerms = sorted(mappedTerms, key=lambda t: len(filter(lambda c: t.lower() i
 	mappedLevel0 = filter(lambda x: x in lowerMapped, set(level0Links[contribName]))
 	mappedLevel1 = filter(lambda x: x in lowerMapped and not x.lower() in mappedLevel0, set(level1Links[contribName]))
 	%>
-	% if contribName == "wxHaskell":
-		${mappedLevel0}
-	% endif
 	<th style="border: 1px solid black; vertical-align:top; padding-top: 3px;">
 		<span align="right" style="display: inline-block; width: 22px;white-space: nowrap; -webkit-transform: rotate(90deg);">
 			${contribName} (${str(len(mappedLevel0))}/${str(len(mappedLevel1))})
