@@ -17,7 +17,7 @@ for resource in mapping:
 	mappedTerms |= set(filter(lambda term: not ':' in term, mapping[resource].keys()))
 
 print 'Loading JSON dump...'
-data = urllib2.urlopen('file:///Users/tschmorleiz/Downloads/Wiki101Full.json')
+data = urllib2.urlopen('http://data.101companies.org/dumps/Wiki101Full.json')
 wikidump = json.load(data)
 pages = wikidump['wiki']['pages']
 
