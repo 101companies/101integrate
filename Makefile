@@ -57,6 +57,8 @@ from-cache:
 		cp data/perbook/$$b/cache/frequenciesMerged.csv  data/perbook/"$$b"/ ;\
 		cp data/perbook/$$b/cache/frequenciesDistributionMerged.csv  data/perbook/"$$b"/ ;\
 		cp data/perbook/$$b/cache/topFrequency.csv  data/perbook/"$$b"/ ;\
+		cp data/perbook/$$b/cache/topScattered.csv  data/perbook/"$$b"/ ;\
+		
 	done
 
 # Copies post-processed data, required for analytics, to cache
@@ -65,6 +67,7 @@ to-cache:
 		cp data/perbook/$$b/frequenciesMerged.csv  data/perbook/"$$b"/cache ;\
 		cp data/perbook/$$b/frequenciesDistributionMerged.csv  data/perbook/"$$b"/cache ;\
 		cp data/perbook/$$b/topFrequency.csv  data/perbook/"$$b"/cache ;\
+		cp data/perbook/$$b/topScattered.csv  data/perbook/"$$b"/cache ;\
 	done
 
 # Run backlinking scripts
