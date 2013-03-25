@@ -2,7 +2,7 @@ import urllib
 from string import Template
 import csv
 
-index = csv.reader(open('OnlyIndex/index.csv', 'rb'), delimiter=' ', quotechar='|')
+index = csv.reader(open('../../data/allbooks/Index.csv', 'rb'), delimiter=' ', quotechar='|')
 for row in index:
 	for el in row:
 		#print el
@@ -17,4 +17,4 @@ for row in index:
 			#print "FOUND"
 			rank = res[3].replace("rankOfRequested=", '') #rankOfRequested=31
 			print el + ";" + rank
-		#else : print "NOT FOUND"	
+		#else : print "NOT FOUND"

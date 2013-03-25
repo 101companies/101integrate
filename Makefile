@@ -10,6 +10,7 @@ INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
 nope:
 	@echo Please, read the README.md.
 
+
 # Download books that are available online
 download-books:
 	for b in ${ONLINEBOOKS}; do \
@@ -72,6 +73,9 @@ backlink:
 
 coverageTables:
 	cd src/integrate; make coverageTables
+
+nonProfileFrequencies:
+	cd src/integrate; make nonProfileFrequencies
 
 # Clean it all
 clean:

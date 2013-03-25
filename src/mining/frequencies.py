@@ -179,6 +179,9 @@ for freq in freqAllDistribution:
 		row.append(freqAllDistribution[freq][cname])
 	w2.writerow(row)
 
+f = open(resourcebase + "/frequencies" + postfix + ".json", 'write')
+f.write(json.dumps(freqAll))
+
 f = open(resourcebase + "/frequenciesDistribution" + postfix + ".json", 'write')
 f.write(json.dumps(freqAllDistribution))
 

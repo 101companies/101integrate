@@ -1,0 +1,9 @@
+<table style="border: 0.5px solid black; border-spacing: 0px;">
+<tr>
+<th style="border: 1px solid black;">Term</th>
+<th style="border: 1px solid black;">Frequency</th>
+%  for term in sorted(nonProfileTerms, key=lambda f: frequencies[f], reverse=True):
+	  <tr><td  style="border: 1px solid black;"><b>${term}</b></td>
+	  <td  style="border: 1px solid black;">${frequencies[term]}</td></tr>
+% endfor
+</table>
