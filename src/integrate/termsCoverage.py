@@ -65,7 +65,7 @@ for theme in themes:
 	print 'Table for', theme
 	contribs = query(allThemeInstances). \
   	where(lambda page: filter(lambda p: p['p'] == 'Theme' and p['n'] == theme and 'internal_links' in page['page'], page['page']['instanceOf'])). \
-  	select(lambda page: {'name': page['page']['page']['n'], 'links': page['page']['internal_links']}). \
+  	select(lambda page: {'name': page['page']['page']['n'], 'links': map(lambda l: l.lower(), page['page']['internal_links'])}). \
   	to_list()
   	createTable(dict([(c['name'],c['links']) for c in contribs]), 'themes', theme)
 
@@ -73,7 +73,7 @@ for language in languages:
  	print 'Table for', theme
 	contribs = query(allLanguageUsers). \
   	where(lambda page: filter(lambda p: p['p'] == 'Language' and p['n'] == language and 'internal_links' in page['page'], page['page']['uses'])). \
-  	select(lambda page: {'name': page['page']['page']['n'], 'links': page['page']['internal_links']}). \
+  	select(lambda page: {'name': page['page']['page']['n'], 'links': map(lambda l: l.lower(),page['page']['internal_links'])}). \
   	to_list()
   	createTable(dict([(c['name'],c['links']) for c in contribs]), 'languages', language)
 
