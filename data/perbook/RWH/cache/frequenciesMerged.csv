@@ -168,7 +168,7 @@ digittoint;digittoint;digittoint;0
 sum;sum;sum;27
 UPC-A barcodes;UPC-A barcodes;UPC-A barcodes;1
 syntax;syntax;syntax;62
-I/O and;I/O and;I/O and;8
+I/O and;I/O and;I/O and;7
 do notation;do notation;do notation;0
 monad law;monad law;monad laws, monad law;6
 palindrome;palindrome;palindrome;2
@@ -556,7 +556,7 @@ formal parameter;formal parameter;formal parameter;0
 passing datum between c and haskell;passing datum between c and haskell;passing data between c and haskell, passing datum between c and haskell;0
 source file;source file;source files, source file;71
 resource;resource;resources, resource;27
-string-handling;string-handling;string-handling;1
+string-handling;string-handling;string-handling;2
 filter function 2nd;filter function 2nd;filter function 2nd;0
 exclusive or;exclusive or;exclusive or;1
 safe keyword;safe keyword;safe keyword;0
@@ -741,9 +741,9 @@ list;list;lists, list;892
 mapreduce;mapreduce;mapreduce;7
 function definition;function definition;function definition;11
 domain-specific language;domain-specific language;domain-specific languages, domain-specific language;0
-two-dimensional array;two-dimensional array;two-dimensional arrays, two-dimensional array;4
+two-dimensional array;two-dimensional array;two-dimensional arrays, two-dimensional array;2
 systems programming;system programming;systems programming;3
-built-in;built-in;built-in;11
+built-in;built-in;built-in;10
 PCRE libraries and;PCRE libraries and;PCRE libraries and;0
 syslog;syslog;syslog;14
 design;design;design;28
@@ -1032,7 +1032,7 @@ perl;perl;perl;22
 span;span;span;5
 type keyword;type keyword;type keyword;0
 find command;find command;find command;1
-PCRE library and;PCRE library and;PCRE library and;1
+PCRE library and;PCRE library and;PCRE library and;0
 chr;chr;chr;0
 RSS format;rss format;RSS format;1
 randoms function;randoms function;randoms function;0
@@ -1084,7 +1084,7 @@ lines function 2nd 3rd;line function 2nd 3rd;lines function 2nd 3rd;0
 unzip;unzip;unzip;0
 zip function;zip function;zip function;0
 maps 2nd 3rd;map 2nd 3rd;maps 2nd 3rd;0
-higher-order function;higher-order function;higher-order function;2
+higher-order function;higher-order function;higher-order function;1
 recip;recip;recip;1
 bounded typeclass;bounded typeclass;bounded typeclass;0
 binary datum;binary datum;binary data, binary datum;0
@@ -1294,7 +1294,7 @@ literal;literal;literal;19
 hputstrln function;hputstrln function;hputstrln function;0
 applicative type class;applicative type class;applicative type class;0
 HNF (head normal form);hnf ( head normal form );HNF (head normal form);0
-URL-encoded query string;URL-encoded query string;URL-encoded query strings, URL-encoded query string;2
+URL-encoded query string;URL-encoded query string;URL-encoded query strings, URL-encoded query string;1
 monadplus typeclass;monadplus typeclass;monadplus typeclass;0
 foldl function 2nd;foldl function 2nd;foldl function 2nd;0
 functionaldependency;functionaldependency;functionaldependencies, functionaldependency;0
@@ -1318,7 +1318,7 @@ infinity;infinity;infinity;1
 context;context;context;17
 quadratic equation;quadratic equation;quadratic equation;0
 reporting;reporting;reporting;4
-key-value pair;key-value pair;key-value pairs, key-value pair;3
+key-value pair;key-value pair;key-value pairs, key-value pair;2
 distributivity;distributivity;distributivity;0
 identity;identity;identities, identity;20
 polymorphism;polymorphism;polymorphism;26

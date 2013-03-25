@@ -168,7 +168,7 @@ digittoint;digittoint;digittoint;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 sum;sum;sum;0;1;3;4;0;0;0;3;0;0;1;3;0;0;0;0;0;0;0;0;0;0;0;0;12;0;0;0
 UPC-A barcodes;UPC-A barcodes;UPC-A barcodes;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 syntax;syntax;syntax;4;3;14;1;0;0;2;9;1;3;1;4;0;7;0;0;7;0;1;2;1;1;0;1;0;0;0;0
-I/O and;I/O and;I/O and;0;0;0;0;0;0;5;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1
+I/O and;I/O and;I/O and;0;0;0;0;0;0;4;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1
 do notation;do notation;do notation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 monad law;monad law;monad laws, monad law;0;0;0;0;0;0;0;0;0;0;0;0;0;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 palindrome;palindrome;palindrome;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
@@ -556,7 +556,7 @@ formal parameter;formal parameter;formal parameter;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 passing datum between c and haskell;passing datum between c and haskell;passing data between c and haskell, passing datum between c and haskell;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 source file;source file;source files, source file;2;10;9;3;16;2;0;4;3;0;1;2;1;0;2;0;9;0;0;1;0;0;1;1;0;4;0;0
 resource;resource;resources, resource;0;0;0;0;0;2;2;0;7;0;0;0;0;0;0;0;2;0;0;1;0;0;1;8;4;0;0;0
-string-handling;string-handling;string-handling;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+string-handling;string-handling;string-handling;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 filter function 2nd;filter function 2nd;filter function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 exclusive or;exclusive or;exclusive or;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 safe keyword;safe keyword;safe keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
@@ -741,9 +741,9 @@ list;list;lists, list;24;56;55;211;36;23;11;32;29;4;37;49;65;47;25;14;18;4;19;12
 mapreduce;mapreduce;mapreduce;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;7;0;0;0;0
 function definition;function definition;function definition;0;1;1;5;0;1;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 domain-specific language;domain-specific language;domain-specific languages, domain-specific language;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-two-dimensional array;two-dimensional array;two-dimensional arrays, two-dimensional array;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+two-dimensional array;two-dimensional array;two-dimensional arrays, two-dimensional array;0;0;0;0;0;0;0;0;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 systems programming;system programming;systems programming;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
-built-in;built-in;built-in;0;0;2;1;0;2;0;1;0;0;0;0;2;1;0;0;0;0;1;0;0;0;0;1;0;0;0;0
+built-in;built-in;built-in;0;0;2;1;0;1;0;1;0;0;0;0;2;1;0;0;0;0;1;0;0;0;0;1;0;0;0;0
 PCRE libraries and;PCRE libraries and;PCRE libraries and;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 syslog;syslog;syslog;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;14;0
 design;design;design;0;1;0;0;3;0;0;1;1;0;0;2;0;2;1;0;2;3;0;0;1;0;7;1;0;3;0;0
@@ -1032,7 +1032,7 @@ perl;perl;perl;1;2;0;3;0;0;1;10;0;0;0;1;0;0;0;0;3;0;0;1;0;0;0;0;0;0;0;0
 span;span;span;0;2;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 type keyword;type keyword;type keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 find command;find command;find command;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-PCRE library and;PCRE library and;PCRE library and;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0
+PCRE library and;PCRE library and;PCRE library and;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 chr;chr;chr;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 RSS format;rss format;RSS format;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0
 randoms function;randoms function;randoms function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1084,7 +1084,7 @@ lines function 2nd 3rd;line function 2nd 3rd;lines function 2nd 3rd;0;0;0;0;0;0;
 unzip;unzip;unzip;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 zip function;zip function;zip function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 maps 2nd 3rd;map 2nd 3rd;maps 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-higher-order function;higher-order function;higher-order function;0;0;0;2;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+higher-order function;higher-order function;higher-order function;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 recip;recip;recip;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 bounded typeclass;bounded typeclass;bounded typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 binary datum;binary datum;binary data, binary datum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1294,7 +1294,7 @@ literal;literal;literal;2;0;3;0;0;2;4;1;0;1;0;0;1;0;0;0;2;0;0;0;0;2;0;0;1;0;0;0
 hputstrln function;hputstrln function;hputstrln function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 applicative type class;applicative type class;applicative type class;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 HNF (head normal form);hnf ( head normal form );HNF (head normal form);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-URL-encoded query string;URL-encoded query string;URL-encoded query strings, URL-encoded query string;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0
+URL-encoded query string;URL-encoded query string;URL-encoded query strings, URL-encoded query string;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0
 monadplus typeclass;monadplus typeclass;monadplus typeclass;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 foldl function 2nd;foldl function 2nd;foldl function 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 functionaldependency;functionaldependency;functionaldependencies, functionaldependency;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1318,7 +1318,7 @@ infinity;infinity;infinity;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0
 context;context;context;1;1;2;0;0;0;1;2;3;0;1;1;0;1;2;0;0;0;2;0;0;0;0;0;0;0;0;0
 quadratic equation;quadratic equation;quadratic equation;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 reporting;reporting;reporting;0;0;1;0;0;0;0;0;0;1;0;0;0;0;0;1;0;0;0;0;0;0;0;0;1;0;0;0
-key-value pair;key-value pair;key-value pairs, key-value pair;0;0;0;0;0;0;0;0;0;0;0;0;0;0;2;1;0;0;0;0;0;0;0;0;0;0;0;0
+key-value pair;key-value pair;key-value pairs, key-value pair;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0
 distributivity;distributivity;distributivity;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 identity;identity;identities, identity;0;0;0;1;3;4;0;0;0;5;0;0;4;3;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 polymorphism;polymorphism;polymorphism;0;22;1;0;0;1;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0

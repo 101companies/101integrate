@@ -5,17 +5,20 @@
 
 import os
 
+allBooks = []
 def get_immediate_subdirectories(dir):
-    return [name for name in os.listdir(dir)
+	return [name for name in os.listdir(dir)
             if os.path.isdir(os.path.join(dir, name))]
 
-books = []
+linkedBooks = []
 nonLinkedBooks = []
-for bookDir in get_immediate_subdirectories('../data/perbook'):
+allBooks = get_immediate_subdirectories('../data/perbook')
+for bookDir in allBooks:
+  print bookDir
   if os.path.exists('../data/perbook/' + bookDir + '/contents'):
-    books.append(bookDir)
+    linkedBooks.append(bookDir)
   else:
-  	nonLinkedBooks.append(bookDir)
-  	  	
+    nonLinkedBooks.append(bookDir)
+
 with open ('Makefile.vars', 'w') as f: 
-	f.write ('BOOKS = ' + ' '.join(books) + '\nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
+  f.write ('ALL_BOOKS = ' + ' '.join(allBooks) + '\nLINKED_BOOKS = ' + ' '.join(linkedBooks) + '\nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
