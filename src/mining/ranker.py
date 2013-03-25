@@ -2,7 +2,7 @@ import urllib
 from string import Template
 import csv
 
-index = csv.reader(open('../../data/allbooks/Index.csv', 'rb'), delimiter=' ', quotechar='|')
+index = csv.reader(open(' ../../data/allbooks/Index.csv', 'rb'), delimiter=' ', quotechar='|')
 for row in index:
 	for el in row:
 		#print el
