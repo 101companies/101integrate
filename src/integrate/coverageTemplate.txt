@@ -7,7 +7,7 @@ sortedTerms = sorted(mappedTerms, key=lambda t: len(filter(lambda c: t.lower() i
 %>
 % for contribName in sortedContribs:
 	<%
-	mappedLevel0 = filter(lambda x: x in lowerMapped, set(level0Links[contribName]))
+	mappedLevel0 = filter(lambda x: x.lower() in lowerMapped, set(level0Links[contribName]))
 	mappedLevel1 = filter(lambda x: x in lowerMapped and not x.lower() in mappedLevel0, set(level1Links[contribName]))
 	%>
 	<th style="border: 1px solid black; vertical-align:top; padding-top: 3px;">
