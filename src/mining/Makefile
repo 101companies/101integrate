@@ -1,5 +1,6 @@
-BOOKS = LYAH RWH Craft PIH
-ONLINEBOOKS =  RWH LYAH
+include ../Makefile.vars
+
+ONLINEBOOKS = RWH LYAH
 DATAFOLDER = ../../data/
 
 mine:

@@ -1,12 +1,6 @@
 # Books available online
 ONLINEBOOKS = RWH LYAH
 
-# Books not available online
-OFFLINEBOOKS = PIH Craft
-
-# All books
-ALLBOOKS = ${ONLINEBOOKS} ${OFFLINEBOOKS}
-
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
 
@@ -42,6 +36,9 @@ download-deps:
 	sudo easy_install html2text
 	sudo easy_install gdata
 
+bootstrap:
+	cd src; python bootstrap.py
+
 # Run mining scripts
 mine:
 	cd src/mining; make mine
@@ -61,7 +58,7 @@ coverageTables:
 # Clean it all
 clean:
 	cd data/allbooks; rm -f *.tex *.csv *.json *.png *.html
-	for b in ${ALLBOOKS}; do \
+	for b in ${BOOKS}; do \
 		cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ;\
 		cd ../../.. ;\
 	done

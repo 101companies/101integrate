@@ -1,4 +1,4 @@
-BOOKS = LYAH RWH Craft PIH
+include ../Makefile.vars
 
 analyze:
 	make frequencies
