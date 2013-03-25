@@ -18,4 +18,4 @@ for bookDir in get_immediate_subdirectories('../data/perbook'):
   	nonLinkedBooks.append(bookDir)
   	  	
 with open ('Makefile.vars', 'w') as f: 
-	f.write ('BOOKS = ' + ' '.join(books) + '\n NON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
+	f.write ('BOOKS = ' + ' '.join(books) + '\nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
