@@ -8,6 +8,7 @@ from constants import *
 import csv
 import itertools
 import json
+import os
 import urllib2
 from asq.initiators import query
 
@@ -38,12 +39,15 @@ distinctWikiConcepts = distinct(list(itertools.chain.from_iterable(wikiConpepts)
 
 bookConcepts = []
 for book in books:
-  ifile  = open('../../data/perbook/' + book + '/metadata/mapping.csv', 'rb')
-  reader = csv.reader(ifile)
-  reader.next() # skip header
-  for row in reader:
-    if (row[2] != ''):
-      bookConcepts.append(row[2]) # wikiterm
+  if (os.path.exists('../../data/perbook/' + book + '/metadata/mapping.csv') == False):
+    pass
+  else:  
+    ifile  = open('../../data/perbook/' + book + '/metadata/mapping.csv', 'rb')
+    reader = csv.reader(ifile)
+    reader.next() # skip header
+    for row in reader:
+      if (row[2] != ''):
+        bookConcepts.append(row[2]) # wikiterm
 
 distinctBookConcepts = distinct(bookConcepts)
 print distinctBookConcepts

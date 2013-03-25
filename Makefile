@@ -35,6 +35,7 @@ download-deps:
 	sudo easy_install inflect
 	sudo easy_install html2text
 	sudo easy_install gdata
+	sudo easy_install jinja2
 
 bootstrap:
 	cd src; python bootstrap.py

@@ -38,7 +38,7 @@ frequencies:
 
 mergedfrequencies:
 	for b in ${BOOKS}; do \
-		python frequencies.py "$$b" $(DATAFOLDER) perbook/"$$b"/ allbooks/ index.csv metadata/chapters.json contents/ metaindex.json merged; \
+		python frequencies.py "$$b" $(DATAFOLDER) perbook/"$$b"/ allbooks/ Index.csv metadata/chapters.json contents/ metaindex.json merged; \
 	done
 
 backlinksMappings:
