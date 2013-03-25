@@ -29,12 +29,12 @@ wikiConpepts = []
 for theme in themes:
   concepts = query(allThemeInstances). \
     where(lambda page: filter(lambda p: p['p'] == 'Theme' and p['n'] == theme and 'internal_links' in page['page'], page['page']['instanceOf'])). \
-    select(lambda page: filter(lambda term: not ':' in term , page['page']['internal_links'])). \
+    select(lambda page: page['page']['internal_links']). \
     to_list()
 
   wikiConpepts.append(c.capitalize() for c in list(itertools.chain.from_iterable(concepts)))
 
-distinctWikiConcepts = distinct(list(itertools.chain.from_iterable(wikiConpepts)))  	
+distinctWikiConcepts =  filter(lambda term: term.startswith("Language") or term.startswith("Technology") or (not ':' in term), distinct(list(itertools.chain.from_iterable(wikiConpepts))))  	
 #print distinctWikiConcepts
 
 bookConcepts = []
@@ -50,7 +50,7 @@ for book in books:
         bookConcepts.append(row[2]) # wikiterm
 
 distinctBookConcepts = distinct(bookConcepts)
-print distinctBookConcepts
+#print distinctBookConcepts
 
 def getUniqueConcepts(input, sourceToSearch):
   unique = []
@@ -65,8 +65,20 @@ def getUniqueConcepts(input, sourceToSearch):
 wikiOnly = getUniqueConcepts(distinctWikiConcepts, distinctBookConcepts)
 booksOnly = getUniqueConcepts(distinctBookConcepts, distinctWikiConcepts)
 
-print "Wiki only"
-print wikiOnly
+#print "Wiki only"
+#print wikiOnly
 
-print "Books only"
-print booksOnly
+#print "Books only"
+#print booksOnly
+#print json.dumps({'wikiOnly': wikiOnly, 'booksOnly': booksOnly})
+
+with open ('../../data/summary/wikiOnly.tex', 'w') as f: 
+  f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  wikiOnly)))
+
+with open ('../../data/summary/booksOnly.tex', 'w') as f: 
+  f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  booksOnly)))  
+
+
+
+
+
