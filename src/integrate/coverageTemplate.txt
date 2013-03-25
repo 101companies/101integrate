@@ -2,8 +2,10 @@
 <tr style="height:190px;"><th style="border: 1px solid black; -webkit-transform:">Contribution/Term</th>
 <%
 lowerMapped = map(lambda l: l.lower(), mappedTerms)
+sortedContribs = sorted(contribs, key=lambda c: len(filter(lambda x: x.lower() in lowerMapped, set(level0Links[c]))), reverse=True)
+sortedTerms = sorted(mappedTerms, key=lambda t: len(filter(lambda c: t.lower() in level0Links[c] or t in level0Links[c], contribs)), reverse=True)
 %>
-% for contribName in sorted(contribs):
+% for contribName in sortedContribs:
 	<%
 	mappedLevel0 = filter(lambda x: x.lower() in lowerMapped, set(level0Links[contribName]))
 	mappedLevel1 = filter(lambda x: x.lower() in lowerMapped and not x.lower() in mappedLevel0, set(level1Links[contribName]))
@@ -15,13 +17,13 @@ lowerMapped = map(lambda l: l.lower(), mappedTerms)
 	</th>
 % endfor
 </tr>
-%  for term in sorted(mappedTerms):
+%  for term in sortedTerms:
 	<%
 	level0 = filter(lambda c: term.lower() in level0Links[c] or term in level0Links[c], contribs)
 	level1 = filter(lambda c: term.lower() in level1Links[c] or term in level1Links[c], contribs)
 	%>
 	<tr><td  style="border: 1px solid black;"><b>${term} (${str(len(level0))}/${str(len(level1))})</b></td>
-	% for contribName in sorted(contribs):
+	% for contribName in sortedContribs:
 		<td  align=middle style="border: 1px solid black;">
 		% if term.lower() in level0Links[contribName] or term in level0Links[contribName]:
 			&#9679;
