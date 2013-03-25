@@ -56,6 +56,7 @@ from-cache:
 	for b in ${NON_LINKED_BOOKS}; do \
 		cp data/perbook/$$b/cache/frequenciesMerged.csv  data/perbook/"$$b"/ ;\
 		cp data/perbook/$$b/cache/frequenciesDistributionMerged.csv  data/perbook/"$$b"/ ;\
+		topFrequency.csv
 	done
 
 # Copies post-processed data, required for analytics, to cache
@@ -63,6 +64,7 @@ to-cache:
 	for b in ${BOOKS}; do \
 		cp data/perbook/$$b/frequenciesMerged.csv  data/perbook/"$$b"/cache ;\
 		cp data/perbook/$$b/frequenciesDistributionMerged.csv  data/perbook/"$$b"/cache ;\
+		cp data/perbook/$$b/topFrequency.csv  data/perbook/"$$b"/cache ;\
 	done
 
 # Run backlinking scripts
