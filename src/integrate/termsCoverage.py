@@ -25,7 +25,7 @@ def handlePrefix(p):
 	return p.lower() if p else ''
 
 def createTable(contribs, classification, classname):
-	classificationBase = root + classification + '/'
+	classificationBase = root + classification.replace('_',' ') + '/'
 	classBase = classificationBase + classname
 	if not os.path.exists(classificationBase):
 		os.makedirs(classificationBase)
