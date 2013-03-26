@@ -13,7 +13,7 @@ mainresource = sys.argv[4]
 resources =  sys.argv[5:]
 profiledTerms = set([])
 rank = {}
-rawrank = csv.reader(open(allbooksbase + 'rank.csv', 'rU'), delimiter=',')
+rawrank = csv.reader(open(allbooksbase + '/rank.csv', 'rU'), delimiter=',')
 for row in rawrank:
 	rank[row[0]] = row[1]
 
