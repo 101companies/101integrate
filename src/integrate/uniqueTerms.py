@@ -11,6 +11,10 @@ import json
 import os
 import urllib2
 from asq.initiators import query
+from jinja2 import Environment, FileSystemLoader
+
+env = Environment(line_statement_prefix='#', loader=FileSystemLoader('templates'), trim_blocks=True)
+
 
 # returns distinct values from list
 # see http://www.peterbe.com/plog/uniqifiers-benchmark
@@ -72,11 +76,38 @@ booksOnly = getUniqueConcepts(distinctBookConcepts, distinctWikiConcepts)
 #print booksOnly
 #print json.dumps({'wikiOnly': wikiOnly, 'booksOnly': booksOnly})
 
-with open ('../../data/summary/wikiOnly.tex', 'w') as f: 
-  f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  wikiOnly)))
+def toTex(list, file):
+  with open ('../../data/summary/'+ file, 'w') as f: 
+    f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  list)))
 
-with open ('../../data/summary/booksOnly.tex', 'w') as f: 
-  f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  booksOnly)))  
+def toJson(list, file):
+  with open ('../../data/summary/'+ file, 'w') as f: 
+    f.write(json.dumps(list))   
+
+def toHtml(list, file):
+  # Open and read template
+  t = env.get_template('table.html')
+  output = t.render(list = list)
+
+  # Write the output to a file
+  with open('../../data/summary/'+ file, 'w') as out_f:
+      out_f.write(output)    
+
+toTex(wikiOnly, 'wikiOnly.tex')
+toJson(wikiOnly, 'wikiOnly.json')
+toHtml(wikiOnly, 'wikiOnly.html')
+
+toTex(booksOnly, 'booksOnly.tex')
+toJson(booksOnly, 'booksOnly.json')
+toHtml(booksOnly, 'booksOnly.html')
+
+toTex(distinctWikiConcepts, 'wiki.tex')
+toJson(distinctWikiConcepts, 'wiki.json')
+toHtml(distinctWikiConcepts, 'wiki.html')
+
+toTex(distinctBookConcepts, 'books.tex')
+toJson(distinctBookConcepts, 'books.json')
+toHtml(distinctBookConcepts, 'books.html')
 
 
 
