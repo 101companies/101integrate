@@ -11,6 +11,10 @@ import json
 import os
 import urllib2
 from asq.initiators import query
+from jinja2 import Environment, FileSystemLoader
+
+env = Environment(line_statement_prefix='#', loader=FileSystemLoader('templates'), trim_blocks=True)
+
 
 # returns distinct values from list
 # see http://www.peterbe.com/plog/uniqifiers-benchmark
@@ -37,7 +41,9 @@ for theme in themes:
 distinctWikiConcepts =  filter(lambda term: term.startswith("Language") or term.startswith("Technology") or (not ':' in term), distinct(list(itertools.chain.from_iterable(wikiConpepts))))  	
 #print distinctWikiConcepts
 
-bookConcepts = []
+allBookConcepts = []
+bookConcepts = {}
+
 for book in books:
   if (os.path.exists('../../data/perbook/' + book + '/metadata/mapping.csv') == False):
     pass
@@ -46,11 +52,28 @@ for book in books:
     reader = csv.reader(ifile)
     reader.next() # skip header
     for row in reader:
-      if (row[2] != ''):
-        bookConcepts.append(row[2]) # wikiterm
+      term = str(row[2])
+      if (term != ''):
+        allBookConcepts.append(term) # wikiterm
+        if (bookConcepts.has_key(term) == False):
+          bookConcepts[term] = set()
+        bookConcepts[term].add(book)
 
-distinctBookConcepts = distinct(bookConcepts)
+#print bookConcepts
+distinctBookConcepts = distinct(allBookConcepts)
 #print distinctBookConcepts
+
+# terms contributed uniquely by each textbook
+def getUniqueContributionPerBook(bookConcepts):
+  res = {}
+  for term, books in bookConcepts.items():
+    books = list(books)
+    if (len(books) == 1):
+      if (res.has_key(books[0]) == False):
+        res[books[0]] = []
+      res[books[0]].append(term) 
+
+  return res  
 
 def getUniqueConcepts(input, sourceToSearch):
   unique = []
@@ -62,6 +85,8 @@ def getUniqueConcepts(input, sourceToSearch):
 
   return unique          
 
+unique = getUniqueContributionPerBook(bookConcepts)
+
 wikiOnly = getUniqueConcepts(distinctWikiConcepts, distinctBookConcepts)
 booksOnly = getUniqueConcepts(distinctBookConcepts, distinctWikiConcepts)
 
@@ -72,11 +97,43 @@ booksOnly = getUniqueConcepts(distinctBookConcepts, distinctWikiConcepts)
 #print booksOnly
 #print json.dumps({'wikiOnly': wikiOnly, 'booksOnly': booksOnly})
 
-with open ('../../data/summary/wikiOnly.tex', 'w') as f: 
-  f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  wikiOnly)))
+def toTex(list, file):
+  with open ('../../data/summary/'+ file, 'w') as f: 
+    f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  list)))
 
-with open ('../../data/summary/booksOnly.tex', 'w') as f: 
-  f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  booksOnly)))  
+def toJson(list, file):
+  with open ('../../data/summary/'+ file, 'w') as f: 
+    f.write(json.dumps(list))   
+
+def toHtml(list, file):
+  # Open and read template
+  t = env.get_template('table.html')
+  output = t.render(list = list)
+
+  # Write the output to a file
+  with open('../../data/summary/'+ file, 'w') as out_f:
+      out_f.write(output)    
+
+for book, terms in unique.items():
+  toTex(terms, str(book) + '_unique.json')
+  toJson(terms, str(book) + '_unique.json')
+  toHtml(terms, str(book) + '_unique.html')
+
+toTex(wikiOnly, 'wikiOnly.tex')
+toJson(wikiOnly, 'wikiOnly.json')
+toHtml(wikiOnly, 'wikiOnly.html')
+
+toTex(booksOnly, 'booksOnly.tex')
+toJson(booksOnly, 'booksOnly.json')
+toHtml(booksOnly, 'booksOnly.html')
+
+toTex(distinctWikiConcepts, 'wiki.tex')
+toJson(distinctWikiConcepts, 'wiki.json')
+toHtml(distinctWikiConcepts, 'wiki.html')
+
+toTex(distinctBookConcepts, 'books.tex')
+toJson(distinctBookConcepts, 'books.json')
+toHtml(distinctBookConcepts, 'books.html')
 
 
 
