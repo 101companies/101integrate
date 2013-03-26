@@ -514,7 +514,7 @@ conditional equation;conditional equation;conditional equation;15
 getst function;getst function;getst function;0
 object file;object file;object files, object file;0
 import directive 2nd;import directive 2nd;import directive 2nd;0
-any;any;any;202
+pcre_exec function;pcre_exec function;pcre_exec function;0
 visibility of definitions;visibility of definition;visibility of definitions;1
 exhaustive pattern;exhaustive pattern;exhaustive patterns, exhaustive pattern;0
 monads and 2nd;monad and 2nd;monads and 2nd;0
@@ -562,7 +562,6 @@ exclusive or;exclusive or;exclusive or;6
 safe keyword;safe keyword;safe keyword;0
 ASCII control code;ascii control code;ASCII control codes, ASCII control code;0
 generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;0
-where;where;where;315
 abstract data type;abstract data type;abstract data type;75
 algebraic data structure;algebraic data structure;algebraic data structure;0
 rnf function;rnf function;rnf function;0
@@ -715,6 +714,7 @@ prop_one_present function;prop_one_present function;prop_one_present function;0
 hprint function;hprint function;hprint function;0
 CPP;cpp;CPP;0
 STM (software transactional memory);stm ( software transactional memory );STM (software transactional memory);0
+all;all;all;406
 pcre_compile function;pcre_compile function;pcre_compile function;0
 sqrt function;sqrt function;sqrt function;0
 floating point;floating point;floating point;7
@@ -1176,7 +1176,6 @@ synchronizing variable;synchronizing variable;synchronizing variable;0
 WHNF (weak head normal form) 2nd 3rd;whnf ( weak head normal form ) 2nd 3rd;WHNF (weak head normal form) 2nd 3rd;0
 \r (carriage return) character;\ r ( carriage return ) character;\r (carriage return) character;0
 fold' function;fold ' function;fold' function;0
-pcre_exec function;pcre_exec function;pcre_exec function;0
 identifier;identifier;identifier;14
 unary operator (-);unary operator (-);unary operator (-);0
 chunk;chunk;chunks, chunk;0
