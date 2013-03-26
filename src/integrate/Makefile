@@ -11,7 +11,7 @@ make coverageTables:
 
 nonProfileFrequencies:
 	for b in ${ALL_BOOKS}; do \
-		python nonProfileFrequencies.py $(DATAFOLDER)/perbook/ "$$b" $(foreach r,$(LINKED_BOOKS), $(r)); \
+		python nonProfileFrequencies.py $(DATAFOLDER)/ allbooks/cache/ /perbook/ "$$b" $(foreach r,$(LINKED_BOOKS), $(r)); \
 	done
 
 make uniqueTerms:
