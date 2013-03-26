@@ -115,7 +115,7 @@ def toHtml(list, file):
       out_f.write(output)    
 
 for book, terms in unique.items():
-  toTex(terms, str(book) + '_unique.json')
+  toTex(terms, str(book) + '_unique.tex')
   toJson(terms, str(book) + '_unique.json')
   toHtml(terms, str(book) + '_unique.html')
 
