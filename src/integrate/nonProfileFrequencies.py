@@ -22,7 +22,7 @@ for resource in resources:
 	for row in profile:
 		profiledTerms.add(row[1])
 frequencies = json.loads(open(resoucebase + mainresource + "/frequencies.json", 'rb').read())
-mytemplate = Template(filename='frequenciesTemplate.txt')
+mytemplate = Template(filename='templates/frequenciesTemplate.txt')
 nonProfileTerms = filter(lambda f: f not in profiledTerms, frequencies)
 table = mytemplate.render(frequencies=frequencies, nonProfileTerms=nonProfileTerms, rank=rank)
 with open(resoucebase + mainresource + '/nonProfileFrequencies.html', 'write') as tablef:

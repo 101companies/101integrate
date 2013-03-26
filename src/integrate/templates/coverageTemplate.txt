@@ -2,8 +2,12 @@
 <tr style="height:190px;"><th style="border: 1px solid black; -webkit-transform:">Contribution/Term</th>
 <%
 lowerMapped = map(lambda l: l.lower(), mappedTerms)
-sortedContribs = sorted(contribs, key=lambda c: len(filter(lambda x: x.lower() in lowerMapped, set(level0Links[c]))), reverse=True)
-sortedTerms = sorted(mappedTerms, key=lambda t: len(filter(lambda c: t.lower() in level0Links[c] or t in level0Links[c], contribs)), reverse=True)
+sortedContribs = sorted(contribs)
+sortedContribs = sorted(sortedContribs, key=lambda c: len(filter(lambda x: x.lower() in lowerMapped, set(level1Links[c]))), reverse=True)
+sortedContribs = sorted(sortedContribs, key=lambda c: len(filter(lambda x: x.lower() in lowerMapped, set(level0Links[c]))), reverse=True)
+sortedTerms = sorted(mappedTerms)
+sortedTerms = sorted(sortedTerms, key=lambda t: len(filter(lambda c: t.lower() in level1Links[c] or t in level1Links[c], contribs)), reverse=True)
+sortedTerms = sorted(sortedTerms, key=lambda t: len(filter(lambda c: t.lower() in level0Links[c] or t in level0Links[c], contribs)), reverse=True)
 %>
 % for contribName in sortedContribs:
 	<%
