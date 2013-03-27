@@ -68,11 +68,23 @@ def getUniqueContributionPerBook(bookConcepts):
   res = {}
   for term, books in bookConcepts.items():
     books = list(books)
+    # unique term - defined only in one book
     if (len(books) == 1):
       if (res.has_key(books[0]) == False):
         res[books[0]] = []
       res[books[0]].append(term) 
+  return res  
 
+def getNonUniqueContributionPerBook(bookConcepts):
+  res = {}
+  for term, books in bookConcepts.items():
+    books = list(books)
+    # non-unique term - defined more than in one book
+    if (len(books) > 1):
+      for book in books:
+        if (res.has_key(book) == False):
+          res[book] = []
+        res[book].append(term)
   return res  
 
 def getUniqueConcepts(input, sourceToSearch):
@@ -86,6 +98,7 @@ def getUniqueConcepts(input, sourceToSearch):
   return unique          
 
 unique = getUniqueContributionPerBook(bookConcepts)
+nonUnique  = getNonUniqueContributionPerBook(bookConcepts)
 
 wikiOnly = getUniqueConcepts(distinctWikiConcepts, distinctBookConcepts)
 booksOnly = getUniqueConcepts(distinctBookConcepts, distinctWikiConcepts)
@@ -118,6 +131,11 @@ for book, terms in unique.items():
   toTex(terms, str(book) + '_unique.tex')
   toJson(terms, str(book) + '_unique.json')
   toHtml(terms, str(book) + '_unique.html')
+
+for book, terms in nonUnique.items():
+  toTex(terms, str(book) + '_nonUnique.tex')
+  toJson(terms, str(book) + '_nonUnique.json')
+  toHtml(terms, str(book) + '_nonUnique.html')  
 
 toTex(wikiOnly, 'wikiOnly.tex')
 toJson(wikiOnly, 'wikiOnly.json')
