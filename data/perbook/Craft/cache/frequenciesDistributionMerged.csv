@@ -514,7 +514,7 @@ conditional equation;conditional equation;conditional equation;0;3;4;0;0;2;0;0;0
 getst function;getst function;getst function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 object file;object file;object files, object file;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 import directive 2nd;import directive 2nd;import directive 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-any;any;any;3;12;9;14;13;14;8;4;5;11;9;25;12;7;14;13;8;5;16
+pcre_exec function;pcre_exec function;pcre_exec function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 visibility of definitions;visibility of definition;visibility of definitions;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
 exhaustive pattern;exhaustive pattern;exhaustive patterns, exhaustive pattern;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 monads and 2nd;monad and 2nd;monads and 2nd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
@@ -562,7 +562,6 @@ exclusive or;exclusive or;exclusive or;0;6;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 safe keyword;safe keyword;safe keyword;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 ASCII control code;ascii control code;ASCII control codes, ASCII control code;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-where;where;where;4;12;40;13;8;13;11;11;19;20;20;15;16;7;21;31;23;11;20
 abstract data type;abstract data type;abstract data type;0;0;0;0;0;0;0;0;0;0;0;1;1;4;62;2;2;0;3
 algebraic data structure;algebraic data structure;algebraic data structure;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 rnf function;rnf function;rnf function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
@@ -715,6 +714,7 @@ prop_one_present function;prop_one_present function;prop_one_present function;0;
 hprint function;hprint function;hprint function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 CPP;cpp;CPP;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 STM (software transactional memory);stm ( software transactional memory );STM (software transactional memory);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+all;all;all;3;15;18;26;25;9;2;41;19;24;17;29;21;10;35;60;10;23;19
 pcre_compile function;pcre_compile function;pcre_compile function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 sqrt function;sqrt function;sqrt function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 floating point;floating point;floating point;0;7;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1176,7 +1176,6 @@ synchronizing variable;synchronizing variable;synchronizing variable;0;0;0;0;0;0
 WHNF (weak head normal form) 2nd 3rd;whnf ( weak head normal form ) 2nd 3rd;WHNF (weak head normal form) 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 \r (carriage return) character;\ r ( carriage return ) character;\r (carriage return) character;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 fold' function;fold ' function;fold' function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
-pcre_exec function;pcre_exec function;pcre_exec function;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 identifier;identifier;identifier;0;7;0;0;2;0;0;0;0;1;1;1;0;1;0;0;0;1;0
 unary operator (-);unary operator (-);unary operator (-);0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
 chunk;chunk;chunks, chunk;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
