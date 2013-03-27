@@ -2,8 +2,10 @@
 <tr>
 <th style="border: 1px solid black;">Term</th>
 <th style="border: 1px solid black;">Frequency</th>
+<th style="border: 1px solid black;">Rank in common English</th>
 %  for term in sorted(nonProfileTerms, key=lambda f: frequencies[f], reverse=True):
 	  <tr><td  style="border: 1px solid black;"><b>${term}</b></td>
-	  <td  style="border: 1px solid black;">${frequencies[term]}</td></tr>
+	  <td  style="border: 1px solid black;">${frequencies[term]}</td>
+	  <td  style="border: 1px solid black;">${str(int(float(rank[term]))) if term in rank  else ''}</td></tr>
 % endfor
 </table>

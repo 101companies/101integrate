@@ -7,12 +7,12 @@ updatelookupwithkey type;updatelookupwithkey type;updatelookupwithkey type;0;0;0
 const;const;const;0;0;0;0;0;0;0;0;0;0;0;0
 polymorphic list type;polymorphic list type;polymorphic list types, polymorphic list type;0;0;0;0;0;0;0;0;0;0;0;0
 splitat function;splitat function;splitat function;0;0;0;0;0;0;0;0;0;0;0;0
-derived instance;derived instance;derived instances, derived instance;0;0;0;0;0;0;1;0;1;0;0;0
+derived instance;derived instance;derived instances, derived instance;0;0;0;0;0;0;0;0;1;0;0;0
 anchored regular expression;anchored regular expression;anchored regular expressions, anchored regular expression;0;0;0;0;0;0;0;0;0;0;0;0
 decoding barcode;decoding barcode;decoding barcodes, decoding barcode;0;0;0;0;0;0;0;0;0;0;0;0
 blockbuffering mode (buffermode);blockbuffering mode ( buffermode );blockbuffering mode (buffermode);0;0;0;0;0;0;0;0;0;0;0;0
 prepare function;prepare function;prepare function;0;0;0;0;0;0;0;0;0;0;0;0
-list comprehension;list comprehension;list comprehensions, list comprehension;12;1;8;1;7;0;0;2;4;10;0;0
+list comprehension;list comprehension;list comprehensions, list comprehension;11;1;8;1;7;0;0;2;3;10;0;0
 product type;product type;product types, product type;0;0;0;0;0;0;0;0;0;0;0;0
 ST (state thread) monad;st ( state thread ) monad;ST (state thread) monad;0;0;0;0;0;0;0;0;0;0;0;0
 vector;vector;vector;3;0;2;0;0;0;12;0;0;0;0;0
@@ -22,9 +22,9 @@ p5 (raw) netpbm image format;p5 ( raw ) netpbm image format;p5 (raw) netpbm imag
 Data.Dynamic module;Data.Dynamic module;Data.Dynamic module;0;0;0;0;0;0;0;0;0;0;0;0
 tan function;tan function;tan function;0;0;0;0;0;0;0;0;0;0;0;0
 overlappinginstances 2nd;overlappinginstances 2nd;overlappinginstances 2nd;0;0;0;0;0;0;0;0;0;0;0;0
-type parameter;type parameter;type parameter;0;0;0;0;0;0;31;0;14;0;3;0
+type parameter;type parameter;type parameter;0;0;0;0;0;0;30;0;14;0;3;0
 monad transformer;monad transformer;monad transformers, monad transformer;0;0;0;0;0;0;0;0;0;0;0;0
-even;even;even;7;1;3;2;11;3;10;13;17;3;8;3
+even;even;even;7;1;3;2;11;3;10;13;18;3;8;3
 specification;specification;specification;0;0;0;0;0;0;0;0;0;0;0;0
 decoding;decoding;decoding;0;0;0;0;0;1;0;0;0;0;0;0
 binding function [see (>>=) operator];binding function [ see (>>=) operator ];binding function [see (>>=) operator];0;0;0;0;0;0;0;0;0;0;0;0
@@ -37,7 +37,7 @@ regexcontex typeclass;regexcontex typeclass;regexcontex typeclass;0;0;0;0;0;0;0;
 unlifted function;unlifted function;unlifted functions, unlifted function;0;0;0;0;0;0;0;0;0;0;0;0
 local functions/global variable;local functions/global variable;local functions/global variables, local functions/global variable;0;0;0;0;0;0;0;0;0;0;0;0
 System.Directory library;System.Directory library;System.Directory library;0;0;0;0;0;0;0;0;0;0;0;0
-infix function;infix function;infix functions, infix function;3;1;0;0;2;0;0;2;1;1;0;0
+infix function;infix function;infix functions, infix function;4;1;0;0;2;0;0;2;1;1;0;0
 polymorphic testing;polymorphic testing;polymorphic testing;0;0;0;0;0;0;0;0;0;0;0;0
 getchar;getchar;getchar;0;0;0;0;0;0;0;1;0;0;0;0
 python 2nd 3rd;python 2nd 3rd;python 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0
@@ -45,14 +45,14 @@ init;init;init;1;0;0;0;0;0;0;0;0;0;0;0
 two-dimensional vector;two-dimensional vector;two-dimensional vectors, two-dimensional vector;1;0;0;0;0;0;0;0;0;0;0;0
 getdirectorycontents function;getdirectorycontents function;getdirectorycontents function;0;0;0;0;0;0;0;0;0;0;0;0
 numeric types 2nd;numeric type 2nd;numeric types 2nd;0;0;0;0;0;0;0;0;0;0;0;0
-type;type;types, type;16;117;3;2;37;36;503;103;251;62;79;11
+type;type;types, type;16;114;3;2;37;36;498;102;248;61;78;11
 toUTCTime function;toutctime function;toUTCTime function;0;0;0;0;0;0;0;0;0;0;0;0
 alternatives (value constructors);alternative ( value constructor );alternatives (value constructors);0;0;0;0;0;0;0;0;0;0;0;0
 reserved word;reserved word;reserved words, reserved word;0;0;0;0;0;0;0;0;0;0;0;0
 foreignfunctioninterface;foreignfunctioninterface;foreignfunctioninterface;0;0;0;0;0;0;0;0;0;0;0;0
 pretty printer;pretty printer;pretty printers, pretty printer;0;0;0;0;0;0;0;0;0;0;0;0
 raw (p5) netpbm format;raw ( p5 ) netpbm format;raw (p5) netpbm format;0;0;0;0;0;0;0;0;0;0;0;0
-join;join;join;1;1;0;0;1;1;0;5;3;1;2;0
+join;join;join;1;1;0;0;1;1;0;5;3;1;1;0
 nomonomorphismrestriction language extension;nomonomorphismrestriction language extension;nomonomorphismrestriction language extension;0;0;0;0;0;0;0;0;0;0;0;0
 SQL (Structured Query Language);sql ( structured query language );SQL (Structured Query Language);0;0;0;0;0;0;0;0;0;0;0;0
 queries (database);query ( database );queries (database);0;0;0;0;0;0;0;0;0;0;0;0
@@ -76,9 +76,9 @@ lambda calculu;lambda calculu;lambda calculus, lambda calculu;0;0;0;0;0;0;0;0;0;
 datatype;datatype;datatype;0;0;0;0;0;1;0;0;0;0;0;0
 foldr function;foldr function;foldr function;0;0;0;0;0;0;0;0;0;0;0;0
 complexity;complexity;complexity;0;0;0;0;0;0;0;0;0;0;0;0
-curried function;curried function;curried functions, curried function;0;0;0;0;3;0;0;0;1;0;0;0
+curried function;curried function;curried functions, curried function;0;0;0;0;1;0;0;0;0;0;0;0
 autocommit mode (databases);autocommit mode ( database );autocommit mode (databases);0;0;0;0;0;0;0;0;0;0;0;0
-order;order;order;4;0;1;0;13;2;6;3;9;0;2;0
+order;order;order;4;0;1;0;12;2;6;3;10;0;2;0
 restriction;restriction;restrictions, restriction;0;0;0;0;0;0;0;0;0;0;1;0
 feedback;feedback;feedback;0;0;0;0;0;0;0;0;0;0;0;0
 right value;right value;right value;0;0;0;0;0;0;0;0;1;0;0;0
@@ -114,13 +114,13 @@ shared pattern;shared pattern;shared patterns, shared pattern;0;0;0;0;0;0;0;0;0;
 multiline string literal;multiline string literal;multiline string literals, multiline string literal;0;0;0;0;0;0;0;0;0;0;0;0
 infix;infix;infix;4;1;1;0;2;0;2;2;3;1;0;0
 shiftr function;shiftr function;shiftr function;0;0;0;0;0;0;0;0;0;0;0;0
-logging;logging;logging;0;0;0;0;0;0;0;0;0;0;4;0
-filter;filter;filter;2;1;1;1;16;6;0;0;0;3;3;0
+logging;logging;logging;0;0;0;0;0;0;0;0;0;0;3;0
+filter;filter;filter;2;1;1;1;15;6;0;0;0;3;3;0
 Coding.hs;Coding.hs;Coding.hs;0;0;0;0;0;0;0;0;0;0;0;0
 signature;signature;signatures, signature;0;4;0;1;4;6;7;10;3;0;1;0
 hugs interpreter;hug interpreter;hugs interpreter;0;0;0;0;0;0;0;0;0;0;0;0
 >>;>>;>>;0;0;0;0;0;0;0;0;0;0;0;0
-coding;coding;coding;0;0;0;0;0;0;0;0;0;0;0;0
+coding;coding;coding;0;0;0;0;0;0;0;0;0;0;1;0
 idempotency;idempotency;idempotency;0;0;0;0;0;0;0;0;0;0;0;0
 IConnection typeclass;iconnection typeclass;IConnection typeclass;0;0;0;0;0;0;0;0;0;0;0;0
 prefix notation;prefix notation;prefix notation;0;0;0;0;0;0;0;0;0;0;0;0
@@ -134,10 +134,10 @@ atomically block;atomically block;atomically blocks, atomically block;0;0;0;0;0;
 signum;signum;signum;0;0;0;0;0;0;0;0;0;0;0;0
 x:xs pattern;x : x pattern;x:xs pattern;0;0;0;0;0;0;0;0;0;0;0;0
 regular expression;regular expression;regular expressions, regular expression;0;0;0;0;0;0;0;0;0;0;0;0
-keyword;keyword;keyword;1;0;1;0;0;0;6;0;21;0;0;0
+keyword;keyword;keyword;1;0;1;0;0;0;6;0;20;0;0;0
 expr;expr;expr;0;0;0;0;0;0;0;0;0;0;0;0
 representing datum;representing datum;representing data, representing datum;0;0;0;0;0;0;0;0;0;0;0;0
-tree;tree;tree;0;0;3;2;0;3;66;5;29;1;0;149
+tree;tree;tree;0;0;3;2;0;3;66;5;29;1;0;148
 property-based testing;property-based testing;property-based testing;0;0;0;0;0;0;0;0;0;0;0;0
 pi value;pi value;pi value;0;0;0;0;0;0;0;0;0;0;0;0
 matching on;matching on;matching on;0;0;2;0;0;0;0;0;1;1;0;0
@@ -148,7 +148,7 @@ parsebyte function;parsebyte function;parsebyte function;0;0;0;0;0;0;0;0;0;0;0;0
 putstr;putstr;putstr;0;0;0;0;0;0;0;1;0;0;0;0
 elem;elem;elem;1;0;0;0;0;1;0;0;0;0;0;0
 commutativity;commutativity;commutativity;0;0;0;0;0;0;0;0;0;0;0;0
-pattern match;pattern match;pattern matches, pattern match;0;0;9;0;1;0;3;6;4;0;6;5
+pattern match;pattern match;pattern matches, pattern match;0;0;8;0;1;0;3;6;4;0;6;5
 latency;latency;latency;0;0;0;0;0;0;0;0;0;0;0;0
 strings and character;string and character;strings and characters, strings and character;0;0;0;0;0;1;0;0;0;0;0;0
 seq function;seq function;seq function;0;0;0;0;0;0;0;0;0;0;0;0
@@ -161,16 +161,16 @@ return keyword;return keyword;return keyword;0;0;0;0;0;0;0;0;0;0;0;0
 synonyms (types);synonym ( type );synonyms (types);0;0;0;0;0;0;0;0;0;0;0;0
 recursive type;recursive type;recursive types, recursive type;0;0;0;0;0;0;0;0;0;0;0;0
 try keyword;try keyword;try keyword;0;0;0;0;0;0;0;0;0;0;0;0
-recursive data structure;recursive data structure;recursive data structure;0;0;0;0;0;0;1;0;0;0;0;0
+recursive data structure;recursive data structure;recursive data structure;0;0;0;0;0;0;0;0;0;0;0;0
 downloading support material;downloading support material;downloading support materials, downloading support material;0;0;0;0;0;0;0;0;0;0;0;0
 HPC (Haskell Program Coverage);hpc ( haskell program coverage );HPC (Haskell Program Coverage);0;0;0;0;0;0;0;0;0;0;0;0
 digittoint;digittoint;digittoint;0;0;0;0;0;1;0;0;0;0;0;0
-sum;sum;sum;5;0;3;5;15;3;1;0;0;0;4;0
+sum;sum;sum;5;0;3;5;13;3;1;0;0;0;4;0
 UPC-A barcodes;UPC-A barcodes;UPC-A barcodes;0;0;0;0;0;0;0;0;0;0;0;0
-syntax;syntax;syntax;1;0;5;0;0;1;12;5;10;2;0;0
+syntax;syntax;syntax;1;0;5;0;0;1;11;5;10;2;0;0
 I/O and;I/O and;I/O and;0;0;0;0;0;0;0;0;0;1;0;0
-do notation;do notation;do notation;0;0;0;0;0;0;0;0;0;1;1;0
-monad law;monad law;monad laws, monad law;0;0;0;0;0;0;0;0;0;6;4;0
+do notation;do notation;do notation;0;0;0;0;0;0;0;2;0;0;0;0
+monad law;monad law;monad laws, monad law;0;0;0;0;0;0;0;0;0;5;4;0
 palindrome;palindrome;palindrome;0;0;0;0;0;0;0;2;0;0;0;0
 layout;layout;layout;0;0;0;0;0;0;0;0;0;0;0;0
 ix type;ix type;ix type;0;0;0;0;0;0;0;0;0;0;0;0
@@ -184,7 +184,7 @@ hseek function;hseek function;hseek function;0;0;0;0;0;0;0;0;0;0;0;0
 logbase function;logbase function;logbase function;0;0;0;0;0;0;0;0;0;0;0;0
 closing file handle;closing file handle;closing file handles, closing file handle;0;0;0;0;0;0;0;0;0;0;0;0
 3d vector type;3d vector type;3d vector type;0;0;0;0;0;0;1;0;0;0;0;0
-list monad;list monad;list monads, list monad;0;0;0;0;0;0;0;0;0;5;4;0
+list monad;list monad;list monads, list monad;0;0;0;0;0;0;0;0;0;4;4;0
 overloaded literal;overloaded literal;overloaded literals, overloaded literal;0;0;0;0;0;0;0;0;0;0;0;0
 implication;implication;implication;0;0;0;0;0;0;0;0;0;0;0;0
 lifted function;lifted function;lifted functions, lifted function;0;0;0;0;0;0;0;0;0;0;0;0
@@ -193,10 +193,10 @@ Control.Exception module 2nd 3rd;Control.Exception module 2nd 3rd;Control.Except
 mtl library 2nd;mtl library 2nd;mtl library 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 LINE pragma;line pragma;LINE pragma;0;0;0;0;0;0;0;0;0;0;0;0
 num;num;num;0;1;0;0;0;0;0;0;0;0;0;0
-result;result;result;5;4;2;3;19;11;14;74;122;81;143;6
+result;result;result;5;4;2;3;19;11;14;73;122;81;143;6
 Haskell Foreign Function Interface (FFI);haskell foreign function interface ( ffi );Haskell Foreign Function Interface (FFI);0;0;0;0;0;0;0;0;0;0;0;0
 eratosthene;eratosthene;eratosthenes, eratosthene;0;0;0;0;0;0;0;0;0;0;0;0
-type declaration;type declaration;type declaration;0;9;1;0;10;1;28;4;6;0;0;0
+type declaration;type declaration;type declaration;0;9;1;0;10;1;29;4;6;0;0;0
 types and purity;type and purity;types and purity;0;0;0;0;0;0;0;0;0;0;0;0
 filename;filename;filenames, filename;0;0;0;0;0;0;0;3;0;0;0;0
 identity parser;identity parser;identity parsers, identity parser;0;0;0;0;0;0;0;0;0;0;0;0
@@ -208,10 +208,10 @@ preprocessor;preprocessor;preprocessor;0;0;0;0;0;0;0;0;0;0;0;0
 I/O (input/output) and;I/O (input/output) and;I/O (input/output) and;0;0;0;0;0;0;0;0;0;0;0;0
 seek pointer;seek pointer;seek pointers, seek pointer;0;0;0;0;0;0;0;0;0;0;0;0
 shell scripting;shell scripting;shell scripting;0;0;0;0;0;0;0;0;0;0;0;0
-monad;monad;monads, monad;0;0;0;0;0;0;0;1;1;55;87;6
+monad;monad;monads, monad;0;0;0;0;0;0;0;1;1;55;85;6
 internal module;internal module;internal modules, internal module;0;0;0;0;0;0;0;0;0;0;0;0
 pack function;pack function;pack function;0;0;0;0;0;0;0;0;0;0;0;0
-comprehension;comprehension;comprehensions, comprehension;23;1;8;1;7;0;0;2;4;10;0;0
+comprehension;comprehension;comprehensions, comprehension;22;1;8;1;7;0;0;2;3;10;0;0
 type definition;type definition;type definitions, type definition;0;0;0;0;0;0;0;0;0;0;0;0
 maybe type;maybe type;maybe type;0;0;0;0;0;0;0;0;0;0;0;0
 exception type;exception type;exception type;0;0;0;0;0;0;0;0;0;0;0;0
@@ -229,16 +229,16 @@ monoid instance;monoid instance;monoid instance;0;0;0;0;0;0;0;0;0;0;1;0
 exception;exception;exceptions, exception;0;0;0;0;0;0;0;48;5;0;0;0
 program development;program development;program development;0;0;0;0;0;0;0;0;0;0;0;0
 boilerplate code;boilerplate code;boilerplate code;0;0;0;0;0;0;0;0;0;0;0;0
-or function;or function;or function;0;0;1;0;0;0;0;0;1;0;0;0
+or function;or function;or function;0;0;1;0;0;0;0;0;2;0;0;0
 bytestring module;bytestring module;bytestring modules, bytestring module;0;0;0;0;0;0;0;2;0;0;0;0
 advantage of functional programming;advantage of functional programming;advantages of functional programming, advantage of functional programming;0;0;0;0;0;0;0;0;0;0;0;0
 boolean logic;boolean logic;boolean logic;0;0;0;0;0;0;0;0;0;0;0;0
-IO;io;IO;0;1;0;0;0;0;0;0;0;0;0;0
+IO;io;IO;2;3;2;4;10;0;2;4;4;3;6;0
 custom data types for;custom data type for;custom data types for;0;0;0;0;0;0;0;0;0;0;0;0
-id;id;id;0;0;0;0;0;0;0;0;5;0;0;0
+id;id;id;0;0;0;1;0;0;0;0;11;2;1;0
 Data.Traversable module;Data.Traversable module;Data.Traversable module;0;0;0;0;0;0;0;0;0;0;0;0
 specialization;specialization;specialization;0;0;0;0;0;0;0;0;0;0;0;0
-recursion;recursion;recursion;0;0;2;15;2;3;2;1;2;0;3;0
+recursion;recursion;recursion;0;0;2;14;2;3;2;1;2;0;3;0
 beside;beside;beside;0;0;0;0;0;0;0;0;0;0;0;0
 MVar type 2nd 3rd;mvar type 2nd 3rd;MVar type 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0
 haskell 98;haskell 98;haskell 98;0;0;0;0;0;0;0;0;0;0;0;0
@@ -255,7 +255,7 @@ System.IO;System.IO;System.IO;0;0;0;0;0;0;0;0;0;0;0;0
 C PCRE API;C PCRE API;C PCRE API;0;0;0;0;0;0;0;0;0;0;0;0
 unification;unification;unification;0;0;0;0;0;0;0;0;0;0;0;0
 nobuffering mode (buffermode);nobuffering mode ( buffermode );nobuffering mode (buffermode);0;0;0;0;0;0;0;0;0;0;0;0
-just;just;just;24;7;17;4;36;36;77;98;110;57;85;22
+just;just;just;24;7;17;4;36;36;76;98;110;57;85;22
 permissive type;permissive type;permissive types, permissive type;0;0;0;0;0;0;0;0;0;0;0;0
 Build-Depends field;Build-Depends field;Build-Depends fields, Build-Depends field;0;0;0;0;0;0;0;0;0;0;0;0
 currying;currying;currying;0;0;0;0;6;0;0;0;2;0;0;0
@@ -266,7 +266,7 @@ pure error handling;pure error handling;pure error handling;0;0;0;0;0;0;0;0;0;0;
 gen environment;gen environment;gen environment;0;0;0;0;0;0;0;0;0;0;0;0
 nothing value;nothing value;nothing value;0;0;0;0;0;0;0;0;0;0;0;0
 character;character;characters, character;14;6;1;0;1;48;2;23;3;6;1;0
-newtype declaration;newtype declaration;newtype declarations, newtype declaration;0;0;0;0;0;0;0;0;0;0;0;0
+newtype declaration;newtype declaration;newtype declarations, newtype declaration;0;0;0;0;0;0;0;0;3;0;0;0
 recursive case;recursive case;recursive case;0;0;0;0;0;0;0;0;0;0;0;0
 reuse;reuse;reuse;1;0;0;0;0;2;0;1;0;0;0;0
 SELECT statement;select statement;SELECT statements, SELECT statement;0;0;0;0;0;0;0;0;0;0;0;0
@@ -274,14 +274,14 @@ monad stack;monad stack;monad stack;0;0;0;0;0;0;0;0;0;0;0;0
 fusion;fusion;fusion;0;0;0;0;0;0;0;0;0;0;0;0
 zipwith function;zipwith function;zipwith function;0;0;0;0;0;0;0;0;0;0;0;0
 combining function;combining function;combining functions, combining function;0;0;0;0;0;0;0;0;0;0;0;0
-the list monad;the list monad;the list monad;0;0;0;0;0;0;0;0;0;5;4;0
+the list monad;the list monad;the list monad;0;0;0;0;0;0;0;0;0;4;4;0
 reading/modifying state;reading/modifying state;reading/modifying state;0;0;0;0;0;0;0;0;0;0;0;0
 transformer stacking;transformer stacking;transformer stacking;0;0;0;0;0;0;0;0;0;0;0;0
 fixity;fixity;fixity;0;0;0;0;0;0;6;0;0;0;0;0
 starvation;starvation;starvation;0;0;0;0;0;0;0;0;0;0;0;0
 toupper function;toupper function;toupper function;0;0;0;0;0;0;0;0;0;0;0;0
 withtransaction function;withtransaction function;withtransaction function;0;0;0;0;0;0;0;0;0;0;0;0
-type class instance;type class instance;type class instance;0;0;0;0;0;0;0;0;1;0;0;0
+type class instance;type class instance;type class instance;0;0;0;0;0;0;0;0;0;0;0;0
 program error;program error;program error;0;0;0;0;0;0;0;0;0;0;0;0
 Haskell Program Coverage (HPC);haskell program coverage ( hpc );Haskell Program Coverage (HPC);0;0;0;0;0;0;0;0;0;0;0;0
 quicksort algorithm;quicksort algorithm;quicksort algorithm;0;0;0;0;0;0;0;0;0;0;0;0
@@ -300,18 +300,18 @@ strong type;strong type;strong types, strong type;0;0;0;0;0;0;0;0;0;0;0;0
 getmodificationtime function;getmodificationtime function;getmodificationtime function;0;0;0;0;0;0;0;0;0;0;0;0
 pseudo-random number;pseudo-random number;pseudo-random numbers, pseudo-random number;0;0;0;0;0;0;0;0;0;0;0;0
 sum type;sum type;sum types, sum type;0;0;0;0;0;0;0;0;0;0;0;0
-curry;curry;curry;0;0;0;0;0;0;0;0;0;0;0;0
+curry;curry;curry;0;0;0;0;1;0;0;0;0;0;0;0
 Control.Parallel.Strategies module;Control.Parallel.Strategies module;Control.Parallel.Strategies module;0;0;0;0;0;0;0;0;0;0;0;0
 float;float;float;0;1;0;0;0;0;3;0;0;0;0;0
 parsing;parsing;parsing;0;0;0;0;0;0;0;0;0;0;0;0
 rendering;rendering;rendering;0;0;0;0;0;0;0;0;0;0;0;0
-haskell;haskell;haskell;25;11;7;10;9;14;32;30;24;6;16;5
+haskell;haskell;haskell;25;11;7;10;10;14;31;29;24;6;17;5
 base case;base case;base case;0;0;0;0;0;0;0;0;0;0;0;0
 writechan function;writechan function;writechan function;0;0;0;0;0;0;0;0;0;0;0;0
 ghc compiler 2nd;ghc compiler 2nd;ghc compiler 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 openbinarytempfile function;openbinarytempfile function;openbinarytempfile function;0;0;0;0;0;0;0;0;0;0;0;0
 DST (Daylight Saving Time);dst ( daylight saving time );DST (Daylight Saving Time);0;0;0;0;0;0;0;0;0;0;0;0
-head;head;head;7;0;7;19;3;3;1;4;2;0;6;11
+head;head;head;7;0;7;16;3;3;1;4;2;0;6;11
 randomr function;randomr function;randomr function;0;0;0;0;0;0;0;0;0;0;0;0
 else keyword;else keyword;else keyword;0;0;0;0;0;0;0;0;0;0;0;0
 putst function;putst function;putst function;0;0;0;0;0;0;0;0;0;0;0;0
@@ -320,7 +320,7 @@ implicit state 2nd;implicit state 2nd;implicit state 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 program transformation;program transformation;program transformation;0;0;0;0;0;0;0;0;0;0;0;0
 templates (c++);template ( c ++);templates (c++);0;0;0;0;0;0;0;0;0;0;0;0
 vs. tab character;vs. tab character;vs. tab characters, vs. tab character;0;0;0;0;0;0;0;0;0;0;0;0
-maximum;maximum;maximum;1;2;0;21;0;0;1;0;0;0;0;0
+maximum;maximum;maximum;1;2;0;20;0;0;1;0;0;0;0;0
 closed world assumption;closed world assumption;closed world assumptions, closed world assumption;0;0;0;0;0;0;0;0;0;0;0;0
 traverse function 2nd;traverse function 2nd;traverse function 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 UTC (Coordinated Universal Time);utc ( coordinated universal time );UTC (Coordinated Universal Time);0;0;0;0;0;0;0;0;0;0;0;0
@@ -338,11 +338,11 @@ floating;floating;floating;3;6;0;0;0;1;0;0;0;0;2;0
 equational reasoning;equational reasoning;equational reasoning;0;0;0;0;0;0;0;0;0;0;0;0
 immutable state;immutable state;immutable states, immutable state;0;0;0;0;0;0;0;0;0;0;0;0
 enum keyword (C/C++);enum keyword (C/C++);enum keyword (C/C++);0;0;0;0;0;0;0;0;0;0;0;0
-picture;picture;pictures, picture;0;0;0;0;1;0;1;0;0;0;2;0
+picture;picture;pictures, picture;0;0;0;0;1;0;1;1;0;0;2;0
 thread map;thread map;thread maps, thread map;0;0;0;0;0;0;0;0;0;0;0;0
 mutable array;mutable array;mutable arrays, mutable array;0;0;0;0;0;0;0;0;0;0;0;0
 miranda;miranda;miranda;0;0;0;0;0;0;0;0;0;0;0;0
-variable;variable;variable;3;7;12;1;1;0;3;2;3;4;7;0
+variable;variable;variable;3;5;12;1;1;0;3;2;3;4;7;0
 fst;fst;fst;1;0;0;0;0;0;0;0;0;0;0;0
 time;time;times, time;1;2;7;6;11;8;4;16;9;6;21;4
 applicative operator;applicative operator;applicative operator;0;0;0;0;0;0;0;0;1;1;0;0
@@ -355,17 +355,17 @@ linebuffering mode (buffermode);linebuffering mode ( buffermode );linebuffering 
 map function;map function;map function;0;0;0;0;2;0;0;1;3;1;0;0
 printf (c) option;printf ( c ) option;printf (c) option;0;0;0;0;0;0;0;0;0;0;0;0
 graph;graph;graph;0;0;0;0;0;0;0;0;0;0;0;0
-case expression;case expression;case expressions, case expression;0;0;7;0;0;0;0;0;0;0;0;0
+case expression;case expression;case expressions, case expression;0;0;6;0;0;0;0;2;0;0;0;0
 p3 (plain) netpbm image format;p3 ( plain ) netpbm image format;p3 (plain) netpbm image format;0;0;0;0;0;0;0;0;0;0;0;0
 isspace;isspace;isspace;0;0;0;0;0;1;0;0;0;0;0;0
 predicate;predicate;predicates, predicate;11;0;4;0;12;25;0;4;2;0;12;3
 scientific notation;scientific notation;scientific notation;0;0;0;0;0;0;0;0;0;0;0;0
-string;string;strings, string;9;11;3;0;4;8;22;71;10;5;21;3
+string;string;strings, string;9;11;3;0;4;8;22;72;10;5;21;3
 associativity of operators;associativity of operator;associativity of operators;0;0;0;0;0;0;0;0;0;0;0;0
 control-with-character escapes;control-with-character escapes;control-with-character escapes;0;0;0;0;0;0;0;0;0;0;0;0
 universal newline support;universal newline support;universal newline support;0;0;0;0;0;0;0;0;0;0;0;0
 numeric 2nd;numeric 2nd;numeric 2nd;0;0;0;0;0;0;0;0;0;0;0;0
-newtype;newtype;newtype;0;0;0;0;0;0;0;0;48;0;1;0
+newtype;newtype;newtype;0;0;0;0;0;0;0;0;43;0;1;0
 programming environment;programming environment;programming environment;0;0;0;0;0;0;0;0;0;0;0;0
 binary function;binary function;binary function;0;0;0;0;13;1;0;0;14;0;10;0
 structural recursion;structural recursion;structural recursion;0;0;0;0;0;0;0;0;0;0;0;0
@@ -426,20 +426,20 @@ general recursion;general recursion;general recursion;0;0;0;0;0;0;0;0;0;0;0;0
 international language support;international language support;international language support;0;0;0;0;0;0;0;0;0;0;0;0
 Control.Applicative module;Control.Applicative module;Control.Applicative module;0;0;0;0;0;0;0;0;0;0;0;0
 pure;pure;pure;0;0;0;0;0;0;0;21;9;0;3;0
-parameter;parameter;parameters, parameter;11;6;8;2;64;3;59;32;80;7;9;0
+parameter;parameter;parameters, parameter;11;6;8;2;64;3;58;32;80;7;9;0
 cl compiler;cl compiler;cl compiler;0;0;0;0;0;0;0;0;0;0;0;0
-map;map;maps, map;0;1;0;0;16;27;23;11;26;7;7;0
+map;map;maps, map;0;1;0;0;17;26;23;11;25;7;7;0
 product;product;product;5;0;0;3;0;0;1;0;2;0;0;0
 strictness;strictness;strictness;0;0;0;0;0;0;0;0;0;0;0;0
-max;max;max;0;0;0;1;0;0;0;0;0;0;0;0
+max;max;max;0;0;0;2;0;0;0;0;0;0;0;0
 JSON typeclass;json typeclass;JSON typeclasses, JSON typeclass;0;0;0;0;0;0;0;0;0;0;0;0
 monadic use;monadic use;monadic use;0;0;0;0;0;0;0;0;0;0;0;0
 date;date;dates, date;0;0;0;0;0;2;0;0;0;0;0;0
-lifting;lifting;lifting;0;0;0;0;0;0;0;0;1;0;0;0
-maybe;maybe;maybe;0;0;1;0;1;4;0;4;2;2;0;1
+lifting;lifting;lifting;0;0;0;0;0;0;0;0;3;0;0;0
+maybe;maybe;maybe;0;0;1;0;1;4;0;4;2;1;0;1
 explicit;explicit;explicit;1;4;0;0;3;1;2;1;1;0;1;0
 combinator function;combinator function;combinator functions, combinator function;0;0;0;0;0;0;0;0;0;0;0;0
-first function;first function;first function;1;0;0;0;0;0;0;0;4;1;0;0
+first function;first function;first function;0;0;0;0;0;0;0;0;4;1;0;0
 waiting for other threads;waiting for other thread;waiting for other threads;0;0;0;0;0;0;0;0;0;0;0;0
 GHC;ghc;GHC;1;0;0;0;0;0;0;1;0;0;0;0
 character class;character class;character classes, character class;0;0;0;0;0;0;0;0;0;0;0;0
@@ -456,20 +456,20 @@ user IDs (UIDs);user ids ( uids );user IDs (UIDs);0;0;0;0;0;0;0;0;0;0;0;0
 qualifier;qualifier;qualifier;0;0;0;0;0;0;0;0;0;0;0;0
 ADT (abstract data types);adt ( abstract data type );ADT (abstract data types);0;0;0;0;0;0;0;0;0;0;0;0
 qualified;qualified;qualified;0;0;0;0;0;7;2;2;2;0;0;0
-pattern matching;pattern matching;pattern matching;0;0;19;5;3;0;5;4;2;10;3;1
+pattern matching;pattern matching;pattern matching;0;0;18;5;3;0;5;4;2;10;3;1
 definedness;definedness;definedness;0;0;0;0;0;0;0;0;0;0;0;0
 equality;equality;equality;1;6;0;0;0;10;2;0;0;1;0;0
-name;name;name;13;2;26;0;1;19;20;40;15;3;3;15
+name;name;name;13;2;26;0;1;19;20;39;15;3;3;15
 partial function;partial function;partial functions, partial function;0;0;0;0;0;0;0;0;0;0;0;0
 drop;drop;drop;2;0;1;0;0;1;0;0;0;0;3;0
 type system;type system;type system;0;2;0;0;0;0;2;4;2;0;0;0
-square;square;square;3;1;1;0;8;0;0;0;0;0;0;0
+square;square;square;3;1;1;0;7;0;0;0;0;0;0;0
 taking advantage;taking advantage;taking advantage;0;0;0;0;0;0;0;0;0;0;2;0
 well typed rule;well typed rule;well typed rules, well typed rule;0;0;0;0;0;0;0;0;0;0;0;0
 folding over arrays;folding over array;folding over arrays;0;0;0;0;0;0;0;0;0;0;0;0
 web site;web site;web site;0;0;0;0;0;0;0;0;0;0;0;0
 naming;naming;naming;0;0;0;0;0;0;2;0;0;0;0;1
-eq;eq;eq;0;1;0;0;0;0;0;0;0;0;0;0
+eq;eq;eq;0;1;0;1;0;0;0;0;0;0;0;0
 programming paradigm;programming paradigm;programming paradigms, programming paradigm;0;0;0;0;0;0;0;0;0;0;0;0
 shadowing;shadowing;shadowing;0;0;0;0;0;0;0;0;0;0;0;0
 FFI (Haskell Foreign Function Interface);ffi ( haskell foreign function interface );FFI (Haskell Foreign Function Interface);0;0;0;0;0;0;0;0;0;0;0;0
@@ -489,12 +489,12 @@ recursive definition;recursive definition;recursive definition;0;0;0;0;0;0;0;2;0
 handlejust function;handlejust function;handlejust function;0;0;0;0;0;0;0;0;0;0;0;0
 islower;islower;islower;0;0;0;0;0;1;0;0;0;0;0;0
 isupper;isupper;isupper;0;0;0;0;0;1;0;0;0;0;0;0
-lambda;lambda;lambda;0;0;0;0;15;0;0;5;2;17;6;0
+lambda;lambda;lambda;0;0;0;0;16;0;0;5;2;17;6;0
 saving;saving;saving;0;0;0;0;1;0;0;0;0;0;0;0
 enumeration type;enumeration type;enumeration types, enumeration type;0;0;0;0;0;0;0;0;0;0;0;0
 clause;clause;clause;0;0;2;2;0;0;0;1;0;0;0;0
 flexibleinstance;flexibleinstance;flexibleinstances, flexibleinstance;0;0;0;0;0;0;0;0;0;0;0;0
-type constructor;type constructor;type constructors, type constructor;0;0;0;0;0;0;33;1;15;0;0;0
+type constructor;type constructor;type constructors, type constructor;0;0;0;0;0;0;32;1;15;0;0;0
 message;message;messages, message;1;0;0;0;0;3;1;3;0;2;1;0
 partial application;partial application;partial applications, partial application;0;0;0;0;5;0;0;0;1;0;0;0
 convention;convention;conventions, convention;0;0;0;0;0;0;1;2;0;0;0;0
@@ -504,9 +504,9 @@ hug;hug;hugs, hug;0;0;0;0;0;0;0;0;0;0;0;0
 concurrent programming with threads;concurrent programming with thread;concurrent programming with threads;0;0;0;0;0;0;0;0;0;0;0;0
 turning two into many;turning two into many;turning two into many;0;0;0;0;0;0;0;0;0;0;0;0
 diffarray type;diffarray type;diffarray type;0;0;0;0;0;0;0;0;0;0;0;0
-function application;function application;function application;3;0;0;0;9;0;0;0;1;3;1;1
+function application;function application;function application;3;0;0;0;7;0;0;0;1;3;1;1
 headers (HTTP);header ( http );headers (HTTP);0;0;0;0;0;0;0;0;0;0;0;0
-argument;argument;argument;0;0;0;0;4;1;0;23;0;0;0;0
+argument;argument;argument;0;0;0;0;4;1;0;22;0;0;0;0
 generalization;generalization;generalization;0;0;0;0;0;0;0;0;0;0;0;0
 ant;ant;ant;0;0;0;0;0;0;0;0;0;0;0;0
 ptr type;ptr type;ptr type;0;0;0;0;0;0;0;0;0;0;0;0
@@ -514,22 +514,22 @@ conditional equation;conditional equation;conditional equation;0;0;0;0;0;0;0;0;0
 getst function;getst function;getst function;0;0;0;0;0;0;0;0;0;0;0;0
 object file;object file;object files, object file;0;0;0;0;0;0;0;0;0;0;0;0
 import directive 2nd;import directive 2nd;import directive 2nd;0;0;0;0;0;0;0;0;0;0;0;0
-any;any;any;6;9;7;5;6;6;18;17;39;10;14;7
+pcre_exec function;pcre_exec function;pcre_exec function;0;0;0;0;0;0;0;0;0;0;0;0
 visibility of definitions;visibility of definition;visibility of definitions;0;0;0;0;0;0;0;0;0;0;0;0
 exhaustive pattern;exhaustive pattern;exhaustive patterns, exhaustive pattern;0;0;1;0;0;0;0;0;0;0;0;0
 monads and 2nd;monad and 2nd;monads and 2nd;0;0;0;0;0;0;0;0;0;0;0;0
-take;take;take;36;13;10;18;81;45;74;98;133;73;68;26
+take;take;take;36;13;10;18;80;45;74;98;133;72;68;26
 struct keyword (C/C++);struct keyword (C/C++);struct keyword (C/C++);0;0;0;0;0;0;0;0;0;0;0;0
-data keyword;data keyword;data keyword;0;0;0;0;0;0;0;0;0;0;0;0
+data keyword;data keyword;data keyword;0;0;0;0;0;0;1;0;7;0;0;0
 main thread waiting for other threads;main thread waiting for other thread;main thread waiting for other threads;0;0;0;0;0;0;0;0;0;0;0;0
-stateful computation;stateful computation;stateful computations, stateful computation;0;0;0;0;0;0;0;0;0;0;44;0
+stateful computation;stateful computation;stateful computations, stateful computation;0;0;0;0;0;0;0;0;0;0;43;0
 runtime statistic;runtime statistic;runtime statistics, runtime statistic;0;0;0;0;0;0;0;0;0;0;0;0
 tail function 2nd 3rd 4th;tail function 2nd 3rd 4th;tail function 2nd 3rd 4th;0;0;0;0;0;0;0;0;0;0;0;0
 infix form;infix form;infix form;0;0;0;0;0;0;0;0;0;0;0;0
-synonym;synonym;synonyms, synonym;0;0;0;0;0;0;18;4;5;3;0;5
+synonym;synonym;synonyms, synonym;0;0;0;0;0;0;16;3;5;3;0;5
 lazy I/O;lazy I/O;lazy I/O;0;0;0;0;0;0;0;2;0;0;0;0
 grayscale image format 2nd;grayscale image format 2nd;grayscale image format 2nd;0;0;0;0;0;0;0;0;0;0;0;0
-pattern;pattern;patterns, pattern;2;0;74;18;11;2;17;13;9;17;9;9
+pattern;pattern;patterns, pattern;2;0;71;18;11;2;17;13;9;17;9;9
 typed pointer;typed pointer;typed pointers, typed pointer;0;0;0;0;0;0;0;0;0;0;0;0
 :reload command;: reload command;:reload command;0;0;0;0;0;0;0;0;0;0;0;0
 show;show;show;0;1;1;0;3;0;3;2;1;0;1;0
@@ -542,7 +542,7 @@ sequential sorting;sequential sorting;sequential sorting;0;0;0;0;0;0;0;0;0;0;0;0
 Data.Ratio module;Data.Ratio module;Data.Ratio module;0;0;0;0;0;0;0;0;0;0;0;0
 universal quantifier;universal quantifier;universal quantifier;0;0;0;0;0;0;0;0;0;0;0;0
 functional picture;functional picture;functional pictures, functional picture;0;0;0;0;0;0;0;0;0;0;0;0
-filterm;filterm;filterm;0;0;0;0;0;0;0;0;0;0;1;0
+filterm;filterm;filterm;0;0;0;0;0;0;0;0;0;0;0;0
 split function;split function;split function;0;0;0;0;0;0;0;0;0;0;0;0
 waitfor function;waitfor function;waitfor function;0;0;0;0;0;0;0;0;0;0;0;0
 Data.Bits module;Data.Bits module;Data.Bits module;0;0;0;0;0;0;0;0;0;0;0;0
@@ -562,12 +562,11 @@ exclusive or;exclusive or;exclusive or;0;0;0;0;0;0;0;0;0;0;0;0
 safe keyword;safe keyword;safe keyword;0;0;0;0;0;0;0;0;0;0;0;0
 ASCII control code;ascii control code;ASCII control codes, ASCII control code;0;0;0;0;0;0;0;0;0;0;0;0
 generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;generalizednewtypederiving 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0
-where;where;where;3;2;21;6;5;7;12;15;12;2;9;12
 abstract data type;abstract data type;abstract data type;0;0;0;0;0;0;0;0;0;0;0;0
 algebraic data structure;algebraic data structure;algebraic data structure;0;0;0;0;0;0;1;0;0;0;0;0
 rnf function;rnf function;rnf function;0;0;0;0;0;0;0;0;0;0;0;0
 mainloop keyword;mainloop keyword;mainloop keyword;0;0;0;0;0;0;0;0;0;0;0;0
-monoid;monoid;monoids, monoid;0;0;0;0;0;0;0;0;36;0;33;0
+monoid;monoid;monoids, monoid;0;0;0;0;0;0;0;0;34;0;33;0
 unlines function 2nd;unlines function 2nd;unlines function 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 manufacturer ID of barcodes;manufacturer id of barcodes;manufacturer ID of barcodes;0;0;0;0;0;0;0;0;0;0;0;0
 malloc c function;malloc c function;malloc c function;0;0;0;0;0;0;0;0;0;0;0;0
@@ -581,21 +580,21 @@ lists and tuple;list and tuple;lists and tuples, lists and tuple;0;0;0;0;0;0;0;0
 Text.Regex.Posix module;Text.Regex.Posix module;Text.Regex.Posix module;0;0;0;0;0;0;0;0;0;0;0;0
 hsc2hs command;hsc2hs command;hsc2hs command;0;0;0;0;0;0;0;0;0;0;0;0
 interface file;interface file;interface files, interface file;0;0;0;0;0;0;0;0;0;0;0;0
-expression;expression;expressions, expression;7;17;22;0;13;0;2;9;6;19;24;0
-type variable;type variable;type variables, type variable;0;6;0;0;0;0;3;0;3;0;0;0
+expression;expression;expressions, expression;7;17;21;0;13;0;2;9;6;19;24;0
+type variable;type variable;type variables, type variable;0;4;0;0;0;0;3;0;3;0;0;0
 float type;float type;float type;0;0;0;0;0;0;0;0;0;0;0;0
 PCRE (Perl-compatible regular expression);PCRE (Perl-compatible regular expression);PCRE (Perl-compatible regular expression);0;0;0;0;0;0;0;0;0;0;0;0
-filtering;filtering;filtering;1;0;0;0;5;2;0;1;1;2;0;0
+filtering;filtering;filtering;0;0;0;0;5;2;0;1;1;2;0;0
 continuation;continuation;continuations, continuation;0;0;0;0;0;0;0;0;0;0;0;0
 quot function;quot function;quot function;0;0;0;0;0;0;0;0;0;0;0;0
-hoogle;hoogle;hoogle;0;0;0;0;0;1;0;0;0;0;0;0
+hoogle;hoogle;hoogle;0;0;0;0;0;0;0;0;0;0;0;0
 huffman code;huffman code;huffman codes, huffman code;0;0;0;0;0;0;0;0;0;0;0;0
 GUI (graphical user interface) programming;gui ( graphical user interface ) programming;GUI (graphical user interface) programming;0;0;0;0;0;0;0;0;0;0;0;0
 INSERT query;insert query;INSERT queries, INSERT query;0;0;0;0;0;0;0;0;0;0;0;0
-class declaration;class declaration;class declarations, class declaration;0;0;0;0;0;0;0;0;0;1;0;0
+class declaration;class declaration;class declarations, class declaration;0;0;0;0;0;0;7;0;0;1;0;0
 side effect;side effect;side effects, side effect;0;0;0;0;0;0;0;0;0;0;0;0
 space leak;space leak;space leak;0;0;0;0;0;0;0;0;0;0;0;0
-declaration;declaration;declaration;0;10;1;0;10;1;52;4;15;1;0;0
+declaration;declaration;declaration;0;10;1;0;10;1;51;4;15;1;0;0
 project idea;project idea;project ideas, project idea;0;0;0;0;0;0;0;0;0;0;0;0
 specializing for IO;specializing for io;specializing for IO;0;0;0;0;0;0;0;0;0;0;0;0
 ranges (pattern matching);range ( pattern matching );ranges (pattern matching);0;0;0;0;0;0;0;0;0;0;0;0
@@ -638,7 +637,7 @@ getprocessstatus function;getprocessstatus function;getprocessstatus function;0;
 readint function 2nd;readint function 2nd;readint function 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 fedora linux;fedora linux;fedora linux;0;0;0;0;0;0;0;0;0;0;0;0
 mathematical induction;mathematical induction;mathematical induction;0;0;0;0;0;0;0;0;0;0;0;0
-read;read;reads, read;3;4;1;2;4;4;9;57;3;0;5;1
+read;read;reads, read;3;4;1;2;4;4;8;57;3;0;5;1
 composition|see{function composition;composition | see { function composition;composition|see{function composition;0;0;0;0;0;0;0;0;0;0;0;0
 metadata (database);metadata ( database );metadata (database);0;0;0;0;0;0;0;0;0;0;0;0
 module declaration;module declaration;module declarations, module declaration;0;0;0;0;0;0;0;0;0;0;0;0
@@ -668,11 +667,11 @@ numeric escape;numeric escape;numeric escapes, numeric escape;0;0;0;0;0;0;0;0;0;
 solution map;solution map;solution maps, solution map;0;0;0;0;0;0;0;0;0;0;0;0
 package;package;packages, package;0;0;0;0;0;0;0;0;0;0;4;0
 delete function;delete function;delete function;0;0;0;0;0;1;0;0;0;0;0;0
-writer type;writer type;writer type;0;0;0;0;0;0;0;0;0;0;1;0
+writer type;writer type;writer type;0;0;0;0;0;0;0;0;0;0;0;0
 evaluation strategy;evaluation strategy;evaluation strategies, evaluation strategy;0;0;0;0;0;0;0;0;0;0;0;0
-type synonym;type synonym;type synonyms, type synonym;0;0;0;0;0;0;15;3;5;3;0;5
+type synonym;type synonym;type synonyms, type synonym;0;0;0;0;0;0;13;2;5;3;0;5
 extensionality principle;extensionality principle;extensionality principle;0;0;0;0;0;0;0;0;0;0;0;0
-op;op;ops, op;0;0;0;0;0;0;0;0;0;0;0;0
+op;op;ops, op;0;0;0;0;0;0;0;0;0;0;0;1
 Parsec CSV file;parsec csv file;Parsec CSV files, Parsec CSV file;0;0;0;0;0;0;0;0;0;0;0;0
 recip function;recip function;recip function;0;0;0;0;0;0;0;0;0;0;0;0
 split-base Cabal flag;split-base Cabal flag;split-base Cabal flag;0;0;0;0;0;0;0;0;0;0;0;0
@@ -696,11 +695,11 @@ default;default;default;0;1;0;0;3;1;1;3;13;13;7;0
 sin function;sin function;sin function;0;0;0;0;0;0;0;0;0;0;0;0
 bloom filter;bloom filter;bloom filters, bloom filter;0;0;0;0;0;0;0;0;0;0;0;0
 discriminated union;discriminated union;discriminated unions, discriminated union;0;0;0;0;0;0;0;0;0;0;0;0
-ab;ab;abs, ab;0;0;0;0;0;0;0;0;0;0;0;0
+ab;ab;abs, ab;1;2;0;0;0;0;0;0;0;0;0;0
 applicative style;applicative style;applicative style;0;0;0;0;0;0;0;0;15;2;1;0
 first-class citizen;first-class citizen;first-class citizens, first-class citizen;0;0;0;0;0;0;0;0;0;0;0;0
 GUI programming;gui programming;GUI programming;0;0;0;0;0;0;0;0;0;0;0;0
-file;file;files, file;1;0;0;0;0;9;0;138;1;0;0;48
+file;file;files, file;1;0;0;0;0;9;0;139;1;0;0;45
 unsafeIOToSTM function;unsafeiotostm function;unsafeIOToSTM function;0;0;0;0;0;0;0;0;0;0;0;0
 handle function;handle function;handle function;0;0;0;0;0;0;0;0;0;0;0;0
 takewhile;takewhile;takewhile;0;0;0;0;1;1;0;0;0;0;0;0
@@ -709,12 +708,13 @@ logical and (&&);logical and (&&);logical and (&&);0;0;0;0;0;0;0;0;0;0;0;0
 deriving;deriving;deriving;0;0;0;0;0;0;4;0;1;0;0;0
 either type;either type;either type;0;0;0;0;0;0;0;0;0;0;0;0
 concat;concat;concat;0;0;0;0;0;1;0;0;0;0;0;0
-algebraic;algebraic;algebraic;0;0;0;0;0;1;7;1;4;0;0;0
+algebraic;algebraic;algebraic;0;0;0;0;0;1;6;1;4;0;0;0
 projection function;projection function;projection functions, projection function;0;0;0;0;0;0;0;0;0;0;0;0
 prop_one_present function;prop_one_present function;prop_one_present function;0;0;0;0;0;0;0;0;0;0;0;0
 hprint function;hprint function;hprint function;0;0;0;0;0;0;0;0;0;0;0;0
 CPP;cpp;CPP;0;0;0;0;0;0;0;0;0;0;0;0
 STM (software transactional memory);stm ( software transactional memory );STM (software transactional memory);0;0;0;0;0;0;0;0;0;0;0;0
+all;all;all;26;14;18;2;19;33;32;34;50;27;48;26
 pcre_compile function;pcre_compile function;pcre_compile function;0;0;0;0;0;0;0;0;0;0;0;0
 sqrt function;sqrt function;sqrt function;0;0;0;0;0;0;0;0;0;0;0;0
 floating point;floating point;floating point;1;5;0;0;0;1;0;0;0;0;2;0
@@ -727,17 +727,17 @@ inductive/recursive case;inductive/recursive case;inductive/recursive case;0;0;0
 ruby;ruby;ruby;0;0;0;0;0;0;0;0;0;0;0;0
 binding power;binding power;binding power;0;0;0;0;0;0;0;0;0;0;0;0
 tail;tail;tail;2;0;3;16;0;3;0;3;2;0;7;5
-program;program;program;1;3;3;0;1;8;0;118;1;5;7;1
+program;program;program;1;3;3;0;1;8;0;118;1;5;6;1
 lift function 2nd;lift function 2nd;lift function 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 global;global;global;0;0;0;0;0;2;0;6;0;0;1;0
-class constraint;class constraint;class constraints, class constraint;0;5;0;1;1;0;9;0;7;1;2;0
-functor typeclass;functor typeclass;functor typeclass;0;0;0;0;0;0;2;0;0;0;0;0
+class constraint;class constraint;class constraints, class constraint;0;4;0;1;1;0;9;0;7;1;2;0
+functor typeclass;functor typeclass;functor typeclass;0;0;0;0;0;0;1;0;0;0;0;0
 print;print;print;0;1;0;0;1;0;6;41;2;0;3;0
 balancing;balancing;balancing;0;0;0;0;0;0;0;0;0;4;1;1
 inttodigit;inttodigit;inttodigit;0;0;0;0;0;1;0;0;0;0;0;0
-condition;condition;conditions, condition;3;0;3;18;2;0;3;2;3;0;1;0
+condition;condition;conditions, condition;3;0;3;17;2;0;3;2;3;0;1;0
 reader monad;reader monad;reader monad;0;0;0;0;0;0;0;0;0;0;3;0
-list;list;lists, list;161;10;41;95;102;167;83;89;188;71;141;59
+list;list;lists, list;160;10;41;91;100;167;83;88;187;70;139;57
 mapreduce;mapreduce;mapreduce;0;0;0;0;0;0;0;0;0;0;0;0
 function definition;function definition;function definition;0;0;2;0;0;0;0;0;0;0;0;0
 domain-specific language;domain-specific language;domain-specific languages, domain-specific language;0;0;0;0;0;0;0;0;0;0;0;0
@@ -752,7 +752,7 @@ ghemawat;ghemawat;ghemawat;0;0;0;0;0;0;0;0;0;0;0;0
 maxbound function;maxbound function;maxbound function;0;0;0;0;0;0;0;0;0;0;0;0
 escaping text;escaping text;escaping text;0;0;0;0;0;0;0;0;0;0;0;0
 color image;color image;color images, color image;0;0;0;0;0;0;0;0;0;0;0;0
-section;section;sections, section;3;0;4;0;5;2;6;6;8;2;5;1
+section;section;sections, section;3;0;4;0;5;2;5;5;7;2;4;1
 fractional;fractional;fractional;0;0;0;0;0;0;0;0;0;0;0;0
 bounded variable;bounded variable;bounded variables, bounded variable;0;0;0;0;0;0;0;0;0;0;0;0
 escaping;escaping;escaping;0;0;0;0;0;0;0;0;0;0;0;0
@@ -762,10 +762,10 @@ behaviour;behaviour;behaviour;0;0;0;0;0;0;0;0;0;0;0;0
 supplying random number;supplying random number;supplying random numbers, supplying random number;0;0;0;0;0;0;0;0;0;0;0;0
 System.IO.Error module;System.IO.Error module;System.IO.Error module;0;0;0;0;0;0;0;0;0;0;0;0
 escape character;escape character;escape characters, escape character;0;0;0;0;0;0;0;0;0;0;0;0
-action;action;actions, action;1;0;2;1;5;0;3;185;47;6;4;1
+action;action;actions, action;1;0;2;1;5;0;3;182;47;6;4;1
 Exposed-Modules field;Exposed-Modules field;Exposed-Modules field;0;0;0;0;0;0;0;0;0;0;0;0
 programmable semicolon;programmable semicolon;programmable semicolon;0;0;0;0;0;0;0;0;0;0;0;0
-function composition;function composition;function composition;0;0;0;0;15;0;0;3;6;0;2;0
+function composition;function composition;function composition;0;0;0;0;14;0;0;3;5;0;2;0
 coercion;coercion;coercion;0;0;0;0;0;0;0;0;0;0;0;0
 executable;executable;executables, executable;0;0;0;0;0;0;0;1;0;0;0;0
 overlapping instance;overlapping instance;overlapping instances, overlapping instance;0;0;0;0;0;0;0;0;0;0;0;0
@@ -793,20 +793,20 @@ minimum;minimum;minimum;1;2;0;0;0;0;2;1;0;0;0;0
 seekmode parameter (htell);seekmode parameter ( htell );seekmode parameter (htell);0;0;0;0;0;0;0;0;0;0;0;0
 implicit state;implicit state;implicit state;0;0;0;0;0;0;0;0;0;0;0;0
 return function;return function;return function;0;0;0;0;2;0;0;0;0;0;0;0
-join function;join function;join function;0;0;0;0;0;0;0;0;0;0;1;0
-recursive;recursive;recursive;0;0;1;10;2;2;3;2;0;0;0;0
+join function;join function;join function;0;0;0;0;0;0;0;0;0;0;0;0
+recursive;recursive;recursive;0;0;1;9;2;2;2;2;0;0;0;0
 mapm;mapm;mapm;0;0;0;0;0;0;0;1;0;0;0;0
 applicative law;applicative law;applicative laws, applicative law;0;0;0;0;0;0;0;0;1;0;0;0
 mutable;mutable;mutable;0;0;0;0;0;0;0;0;0;0;0;0
 total function;total function;total functions, total function;0;0;0;0;0;0;0;0;0;0;0;0
 Reverse Polish Notation (RPN);reverse polish notation ( rpn );Reverse Polish Notation (RPN);0;0;0;0;0;0;0;0;0;0;0;0
-mapping;mapping;mapping;0;0;0;0;5;5;7;2;25;0;3;0
+mapping;mapping;mapping;0;0;0;0;5;5;7;2;22;0;3;0
 GHC (Glasgow Haskell Compiler);ghc ( glasgow haskell compiler );GHC (Glasgow Haskell Compiler);0;0;0;0;0;0;0;0;0;0;0;0
 making instance;making instance;making instances, making instance;0;0;0;0;0;0;2;0;1;1;0;0
 maxium function;maxium function;maxium function;0;0;0;0;0;0;0;0;0;0;0;0
 using multiple;using multiple;using multiple;0;0;0;0;0;0;0;0;0;0;0;0
 sqlvalues type;sqlvalues type;sqlvalues type;0;0;0;0;0;0;0;0;0;0;0;0
-documentation;documentation;documentation;0;0;0;0;0;1;3;2;0;0;0;0
+documentation;documentation;documentation;0;0;0;0;0;0;3;1;0;0;0;0
 parameterized;parameterized;parameterized;0;0;0;0;0;0;5;0;1;0;0;0
 stacking multiple;stacking multiple;stacking multiple;0;0;0;0;0;0;0;0;0;0;0;0
 log function;log function;log function;0;0;0;0;0;0;0;0;0;0;0;0
@@ -823,7 +823,7 @@ initializing;initializing;initializing;0;0;0;0;0;0;0;0;0;0;0;0
 pwd command;pwd command;pwd command;0;0;0;0;0;0;0;0;0;0;0;0
 using strong type;using strong type;using strong types, using strong type;0;0;0;0;0;0;0;0;0;0;0;0
 c preprocessor;c preprocessor;c preprocessor;0;0;0;0;0;0;0;0;0;0;0;0
-return;return;return;24;18;4;13;43;34;30;80;53;31;45;14
+return;return;return;24;18;4;13;41;34;30;80;53;30;45;14
 idempotence;idempotence;idempotence;0;0;0;0;0;0;0;0;0;0;0;0
 unix-compat package;unix-compat package;unix-compat package;0;0;0;0;0;0;0;0;0;0;0;0
 buffering;buffering;buffering;0;0;0;0;0;0;0;11;0;0;0;0
@@ -835,7 +835,7 @@ opentempfile function;opentempfile function;opentempfile function;0;0;0;0;0;0;0;
 left-associative;left-associative;left-associative;0;0;0;0;1;0;2;0;3;0;0;0
 Data.Array module;Data.Array module;Data.Array module;0;0;0;0;0;0;0;0;0;0;0;0
 pure code;pure code;pure code;0;0;0;0;0;0;0;8;0;0;0;0
-functor;functor;functors, functor;0;0;0;0;0;0;12;0;98;8;11;0
+functor;functor;functors, functor;0;0;0;0;0;0;11;0;91;8;11;0
 laziness and space leak;laziness and space leak;laziness and space leaks, laziness and space leak;0;0;0;0;0;0;0;0;0;0;0;0
 sizing safely;sizing safely;sizing safely;0;0;0;0;0;0;0;0;0;0;0;0
 marshaling;marshaling;marshaling;0;0;0;0;0;0;0;0;0;0;0;0
@@ -857,15 +857,15 @@ describetable function;describetable function;describetable function;0;0;0;0;0;0
 file processing;file processing;file processing;0;0;0;0;0;0;0;0;0;0;0;0
 readln;readln;readln;0;0;0;0;0;0;0;0;0;0;0;0
 parametric polymorphism;parametric polymorphism;parametric polymorphism;0;0;0;0;0;0;0;0;0;0;0;0
-the state monad;the state monad;the state monad;0;0;0;0;0;0;0;0;0;0;7;0
+the state monad;the state monad;the state monad;0;0;0;0;0;0;0;0;0;0;5;0
 patternguards language extension;patternguards language extension;patternguards language extension;0;0;0;0;0;0;0;0;0;0;0;0
 encoding;encoding;encoding;0;0;0;0;0;2;0;0;0;0;0;0
-number;number;numbers, number;61;21;8;22;32;24;16;55;34;26;64;0
+number;number;numbers, number;61;21;8;22;29;24;16;55;34;26;63;0
 linking;linking;linking;0;0;0;0;0;0;0;0;0;0;0;0
 Data.Char module;Data.Char module;Data.Char module;0;0;0;0;0;0;0;0;0;0;0;0
 unwords function;unwords function;unwords function;0;0;0;0;0;0;0;0;0;0;0;0
 marshaling datum;marshaling datum;marshaling data, marshaling datum;0;0;0;0;0;0;0;0;0;0;0;0
-horse;horse;horse;0;0;0;0;1;0;0;0;0;0;0;0
+horse;horse;horse;0;0;0;0;0;0;0;0;0;1;0;0
 script;script;script;2;0;0;0;0;8;0;6;0;1;0;0
 interact;interact;interact;0;0;0;0;0;0;0;1;0;2;0;0
 readert monad layer;readert monad layer;readert monad layer;0;0;0;0;0;0;0;0;0;0;0;0
@@ -881,7 +881,7 @@ declaring instance;declaring instance;declaring instances, declaring instance;0;
 fst function 2nd;fst function 2nd;fst function 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 Glasgow Haskell Compiler (GHC);glasgow haskell compiler ( ghc );Glasgow Haskell Compiler (GHC);0;0;0;0;0;0;0;0;0;0;0;0
 numeric conversion;numeric conversion;numeric conversions, numeric conversion;0;0;0;0;0;0;0;0;0;0;0;0
-algebraic data type;algebraic data type;algebraic data types, algebraic data type;0;0;0;0;0;1;5;1;4;0;0;0
+algebraic data type;algebraic data type;algebraic data types, algebraic data type;0;0;0;0;0;1;4;1;4;0;0;0
 monadreader typeclass;monadreader typeclass;monadreader typeclass;0;0;0;0;0;0;0;0;0;0;0;0
 domain-specific language for;domain-specific language for;domain-specific language for;0;0;0;0;0;0;0;0;0;0;0;0
 monomorphism;monomorphism;monomorphism;0;0;0;0;0;0;0;0;0;0;0;0
@@ -892,15 +892,15 @@ null;null;null;1;0;0;0;0;2;0;1;0;0;0;0
 Data.Typeable module;Data.Typeable module;Data.Typeable module;0;0;0;0;0;0;0;0;0;0;0;0
 Structured Query Language (SQL);structured query language ( sql );Structured Query Language (SQL);0;0;0;0;0;0;0;0;0;0;0;0
 list of successes method;list of success method;list of successes method;0;0;0;0;0;0;0;0;0;0;0;0
-odd;odd;odd;5;0;0;0;5;1;0;0;1;0;0;0
-liftm;liftm;liftm;0;0;0;0;0;0;0;0;0;0;1;0
+odd;odd;odd;5;0;0;0;4;1;0;0;1;0;0;0
+liftm;liftm;liftm;0;0;0;0;0;0;0;0;0;0;0;0
 outmess;outmess;outmess;0;0;0;0;0;0;0;0;0;0;0;0
 duck typing;duck typing;duck typing;0;0;0;0;0;0;0;0;0;0;0;0
 redex;redex;redex;0;0;0;0;0;0;0;0;0;0;0;0
 tocalendartime function;tocalendartime function;tocalendartime function;0;0;0;0;0;0;0;0;0;0;0;0
 grain size;grain size;grain sizes, grain size;0;0;0;0;0;0;0;0;0;0;0;0
 free variable;free variable;free variable;0;0;0;0;0;0;0;0;0;0;0;0
-nothing;nothing;nothing;0;0;0;0;0;1;3;3;4;7;2;1
+nothing;nothing;nothing;0;0;0;0;0;1;3;2;4;7;2;1
 ODBC driver;odbc driver;ODBC drivers, ODBC driver;0;0;0;0;0;0;0;0;0;0;0;0
 selector;selector;selector;0;0;0;0;0;0;0;0;0;0;0;0
 JavaScript Object Notation [See JSON];javascript object notation [ see json ];JavaScript Object Notation [See JSON];0;0;0;0;0;0;0;0;0;0;0;0
@@ -923,7 +923,7 @@ compiler;compiler;compilers, compiler;0;4;0;0;0;0;0;1;0;0;0;0
 Mac OS X;mac os x;Mac OS X;0;0;0;0;0;0;0;0;0;0;0;0
 functions for;function for;functions for;3;1;0;0;2;8;1;1;3;1;3;0
 threaded runtime;threaded runtime;threaded runtime;0;0;0;0;0;0;0;0;0;0;0;0
-set;set;sets, set;10;0;1;2;5;24;0;5;2;0;10;0
+set;set;sets, set;10;0;1;2;5;23;0;5;2;0;10;0
 throwing;throwing;throwing;0;0;0;0;0;0;0;3;0;1;2;0
 anonymous type;anonymous type;anonymous types, anonymous type;0;0;0;0;0;0;0;0;0;0;0;0
 strict type;strict type;strict types, strict type;0;0;0;0;0;0;0;0;0;0;0;0
@@ -962,23 +962,23 @@ handling;handling;handling;0;0;0;0;0;0;0;4;0;2;1;0
 truth table;truth table;truth tables, truth table;0;0;0;0;0;0;0;0;0;0;0;0
 double hashing;double hashing;double hashing;0;0;0;0;0;0;0;0;0;0;0;0
 buffermode type;buffermode type;buffermode type;0;0;0;0;0;0;0;0;0;0;0;0
-error;error;errors, error;4;3;5;0;2;5;3;13;0;4;11;6
+error;error;errors, error;4;3;5;0;2;5;3;13;0;4;10;6
 union keyword (C/C++);union keyword (C/C++);union keyword (C/C++);0;0;0;0;0;0;0;0;0;0;0;0
 strict and lazy bytestring;strict and lazy bytestring;strict and lazy bytestrings, strict and lazy bytestring;0;0;0;0;0;0;0;0;0;0;0;0
 loop;loop;loops, loop;0;0;0;3;3;0;0;1;0;0;0;0
 getstatus function;getstatus function;getstatus function;0;0;0;0;0;0;0;0;0;0;0;0
 folding from left;folding from left;folding from left;0;0;0;0;0;0;0;0;0;0;0;0
 show typeclass;show typeclass;show typeclass;0;0;0;0;0;0;0;0;0;0;0;0
-calculator;calculator;calculators, calculator;0;0;1;0;0;0;0;0;0;0;4;0
+calculator;calculator;calculators, calculator;0;0;1;0;0;0;0;0;0;0;2;0
 master socket;master socket;master sockets, master socket;0;0;0;0;0;0;0;0;0;0;0;0
 queuestate;queuestate;queuestate;0;0;0;0;0;0;0;0;0;0;0;0
 .hs source file;.hs source file;.hs source files, .hs source file;0;0;0;0;0;0;0;0;0;0;0;0
 temporary;temporary;temporary;0;0;0;0;0;0;0;15;0;0;0;0
-applicative;applicative;applicative;0;0;0;0;0;0;0;0;68;32;15;0
+applicative;applicative;applicative;0;0;0;0;0;0;0;0;67;32;15;0
 assignment;assignment;assignment;0;0;0;0;0;0;0;0;0;0;1;0
 space leaks 2nd 3rd;space leak 2nd 3rd;space leaks 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0
 stack;stack;stacks, stack;0;0;0;0;0;4;0;0;0;0;47;0
-I/O;I/O;I/O;0;0;0;0;0;0;0;203;44;6;0;0
+I/O;I/O;I/O;0;0;0;0;0;0;0;178;38;6;0;0
 database;database;databases, database;0;0;0;0;0;0;0;0;0;0;0;0
 cheap modification;cheap modification;cheap modifications, cheap modification;0;0;0;0;0;0;0;0;0;0;0;0
 memoization;memoization;memoization;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1000,7 +1000,7 @@ integer;integer;integer;7;4;2;1;0;2;5;3;1;2;0;0
 bit;bit;bit;3;1;3;1;1;0;4;9;16;8;4;0
 sorting;sorting;sorting;0;0;0;2;0;0;0;0;0;0;0;0
 new identity;new identity;new identities, new identity;0;0;0;0;0;0;0;0;0;0;0;0
-newtype wrapper;newtype wrapper;newtype wrapper;0;0;0;0;0;0;0;0;0;0;0;0
+newtype wrapper;newtype wrapper;newtype wrapper;0;0;0;0;0;0;0;0;1;0;0;0
 values (undefined);value ( undefined );values (undefined);0;0;0;0;0;0;0;0;0;0;0;0
 google;google;google;0;0;0;0;0;0;0;0;0;0;0;0
 expression type|see;expression type | see;expression type|see;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1008,14 +1008,14 @@ gettables function;gettables function;gettables function;0;0;0;0;0;0;0;0;0;0;0;0
 Data.List module;Data.List module;Data.List module;0;0;0;0;0;0;0;0;0;0;0;0
 type-checking;type-checking;type-checking;0;0;0;0;0;0;0;0;0;0;0;0
 mplus function;mplus function;mplus function;0;0;0;0;0;0;0;0;0;0;0;0
-record syntax;record syntax;record syntax;0;0;0;0;0;0;10;0;3;0;0;0
+record syntax;record syntax;record syntax;0;0;0;0;0;0;9;0;3;0;0;0
 connecting;connecting;connecting;0;0;0;0;0;0;0;1;0;0;0;0
 FFI binding;ffi binding;FFI binding;0;0;0;0;0;0;0;0;0;0;0;0
 random value;random value;random values, random value;0;0;0;0;0;0;0;13;0;0;0;0
 purity 2nd 3rd [see also pure functions];purity 2nd 3rd [ see also pure function ];purity 2nd 3rd [see also pure functions];0;0;0;0;0;0;0;0;0;0;0;0
 readability;readability;readability;0;0;1;0;0;0;0;0;0;0;1;0
 splitat;splitat;splitat;0;0;0;0;0;1;0;0;0;0;0;0
-constraint;constraint;constraints, constraint;0;5;0;1;1;1;16;0;7;1;6;0
+constraint;constraint;constraints, constraint;0;4;0;1;1;1;15;0;7;1;6;0
 ghci interpreter 2nd;ghci interpreter 2nd;ghci interpreter 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 simulation;simulation;simulation;0;0;0;0;0;0;0;0;0;0;0;0
 edit distance;edit distance;edit distance;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1030,7 +1030,7 @@ POST method (HTTP);post method ( http );POST method (HTTP);0;0;0;0;0;0;0;0;0;0;0
 iterate;iterate;iterate;0;0;0;0;0;1;0;0;0;0;0;0
 perl;perl;perl;0;0;0;0;0;0;0;0;0;0;0;0
 span;span;span;0;0;1;0;0;2;0;0;0;0;0;0
-type keyword;type keyword;type keyword;0;0;0;0;0;0;0;0;0;0;0;0
+type keyword;type keyword;type keyword;0;0;0;0;0;0;1;0;0;0;0;0
 find command;find command;find command;0;0;0;0;0;0;0;0;0;0;0;0
 PCRE library and;PCRE library and;PCRE library and;0;0;0;0;0;0;0;0;0;0;0;0
 chr;chr;chr;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1059,23 +1059,23 @@ isdigit;isdigit;isdigit;0;0;0;0;0;1;0;0;0;0;0;0
 parsec;parsec;parsec;0;0;0;0;0;0;0;0;0;0;0;0
 monotype;monotype;monotype;0;0;0;0;0;0;0;0;0;0;0;0
 monadtrans class;monadtrans class;monadtrans class;0;0;0;0;0;0;0;0;0;0;0;0
-application;application;application;3;0;0;3;15;1;0;1;2;9;1;1
+application;application;application;3;0;0;3;13;1;0;1;2;9;1;1
 arithmetic;arithmetic;arithmetic;3;0;0;0;0;0;0;0;0;0;0;0
-type class;type class;type classes, type class;0;0;0;0;0;0;1;0;28;23;11;0
+type class;type class;type classes, type class;0;0;0;0;0;0;1;0;27;22;11;0
 dispatch function;dispatch function;dispatch function;0;0;0;0;0;0;0;0;0;0;0;0
 :type command 2nd;: type command 2nd;:type command 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 glasgow haskell compiler;glasgow haskell compiler;glasgow haskell compiler;0;0;0;0;0;0;0;0;0;0;0;0
 compact function;compact function;compact function;0;0;0;0;0;0;0;0;0;0;0;0
 oracle;oracle;oracle;0;0;0;0;0;0;0;0;0;0;0;0
-value constructor;value constructor;value constructors, value constructor;0;0;0;0;0;0;39;0;19;0;0;0
+value constructor;value constructor;value constructors, value constructor;0;0;0;0;0;0;38;0;19;0;0;0
 objects 2nd;object 2nd;objects 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 composite data type;composite data type;composite data types, composite data type;0;0;0;0;0;0;0;0;0;0;0;0
 code;code;code;1;2;5;0;3;7;13;37;5;8;7;2
 partial;partial;partial;0;0;0;0;5;0;0;0;1;0;0;0
 blending c with haskell;blending c with haskell;blending c with haskell;0;0;0;0;0;0;0;0;0;0;0;0
-laziness;laziness;laziness;0;0;0;0;3;0;1;4;1;0;0;0
+laziness;laziness;laziness;0;0;0;0;3;0;1;4;0;0;0;0
 CSV file;csv file;CSV files, CSV file;0;0;0;0;0;0;0;0;0;0;0;0
-state monad;state monad;state monad;0;0;0;0;0;0;0;0;0;0;7;0
+state monad;state monad;state monad;0;0;0;0;0;0;0;0;0;0;5;0
 query;query;queries, query;0;0;0;0;0;0;0;0;0;0;0;0
 quality assurance;quality assurance;quality assurance;0;0;0;0;0;0;0;0;0;0;0;0
 getline;getline;getline;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1092,9 +1092,9 @@ lambda function;lambda function;lambda functions, lambda function;0;0;0;0;1;0;0;
 foldr;foldr;foldr;0;0;0;0;1;0;0;0;0;0;0;0
 emptydatadecls language extension;emptydatadecls language extension;emptydatadecls language extension;0;0;0;0;0;0;0;0;0;0;0;0
 inclusive or;inclusive or;inclusive or;0;0;0;0;0;0;0;0;0;0;0;0
-fold;fold;fold;0;0;0;0;45;12;2;0;12;0;10;0
-foldl;foldl;foldl;0;0;0;0;1;1;0;0;0;0;0;0
-foldm;foldm;foldm;0;0;0;0;0;0;0;0;0;0;1;0
+fold;fold;fold;0;0;0;0;44;12;2;0;11;0;9;0
+foldl;foldl;foldl;0;0;0;0;2;1;0;0;0;0;0;0
+foldm;foldm;foldm;0;0;0;0;0;0;0;0;0;0;0;0
 line-aligned chunk;line-aligned chunk;line-aligned chunks, line-aligned chunk;0;0;0;0;0;0;0;0;0;0;0;0
 head normal form (HNF);head normal form ( hnf );head normal form (HNF);0;0;0;0;0;0;0;0;0;0;0;0
 dates and time;date and time;dates and times, dates and time;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1176,7 +1176,6 @@ synchronizing variable;synchronizing variable;synchronizing variable;0;0;0;0;0;0
 WHNF (weak head normal form) 2nd 3rd;whnf ( weak head normal form ) 2nd 3rd;WHNF (weak head normal form) 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0
 \r (carriage return) character;\ r ( carriage return ) character;\r (carriage return) character;0;0;0;0;0;0;0;0;0;0;0;0
 fold' function;fold ' function;fold' function;0;0;0;0;0;0;0;0;0;0;0;0
-pcre_exec function;pcre_exec function;pcre_exec function;0;0;0;0;0;0;0;0;0;0;0;0
 identifier;identifier;identifier;0;0;0;0;0;0;0;0;0;0;0;0
 unary operator (-);unary operator (-);unary operator (-);0;0;0;0;0;0;0;0;0;0;0;0
 chunk;chunk;chunks, chunk;0;0;0;0;0;0;0;18;0;0;0;0
@@ -1195,16 +1194,16 @@ global variable;global variable;global variables, global variable;0;0;0;0;0;0;0;
 induction;induction;induction;0;0;0;0;0;0;0;0;0;0;0;0
 dictionary;dictionary;dictionaries, dictionary;0;0;0;0;0;1;0;0;1;0;0;0
 invisible data dependency;invisible data dependency;invisible data dependencies, invisible data dependency;0;0;0;0;0;0;0;0;0;0;0;0
-data type;data type;data types, data type;0;0;1;0;0;2;39;3;9;7;1;5
+data type;data type;data types, data type;0;0;1;0;0;2;38;3;9;7;1;5
 database engine;database engine;database engines, database engine;0;0;0;0;0;0;0;0;0;0;0;0
 file descriptors (FDs);file descriptor ( fds );file descriptors (FDs);0;0;0;0;0;0;0;0;0;0;0;0
 Daylight Saving Time (DST);daylight saving time ( dst );Daylight Saving Time (DST);0;0;0;0;0;0;0;0;0;0;0;0
-length;length;length;9;3;5;3;4;2;0;4;12;0;0;0
+length;length;length;9;3;5;3;3;2;0;4;12;0;0;0
 bytestring;bytestring;bytestrings, bytestring;0;0;0;0;0;0;0;18;0;0;0;0
 filename matching;filename matching;filename matching;0;0;0;0;0;0;0;0;0;0;0;0
 allocating datum;allocating datum;allocating data, allocating datum;0;0;0;0;0;0;0;0;0;0;0;0
 stub version of types/functions;stub version of types/functions;stub versions of types/functions, stub version of types/functions;0;0;0;0;0;0;0;0;0;0;0;0
-type annotation;type annotation;type annotations, type annotation;0;2;0;0;0;0;3;1;2;0;0;0
+type annotation;type annotation;type annotations, type annotation;0;1;0;0;0;0;3;1;2;0;0;0
 glasgow haskell;glasgow haskell;glasgow haskell;0;0;0;0;0;0;0;0;0;0;0;0
 hgetcontents function;hgetcontents function;hgetcontents function;0;0;0;0;0;0;0;0;0;0;0;0
 UDP;udp;UDP;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1221,7 +1220,7 @@ min;min;min;0;0;0;0;0;0;0;0;0;0;0;0
 undefined value;undefined value;undefined values, undefined value;0;0;0;0;0;0;0;0;0;0;0;0
 information hiding;information hiding;information hiding;0;0;0;0;0;0;0;0;0;0;0;0
 stdout function;stdout function;stdout function;0;0;0;0;0;0;0;0;0;0;0;0
-instance;instance;instances, instance;4;1;2;6;3;5;77;9;119;17;48;1
+instance;instance;instances, instance;4;1;2;6;3;5;75;9;118;17;48;1
 pseudorandom number generator (PRNG);pseudorandom number generator ( prng );pseudorandom number generator (PRNG);0;0;0;0;0;0;0;0;0;0;0;0
 Haskell DataBase Connectivity system (HDBC);haskell database connectivity system ( hdbc );Haskell DataBase Connectivity system (HDBC);0;0;0;0;0;0;0;0;0;0;0;0
 normal form datum;normal form datum;normal form data, normal form datum;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1237,7 +1236,7 @@ deleting/renaming;deleting/renaming;deleting/renaming;0;0;0;0;0;0;0;0;0;0;0;0
 length function 2nd;length function 2nd;length function 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 rotatehorse;rotatehorse;rotatehorse;0;0;0;0;0;0;0;0;0;0;0;0
 kleisli composition;kleisli composition;kleisli composition;0;0;0;0;0;0;0;0;0;0;0;0
-monad type class;monad type class;monad type class;0;0;0;0;0;0;0;0;0;1;0;0
+monad type class;monad type class;monad type class;0;0;0;0;0;0;0;0;0;0;0;0
 evaluation order;evaluation order;evaluation order;0;0;0;0;0;0;0;0;0;0;0;0
 local;local;local;0;0;3;0;0;0;0;0;0;0;0;0
 pitfall;pitfall;pitfalls, pitfall;1;0;0;0;0;0;0;0;0;0;0;0
@@ -1255,7 +1254,7 @@ single-character escape code;single-character escape code;single-character escap
 type inference 2nd;type inference 2nd;type inference 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 garbage collecting;garbage collecting;garbage collecting;0;0;0;0;0;0;0;0;0;0;0;0
 moggi;moggi;moggi;0;0;0;0;0;0;0;0;0;0;0;0
-module;module;modules, module;0;0;0;0;0;69;8;6;3;0;4;0
+module;module;modules, module;0;0;0;0;0;70;8;6;3;0;4;0
 string literal;string literal;string literals, string literal;0;0;0;0;0;0;0;0;0;0;0;0
 finiteness;finiteness;finiteness;0;0;0;0;0;0;0;0;0;0;0;0
 converting;converting;converting;0;0;0;0;0;3;3;0;2;1;1;0
@@ -1265,7 +1264,7 @@ replicate function;replicate function;replicate function;1;0;0;0;0;0;0;0;0;0;0;0
 gcc compiler;gcc compiler;gcc compiler;0;0;0;0;0;0;0;0;0;0;0;0
 ill typed rule;ill typed rule;ill typed rules, ill typed rule;0;0;0;0;0;0;0;0;0;0;0;0
 local definition;local definition;local definitions, local definition;0;0;0;0;0;0;0;0;0;0;0;0
-state;state;state;1;2;1;1;3;0;5;8;4;4;43;0
+state;state;state;1;2;1;1;3;0;5;8;3;4;41;0
 lend function;lend function;lend function;0;0;0;0;0;0;0;0;0;0;0;0
 invariant;invariant;invariants, invariant;0;0;0;0;0;0;0;0;0;0;0;0
 conditional evaluation 2nd;conditional evaluation 2nd;conditional evaluation 2nd;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1274,7 +1273,7 @@ association lists 2nd;association list 2nd;association lists 2nd;0;0;0;0;0;0;0;0
 widget descriptions saved a;widget description saved a;widget descriptions saved as, widget descriptions saved a;0;0;0;0;0;0;0;0;0;0;0;0
 composable functor;composable functor;composable functors, composable functor;0;0;0;0;0;0;0;0;0;0;0;0
 finding statu;finding statu;finding status, finding statu;0;0;0;0;0;0;0;0;0;0;0;0
-typeclass;typeclass;typeclasses, typeclass;0;14;0;2;2;6;51;5;10;0;0;0
+typeclass;typeclass;typeclasses, typeclass;0;14;0;2;2;6;48;5;10;0;0;0
 nomonomorphismrestriction 2nd;nomonomorphismrestriction 2nd;nomonomorphismrestriction 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 foreignptr type;foreignptr type;foreignptr type;0;0;0;0;0;0;0;0;0;0;0;0
 link time;link time;link time;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1289,7 +1288,7 @@ point-free expression;point-free expression;point-free expressions, point-free e
 greedy algorithm;greedy algorithm;greedy algorithm;0;0;0;0;0;0;0;0;0;0;0;0
 table;table;table;0;0;0;0;0;1;0;0;0;0;0;0
 transforming input;transforming input;transforming input;0;0;0;0;0;0;0;0;0;0;0;0
-associativity;associativity;associativity;0;0;0;0;0;0;0;0;1;2;0;0
+associativity;associativity;associativity;0;0;0;0;0;0;0;0;1;1;0;0
 literal;literal;literal;0;0;0;0;0;0;0;0;0;0;0;0
 hputstrln function;hputstrln function;hputstrln function;0;0;0;0;0;0;0;0;0;0;0;0
 applicative type class;applicative type class;applicative type class;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1298,12 +1297,12 @@ URL-encoded query string;URL-encoded query string;URL-encoded query strings, URL
 monadplus typeclass;monadplus typeclass;monadplus typeclass;0;0;0;0;0;0;0;0;0;0;0;0
 foldl function 2nd;foldl function 2nd;foldl function 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 functionaldependency;functionaldependency;functionaldependencies, functionaldependency;0;0;0;0;0;0;0;0;0;0;0;0
-value;value;value;6;10;7;7;44;45;146;76;230;200;264;5
+value;value;value;6;10;7;4;44;45;145;75;230;196;264;5
 parameterized types 2nd;parameterized type 2nd;parameterized types 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 accumulator;accumulator;accumulator;0;0;0;0;36;4;2;0;4;0;10;0
 snd function;snd function;snd function;0;0;0;0;0;0;0;0;0;0;0;0
 prelude;prelude;prelude;0;0;0;0;0;0;1;0;0;0;0;0
-recursive function;recursive function;recursive function;0;0;1;2;2;1;0;0;0;0;0;0
+recursive function;recursive function;recursive function;0;0;1;1;2;1;0;0;0;0;0;0
 getclocktime function;getclocktime function;getclocktime function;0;0;0;0;0;0;0;0;0;0;0;0
 flex;flex;flex;0;0;0;0;0;0;1;0;0;0;0;0
 pythagoras's theorem;pythagoras ' s theorem;pythagoras's theorem;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1320,7 +1319,7 @@ quadratic equation;quadratic equation;quadratic equation;0;0;0;0;0;0;0;0;0;0;0;0
 reporting;reporting;reporting;0;0;0;0;0;0;0;2;0;0;1;0
 key-value pair;key-value pair;key-value pairs, key-value pair;0;0;0;0;0;2;1;0;0;0;0;0
 distributivity;distributivity;distributivity;0;0;0;0;0;0;0;0;0;0;0;0
-identity;identity;identities, identity;0;0;0;5;0;0;1;0;17;6;2;0
+identity;identity;identities, identity;0;0;0;5;0;0;1;0;17;4;2;0
 polymorphism;polymorphism;polymorphism;0;0;0;0;0;0;0;0;1;0;0;0
 mzero;mzero;mzero;0;0;0;0;0;0;0;0;0;0;0;0
 numeric library;numeric library;numeric library;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1338,7 +1337,7 @@ ADT;adt;ADT;0;0;0;0;0;0;0;0;0;0;0;0
 System.Directory module 2nd 3rd;System.Directory module 2nd 3rd;System.Directory module 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0
 string function;string function;string function;0;0;0;0;0;0;0;0;0;0;0;0
 monads 2nd;monad 2nd;monads 2nd;0;0;0;0;0;0;0;0;0;0;0;0
-data structure;data structure;data structures, data structure;2;0;0;2;0;1;2;1;8;0;3;11
+data structure;data structure;data structures, data structure;2;0;0;2;0;1;1;1;7;0;3;11
 deadlocks 2nd;deadlock 2nd;deadlocks 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 boolean expression;boolean expression;boolean expressions, boolean expression;0;0;1;0;0;0;0;0;0;0;0;0
 sequencing;sequencing;sequencing;0;0;0;0;0;0;0;1;2;0;0;0
@@ -1363,20 +1362,20 @@ socket;socket;sockets, socket;0;0;0;0;0;0;0;0;0;0;0;0
 pipes (redirection);pipe ( redirection );pipes (redirection);0;0;0;0;0;0;0;0;0;0;0;0
 glade;glade;glade;0;0;0;0;0;0;0;0;0;0;0;0
 maxthree;maxthree;maxthree;0;0;0;0;0;0;0;0;0;0;0;0
-constructor;constructor;constructors, constructor;0;0;0;0;0;0;95;1;48;0;3;0
+constructor;constructor;constructors, constructor;0;0;0;0;0;0;93;1;48;0;3;0
 context of failure;context of failure;context of failure;0;0;0;0;0;0;0;0;0;1;1;0
 software;software;software;0;0;0;0;0;0;0;0;0;0;0;0
-guard;guard;guards, guard;0;0;24;2;0;0;0;4;0;1;0;0
+guard;guard;guards, guard;0;0;24;2;0;0;0;3;0;1;0;0
 boolean algebra;boolean algebra;boolean algebra;1;0;0;0;0;0;0;0;0;0;0;0
 Data.ByteString.Lazy.Char8 module;Data.ByteString.Lazy.Char8 module;Data.ByteString.Lazy.Char8 module;0;0;0;0;0;0;0;0;0;0;0;0
 negate;negate;negate;0;0;0;0;1;0;0;0;0;0;0;0
 networking;networking;networking;0;0;0;0;0;0;0;0;0;0;0;0
 reduction;reduction;reduction;0;0;0;0;0;0;0;0;0;0;0;0
-function;function;functions, function;83;34;72;18;254;127;124;157;313;155;221;36
+function;function;functions, function;82;33;73;17;248;127;124;157;308;153;218;36
 strict evaluation 2nd;strict evaluation 2nd;strict evaluation 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 MonadIO typeclass;monadio typeclass;MonadIO typeclass;0;0;0;0;0;0;0;0;0;0;0;0
 divide and conquer;divide and conquer;divide and conquer;0;0;0;0;0;0;0;0;0;0;0;0
-random number;random number;random numbers, random number;0;0;0;0;0;0;0;15;0;0;7;0
+random number;random number;random numbers, random number;0;0;0;0;0;0;0;15;0;0;6;0
 overlapping;overlapping;overlapping;0;0;0;0;0;0;0;0;0;0;0;0
 RPN (Reverse Polish Notation);rpn ( reverse polish notation );RPN (Reverse Polish Notation);0;0;0;0;0;0;0;0;0;0;0;0
 embedded domain specific language;embedded domain specific language;embedded domain specific languages, embedded domain specific language;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1394,7 +1393,7 @@ types 2nd 3rd;type 2nd 3rd;types 2nd 3rd;0;0;0;0;0;0;0;0;0;0;0;0
 Graphics.UI.Gtk module;Graphics.UI.Gtk module;Graphics.UI.Gtk module;0;0;0;0;0;0;0;0;0;0;0;0
 int;int;int;0;1;0;0;0;0;0;0;0;0;0;0
 row datum;row datum;row data, row datum;0;0;0;0;0;0;0;0;0;0;0;0
-newtype keyword;newtype keyword;newtype keyword;0;0;0;0;0;0;0;0;1;0;0;0
+newtype keyword;newtype keyword;newtype keyword;0;0;0;0;0;0;0;0;5;0;0;0
 subtraction (-) option;subtraction (-) option;subtraction (-) option;0;0;0;0;0;0;0;0;0;0;0;0
 binary I/O;binary I/O;binary I/O;0;0;0;0;0;0;0;0;0;0;0;0
 unboxed value in arrays;unboxed value in array;unboxed values in arrays, unboxed value in arrays;0;0;0;0;0;0;0;0;0;0;0;0
@@ -1406,7 +1405,7 @@ HPC;hpc;HPC;0;0;0;0;0;0;0;0;0;0;0;0
 genericity;genericity;genericity;0;0;0;0;0;0;0;0;0;0;0;0
 lock order inversion;lock order inversion;lock order inversion;0;0;0;0;0;0;0;0;0;0;0;0
 repeat;repeat;repeat;1;0;4;0;0;0;1;2;1;0;0;0
-class;class;classes, class;0;10;0;1;1;0;28;0;40;26;13;1
+class;class;classes, class;0;10;0;1;1;0;28;0;39;25;13;1
 quickquery' function 2nd;quickquery ' function 2nd;quickquery' function 2nd;0;0;0;0;0;0;0;0;0;0;0;0
 scaled value;scaled value;scaled values, scaled value;0;0;0;0;0;0;0;0;0;0;0;0
 mconcat;mconcat;mconcat;0;0;0;0;0;0;0;0;0;0;0;0

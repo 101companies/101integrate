@@ -51,10 +51,10 @@ def createTable(contribs, classification, classname):
 				where(lambda page: handlePrefix(page['page']['page']['p']).lower() == p.lower() and page['page']['page']['n'].lower() == n.lower() and 'internal_links' in page['page']). \
 				select(lambda page: map(lambda l: l.split('::')[-1].lower(),page['page']['internal_links'])). \
 			to_list()
-			clevel1Links.extend(ls[0] if ls else [])
+			clevel1Links.extend(filter(lambda l: l not in clevel0Links, ls[0]) if ls else [])
 		level1Links[contribName] = clevel1Links
 		print '', str(len(clevel1Links)), 'level 1 links found.'
-	mytemplate = Template(filename='coverageTemplate.txt')
+	mytemplate = Template(filename='templates/coverageTemplate.txt')
 	table = mytemplate.render(mappedTerms=mappedTerms, contribs=contribs.keys(), level0Links = level0Links, level1Links=level1Links)
 	with open(classBase + '/coverage.html', 'write') as tablef:
 		tablef.write(table)
