@@ -5,7 +5,7 @@ FREQ,type,Type,
 FREQ,example,,metaterm
 FREQ,number,Number,
 FREQ,integer,Integer,int/integer distinction too Haskell-specific
-FREQ,all,too generic term
+FREQ,all,,too generic term
 FREQ,string,String,
 FREQ,return,,too language-specific
 FREQ,pattern,Pattern,
@@ -36,7 +36,7 @@ CHAP,map,Map function,
 CHAP,name,,generalEnglish
 CHAP,parser,Parser,
 CHAP,pattern,Pattern,
-CHAP,product,Product function,
+CHAP,product,,specific sample
 CHAP,recursion,Recursion,  
 CHAP,reverse,,specific sample
 CHAP,script,Haskell script,

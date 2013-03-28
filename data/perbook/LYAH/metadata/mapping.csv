@@ -13,7 +13,7 @@ CHAP,context,,generalEnglish
 CHAP,data structure,Data structure,
 CHAP,eq,,tooSpecific
 CHAP,expression,Expression,
-CHAP,factorial,Factorial,
+CHAP,factorial,,specific function
 CHAP,file,File,
 CHAP,fmap,Fmap function,
 CHAP,fold,Catamorphism,
@@ -37,7 +37,7 @@ CHAP,pattern matching,Pattern matching,
 CHAP,random,Random number,
 CHAP,recursion,Recursion,
 CHAP,stack,Stack,
-CHAP,sum,Sum function,
+CHAP,sum,,too specific
 CHAP,tail,Tail,
 CHAP,tree,Tree,
 CHAP,typeclass,Type class,
