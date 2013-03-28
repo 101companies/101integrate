@@ -13,7 +13,6 @@ for resName in resNames:
 	rawmapping = csv.reader(open(datafolder + sys.argv[2]  + resName + "/metadata/mapping.csv"), delimiter=',')
 	mapping = {}
 	for row in rawmapping:
-		print row[0]
 		if row[2]:
 			mapping[row[2]] = row[1]
 	mappings[resName] = mapping
