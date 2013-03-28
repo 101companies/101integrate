@@ -6,7 +6,7 @@ import json
 import csv
 
 resNames = sys.argv[3:-1]
-print resNames
+print "Checking...", resNames
 datafolder = sys.argv[1]
 mappings = {}
 for resName in resNames:
