@@ -14,7 +14,7 @@ for resName in resNames:
 	mapping = {}
 	for row in rawmapping:
 		print row[0]
-		if row[0] == 'TERM' and row[2]:
+		if row[2]:
 			mapping[row[2]] = row[1]
 	mappings[resName] = mapping
 
