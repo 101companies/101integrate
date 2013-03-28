@@ -53,6 +53,8 @@ for i, term in enumerate(distribution):
 			else:
 				secondary.append(maxLink)
 	termlinks[term] = {'primary' : primary, 'secondary' : secondary}
+	if primary and secondary:
+		print term
 f = open(resourcebase + "backlinks.json", "write")
 f.write(json.dumps(termlinks))
 
