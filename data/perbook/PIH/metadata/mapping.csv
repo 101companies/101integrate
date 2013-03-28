@@ -1,36 +1,48 @@
 Kind,IndexTerm,WikiTerm,Comment
-TERM,action,Action,
-TERM,application,Function application,
-TERM,bit,Bit,
-TERM,bool,Boolean,
-TERM,calculator,,illustration
-TERM,character,Character,
-TERM,class,Type class,
-TERM,comprehension,List comprehension,
-TERM,declaration,Declaration,
-TERM,div,,boringFunction
-TERM,drop,,boringFunction
-TERM,equation,Equation,
-TERM,expr,,illustration
-TERM,foldr,Fold function,
-TERM,identity,Identity element,
-TERM,induction,Induction,
-TERM,instance,Type-class instance,
-TERM,int,Integer,
+FREQ,function,Function,
+FREQ,list,List,
+FREQ,type,Type,
+FREQ,example,,metaterm
+FREQ,number,Number,
+FREQ,integer,Integer,int/integer distinction too Haskell-specific
+FREQ,all,too generic term
+FREQ,string,String,
+FREQ,return,,too language-specific
+FREQ,pattern,Pattern,
+FREQ,show,,too language-specific
+FREQ,take,,specific example
+CHAP,action,Action,
+CHAP,application,Function application,
+CHAP,bit,Bit,
+CHAP,bool,Boolean,
+CHAP,calculator,,illustration
+CHAP,character,Character,
+CHAP,class,Type class,
+CHAP,comprehension,List comprehension,
+CHAP,declaration,Declaration,
+CHAP,div,,boringFunction
+CHAP,drop,,boringFunction
+CHAP,equation,Equation,
+CHAP,expr,,illustration
+CHAP,foldr,Fold function,
+CHAP,identity,Identity element,
+CHAP,induction,Induction,
+CHAP,instance,Type-class instance,
+CHAP,int,Integer,
 TERN,lambda,Lambda abstraction,
-TERM,lazy,,incompleteTerm
-TERM,lazy evaluation,Lazy evaluation,
-TERM,map,Map function,
-TERM,name,,generalEnglish
-TERM,parser,Parser,
-TERM,pattern,Pattern,
-TERM,product,Product function,
-TERM,recursion,Recursion,  
-TERM,reverse,Reverse function,
-TERM,script,Haskell script,
-TERM,string,String,
-TERM,text,Text,
-TERM,tree,Tree,
+CHAP,lazy,,incompleteTerm
+CHAP,lazy evaluation,Lazy evaluation,
+CHAP,map,Map function,
+CHAP,name,,generalEnglish
+CHAP,parser,Parser,
+CHAP,pattern,Pattern,
+CHAP,product,Product function,
+CHAP,recursion,Recursion,  
+CHAP,reverse,,specific sample
+CHAP,script,Haskell script,
+CHAP,string,String,
+CHAP,text,Text,
+CHAP,tree,Tree,
 TITLE,Types.and.classes,,
 TITLE,The.countdown.problem,,
 TITLE,Functional.parsers,Parser combinator,
