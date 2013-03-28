@@ -10,7 +10,6 @@ FREQ,string,String,
 FREQ,return,,too language-specific
 FREQ,pattern,Pattern,
 FREQ,show,,too language-specific
-FREQ,reverse,,specific example
 FREQ,take,,specific example
 CHAP,action,Action,
 CHAP,application,Function application,
@@ -39,7 +38,7 @@ CHAP,parser,Parser,
 CHAP,pattern,Pattern,
 CHAP,product,Product function,
 CHAP,recursion,Recursion,  
-CHAP,reverse,Reverse function,
+CHAP,reverse,,specific sample
 CHAP,script,Haskell script,
 CHAP,string,String,
 CHAP,text,Text,
