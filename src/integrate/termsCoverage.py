@@ -19,7 +19,7 @@ for resource in mapping:
 	mappedTerms |= set(mapping[resource].keys())
 
 print 'Loading JSON dump...'
-data = urllib2.urlopen('http://data.101companies.org/dumps/Wiki101Full.json')
+data = urllib2.urlopen('http://data.101companies.org/dumps/wiki.json')
 wikidump = json.load(data)
 pages = wikidump['wiki']['pages']
 print mappedTerms
