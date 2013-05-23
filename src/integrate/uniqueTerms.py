@@ -23,7 +23,7 @@ def distinct(seq):
   [noDupes.append(i) for i in seq if not noDupes.count(i)]
   return noDupes
 
-data = urllib2.urlopen('http://data.101companies.org/dumps/Wiki101Full.json')
+data = urllib2.urlopen('http://data.101companies.org/dumps/wiki.json')
 wikidump = json.load(data)
 pages = wikidump['wiki']['pages']
 
@@ -38,7 +38,7 @@ for theme in themes:
 
   wikiConpepts.append(c.capitalize() for c in list(itertools.chain.from_iterable(concepts)))
 
-distinctWikiConcepts =  filter(lambda term: term.startswith("Language") or term.startswith("Technology") or (not ':' in term), distinct(list(itertools.chain.from_iterable(wikiConpepts))))  	
+distinctWikiConcepts =  filter(lambda term: term.startswith("Language") or term.startswith("Technology") or (not ':' in term), distinct(list(itertools.chain.from_iterable(wikiConpepts))))
 #print distinctWikiConcepts
 
 allBookConcepts = []
@@ -47,7 +47,7 @@ bookConcepts = {}
 for book in books:
   if (os.path.exists('../../data/perbook/' + book + '/metadata/mapping.csv') == False):
     pass
-  else:  
+  else:
     ifile  = open('../../data/perbook/' + book + '/metadata/mapping.csv', 'rb')
     reader = csv.reader(ifile)
     reader.next() # skip header
@@ -72,8 +72,8 @@ def getUniqueContributionPerBook(bookConcepts):
     if (len(books) == 1):
       if (res.has_key(books[0]) == False):
         res[books[0]] = []
-      res[books[0]].append(term) 
-  return res  
+      res[books[0]].append(term)
+  return res
 
 def getNonUniqueContributionFromBooks(bookConcepts):
   res = []
@@ -82,7 +82,7 @@ def getNonUniqueContributionFromBooks(bookConcepts):
     # non-unique term - defined more than in one book
     if (len(books) > 1):
       res.append(term)
-  return distinct(res)  
+  return distinct(res)
 
 def getUniqueConcepts(input, sourceToSearch):
   unique = []
@@ -92,7 +92,7 @@ def getUniqueConcepts(input, sourceToSearch):
     else:
       unique.append(concept)
 
-  return unique          
+  return unique
 
 unique = getUniqueContributionPerBook(bookConcepts)
 nonUnique  = getNonUniqueContributionFromBooks(bookConcepts)
@@ -108,12 +108,12 @@ booksOnly = getUniqueConcepts(distinctBookConcepts, distinctWikiConcepts)
 #print json.dumps({'wikiOnly': wikiOnly, 'booksOnly': booksOnly})
 
 def toTex(list, file):
-  with open ('../../data/summary/'+ file, 'w') as f: 
+  with open ('../../data/summary/'+ file, 'w') as f:
     f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  list)))
 
 def toJson(list, file):
-  with open ('../../data/summary/'+ file, 'w') as f: 
-    f.write(json.dumps(list))   
+  with open ('../../data/summary/'+ file, 'w') as f:
+    f.write(json.dumps(list))
 
 def toHtml(list, file):
   # Open and read template
@@ -122,7 +122,7 @@ def toHtml(list, file):
 
   # Write the output to a file
   with open('../../data/summary/'+ file, 'w') as out_f:
-      out_f.write(output)    
+      out_f.write(output)
 
 for book, terms in unique.items():
   toTex(terms, str(book) + '_unique.tex')
@@ -131,7 +131,7 @@ for book, terms in unique.items():
 
 toTex(nonUnique, 'nonUnique.tex')
 toJson(nonUnique, 'nonUnique.json')
-toHtml(nonUnique, 'nonUnique.html')  
+toHtml(nonUnique, 'nonUnique.html')
 
 toTex(wikiOnly, 'wikiOnly.tex')
 toJson(wikiOnly, 'wikiOnly.json')
