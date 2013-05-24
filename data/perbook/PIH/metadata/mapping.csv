@@ -25,16 +25,22 @@ CHAP,drop,,boringFunction
 CHAP,equation,Equation,
 CHAP,expr,,illustration
 CHAP,foldr,Fold function,
+CHAP,foldr,Fold,
+CHAP,foldr,Catamorphism,
 CHAP,identity,Identity element,
 CHAP,induction,Induction,
 CHAP,instance,Type-class instance,
 CHAP,int,Integer,
 TERN,lambda,Lambda abstraction,
+TERN,lambda,Anonymous function,
 CHAP,lazy,,incompleteTerm
 CHAP,lazy evaluation,Lazy evaluation,
+CHAP,lazy evaluation,Evaluation strategy,
+CHAP,lazy evaluation,Eager evaluation,
 CHAP,map,Map function,
 CHAP,name,,generalEnglish
 CHAP,parser,Parser,
+CHAP,parser,Parsing,
 CHAP,pattern,Pattern,
 CHAP,product,,specific sample
 CHAP,recursion,Recursion,  
