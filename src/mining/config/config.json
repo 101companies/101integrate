@@ -1,5 +1,7 @@
 {
 	"RWH" :{
+		"fullName": "Real World Haskell",
+		"isLinkable": true,
 		"crawl": "true",
        	 	"ext": ".html",
        	 	"urlBase": "http://book.realworldhaskell.org/read/",
@@ -14,6 +16,8 @@
 		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}]
 	},
 	"PIH": {
+		"fullName": "Programming in Haskell",
+		"isLinkable": false,
 		"crawl": "false",
 		"kind": "books",
 		"cite": "Hutton, Graham. \"$$$,\" in Programming in Haskell. Cambridge University Press, 2007.",
@@ -24,6 +28,8 @@
 		"exclude-patterns": [{"pos":"suffix", "string":" of"}, {"pos":"suffix", "string":" and"}]
 	},
 	"Craft" : {
+		"fullName": "Haskell: The Craft of Functional Programming",
+		"isLinkable": false,
 		"crawl": "false",
 		"kind": "books",
 		"cite": "Thompson, Simon. \"$$$,\" in \"Haskell: The Craft of Functional Programming. Addison-Welsey.\" Reading (1999).",
@@ -34,6 +40,8 @@
 		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}, {"pos":"prefix", "string":"as "}, {"pos":"prefix","string":"a "}, {"pos":"suffix", "string":" and"}]
 	},
 	"LYAH": {
+		"fullName": "Learn You a Haskell",
+		"isLinkable": true,
 		"crawl": "false",
          		"ext": "",
          		"urlBase": "http://learnyouahaskell.com/",

@@ -50,10 +50,10 @@ mergeBacklinkMappings:
 	python mergeBacklinks.py $(DATAFOLDER) perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) allbooks/
 
 mergeMappings:
-	python mergeMappings.py $(DATAFOLDER) perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) allbooks/
+	python mergeMappings.py $(DATAFOLDER) perbook/ $(foreach r,$(ALL_BOOKS), $(r)) allbooks/
 
 deployBacklinks:
 	scp  ../../data/allbooks/backlinks.json ../../data/allbooks/mapping.json worker@black42.uni-koblenz.de:~/101worker/services/termResources/
 
-make termCoverage:
+termCoverage:
 	python termCoverage.py $(DATAFOLDER)/allbooks/

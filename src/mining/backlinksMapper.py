@@ -29,14 +29,15 @@ for chapter in chapters:
 	filen = chapter['file']
 	filesn[filen] = chapter['title']
 for i, term in enumerate(distribution):
+	if term == "monad":
+		print "Yes"
 	shallow = map(lambda x : sum(x), distribution[term])
-	maxChapIndecies = map(lambda x: shallow.index(x), sorted(shallow, reverse=True)[:int(sys.argv[5])])
-
+	maxChapIndecies = [i[0] for i in sorted(enumerate(shallow), reverse=True, key=lambda x:x[1])][:int(sys.argv[5])]
 	primary = []
 	secondary = []
 	for maxChapIndex in maxChapIndecies:
 		isPrime = False
-		if term in profile and profile[term][maxChapIndex] != 'NA':
+		if term in profile and profile[term][maxChapIndex] != " ":
 			isPrime = True
 		parapraphDistribution = distribution[term][maxChapIndex]
 		if sum(parapraphDistribution) > 0:
@@ -44,15 +45,19 @@ for i, term in enumerate(distribution):
 			parapraphDistribution = distribution[term][maxChapIndex]
 			firstOcc = parapraphDistribution.index(filter(lambda x : x > 0, parapraphDistribution)[0])
 			if hasUrl:
-				maxLink = resInfos[resourcename]['urlBase'] + maxFileName.split('.')[0] + resInfos[resourcename]['ext']
-				maxLink += "#" + structure[maxChapIndex]['partids'][firstOcc]
+				maxLinkID = resInfos[resourcename]['urlBase'] + maxFileName.split('.')[0] + resInfos[resourcename]['ext']
+				maxLinkID += "#" + structure[maxChapIndex]['partids'][firstOcc]
 			else:
-				maxLink = resInfos[resourcename]['cite'].replace("$$$",filesn[maxFileName])
+				maxLinkID = resInfos[resourcename]['cite'].replace("$$$",filesn[maxFileName])
+			maxLink = {'full': maxLinkID, 'chapter': filesn[maxFileName]}
 			if isPrime:
 				primary.append(maxLink)
 			else:
 				secondary.append(maxLink)
 	termlinks[term] = {'primary' : primary, 'secondary' : secondary}
+	if term == "monad":
+		for s in secondary:
+			print s
 f = open(resourcebase + "backlinks.json", "write")
 f.write(json.dumps(termlinks))
 

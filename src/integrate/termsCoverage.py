@@ -19,7 +19,7 @@ for resource in mapping:
 	mappedTerms |= set(mapping[resource].keys())
 
 print 'Loading JSON dump...'
-data = urllib2.urlopen('http://data.101companies.org/dumps/Wiki101Full.json')
+data = urllib2.urlopen('http://data.101companies.org/dumps/wiki.json')
 wikidump = json.load(data)
 pages = wikidump['wiki']['pages']
 print mappedTerms
@@ -79,7 +79,7 @@ for theme in themes:
   	createTable(dict([(c['name'],c['links']) for c in contribs]), 'themes', theme)
 
 for language in languages:
- 	print 'Table for', theme
+ 	print 'Table for', language
 	contribs = query(allLanguageUsers). \
   	where(lambda page: filter(lambda p: p['p'] == 'Language' and p['n'] == language and 'internal_links' in page['page'], page['page']['uses'])). \
   	select(lambda page: {'name': page['page']['page']['n'], 'links': map(lambda l: l.lower().split('::')[-1],page['page']['internal_links'])}). \
