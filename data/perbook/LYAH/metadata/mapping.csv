@@ -2,7 +2,7 @@ Kind,IndexTerm,WikiTerm,Comment
 FREQ,function,Function,
 FREQ,list,List,
 FREQ,take,,specific example
-FREQ,instance,type-class instance,
+FREQ,instance,Type-class instance,
 FREQ,haskell,Language:Haskell,
 CHAP,accumulator,Accumulator,
 CHAP,applicative,Applicative functor,
