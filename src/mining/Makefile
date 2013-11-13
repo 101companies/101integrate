@@ -3,7 +3,7 @@ include ../Makefile.vars
 ONLINEBOOKS = RWH LYAH
 DATAFOLDER = ../../data/
 
-HTML2TXT=../../bin/html2text 
+#HTML2TXT=../../bin/html2text 
 
 mine:
 	make cleanindecies
@@ -20,7 +20,7 @@ backlink:
 cleanOnlineBooks:
 	for b in ${ONLINEBOOKS}; do \
 		for h in ../../data/perbook/"$$b"/contents/*; do \
-			 ${HTML2TXT} "$$h" --ignore-links --ignore-images| tee "$$h".txt; \
+			 html2text "$$h" --ignore-links --ignore-images| tee "$$h".txt; \
 			rm "$$h"; \
 		done \
 	done
