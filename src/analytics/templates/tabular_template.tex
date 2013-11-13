@@ -1,11 +1,13 @@
-    \begin{tabular} {% block header %} {{ '{|' }}{% for col in head %}c{% if not loop.last %}|{% endif %}{% endfor %}{{ '|}' }}  {% endblock %} 
+    \begin{tabular} {% block header %} {{ '{|' }}{% for col in head %} c{% if not loop.last %}|{% endif %}{% endfor %}{{ '|}' }}  {% endblock %} 
     \hline
-    {% for col in head %} \textbf{ {{col}} } {% if not loop.last %}&{% endif %} {% endfor %} 
+    {% for col in head %} {% if loop.first %} \leftUpperCell{ {{col}} } {% endif %}  {% if not loop.first %} \textbf{ {{col}} } {% endif %} {% if not loop.last %}&{% endif %} {% endfor %} 
     \\
     \hline
     {% for row in table %}
         {% for cell in row %}
-            {{cell}}{% if not loop.last %} & {% endif %}
+            {% if loop.first %} \firstColumnCell{ {{cell}} } {% endif %}
+            {% if not loop.first %} {{cell}} {% endif %}
+            {% if not loop.last %} & {% endif %}
         {% endfor %}
         \\
     {% endfor %}

@@ -15,10 +15,10 @@ scatteredLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/scattered.csv", sep
 unionTopFrequencies <- read.csv(paste(dataRoot, "/allbooks/", "unionTopFrequencies.csv", sep=""), sep=",", stringsAsFactors=FALSE)
 topFrequentTerms <- as.vector(unionTopFrequencies$Term)
 
-scatteredCraft <- subset(scatteredCraft, select=c(2,3))
-scatteredPih <- subset(scatteredPih, select=c(2,3))
-scatteredRwh <- subset(scatteredRwh, select=c(2,3))
-scatteredLyah <- subset(scatteredLyah, select=c(2,3))
+scatteredCraft <- subset(scatteredCraft, select=c(1,2))
+scatteredPih <- subset(scatteredPih, select=c(1,2))
+scatteredRwh <- subset(scatteredRwh, select=c(1,2))
+scatteredLyah <- subset(scatteredLyah, select=c(1,2))
 
 #take union of scattered terms across all books
 all <- rbind(topScatteredCraft, topScatteredPih, topScatteredRhw, topScatteredLyah)

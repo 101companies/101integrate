@@ -12,10 +12,10 @@ frequencyPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/frequenciesMerged.csv
 frequencyRwh <- read.csv(paste(dataRoot, "/perbook/", "RWH/frequenciesMerged.csv", sep=""), sep=";")
 frequencyLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/frequenciesMerged.csv", sep=""), sep=";")
 
-frequencyCraft <- subset(frequencyCraft, select=c(1,4))
-frequencyPih <- subset(frequencyPih, select=c(1,4))
-frequencyRwh <- subset(frequencyRwh, select=c(1,4))
-frequencyLyah <- subset(frequencyLyah, select=c(1,4))
+frequencyCraft <- subset(frequencyCraft, select=c(0,3))
+frequencyPih <- subset(frequencyPih, select=c(0,3))
+frequencyRwh <- subset(frequencyRwh, select=c(0,3))
+frequencyLyah <- subset(frequencyLyah, select=c(0,3))
 
 #take union of TOP terms across all books
 all <- rbind(topFrequencyCraft, topFrequencyLyah, topFrequencyPih, topFrequencyRwh)
@@ -105,6 +105,6 @@ names(res) <- c("Term", "Craft", "PIH", "RWH", "LYAH")
 #      scalebox=0.8, include.rownames=FALSE,  
 #      rotate.colnames=FALSE)
 
-write.csv(res, paste(dataRoot, "/allbooks/", "unionTopFrequenciesVisual.csv", sep=""))
+write.csv(res, paste(dataRoot, "/allbooks/", "unionTopFrequenciesVisual.csv", sep=""), row.names=FALSE)
 
 print(qCraft)

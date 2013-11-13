@@ -99,8 +99,8 @@ names(scattered) <- c("Term", "Chapters")
 
 names(top20percent) <- c("Term", "Chapters")
 row.names(top20percent) <- seq(nrow(top20percent))
-write.csv(top20percent, paste(dataRoot, "/perbook/", folder, '/topScattered.csv', sep = ""))
-write.csv(scattered, paste(dataRoot, "/perbook/", folder, '/scattered.csv', sep = ""))
+write.csv(top20percent, paste(dataRoot, "/perbook/", folder, '/topScattered.csv', sep = ""), row.names=FALSE)
+write.csv(scattered, paste(dataRoot, "/perbook/", folder, '/scattered.csv', sep = ""), row.names=FALSE)
 # end
 
 rows.in.a1.that.are.not.in.a2  <- function(a1,a2){
@@ -239,11 +239,11 @@ colnames(res1) <- cn1
 
 #replacing NA with SPACE
 pivot[is.na(pivot)] <- ' '
-write.csv(pivot, paste(dataRoot, "/perbook/", folder, '/chapterProfile.numbers.csv', sep = ""))
+write.csv(pivot, paste(dataRoot, "/perbook/", folder, '/chapterProfile.numbers.csv', sep = ""), row.names=FALSE)
 
 #replacing NA with SPACE
 res1[is.na(res1)] <- ' '
-write.csv(res1, paste(dataRoot, "/perbook/", folder, '/chapterProfile.visual.csv', sep = ""))
+write.csv(res1, paste(dataRoot, "/perbook/", folder, '/chapterProfile.visual.csv', sep = ""), row.names=FALSE)
 
 #g <- graph.empty()
 
