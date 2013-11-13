@@ -27,13 +27,13 @@ data = urllib2.urlopen('http://data.101companies.org/dumps/wiki.json')
 wikidump = json.load(data)
 pages = wikidump['wiki']['pages']
 
-allThemeInstances = query(pages).where(lambda page: ('instanceOf' in page['page']) and (filter(lambda p: p['p'] == 'Theme', page['page']['instanceOf']))).to_list()
+allThemeInstances = query(pages).where(lambda page: ('instanceOf' in page) and (filter(lambda p: p['p'] == 'Theme', page['instanceOf']))).to_list()
 
 wikiConpepts = []
 for theme in themes:
   concepts = query(allThemeInstances). \
-    where(lambda page: filter(lambda p: p['p'] == 'Theme' and p['n'] == theme and 'internal_links' in page['page'], page['page']['instanceOf'])). \
-    select(lambda page: page['page']['internal_links']). \
+    where(lambda page: filter(lambda p: p['p'] == 'Theme' and p['n'] == theme and 'internal_links' in page, page['instanceOf'])). \
+    select(lambda page: page['internal_links']). \
     to_list()
 
   wikiConpepts.append(c.capitalize() for c in list(itertools.chain.from_iterable(concepts)))
