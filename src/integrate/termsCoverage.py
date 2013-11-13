@@ -48,8 +48,8 @@ def createTable(contribs, classification, classname):
 			n = split[-1]
 			p = split[0].title() if len(split) > 1 else ''
 			ls = query(pages).\
-				where(lambda page: handlePrefix(page['page']['page']['p']).lower() == p.lower() and page['page']['page']['n'].lower() == n.lower() and 'internal_links' in page['page']). \
-				select(lambda page: map(lambda l: l.split('::')[-1].lower(),page['page']['internal_links'])). \
+				where(lambda page: handlePrefix(page['p']).lower() == p.lower() and page['n'].lower() == n.lower() and 'internal_links' in page). \
+				select(lambda page: map(lambda l: l.split('::')[-1].lower(),page['internal_links'])). \
 			to_list()
 			clevel1Links.extend(filter(lambda l: l not in clevel0Links, ls[0]) if ls else [])
 		level1Links[contribName] = clevel1Links
@@ -67,22 +67,22 @@ def createTable(contribs, classification, classname):
 		json.dump(coverage, tablefjson)
 
 
-allThemeInstances = query(pages).where(lambda page: ('instanceOf' in page['page']) and (filter(lambda p: p['p'] == 'Theme', page['page']['instanceOf']))).to_list()
-allLanguageUsers = query(pages).where(lambda page: ('uses' in page['page']) and (filter(lambda p: p['p'] == 'Language', page['page']['uses']))).to_list()
+allThemeInstances = query(pages).where(lambda page: ('instanceOf' in page) and (filter(lambda p: p['p'] == 'Theme', page['instanceOf']))).to_list()
+allLanguageUsers = query(pages).where(lambda page: ('uses' in page) and (filter(lambda p: p['p'] == 'Language', page['uses']))).to_list()
 
 for theme in themes:
 	print 'Table for', theme
 	contribs = query(allThemeInstances). \
-  	where(lambda page: filter(lambda p: p['p'] == 'Theme' and p['n'] == theme and 'internal_links' in page['page'], page['page']['instanceOf'])). \
-  	select(lambda page: {'name': page['page']['page']['n'], 'links': map(lambda l: l.lower().split('::')[-1], page['page']['internal_links'])}). \
+  	where(lambda page: filter(lambda p: p['p'] == 'Theme' and p['n'] == theme and 'internal_links' in page, page['instanceOf'])). \
+  	select(lambda page: {'name': page['n'], 'links': map(lambda l: l.lower().split('::')[-1], page['internal_links'])}). \
   	to_list()
   	createTable(dict([(c['name'],c['links']) for c in contribs]), 'themes', theme)
 
 for language in languages:
  	print 'Table for', language
 	contribs = query(allLanguageUsers). \
-  	where(lambda page: filter(lambda p: p['p'] == 'Language' and p['n'] == language and 'internal_links' in page['page'], page['page']['uses'])). \
-  	select(lambda page: {'name': page['page']['page']['n'], 'links': map(lambda l: l.lower().split('::')[-1],page['page']['internal_links'])}). \
+  	where(lambda page: filter(lambda p: p['p'] == 'Language' and p['n'] == language and 'internal_links' in page, page['uses'])). \
+  	select(lambda page: {'name': page['n'], 'links': map(lambda l: l.lower().split('::')[-1],page['internal_links'])}). \
   	to_list()
   	createTable(dict([(c['name'],c['links']) for c in contribs]), 'languages', language)
 
