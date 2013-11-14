@@ -11,11 +11,11 @@ from mako.template import Template
 
 from constants import *
 
-root = sys.argv[1]
-#root = "../../data"
+#root = sys.argv[1]
+root = "../../data"
 
-resourcebase = root + "/" + sys.argv[2]
-#resourcebase = "../../data/allbooks/"
+#resourcebase = root + "/" + sys.argv[2]
+resourcebase = "../../data/allbooks/"
 
 def handlePrefix(p):
     return p.lower() if p else ''

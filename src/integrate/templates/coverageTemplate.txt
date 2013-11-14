@@ -23,8 +23,8 @@ sortedTerms = sorted(sortedTerms, key=lambda t: len(filter(lambda c: t.lower() i
 </tr>
 %  for term in sortedTerms:
 	<%
-	level0 = filter(lambda c: term.lower() in level0Links[c] or term in level0Links[c], contribs)
-	level1 = filter(lambda c: term.lower() in level1Links[c] or term in level1Links[c], contribs)
+	level0 = filter(lambda c: term.lower() in level0Links[c] or term in level0Links[c], contribs.keys())
+	level1 = filter(lambda c: term.lower() in level1Links[c] or term in level1Links[c], contribs.keys())
 	print level1
 	%>
 	<tr><td  style="border: 1px solid black;"><b>${term} (${str(len(level0))}/${str(len(level1))})</b></td>
