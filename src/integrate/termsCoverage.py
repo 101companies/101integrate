@@ -52,6 +52,7 @@ def createTable(resource, contribs, classification, classname):
         print '', str(len(clevel1Links)), 'level 1 links found.'
     mytemplate = Template(filename='templates/coverageTemplate.txt')
     table = mytemplate.render(mappedTerms=mappedTerms, contribs=contribs.keys(), level0Links = level0Links, level1Links=level1Links)
+    print "Creating " + classBase + "/" + resource + '/coverage.html'
     with open(classBase + "/" + resource + '/coverage.html', 'write') as tablef:
 		tablef.write(table)
     coverage = {}
