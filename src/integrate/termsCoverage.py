@@ -27,6 +27,8 @@ def createTable(resource, contribs, classification, classname):
 		os.makedirs(classificationBase)
     if not os.path.exists(classBase):
 		os.makedirs(classBase)
+    if not os.path.exists(classBase + "/" + resource):
+        os.makedirs(classBase + "/" + resource)
     level0Links = {}
     level1Links = {}
     for contribName in sorted(contribs.keys()):

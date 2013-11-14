@@ -5,3 +5,4 @@ data/perbook/RWH/contents/
 data/languages
 data/themes
 *.pyc
+.idea/
