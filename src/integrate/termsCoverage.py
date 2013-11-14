@@ -11,11 +11,11 @@ from mako.template import Template
 
 from constants import *
 
-#root = sys.argv[1]
-root = "../../data"
+root = sys.argv[1]
+#root = "../../data"
 
-#resourcebase = root + "/" + sys.argv[2]
-resourcebase = "../../data/allbooks/"
+resourcebase = root + "/" + sys.argv[2]
+#resourcebase = "../../data/allbooks/"
 
 def handlePrefix(p):
     return p.lower() if p else ''
@@ -25,9 +25,9 @@ def createTable(resource, contribs, classification, classname):
     print classificationBase
     classBase = classificationBase + classname.replace('_',' ')
     if not os.path.exists(classificationBase):
-		os.makedirs(classificationBase)
+        os.makedirs(classificationBase)
     if not os.path.exists(classBase):
-		os.makedirs(classBase)
+        os.makedirs(classBase)
     if not os.path.exists(classBase + "/" + resource):
         os.makedirs(classBase + "/" + resource)
     level0Links = {}
@@ -47,7 +47,7 @@ def createTable(resource, contribs, classification, classname):
 				where(lambda page: handlePrefix(page['p']).lower() == p.lower() and page['n'].lower() == n.lower() and 'internal_links' in page). \
 				select(lambda page: map(lambda l: l.split('::')[-1].lower(),page['internal_links'])). \
             to_list()
-        clevel1Links.extend(filter(lambda l: l not in clevel0Links, ls[0]) if ls else [])
+            clevel1Links.extend(filter(lambda l: l not in clevel0Links, ls[0]) if ls else [])
         level1Links[contribName] = clevel1Links
         print '', str(len(clevel1Links)), 'level 1 links found.'
     mytemplate = Template(filename='templates/coverageTemplate.txt')
