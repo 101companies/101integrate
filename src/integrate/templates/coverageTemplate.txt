@@ -16,7 +16,7 @@ sortedTerms = sorted(sortedTerms, key=lambda t: len(filter(lambda c: t.lower() i
 	%>
 	<th style="border: 1px solid black; vertical-align:top; padding-top: 3px;">
 		<span align="right" style="display: inline-block; width: 22px;white-space: nowrap; -webkit-transform: rotate(90deg);">
-			${contribName} (${str(len(mappedLevel0))}/${str(len(mappedLevel1))})
+			${contribName} (${str(len(mappedLevel0))}/${str(len(mappedLevel1))}/${str(len(uniqueLevel0[contribName]))})
 		</span>
 	</th>
 % endfor

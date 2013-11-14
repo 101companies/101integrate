@@ -50,8 +50,28 @@ def createTable(resource, contribs, classification, classname):
             clevel1Links.extend(filter(lambda l: l not in clevel0Links, ls[0]) if ls else [])
         level1Links[contribName] = clevel1Links
         print '', str(len(clevel1Links)), 'level 1 links found.'
+
+    flipped = {}
+    for contribName in sorted(level0Links.keys()):
+      print contribName
+      for term in level0Links[contribName]:
+        print term
+        if term in flipped:
+          flipped[term].append(contribName)
+        else:
+          flipped[term] = [contribName]
+
+    uniqueLevel0 = {}
+    for term in flipped:
+      for contribName in sorted(contribs.keys()):
+          if not contribName in uniqueLevel0:
+            uniqueLevel0[contribName] = []
+          if contribName in flipped[term] and len(flipped[term]) == 1:
+            if contribName in uniqueLevel0:
+              uniqueLevel0[contribName].append(term)
+
     mytemplate = Template(filename='templates/coverageTemplate.txt')
-    table = mytemplate.render(mappedTerms=mappedTerms, contribs=contribs.keys(), level0Links = level0Links, level1Links=level1Links)
+    table = mytemplate.render(mappedTerms=mappedTerms, contribs=contribs.keys(), level0Links = level0Links, level1Links=level1Links, uniqueLevel0=uniqueLevel0)
     print "Creating " + classBase + "/" + resource + '/coverage.html'
     with open(classBase + "/" + resource + '/coverage.html', 'write') as tablef:
 		tablef.write(table)
@@ -82,13 +102,13 @@ for resource in mapping:
     print resource
     print mappedTerms
 
-    for theme in themes:
-        print 'Table for', theme
-        contribs = query(allThemeInstances). \
-        where(lambda page: filter(lambda p: p['p'] == 'Theme' and p['n'] == theme and 'internal_links' in page, page['instanceOf'])). \
-        select(lambda page: {'name': page['n'], 'links': map(lambda l: l.lower().split('::')[-1], page['internal_links'])}). \
-        to_list()
-        createTable(resource, dict([(c['name'],c['links']) for c in contribs]), 'themes', theme)
+    # for theme in themes:
+    #     print 'Table for', theme
+    #     contribs = query(allThemeInstances). \
+    #     where(lambda page: filter(lambda p: p['p'] == 'Theme' and p['n'] == theme and 'internal_links' in page, page['instanceOf'])). \
+    #     select(lambda page: {'name': page['n'], 'links': map(lambda l: l.lower().split('::')[-1], page['internal_links'])}). \
+    #     to_list()
+    #     createTable(resource, dict([(c['name'],c['links']) for c in contribs]), 'themes', theme)
 
     for language in languages:
         print 'Table for', language
