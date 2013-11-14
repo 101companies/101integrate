@@ -21,7 +21,8 @@ def handlePrefix(p):
     return p.lower() if p else ''
 
 def createTable(resource, contribs, classification, classname):
-    classificationBase = root + classification + '/'
+    classificationBase = root + "/" + classification + '/'
+    print classificationBase
     classBase = classificationBase + classname.replace('_',' ')
     if not os.path.exists(classificationBase):
 		os.makedirs(classificationBase)
@@ -72,6 +73,9 @@ allLanguageUsers = query(pages).where(lambda page: ('uses' in page) and (filter(
 
 mapping = json.loads(open(resourcebase + 'mapping.json', 'rb').read())
 mappedTerms = set()
+
+print "Creating the terms coverage table"
+
 for resource in mapping:
     mappedTerms |= set(mapping[resource].keys())
     print resource
