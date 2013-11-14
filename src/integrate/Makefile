@@ -1,5 +1,5 @@
 include ../Makefile.vars
-DATAFOLDER = ../../data/
+DATAFOLDER = ../../data
 
 integrate:
 	make coverageTables
