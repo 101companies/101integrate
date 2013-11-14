@@ -14,7 +14,7 @@ from constants import *
 root = sys.argv[1]
 #root = "../../data"
 
-resourcebase = root + sys.argv[2]
+resourcebase = root + "/" + sys.argv[2]
 #resourcebase = "../../data/allbooks/"
 
 def handlePrefix(p):
