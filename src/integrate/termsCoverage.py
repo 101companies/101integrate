@@ -55,6 +55,7 @@ def createTable(resource, contribs, classification, classname):
     for contribName in sorted(level0Links.keys()):
       print contribName
       for term in level0Links[contribName]:
+        term = term.encode('utf-8')
         print term
         if term in flipped:
           flipped[term].append(contribName)
