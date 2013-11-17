@@ -68,7 +68,8 @@ def createTable(resource, contribs, classification, classname):
             uniqueLevel0[contribName] = []
           if contribName in flipped[term] and len(flipped[term]) == 1:
             if contribName in uniqueLevel0:
-              uniqueLevel0[contribName].append(term)
+              if term in mappedTerms:
+                uniqueLevel0[contribName].append(term)
 
     mytemplate = Template(filename='templates/coverageTemplate.txt')
     table = mytemplate.render(mappedTerms=mappedTerms, contribs=contribs.keys(), level0Links = level0Links, level1Links=level1Links, uniqueLevel0=uniqueLevel0)
