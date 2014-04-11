@@ -40,6 +40,7 @@ download-deps:
 	sudo easy_install gdata
 	sudo easy_install jinja2
 	sudo easy_install mako
+	sudo easy_install asq
 
 bootstrap:
 	cd src; python bootstrap.py
