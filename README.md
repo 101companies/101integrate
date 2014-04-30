@@ -20,6 +20,8 @@ When the NLTK downloader pops up, select all corpora for download.
 
 2 of the supported textbooks are available online. They are not included into the repo. They must be downloaded with the following command:
 
+    make download-books
+
 # Offline textbooks
 
 2 of the supported textbooks are not available online. If you have offline access to them, please link them as demonstrated by the make target "link-books". That is, if the books' sources are available per a "haskellbooks" folder in your dropbox, then the following command suffices:
