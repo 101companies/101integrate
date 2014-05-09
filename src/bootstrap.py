@@ -21,4 +21,4 @@ for bookDir in allBooks:
     nonLinkedBooks.append(bookDir)
 
 with open ('Makefile.vars', 'w') as f: 
-  f.write ('ALL_BOOKS = ' + ' '.join(allBooks) + '\nLINKED_BOOKS = ' + ' '.join(linkedBooks) + '\nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
+  f.write ('#List of available Books \r\n'+'ALL_BOOKS = ' + ' '.join(allBooks) + '\nLINKED_BOOKS = ' + ' '.join(linkedBooks) + '\nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))

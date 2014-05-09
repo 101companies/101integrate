@@ -5,9 +5,6 @@ analyze:
 	make popular
 	make tex
 
-prepare:
-	sudo R < dependencies.R --no-save
-
 frequencies:	
 	for b in ${ALL_BOOKS}; do \
 		R < frequencies.R --no-save --args ""$$b""; \
