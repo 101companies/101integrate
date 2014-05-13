@@ -1,24 +1,24 @@
 include ../Makefile.vars
 
-ONLINEBOOKS = RWH LYAH
+
 DATAFOLDER = ../../data/
 
 #HTML2TXT=../../bin/html2text 
 
 mine:
-	make cleanindecies
-	make mergeindecies
-	make frequencies
-	make mergedfrequencies
+	$(MAKE) cleanindecies
+	$(MAKE) mergeindecies
+	$(MAKE) frequencies
+	$(MAKE) mergedfrequencies
 
 backlink:
-	make backlinksMappings
-	make mergeBacklinkMappings
-	make mergeMappings
+	$(MAKE) backlinksMappings
+	$(MAKE) mergeBacklinkMappings
+	$(MAKE) mergeMappings
 
 # Clean online books once after download
 cleanOnlineBooks:
-	for b in ${ONLINEBOOKS}; do \
+	for b in ${LINKED_BOOKS}; do \
 		for h in ../../data/perbook/"$$b"/contents/*; do \
 			 html2text "$$h" --ignore-links --ignore-images| tee "$$h".txt; \
 			rm "$$h"; \

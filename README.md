@@ -18,9 +18,15 @@ When the NLTK downloader pops up, select all corpora for download.
 
 # Online textbooks
 
-2 of the supported textbooks are available online. They are not included into the repo. They must be downloaded with the following command:
+Some of the supported textbooks are available online. They are not included into the repo. They must be downloaded with the following command:
 
     make download-books
+    
+The following book-packages can be chosen: Haskell
+
+You can download e.g. the Haskell-Book-Package with the following command:
+
+    make download-books BOOKS="haskell"
 
 # Offline textbooks
 

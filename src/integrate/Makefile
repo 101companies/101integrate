@@ -2,11 +2,11 @@ include ../Makefile.vars
 DATAFOLDER = ../../data
 
 integrate:
-	make coverageTables
-	make uniqueTerms
-	make nonProfileFrequencies
+	$(MAKE) coverageTables
+	$(MAKE) uniqueTerms
+	$(MAKE) nonProfileFrequencies
 
-make coverageTables:
+coverageTables:
 	python termsCoverage.py $(DATAFOLDER) allbooks/
 
 nonProfileFrequencies:
@@ -14,5 +14,5 @@ nonProfileFrequencies:
 		python nonProfileFrequencies.py $(DATAFOLDER)/ allbooks/cache/ /perbook/ "$$b" $(foreach r,$(LINKED_BOOKS), $(r)); \
 	done
 
-make uniqueTerms:
+uniqueTerms:
 	python uniqueTerms.py

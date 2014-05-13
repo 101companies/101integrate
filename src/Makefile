@@ -7,12 +7,12 @@ nope:
 
 # Run mining scripts
 mine:
-	cd mining; make mine
+	cd mining; $(MAKE) mine
 
 # Run analytics scripts
 analyze:
-	make from-cache
-	cd analytics; make analyze
+	$(MAKE) from-cache
+	cd analytics; $(MAKE) analyze
 
 # Copies post processed data from cache
 from-cache:
@@ -32,10 +32,18 @@ to-cache:
 
 # Run backlinking scripts
 backlink:
-	cd mining; make backlink
+	cd mining; $(MAKE) backlink
 
 coverageTables:
-	cd integrate; make coverageTables
+	cd integrate; $(MAKE) coverageTables
 
 nonProfileFrequencies:
-	cd integrate; make nonProfileFrequencies
+	cd integrate; $(MAKE) nonProfileFrequencies
+	
+# Clean it all
+clean:
+	cd ../data/allbooks; rm -f *.tex *.csv *.json *.png *.html
+	cd ..; for b in ${ALL_BOOKS}; do \
+			cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ;\
+			cd ../../.. ;\
+	done

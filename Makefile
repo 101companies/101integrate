@@ -1,8 +1,10 @@
-# Books available online
-ONLINEBOOKS = RWH LYAH
+# Haskell Books available online
+HASKELLBOOKSONLINE = RWH LYAH
 
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
+
+ONLINEBOOKS = 
 
 # Please, read the README.md.
 nope:
@@ -10,23 +12,27 @@ nope:
 	
 	
 run:
-	make download-books
-	make bootstrap
-	make mine
-	make from-cache
-	make analyze
-	make backlink
-	cd src/integrate; make integrate
+	$(MAKE) download-books
+	$(MAKE) bootstrap
+	$(MAKE) mine
+	$(MAKE) from-cache
+	$(MAKE) analyze
+	$(MAKE) backlink
+	cd src/integrate; $(MAKE) integrate
 
 # Download books that are available online
 download-books:
-	# cd src/mining; make cleanOnlineBooks
+	ifeq($(BOOKS) ,haskell)
+		ONLINEBOOKS = $(HASKELLONLINEBOOKS)
+	else
+		ONLINEBOOKS = $(HASKELLONLINEBOOKS) #add other Book-"Packages" once available
+	endif
 	for b in ${ONLINEBOOKS}; do \
 		mkdir -p data/perbook/"$$b"/contents; \
 		cd src/mining; python crawler.py "$$b" ../../data/perbook/;\
 		cd ../..;\
 	done
-	cd src/mining; make cleanOnlineBooks
+	cd src/mining; $(MAKE) cleanOnlineBooks
 
 # Optionally link offline books, as explained in the README.md
 link-books:
@@ -55,35 +61,30 @@ bootstrap:
 
 # Run mining scripts
 mine:
-	cd src; make mine
+	cd src; $(MAKE) mine
 
 # Run analytics scripts
 analyze:
-	cd src; make analyze
+	cd src; $(MAKE) analyze
 
 # Copies post processed data from cache
 from-cache:
-	cd src; make from-cache
+	cd src; $(MAKE) from-cache
 
 # Copies post-processed data, required for analytics, to cache
 to-cache:
-	cd src; make to-cache
-
+	cd src; $(MAKE) to-cache
 
 # Run backlinking scripts
 backlink:
-	cd src; make backlink
+	cd src; $(MAKE) backlink
 
 coverageTables:
-	cd src make coverageTables
+	cd src; $(MAKE) coverageTables
 
 nonProfileFrequencies:
-	cd src; make nonProfileFrequencies
+	cd src; $(MAKE) nonProfileFrequencies
 
 # Clean it all
 clean:
-	cd data/allbooks; rm -f *.tex *.csv *.json *.png *.html
-	for b in ${ALL_BOOKS}; do \
-		cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ;\
-		cd ../../.. ;\
-	done
+	cd src; $(MAKE) clean

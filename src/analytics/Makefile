@@ -1,9 +1,9 @@
 include ../Makefile.vars
 
 analyze:
-	make frequencies
-	make popular
-	make tex
+	$(MAKE) frequencies
+	$(MAKE) popular
+	$(MAKE) tex
 
 frequencies:	
 	for b in ${ALL_BOOKS}; do \
