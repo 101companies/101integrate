@@ -14,8 +14,6 @@ This is taken care of by this command:
 
     make download-deps
 
-When the NLTK downloader pops up, select all corpora for download.
-
 # Online textbooks
 
 Some of the supported textbooks are available online. They are not included into the repo. They must be downloaded with the following command:

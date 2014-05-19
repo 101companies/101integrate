@@ -4,7 +4,7 @@ HASKELLBOOKSONLINE = RWH LYAH
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
 
-ONLINEBOOKS = 
+ONLINEBOOKS = RWH LYAH
 
 # Please, read the README.md.
 nope:
@@ -22,7 +22,7 @@ run:
 
 # Download books that are available online
 download-books:
-	ifeq($(BOOKS) ,haskell)
+	ifeq ($(BOOKS) , haskell)
 		ONLINEBOOKS = $(HASKELLONLINEBOOKS)
 	else
 		ONLINEBOOKS = $(HASKELLONLINEBOOKS) #add other Book-"Packages" once available
