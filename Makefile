@@ -1,10 +1,4 @@
-# Haskell Books available online
-HASKELLBOOKSONLINE = RWH LYAH
-
-# Key for Google Docs
-INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
-
-ONLINEBOOKS = RWH LYAH
+include Makefile.vars
 
 # Please, read the README.md.
 nope:
@@ -22,11 +16,16 @@ run:
 
 # Download books that are available online
 download-books:
-	ifeq ($(BOOKS) , haskell)
-		ONLINEBOOKS = $(HASKELLONLINEBOOKS)
-	else
-		ONLINEBOOKS = $(HASKELLONLINEBOOKS) #add other Book-"Packages" once available
-	endif
+ONLINEBOOKS = 
+ifneq (,$(findstring haskell,$(BOOKS)))
+	ONLINEBOOKS = $(HASKELLBOOKSONLINE)
+else
+	ONLINEBOOKS = $(ALLBOOKS)
+endif
+$(MAKE) download-books-helper ONLINEBOOKS=$(ONLINEBOOKS)
+
+#help-function "Real Downloader"
+download-books-helper:
 	for b in ${ONLINEBOOKS}; do \
 		mkdir -p data/perbook/"$$b"/contents; \
 		cd src/mining; python crawler.py "$$b" ../../data/perbook/;\
