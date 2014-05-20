@@ -73,6 +73,10 @@ from-cache:
 # Copies post-processed data, required for analytics, to cache
 to-cache:
 	cd src; $(MAKE) to-cache
+	
+#runs integration-scripts
+integrate:
+	cd src; $(MAKE) integrate
 
 # Run backlinking scripts
 backlink:

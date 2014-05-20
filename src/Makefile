@@ -30,6 +30,10 @@ to-cache:
 		cp ../data/perbook/$$b/frequencies.json  ../data/perbook/"$$b"/cache ;\
 	done
 
+#runs integration-scripts
+integrate:
+	cd integrate; $(MAKE) integrate	
+
 # Run backlinking scripts
 backlink:
 	cd mining; $(MAKE) backlink
