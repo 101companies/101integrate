@@ -8,9 +8,7 @@ Make sure all dependencies are installed.
 
 You need System R: http://www.r-project.org/
 
-You need a bunch of Python packages and some NLP support.
-
-This is taken care of by this command:
+You need a bunch of Python packages and some NLP support. This is taken care of by this command:
 
     make download-deps
 
