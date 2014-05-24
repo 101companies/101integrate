@@ -12,7 +12,7 @@ run:
 	$(MAKE) from-cache
 	$(MAKE) analyze
 	$(MAKE) backlink
-	cd src/integrate; $(MAKE) integrate
+	$(MAKE) integrate
 
 # Download books that are available online
 download-books:
