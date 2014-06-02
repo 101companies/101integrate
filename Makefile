@@ -1,4 +1,8 @@
-include Makefile.vars
+# Books available online
+ONLINEBOOKS = RWH LYAH
+
+# Key for Google Docs
+INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
 
 # Please, read the README.md.
 nope:
@@ -6,32 +10,23 @@ nope:
 	
 	
 run:
-	$(MAKE) download-books
-	$(MAKE) bootstrap
-	$(MAKE) mine
-	$(MAKE) from-cache
-	$(MAKE) analyze
-	$(MAKE) backlink
-	$(MAKE) integrate
+	make download-books
+	make bootstrap
+	make mine
+	make from-cache
+	make analyze
+	make backlink
+	cd src/integrate; make integrate
 
 # Download books that are available online
 download-books:
-ONLINEBOOKS = 
-ifneq (,$(findstring haskell,$(BOOKS)))
-	ONLINEBOOKS = $(HASKELLBOOKSONLINE)
-else
-	ONLINEBOOKS = $(ALLBOOKS)
-endif
-$(MAKE) download-books-helper ONLINEBOOKS=$(ONLINEBOOKS)
-
-#help-function "Real Downloader"
-download-books-helper:
+	# cd src/mining; make cleanOnlineBooks
 	for b in ${ONLINEBOOKS}; do \
 		mkdir -p data/perbook/"$$b"/contents; \
 		cd src/mining; python crawler.py "$$b" ../../data/perbook/;\
 		cd ../..;\
 	done
-	cd src/mining; $(MAKE) cleanOnlineBooks
+	cd src/mining; make cleanOnlineBooks
 
 # Optionally link offline books, as explained in the README.md
 link-books:
@@ -60,34 +55,35 @@ bootstrap:
 
 # Run mining scripts
 mine:
-	cd src; $(MAKE) mine
+	cd src; make mine
 
 # Run analytics scripts
 analyze:
-	cd src; $(MAKE) analyze
+	cd src; make analyze
 
 # Copies post processed data from cache
 from-cache:
-	cd src; $(MAKE) from-cache
+	cd src; make from-cache
 
 # Copies post-processed data, required for analytics, to cache
 to-cache:
-	cd src; $(MAKE) to-cache
-	
-#runs integration-scripts
-integrate:
-	cd src; $(MAKE) integrate
+	cd src; make to-cache
+
 
 # Run backlinking scripts
 backlink:
-	cd src; $(MAKE) backlink
+	cd src; make backlink
 
 coverageTables:
-	cd src; $(MAKE) coverageTables
+	cd src make coverageTables
 
 nonProfileFrequencies:
-	cd src; $(MAKE) nonProfileFrequencies
+	cd src; make nonProfileFrequencies
 
 # Clean it all
 clean:
-	cd src; $(MAKE) clean
+	cd data/allbooks; rm -f *.tex *.csv *.json *.png *.html
+	for b in ${ALL_BOOKS}; do \
+		cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ;\
+		cd ../../.. ;\
+	done
