@@ -13,7 +13,8 @@
 		"title" : "Real World Haskell",
 		"folder" : "RWH",
 		"index" : "Index.csv",
-		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}]
+		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
+		"package" : ["Haskell"]
 	},
 	"PIH": {
 		"fullName": "Programming in Haskell",
@@ -25,7 +26,8 @@
 		"folder": "PIH",
 		"index": "Index.csv",
 		"exclude-env" : ["calc", "displaymath", "array", "hugs", "tabbing", "itemizedhugs"],
-		"exclude-patterns": [{"pos":"suffix", "string":" of"}, {"pos":"suffix", "string":" and"}]
+		"exclude-patterns": [{"pos":"suffix", "string":" of"}, {"pos":"suffix", "string":" and"}],
+		"package" : ["Haskell"]
 	},
 	"Craft" : {
 		"fullName": "Haskell: The Craft of Functional Programming",
@@ -37,7 +39,8 @@
        		"exclude-env" : ["alltt"],
 		"folder": "Craft",
 		"index": "Index.csv",
-		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}, {"pos":"prefix", "string":"as "}, {"pos":"prefix","string":"a "}, {"pos":"suffix", "string":" and"}]
+		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}, {"pos":"prefix", "string":"as "}, {"pos":"prefix","string":"a "}, {"pos":"suffix", "string":" and"}],
+		"package" : ["Haskell"]
 	},
 	"LYAH": {
 		"fullName": "Learn You a Haskell",
@@ -53,7 +56,8 @@
 		"title" : "Learn you a Haskell!",
 		"folder" : "LYAH",
 		"index" : "Index.csv",
-		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}]
+		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}],
+		"package" : ["Haskell"]
 	},
     "OnlyIndex" : {
         "kind" : "../../data/allbooks",
