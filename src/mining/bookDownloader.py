@@ -15,7 +15,7 @@ def nameEquals(string1, string2):
 
 books = set();
 
-bookData = json.loads(open("../config.json", 'rb').read()) #TODO read as hirachical object
+bookData = json.loads(open("config/config.json", 'rb').read()) #TODO read as hirachical object
 print "read config:"
 print bookData
 
