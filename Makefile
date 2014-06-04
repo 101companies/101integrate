@@ -1,6 +1,3 @@
-# Books available online
-ONLINEBOOKS = RWH LYAH
-
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
 
@@ -21,12 +18,7 @@ run:
 
 # Download books that are available online
 download-books:
-	# cd src/mining; $(MAKE) cleanOnlineBooks
-	for b in ${ONLINEBOOKS}; do \
-		mkdir -p data/perbook/"$$b"/contents; \
-		cd src/mining; python crawler.py "$$b" ../../data/perbook/;\
-		cd ../..;\
-	done
+	cd src/mining; python bookDownloader.py $(BOOKS)
 	cd src/mining; $(MAKE) cleanOnlineBooks
 
 # Optionally link offline books, as explained in the README.md
@@ -49,6 +41,7 @@ download-deps:
 	sudo easy_install jinja2
 	sudo easy_install mako
 	sudo easy_install asq
+	sudo easy_install subprocess32
 	python -m nltk.downloader all
 
 bootstrap:

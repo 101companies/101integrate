@@ -3,6 +3,7 @@
 
 import simplejson as json
 import sys
+import subprocess32 as subprocess
 
 def nameIsIn(compared, strings):
   compared = normalizeString(compared)
@@ -13,18 +14,20 @@ def nameIsIn(compared, strings):
 
 
 def normalizeString(string):
-  return string.strip(" :.-").lower()
+  return string.lower().replace(" ","").replace(":","").replace("-","").replace(".","")
 
 def nameEquals(string1, string2):
   return (normalizeString(string1) == normalizeString(string2))
 
-books = set();
 
+
+
+
+
+books = set();
 bookData = json.loads(open("config/config.json", 'rb').read())
 
-
-
-if nameEquals("all", sys.argv[1]):
+if (nameEquals("all", sys.argv[1]) or len(sys.argv) ==1 ):
   for data in bookData:
     books.add(data)
 else:
@@ -33,11 +36,14 @@ else:
     for data in bookData:
       print "\t with " + data
       if (data != "OnlyIndex"): # has to be excluded as being no book
-	#if (arg  == data  or arg == bookData[data]['fullName'] or arg == bookData[data]['title']  or arg in bookData[data]['package']): 
-	if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['package']))):
+	if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['package'])) and bookData[data]['isLinkable']):
 	  print "\t\t"+ arg+" recognized"
 	  books.add(data)
 	  print "\t\t"+ data+" added "
 print "Books to be downloaded:"
 print books
-#TODO calling CRAWLER with books as args
+
+
+for b in books:
+  print subprocess.Popen("mkdir -p ../../data/perbook/"+b+"/contents", shell = True).wait()
+  print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/", shell = True).wait()
