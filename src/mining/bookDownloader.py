@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #coding=utf-8
 
-import json
+import simplejson as json
 import sys
 
 def normalizeString(string):
@@ -15,7 +15,7 @@ def nameEquals(string1, string2):
 
 books = set();
 
-bookData = json.loads(open("config/config.json", 'rb').read()) #TODO read as hirachical object
+bookData = json.loads(open("config/config.json", 'rb').read())
 print "read config:"
 print bookData
 
@@ -28,7 +28,7 @@ else:
     for data in bookData:
       print "\t with " + data
       print bookData[data]
-      #print type(data)
+      print bookData[data].items()
       print type(bookData[data])
       if (arg  == data  or arg == bookData[data]['fullName'] or arg == bookData[data]['title']  or arg in bookData[data]['package']): 
 	print "\t\t"+ arg+" recognized"
@@ -36,5 +36,6 @@ else:
 	print "\t\t"+ data+" added "
 	
 print "Books to be downloaded:"
+books.discard("OnlyIndex")
 print books
 #TODO calling CRAWLER with books as args
