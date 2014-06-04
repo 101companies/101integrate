@@ -4,20 +4,25 @@
 import simplejson as json
 import sys
 
+def nameIsIn(compared, strings):
+  compared = normalizeString(compared)
+  for s in strings:
+    if (compared == normalizeString(s)):
+      return True
+  return False
+
+
 def normalizeString(string):
-  return string.strip().strip(" ").lower()
+  return string.strip(" :.-").lower()
 
 def nameEquals(string1, string2):
-  if(normalizeString(string1) == normalizeString(string2)):
-    return True
-  else:
-    return False
+  return (normalizeString(string1) == normalizeString(string2))
 
 books = set();
 
 bookData = json.loads(open("config/config.json", 'rb').read())
-print "read config:"
-print bookData
+
+
 
 if nameEquals("all", sys.argv[1]):
   for data in bookData:
@@ -27,15 +32,12 @@ else:
     print " comparing " + arg
     for data in bookData:
       print "\t with " + data
-      print bookData[data]
-      print bookData[data].items()
-      print type(bookData[data])
-      if (arg  == data  or arg == bookData[data]['fullName'] or arg == bookData[data]['title']  or arg in bookData[data]['package']): 
-	print "\t\t"+ arg+" recognized"
-	books.add(data)
-	print "\t\t"+ data+" added "
-	
+      if (data != "OnlyIndex"): # has to be excluded as being no book
+	#if (arg  == data  or arg == bookData[data]['fullName'] or arg == bookData[data]['title']  or arg in bookData[data]['package']): 
+	if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['package']))):
+	  print "\t\t"+ arg+" recognized"
+	  books.add(data)
+	  print "\t\t"+ data+" added "
 print "Books to be downloaded:"
-books.discard("OnlyIndex")
 print books
 #TODO calling CRAWLER with books as args
