@@ -10,13 +10,14 @@ nope:
 	
 	
 run:
-	$(MAKE) download-books
-	$(MAKE) bootstrap
-	$(MAKE) mine
-	$(MAKE) from-cache
-	$(MAKE) analyze
-	$(MAKE) backlink
-	$(MAKE) integrate
+	mkdir -p logs
+	$(MAKE) download-books | tee logs/downloadBooks.log
+	$(MAKE) bootstrap      | tee logs/bootstrap.log
+	$(MAKE) mine           | tee logs/mine.log
+	$(MAKE) from-cache     | tee logs/fromCache.log
+	$(MAKE) analyze        | tee logs/analyze.log
+	$(MAKE) backlink       | tee logs/backlink.log
+	$(MAKE) integrate      | tee logs/integrate.log
 
 # Download books that are available online
 download-books:

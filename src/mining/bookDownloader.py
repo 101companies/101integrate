@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #coding=utf-8
 
-import simplejson as json
+import json
 import sys
 
 def normalizeString(string):
@@ -27,7 +27,10 @@ else:
     print " comparing " + arg
     for data in bookData:
       print "\t with " + data
-      if (arg  == data ): # or arg == data.fullname or arg in data.package): 
+      print bookData[data]
+      #print type(data)
+      print type(bookData[data])
+      if (arg  == data  or arg == bookData[data]['fullName'] or arg == bookData[data]['title']  or arg in bookData[data]['package']): 
 	print "\t\t"+ arg+" recognized"
 	books.add(data)
 	print "\t\t"+ data+" added "
