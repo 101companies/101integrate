@@ -6,3 +6,4 @@ data/languages
 data/themes
 *.pyc
 .idea/
+*.log
