@@ -14,10 +14,10 @@ def nameIsIn(compared, strings):
 
 
 def normalizeString(string):
-  return string.lower().replace(" ","").replace(":","").replace("-","").replace(".","")
+    return string.lower().replace(" ","").replace(":","").replace("-","").replace(".","")
 
 def nameEquals(string1, string2):
-  return (normalizeString(string1) == normalizeString(string2))
+    return (normalizeString(string1) == normalizeString(string2))
 
 
 
@@ -28,18 +28,24 @@ books = set();
 bookData = json.loads(open("config/config.json", 'rb').read())
 
 if (nameEquals("all", sys.argv[1]) or len(sys.argv) ==1 ):
-  for data in bookData:
-    books.add(data)
-else:
-  for arg in sys.argv:
-    print " comparing " + arg
     for data in bookData:
-      print "\t with " + data
-      if (data != "OnlyIndex"): # has to be excluded as being no book
-	if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['package'])) and bookData[data]['isLinkable']):
-	  print "\t\t"+ arg+" recognized"
-	  books.add(data)
-	  print "\t\t"+ data+" added "
+	books.add(data)
+else:
+    for arg in sys.argv[1:]:
+	print " comparing " + arg
+	for data in bookData:
+	    try:
+		  print "\t with " + data
+		  if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['package'])) and bookData[data]['isLinkable']):
+		      print "\t\t"+ arg+" recognized"
+		      books.add(data)
+		      print "\t\t"+ data+" added "
+	    except KeyError:
+		  print "\t "+data + " skipped."
+	    else:
+		  pass
+		
+
 print "Books to be downloaded:"
 print books
 

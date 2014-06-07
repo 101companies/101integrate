@@ -33,7 +33,7 @@ download-googledocs:
 # Get Python and R tools
 download-deps:
 	cd src/analytics; sudo R < dependencies.R --no-save
-	sudo easy_install BeautifulSoup
+	sudo easy_install BeautifulSoup4
 	sudo easy_install nltk
 	sudo easy_install inflect
 	sudo easy_install html2text
