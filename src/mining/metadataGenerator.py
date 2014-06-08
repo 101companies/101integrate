@@ -32,12 +32,13 @@ else:
 			((not ("http:" in info[1])) or url in info [1]) and 
 			(bookData[arg]['ext'] in info[1])):
 			  links.append(info)
-	    #print links
+	    print "collected Information"
 	    path = getMetaPath(arg)
 	    chaptersWrite = open(path+"chaptersGen.txt","w")
 	    chapters = []
+	    print "Processing links"
 	    for l in links:
-		    #print l
+		    print l
 		    if(isRelative(l[1])):
 		      chaptersWrite.write(bookData[arg]['urlBase'].strip()+l[1])
 		      filename = l[1]+".txt"
@@ -52,6 +53,7 @@ else:
 	    chaptersWriteJSON = open(path+"chaptersGen.json","w")
 	    chaptersWriteJSON.write(json.dumps({"chapters": chapters}, indent="\t"))
 	    chaptersWriteJSON.close()
+	    print "Metadata generated"
 	except KeyError:
 	    print arg + " skipped."
 	else:
