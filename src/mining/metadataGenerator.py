@@ -10,10 +10,7 @@ def getMetaPath(book):
     return dataPath+os.path.sep+"perbook"+os.path.sep+book+os.path.sep+"metadata"+os.path.sep
   
 def isRelative(url):
-     if (("http://" in url) or ("https://" in url)):
-       return True
-     else:
-       return False
+     return (not (("http://" in url) or ("https://" in url)))
 
 if (len(sys.argv)<=1):
     print "No book specified. Aborting."
@@ -38,19 +35,24 @@ else:
 	    #print links
 	    path = getMetaPath(arg)
 	    chaptersWrite = open(path+"chaptersGen.txt","w")
+	    chapters = []
 	    for l in links:
 		    #print l
 		    if(isRelative(l[1])):
 		      chaptersWrite.write(bookData[arg]['urlBase'].strip()+l[1])
-		      print l
+		      filename = l[1]+".txt"
+		      chapters.append({"file": filename ,"title": l[2]})
 		    else:
+		      temp = l[1].split(os.path.sep)
+		      filename = temp[len(temp)-1]+".txt"
+		      chapters.append({"file": filename,"title": l[2]})
 		      chaptersWrite.write(l[1])
 		    chaptersWrite.write("\r\n")
+	    chaptersWrite.close()
+	    chaptersWriteJSON = open(path+"chaptersGen.json","w")
+	    chaptersWriteJSON.write(json.dumps({"chapters": chapters}, indent="\t"))
+	    chaptersWriteJSON.close()
 	except KeyError:
 	    print arg + " skipped."
 	else:
 	    pass
-	
-
-	    
-      
