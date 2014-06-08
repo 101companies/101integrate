@@ -1,9 +1,7 @@
-#!/usr/bin/env python
-#coding=utf-8
-
 import simplejson as json
 import sys
 import subprocess32 as subprocess
+import os
 
 def nameIsIn(compared, strings):
   compared = normalizeString(compared)
@@ -25,7 +23,7 @@ def nameEquals(string1, string2):
 
 
 books = set();
-bookData = json.loads(open("config/config.json", 'rb').read())
+bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
 
 if (nameEquals("all", sys.argv[1]) or len(sys.argv) ==1 ):
     for data in bookData:
@@ -51,5 +49,5 @@ print books
 
 
 for b in books:
-  print subprocess.Popen("mkdir -p ../../data/perbook/"+b+"/contents", shell = True).wait()
-  print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/", shell = True).wait()
+  print subprocess.Popen(("mkdir -p ../../data/perbook/"+b+"/contents").replace("/",os.path.sep), shell = True).wait()
+  print subprocess.Popen(("python crawler.py "+b+" ../../data/perbook/").replace("/",os.path.sep), shell = True).wait()
