@@ -38,7 +38,7 @@ def getMetaPath(book):
 # @return 	wether the url is realtive
 def isRelative(url):
      #return (not (("http://" in url) or ("https://" in url)))
-     return (re.match("^http(s)?:\/\/", url) is not None)
+     return (re.match("^http(s)?:\/\/", url) is None)
 
 
 ##
@@ -102,11 +102,13 @@ else:
 			  url+="/"
 		      chaptersWrite.write(url+l[1])
 		      filename = l[1]+".txt"
-		      chapters.append({"file": filename ,"title": l[2]})
+		      filename = filename.split("/")
+		      filename = filename[len(filename)-1]
+		      chapters.append({"file": filename ,"title": l[2], "url": (url+l[1])})
 		    else:
 		      temp = l[1].split(os.path.sep)
 		      filename = temp[len(temp)-1]+".txt"
-		      chapters.append({"file": filename,"title": l[2]})
+		      chapters.append({"file": filename,"title": l[2], "url": l[1]})
 		      chaptersWrite.write(l[1])
 		    chaptersWrite.write("\r\n")
 	    chaptersWrite.close()

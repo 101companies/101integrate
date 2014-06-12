@@ -9,7 +9,6 @@ nope:
 run:
 	mkdir -p logs
 	$(MAKE) download-books | tee logs/downloadBooks.log
-	$(MAKE) bootstrap      | tee logs/bootstrap.log
 	$(MAKE) mine           | tee logs/mine.log
 	$(MAKE) from-cache     | tee logs/fromCache.log
 	$(MAKE) analyze        | tee logs/analyze.log
@@ -19,6 +18,7 @@ run:
 # Download books that are available online
 download-books:
 	cd src/mining; python bookDownloader.py $(BOOKS)
+	$(MAKE) bootstrap
 	cd src/mining; $(MAKE) cleanOnlineBooks
 
 # Optionally link offline books, as explained in the README.md
