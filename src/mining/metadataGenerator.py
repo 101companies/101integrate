@@ -57,13 +57,11 @@ def isAccepted(url, ext):
 # @param	ext		file extension string
 # @return	an re-object for accepting valid book urls
 def createAcceptor(urlBase, ext):
-    regex="^" #^indicates beginning of string
+    regex=""
     for url in urlBase.split("/"):
 	regex ="("+regex+"("+url+"/))?"
-    #regex += "("+url+")?" 
-    regex += "((-|\w)*/){0,2}((-|\w)*)?"+ext+"($|\Z)" #\Z and $ indicates end of String
-    regex= regex.replace("/","\/").replace(".","\.") # escaping chars
-    #print regex
+    regex += "((-|\w)*(/)?){1,3}"+ext+"($|\Z)" #\Z and $ indicates end of String
+    regex= "^(\/)?"+ regex.replace("/","\/").replace(".","\.") # escaping chars  ; ^indicates beginning of string
     return re.compile(regex)
 
 
