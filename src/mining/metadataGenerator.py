@@ -1,3 +1,8 @@
+##
+# @param	systemargs	the books' folders
+# generates chaptersGen txt and json in the book's metadata folder
+
+
 import sys
 import urllib2
 import simplejson as json
@@ -5,8 +10,15 @@ import os
 import re
 from bs4 import BeautifulSoup
 
+
+# the path for the data folder
 dataPath = ".."+os.path.sep+".."+os.path.sep+"data"
 
+
+##
+# @param 	a string with the books folder
+# @return 	the relative path to the book's metadata folder
+# creates the path if it does not exist
 def getMetaPath(book):
     path = dataPath+os.path.sep+"perbook"+os.path.sep+book+os.path.sep+"metadata"+os.path.sep
     try:
@@ -21,13 +33,18 @@ def getMetaPath(book):
 
 
 
-
+##
+# @param 	an url string
+# @return 	wether the url is realtive
 def isRelative(url):
      #return (not (("http://" in url) or ("https://" in url)))
-     return (re.match("http(s)?://", url) is not None)
+     return (re.match("^http(s)?:\/\/", url) is not None)
 
 
-
+##
+# @param	url 	an url string
+# @url 		ext	a file extension string
+# @return	wether its valid url in the book's content
 #DEPRECATED replaced with acceptor
 def isAccepted(url, ext):
     return (not ("mailto:" in url) and ((not ("http:" in url)) or url in url) and (ext in url))
@@ -35,13 +52,18 @@ def isAccepted(url, ext):
 
 
 
-
+##
+# @param	urlBase		book's base url string
+# @param	ext		file extension string
+# @return	an re-object for accepting valid book urls
 def createAcceptor(urlBase, ext):
-    regex=""
-    for url in urlBase.replace(".","\.").split("/"):
-	regex += ("("+url+"/)?")
-    regex += "/?"+"((-|_|[A-Za-z0-9])*/?){1,2}"+ext.replace(".","\.")
-    print regex
+    regex="^" #^indicates beginning of string
+    for url in urlBase.split("/"):
+	regex ="("+regex+"("+url+"/))?"
+    #regex += "("+url+")?" 
+    regex += "((-|\w)*/){0,2}((-|\w)*)?"+ext+"($|\Z)" #\Z and $ indicates end of String
+    regex= regex.replace("/","\/").replace(".","\.") # escaping chars
+    #print regex
     return re.compile(regex)
 
 
@@ -54,19 +76,20 @@ else:
     bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
     opener = urllib2.build_opener()
     opener.addheaders = [('User-agent', 'Mozilla/5.0')]
-    for arg in sys.argv[1:]:	
+    for arg in sys.argv[1:]:# skipping 0 
 	try:
 	    links = []
 	    url = bookData[arg]['urlBase'].strip()
-	    print "Regex-Term:"
+	    print "creating url Acceptor"
 	    acceptor = createAcceptor(url, bookData[arg]['ext'])
+	    print "Regex-Term:"+acceptor.pattern
 	    print "checking " + url
 	    infile = opener.open(url)
 	    if (infile.info()['content-type'].count('text/html') > 0):
 		  doc = BeautifulSoup(infile.read())
 		  for l in doc.find_all('a'):
 		      info = [l, l.get('href'), l.string]
-		      if info[1] is not None:
+		      if info[1] is not None and info[2] is not None:
 			  if acceptor.match(info[1]) is not None:
 			      links.append(info)
 	    print "collected Information"
@@ -77,6 +100,8 @@ else:
 	    for l in links:
 		    print l
 		    if isRelative(l[1]):
+		      if(url[len(url)-1] is not "/"):
+			  url+="/"
 		      chaptersWrite.write(url+l[1])
 		      filename = l[1]+".txt"
 		      chapters.append({"file": filename ,"title": l[2]})
