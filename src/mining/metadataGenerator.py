@@ -8,7 +8,7 @@ import urllib2
 import simplejson as json
 import os
 import re
-from bs4 import BeautifulSoup
+from BeautifulSoup import BeautifulSoup
 
 
 # the path for the data folder
@@ -85,7 +85,7 @@ else:
 	    infile = opener.open(url)
 	    if (infile.info()['content-type'].count('text/html') > 0):
 		  doc = BeautifulSoup(infile.read())
-		  for l in doc.find_all('a'):
+		  for l in doc.findAll('a'):
 		      info = [l, l.get('href'), l.string]
 		      if info[1] is not None and info[2] is not None:
 			  if acceptor.match(info[1]) is not None:

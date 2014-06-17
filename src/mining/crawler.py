@@ -2,7 +2,7 @@ import sys
 import urllib2
 import json
 import html2text
-from bs4 import BeautifulSoup
+from  BeautifulSoup import BeautifulSoup
 
 def getChapter(url, outputfolder, ext, exElems, exClasses, posElements, posAttr):
 	dom = getRefinedHtml(url, exElems, exClasses, posElements, posAttr)

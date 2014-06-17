@@ -17,7 +17,11 @@ run:
 
 # Download books that are available online
 download-books:
+ifndef BOOKS
+	cd src/mining; python bookDownloader.py all
+else
 	cd src/mining; python bookDownloader.py $(BOOKS)
+endif
 	$(MAKE) bootstrap
 	cd src/mining; $(MAKE) cleanOnlineBooks
 

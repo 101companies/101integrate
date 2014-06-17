@@ -27,7 +27,13 @@ bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
 
 if (nameEquals("all", sys.argv[1]) or len(sys.argv) ==1 ):
     for data in bookData:
-	books.add(data)
+	try:
+	    print bookData[data]['fullName'] # SKIP NONBOOKS	
+	    books.add(data)
+	except KeyError:
+	    print "\t "+data + " skipped."
+	else:
+	    pass
 else:
     for arg in sys.argv[1:]:
 	print " comparing " + arg
@@ -49,5 +55,10 @@ print books
 
 
 for b in books:
-  print subprocess.Popen(("mkdir -p ../../data/perbook/"+b+"/contents").replace("/",os.path.sep), shell = True).wait()
-  print subprocess.Popen(("python crawler.py "+b+" ../../data/perbook/").replace("/",os.path.sep), shell = True).wait()
+  try:
+      os.makedirs(("../../data/perbook/"+b+"/contents").replace("/",os.path.sep))
+  except OSError:
+      pass
+  else:
+      pass
+  print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/".replace("/",os.path.sep), shell = True).wait()
