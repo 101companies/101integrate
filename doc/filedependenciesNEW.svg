@@ -157,15 +157,8 @@
   </g>
   <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="-883.733" y1="-248.234" x2="-769.843" y2="-217.459"/>
   <g>
-    <polygon style="fill: #ffffff" points="-1039.9,172.843 -1009.96,194.846 -1039.9,216.848 -1069.84,194.846 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1039.9,172.843 -1009.96,194.846 -1039.9,216.848 -1069.84,194.846 "/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1039.9" y="198.746">
-      <tspan x="-1039.9" y="198.746"></tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1492.24" y1="-20.2374" x2="-1073.82" y2="192.816"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1083.01,193.749 -1071.83,193.831 -1078.47,184.838 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1492.24" y1="-20.2374" x2="-474.515" y2="310.82"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-483.445,313.173 -472.389,311.511 -480.352,303.663 "/>
   </g>
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1385.73" y1="-501.021" x2="-1277.48" y2="-513.977"/>
@@ -233,10 +226,6 @@
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-404.878" y="240.984">
       <tspan x="-404.878" y="240.984">prepare</tspan>
     </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1015.77" y1="200.097" x2="-505.103" y2="311.234"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-513.753,314.469 -502.919,311.71 -511.627,304.697 "/>
   </g>
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-405.377" y1="248.989" x2="-407.816" y2="307.717"/>

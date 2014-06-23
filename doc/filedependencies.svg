@@ -2,27 +2,27 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
 <svg width="79cm" height="52cm" viewBox="-1493 -532 1561 1039" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-898.838" y="-530.943" width="465.723" height="419.67"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-665.977" y="-317.208">
-      <tspan x="-665.977" y="-317.208"></tspan>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-898.838" y="-530.944" width="465.723" height="419.67"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-665.976" y="-317.209">
+      <tspan x="-665.976" y="-317.209"></tspan>
     </text>
   </g>
   <g>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-914.406" y="166.344" width="454.048" height="191.7"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-687.382" y="266.094">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-687.382" y="266.094">
       <tspan x="-687.382" y="266.094"></tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-950.897" y="-54.1933" width="482.755" height="192.7"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-709.519" y="46.0567">
-      <tspan x="-709.519" y="46.0567"></tspan>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-950.898" y="-54.1934" width="482.755" height="192.7"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-709.52" y="46.0566">
+      <tspan x="-709.52" y="46.0566"></tspan>
     </text>
   </g>
   <g>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-1491.69" y="-397.972" width="371.022" height="608.424"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1306.18" y="-89.8603">
-      <tspan x="-1306.18" y="-89.8603"></tspan>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1306.18" y="-89.8601">
+      <tspan x="-1306.18" y="-89.8601"></tspan>
     </text>
   </g>
   <g>
@@ -149,17 +149,17 @@
     </text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-1096.03" y="-280.099" width="172.7" height="38"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1096.03" y="-280.099" width="172.7" height="38"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1009.68" y="-257.199">
-      <tspan x="-1009.68" y="-257.199">src/misc/downloader.py</tspan>
+    <rect style="fill: #ffffff" x="-1096.03" y="-280.098" width="172.7" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1096.03" y="-280.098" width="172.7" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1009.68" y="-257.198">
+      <tspan x="-1009.68" y="-257.198">src/misc/downloader.py</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-1124.78" y="347.749" width="185.75" height="38"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1124.78" y="347.749" width="185.75" height="38"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1031.9" y="370.649">
-      <tspan x="-1031.9" y="370.649">src/misc/downloadnltK.py</tspan>
+    <rect style="fill: #ffffff" x="-1124.78" y="347.748" width="185.75" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1124.78" y="347.748" width="185.75" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1031.9" y="370.648">
+      <tspan x="-1031.9" y="370.648">src/misc/downloadnltK.py</tspan>
     </text>
   </g>
   <g>
@@ -183,11 +183,11 @@
   </g>
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1043.95" y1="266.448" x2="-1034.84" y2="342.314"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1040.73,335.202 -1034.57,344.535 -1030.8,334.01 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1040.73,335.201 -1034.57,344.534 -1030.8,334.009 "/>
   </g>
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1133.31" y1="-243.888" x2="-1100.09" y2="-259.224"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1105.04,-251.431 -1098.06,-260.162 -1109.23,-260.51 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1105.04,-251.43 -1098.06,-260.161 -1109.24,-260.509 "/>
   </g>
   <g>
     <rect style="fill: #ffffff" x="-906.65" y="172.24" width="433.999" height="38"/>
@@ -444,8 +444,8 @@
     </text>
   </g>
   <g>
-    <path style="fill: #ffffff" d="M -844.876 -189.943 L -735.326,-189.943 C -720.201,-189.943 -707.939,-185.019 -707.939,-178.943 C -707.939,-172.868 -720.201,-167.943 -735.326,-167.943 L -844.876,-167.943 C -860.002,-167.943 -872.264,-172.868 -872.264,-178.943 C -872.264,-185.019 -860.002,-189.943 -844.876,-189.943z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -844.876 -189.943 L -735.326,-189.943 C -720.201,-189.943 -707.939,-185.019 -707.939,-178.943 C -707.939,-172.868 -720.201,-167.943 -735.326,-167.943 L -844.876,-167.943 C -860.002,-167.943 -872.264,-172.868 -872.264,-178.943 C -872.264,-185.019 -860.002,-189.943 -844.876,-189.943"/>
+    <path style="fill: #ffffff" d="M -844.877 -189.943 L -735.326,-189.943 C -720.201,-189.943 -707.939,-185.019 -707.939,-178.943 C -707.939,-172.868 -720.201,-167.943 -735.326,-167.943 L -844.877,-167.943 C -860.002,-167.943 -872.264,-172.868 -872.264,-178.943 C -872.264,-185.019 -860.002,-189.943 -844.877,-189.943z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -844.877 -189.943 L -735.326,-189.943 C -720.201,-189.943 -707.939,-185.019 -707.939,-178.943 C -707.939,-172.868 -720.201,-167.943 -735.326,-167.943 L -844.877,-167.943 C -860.002,-167.943 -872.264,-172.868 -872.264,-178.943 C -872.264,-185.019 -860.002,-189.943 -844.877,-189.943"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-790.101" y="-174.943">
       <tspan x="-790.101" y="-174.943">deployBacklinks</tspan>
     </text>
@@ -658,12 +658,12 @@
     <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-399.132,69.7161 -389.136,64.7083 -399.14,59.7161 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-541.858" y1="104.621" x2="-358.762" y2="115.463"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-541.858" y1="104.621" x2="-358.762" y2="115.462"/>
     <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-366.808,119.995 -356.53,115.595 -366.217,110.012 "/>
   </g>
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-144.809" y1="116.193" x2="-128.343" y2="116.266"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-136.129,121.231 -126.107,116.276 -136.085,111.232 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-136.129,121.231 -126.107,116.276 -136.085,111.231 "/>
   </g>
   <g>
     <rect style="fill: #ffffff" x="-359.708" y="-7.07574" width="226.9" height="38"/>
@@ -680,8 +680,8 @@
     </text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="-354.298" y="96.7269" width="209.35" height="38"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-354.298" y="96.7269" width="209.35" height="38"/>
+    <rect style="fill: #ffffff" x="-354.298" y="96.7268" width="209.35" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-354.298" y="96.7268" width="209.35" height="38"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-249.623" y="119.627">
       <tspan x="-249.623" y="119.627">src/integrate/uniqueTerms.py</tspan>
     </text>
