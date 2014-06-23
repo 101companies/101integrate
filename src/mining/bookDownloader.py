@@ -1,6 +1,5 @@
 import simplejson as json
 import sys
-import subprocess32 as subprocess
 import os
 
 ##
