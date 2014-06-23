@@ -86,6 +86,7 @@ def getLinks(url,ext):
 			  if acceptor.match(info[1]) is not None:
 			      links.append(info)
 	    print "collected Information"
+	    opener.close()
 	    return links
 
 
