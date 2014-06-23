@@ -3,6 +3,10 @@ import sys
 import subprocess32 as subprocess
 import os
 
+##
+#@param compared	the string to be compared
+#@param strings		an array of strings which are compared with the compared
+#@return 	wether the compared matches another sting in "normal form"
 def nameIsIn(compared, strings):
   compared = normalizeString(compared)
   for s in strings:
@@ -10,12 +14,12 @@ def nameIsIn(compared, strings):
       return True
   return False
 
-
+##
+#@param	string	a String
+#@return	a normalized Representation of this string
 def normalizeString(string):
     return string.lower().replace(" ","").replace(":","").replace("-","").replace(".","")
 
-def nameEquals(string1, string2):
-    return (normalizeString(string1) == normalizeString(string2))
 
 
 
@@ -25,7 +29,7 @@ def nameEquals(string1, string2):
 books = set();
 bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
 
-if (nameEquals("all", sys.argv[1]) or len(sys.argv) ==1 ):
+if (nameIsIn("all",[sys.argv[1]]) or len(sys.argv) ==1 ):
     for data in bookData:
 	try:
 	    print bookData[data]['fullName'] # SKIP NONBOOKS	
@@ -61,4 +65,6 @@ for b in books:
       pass
   else:
       pass
-  print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/".replace("/",os.path.sep), shell = True).wait()
+  sys.argv = [sys.argv[0],b,("../../data/perbook/").replace("/",os.path.sep)]
+  import crawler
+  #print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/".replace("/",os.path.sep), shell = True).wait()

@@ -1,7 +1,7 @@
 ##
 # @param	systemargs	the books' folders
 # generates chaptersGen txt and json in the book's metadata folder
-
+# only works if the base Url is the index url
 
 import sys
 import urllib2
@@ -68,7 +68,7 @@ def createAcceptor(urlBase, ext):
 ##
 # @param	url 	the url which links are to be extracted
 # @param	ext 	the file extension for the extracted links
-# @return	an Array of Arrays containing the html-link-code, the link and its description
+# @return	an Array of Arrays containing the the link and its description
 def getLinks(url,ext):
 	    opener = urllib2.build_opener()
 	    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
@@ -81,9 +81,9 @@ def getLinks(url,ext):
 	    if (infile.info()['content-type'].count('text/html') > 0):
 		  doc = BeautifulSoup(infile.read())
 		  for l in doc.findAll('a'):
-		      info = [l, l.get('href'), l.string]
-		      if info[1] is not None and info[2] is not None:
-			  if acceptor.match(info[1]) is not None:
+		      info = [ l.get('href'), l.string]
+		      if info[0] is not None and info[1] is not None:
+			  if acceptor.match(info[0]) is not None:
 			      links.append(info)
 	    print "collected Information"
 	    opener.close()
@@ -105,19 +105,19 @@ else:
 	    print "Processing links"
 	    for l in links:
 		    print l
-		    if isRelative(l[1]):
+		    if isRelative(l[0]):
 		      if(url[len(url)-1] is not "/"):
 			  url+="/"
-		      chaptersWrite.write(url+l[1])
-		      filename = l[1]+".txt"
+		      chaptersWrite.write(url+l[0])
+		      filename = l[0]+".txt"
 		      filename = filename.split("/")
 		      filename = filename[len(filename)-1]
-		      chapters.append({"file": filename ,"title": l[2], "url": (url+l[1])})
+		      chapters.append({"file": filename ,"title": l[1], "url": (url+l[0])})
 		    else:
-		      temp = l[1].split(os.path.sep)
+		      temp = l[0].split(os.path.sep)
 		      filename = temp[len(temp)-1]+".txt"
-		      chapters.append({"file": filename,"title": l[2], "url": l[1]})
-		      chaptersWrite.write(l[1])
+		      chapters.append({"file": filename,"title": l[1], "url": l[0]})
+		      chaptersWrite.write(l[0])
 		    chaptersWrite.write("\r\n")
 	    chaptersWrite.close()
 	    chaptersWriteJSON = open(path+"chaptersGen.json","w")
