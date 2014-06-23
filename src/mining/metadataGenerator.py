@@ -65,21 +65,16 @@ def createAcceptor(urlBase, ext):
     return re.compile(regex)
 
 
-
-
-
-if (len(sys.argv)<=1):
-    print "No book specified. Aborting."
-else:
-    bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
-    opener = urllib2.build_opener()
-    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
-    for arg in sys.argv[1:]:# skipping 0 
-	try:
+##
+# @param	url 	the url which links are to be extracted
+# @param	ext 	the file extension for the extracted links
+# @return	an Array of Arrays containing the html-link-code, the link and its description
+def getLinks(url,ext):
+	    opener = urllib2.build_opener()
+	    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
 	    links = []
-	    url = bookData[arg]['urlBase'].strip()
-	    print "creating url Acceptor"
-	    acceptor = createAcceptor(url, bookData[arg]['ext'])
+    	    print "creating url Acceptor"
+	    acceptor = createAcceptor(url, ext)
 	    print "Regex-Term:"+acceptor.pattern
 	    print "checking " + url
 	    infile = opener.open(url)
@@ -91,6 +86,18 @@ else:
 			  if acceptor.match(info[1]) is not None:
 			      links.append(info)
 	    print "collected Information"
+	    return links
+
+
+
+if (len(sys.argv)<=1):
+    print "No book specified. Aborting."
+else:
+    bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
+    for arg in sys.argv[1:]:# skipping 0 
+	try:
+	    url = bookData[arg]['urlBase'].strip()
+	    links = getLinks(url, bookData[arg]['ext'])
 	    path = getMetaPath(arg)
 	    chaptersWrite = open(path+"chaptersGen.txt","w")
 	    chapters = []
