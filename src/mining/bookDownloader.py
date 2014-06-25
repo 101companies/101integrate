@@ -1,5 +1,6 @@
 import simplejson as json
 import sys
+import subprocess32 as subprocess
 import os
 
 ##
@@ -64,6 +65,6 @@ for b in books:
       pass
   else:
       pass
-  sys.argv = [sys.argv[0],b,("../../data/perbook/").replace("/",os.path.sep)]
-  import crawler
-  #print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/".replace("/",os.path.sep), shell = True).wait()
+  #sys.argv = [sys.argv[0],b,("../../data/perbook/").replace("/",os.path.sep)]
+  #import crawler
+  print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/".replace("/",os.path.sep), shell = True).wait()

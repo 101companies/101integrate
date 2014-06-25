@@ -45,6 +45,7 @@ download-deps:
 	sudo easy_install jinja2
 	sudo easy_install mako
 	sudo easy_install asq
+	sudo easy_install subprocess32
 	python -m nltk.downloader all
 
 bootstrap:

@@ -106,18 +106,19 @@ else:
 	    for l in links:
 		    print l
 		    if isRelative(l[0]):
-		      if(url[len(url)-1] is not "/"):
-			  url+="/"
-		      chaptersWrite.write(url+l[0])
-		      filename = l[0]+".txt"
-		      filename = filename.split("/")
-		      filename = filename[len(filename)-1]
-		      chapters.append({"file": filename ,"title": l[1], "url": (url+l[0])})
+			  if(url[len(url)-1] is not "/"):
+				url+="/"
+			  
+			  chaptersWrite.write(url+l[0])
+			  filename = l[0]+".txt"
+			  filename = filename.split("/")
+			  filename = filename[len(filename)-1]
+			  chapters.append({"file": filename ,"title": l[1], "url": (url+l[0])})
 		    else:
-		      temp = l[0].split(os.path.sep)
-		      filename = temp[len(temp)-1]+".txt"
-		      chapters.append({"file": filename,"title": l[1], "url": l[0]})
-		      chaptersWrite.write(l[0])
+			  temp = l[0].split(os.path.sep)
+			  filename = temp[len(temp)-1]+".txt"
+			  chapters.append({"file": filename,"title": l[1], "url": l[0]})
+			  chaptersWrite.write(l[0])
 		    chaptersWrite.write("\r\n")
 	    chaptersWrite.close()
 	    chaptersWriteJSON = open(path+"chaptersGen.json","w")
