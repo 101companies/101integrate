@@ -97,35 +97,52 @@ else:
     bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
     for arg in sys.argv[1:]:# skipping 0 
 	try:
-	    url = bookData[arg]['urlBase'].strip()
-	    links = getLinks(url, bookData[arg]['ext'])
-	    path = getMetaPath(arg)
-	    chaptersWrite = open(path+"chaptersGen.txt","w")
-	    chapters = []
-	    print "Processing links"
-	    for l in links:
-		    print l
-		    if isRelative(l[0]):
-			  if(url[len(url)-1] is not "/"):
-				url+="/"
-			  
-			  chaptersWrite.write(url+l[0])
-			  filename = l[0]+".txt"
-			  filename = filename.split("/")
-			  filename = filename[len(filename)-1]
-			  chapters.append({"file": filename ,"title": l[1], "url": (url+l[0])})
-		    else:
-			  temp = l[0].split(os.path.sep)
-			  filename = temp[len(temp)-1]+".txt"
-			  chapters.append({"file": filename,"title": l[1], "url": l[0]})
-			  chaptersWrite.write(l[0])
-		    chaptersWrite.write("\r\n")
-	    chaptersWrite.close()
-	    chaptersWriteJSON = open(path+"chaptersGen.json","w")
-	    chaptersWriteJSON.write(json.dumps({"chapters": chapters}, indent="\t"))
-	    chaptersWriteJSON.close()
-	    print "Metadata generated"
+		url = bookData[arg]['urlBase'].strip()
+		links = getLinks(url, bookData[arg]['ext'])
+		path = getMetaPath(arg)
+		chaptersWrite = open(path+"chaptersGen.txt","w")
+		chapters = []
+		print "Processing links"
+		for l in links:
+			print l
+			if isRelative(l[0]):
+				if(url[len(url)-1] is not "/"):
+					url+="/"
+				chaptersWrite.write(url+l[0])
+				filename = l[0]+".txt"
+				filename = filename.split("/")
+				filename = filename[len(filename)-1]
+				chapters.append({"file": filename ,"title": l[1], "url": (url+l[0])})
+			else:
+				temp = l[0].split(os.path.sep)
+				filename = temp[len(temp)-1]+".txt"
+				chapters.append({"file": filename,"title": l[1]})
+				chaptersWrite.write(l[0])
+			chaptersWrite.write("\r\n")
+		chaptersWrite.close()
+		chaptersWriteJSON = open(path+"chaptersGen.json","w")
+		chaptersWriteJSON.write(json.dumps({"chapters": chapters}, indent="\t"))
+		chaptersWriteJSON.close()
+		print "Metadata generated"
+		cleanedUrls = ""
+		matchingStr = "/"
+		for u in url.split("/")[3:]: # http://www.anything.com/whateverinterestsme
+			if u:
+				matchingStr+=u+"/"
+		finder = re.compile("("+matchingStr+"){2}")
+		for line in open((path+"chaptersGen.txt")).readlines():
+			if finder.search(line) is not None:
+					cleaned = url +"/"+ line.replace(url,"").replace(matchingStr,"")
+					cleaned = cleaned.replace("//","/").replace(":/","://")
+					cleanedUrls+=cleaned
+			else:
+					cleanedUrls+=line
+			cleanedUrls  + "\r\n"
+		chaptersWrite = open(path+"chaptersGen.txt","w")
+		chaptersWrite.write(cleanedUrls)
+		chaptersWrite.close()
+		print "urls cleaned"
 	except KeyError:
-	    print arg + " skipped."
+		print arg + " skipped."
 	else:
-	    pass
+		pass
