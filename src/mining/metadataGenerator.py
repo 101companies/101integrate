@@ -88,6 +88,27 @@ def getLinks(url,ext):
 	    print "collected Information"
 	    opener.close()
 	    return links
+	    
+##
+# @param	baseUrl		the base Url
+# @param	url			the url to be cleaned
+# @return	the cleanedUrl or empty string if it is not below the baseUrl
+def cleanUrl(baseUrl, url):
+	cleanedUrls = ""
+	matchingStr = "/"
+	for u in baseUrl.split("/")[3:]: # http://www.anything.com/whateverinterestsme
+		if u:
+			matchingStr+=u+"/"
+	finder = re.compile(("("+matchingStr+"){2}").replace("/","\/"))
+	mismatcher = re.compile("\/\/((\w|-|_|\.)+\/)+\/")
+	if finder.search(url) is not None:
+			cleaned = baseUrl +"/"+ url.replace(baseUrl,"").replace(matchingStr,"")
+			cleaned = cleaned.replace("//","/").replace(":/","://")
+			cleanedUrls+=cleaned
+	else:
+		if mismatcher.search(url) is None:
+			cleanedUrls+=line
+	return cleanedUrls
 
 
 
@@ -108,11 +129,15 @@ else:
 			if isRelative(l[0]):
 				if(url[len(url)-1] is not "/"):
 					url+="/"
-				chaptersWrite.write(url+l[0])
-				filename = l[0]+".txt"
-				filename = filename.split("/")
-				filename = filename[len(filename)-1]
-				chapters.append({"file": filename ,"title": l[1], "url": (url+l[0])})
+				writeUrl= cleanUrl(url, url+l[0])
+				if writeUrl:
+						chaptersWrite.write(writeUrl)
+						filename = l[0]+".txt"
+						filename = filename.split("/")
+						filename = filename[len(filename)-1]
+						chapters.append({"file": filename ,"title": l[1]})
+				else:
+					print " \t rejected"
 			else:
 				temp = l[0].split(os.path.sep)
 				filename = temp[len(temp)-1]+".txt"
@@ -124,24 +149,6 @@ else:
 		chaptersWriteJSON.write(json.dumps({"chapters": chapters}, indent="\t"))
 		chaptersWriteJSON.close()
 		print "Metadata generated"
-		cleanedUrls = ""
-		matchingStr = "/"
-		for u in url.split("/")[3:]: # http://www.anything.com/whateverinterestsme
-			if u:
-				matchingStr+=u+"/"
-		finder = re.compile("("+matchingStr+"){2}")
-		for line in open((path+"chaptersGen.txt")).readlines():
-			if finder.search(line) is not None:
-					cleaned = url +"/"+ line.replace(url,"").replace(matchingStr,"")
-					cleaned = cleaned.replace("//","/").replace(":/","://")
-					cleanedUrls+=cleaned
-			else:
-					cleanedUrls+=line
-			cleanedUrls  + "\r\n"
-		chaptersWrite = open(path+"chaptersGen.txt","w")
-		chaptersWrite.write(cleanedUrls)
-		chaptersWrite.close()
-		print "urls cleaned"
 	except KeyError:
 		print arg + " skipped."
 	else:
