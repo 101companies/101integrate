@@ -1,7 +1,8 @@
 import simplejson as json
 import sys
-import subprocess32 as subprocess
+#import subprocess32 as subprocess
 import os
+import crawler
 
 ##
 #@param compared	the string to be compared
@@ -14,6 +15,8 @@ def nameIsIn(compared, strings):
       return True
   return False
 
+
+
 ##
 #@param	string	a String
 #@return	a normalized Representation of this string
@@ -25,11 +28,11 @@ def normalizeString(string):
 
 
 
+def selectBooks(args):
+  books = set();
+  bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
 
-books = set();
-bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
-
-if (nameIsIn("all",[sys.argv[1]]) or len(sys.argv) ==1 ):
+  if (nameIsIn("all",[args[1]]) or len(args) == 1 ):
     for data in bookData:
 	try:
 	    print bookData[data]['fullName'] # SKIP NONBOOKS	
@@ -38,8 +41,8 @@ if (nameIsIn("all",[sys.argv[1]]) or len(sys.argv) ==1 ):
 	    print "\t "+data + " skipped."
 	else:
 	    pass
-else:
-    for arg in sys.argv[1:]:
+  else:
+    for arg in args:
 	print " comparing " + arg
 	for data in bookData:
 	    try:
@@ -53,18 +56,26 @@ else:
 	    else:
 		  pass
 		
-
-print "Books to be downloaded:"
-print books
+  return books
 
 
-for b in books:
-  try:
+
+
+def downloadBooks(books):
+  print "Books to be downloaded:"
+  print books
+  for b in books:
+    try:
       os.makedirs(("../../data/perbook/"+b+"/contents").replace("/",os.path.sep))
-  except OSError:
+    except OSError:
       pass
-  else:
+    else:
       pass
-  #sys.argv = [sys.argv[0],b,("../../data/perbook/").replace("/",os.path.sep)]
-  #import crawler
-  print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/".replace("/",os.path.sep), shell = True).wait()
+    crawler.crawl([sys.argv[0],b,("../../data/perbook/").replace("/",os.path.sep)])
+    #sys.argv = [sys.argv[0],b,("../../data/perbook/").replace("/",os.path.sep)]
+    #import crawler
+    #print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/".replace("/",os.path.sep), shell = True).wait()
+    
+    
+if __name__ == "__main__":
+   downloadBooks(selectBooks(sys.argv))
