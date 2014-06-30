@@ -1,4 +1,3 @@
-
 https://en.wikibooks.org/wiki/Python_Programming/Overview
 https://en.wikibooks.org/wiki/Python_Programming/Getting_Python
 https://en.wikibooks.org/wiki/Python_Programming/Setting_it_up
@@ -63,9 +62,3 @@ https://en.wikibooks.org/wiki/Python_Programming/Extending_with_C
 https://en.wikibooks.org/wiki/Python_Programming/Extending_with_Pyrex
 https://en.wikibooks.org/wiki/Python_Programming/Extending_with_ctypes
 https://en.wikibooks.org/wiki/Python_Programming/Extending_with_Perl
-
-
-
-
-
-
