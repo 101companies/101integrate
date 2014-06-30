@@ -17,24 +17,6 @@
 		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
 		"package" : ["Haskell"]
 	},
-	"WBH" :{
-		"fullName": "Wikibooks Haskell",
-		"isLinkable": true,
-		"crawl": "true",
-       	 	"ext": "",
-       	 	"urlBase": "https://en.wikibooks.org/wiki/Haskell",
-		"posElements" : ["h2", "p"],
-		"posAttr" : "id",
-        		"exclude-elements": ["pre","form","link","script","noscript","head","img"],
-        		"exclude-classes": ["toc", "navfooter", "rwhfooter", "navheader", "catlinks", "visualClear", "vectorTabs", "portal", "noprint", "printfooter", "mw-editsection","subpages","portal","body","selflink","flaggedrevs_notice", "plainlinks", "metadata","metadata plainlinks ambox ambox-notice","mw-jump","external text","mbox-text","mw-fr-revisiontag","vectorMenu emptyPortlet"],
-        		"exclude-ids": ["mw-navigation","footer","contentSub","siteSub"],
-		"kind" : "../../books",
-		"title" : "Wikibooks Haskell",
-		"folder" : "WBH",
-		"index" : "Index.csv",
-		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
-		"package" : ["Haskell"]
-	},
 	"WBPP" :{
 		"fullName": "Wikibooks Python Programming",
 		"isLinkable": true,
