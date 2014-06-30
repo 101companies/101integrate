@@ -50,7 +50,7 @@ def selectBooks(args, config):
   if (nameIsIn("all",[args[1]]) or len(args) == 1 ):
     for data in bookData:
 	try:
-	    print bookData[data]['fullName'] # SKIP NONBOOKS	
+	    print bookData[data]['fullName'] # SKIP NONBOOKS
 	    books.add(data)
 	except KeyError:
 	    print "\t "+data + " skipped."
@@ -62,7 +62,7 @@ def selectBooks(args, config):
 	for data in bookData:
 	    try:
 		  print "\t with " + data
-		  if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['package'])) and bookData[data]['isLinkable']):
+		  if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['tag'])) and bookData[data]['isLinkable']):
 		      print "\t\t"+ arg+" recognized"
 		      books.add(data)
 		      print "\t\t"+ data+" added "

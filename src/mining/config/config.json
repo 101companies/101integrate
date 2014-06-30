@@ -15,7 +15,7 @@
 		"folder" : "RWH",
 		"index" : "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
-		"package" : ["Haskell"]
+		"tag" : ["Haskell"]
 	},
 	"WBPP" :{
 		"fullName": "Wikibooks Python Programming",
@@ -33,7 +33,7 @@
 		"folder" : "WBPP",
 		"index" : "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
-		"package" : ["Python"]
+		"tag" : ["Python"]
 	},
 	"PIH": {
 		"fullName": "Programming in Haskell",
@@ -46,7 +46,7 @@
 		"index": "Index.csv",
 		"exclude-env" : ["calc", "displaymath", "array", "hugs", "tabbing", "itemizedhugs"],
 		"exclude-patterns": [{"pos":"suffix", "string":" of"}, {"pos":"suffix", "string":" and"}],
-		"package" : ["Haskell"]
+		"tag" : ["Haskell"]
 	},
 	"Craft" : {
 		"fullName": "Haskell: The Craft of Functional Programming",
@@ -59,7 +59,7 @@
 		"folder": "Craft",
 		"index": "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}, {"pos":"prefix", "string":"as "}, {"pos":"prefix","string":"a "}, {"pos":"suffix", "string":" and"}],
-		"package" : ["Haskell"]
+		"tag" : ["Haskell"]
 	},
 	"LYAH": {
 		"fullName": "Learn You a Haskell",
@@ -77,7 +77,7 @@
 		"folder" : "LYAH",
 		"index" : "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}],
-		"package" : ["Haskell"]
+		"tag" : ["Haskell"]
 	},
     "OnlyIndex" : {
         "kind" : "../../data/allbooks",
