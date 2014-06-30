@@ -42,9 +42,10 @@ def getRefinedHtml(url, exElem, exClasses, exIds, posElements, posAttr):
 			#print "Can't extract content of " + url + " properly."
 			print e
 
-resInfos = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())[sys.argv[1]]
-for url in open((sys.argv[2] + sys.argv[1] + "/metadata/chapters.txt").replace("/",os.path.sep)).readlines():
-	if not url.strip(" "):#skip empty lines
+def crawl(args):
+    resInfos = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())[args[1]]
+    for url in open((args[2] + args[1] + "/metadata/chapters.txt").replace("/",os.path.sep)).readlines():
+	if not url.strip(" ").strip("\r").strip("\n"):#skip empty lines
 	  continue
 	try:
 	  exIds =  resInfos['exclude-ids']
@@ -52,4 +53,8 @@ for url in open((sys.argv[2] + sys.argv[1] + "/metadata/chapters.txt").replace("
 	  exIds = []
 	else:
 	  pass
-	getChapter(url.rstrip(),(sys.argv[2] + sys.argv[1] + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'])
+	getChapter(url.rstrip(),(args[2] + args[1] + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'])
+
+
+if __name__ == "__main__":
+   crawl(sys.argv)

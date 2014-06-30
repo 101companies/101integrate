@@ -1,8 +1,3 @@
-##
-# @param	systemargs	the books' folders
-# generates chaptersGen txt and json in the book's metadata folder
-# only works if the base Url is the index url
-
 import sys
 import urllib2
 import simplejson as json
@@ -99,24 +94,26 @@ def cleanUrl(baseUrl, url):
 	for u in baseUrl.split("/")[3:]: # http://www.anything.com/whateverinterestsme
 		if u:
 			matchingStr+=u+"/"
-	finder = re.compile(("("+matchingStr+"){2}").replace("/","\/"))
-	mismatcher = re.compile("\/\/((\w|-|_|\.)+\/)+\/")
-	if finder.search(url) is not None:
+	if re.search((("("+matchingStr+"){2}").replace("/","\/")), url) is not None:
 			cleaned = baseUrl +"/"+ url.replace(baseUrl,"").replace(matchingStr,"")
 			cleaned = cleaned.replace("//","/").replace(":/","://")
 			cleanedUrls+=cleaned
 	else:
-		if mismatcher.search(url) is None:
+		if re.search("\/\/((\w|-|_|\.)+\/)+\/",url) is None:
 			cleanedUrls+=line
 	return cleanedUrls
 
 
-
-if (len(sys.argv)<=1):
+##
+# @param	args	the books' folders
+# generates chaptersGen txt and json in the book's metadata folder
+# only works if the base Url is the index url
+def generateMetadata(args):
+  if (len(args)<=0):
     print "No book specified. Aborting."
-else:
+  else:
     bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
-    for arg in sys.argv[1:]:# skipping 0 
+    for arg in args:
 	try:
 		url = bookData[arg]['urlBase'].strip()
 		links = getLinks(url, bookData[arg]['ext'])
@@ -153,3 +150,7 @@ else:
 		print arg + " skipped."
 	else:
 		pass
+
+
+if __name__ == "__main__":
+  generateMetadata(sys.argv[1:])
