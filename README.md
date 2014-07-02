@@ -17,12 +17,14 @@ You need a bunch of Python packages and some NLP support. This is taken care of 
 Some of the supported textbooks are available online. They are not included into the repo. They must be downloaded with the following command:
 
     make download-books
-    
-The following book-packages can be chosen: Haskell
 
-You can download e.g. the Haskell-Book-Package with the following command:
+You can download tagged Books e.g. the Haskell-Books with the following command:
 
     make download-books BOOKS="haskell"
+
+At the Moment the following Tags are available:
+
+Haskell, Python
 
 # Offline textbooks
 

@@ -1,0 +1,2 @@
+linked books		the currently local available/downloaded Books
+no-linked books 	the integrateable books
