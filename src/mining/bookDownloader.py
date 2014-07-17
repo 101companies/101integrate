@@ -1,4 +1,4 @@
-import simplejson as json
+import json
 import sys
 #import subprocess32 as subprocess
 import os
@@ -51,7 +51,8 @@ def selectBooks(args, config):
     for data in bookData:
 	try:
 	    print bookData[data]['fullName'] # SKIP NONBOOKS
-	    books.add(data)
+	    if bookData[data]['isLinkable']:
+	      books.add(data)
 	except KeyError:
 	    print "\t "+data + " skipped."
 	else:

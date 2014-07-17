@@ -50,4 +50,5 @@ clean:
 	cd ..; for b in ${ALL_BOOKS}; do \
 			cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ;\
 			cd ../../.. ;\
+			rm -rf data/perbook/"$$b"/contents; \
 	done
