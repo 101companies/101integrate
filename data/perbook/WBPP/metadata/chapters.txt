@@ -51,12 +51,8 @@ https://en.wikibooks.org/wiki/Python_Programming/Internet
 https://en.wikibooks.org/wiki/Python_Programming/Networks
 https://en.wikibooks.org/wiki/Python_Programming/Databases
 https://en.wikibooks.org/wiki/Python_Programming/Database_Programming
-https://en.wikibooks.org/wiki/Python_Programming/numpy
-https://en.wikibooks.org/wiki/Python_Programming/Game_Programming_in_Python
 https://en.wikibooks.org/wiki/Python_Programming/PyQt4
 https://en.wikibooks.org/wiki/Python_Programming/Dbus
-https://en.wikibooks.org/wiki/Python_Programming/pyFormex
-https://en.wikibooks.org/wiki/Python_Programming/matplotlib
 https://en.wikibooks.org/wiki/Python_Programming/Sorted_Container_Types
 https://en.wikibooks.org/wiki/Python_Programming/Extending_with_C
 https://en.wikibooks.org/wiki/Python_Programming/Extending_with_Pyrex

@@ -213,28 +213,12 @@
 			"title": "Database Programming"
 		},
 		{
-			"file": "numpy.txt",
-			"title": "numpy"
-		},
-		{
-			"file": "Game_Programming_in_Python.txt",
-			"title": "Game Programming in Python"
-		},
-		{
 			"file": "PyQt4.txt",
 			"title": "Qt4"
 		},
 		{
 			"file": "Dbus.txt",
 			"title": "Dbus"
-		},
-		{
-			"file": "pyFormex.txt",
-			"title": "pyFormex"
-		},
-		{
-			"file": "matplotlib.txt",
-			"title": "matplotlib"
 		},
 		{
 			"file": "Sorted_Container_Types.txt",
