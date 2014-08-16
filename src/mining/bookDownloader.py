@@ -1,19 +1,9 @@
 import json
 import sys
-#import subprocess32 as subprocess
 import os
 import crawler
+import constants
 
-##
-#@param	path	a directory you want to create
-# creates a directory if it does not exist
-def mkdir(path):
-    try:
-      os.makedirs(path)
-    except OSError:
-      pass
-    else:
-      pass
 
 ##
 #@param compared	the string to be compared
@@ -87,14 +77,11 @@ def downloadBooks(books, bookfldr):
       bookfldr += os.path.sep
   bookfldr = bookfldr.replace("/",os.path.sep)
   for b in books:
-      mkdir((bookfldr+b+os.path.sep+"contents"))
+      constants.mkdir((bookfldr+b+os.path.sep+"contents"))
       crawler.crawl([sys.argv[0],b,bookfldr])
-      #sys.argv = [sys.argv[0],b,("../../data/perbook/").replace("/",os.path.sep)]
-      #import crawler
-      #print subprocess.Popen("python crawler.py "+b+" ../../data/perbook/".replace("/",os.path.sep), shell = True).wait()
   
   
     
     
 if __name__ == "__main__":
-   downloadBooks(selectBooks(sys.argv, json.loads(open("config"+os.path.sep+"config.json", 'rb').read())),"../../data/perbook/")
+   downloadBooks(selectBooks(sys.argv, json.loads(open(constants.configPath, 'rb').read())),constants.bookPath)

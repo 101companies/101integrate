@@ -4,27 +4,7 @@ import simplejson as json
 import os
 import re
 from BeautifulSoup import BeautifulSoup
-
-
-# the path for the data folder
-dataPath = ".."+os.path.sep+".."+os.path.sep+"data"
-
-
-##
-# @param 	a string with the books folder
-# @return 	the relative path to the book's metadata folder
-# creates the path if it does not exist
-def getMetaPath(book):
-    path = dataPath+os.path.sep+"perbook"+os.path.sep+book+os.path.sep+"metadata"+os.path.sep
-    try:
-      os.makedirs(path)
-      print path + "was created"
-    except OSError:
-      pass
-    else:
-      pass
-    return path
-
+import constants
 
 
 
@@ -112,12 +92,12 @@ def generateMetadata(args):
   if (len(args)<=0):
     print "No book specified. Aborting."
   else:
-    bookData = json.loads(open("config"+os.path.sep+"config.json", 'rb').read())
+    bookData = json.loads(open(constants.configPath , 'rb').read())
     for arg in args:
 	try:
 		url = bookData[arg]['urlBase'].strip()
 		links = getLinks(url, bookData[arg]['ext'])
-		path = getMetaPath(arg)
+		path = constants.getMetaPath(arg)
 		chaptersWrite = open(path+"chaptersGen.txt","w")
 		chapters = []
 		print "Processing links"
@@ -132,16 +112,21 @@ def generateMetadata(args):
 						filename = l[0]+".txt"
 						filename = filename.split("/")
 						filename = filename[len(filename)-1]
-						chapters.append({"file": filename ,"title": l[1]})
+						chapters.append({"file": filename ,"title": l[1], "url":writeUrl})
 				else:
 					print " \t rejected"
 			else:
 				temp = l[0].split(os.path.sep)
 				filename = temp[len(temp)-1]+".txt"
-				chapters.append({"file": filename,"title": l[1]})
+				chapters.append({"file": filename,"title": l[1], "url":l[0]})
 				chaptersWrite.write(l[0])
 			chaptersWrite.write("\r\n")
 		chaptersWrite.close()
+		chaptersFull =  open(path+"chapterData.json","w")
+		chaptersFull.write(json.dumps({"chapters": chapters}, indent="\t"))
+		chaptersFull.close()
+		for c in chapters:
+			c.pop('url')
 		chaptersWriteJSON = open(path+"chaptersGen.json","w")
 		chaptersWriteJSON.write(json.dumps({"chapters": chapters}, indent="\t"))
 		chaptersWriteJSON.close()
