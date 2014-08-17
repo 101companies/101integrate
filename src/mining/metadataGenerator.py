@@ -18,11 +18,12 @@ def isRelative(url):
 
 ##
 # @param	url 	an url string
-# @url 		ext	a file extension string
+# @param 	ext		a file extension string
+# @param	baseUrl	the BaseUrl on which an absolute url depends on
 # @return	wether its valid url in the book's content
 #DEPRECATED replaced with acceptor
-def isAccepted(url, ext):
-    return (not ("mailto:" in url) and ((not ("http:" in url)) or url in url) and (ext in url))
+def isAccepted(url, baseUrl, ext):
+    return (not ("mailto:" in url) and ((not ("http:" in url)) or baseUrl in url) and (ext in url))
 
 
 
@@ -98,6 +99,7 @@ def generateMetadata(args):
 		url = bookData[arg]['urlBase'].strip()
 		links = getLinks(url, bookData[arg]['ext'])
 		path = constants.getMetaPath(arg)
+		constants.mkdir(path)
 		chaptersWrite = open(path+"chaptersGen.txt","w")
 		chapters = []
 		print "Processing links"

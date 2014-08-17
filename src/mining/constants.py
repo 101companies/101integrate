@@ -3,8 +3,10 @@ import os
 # the path for the data folder
 dataPath = ".."+os.path.sep+".."+os.path.sep+"data"
 
+# the Path to the configuration-file
 configPath = "config"+os.path.sep+"config.json"
 
+#the path to the books' folder
 bookPath = dataPath + os.path.sep + "perbook"
 
 ##
@@ -13,8 +15,13 @@ bookPath = dataPath + os.path.sep + "perbook"
 # creates the path if it does not exist
 def getMetaPath(book):
     path = getBookPath(book)+os.path.sep+"metadata"+os.path.sep
-    mkdir(path)
     return path
+    
+##
+# @param 	a string with the books folder
+# @return 	the relative path to the book's content folder
+def getContentPath(book):
+    return getBookPath(book)+"contents"+os.path.sep
     
 ##
 # @param 	a string with the books folder
@@ -22,7 +29,6 @@ def getMetaPath(book):
 # creates the path if it does not exist
 def getBookPath(book):
     path = bookPath+os.path.sep+book
-    mkdir(path)
     return path
 
 ##

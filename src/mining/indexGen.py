@@ -2,32 +2,8 @@ import nltk
 import sqlite3 as sqlite
 import os
 import sys
-import re
-
-# the path for the data folder
-dataPath = ".."+os.path.sep+".."+os.path.sep+"data"
-
-
-
-
-##
-# @param 	a string with the books folder
-# @return 	the relative path to the book's content folder
-def getContentPath(book):
-    return getPath(book)+"contents"+os.path.sep
-  
-  
-  
-  
-##
-# @param 	a string with the books folder
-# @return 	the relative path to the book's folder
-def getPath(book):
-    return dataPath+os.path.sep+"perbook"+os.path.sep+book+os.path.sep
-
-
-
-
+import reconstants
+import constants
 
 def sqlExec(cursor, statement, values):
   try:
@@ -56,9 +32,9 @@ def transformParagraphToLine(path):
 
 def main(args):
     for a in args:
-	conPath = getContentPath(a)
+	conPath = constants.getContentPath(a)
 	files = os.listdir(conPath)
-	sqlcon = sqlite.connect(getPath(a)+"Entries.db")
+	sqlcon = sqlite.connect(constants.getBookPath(a)+"Entries.db")
 	sqlcon.text_factory = str
 	cursor = sqlcon.cursor()
 	print "connected to DB"
