@@ -43,9 +43,9 @@ def getRefinedHtml(url, exElem, exClasses, exIds, posElements, posAttr):
 			#print "Can't extract content of " + url + " properly."
 			print e
 
-def crawl(args):
-    resInfos = json.loads(open(constants.configPath, 'rb').read())[args[1]]
-    for url in open((args[2] + args[1] + "/metadata/chapters.txt").replace("/",os.path.sep)).readlines():
+def crawl(book, perbookFldr):
+    resInfos = json.loads(open(constants.configPath, 'rb').read())[book]
+    for url in open((perbookFldr + book + "/metadata/chapters.txt").replace("/",os.path.sep)).readlines():
 	if not url.strip(" ").strip("\r").strip("\n"):#skip empty lines
 	  continue
 	try:
@@ -54,8 +54,8 @@ def crawl(args):
 	  exIds = []
 	else:
 	  pass
-	getChapter(url.rstrip(),(args[2] + args[1] + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'])
+	getChapter(url.rstrip(),(perbookFldr + book + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'])
 
 
 if __name__ == "__main__":
-   crawl(sys.argv)
+   crawl(sys.argv[1],sys.argv[2])

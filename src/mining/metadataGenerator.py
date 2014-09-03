@@ -44,7 +44,7 @@ def createAcceptor(urlBase, ext):
 ##
 # @param	url 	the url which links are to be extracted
 # @param	ext 	the file extension for the extracted links
-# @return	an Array of Arrays containing the the link and its description
+# @return	an Array of Arrays containing the the link and its descriptionackage
 def getLinks(url,ext):
 	    opener = urllib2.build_opener()
 	    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
@@ -81,15 +81,38 @@ def cleanUrl(baseUrl, url):
 			cleanedUrls+=cleaned
 	else:
 		if re.search("\/\/((\w|-|_|\.)+\/)+\/",url) is None:
-			cleanedUrls+=line
+			cleanedUrls+=url
 	return cleanedUrls
 
+
+##
+# @param	links	a collection of an Array with a link and its description
+# @param	url 	The Base Url all processed Urls depend on
+# @return		A list of dictionaries containing file, url and title
+def generateMetadata(links, url):
+  chapters = []
+  print "Processing links"
+  for l in links:
+		print l
+		temp = l[0].split("/")
+		filename = temp[len(temp)-1]+".txt"
+		if isRelative(l[0]):
+			if(url[len(url)-1] is not "/"):
+				url+="/"
+			writeUrl= cleanUrl(url, url+l[0])
+			if writeUrl:
+				chapters.append({"file": filename ,"title": l[1], "url":writeUrl})
+			else:
+				print " \t rejected"
+		else:
+			chapters.append({"file": filename,"title": l[1], "url":l[0]})
+  return chapters
 
 ##
 # @param	args	the books' folders
 # generates chaptersGen txt and json in the book's metadata folder
 # only works if the base Url is the index url
-def generateMetadata(args):
+def writeMetadata(args):
   if (len(args)<=0):
     print "No book specified. Aborting."
   else:
@@ -100,35 +123,16 @@ def generateMetadata(args):
 		links = getLinks(url, bookData[arg]['ext'])
 		path = constants.getMetaPath(arg)
 		constants.mkdir(path)
-		chaptersWrite = open(path+"chaptersGen.txt","w")
-		chapters = []
-		print "Processing links"
-		for l in links:
-			print l
-			if isRelative(l[0]):
-				if(url[len(url)-1] is not "/"):
-					url+="/"
-				writeUrl= cleanUrl(url, url+l[0])
-				if writeUrl:
-						chaptersWrite.write(writeUrl)
-						filename = l[0]+".txt"
-						filename = filename.split("/")
-						filename = filename[len(filename)-1]
-						chapters.append({"file": filename ,"title": l[1], "url":writeUrl})
-				else:
-					print " \t rejected"
-			else:
-				temp = l[0].split(os.path.sep)
-				filename = temp[len(temp)-1]+".txt"
-				chapters.append({"file": filename,"title": l[1], "url":l[0]})
-				chaptersWrite.write(l[0])
-			chaptersWrite.write("\r\n")
-		chaptersWrite.close()
+		chapters = generateMetadata(links, url)
 		chaptersFull =  open(path+"chapterData.json","w")
 		chaptersFull.write(json.dumps({"chapters": chapters}, indent="\t"))
 		chaptersFull.close()
+		chaptersWrite = open(path+"chaptersGen.txt","w")
 		for c in chapters:
+			chaptersWrite.write(c['url'])
+			chaptersWrite.write("\r\n")
 			c.pop('url')
+		chaptersWrite.close()
 		chaptersWriteJSON = open(path+"chaptersGen.json","w")
 		chaptersWriteJSON.write(json.dumps({"chapters": chapters}, indent="\t"))
 		chaptersWriteJSON.close()
@@ -140,4 +144,4 @@ def generateMetadata(args):
 
 
 if __name__ == "__main__":
-  generateMetadata(sys.argv[1:])
+  writeMetadata(sys.argv[1:])

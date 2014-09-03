@@ -38,12 +38,20 @@ def main(args):
 	sqlcon.text_factory = str
 	cursor = sqlcon.cursor()
 	print "connected to DB"
+	#remove old data
+	cursor.execute(""" DROP VIEW IF EXIST linkstotal """)
+	cursor.execute(""" DROP VIEW IF EXIST wordstotal """)
+	cursor.execute(""" DROP TABLE IF EXIST links """)
+	cursor.execute(""" DROP TABLE IF EXIST words """)
+	cursor.execute(""" DROP TABLE IF EXIST files """)
+	#setup database
 	cursor.execute(""" CREATE TABLE IF NOT EXISTS words ( word TEXT , tag TEXT, file TEXT, frequency INTEGER)""")
 	cursor.execute(""" CREATE TABLE IF NOT EXISTS files(file TEXT PRIMARY KEY)""")
 	cursor.execute(""" CREATE TABLE IF NOT EXISTS links(w1 TEXT, tag1 TEXT, w2 TEXT, tag2 TEXT, file TEXT, frequency INTEGER)""")
 	#cursor.execute(""" CREATE TABLE IF NOT EXISTS wordorder(n1 INTEGER, n2 INTEGER, file TEXT, frequency INTEGER)""")
 	cursor.execute(""" CREATE VIEW IF NOT EXISTS linkstotal as SELECT w1, w2, tag1, tag2, SUM(frequency) as freq FROM links GROUP BY w1, w2, tag1, tag2""")
 	cursor.execute(""" CREATE VIEW IF NOT EXISTS wordstotal as SELECT word, tag, SUM(frequency) as freq FROM words GROUP BY word, tag""")
+	#prepare Statements
 	fileStm = """INSERT INTO files(file) VALUES(:file)  """
 	wordStm = """INSERT INTO words(word, tag, file, frequency) VALUES(:word, :tag, :file , 0 )"""
 	linksStm = """ INSERT INTO links(w1,tag1, w2, tag2, file, frequency) VALUES(:w1 , :tag1 , :w2 , :tag2 , :file , 0) """
@@ -51,8 +59,8 @@ def main(args):
 	linksIncStm = """ UPDATE links SET frequency=frequency+1 WHERE w1 = :w1 AND w2 = :w2 AND file = :file """
 	linksFindStm = """ SELECT * FROM links WHERE w1 = :w1 AND tag1 = :tag1 AND w2 = :w2 AND tag2 = :tag2 AND file = :file """
 	wordFindStm = """ SELECT * FROM words WHERE word = :word AND tag = :tag AND file = :file """
-	cursor.execute("""UPDATE words SET frequency=0""")
-	cursor.execute("""UPDATE links SET frequency=0""")
+	#cursor.execute("""UPDATE words SET frequency=0""")
+	#cursor.execute("""UPDATE links SET frequency=0""")
 	print "DB prepared"
 	for f in files:
 	    transformParagraphToLine(conPath+f)

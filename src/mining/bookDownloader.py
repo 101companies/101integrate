@@ -3,6 +3,7 @@ import sys
 import os
 import crawler
 import constants
+import re
 
 
 ##
@@ -22,7 +23,7 @@ def nameIsIn(compared, strings):
 #@param	string	a String
 #@return	a normalized Representation of this string
 def normalizeString(string):
-    return string.lower().replace(" ","").replace(":","").replace("-","").replace(".","")
+    return re.sub("[^\w]", "", string).lower()
 
 
 
@@ -37,7 +38,7 @@ def selectBooks(args, config):
   books = set();
   bookData = config
 
-  if (nameIsIn("all",[args[1]]) or len(args) == 1 ):
+  if (nameIsIn("all",[args[0]]) or len(args) == 0 ):
     for data in bookData:
 	try:
 	    print bookData[data]['fullName'] # SKIP NONBOOKS
@@ -78,10 +79,10 @@ def downloadBooks(books, bookfldr):
   bookfldr = bookfldr.replace("/",os.path.sep)
   for b in books:
       constants.mkdir((bookfldr+b+os.path.sep+"contents"))
-      crawler.crawl([sys.argv[0],b,bookfldr])
+      crawler.crawl(b,bookfldr)
   
   
     
     
 if __name__ == "__main__":
-   downloadBooks(selectBooks(sys.argv, json.loads(open(constants.configPath, 'rb').read())),constants.bookPath)
+   downloadBooks(selectBooks(sys.argv[1:], json.loads(open(constants.configPath, 'rb').read())),constants.bookPath)
