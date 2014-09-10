@@ -2,7 +2,7 @@ import nltk
 import sqlite3 as sqlite
 import os
 import sys
-import reconstants
+import re
 import constants
 
 def sqlExec(cursor, statement, values):
@@ -13,7 +13,8 @@ def sqlExec(cursor, statement, values):
   else:
 	pass  
       
-
+def normalizeWord(word):
+  return re.sub("[^\w\-\_]", "", word.lower())
 
 
 def transformParagraphToLine(path):
@@ -28,10 +29,8 @@ def transformParagraphToLine(path):
     writer.close
 
 
-
-
-def main(args):
-    for a in args:
+def insertOldDb(args):
+      for a in args:
 	conPath = constants.getContentPath(a)
 	files = os.listdir(conPath)
 	sqlcon = sqlite.connect(constants.getBookPath(a)+"Entries.db")
@@ -59,8 +58,6 @@ def main(args):
 	linksIncStm = """ UPDATE links SET frequency=frequency+1 WHERE w1 = :w1 AND w2 = :w2 AND file = :file """
 	linksFindStm = """ SELECT * FROM links WHERE w1 = :w1 AND tag1 = :tag1 AND w2 = :w2 AND tag2 = :tag2 AND file = :file """
 	wordFindStm = """ SELECT * FROM words WHERE word = :word AND tag = :tag AND file = :file """
-	#cursor.execute("""UPDATE words SET frequency=0""")
-	#cursor.execute("""UPDATE links SET frequency=0""")
 	print "DB prepared"
 	for f in files:
 	    transformParagraphToLine(conPath+f)
@@ -70,7 +67,7 @@ def main(args):
 		print "\t"+l
 		tokenedLine = nltk.pos_tag(nltk.word_tokenize(l.replace("."," . ").replace(","," , ").replace("*"," * ").replace("/"," / ")))
 		for (i, w) in enumerate(tokenedLine):
-		    word = re.sub("[^\w\-\_]", "", w[0]).lower()
+		    word = normalizeWord(w[0])
 		    if word.strip(":-_1234567890"):
 			temp ={"word":word, "tag":w[1], "file":f}
 			sqlExec(cursor,wordFindStm,temp)
@@ -79,7 +76,7 @@ def main(args):
 			sqlExec(cursor, wordIncStm,  temp)
 			temp=None
 			if i < len(tokenedLine)-2:
-			  temp = {"w1":word,"tag1":w[1],"w2":re.sub("[^\w\-\_]", "", tokenedLine[i+1][0]).lower(),"tag2":tokenedLine[i+1][1],"file":f}
+			  temp = {"w1":word,"tag1":w[1],"w2":normalizeWord(tokenedLine[i+1][0]),"tag2":tokenedLine[i+1][1],"file":f}
 			  if temp["w2"].strip(":-_1234567890"):
 			      sqlExec(cursor, linksFindStm, temp)
 			      if cursor.fetchone() is None:
@@ -91,9 +88,83 @@ def main(args):
 	sqlcon.commit()
 	print "Changes committed"
 
+def insertIfNotExists(cursor, lookupStm, insertStm, dictionary):
+    cursor.execute(lookupStm, dictionary)
+    temp = cursor.fetchone()
+    if temp is None:
+      cursor.execute(insertStm, dictionary)
+      cursor.execute(lookupStm, dictionary)
+      temp = cursor.fetchone()[0]
+    else:
+      temp = temp[0]
+    return temp
 
-
-
+def main(args):
+    for a in args:
+	conPath = constants.getContentPath(a)
+	files = os.listdir(conPath)
+	sqlcon = sqlite.connect(constants.getBookPath(a)+"Frequencies.db")
+	sqlcon.text_factory = str
+	cursor = sqlcon.cursor()
+	print "connected to DB"
+	#Remove old data
+	cursor.execute("""DROP TABLE IF EXISTS FreqTupels""")
+	cursor.execute("""DROP TABLE IF EXISTS TupelTags""")
+	cursor.execute("""DROP TABLE IF EXISTS Tupels""")
+	cursor.execute("""DROP TABLE IF EXISTS FreqSingle""")
+	cursor.execute("""DROP TABLE IF EXISTS Files""")
+	cursor.execute("""DROP TABLE IF EXISTS Words""")
+	print "Deleted old Data (if any)"
+	#setup DB
+	cursor.execute("""CREATE TABLE IF NOT EXISTS Words (ID INTEGER PRIMARY KEY AUTOINCREMENT, word TEXT)""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS Files (ID INTEGER PRIMARY KEY AUTOINCREMENT, file TEXT)""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqSingle(word INTEGER,  tag TEXT, file TEXT, freq INTEGER DEFAULT 0, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(word) REFERENCES Words(ID))""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS Tupels(ID INTEGER PRIMARY KEY AUTOINCREMENT, w1 INTEGER, w2 INTEGER, FOREIGN KEY(w2) REFERENCES Words(ROWID) , FOREIGN KEY(w1) REFERENCES Words(ID))""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS TupelTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, tupel INTEGER, tag1 TEXT, tag2 TEXT , FOREIGN KEY(tupel) REFERENCES Tupels(ROWID))""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqTupels(tupel INTEGER, tagID INTEGER, freq NUMERIC DEFAULT 0, file TEXT, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(tupel) REFERENCES Tupels(ID), FOREIGN KEY(tagID) REFERENCES TupelTags(ID)) """)
+	print "Tables created"
+	#prepare Statements
+	#Selection
+	wordIdStm = """SELECT ID FROM Words WHERE word = :word"""
+	fileIdStm = """SELECT ID FROM Files WHERE file = :file"""
+	tupelIdStm = """SELECT ID FROM Tupels WHERE w1 = :wId1 AND w2 = :wId2"""
+	tupelTagIdStm = """ SELECT ID FROM  TupelTags WHERE tag1 = :tag1 AND tag2 = :tag2 AND tupel = :tId"""
+	freqTTStm = """ SELECT freq FROM FreqTupels WHERE tagID = :tagId AND file = :file"""
+	freqWordStm = """ SELECT freq FROM FreqSingle WHERE word = :wId1 AND tag = :tag1 AND file = :file"""
+	#Insertion
+	wordInsStm = """ INSERT INTO Words(word) VALUES( :word)"""
+	fileInsStm = """ INSERT INTO Files(file) VALUES( :file)"""
+	tupelInsStm = """ INSERT INTO Tupels(w1, w2) VALUES( :wId1, :wId2)"""
+	tupelTagInsStm = """ INSERT INTO TupelTags(tupel, tag1, tag2) VALUES( :tId, :tag1, :tag2) """
+	freqTTInsStm = """ INSERT INTO FreqTupels(tupel, tagID, file) VALUES( :tId, :tagId, :file)"""
+	freqWordInsStm = """ INSERT INTO FreqSingle(word, tag, file) VALUES( :wId1, :tag1, :file) """
+	#Update
+	freqWordIncStm = """ UPDATE FreqSingle SET freq=freq+1 WHERE word = :wId1 AND tag = :tag1 AND file = :file """
+	freqTTIncStm = """ UPDATE FreqTupels SET freq=freq+1 WHERE tupel = :tId AND tagId = :tagID AND file = :file)"""
+	print "prepared Statements"
+	for f in files:
+	      print "Processing "+f
+	      transformParagraphToLine(conPath+f)
+	      temp =  {"file" : f}
+	      cursor.execute(fileIdStm, temp)
+	      insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
+	      temp['file']= f
+	      for l in open(conPath+f).readlines():
+		      print "\t"+l
+		      tokenedLine = nltk.pos_tag(nltk.word_tokenize(l))
+		      for (i, w) in enumerate(tokenedLine):
+			word = normalizeWord(w[0])
+			if (not word) or (not word.strip(":-_1234567890")):
+			  continue
+			temp['w1'] = word
+			temp['wId1'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':word}))
+			temp['tag1'] = w[1]
+			insertIfNotExists(cursor, freqWordStm, freqWordInsStm, temp)
+			cursor.execute(freqWordIncStm, temp)
+	sqlcon.commit()
+	print "data committed to db"
+	sqlcon.close()
+	      
 
 if __name__ == "__main__":
     main(sys.argv[1:])
