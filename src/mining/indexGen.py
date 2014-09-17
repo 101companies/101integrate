@@ -14,7 +14,7 @@ def sqlExec(cursor, statement, values):
 	pass  
       
 def normalizeWord(word):
-  return re.sub("[^\w\-\_]", "", word.lower())
+  return re.sub("[^\w\-\_]", "", word.lower()).replace("\r","").replace("\n","")
 
 
 def transformParagraphToLine(path):
@@ -23,7 +23,7 @@ def transformParagraphToLine(path):
 	  if not l.replace(" ","").replace("\t","").replace("\r","").replace("\n",""):
 	      temp +="\r\n \r\n"
 	  else:
-	      temp += l.replace("\r","").replace("\n","")
+	      temp += " "+l.replace("\r","").replace("\n","")
     writer = open(path, "w")
     writer.write(temp)
     writer.close
@@ -89,6 +89,7 @@ def insertOldDb(args):
 	print "Changes committed"
 
 def insertIfNotExists(cursor, lookupStm, insertStm, dictionary):
+    print dictionary
     cursor.execute(lookupStm, dictionary)
     temp = cursor.fetchone()
     if temp is None:
@@ -123,13 +124,14 @@ def main(args):
 	cursor.execute("""CREATE TABLE IF NOT EXISTS TupelTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, tupel INTEGER, tag1 TEXT, tag2 TEXT , FOREIGN KEY(tupel) REFERENCES Tupels(ROWID))""")
 	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqTupels(tupel INTEGER, tagID INTEGER, freq NUMERIC DEFAULT 0, file TEXT, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(tupel) REFERENCES Tupels(ID), FOREIGN KEY(tagID) REFERENCES TupelTags(ID)) """)
 	print "Tables created"
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFull AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
 	#prepare Statements
 	#Selection
 	wordIdStm = """SELECT ID FROM Words WHERE word = :word"""
 	fileIdStm = """SELECT ID FROM Files WHERE file = :file"""
 	tupelIdStm = """SELECT ID FROM Tupels WHERE w1 = :wId1 AND w2 = :wId2"""
 	tupelTagIdStm = """ SELECT ID FROM  TupelTags WHERE tag1 = :tag1 AND tag2 = :tag2 AND tupel = :tId"""
-	freqTTStm = """ SELECT freq FROM FreqTupels WHERE tagID = :tagId AND file = :file"""
+	freqTTStm = """ SELECT freq FROM FreqTupels WHERE tagID = :tagId AND file = :file  AND tupel = :tId"""
 	freqWordStm = """ SELECT freq FROM FreqSingle WHERE word = :wId1 AND tag = :tag1 AND file = :file"""
 	#Insertion
 	wordInsStm = """ INSERT INTO Words(word) VALUES( :word)"""
@@ -150,27 +152,35 @@ def main(args):
 	      insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
 	      temp['file']= f
 	      for l in open(conPath+f).readlines():
-		      print "\t"+l
 		      tokenedLine = nltk.pos_tag(nltk.word_tokenize(l))
 		      for (i, w) in enumerate(tokenedLine):
 			word = normalizeWord(w[0])
-			if (not word) or (not word.strip(":-_1234567890")):
+			if (not word.strip(":-_1234567890")):
 			  continue
 			temp['w1'] = word
 			temp['wId1'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':word}))
 			temp['tag1'] = w[1]
 			insertIfNotExists(cursor, freqWordStm, freqWordInsStm, temp)
 			cursor.execute(freqWordIncStm, temp)
+			if i < len(tokenedLine)-2:
+				temp['w2'] = normalizeWord(tokenedLine[i+1][0])
+				if temp['w2'].strip(":-_1234567890"):
+					temp['wId2'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w2']}))
+					temp['tag2'] = tokenedLine[i+1][1]
+					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tupelInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2']}))
+					temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2']}))
+					insertIfNotExists(cursor, freqTTStm, freqTTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
+					cursor.execute(freqTTIncStm, {'tagId':temp['tagId'],'file':temp['file'],'tId':temp['tId']})
 	sqlcon.commit()
 	print "data committed to db"
 	sqlcon.close()
-	      
+
 
 if __name__ == "__main__":
     main(sys.argv[1:])
 
 
-
+#old db schema
 """SELECT l1.* , l2.* FROM links l1, links l2 WHERE l1.w1 == l2.w1 AND l2.w2 == l1.w2 AND l1.file == l2. file AND  l1.ROWID != l2.ROWID AND l1.tag1 = l2.tag1 AND l1.tag2=l2.tag2"""#Find Duplicates
 """SELECT * FROM (SELECT * FROM (SELECT * FROM links WHERE length(w1)==1 OR length(w2)==1) WHERE NOT (w1=="a" OR w1=="c" OR w1=="s" OR w1=="i" OR w1=="d")) WHERE NOT (w2=="a" OR w2=="c" OR w2=="s" OR w2=="i" OR w2=="d")"""
 """SELECT * from wordstotal WHERE tag LIKE "N%" OR tag="FW" ORDER BY freq DESC"""
