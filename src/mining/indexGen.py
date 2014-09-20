@@ -101,7 +101,9 @@ def insertIfNotExists(cursor, lookupStm, insertStm, dictionary):
     return temp
 
 def main(args):
-    for a in args:
+ if len(args) < 1:
+	print "Exiting"
+ for a in args:
 	conPath = constants.getContentPath(a)
 	files = os.listdir(conPath)
 	sqlcon = sqlite.connect(constants.getBookPath(a)+"Frequencies.db")
@@ -109,6 +111,8 @@ def main(args):
 	cursor = sqlcon.cursor()
 	print "connected to DB"
 	#Remove old data
+	cursor.execute("""DROP VIEW IF EXISTS TupelOverwiew""")
+	cursor.execute("""DROP VIEW IF EXISTS TUpelFreq """)
 	cursor.execute("""DROP TABLE IF EXISTS FreqTupels""")
 	cursor.execute("""DROP TABLE IF EXISTS TupelTags""")
 	cursor.execute("""DROP TABLE IF EXISTS Tupels""")
@@ -124,7 +128,8 @@ def main(args):
 	cursor.execute("""CREATE TABLE IF NOT EXISTS TupelTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, tupel INTEGER, tag1 TEXT, tag2 TEXT , FOREIGN KEY(tupel) REFERENCES Tupels(ROWID))""")
 	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqTupels(tupel INTEGER, tagID INTEGER, freq NUMERIC DEFAULT 0, file TEXT, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(tupel) REFERENCES Tupels(ID), FOREIGN KEY(tagID) REFERENCES TupelTags(ID)) """)
 	print "Tables created"
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFull AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelOverwiew AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
+	cursor.execute("""CREATE VIEW IF NOT EXSITS tupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
 	#prepare Statements
 	#Selection
 	wordIdStm = """SELECT ID FROM Words WHERE word = :word"""
@@ -142,7 +147,7 @@ def main(args):
 	freqWordInsStm = """ INSERT INTO FreqSingle(word, tag, file) VALUES( :wId1, :tag1, :file) """
 	#Update
 	freqWordIncStm = """ UPDATE FreqSingle SET freq=freq+1 WHERE word = :wId1 AND tag = :tag1 AND file = :file """
-	freqTTIncStm = """ UPDATE FreqTupels SET freq=freq+1 WHERE tupel = :tId AND tagId = :tagID AND file = :file """
+	freqTTIncStm = """ UPDATE FreqTupels SET freq=freq+1 WHERE tupel = :tId AND tagId = :tagId AND file = :file """
 	print "prepared Statements"
 	for f in files:
 	      print "Processing "+f
