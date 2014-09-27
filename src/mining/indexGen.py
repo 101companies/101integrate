@@ -159,8 +159,9 @@ def main(args):
 	      insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
 	      temp['file']= f
 	      for l in open(conPath+f).readlines():
-		      tokenedLine = nltk.pos_tag(nltk.word_tokenize(l))
+		      tokenedLine = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", "", l.replace("."," . ").replace(","," , ").replace("*"," * ").replace("/"," / "))))
 		      for (i, w) in enumerate(tokenedLine):
+			print w
 			word = normalizeWord(w[0])
 			if (not word.strip(":-_1234567890")):
 			  continue
