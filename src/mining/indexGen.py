@@ -138,6 +138,7 @@ def main(args):
 	cursor.execute("""CREATE VIEW IF NOT EXSIST CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "N%") i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXSIST CommonNounTupels AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "NN%" AND tag2 LIKE "NN%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXSIST WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
+	print "Views added"
 	#prepare Statements
 	#Selection
 	wordIdStm = """SELECT ID FROM Words WHERE word = :word"""
