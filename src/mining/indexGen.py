@@ -113,7 +113,10 @@ def main(args):
 	#Remove old data
 	cursor.execute("""DROP VIEW IF EXISTS TupelOverwiew""")
 	cursor.execute("""DROP VIEW IF EXISTS TupelFreq """)
-	cursor.execute("""DROP VIEW IF EXISTS wordFreq""")
+	cursor.execute("""DROP VIEW IF EXISTS WordFreq""")
+	cursor.execute("""DROP VIEW IF EXISTS CommonNouns""")
+	cursor.execute("""DROP VIEW IF EXISTS CommonNounTupels""")
+	cursor.execute("""DROP VIEW IF EXISTS WordOverview """)
 	cursor.execute("""DROP TABLE IF EXISTS FreqTupels""")
 	cursor.execute("""DROP TABLE IF EXISTS TupelTags""")
 	cursor.execute("""DROP TABLE IF EXISTS Tupels""")
@@ -130,8 +133,11 @@ def main(args):
 	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqTupels(tupel INTEGER, tagID INTEGER, freq NUMERIC DEFAULT 0, file TEXT, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(tupel) REFERENCES Tupels(ID), FOREIGN KEY(tagID) REFERENCES TupelTags(ID)) """)
 	print "Tables created"
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelOverwiew AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS tupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
-	cursor.execute("""CREATE VIEW IF NOT EXISTS wordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
+	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
+	cursor.execute("""CREATE VIEW IF NOT EXSIST CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "N%") i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXSIST CommonNounTupels AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "NN%" AND tag2 LIKE "NN%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXSIST WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
 	#prepare Statements
 	#Selection
 	wordIdStm = """SELECT ID FROM Words WHERE word = :word"""
