@@ -1,8 +1,10 @@
 import nltk
+from nltk.tag.simplify import simplify_wsj_tag
 import sqlite3 as sqlite
 import os
 import sys
 import re
+import csv
 import constants
 
 def sqlExec(cursor, statement, values):
@@ -14,7 +16,7 @@ def sqlExec(cursor, statement, values):
 	pass  
       
 def normalizeWord(word):
-  return re.sub("[^\w\-\_]", "", word.lower()).replace("\r","").replace("\n","")
+  return re.sub("[^\w\-\_]", " ", word.lower()).replace("\r","").replace("\n","")
 
 
 def transformParagraphToLine(path):
@@ -117,6 +119,7 @@ def main(args):
 	cursor.execute("""DROP VIEW IF EXISTS CommonNouns""")
 	cursor.execute("""DROP VIEW IF EXISTS CommonNounTupels""")
 	cursor.execute("""DROP VIEW IF EXISTS WordOverview """)
+	cursor.execute("""DROP VIEW IF EXISTS CommonAdjNounTupels """)
 	cursor.execute("""DROP TABLE IF EXISTS FreqTupels""")
 	cursor.execute("""DROP TABLE IF EXISTS TupelTags""")
 	cursor.execute("""DROP TABLE IF EXISTS Tupels""")
@@ -135,9 +138,10 @@ def main(args):
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelOverwiew AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
-	cursor.execute("""CREATE VIEW IF NOT EXSIST CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "N%") i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXSIST CommonNounTupels AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "NN%" AND tag2 LIKE "NN%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXSIST WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "N%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounTupels AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "N%" AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonAdjNounTupels  AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "ADJ" AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
 	print "Views added"
 	#prepare Statements
 	#Selection
@@ -166,7 +170,7 @@ def main(args):
 	      insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
 	      temp['file']= f
 	      for l in open(conPath+f).readlines():
-		      tokenedLine = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", "", l.replace("."," . ").replace(","," , ").replace("*"," * ").replace("/"," / "))))
+		      tokenedLine = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", " ", l.replace("."," . ").replace(","," , ").replace("*"," * ").replace("/"," / "))))
 		      for (i, w) in enumerate(tokenedLine):
 			print w
 			word = normalizeWord(w[0])
@@ -174,14 +178,14 @@ def main(args):
 			  continue
 			temp['w1'] = word
 			temp['wId1'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':word}))
-			temp['tag1'] = w[1]
+			temp['tag1'] = simplify_wsj_tag(w[1])
 			insertIfNotExists(cursor, freqWordStm, freqWordInsStm, temp)
 			cursor.execute(freqWordIncStm, temp)
 			if i < len(tokenedLine)-2:
 				temp['w2'] = normalizeWord(tokenedLine[i+1][0])
 				if temp['w2'].strip(":-_1234567890"):
 					temp['wId2'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w2']}))
-					temp['tag2'] = tokenedLine[i+1][1]
+					temp['tag2'] = simplify_wsj_tag(tokenedLine[i+1][1])
 					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tupelInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2']}))
 					temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2']}))
 					insertIfNotExists(cursor, freqTTStm, freqTTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
