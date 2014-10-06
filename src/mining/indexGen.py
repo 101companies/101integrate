@@ -4,7 +4,6 @@ import sqlite3 as sqlite
 import os
 import sys
 import re
-import csv
 import constants
 
 def sqlExec(cursor, statement, values):
@@ -174,7 +173,7 @@ def main(args):
 		      for (i, w) in enumerate(tokenedLine):
 			print w
 			word = normalizeWord(w[0])
-			if (not word.strip(":-_1234567890")):
+			if (len(word.strip(":-_1234567890"))<=1):
 			  continue
 			temp['w1'] = word
 			temp['wId1'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':word}))
@@ -183,7 +182,7 @@ def main(args):
 			cursor.execute(freqWordIncStm, temp)
 			if i < len(tokenedLine)-2:
 				temp['w2'] = normalizeWord(tokenedLine[i+1][0])
-				if temp['w2'].strip(":-_1234567890"):
+				if len(temp['w2'].strip(":-_1234567890")) > 1:
 					temp['wId2'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w2']}))
 					temp['tag2'] = simplify_wsj_tag(tokenedLine[i+1][1])
 					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tupelInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2']}))
@@ -192,7 +191,31 @@ def main(args):
 					cursor.execute(freqTTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
 	sqlcon.commit()
 	print "data committed to db"
+	cursor.execute("""SELECT word FROM CommonNouns LIMIT 30""")
+	words = set()
+	temp = cursor.fetchone()
+	while (temp is not None):
+	  words.add(temp[0])
+	  temp = cursor.fetchone()
+	cursor.execute("""SELECT word1, word2 FROM CommonNounTupels LIMIT 30""")
+	temp = cursor.fetchone()
+	while (temp is not None):
+	  words.add(temp[0]+" "+temp[1])
+	  temp = cursor.fetchone()
+	cursor.execute("""SELECT word1, word2 FROM CommonAdjNounTupels LIMIT 30""")
+	temp = cursor.fetchone()
+	while (temp is not None):
+	  words.add(temp[0]+" "+temp[1])
+	  temp = cursor.fetchone()
 	sqlcon.close()
+	print "Fetched Data from DB"
+	path = constants.getCachePath(a)
+	constants.mkdir(path)
+	writer = open(path+"IndexGen.csv","w")
+	for w in words:
+	  writer.write(w)
+	  writer.write("\n")
+	print "Created IndexGen.csv"
 
 
 if __name__ == "__main__":
