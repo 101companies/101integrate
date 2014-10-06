@@ -29,7 +29,7 @@ def getBookPath(book):
     return (bookPath+book+os.path.sep)
   
 def getCachePath(book):
-    return (getBookPath+os.path.sep+"cache"+os.path.sep)
+    return (getBookPath(book)+os.path.sep+"cache"+os.path.sep)
 
 ##
 #@param	path	a directory you want to create
