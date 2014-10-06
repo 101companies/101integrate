@@ -11,7 +11,6 @@ bookPath = dataPath + "perbook" + os.path.sep
 ##
 # @param 	a string with the books folder
 # @return 	the relative path to the book's metadata folder
-# creates the path if it does not exist
 def getMetaPath(book):
     return (getBookPath(book)+"metadata"+os.path.sep)
     
@@ -24,10 +23,12 @@ def getContentPath(book):
 ##
 # @param 	a string with the books folder
 # @return 	the relative path to the book's  folder
-# creates the path if it does not exist
 def getBookPath(book):
     return (bookPath+book+os.path.sep)
-  
+
+##
+# @param 	a string with the books folder
+# @return 	the relative path to the book's cache folder 
 def getCachePath(book):
     return (getBookPath(book)+os.path.sep+"cache"+os.path.sep)
 
