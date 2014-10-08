@@ -5,6 +5,7 @@ import os
 import sys
 import re
 import constants
+from sortedcontainers import SortedList, SortedSet, SortedDict
 
 def sqlExec(cursor, statement, values):
   try:
@@ -90,7 +91,6 @@ def insertOldDb(args):
 	print "Changes committed"
 
 def insertIfNotExists(cursor, lookupStm, insertStm, dictionary):
-    print dictionary
     cursor.execute(lookupStm, dictionary)
     temp = cursor.fetchone()
     if temp is None:
@@ -105,6 +105,7 @@ def main(args):
  if len(args) < 1:
 	print "Exiting"
  for a in args:
+	print "Processing " + a
 	conPath = constants.getContentPath(a)
 	files = os.listdir(conPath)
 	sqlcon = sqlite.connect(constants.getBookPath(a)+"Frequencies.db")
@@ -112,6 +113,9 @@ def main(args):
 	cursor = sqlcon.cursor()
 	print "connected to DB"
 	#Remove old data
+	cursor.execute("""DROP VIEW IF EXISTS CommonNounsPerFile""")
+	cursor.execute("""DROP VIEW IF EXISTS CommonTupelsWNouns""")
+	cursor.execute("""DROP VIEW IF EXISTS TupelsWNounsPerFile""")
 	cursor.execute("""DROP VIEW IF EXISTS TupelOverwiew""")
 	cursor.execute("""DROP VIEW IF EXISTS TupelFreq """)
 	cursor.execute("""DROP VIEW IF EXISTS WordFreq""")
@@ -140,7 +144,11 @@ def main(args):
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "N%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounTupels AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "N%" AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonAdjNounTupels  AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "ADJ" AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE (tag1 LIKE "N%" OR tag1 LIKE "ADJ") AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "N%" OR tt.tag1 LIKE "ADJ") AND tt.tag2 LIKE "N%" GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "N%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
+	
 	print "Views added"
 	#prepare Statements
 	#Selection
@@ -171,7 +179,6 @@ def main(args):
 	      for l in open(conPath+f).readlines():
 		      tokenedLine = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", " ", l.replace("."," . ").replace(","," , ").replace("*"," * ").replace("/"," / "))))
 		      for (i, w) in enumerate(tokenedLine):
-			print w
 			word = normalizeWord(w[0])
 			if (len(word.strip(":-_1234567890"))<=1):
 			  continue
@@ -191,22 +198,30 @@ def main(args):
 					cursor.execute(freqTTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
 	sqlcon.commit()
 	print "data committed to db"
-	cursor.execute("""SELECT word FROM CommonNouns LIMIT 30""")
-	words = set()
+	cursor.execute("""SELECT word FROM CommonNouns ORDER BY freq DESC LIMIT 25""")
+	words = SortedSet() #TODO switch back to set once word filtering is acceptable
 	temp = cursor.fetchone()
 	while (temp is not None):
 	  words.add(temp[0])
 	  temp = cursor.fetchone()
-	cursor.execute("""SELECT word1, word2 FROM CommonNounTupels LIMIT 30""")
+	cursor.execute("""SELECT word1, word2 FROM CommonTupelsWNouns ORDER BY freq DESC LIMIT 25""")
 	temp = cursor.fetchone()
 	while (temp is not None):
 	  words.add(temp[0]+" "+temp[1])
 	  temp = cursor.fetchone()
-	cursor.execute("""SELECT word1, word2 FROM CommonAdjNounTupels LIMIT 30""")
-	temp = cursor.fetchone()
-	while (temp is not None):
-	  words.add(temp[0]+" "+temp[1])
+	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 10"""
+	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 10"""
+	for f in files:
+	  cursor.execute(wordFetchStm, {'file':f})
 	  temp = cursor.fetchone()
+	  while (temp is not None):
+	    words.add(temp[0])
+	    temp = cursor.fetchone()
+	  cursor.execute(tupelFetchStm, {'file':f})
+	  temp = cursor.fetchone()
+	  while (temp is not None):
+	    words.add(temp[0]+" "+temp[1])
+	    temp = cursor.fetchone()
 	sqlcon.close()
 	print "Fetched Data from DB"
 	path = constants.getCachePath(a)
