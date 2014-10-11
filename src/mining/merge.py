@@ -49,6 +49,8 @@ def areSimilar(term1, term2):
 # @param metaindex	Path of metaindex file (relative to data path)
 # @param nIgnore	Number n of common English words to ignore
 # @param crosscut	"nocrosscut" | Path to crosscut file (relative to data path)
+# 
+# Merges and cleans a list of given index files. Creates clean index and optionally a file of crosscut betweens given indecies.
 def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore, crosscut):
   # merge term indecies
   allTerms = {}
