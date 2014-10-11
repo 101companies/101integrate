@@ -36,7 +36,7 @@ def nonAbbtoLower(term):
 ##
 # @param resource	Name of the resource
 # @param datapath	Base path to datafolder
-# @param resoucepath	Base path of resource (relative to data path)
+# @param resourcepath	Base path of resource (relative to data path)
 # @param indexpath	Base path of index folder (relative to data path)
 # @param indexfile	Name of index file (relative to index path)
 # @param chaptersfile	Name of chapters file (relative to resource path)
@@ -45,7 +45,7 @@ def nonAbbtoLower(term):
 # @param merged		"merged" | "nonmerged"
 #
 #Computes frequencies of words for a given set of terms in a given set of resourcesmerged;
-def main(resource, datapath, resoucepath, indexpath, indexfile, chaptersfile, contentfldr, metaindexfile, merged):
+def main(resource, datapath, resourcepath, indexpath, indexfile, chaptersfile, contentfldr, metaindexfile, merged):
   resInfos = json.loads(open("config/config.json", 'rb').read())
   # read index file
   root = datapath
