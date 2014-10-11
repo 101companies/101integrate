@@ -49,7 +49,7 @@ def main(resource, datapath, resoucepath, indexpath, indexfile, chaptersfile, co
   resInfos = json.loads(open("config/config.json", 'rb').read())
   # read index file
   root = datapath
-  resourcebase = root + recourcepath
+  resourcebase = root + resourcepath
   indexbase = root + indexpath
   index = csv.reader(open(indexbase + indexfile), delimiter=',')
   #input(index)
