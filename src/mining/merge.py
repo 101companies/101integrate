@@ -5,7 +5,7 @@
 import csv
 import sys
 import inflect
-import json
+import simplejson as json
 import re
 import patternCleaner
 p = inflect.engine()
@@ -39,21 +39,32 @@ def areSimilar(term1, term2):
 	lmtzr = WordNetLemmatizer()
 	return lmtzr.lemmatize(term1.lower()) == lmtzr.lemmatize(term2.lower())
 
-# merge term indecies
-allTerms = {}
-resInfos = json.loads(open("config/config.json", 'rb').read())
-commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(sys.argv[-2])])
 
-changedByPattern = []
+##
+# @param datafldr	Base path of datafolder
+# @param inputfldr	Base path of inputfolder
+# @param resources	Path of resources (relative to data path + input path)
+# @parm index		Path of index files relative to data path + input path + resource name)
+# @param mergedindex	Path of merged index file (relative to data path)
+# @param metaindex	Path of metaindex file (relative to data path)
+# @param nIgnore	Number n of common English words to ignore
+# @param crosscut	"nocrosscut" | Path to crosscut file (relative to data path)
+def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore, crosscut):
+  # merge term indecies
+  allTerms = {}
+  resInfos = json.loads(open("config/config.json", 'rb').read())
+  commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
 
-blacklist = json.loads(open("config/blacklist.json", 'rb').read())['blacklist']
-whitelist = []
-whiteListReader = csv.reader(open("config/whitelist.csv", 'rb'), delimiter=',')
-for row in whiteListReader:
+  changedByPattern = []
+
+  blacklist = json.loads(open("config/blacklist.json", 'rb').read())['blacklist']
+  whitelist = []
+  whiteListReader = csv.reader(open("config/whitelist.csv", 'rb'), delimiter=',')
+  for row in whiteListReader:
 	whitelist.append(row[0])
-#input(sys.argv[3:-5])
-for csvfn in sys.argv[3:-5]:
-	resourcename = sys.argv[1] + sys.argv[2]+ csvfn + "/" + sys.argv[-5]
+  #input([resources])
+  for csvfn in [resources]:
+	resourcename = datafldr + inputfldr+ csvfn + "/" + index
 
 	indexReader = csv.reader(open(resourcename, 'rb'), delimiter=',')
 	print "Reading", resourcename
@@ -77,9 +88,9 @@ for csvfn in sys.argv[3:-5]:
 		else:
 			print "Blacklisted term", termU, "excluded"
 
-# detect synonyms
-synonyms = []
-for i, term in enumerate(allTerms):
+  # detect synonyms
+  synonyms = []
+  for i, term in enumerate(allTerms):
 	if not term in synonyms and not term.startswith('^') and not isinWhitelist(term,whitelist):
 		print str(i) + "/" + str(len(allTerms)), ":Detecting synonyms for \"" + term + "\" from", allTerms[term]['resourcenames']
 		cursyms =  allTerms[term]['synonyms'] = filter(lambda x: areSimilar(term,x) and term != x and not isinWhitelist(x, whitelist), allTerms)
@@ -93,17 +104,17 @@ for i, term in enumerate(allTerms):
 	allTerms[term]['resourcenames'] = list(allTerms[term]['resourcenames'])
 	if isinWhitelist(term,whitelist):
 		print "Whitelisted term", term, "used as-is"
-print len(synonyms), "synonym(s) detected"
+  print len(synonyms), "synonym(s) detected"
 
-# remove synoyms
-for synonym in synonyms:
+  # remove synoyms
+  for synonym in synonyms:
 	allTerms.pop(synonym)
 
-print len(allTerms), "term(s) left"
+  print len(allTerms), "term(s) left"
 
-print "Final cleaning of plural/singular issue..."
-replacements = []
-for i, term in enumerate(allTerms):
+  print "Final cleaning of plural/singular issue..."
+  replacements = []
+  for i, term in enumerate(allTerms):
 	try:
 		if not isinWhitelist(term, whitelist) and (p.singular_noun(term)) and not term.endswith('ss'):
 			replacements.append((term, p.singular_noun(term)))
@@ -112,9 +123,9 @@ for i, term in enumerate(allTerms):
 
 
 
-print "Resolving singular/plural issues...", len(replacements)
+  print "Resolving singular/plural issues...", len(replacements)
 
-for (oldTerm, newTerm) in replacements:
+  for (oldTerm, newTerm) in replacements:
 	allTerms[newTerm] = dict(resourcenames=allTerms[oldTerm]['resourcenames'], synonyms=allTerms[oldTerm]['synonyms'])
 	if not oldTerm in allTerms[newTerm]['synonyms']:
 		allTerms[newTerm]['synonyms'].append(oldTerm)
@@ -123,11 +134,11 @@ for (oldTerm, newTerm) in replacements:
 	del allTerms[oldTerm]
 	print oldTerm, "replaced by", newTerm
 
-print len(allTerms), "All done!"
+  print len(allTerms), "All done!"
 
-lmtzr = WordNetLemmatizer()
-stemmedData = {}
-for i, term in enumerate(allTerms):
+  lmtzr = WordNetLemmatizer()
+  stemmedData = {}
+  for i, term in enumerate(allTerms):
 	termDict = dict(resourcenames=allTerms[term]['resourcenames'])
 	synonyms = allTerms[term]['synonyms']
 	if not term in synonyms:
@@ -141,18 +152,22 @@ for i, term in enumerate(allTerms):
 		stemmedData[stemmedTerm] = termDict
 
 
-# save new index and metadata index
-writer = csv.writer(open(sys.argv[1]  + sys.argv[-4], "write"))
-for i, term in enumerate(allTerms):
+  # save new index and metadata index
+  writer = csv.writer(open(datafldr  + mergedindex, "write"))
+  for i, term in enumerate(allTerms):
 	writer.writerow([term])
-f = open(sys.argv[1]  + sys.argv[-3], 'write')
-f.write(json.dumps(stemmedData))
-if sys.argv[-1] != "nocrosscut":
-	ccwriter = csv.writer(open(sys.argv[1] + sys.argv[-1], "write"),  delimiter=";")
-	ccwriter.writerow(["Term"] + sys.argv[3:-5])
+  f = open(datafldr  + metaindex, 'write')
+  f.write(json.dumps(stemmedData , indent="\t"))
+  if crosscut != "nocrosscut":
+	ccwriter = csv.writer(open(datafldr + crosscut, "write"),  delimiter=";")
+	ccwriter.writerow(["Term"] + [resources])
 	for i, term in enumerate(allTerms):
-		ccwriter.writerow([term] + (map(lambda x: x in allTerms[term]['resourcenames'], sys.argv[3:-5])))
-	writer = csv.writer(open(sys.argv[1] + "changedByPatternAll.csv", "write"))
+		ccwriter.writerow([term] + (map(lambda x: x in allTerms[term]['resourcenames'], [resources])))
+	writer = csv.writer(open(datafldr + "changedByPatternAll.csv", "write"))
 	for term in changedByPattern:
 		if not isinWhitelist(term[0],whitelist):
 			writer.writerow(term)
+
+
+if __name__ == "__main__":
+  merge(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7], sys.argv[8])
