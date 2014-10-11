@@ -2,7 +2,7 @@ import csv
 import os
 import sys
 import re
-import json
+import simplejson as json
 import csv
 from collections import defaultdict
 import inflect
@@ -31,36 +31,51 @@ def nonAbbtoLower(term):
 			return term
 	return term.lower()
 
-resInfos = json.loads(open("config/config.json", 'rb').read())
-# read index file
-root = sys.argv[2]
-resourcebase = root + sys.argv[3]
-indexbase = root + sys.argv[4]
-index = csv.reader(open(indexbase + sys.argv[5]), delimiter=',')
-#input(index)
-whitelist = []
-whiteListReader = csv.reader(open("config/whitelist.csv", 'rb'), delimiter=',')
-for row in whiteListReader:
-	whitelist.append(row[0])
-lmtzr = WordNetLemmatizer()
 
-realcnamesraw = json.loads(open(resourcebase + sys.argv[6], 'rb').read())['chapters']
-realcnames = {}
-realcnamesl = []
-for i,x in enumerate(realcnamesraw):
+
+##
+# @param resource	Name of the resource
+# @param datapath	Base path to datafolder
+# @param resoucepath	Base path of resource (relative to data path)
+# @param indexpath	Base path of index folder (relative to data path)
+# @param indexfile	Name of index file (relative to index path)
+# @param chaptersfile	Name of chapters file (relative to resource path)
+# @param contentfldr	Name of content folder (relative to resource path)
+# @param metaindexfile	Name of metaindex file (relative to index path)
+# @param merged		"merged" | "nonmerged"
+#
+#Computes frequencies of words for a given set of terms in a given set of resourcesmerged;
+def main(resource, datapath, resoucepath, indexpath, indexfile, chaptersfile, contentfldr, metaindexfile, merged):
+  resInfos = json.loads(open("config/config.json", 'rb').read())
+  # read index file
+  root = datapath
+  resourcebase = root + recourcepath
+  indexbase = root + indexpath
+  index = csv.reader(open(indexbase + indexfile), delimiter=',')
+  #input(index)
+  whitelist = []
+  whiteListReader = csv.reader(open("config/whitelist.csv", 'rb'), delimiter=',')
+  for row in whiteListReader:
+	whitelist.append(row[0])
+  lmtzr = WordNetLemmatizer()
+
+  realcnamesraw = json.loads(open(resourcebase + chaptersfile, 'rb').read())['chapters']
+  realcnames = {}
+  realcnamesl = []
+  for i,x in enumerate(realcnamesraw):
 	realcnamesl.append(realcnamesraw[i]['file'])
 	realcnames[realcnamesraw[i]['file']] = realcnamesraw[i]['title']
 
-rawChapters = {}
-stemmedChapters = {}
-rawChaptersParts = {}
-stemmedChaptersParts = {}
-structure = []
-listing = realcnamesl
-posRegex = re.compile("(.*)\\$\\$\\$")
-for l in listing:
+  rawChapters = {}
+  stemmedChapters = {}
+  rawChaptersParts = {}
+  stemmedChaptersParts = {}
+  structure = []
+  listing = realcnamesl
+  posRegex = re.compile("(.*)\\$\\$\\$")
+  for l in listing:
 	if not l.startswith(".") and l in realcnames:
-		chapter = open(resourcebase + sys.argv[7] + l).read()
+		chapter = open(resourcebase + contentfldr + l).read()
 		rawChapters[l] = chapter
 		print "Stemming chapter in", l
 		stemmedChapter = " " + " ".join(map(lambda t: lmtzr.lemmatize(t).lower(), nltk.wordpunct_tokenize(chapter))) + " "
@@ -86,16 +101,16 @@ for l in listing:
 
 
 
-terms = []
-for row in index:
+  terms = []
+  for row in index:
 	exsplits = row[0].replace("\"", "").split("!")[0]
 	terms.extend([exsplits.split(", ")[0]])
 
-abbTerms = []
-stemmedTerms = {}
-orginals = {}
+  abbTerms = []
+  stemmedTerms = {}
+  orginals = {}
 
-for term in terms:
+  for term in terms:
 	if isAbb(term) or isinWhitelist(term,whitelist):
 		abbTerms.append(term)
 		orginals[term] = term
@@ -107,10 +122,10 @@ for term in terms:
 		stemmedTerms[term] = stemmedTerm
 		orginals[stemmedTerm] = term
 
-freqAll = {}
-freqAllDistribution = {}
-freqAllDistributionDeep = {}
-for abbTerm in abbTerms:
+  freqAll = {}
+  freqAllDistribution = {}
+  freqAllDistributionDeep = {}
+  for abbTerm in abbTerms:
 	freq = 0
 	freqDist = {}
 	freqDistDeep = []
@@ -128,7 +143,7 @@ for abbTerm in abbTerms:
 	freqAll[abbTerm] = freq
 	freqAllDistribution[abbTerm] = freqDist
 
-for stemmedTermName in stemmedTerms:
+  for stemmedTermName in stemmedTerms:
 	stemmedTerm = stemmedTerms[stemmedTermName]
 	freq = 0
 	freqDist = {}
@@ -147,43 +162,47 @@ for stemmedTermName in stemmedTerms:
 	freqAllDistribution[stemmedTerm] = freqDist
 
 
-if sys.argv[9] == "nonmerged":
+  if merged == "nonmerged":
 	postfix = ""
-elif sys.argv[9] == "merged":
+  elif merged == "merged":
 	postfix = "Merged"
 
-metainfo = json.loads(open(indexbase + sys.argv[8], 'rb').read())
+  metainfo = json.loads(open(indexbase + metaindexfile, 'rb').read())
 
 
-w1 = csv.writer(open(resourcebase + "/frequencies"  + postfix + ".csv", 'wb'), delimiter=";")
-w1.writerow(["Term", "Stemmed", "Variations", "Frequency"])
+  w1 = csv.writer(open(resourcebase + "/frequencies"  + postfix + ".csv", 'wb'), delimiter=";")
+  w1.writerow(["Term", "Stemmed", "Variations", "Frequency"])
 
-for (i,freq) in enumerate(freqAll):
+  for (i,freq) in enumerate(freqAll):
 	print "Writing " + str(i+1) + "/" + str(len(freqAll))
 	w1.writerow([orginals[freq], freq, ", ".join(map(lambda x: str(x), metainfo[freq]["synonyms"])), freqAll[freq]])
 
 
-w2 = csv.writer(open(resourcebase + "/frequenciesDistribution" + postfix + ".csv", 'wb'), delimiter=";")
+  w2 = csv.writer(open(resourcebase + "/frequenciesDistribution" + postfix + ".csv", 'wb'), delimiter=";")
 
-cnames = rawChapters.keys()
-used = []
-for cname in cnames:
+  cnames = rawChapters.keys()
+  used = []
+  for cname in cnames:
 	if realcnames.has_key(cname):
 		used.append(cname)
 
 
-w2.writerow(["Term", "Stemmed", "Variations"] + map(lambda x: realcnames[x], realcnamesl))
-for freq in freqAllDistribution:
+  w2.writerow(["Term", "Stemmed", "Variations"] + map(lambda x: realcnames[x], realcnamesl))
+  for freq in freqAllDistribution:
 	row = [orginals[freq], freq, ", ".join(map(lambda x: str(x), metainfo[freq]["synonyms"]))]
 	for cname in realcnamesl:
 		row.append(freqAllDistribution[freq][cname])
 	w2.writerow(row)
 
-f = open(resourcebase + "/frequencies" + postfix + ".json", 'write')
-f.write(json.dumps(freqAll))
+  f = open(resourcebase + "/frequencies" + postfix + ".json", 'write')
+  f.write(json.dumps(freqAll, indent="\t"))
 
-f = open(resourcebase + "/frequenciesDistribution" + postfix + ".json", 'write')
-f.write(json.dumps(freqAllDistribution))
+  f = open(resourcebase + "/frequenciesDistribution" + postfix + ".json", 'write')
+  f.write(json.dumps(freqAllDistribution, indent="\t"))
 
-f = open(resourcebase + "/frequenciesDistributionDeep" + postfix + ".json", 'write')
-f.write(json.dumps({'structure' : structure, 'distribution' : freqAllDistributionDeep}))
+  f = open(resourcebase + "/frequenciesDistributionDeep" + postfix + ".json", 'write')
+  f.write(json.dumps({'structure' : structure, 'distribution' : freqAllDistributionDeep}, indent="\t"))
+
+
+if __name__ == "__main__":
+  main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7], sys.argv[8], sys.argv[9])
