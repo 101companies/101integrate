@@ -82,6 +82,7 @@ Paramters in order of usage:
 * Name of chapters file (relative to resource path)
 * Name of content folder (relative to resource path)
 * Name of metaindex file (relative to index path)
+* "merged" | "nonmerged"
 
 ## Script backlinksMapper.py
 
