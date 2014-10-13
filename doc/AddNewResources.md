@@ -7,7 +7,7 @@ All scripts are located in src/mining/.
 
 ## Prepare Download
 
-* Once you have selected your resource, open src/mining/config. In the templates-subfolder are presets for some systems, if your resource matches one of them (you can lookup some url-maiching in matching.json), pick that file as base for further editing. If none matches use HtmlGeneral.json .
+* Once you have selected your resource, open src/mining/config. In the templates-subfolder are presets for some systems, if your resource matches one of them (you can lookup some url-matching in matching.json), pick that file as base for further editing. If none matches use HtmlGeneral.json .
 * Insert the UrlBase and FullName into that json-object.
 * Look into config.json and pick a new unique shortie for your resource. It is recommend tho use the first letters of every word in the title. After that insert your json-object into config.json .
 * Please add matching tags to your book.
