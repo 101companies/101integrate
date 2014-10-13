@@ -22,9 +22,7 @@ You can download tagged Books e.g. the Haskell-Books with the following command:
 
     make download-books BOOKS="haskell"
 
-At the Moment the following Tags are available:
-
-Haskell, Python
+The available Tags can be looked up in docs/Tagset.md .
 
 # Offline textbooks
 
