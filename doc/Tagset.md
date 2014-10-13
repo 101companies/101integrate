@@ -4,7 +4,7 @@ A Resource can be tagged by its content, creation process (origin), expected Ski
 
 ##Exampels
 * "XML-Programming in Java" -> XML, Java
-* "Introduction in C Programming" -> Beginner, C
+* "A Beginner's Guide to C Programming" -> Beginner, C
 * "Python Programming" from en.wikibooks.org -> Python, community project
 
 # Valid Tags
