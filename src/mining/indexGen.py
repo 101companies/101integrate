@@ -170,25 +170,26 @@ def genDB(sqlcon, book, files):
 	      insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
 	      temp['file']= f
 	      for l in open(conPath+f).readlines():
-		      tokenedLine = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", " ", l.replace("."," . ").replace(","," , ").replace("*"," * ").replace("/"," / "))))
-		      for (i, w) in enumerate(tokenedLine):
-			word = normalizeWord(w[0])
-			if (len(word.strip(":-_1234567890"))<=1):
-			  continue
-			temp['w1'] = word
-			temp['wId1'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':word}))
-			temp['tag1'] = simplify_wsj_tag(w[1])
-			insertIfNotExists(cursor, freqWordStm, freqWordInsStm, temp)
-			cursor.execute(freqWordIncStm, temp)
-			if i < len(tokenedLine)-2:
-				temp['w2'] = normalizeWord(tokenedLine[i+1][0])
-				if len(temp['w2'].strip(":-_1234567890")) > 1:
-					temp['wId2'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w2']}))
-					temp['tag2'] = simplify_wsj_tag(tokenedLine[i+1][1])
-					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tupelInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2']}))
-					temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2']}))
-					insertIfNotExists(cursor, freqTTStm, freqTTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
-					cursor.execute(freqTTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
+			for s in l.split("."):
+				tokenedSentence = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", " ", s.replace("."," . ").replace(","," , ").replace("*"," * ").replace("/"," / "))))
+				for (i, w) in enumerate(tokenedSentence):
+					word = normalizeWord(w[0])
+					if (len(word.strip(":-_1234567890"))<=1):
+						continue
+					temp['w1'] = word
+					temp['wId1'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':word}))
+					temp['tag1'] = w[1]
+					insertIfNotExists(cursor, freqWordStm, freqWordInsStm, temp)
+					cursor.execute(freqWordIncStm, temp)
+					if i < len(tokenedSentence)-2:
+						temp['w2'] = normalizeWord(tokenedSentence[i+1][0])
+						if len(temp['w2'].strip(":-_1234567890")) > 1:
+							temp['wId2'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w2']}))
+							temp['tag2'] = tokenedSentence[i+1][1]
+							temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tupelInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2']}))
+							temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2']}))
+							insertIfNotExists(cursor, freqTTStm, freqTTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
+							cursor.execute(freqTTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
 	sqlcon.commit()
 	print "data committed to db"
 
