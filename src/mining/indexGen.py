@@ -1,11 +1,10 @@
 import nltk
-from nltk.tag.simplify import simplify_wsj_tag
-import sqlite3 as sqlite
+import sqlite3 as sql
 import os
 import sys
 import re
 import constants
-from sortedcontainers import SortedList, SortedSet, SortedDict
+from sortedcontainers import SortedSet
 
 def sqlExec(cursor, statement, values):
   try:
@@ -30,7 +29,8 @@ def transformParagraphToLine(path):
     writer.write(temp)
     writer.close
 
-
+##
+# @DEPRECATED
 def insertOldDb(args):
       for a in args:
 	conPath = constants.getContentPath(a)
@@ -113,9 +113,7 @@ def genDB(sqlcon, book, files):
 	cursor.execute("""DROP VIEW IF EXISTS TupelFreq """)
 	cursor.execute("""DROP VIEW IF EXISTS WordFreq""")
 	cursor.execute("""DROP VIEW IF EXISTS CommonNouns""")
-	cursor.execute("""DROP VIEW IF EXISTS CommonNounTupels""")
 	cursor.execute("""DROP VIEW IF EXISTS WordOverview """)
-	cursor.execute("""DROP VIEW IF EXISTS CommonAdjNounTupels """)
 	cursor.execute("""DROP TABLE IF EXISTS FreqTupels""")
 	cursor.execute("""DROP TABLE IF EXISTS TupelTags""")
 	cursor.execute("""DROP TABLE IF EXISTS Tupels""")
@@ -134,13 +132,11 @@ def genDB(sqlcon, book, files):
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelOverwiew AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "N%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounTupels AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "N%" AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonAdjNounTupels  AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "ADJ" AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE (tag1 LIKE "N%" OR tag1 LIKE "ADJ") AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "NN%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE (tag1 LIKE "NN%" OR tag1 LIKE "ADJ") AND tag2 LIKE "NN%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "N%" OR tt.tag1 LIKE "ADJ") AND tt.tag2 LIKE "N%" GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "N%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "ADJ") AND tt.tag2 LIKE "NN%" GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "NN%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
 	
 	print "Views added"
 	#prepare Statements
@@ -195,19 +191,19 @@ def genDB(sqlcon, book, files):
 
 def selectTerms(sqlcon, book,files):
 	cursor = sqlcon.cursor()
-	cursor.execute("""SELECT word FROM CommonNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonNouns ORDER BY freq DESC LIMIT 1 OFFSET 25)  ORDER BY freq DESC""")
+	cursor.execute("""SELECT word FROM CommonNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonNouns ORDER BY freq DESC LIMIT 1 OFFSET 50)  ORDER BY freq DESC""")
 	words = SortedSet() #TODO switch back to set once word filtering is acceptable
 	temp = cursor.fetchone()
 	while (temp is not None):
 	  words.add(temp[0])
 	  temp = cursor.fetchone()
-	cursor.execute("""SELECT word1, word2 FROM CommonTupelsWNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonTupelsWNouns ORDER BY freq DESC LIMIT 1 OFFSET 25)   ORDER BY freq DESC""")
+	cursor.execute("""SELECT word1, word2 FROM CommonTupelsWNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonTupelsWNouns ORDER BY freq DESC LIMIT 1 OFFSET 50)   ORDER BY freq DESC""")
 	temp = cursor.fetchone()
 	while (temp is not None):
 	  words.add(temp[0]+" "+temp[1])
 	  temp = cursor.fetchone()
-	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 10) ORDER BY freq DESC"""
-	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 10) ORDER BY freq DESC LIMIT 10"""
+	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 20) ORDER BY freq DESC"""
+	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 20) ORDER BY freq DESC LIMIT 10"""
 	for f in files:
 	  cursor.execute(wordFetchStm, {'file':f})
 	  temp = cursor.fetchone()
@@ -248,9 +244,8 @@ def main(args):
 	cursor.execute("""DROP VIEW IF EXISTS TupelFreq """)
 	cursor.execute("""DROP VIEW IF EXISTS WordFreq""")
 	cursor.execute("""DROP VIEW IF EXISTS CommonNouns""")
-	cursor.execute("""DROP VIEW IF EXISTS CommonNounTupels""")
+
 	cursor.execute("""DROP VIEW IF EXISTS WordOverview """)
-	cursor.execute("""DROP VIEW IF EXISTS CommonAdjNounTupels """)
 	cursor.execute("""DROP TABLE IF EXISTS FreqTupels""")
 	cursor.execute("""DROP TABLE IF EXISTS TupelTags""")
 	cursor.execute("""DROP TABLE IF EXISTS Tupels""")
@@ -269,13 +264,11 @@ def main(args):
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelOverwiew AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "N%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounTupels AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "N%" AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonAdjNounTupels  AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE tag1 LIKE "ADJ" AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE (tag1 LIKE "N%" OR tag1 LIKE "ADJ") AND tag2 LIKE "N%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "NN%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE (tag1 LIKE "NN%" OR tag1 LIKE "ADJ") AND tag2 LIKE "NN%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "N%" OR tt.tag1 LIKE "ADJ") AND tt.tag2 LIKE "N%" GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "N%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "ADJ") AND tt.tag2 LIKE "NN%" GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "NN%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
 	
 	print "Views added"
 	#prepare Statements
@@ -369,7 +362,7 @@ if __name__ == "__main__":
 		print "Processing " + book
 		conPath = constants.getContentPath(book)
 		files = os.listdir(conPath)
-		sqlcon = sqlite.connect(constants.getBookPath(book)+"Frequencies.db")
+		sqlcon = sql.connect(constants.getBookPath(book)+"Frequencies.db")
 		mode = None
 		if len(sys.argv) == 3:
 			mode = sys.argv[2]
@@ -387,5 +380,5 @@ if __name__ == "__main__":
 #old db schema
 """SELECT l1.* , l2.* FROM links l1, links l2 WHERE l1.w1 == l2.w1 AND l2.w2 == l1.w2 AND l1.file == l2. file AND  l1.ROWID != l2.ROWID AND l1.tag1 = l2.tag1 AND l1.tag2=l2.tag2"""#Find Duplicates
 """SELECT * FROM (SELECT * FROM (SELECT * FROM links WHERE length(w1)==1 OR length(w2)==1) WHERE NOT (w1=="a" OR w1=="c" OR w1=="s" OR w1=="i" OR w1=="d")) WHERE NOT (w2=="a" OR w2=="c" OR w2=="s" OR w2=="i" OR w2=="d")"""
-"""SELECT * from wordstotal WHERE tag LIKE "N%" OR tag="FW" ORDER BY freq DESC"""
-"""SELECT * FROM (SELECT * FROM linkstotal WHERE tag1="FW" OR tag1 LIKE "N%" OR tag1="ADJ") WHERE tag2 LIKE "N%" OR tag2="FW" ORDER BY freq DESC"""
+"""SELECT * from wordstotal WHERE tag LIKE "NN%" OR tag="FW" ORDER BY freq DESC"""
+"""SELECT * FROM (SELECT * FROM linkstotal WHERE tag1="FW" OR tag1 LIKE "NN%" OR tag1="ADJ") WHERE tag2 LIKE "NN%" OR tag2="FW" ORDER BY freq DESC"""
