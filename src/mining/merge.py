@@ -10,6 +10,7 @@ import re
 import patternCleaner
 p = inflect.engine()
 import nltk
+from sortedcontainers import SortedDict
 from nltk.stem.wordnet import WordNetLemmatizer
 
 def isinWhitelist(term, list):
@@ -53,7 +54,8 @@ def areSimilar(term1, term2):
 # Merges and cleans a list of given index files. Creates clean index and optionally a file of crosscut betweens given indecies.
 def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore, crosscut):
   # merge term indecies
-  allTerms = {}
+  #allTerms = {}
+  allTerms = SortedDict()
   resInfos = json.loads(open("config/config.json", 'rb').read())
   commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
 
