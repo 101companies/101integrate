@@ -166,8 +166,8 @@ def genDB(sqlcon, book, files):
 	      insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
 	      temp['file']= f
 	      for l in open(conPath+f).readlines():
-			for s in l.split("."):
-				tokenedSentence = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", " ", s.replace("."," . ").replace(","," , ").replace("*"," * ").replace("/"," / "))))
+			for s in l.replace("?", ".").replace("!",".").split("."):
+				tokenedSentence = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", " ", s)))
 				for (i, w) in enumerate(tokenedSentence):
 					word = normalizeWord(w[0])
 					if (len(word.strip(":-_1234567890"))<=1):
@@ -191,6 +191,7 @@ def genDB(sqlcon, book, files):
 
 def selectTerms(sqlcon, book,files):
 	cursor = sqlcon.cursor()
+	print "fetching global terms"
 	cursor.execute("""SELECT word FROM CommonNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonNouns ORDER BY freq DESC LIMIT 1 OFFSET 50)  ORDER BY freq DESC""")
 	words = SortedSet() #TODO switch back to set once word filtering is acceptable
 	temp = cursor.fetchone()
@@ -202,9 +203,11 @@ def selectTerms(sqlcon, book,files):
 	while (temp is not None):
 	  words.add(temp[0]+" "+temp[1])
 	  temp = cursor.fetchone()
+	"fetching file terms"
 	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 20) ORDER BY freq DESC"""
 	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 20) ORDER BY freq DESC LIMIT 10"""
 	for f in files:
+	  print "\t"+f
 	  cursor.execute(wordFetchStm, {'file':f})
 	  temp = cursor.fetchone()
 	  while (temp is not None):
