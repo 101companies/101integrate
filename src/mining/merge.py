@@ -10,7 +10,7 @@ import re
 import patternCleaner
 p = inflect.engine()
 import nltk
-from sortedcontainers import SortedDict
+from sortedcontainers import SortedDict, SortedList
 from nltk.stem.wordnet import WordNetLemmatizer
 
 def isinWhitelist(term, list):
@@ -59,7 +59,8 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
   resInfos = json.loads(open("config/config.json", 'rb').read())
   commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
 
-  changedByPattern = []
+  #changedByPattern = []
+  changedByPattern = SortedList()
 
   blacklist = json.loads(open("config/blacklist.json", 'rb').read())['blacklist']
   whitelist = []
@@ -141,7 +142,8 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
   print len(allTerms), "All done!"
 
   lmtzr = WordNetLemmatizer()
-  stemmedData = {}
+  #stemmedData = {}
+  stemmedData = SortedDict()
   for i, term in enumerate(allTerms):
 	termDict = dict(resourcenames=allTerms[term]['resourcenames'])
 	synonyms = allTerms[term]['synonyms']
