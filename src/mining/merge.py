@@ -142,8 +142,7 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
   print len(allTerms), "All done!"
 
   lmtzr = WordNetLemmatizer()
-  #stemmedData = {}
-  stemmedData = SortedDict()
+  stemmedData = {}
   for i, term in enumerate(allTerms):
 	termDict = dict(resourcenames=allTerms[term]['resourcenames'])
 	synonyms = allTerms[term]['synonyms']
