@@ -2,6 +2,7 @@ import nltk
 import sqlite3 as sql
 import os
 import sys
+import csv
 import re
 import constants
 from sortedcontainers import SortedSet
@@ -191,41 +192,55 @@ def genDB(sqlcon, book, files):
 
 def selectTerms(sqlcon, book,files):
 	cursor = sqlcon.cursor()
+	commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:50])
 	print "fetching global terms"
 	cursor.execute("""SELECT word FROM CommonNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonNouns ORDER BY freq DESC LIMIT 1 OFFSET 50)  ORDER BY freq DESC""")
 	words = SortedSet() #TODO switch back to set once word filtering is acceptable
 	temp = cursor.fetchone()
 	while (temp is not None):
-	  words.add(temp[0])
-	  temp = cursor.fetchone()
+		#print temp
+		if temp[0] not in commonEnglishWords:
+			words.add(temp[0])
+		temp = cursor.fetchone()
+	print "single words fetched"
 	cursor.execute("""SELECT word1, word2 FROM CommonTupelsWNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonTupelsWNouns ORDER BY freq DESC LIMIT 1 OFFSET 50)   ORDER BY freq DESC""")
 	temp = cursor.fetchone()
 	while (temp is not None):
-	  words.add(temp[0]+" "+temp[1])
-	  temp = cursor.fetchone()
-	"fetching file terms"
+		#print temp
+		if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords:
+			words.add(temp[0]+" "+temp[1])
+		temp = cursor.fetchone()
+	print "tupels fetched"
+	print "fetching file terms"
 	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 20) ORDER BY freq DESC"""
 	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 20) ORDER BY freq DESC LIMIT 10"""
 	for f in files:
-	  print "\t"+f
-	  cursor.execute(wordFetchStm, {'file':f})
-	  temp = cursor.fetchone()
-	  while (temp is not None):
-	    words.add(temp[0])
-	    temp = cursor.fetchone()
-	  cursor.execute(tupelFetchStm, {'file':f})
-	  temp = cursor.fetchone()
-	  while (temp is not None):
-	    words.add(temp[0]+" "+temp[1])
-	    temp = cursor.fetchone()
+		print "\t"+f
+		cursor.execute(wordFetchStm, {'file':f})
+		temp = cursor.fetchone()
+		while (temp is not None):
+			#print temp
+			if temp[0] not in commonEnglishWords:
+				words.add(temp[0])
+			temp = cursor.fetchone()
+		print "single words fetched"
+		cursor.execute(tupelFetchStm, {'file':f})
+		temp = cursor.fetchone()
+		while (temp is not None):
+			#print temp
+			if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords:
+				words.add(temp[0]+" "+temp[1])
+			temp = cursor.fetchone()
+		print "tupels fetched"
 	sqlcon.close()
 	print "Fetched Data from DB"
+	#TODO cross checking with frequent english words
 	path = constants.getCachePath(book)
 	constants.mkdir(path)
 	writer = open(path+"IndexGen.csv","w")
 	for w in words:
-	  writer.write(w)
-	  writer.write("\n")
+		writer.write(w)
+		writer.write("\n")
 	print "Created IndexGen.csv"
 
 def main(args):
