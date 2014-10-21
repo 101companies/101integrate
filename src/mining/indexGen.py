@@ -16,7 +16,7 @@ def sqlExec(cursor, statement, values):
 	pass  
       
 def normalizeWord(word):
-  return re.sub("[^\w\-\_]", " ", word.lower()).replace("\r","").replace("\n","")
+  return re.sub("[^\w\-]", " ", word.lower()).strip()
 
 
 def transformParagraphToLine(path):
@@ -134,9 +134,9 @@ def genDB(sqlcon, book, files):
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "NN%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE (tag1 LIKE "NN%" OR tag1 LIKE "JJ%") AND tag2 LIKE "NN%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, TupelTags tt ,(SELECT tupel FROM TupelTags WHERE (tag1 LIKE "NN%" OR tag1 LIKE "JJ%") AND tag2 LIKE "NN%") tagfilter, (SELECT tagID FROM FreqTupels GROUP BY tagID HAVING sum(freq)>1 ) freqfilter WHERE t.tID == tagfilter.tupel AND freqfilter.tagID == tt.ID AND tt.tupel == t.tID ORDER BY t.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND tt.tag2 LIKE "NN%" GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND tt.tag2 LIKE "NN%"  AND f.freq > 1 GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "NN%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
 	
 	print "Views added"
@@ -160,14 +160,14 @@ def genDB(sqlcon, book, files):
 	freqTTIncStm = """ UPDATE FreqTupels SET freq=freq+1 WHERE tupel = :tId AND tagId = :tagId AND file = :file """
 	print "prepared Statements"
 	for f in files:
-	      print "Processing "+f
-	      transformParagraphToLine(conPath+f)
-	      temp =  {"file" : f}
-	      cursor.execute(fileIdStm, temp)
-	      insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
-	      temp['file']= f
-	      for l in open(conPath+f).readlines():
-			for s in l.replace("?", ".").replace("!",".").split("."):
+		print "Processing "+f
+		transformParagraphToLine(conPath+f)
+		temp =  {"file" : f}
+		cursor.execute(fileIdStm, temp)
+		insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
+		temp['file']= f
+		for l in open(conPath+f).readlines():
+			for s in re.split("[\.\?!]",l):
 				tokenedSentence = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", " ", s)))
 				for (i, w) in enumerate(tokenedSentence):
 					word = normalizeWord(w[0])
@@ -178,15 +178,17 @@ def genDB(sqlcon, book, files):
 					temp['tag1'] = w[1]
 					insertIfNotExists(cursor, freqWordStm, freqWordInsStm, temp)
 					cursor.execute(freqWordIncStm, temp)
-					if i < len(tokenedSentence)-2:
-						temp['w2'] = normalizeWord(tokenedSentence[i+1][0])
-						if len(temp['w2'].strip(":-_1234567890")) > 1:
-							temp['wId2'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w2']}))
-							temp['tag2'] = tokenedSentence[i+1][1]
-							temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tupelInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2']}))
-							temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2']}))
-							insertIfNotExists(cursor, freqTTStm, freqTTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
-							cursor.execute(freqTTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
+					if i > len(tokenedSentence)-2:
+						continue
+					temp['w2'] = normalizeWord(tokenedSentence[i+1][0])
+					if len(temp['w2'].strip(":-_1234567890")) <= 1:
+						continue
+					temp['wId2'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w2']}))
+					temp['tag2'] = tokenedSentence[i+1][1]
+					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tupelInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2']}))
+					temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2']}))
+					insertIfNotExists(cursor, freqTTStm, freqTTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
+					cursor.execute(freqTTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
 	sqlcon.commit()
 	print "data committed to db"
 
@@ -223,7 +225,7 @@ def selectTerms(sqlcon, book,files):
 			if temp[0] not in commonEnglishWords:
 				words.add(temp[0])
 			temp = cursor.fetchone()
-		print "single words fetched"
+		print "\t\t single words fetched"
 		cursor.execute(tupelFetchStm, {'file':f})
 		temp = cursor.fetchone()
 		while (temp is not None):
@@ -231,10 +233,9 @@ def selectTerms(sqlcon, book,files):
 			if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords:
 				words.add(temp[0]+" "+temp[1])
 			temp = cursor.fetchone()
-		print "tupels fetched"
+		print "\t \t tupels fetched"
 	sqlcon.close()
 	print "Fetched Data from DB"
-	#TODO cross checking with frequent english words
 	path = constants.getCachePath(book)
 	constants.mkdir(path)
 	writer = open(path+"IndexGen.csv","w")
@@ -373,6 +374,7 @@ def main(args):
 
 
 if __name__ == "__main__":
+	#TODO add Arguments for number of terms to select AND Common English Words to Ignore
 	if len(sys.argv) < 2 or len(sys.argv) > 3:
 		print "exiting"
 	elif len(sys.argv) > 1 or len(sys.argv) < 4:
