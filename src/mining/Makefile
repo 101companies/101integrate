@@ -68,7 +68,6 @@ move:
 		mv -f ../../data/perbook/"$$b"/frequenciesDistribution.json ../../data/perbook/"$$b"/cache/frequenciesDistribution.json; \
 		mv -f ../../data/perbook/"$$b"/frequenciesDistribution.csv ../../data/perbook/"$$b"/cache/frequenciesDistribution.csv; \
 		mv -f ../../data/perbook/"$$b"/frequenciesDistributionDeepMerged.json ../../data/perbook/"$$b"/cache/frequenciesDistributionDeepMerged.json; \
-		mv -f ../../data/perbook/"$$b"/frequenciesDistributionDeepMerged.csv ../../data/perbook/"$$b"/cache/frequenciesDistributionDeepMerged.csv; \
 		mv -f ../../data/perbook/"$$b"/frequenciesMerged.json ../../data/perbook/"$$b"/cache/frequenciesMerged.json; \
 		mv -f ../../data/perbook/"$$b"/frequenciesMerged.csv ../../data/perbook/"$$b"/cache/frequenciesMerged.csv; \
 		mv -f ../../data/perbook/"$$b"/frequenciesDistributionDeep.json ../../data/perbook/"$$b"/cache/frequenciesDistributionDeep.json; \
