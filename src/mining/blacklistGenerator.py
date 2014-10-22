@@ -7,6 +7,12 @@ def generateBlacklist(args):
 		blacklist =[]
 		path = constants.getMetaPath(a)
 		try:
+		    blacklist = json.loads(open(path+"blacklist.json" , 'rb').read())
+		except IOError:
+		    pass
+		else:
+		    print "loaded old blacklist"
+		try:
 			chapters = json.loads(open(path + "chapterData.json", 'rb').read())['chapters']
 			usedChapters =  json.loads(open(path + "chapters.json", 'rb').read())['chapters']
 			for c in chapters[:]:
@@ -17,9 +23,18 @@ def generateBlacklist(args):
 				for u in usedChapters:
 					if c['file'] == u['file'] and c['title'] == u['title']:
 						chapters.remove(c) 
-			blacklist = chapters
-			for b in blacklist:
+			newBlacklist = chapters
+			print "generated Blacklist"
+			for b in newBlacklist:
 				b['reason'] = ""
+			# Keep reasons
+			if blacklist:
+			    print "copying reasons"
+			for b in blacklist:
+			    for n in newBlacklist:
+				if b['url'] == n['url'] and b['title'] == n['title']:
+				    n['reason']=b['reason']
+			blacklist = newBlacklist
 		except IOError, e:
 			print e
 			print "Could not read "+a+"-Files \r\n Try running MetadataGenerator before BlacklistGenerator"
@@ -28,6 +43,7 @@ def generateBlacklist(args):
 		WriteJSON = open(path+"blacklist.json","w")
 		WriteJSON.write(json.dumps(blacklist, indent="\t"))
 		WriteJSON.close()
+		print "Wrote File"
 
 if __name__ == "__main__":
   generateBlacklist(sys.argv[1:])
