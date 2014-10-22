@@ -127,8 +127,19 @@ def writeMetadata(args):
 		chaptersFull =  open(path+"chapterData.json","w")
 		chaptersFull.write(json.dumps({"chapters": chapters}, indent="\t"))
 		chaptersFull.close()
+		blacklist = []
+		try:
+		  blacklist = json.loads(open(constants.getMetaPath(arg)+"blacklist.json" , 'rb').read())
+		except IOError:
+		  pass
+		else:
+		  print "loaded Blacklist"
 		chaptersWrite = open(path+"chaptersGen.txt","w")
-		for c in chapters:
+		for c in chapters[:]:
+		    if c['url'] in [e['url'] for e in blacklist]:
+			chapters.remove(c)
+			print c , " blacklisted"
+		    else:
 			chaptersWrite.write(c['url'])
 			chaptersWrite.write("\r\n")
 			c.pop('url')
