@@ -52,3 +52,4 @@ Control.Monad.Tran
 Database.HDBC
 Data.List.lookup
 monadplus
+OS
