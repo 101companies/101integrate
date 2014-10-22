@@ -36,7 +36,7 @@ def insertOldDb(args):
       for a in args:
 	conPath = constants.getContentPath(a)
 	files = os.listdir(conPath)
-	sqlcon = sqlite.connect(constants.getBookPath(a)+"Entries.db")
+	sqlcon = sqlite.connect(constants.getCachePath(a)+"Entries.db")
 	sqlcon.text_factory = str
 	cursor = sqlcon.cursor()
 	print "connected to DB"
@@ -382,7 +382,7 @@ if __name__ == "__main__":
 		print "Processing " + book
 		conPath = constants.getContentPath(book)
 		files = os.listdir(conPath)
-		sqlcon = sql.connect(constants.getBookPath(book)+"Frequencies.db")
+		sqlcon = sql.connect(constants.getCachePath(book)+"Frequencies.db")
 		mode = None
 		if len(sys.argv) == 3:
 			mode = sys.argv[2]

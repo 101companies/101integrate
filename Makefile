@@ -10,7 +10,6 @@ run:
 	mkdir -p logs
 	$(MAKE) download-books | tee logs/downloadBooks.log
 	$(MAKE) mine           | tee logs/mine.log
-	$(MAKE) from-cache     | tee logs/fromCache.log
 	$(MAKE) analyze        | tee logs/analyze.log
 	$(MAKE) backlink       | tee logs/backlink.log
 	$(MAKE) integrate      | tee logs/integrate.log
