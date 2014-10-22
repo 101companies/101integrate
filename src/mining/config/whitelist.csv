@@ -53,3 +53,4 @@ Database.HDBC
 Data.List.lookup
 monadplus
 OS
+os
