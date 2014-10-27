@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import json
+import simplejson as json
 import csv
 
 resNames = sys.argv[3:-1]
@@ -18,4 +18,4 @@ for resName in resNames:
 	mappings[resName] = mapping
 
 f = open(datafolder + sys.argv[-1] + "mapping.json", 'write')
-f.write(json.dumps(mappings))
+f.write(json.dumps(mappings),indent="\t")

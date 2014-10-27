@@ -2,7 +2,7 @@ import csv
 import os
 import sys
 import re
-import json
+import simplejson as json
 import csv
 from collections import defaultdict
 import inflect
@@ -92,7 +92,7 @@ for term in order:
 	html = html + "</tr>"
 html = html + "</tr></table>"
 f = open(res['kind']+"/"+res['folder'] + "/" +"frequencies.json","write")
-f.write(json.dumps(result))
+f.write(json.dumps(result), indent = "\t")
 w = csv.writer(open(res['kind']+"/"+res['folder']+ "/"+'frequencies.csv', 'wb'), delimiter=';')
 w.writerow(["Term"] + resNames)
 for key, value in result.items():

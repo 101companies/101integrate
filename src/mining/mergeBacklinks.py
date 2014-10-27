@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import json
+import simplejson as json
 
 resNames = sys.argv[3:-1]
 print resNames
@@ -19,4 +19,4 @@ for resName in resNames:
 			allBacklinks['backlinks'][str(term)] = {resName: resources[term]}
 
 f = open(datafolder + sys.argv[-1] + "backlinks.json", 'write')
-f.write(json.dumps(allBacklinks))
+f.write(json.dumps(allBacklinks), indent="\t")

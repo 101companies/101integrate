@@ -3,7 +3,7 @@
 
 import sys
 import codecs
-import json
+import simplejson as json
 import csv
 import re
 import nltk
@@ -59,6 +59,6 @@ for i, term in enumerate(distribution):
 		for s in secondary:
 			print s
 f = open(resourcebase + "backlinks.json", "write")
-f.write(json.dumps(termlinks))
+f.write(json.dumps(termlinks), indent= "\t")
 
 
