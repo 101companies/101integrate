@@ -195,7 +195,7 @@ def genDB(sqlcon, book, files):
 
 def selectTerms(sqlcon, book, files, generalSel = 50, fileSel = 20, nIgnore = 50):
 	cursor = sqlcon.cursor()
-	commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:nIgnore])
+	commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
 	print "fetching global terms"
 	cursor.execute("""SELECT word FROM CommonNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonNouns ORDER BY freq DESC LIMIT 1 OFFSET ?)  ORDER BY freq DESC""", (str(generalSel), ))
 	words = SortedSet() #TODO switch back to set once word filtering is acceptable
@@ -385,7 +385,7 @@ if __name__ == "__main__":
 		files = os.listdir(conPath)
 		sqlcon = sql.connect(constants.getBookPath(book)+"Frequencies.db")
 		mode = None
-		if len(sys.argv) == 3:
+		if len(sys.argv) >= 3:
 			mode = sys.argv[2]
 		if mode == None:
 			genDB(sqlcon, book,files)
