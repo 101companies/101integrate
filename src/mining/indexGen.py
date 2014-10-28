@@ -1,4 +1,5 @@
 import nltk
+# default tagset see: https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
 import sqlite3 as sql
 import os
 import sys
@@ -192,11 +193,11 @@ def genDB(sqlcon, book, files):
 	sqlcon.commit()
 	print "data committed to db"
 
-def selectTerms(sqlcon, book,files):
+def selectTerms(sqlcon, book, files, generalSel = 50, fileSel = 20, nIgnore = 50):
 	cursor = sqlcon.cursor()
-	commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:50])
+	commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:nIgnore])
 	print "fetching global terms"
-	cursor.execute("""SELECT word FROM CommonNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonNouns ORDER BY freq DESC LIMIT 1 OFFSET 50)  ORDER BY freq DESC""")
+	cursor.execute("""SELECT word FROM CommonNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonNouns ORDER BY freq DESC LIMIT 1 OFFSET ?)  ORDER BY freq DESC""", (str(generalSel), ))
 	words = SortedSet() #TODO switch back to set once word filtering is acceptable
 	temp = cursor.fetchone()
 	while (temp is not None):
@@ -205,7 +206,7 @@ def selectTerms(sqlcon, book,files):
 			words.add(temp[0])
 		temp = cursor.fetchone()
 	print "single words fetched"
-	cursor.execute("""SELECT word1, word2 FROM CommonTupelsWNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonTupelsWNouns ORDER BY freq DESC LIMIT 1 OFFSET 50)   ORDER BY freq DESC""")
+	cursor.execute("""SELECT word1, word2 FROM CommonTupelsWNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonTupelsWNouns ORDER BY freq DESC LIMIT 1 OFFSET ?)   ORDER BY freq DESC""", (str(generalSel),))
 	temp = cursor.fetchone()
 	while (temp is not None):
 		#print temp
@@ -214,11 +215,11 @@ def selectTerms(sqlcon, book,files):
 		temp = cursor.fetchone()
 	print "tupels fetched"
 	print "fetching file terms"
-	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 20) ORDER BY freq DESC"""
-	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET 20) ORDER BY freq DESC LIMIT 10"""
+	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC"""
+	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC LIMIT 10"""
 	for f in files:
 		print "\t"+f
-		cursor.execute(wordFetchStm, {'file':f})
+		cursor.execute(wordFetchStm, {'file':f, 'number':fileSel})
 		temp = cursor.fetchone()
 		while (temp is not None):
 			#print temp
@@ -226,7 +227,7 @@ def selectTerms(sqlcon, book,files):
 				words.add(temp[0])
 			temp = cursor.fetchone()
 		print "\t\t single words fetched"
-		cursor.execute(tupelFetchStm, {'file':f})
+		cursor.execute(tupelFetchStm,{'file':f, 'number':fileSel})
 		temp = cursor.fetchone()
 		while (temp is not None):
 			#print temp
@@ -236,7 +237,7 @@ def selectTerms(sqlcon, book,files):
 		print "\t \t tupels fetched"
 	sqlcon.close()
 	print "Fetched Data from DB"
-	path = constants.getCachePath(book)
+	path = constants.getBookPath(book)
 	constants.mkdir(path)
 	writer = open(path+"IndexGen.csv","w")
 	for w in words:
@@ -244,6 +245,7 @@ def selectTerms(sqlcon, book,files):
 		writer.write("\n")
 	print "Created IndexGen.csv"
 
+# DEPRECATED split into genDB and select Terms
 def main(args):
  if len(args) < 1:
 	print "Exiting"
@@ -374,15 +376,15 @@ def main(args):
 
 
 if __name__ == "__main__":
-	#TODO add Arguments for number of terms to select AND Common English Words to Ignore
-	if len(sys.argv) < 2 or len(sys.argv) > 3:
+	#TODO use SysArguments for number of terms to select AND Common English Words to Ignore
+	if len(sys.argv) < 2:
 		print "exiting"
-	elif len(sys.argv) > 1 or len(sys.argv) < 4:
+	else:
 		book = sys.argv[1]
 		print "Processing " + book
 		conPath = constants.getContentPath(book)
 		files = os.listdir(conPath)
-		sqlcon = sql.connect(constants.getCachePath(book)+"Frequencies.db")
+		sqlcon = sql.connect(constants.getBookPath(book)+"Frequencies.db")
 		mode = None
 		if len(sys.argv) == 3:
 			mode = sys.argv[2]
