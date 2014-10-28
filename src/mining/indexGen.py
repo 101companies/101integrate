@@ -376,7 +376,6 @@ def main(args):
 
 
 if __name__ == "__main__":
-	#TODO use SysArguments for number of terms to select AND Common English Words to Ignore
 	if len(sys.argv) < 2:
 		print "exiting"
 	else:
@@ -394,7 +393,14 @@ if __name__ == "__main__":
 		elif mode == "generate":
 			genDB(sqlcon, book,files)
 		elif mode == "select":
-			selectTerms(sqlcon, book,files)
+			if len(sys.argv) == 3:
+			    selectTerms(sqlcon, book, files)
+			elif len(sys.argv) == 4:
+			    selectTerms(sqlcon, book, files, sys.argv[3])
+			elif len(sys.argv) == 5:
+			    selectTerms(sqlcon, book, files, sys.argv[3], sys.argv[4])
+			elif len(sys.argv) == 6:
+			    selectTerms(sqlcon, book, files, sys.argv[3], sys.argv[4], sys.argv[5])
 		else:
 			print mode + " not recognized"
 
