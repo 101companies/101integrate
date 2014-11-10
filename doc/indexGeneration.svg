@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="43cm" height="11cm" viewBox="80 120 851 220" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <path style="fill: #ffffff" d="M 80 120 L 193,120 L 193,181.714 C 170.4,171.429 159.1,171.429 136.5,181.714 C 113.9,192 102.6,192 80,181.714 L 80,120z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 80 120 L 193,120 L 193,181.714 C 170.4,171.429 159.1,171.429 136.5,181.714 C 113.9,192 102.6,192 80,181.714 L 80,120"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="136.5" y="149.714">
+      <tspan x="136.5" y="149.714">Text</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 267.3 140 L 403.8,140 C 383.325,147.2 376.5,150.8 376.5,158 C 376.5,165.2 383.325,168.8 403.8,176 L 267.3,176 C 246.825,168.8 240,165.2 240,158 C 240,150.8 246.825,147.2 267.3,140z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 267.3 140 L 403.8,140 C 383.325,147.2 376.5,150.8 376.5,158 C 376.5,165.2 383.325,168.8 403.8,176 L 267.3,176 C 246.825,168.8 240,165.2 240,158 C 240,150.8 246.825,147.2 267.3,140"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="321.9" y="154">
+      <tspan x="321.9" y="154">POS-Tagger</tspan>
+      <tspan x="321.9" y="170">(Part Of Speech)</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="192.991" y1="156.499" x2="240.103" y2="156.915"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="230.062,161.827 240.106,156.915 230.15,151.827 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 420 120 L 540,120 L 540,205 C 516,192.25 504,188 480,188 C 456,188 444,183.75 420,171 L 420,120z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 420 120 L 540,120 L 540,205 C 516,192.25 504,188 480,188 C 456,188 444,183.75 420,171 L 420,120"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="480" y="149.5">
+      <tspan x="480" y="149.5">tagged Text</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="376.557" y1="158.527" x2="420.019" y2="160.196"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="409.837,164.809 420.021,160.196 410.221,154.816 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 580 133.333 C 612.91,123.333 629.365,120 662.275,120 C 695.185,120 711.64,123.333 744.55,133.333 L 744.55,186.667 C 711.64,196.667 695.185,200 662.275,200 C 629.365,200 612.91,196.667 580,186.667 L 580,133.333z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 580 133.333 C 612.91,123.333 629.365,120 662.275,120 C 695.185,120 711.64,123.333 744.55,133.333 L 744.55,186.667 C 711.64,196.667 695.185,200 662.275,200 C 629.365,200 612.91,196.667 580,186.667 L 580,133.333"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 580 133.333 C 612.91,143.333 629.365,146.667 662.275,146.667 C 695.185,146.667 711.64,143.333 744.55,133.333"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="662.275" y="162.667">
+      <tspan x="662.275" y="162.667">Database</tspan>
+      <tspan x="662.275" y="178.667">word, tag, frequency, file</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="539.998" y1="161.677" x2="580.011" y2="161.128"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="570.083,166.265 580.013,161.128 569.946,156.266 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 786.9 140 L 921.4,140 C 901.225,148 894.5,152 894.5,160 C 894.5,168 901.225,172 921.4,180 L 786.9,180 C 766.725,172 760,168 760,160 C 760,152 766.725,148 786.9,140z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 786.9 140 L 921.4,140 C 901.225,148 894.5,152 894.5,160 C 894.5,168 901.225,172 921.4,180 L 786.9,180 C 766.725,172 760,168 760,160 C 760,152 766.725,148 786.9,140"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="840.7" y="164">
+      <tspan x="840.7" y="164">Noun-Extraction</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="744.543" y1="160" x2="760.001" y2="160"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="750.003,165 760.003,160 750.003,155 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 771.725 280 L 930.35,280 C 906.556,288 898.625,292 898.625,300 C 898.625,308 906.556,312 930.35,320 L 771.725,320 C 747.931,312 740,308 740,300 C 740,292 747.931,288 771.725,280z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 771.725 280 L 930.35,280 C 906.556,288 898.625,292 898.625,300 C 898.625,308 906.556,312 930.35,320 L 771.725,320 C 747.931,312 740,308 740,300 C 740,292 747.931,288 771.725,280"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="835.175" y="304">
+      <tspan x="835.175" y="304">Frequency Analysis</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="881.295" y1="180.004" x2="882.518" y2="279.992"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="877.396,270.056 882.518,279.994 887.395,269.934 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 560 260 L 680,260 L 680,340 C 656,328 644,324 620,324 C 596,324 584,320 560,308 L 560,260z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 560 260 L 680,260 L 680,340 C 656,328 644,324 620,324 C 596,324 584,320 560,308 L 560,260"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="620" y="288">
+      <tspan x="620" y="288">Top n Terms</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="740.01" y1="300" x2="680.002" y2="300"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="689.999,295 679.999,300 689.999,305 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 298.587 280 L 491.525,280 C 462.584,288 452.938,292 452.938,300 C 452.938,308 462.584,312 491.525,320 L 298.587,320 C 269.647,312 260,308 260,300 C 260,292 269.647,288 298.587,280z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 298.587 280 L 491.525,280 C 462.584,288 452.938,292 452.938,300 C 452.938,308 462.584,312 491.525,320 L 298.587,320 C 269.647,312 260,308 260,300 C 260,292 269.647,288 298.587,280"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="375.763" y="296">
+      <tspan x="375.763" y="296">Crossreferencing with</tspan>
+      <tspan x="375.763" y="312">common English Nouns</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="560.012" y1="300" x2="452.95" y2="300"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="462.948,295 452.948,300 462.948,305 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 80 260 L 200,260 L 200,328.571 C 176,317.143 164,317.143 140,328.571 C 116,340 104,340 80,328.571 L 80,260z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 80 260 L 200,260 L 200,328.571 C 176,317.143 164,317.143 140,328.571 C 116,340 104,340 80,328.571 L 80,260"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="140" y="292.571">
+      <tspan x="140" y="292.571">"Key Terms"</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="260.001" y1="300" x2="199.973" y2="300"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="209.971,295 199.971,300 209.971,305 "/>
+  </g>
+</svg>
