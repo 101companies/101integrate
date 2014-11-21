@@ -135,10 +135,12 @@ def genDB(sqlcon, book, files):
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "NN%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWords AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "FW" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, TupelTags tt ,(SELECT tupel FROM TupelTags WHERE (tag1 LIKE "NN%" OR tag1 LIKE "JJ%") AND tag2 LIKE "NN%") tagfilter, (SELECT tagID FROM FreqTupels GROUP BY tagID HAVING sum(freq)>1 ) freqfilter WHERE t.tID == tagfilter.tupel AND freqfilter.tagID == tt.ID AND tt.tupel == t.tID ORDER BY t.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND tt.tag2 LIKE "NN%"  AND f.freq > 1 GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "NN%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWordsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "FW") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
 	
 	print "Views added"
 	#prepare Statements
@@ -193,12 +195,12 @@ def genDB(sqlcon, book, files):
 	sqlcon.commit()
 	print "data committed to db"
 
-def selectTerms(sqlcon, book, files, generalSel = 50, fileSel = 20, nIgnore = 50):
+def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50):
 	cursor = sqlcon.cursor()
 	commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
+	words = SortedSet() #TODO switch back to set once word filtering is acceptable
 	print "fetching global terms"
 	cursor.execute("""SELECT word FROM CommonNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonNouns ORDER BY freq DESC LIMIT 1 OFFSET ?)  ORDER BY freq DESC""", (str(generalSel), ))
-	words = SortedSet() #TODO switch back to set once word filtering is acceptable
 	temp = cursor.fetchone()
 	while (temp is not None):
 		#print temp
@@ -206,6 +208,14 @@ def selectTerms(sqlcon, book, files, generalSel = 50, fileSel = 20, nIgnore = 50
 			words.add(temp[0])
 		temp = cursor.fetchone()
 	print "single words fetched"
+	cursor.execute("""SELECT word FROM ForeignWords WHERE freq > 1 AND freq >= (SELECT freq FROM ForeignWords ORDER BY freq DESC LIMIT 1 OFFSET ?)  ORDER BY freq DESC""", (str(generalSel), ))
+	temp = cursor.fetchone()
+	while (temp is not None):
+		#print temp
+		if temp[0] not in commonEnglishWords:
+			words.add(temp[0])
+		temp = cursor.fetchone()
+	print "foreign Words fetched"
 	cursor.execute("""SELECT word1, word2 FROM CommonTupelsWNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonTupelsWNouns ORDER BY freq DESC LIMIT 1 OFFSET ?)   ORDER BY freq DESC""", (str(generalSel),))
 	temp = cursor.fetchone()
 	while (temp is not None):
@@ -216,6 +226,7 @@ def selectTerms(sqlcon, book, files, generalSel = 50, fileSel = 20, nIgnore = 50
 	print "tupels fetched"
 	print "fetching file terms"
 	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC"""
+	fwFetchStm = """SELECT word FROM ForeignWordsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM ForeignWordsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC"""
 	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC LIMIT 10"""
 	for f in files:
 		print "\t"+f
@@ -227,6 +238,14 @@ def selectTerms(sqlcon, book, files, generalSel = 50, fileSel = 20, nIgnore = 50
 				words.add(temp[0])
 			temp = cursor.fetchone()
 		print "\t\t single words fetched"
+		cursor.execute(fwFetchStm, {'file':f, 'number':fileSel})
+		temp = cursor.fetchone()
+		while (temp is not None):
+			#print temp
+			if temp[0] not in commonEnglishWords:
+				words.add(temp[0])
+			temp = cursor.fetchone()
+		print "\t\t foreign words fetched"
 		cursor.execute(tupelFetchStm,{'file':f, 'number':fileSel})
 		temp = cursor.fetchone()
 		while (temp is not None):
@@ -244,139 +263,6 @@ def selectTerms(sqlcon, book, files, generalSel = 50, fileSel = 20, nIgnore = 50
 		writer.write(w)
 		writer.write("\n")
 	print "Created IndexGen.csv"
-
-# DEPRECATED split into genDB and select Terms
-def main(args):
- if len(args) < 1:
-	print "Exiting"
- for a in args:
-	print "Processing " + a
-	conPath = constants.getContentPath(a)
-	files = os.listdir(conPath)
-	sqlcon = sqlite.connect(constants.getBookPath(a)+"Frequencies.db")
-	sqlcon.text_factory = str
-	cursor = sqlcon.cursor()
-	print "connected to DB"
-	#Remove old data
-	cursor.execute("""DROP VIEW IF EXISTS CommonNounsPerFile""")
-	cursor.execute("""DROP VIEW IF EXISTS CommonTupelsWNouns""")
-	cursor.execute("""DROP VIEW IF EXISTS TupelsWNounsPerFile""")
-	cursor.execute("""DROP VIEW IF EXISTS TupelOverwiew""")
-	cursor.execute("""DROP VIEW IF EXISTS TupelFreq """)
-	cursor.execute("""DROP VIEW IF EXISTS WordFreq""")
-	cursor.execute("""DROP VIEW IF EXISTS CommonNouns""")
-	cursor.execute("""DROP VIEW IF EXISTS WordOverview """)
-	
-	cursor.execute("""DROP TABLE IF EXISTS FreqTupels""")
-	cursor.execute("""DROP TABLE IF EXISTS TupelTags""")
-	cursor.execute("""DROP TABLE IF EXISTS Tupels""")
-	cursor.execute("""DROP TABLE IF EXISTS FreqSingle""")
-	cursor.execute("""DROP TABLE IF EXISTS Files""")
-	cursor.execute("""DROP TABLE IF EXISTS Words""")
-	print "Deleted old Data (if any)"
-	#setup DB
-	cursor.execute("""CREATE TABLE IF NOT EXISTS Words (ID INTEGER PRIMARY KEY AUTOINCREMENT, word TEXT)""")
-	cursor.execute("""CREATE TABLE IF NOT EXISTS Files (ID INTEGER PRIMARY KEY AUTOINCREMENT, file TEXT)""")
-	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqSingle(word INTEGER,  tag TEXT, file TEXT, freq INTEGER DEFAULT 0, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(word) REFERENCES Words(ID))""")
-	cursor.execute("""CREATE TABLE IF NOT EXISTS Tupels(ID INTEGER PRIMARY KEY AUTOINCREMENT, w1 INTEGER, w2 INTEGER, FOREIGN KEY(w2) REFERENCES Words(ROWID) , FOREIGN KEY(w1) REFERENCES Words(ID))""")
-	cursor.execute("""CREATE TABLE IF NOT EXISTS TupelTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, tupel INTEGER, tag1 TEXT, tag2 TEXT , FOREIGN KEY(tupel) REFERENCES Tupels(ROWID))""")
-	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqTupels(tupel INTEGER, tagID INTEGER, freq NUMERIC DEFAULT 0, file TEXT, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(tupel) REFERENCES Tupels(ID), FOREIGN KEY(tagID) REFERENCES TupelTags(ID)) """)
-	print "Tables created"
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelOverwiew AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
-	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "NN%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWords AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "FW" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE (tag1 LIKE "NN%" OR tag1 LIKE "JJ%") AND tag2 LIKE "NN%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND tt.tag2 LIKE "NN%" GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
-	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "NN%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWordsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "FW") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
-	
-	
-	print "Views added"
-	#prepare Statements
-	#Selection
-	wordIdStm = """SELECT ID FROM Words WHERE word = :word"""
-	fileIdStm = """SELECT ID FROM Files WHERE file = :file"""
-	tupelIdStm = """SELECT ID FROM Tupels WHERE w1 = :wId1 AND w2 = :wId2"""
-	tupelTagIdStm = """ SELECT ID FROM  TupelTags WHERE tag1 = :tag1 AND tag2 = :tag2 AND tupel = :tId"""
-	freqTTStm = """ SELECT freq FROM FreqTupels WHERE tagID = :tagId AND file = :file  AND tupel = :tId"""
-	freqWordStm = """ SELECT freq FROM FreqSingle WHERE word = :wId1 AND tag = :tag1 AND file = :file"""
-	#Insertion
-	wordInsStm = """ INSERT INTO Words(word) VALUES( :word)"""
-	fileInsStm = """ INSERT INTO Files(file) VALUES( :file)"""
-	tupelInsStm = """ INSERT INTO Tupels(w1, w2) VALUES( :wId1, :wId2)"""
-	tupelTagInsStm = """ INSERT INTO TupelTags(tupel, tag1, tag2) VALUES( :tId, :tag1, :tag2) """
-	freqTTInsStm = """ INSERT INTO FreqTupels(tupel, tagID, file) VALUES( :tId, :tagId, :file)"""
-	freqWordInsStm = """ INSERT INTO FreqSingle(word, tag, file) VALUES( :wId1, :tag1, :file) """
-	#Update
-	freqWordIncStm = """ UPDATE FreqSingle SET freq=freq+1 WHERE word = :wId1 AND tag = :tag1 AND file = :file """
-	freqTTIncStm = """ UPDATE FreqTupels SET freq=freq+1 WHERE tupel = :tId AND tagId = :tagId AND file = :file """
-	print "prepared Statements"
-	for f in files:
-	      print "Processing "+f
-	      transformParagraphToLine(conPath+f)
-	      temp =  {"file" : f}
-	      cursor.execute(fileIdStm, temp)
-	      insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
-	      temp['file']= f
-	      for l in open(conPath+f).readlines():
-		      tokenedLine = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", " ", l.replace("."," . ").replace(","," , ").replace("*"," * ").replace("/"," / "))))
-		      for (i, w) in enumerate(tokenedLine):
-			word = normalizeWord(w[0])
-			if (len(word.strip(":-_1234567890"))<=1):
-			  continue
-			temp['w1'] = word
-			temp['wId1'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':word}))
-			temp['tag1'] = simplify_wsj_tag(w[1])
-			insertIfNotExists(cursor, freqWordStm, freqWordInsStm, temp)
-			cursor.execute(freqWordIncStm, temp)
-			if i < len(tokenedLine)-2:
-				temp['w2'] = normalizeWord(tokenedLine[i+1][0])
-				if len(temp['w2'].strip(":-_1234567890")) > 1:
-					temp['wId2'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w2']}))
-					temp['tag2'] = simplify_wsj_tag(tokenedLine[i+1][1])
-					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tupelInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2']}))
-					temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2']}))
-					insertIfNotExists(cursor, freqTTStm, freqTTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
-					cursor.execute(freqTTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
-	sqlcon.commit()
-	print "data committed to db"
-	cursor.execute("""SELECT word FROM CommonNouns ORDER BY freq DESC LIMIT 25""")
-	words = SortedSet() #TODO switch back to set once word filtering is acceptable
-	temp = cursor.fetchone()
-	while (temp is not None):
-	  words.add(temp[0])
-	  temp = cursor.fetchone()
-	cursor.execute("""SELECT word1, word2 FROM CommonTupelsWNouns ORDER BY freq DESC LIMIT 25""")
-	temp = cursor.fetchone()
-	while (temp is not None):
-	  words.add(temp[0]+" "+temp[1])
-	  temp = cursor.fetchone()
-	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 10"""
-	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 10"""
-	for f in files:
-	  cursor.execute(wordFetchStm, {'file':f})
-	  temp = cursor.fetchone()
-	  while (temp is not None):
-	    words.add(temp[0])
-	    temp = cursor.fetchone()
-	  cursor.execute(tupelFetchStm, {'file':f})
-	  temp = cursor.fetchone()
-	  while (temp is not None):
-	    words.add(temp[0]+" "+temp[1])
-	    temp = cursor.fetchone()
-	sqlcon.close()
-	print "Fetched Data from DB"
-	path = constants.getCachePath(a)
-	constants.mkdir(path)
-	writer = open(path+"IndexGen.csv","w")
-	for w in words:
-	  writer.write(w)
-	  writer.write("\n")
-	print "Created IndexGen.csv"
-
 
 if __name__ == "__main__":
 	if len(sys.argv) < 2:
