@@ -265,8 +265,8 @@ def main(args):
 	cursor.execute("""DROP VIEW IF EXISTS TupelFreq """)
 	cursor.execute("""DROP VIEW IF EXISTS WordFreq""")
 	cursor.execute("""DROP VIEW IF EXISTS CommonNouns""")
-
 	cursor.execute("""DROP VIEW IF EXISTS WordOverview """)
+	
 	cursor.execute("""DROP TABLE IF EXISTS FreqTupels""")
 	cursor.execute("""DROP TABLE IF EXISTS TupelTags""")
 	cursor.execute("""DROP TABLE IF EXISTS Tupels""")
@@ -286,10 +286,13 @@ def main(args):
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "NN%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWords AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "FW" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, (SELECT tupel FROM TupelTags WHERE (tag1 LIKE "NN%" OR tag1 LIKE "JJ%") AND tag2 LIKE "NN%") i WHERE t.tID == i.tupel ORDER BY t.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND tt.tag2 LIKE "NN%" GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "NN%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWordsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "FW") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
+	
 	
 	print "Views added"
 	#prepare Statements
