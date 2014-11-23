@@ -7,6 +7,7 @@ import csv
 import re
 import constants
 from sortedcontainers import SortedSet
+#TODO add Foreign Words
 
 def sqlExec(cursor, statement, values):
   try:
