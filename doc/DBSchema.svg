@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="31cm" height="13cm" viewBox="260 60 615 246" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="41cm" height="21cm" viewBox="242 -110 811 416" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
-    <rect style="fill: #ffffff" x="280" y="80" width="110.7" height="18"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="280" y="80" width="110.7" height="18"/>
-    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="335.35" y="94">Words</text>
-    <rect style="fill: #ffffff" x="280" y="98" width="110.7" height="36"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="280" y="98" width="110.7" height="36"/>
-    <polygon style="fill: #000000" points="282,108 284,111 286,108 284,105 "/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="288" y="114">ID</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="328.8" y="114">Numeric</text>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="288" y1="115.6" x2="382.7" y2="115.6"/>
-    <ellipse style="fill: #000000" cx="284" cy="124" rx="2" ry="2"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="288" y="130">word</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="328.8" y="130">text</text>
+    <rect style="fill: #ffffff" x="262" y="71" width="110.7" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="262" y="71" width="110.7" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="317.35" y="85">Words</text>
+    <rect style="fill: #ffffff" x="262" y="89" width="110.7" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="262" y="89" width="110.7" height="36"/>
+    <polygon style="fill: #000000" points="264,99 266,102 268,99 266,96 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="270" y="105">ID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="310.8" y="105">Numeric</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="270" y1="106.6" x2="364.7" y2="106.6"/>
+    <ellipse style="fill: #000000" cx="266" cy="115" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="270" y="121">word</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="310.8" y="121">Text</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="440" y="60" width="95.3" height="18"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="440" y="60" width="95.3" height="18"/>
-    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="487.65" y="74">Tupels</text>
-    <rect style="fill: #ffffff" x="440" y="78" width="95.3" height="52"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="440" y="78" width="95.3" height="52"/>
-    <ellipse style="fill: #000000" cx="444" cy="88" rx="2" ry="2"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="448" y="94">w1</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="473.4" y="94">Numeric</text>
-    <ellipse style="fill: #000000" cx="444" cy="104" rx="2" ry="2"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="448" y="110">w2</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="473.4" y="110">Numeric</text>
-    <polygon style="fill: #000000" points="442,120 444,123 446,120 444,117 "/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="448" y="126">ID</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="473.4" y="126">Numeric</text>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="448" y1="127.6" x2="527.3" y2="127.6"/>
+    <rect style="fill: #ffffff" x="460.65" y="58.4114" width="95.3" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="460.65" y="58.4114" width="95.3" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="508.3" y="72.4114">Tupels</text>
+    <rect style="fill: #ffffff" x="460.65" y="76.4114" width="95.3" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="460.65" y="76.4114" width="95.3" height="52"/>
+    <ellipse style="fill: #000000" cx="464.65" cy="86.4114" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="468.65" y="92.4114">w1</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="494.05" y="92.4114">Numeric</text>
+    <ellipse style="fill: #000000" cx="464.65" cy="102.411" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="468.65" y="108.411">w2</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="494.05" y="108.411">Numeric</text>
+    <polygon style="fill: #000000" points="462.65,118.411 464.65,121.411 466.65,118.411 464.65,115.411 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="468.65" y="124.411">ID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="494.05" y="124.411">Numeric</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="468.65" y1="126.011" x2="547.95" y2="126.011"/>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="390.7,108 415.35,108 415.35,88 440,88 "/>
-    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="393.7" y="105">1</text>
-    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="437" y="85">n</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="372.7,99 411,99 411,86.4114 460.65,86.4114 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375.7" y="96">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="457.65" y="83.4114">n</text>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="390.7,108 415.35,108 415.35,104 440,104 "/>
-    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="393.7" y="105">1</text>
-    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="437" y="101">n</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="372.7,99 410.778,99 410.778,102.411 460.65,102.411 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375.7" y="96">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="457.65" y="99.4114">n</text>
   </g>
   <g>
     <rect style="fill: #ffffff" x="580" y="160" width="118.4" height="18"/>
@@ -53,35 +53,35 @@
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="636.5" y="194">Numeric</text>
     <ellipse style="fill: #000000" cx="584" cy="204" rx="2" ry="2"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="588" y="210">tag1</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="636.5" y="210">text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="636.5" y="210">Text</text>
     <ellipse style="fill: #000000" cx="584" cy="220" rx="2" ry="2"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="588" y="226">tag2</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="636.5" y="226">text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="636.5" y="226">Text</text>
     <polygon style="fill: #000000" points="582,236 584,239 586,236 584,233 "/>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="588" y="242">ID</text>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="636.5" y="242">Numeric</text>
     <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="588" y1="243.6" x2="690.4" y2="243.6"/>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="507.538" y="251.204" width="87.6" height="18"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="507.538" y="251.204" width="87.6" height="18"/>
-    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="551.338" y="265.204">Files</text>
-    <rect style="fill: #ffffff" x="507.538" y="269.204" width="87.6" height="20"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="507.538" y="269.204" width="87.6" height="20"/>
-    <polygon style="fill: #000000" points="509.538,279.204 511.538,282.204 513.538,279.204 511.538,276.204 "/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="515.538" y="285.204">file</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="556.338" y="285.204">text</text>
-    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="515.538" y1="286.804" x2="587.138" y2="286.804"/>
+    <rect style="fill: #ffffff" x="944.538" y="252.204" width="87.6" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="944.538" y="252.204" width="87.6" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="988.338" y="266.204">Files</text>
+    <rect style="fill: #ffffff" x="944.538" y="270.204" width="87.6" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="944.538" y="270.204" width="87.6" height="20"/>
+    <polygon style="fill: #000000" points="946.538,280.204 948.538,283.204 950.538,280.204 948.538,277.204 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="952.538" y="286.204">file</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="993.338" y="286.204">Text</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="952.538" y1="287.804" x2="1024.14" y2="287.804"/>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="535.3,120 557.65,120 557.65,188 580,188 "/>
-    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="538.3" y="117">1</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="555.95,118.411 567.975,118.411 567.975,188 580,188 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="558.95" y="115.411">1</text>
     <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="577" y="185">n</text>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="595.138,279.204 750.046,279.204 750.046,168.565 756.23,168.565 "/>
-    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="598.138" y="276.204">1</text>
-    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="753.23" y="165.565">n</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="944.538,280.204 750.046,280.204 750.046,166.565 837.23,166.565 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="941.538" y="277.204">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="834.23" y="163.565">n</text>
   </g>
   <g>
     <rect style="fill: #ffffff" x="300" y="220" width="110.7" height="18"/>
@@ -94,51 +94,148 @@
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="348.8" y="254">Numeric</text>
     <ellipse style="fill: #000000" cx="304" cy="264" rx="2" ry="2"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="308" y="270">tag</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="348.8" y="270">text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="348.8" y="270">Text</text>
     <ellipse style="fill: #000000" cx="304" cy="280" rx="2" ry="2"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="308" y="286">file</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="348.8" y="286">text</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="348.8" y="286">Text</text>
     <ellipse style="fill: #000000" cx="304" cy="296" rx="2" ry="2"/>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="308" y="302">freq</text>
     <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="348.8" y="302">Numeric</text>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="280,108 260,108 260,248 300,248 "/>
-    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="277" y="105">1</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="262,99 242,99 242,248 300,248 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="259" y="96">1</text>
     <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="297" y="245">n</text>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="507.538,279.204 459.119,279.204 459.119,280 410.7,280 "/>
-    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="504.538" y="276.204">1</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="944.538,280.204 677.619,280.204 677.619,280 410.7,280 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="941.538" y="277.204">1</text>
     <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="413.7" y="277">n</text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="756.23" y="92.5646" width="118.4" height="18"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="756.23" y="92.5646" width="118.4" height="18"/>
-    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="815.43" y="106.565">FreqTupels</text>
-    <rect style="fill: #ffffff" x="756.23" y="110.565" width="118.4" height="68"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="756.23" y="110.565" width="118.4" height="68"/>
-    <ellipse style="fill: #000000" cx="760.23" cy="120.565" rx="2" ry="2"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="764.23" y="126.565">tupel</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="812.73" y="126.565">Numeric</text>
-    <ellipse style="fill: #000000" cx="760.23" cy="136.565" rx="2" ry="2"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="764.23" y="142.565">tagID</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="812.73" y="142.565">Numeric</text>
-    <ellipse style="fill: #000000" cx="760.23" cy="152.565" rx="2" ry="2"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="764.23" y="158.565">freq</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="812.73" y="158.565">Numeric</text>
-    <ellipse style="fill: #000000" cx="760.23" cy="168.565" rx="2" ry="2"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="764.23" y="174.565">file</text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="812.73" y="174.565">text</text>
+    <rect style="fill: #ffffff" x="837.23" y="90.5646" width="118.4" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="837.23" y="90.5646" width="118.4" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="896.43" y="104.565">FreqTupels</text>
+    <rect style="fill: #ffffff" x="837.23" y="108.565" width="118.4" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="837.23" y="108.565" width="118.4" height="68"/>
+    <ellipse style="fill: #000000" cx="841.23" cy="118.565" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="845.23" y="124.565">tupel</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893.73" y="124.565">Numeric</text>
+    <ellipse style="fill: #000000" cx="841.23" cy="134.565" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="845.23" y="140.565">tagID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893.73" y="140.565">Numeric</text>
+    <ellipse style="fill: #000000" cx="841.23" cy="150.565" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="845.23" y="156.565">freq</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893.73" y="156.565">Numeric</text>
+    <ellipse style="fill: #000000" cx="841.23" cy="166.565" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="845.23" y="172.565">file</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="893.73" y="172.565">Text</text>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="535.3,120 645.766,120 645.766,120.565 756.23,120.565 "/>
-    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="538.3" y="117">1</text>
-    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="753.23" y="117.565">n</text>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="555.95,118.411 645.766,118.411 645.766,118.565 837.23,118.565 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="558.95" y="115.411">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="834.23" y="115.565">n</text>
   </g>
   <g>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="698.4,236 727.315,236 727.315,136.565 756.23,136.565 "/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="698.4,236 734,236 734,134.565 837.23,134.565 "/>
     <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="701.4" y="233">1</text>
-    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="753.23" y="133.565">n</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="834.23" y="131.565">n</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="447" y="-110" width="95.3" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="447" y="-110" width="95.3" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="494.65" y="-96">Triples</text>
+    <rect style="fill: #ffffff" x="447" y="-92" width="95.3" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="447" y="-92" width="95.3" height="68"/>
+    <polygon style="fill: #000000" points="449,-82 451,-79 453,-82 451,-85 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="455" y="-76">ID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="480.4" y="-76">Numeric</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="455" y1="-74.4" x2="534.3" y2="-74.4"/>
+    <ellipse style="fill: #000000" cx="451" cy="-66" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="455" y="-60">w1</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="480.4" y="-60">Numeric</text>
+    <ellipse style="fill: #000000" cx="451" cy="-50" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="455" y="-44">w2</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="480.4" y="-44">Numeric</text>
+    <ellipse style="fill: #000000" cx="451" cy="-34" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="455" y="-28">w3</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="480.4" y="-28">Numeric</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="592" y="-30" width="126.1" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="592" y="-30" width="126.1" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="655.05" y="-16">TripleTags</text>
+    <rect style="fill: #ffffff" x="592" y="-12" width="126.1" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="592" y="-12" width="126.1" height="84"/>
+    <ellipse style="fill: #000000" cx="596" cy="-2" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="600" y="4">triple</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="656.2" y="4">Numeric</text>
+    <ellipse style="fill: #000000" cx="596" cy="14" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="600" y="20">tag1</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="656.2" y="20">Text</text>
+    <ellipse style="fill: #000000" cx="596" cy="30" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="600" y="36">tag2</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="656.2" y="36">Text</text>
+    <ellipse style="fill: #000000" cx="596" cy="46" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="600" y="52">tag3</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="656.2" y="52">Text</text>
+    <polygon style="fill: #000000" points="594,62 596,65 598,62 596,59 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="600" y="68">ID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="656.2" y="68">Numeric</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="600" y1="69.6" x2="710.1" y2="69.6"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="798" y="-110" width="126.1" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="798" y="-110" width="126.1" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="861.05" y="-96">FreqTriples</text>
+    <rect style="fill: #ffffff" x="798" y="-92" width="126.1" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="798" y="-92" width="126.1" height="68"/>
+    <ellipse style="fill: #000000" cx="802" cy="-82" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="806" y="-76">tripel</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="862.2" y="-76">Numeric</text>
+    <ellipse style="fill: #000000" cx="802" cy="-66" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="806" y="-60">tagID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="862.2" y="-60">Numeric</text>
+    <ellipse style="fill: #000000" cx="802" cy="-50" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="806" y="-44">freq</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="862.2" y="-44">Numeric</text>
+    <ellipse style="fill: #000000" cx="802" cy="-34" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="806" y="-28">file</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="862.2" y="-28">Text</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke: #000000" points="372.7,99 409.85,99 409.85,-66 447,-66 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375.7" y="96">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="444" y="-69">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="372.7,99 409.85,99 409.85,-50 447,-50 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375.7" y="96">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="444" y="-53">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="372.7,99 409.85,99 409.85,-34 447,-34 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="375.7" y="96">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="444" y="-37">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="537,-82 564.5,-82 564.5,-2 592,-2 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="540" y="-85">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="589" y="-5">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="718.1,62 758.05,62 758.05,-66 798,-66 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="721.1" y="59">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="795" y="-69">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="542.3,-82 542.3,-82 798,-82 798,-82 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="545.3" y="-85">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:normal" x="795" y="-85">n</text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="924.1,-34 1052.14,-34 1052.14,280.204 1032.14,280.204 "/>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="927.1" y="-37">1</text>
+    <text font-size="9.6" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="1035.14" y="277.204">n</text>
   </g>
 </svg>
