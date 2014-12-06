@@ -103,11 +103,8 @@ def insertIfNotExists(cursor, lookupStm, insertStm, dictionary):
       temp = temp[0]
     return temp
 
-def genDB(sqlcon, book, files):
-	sqlcon.text_factory = str
-	cursor = sqlcon.cursor()
-	print "connected to DB"
-	#Remove old data
+def tearDownDB(cursor):
+  	#Remove old data
 	cursor.execute("""DROP VIEW IF EXISTS CommonNounsPerFile""")
 	cursor.execute("""DROP VIEW IF EXISTS CommonTupelsWNouns""")
 	cursor.execute("""DROP VIEW IF EXISTS TupelsWNounsPerFile""")
@@ -126,6 +123,13 @@ def genDB(sqlcon, book, files):
 	cursor.execute("""DROP TABLE IF EXISTS TripleTags""")
 	cursor.execute("""DROP TABLE IF EXISTS Triples""")
 	print "Deleted old Data (if any)"
+
+
+def genDB(sqlcon, book, files):
+	sqlcon.text_factory = str
+	cursor = sqlcon.cursor()
+	print "connected to DB"
+	tearDownDB(cursor)
 	#setup DB
 	cursor.execute("""CREATE TABLE IF NOT EXISTS Words (ID INTEGER PRIMARY KEY AUTOINCREMENT, word TEXT)""")
 	cursor.execute("""CREATE TABLE IF NOT EXISTS Files (ID INTEGER PRIMARY KEY AUTOINCREMENT, file TEXT)""")
