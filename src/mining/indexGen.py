@@ -122,6 +122,9 @@ def genDB(sqlcon, book, files):
 	cursor.execute("""DROP TABLE IF EXISTS FreqSingle""")
 	cursor.execute("""DROP TABLE IF EXISTS Files""")
 	cursor.execute("""DROP TABLE IF EXISTS Words""")
+	cursor.execute("""DROP TABLE IF EXISTS FreqTriples""")
+	cursor.execute("""DROP TABLE IF EXISTS TripleTags""")
+	cursor.execute("""DROP TABLE IF EXISTS Triples""")
 	print "Deleted old Data (if any)"
 	#setup DB
 	cursor.execute("""CREATE TABLE IF NOT EXISTS Words (ID INTEGER PRIMARY KEY AUTOINCREMENT, word TEXT)""")
@@ -130,14 +133,17 @@ def genDB(sqlcon, book, files):
 	cursor.execute("""CREATE TABLE IF NOT EXISTS Tupels(ID INTEGER PRIMARY KEY AUTOINCREMENT, w1 INTEGER, w2 INTEGER, FOREIGN KEY(w2) REFERENCES Words(ROWID) , FOREIGN KEY(w1) REFERENCES Words(ID))""")
 	cursor.execute("""CREATE TABLE IF NOT EXISTS TupelTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, tupel INTEGER, tag1 TEXT, tag2 TEXT , FOREIGN KEY(tupel) REFERENCES Tupels(ROWID))""")
 	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqTupels(tupel INTEGER, tagID INTEGER, freq NUMERIC DEFAULT 0, file TEXT, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(tupel) REFERENCES Tupels(ID), FOREIGN KEY(tagID) REFERENCES TupelTags(ID)) """)
+	cursor.execute("""CREATE TABLE IF NOT EXISTS Triples(ID INTEGER PRIMARY KEY AUTOINCREMENT, w1 INTEGER, w2 INTEGER, w3 INTEGER,FOREIGN KEY(w3) REFERENCES Words(ROWID), FOREIGN KEY(w2) REFERENCES Words(ROWID) , FOREIGN KEY(w1) REFERENCES Words(ID))""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS TripleTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, tupel INTEGER, tag1 TEXT, tag2 TEXT , tag3 TEXT, FOREIGN KEY(tupel) REFERENCES Triples(ROWID))""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqTriples(triple INTEGER, tagID INTEGER, freq NUMERIC DEFAULT 0, file TEXT, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(triple) REFERENCES Triples(ID), FOREIGN KEY(tagID) REFERENCES TripleTags(ID)) """)
 	print "Tables created"
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelOverwiew AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "NN%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWords AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "FW" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, TupelTags tt ,(SELECT tupel FROM TupelTags WHERE (tag1 LIKE "NN%" OR tag1 LIKE "JJ%") AND tag2 LIKE "NN%") tagfilter, (SELECT tagID FROM FreqTupels GROUP BY tagID HAVING sum(freq)>1 ) freqfilter WHERE t.tID == tagfilter.tupel AND freqfilter.tagID == tt.ID AND tt.tupel == t.tID ORDER BY t.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND tt.tag2 LIKE "NN%"  AND f.freq > 1 GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "NN%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWordsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "FW") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
@@ -171,7 +177,7 @@ def genDB(sqlcon, book, files):
 		temp['file']= f
 		for l in open(conPath+f).readlines():
 			for s in re.split("[\.\?!]",l):
-				tokenedSentence = nltk.pos_tag(nltk.word_tokenize(re.sub("[^,:\w\-\_\.\s]", " ", s)))
+				tokenedSentence = nltk.pos_tag(nltk.word_tokenize(s))
 				for (i, w) in enumerate(tokenedSentence):
 					word = normalizeWord(w[0])
 					if (len(word.strip(":-_1234567890"))<=1):
@@ -192,6 +198,8 @@ def genDB(sqlcon, book, files):
 					temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2']}))
 					insertIfNotExists(cursor, freqTTStm, freqTTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
 					cursor.execute(freqTTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
+					if i > len(tokenedSentence)-3:
+						continue
 	sqlcon.commit()
 	print "data committed to db"
 
