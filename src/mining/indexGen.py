@@ -130,26 +130,26 @@ def setUpTables(cursor):
 	cursor.execute("""CREATE TABLE IF NOT EXISTS Files (ID INTEGER PRIMARY KEY AUTOINCREMENT, file TEXT)""")
 	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqSingle(word INTEGER,  tag TEXT, file TEXT, freq INTEGER DEFAULT 0, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(word) REFERENCES Words(ID))""")
 	cursor.execute("""CREATE TABLE IF NOT EXISTS Tupels(ID INTEGER PRIMARY KEY AUTOINCREMENT, w1 INTEGER, w2 INTEGER, FOREIGN KEY(w2) REFERENCES Words(ROWID) , FOREIGN KEY(w1) REFERENCES Words(ID))""")
-	cursor.execute("""CREATE TABLE IF NOT EXISTS TupelTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, tupel INTEGER, tag1 TEXT, tag2 TEXT , FOREIGN KEY(tupel) REFERENCES Tupels(ROWID))""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS TupelTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, tupel INTEGER, tag1 TEXT, tag2 TEXT , FOREIGN KEY(tupel) REFERENCES Tupels(ID))""")
 	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqTupels(tupel INTEGER, tagID INTEGER, freq NUMERIC DEFAULT 0, file TEXT, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(tupel) REFERENCES Tupels(ID), FOREIGN KEY(tagID) REFERENCES TupelTags(ID)) """)
-	cursor.execute("""CREATE TABLE IF NOT EXISTS Triples(ID INTEGER PRIMARY KEY AUTOINCREMENT, w1 INTEGER, w2 INTEGER, w3 INTEGER,FOREIGN KEY(w3) REFERENCES Words(ROWID), FOREIGN KEY(w2) REFERENCES Words(ROWID) , FOREIGN KEY(w1) REFERENCES Words(ID))""")
-	cursor.execute("""CREATE TABLE IF NOT EXISTS TripleTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, tupel INTEGER, tag1 TEXT, tag2 TEXT , tag3 TEXT, FOREIGN KEY(tupel) REFERENCES Triples(ROWID))""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS Triples(ID INTEGER PRIMARY KEY AUTOINCREMENT, w1 INTEGER, w2 INTEGER, w3 INTEGER,FOREIGN KEY(w3) REFERENCES Words(ROWID), FOREIGN KEY(w2) REFERENCES Words(ID) , FOREIGN KEY(w1) REFERENCES Words(ID))""")
+	cursor.execute("""CREATE TABLE IF NOT EXISTS TripleTags(ID INTEGER PRIMARY KEY AUTOINCREMENT, triple INTEGER, tag1 TEXT, tag2 TEXT , tag3 TEXT, FOREIGN KEY(triple) REFERENCES Triples(ID))""")
 	cursor.execute("""CREATE TABLE IF NOT EXISTS FreqTriples(triple INTEGER, tagID INTEGER, freq NUMERIC DEFAULT 0, file TEXT, FOREIGN KEY(file) REFERENCES Files(file), FOREIGN KEY(triple) REFERENCES Triples(ID), FOREIGN KEY(tagID) REFERENCES TripleTags(ID)) """)
 	print "Tables created"
 	
 def setUpViews(cursor):
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelOverwiew AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TripleOverwiew AS SELECT * FROM Words w1, Words w2, Words w3, Triples , TripleTags tt, FreqTriples ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND w3.ID = t.w3 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TripleOverwiew AS SELECT * FROM Words w1, Words w2, Words w3, Triples t, TripleTags tt, FreqTriples ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND w3.ID = t.w3 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TripleFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, w3.word as word3 SUM(f.freq) as freq FROM Words w1, Words w2, Words w3, Triples t, FreqTriples f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TripleFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, w3.word as word3, SUM(f.freq) as freq FROM Words w1, Words w2, Words w3, Triples t, FreqTriples f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.triple GROUP BY t.ID """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "NN%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWords AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "FW" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTriplesWNouns AS SELECT DISTINCT t.* FROM TripleFreq t, TripleTags tt ,(SELECT triple FROM TripleTags WHERE (((tag1 LIKE "NN%" OR tag1 LIKE "JJ%") AND (tag2 LIKE "NN%" OR tag2 LIKE "JJ%"))OR (tag1 LIKE "NN%" AND tag2 LIKE "IN")) AND tag3 LIKE "NN%") tagfilter, (SELECT tagID FROM FreqTriples GROUP BY tagID HAVING sum(freq)>1 ) freqfilter WHERE t.tID == tagfilter.triple AND freqfilter.tagID == tt.ID AND tt.triple == t.tID ORDER BY t.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonTupelsWNouns AS SELECT DISTINCT t.* FROM TupelFreq t, TupelTags tt ,(SELECT tupel FROM TupelTags WHERE (tag1 LIKE "NN%" OR tag1 LIKE "JJ%") AND tag2 LIKE "NN%") tagfilter, (SELECT tagID FROM FreqTupels GROUP BY tagID HAVING sum(freq)>1 ) freqfilter WHERE t.tID == tagfilter.tupel AND freqfilter.tagID == tt.ID AND tt.tupel == t.tID ORDER BY t.freq DESC""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TriplesWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, w3.word as w3, f. file, sum(freq) AS freq FROM Words w1, Words w2, Words w3, Triples t, TripleTags tt, FreqTriples f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND w3.ID = t.w3 AND t.ID = f.triple AND tt.triple = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND tt.tag2 LIKE "NN%"  AND f.freq > 1 GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (((tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND (tt.tag2 LIKE "NN%" OR tt.tag2 LIKE "JJ%"))OR (tt.tag1 LIKE "NN%" AND tt.tag2 LIKE "IN")) AND tt.tag3 LIKE "NN%"  AND f.freq > 1 GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TriplesWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, w3.word as w3, f. file, sum(freq) AS freq FROM Words w1, Words w2, Words w3, Triples t, TripleTags tt, FreqTriples f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND w3.ID = t.w3 AND t.ID = f.triple AND tt.triple = t.ID AND (((tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND (tt.tag2 LIKE "NN%" OR tt.tag2 LIKE "JJ%"))OR (tt.tag1 LIKE "NN%" AND tt.tag2 LIKE "IN")) AND tt.tag3 LIKE "NN%" AND f.freq > 1 GROUP BY f.triple, f.file ORDER BY sum(freq) DESC """)
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelsWNounsPerFile AS SELECT DISTINCT w1.word as w1, w2.word as w2, f. file, sum(freq) AS freq FROM Words w1, Words w2, Tupels t, TupelTags tt, FreqTupels f WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND t.ID = f.tupel AND tt.tupel = t.ID AND (tt.tag1 LIKE "NN%" OR tt.tag1 LIKE "JJ%") AND tt.tag2 LIKE "NN%" AND f.freq > 1 GROUP BY f.tupel, f.file ORDER BY sum(freq) DESC """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNounsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "NN%") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWordsPerFile AS SELECT w.ID as wID, w.word, f.file, sum(f.freq) as freq FROM Words w, FreqSingle f , (SELECT word FROM FreqSingle WHERE tag LIKE "FW") s WHERE w.ID =f.word AND f.word = s.word GROUP BY f.file, f.word  ORDER BY sum(freq) DESC""")
 	print "Views added"
@@ -273,7 +273,7 @@ def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50
 			if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords:
 				words.add(temp[0]+" "+temp[1])
 			temp = cursor.fetchone()
-		print "\t \t tupels fetched"
+		print "\t\t tupels fetched"
 	sqlcon.close()
 	print "Fetched Data from DB"
 	path = constants.getBookPath(book)
