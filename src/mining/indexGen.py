@@ -260,10 +260,19 @@ def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50
 			words.add(temp[0]+" "+temp[1])
 		temp = cursor.fetchone()
 	print "tupels fetched"
+	cursor.execute("""SELECT word1, word2, word3 FROM CommonTriplesWNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonTriplesWNouns ORDER BY freq DESC LIMIT 1 OFFSET ?)   ORDER BY freq DESC""", (str(generalSel),))
+	temp = cursor.fetchone()
+	while (temp is not None):
+		#print temp
+		if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords and temp[2] not in commonEnglishWords:
+			words.add(temp[0]+" "+temp[1]+" "+temp[2])
+		temp = cursor.fetchone()
+	print "triples fetched"
 	print "fetching file terms"
 	wordFetchStm = """SELECT word FROM CommonNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM CommonNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC"""
 	fwFetchStm = """SELECT word FROM ForeignWordsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM ForeignWordsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC"""
-	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC LIMIT 10"""
+	tupelFetchStm = """SELECT w1, w2 FROM TupelsWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TupelsWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC"""
+	tripleFetchStm = """SELECT w1, w2, w3 FROM TriplesWNounsPerFile WHERE file = :file AND freq > 1 AND freq >= (SELECT freq FROM TriplesWNounsPerFile WHERE file = :file ORDER BY freq DESC LIMIT 1 OFFSET :number) ORDER BY freq DESC"""
 	for f in files:
 		print "\t"+f
 		cursor.execute(wordFetchStm, {'file':f, 'number':fileSel})
@@ -290,6 +299,14 @@ def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50
 				words.add(temp[0]+" "+temp[1])
 			temp = cursor.fetchone()
 		print "\t\t tupels fetched"
+		cursor.execute(tripleFetchStm,{'file':f, 'number':fileSel})
+		temp = cursor.fetchone()
+		while (temp is not None):
+			#print temp
+			if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords and temp[2] not in commonEnglishWords:
+				words.add(temp[0]+" "+temp[1]+" "+temp[2])
+			temp = cursor.fetchone()
+		print "\t\t triples fetched"
 	sqlcon.close()
 	print "Fetched Data from DB"
 	path = constants.getBookPath(book)
