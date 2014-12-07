@@ -168,9 +168,9 @@ def genDB(sqlcon, book, files):
 	tupelIdStm = """SELECT ID FROM Tupels WHERE w1 = :wId1 AND w2 = :wId2"""
 	tripleIdStm = """SELECT ID FROM Triples WHERE w1 = :wId1 AND w2 = :wId2 AND w3 = :wId3"""
 	tupelTagIdStm = """ SELECT ID FROM  TupelTags WHERE tag1 = :tag1 AND tag2 = :tag2 AND tupel = :tId"""
-	tripleTagIdStm = """ SELECT ID FROM  TupelTags WHERE tag1 = :tag1 AND tag2 = :tag2 AND tag3 = :tag3 AND tupel = :tId"""
+	tripleTagIdStm = """ SELECT ID FROM  TupelTags WHERE tag1 = :tag1 AND tag2 = :tag2 AND tag3 = :tag3 AND triple = :tId"""
 	freqTTStm = """ SELECT freq FROM FreqTupels WHERE tagID = :tagId AND file = :file  AND tupel = :tId"""
-	freqTripleTStm = """ SELECT freq FROM FreqTriples WHERE tagID = :tagId AND file = :file  AND tupel = :tId"""
+	freqTripleTStm = """ SELECT freq FROM FreqTriples WHERE tagID = :tagId AND file = :file  AND triple = :tId"""
 	freqWordStm = """ SELECT freq FROM FreqSingle WHERE word = :wId1 AND tag = :tag1 AND file = :file"""
 	#Insertion
 	wordInsStm = """ INSERT INTO Words(word) VALUES( :word)"""
@@ -178,14 +178,14 @@ def genDB(sqlcon, book, files):
 	tupelInsStm = """ INSERT INTO Tupels(w1, w2) VALUES( :wId1, :wId2)"""
 	tripleInsStm = """ INSERT INTO Tupels(w1, w2, w3) VALUES( :wId1, :wId2, :wId3)"""
 	tupelTagInsStm = """ INSERT INTO TupelTags(tupel, tag1, tag2) VALUES( :tId, :tag1, :tag2) """
-	tripleTagInsStm = """ INSERT INTO TripleTags(tupel, tag1, tag2, tag3) VALUES( :tId, :tag1, :tag2, :tag3) """
+	tripleTagInsStm = """ INSERT INTO TripleTags(triple, tag1, tag2, tag3) VALUES( :tId, :tag1, :tag2, :tag3) """
 	freqTTInsStm = """ INSERT INTO FreqTupels(tupel, tagID, file) VALUES( :tId, :tagId, :file)"""
-	freqTripleTInsStm = """ INSERT INTO FreqTriples(tupel, tagID, file) VALUES( :tId, :tagId, :file)"""
+	freqTripleTInsStm = """ INSERT INTO FreqTriples(triple, tagID, file) VALUES( :tId, :tagId, :file)"""
 	freqWordInsStm = """ INSERT INTO FreqSingle(word, tag, file) VALUES( :wId1, :tag1, :file) """
 	#Update
 	freqWordIncStm = """ UPDATE FreqSingle SET freq=freq+1 WHERE word = :wId1 AND tag = :tag1 AND file = :file """
 	freqTTIncStm = """ UPDATE FreqTupels SET freq=freq+1 WHERE tupel = :tId AND tagId = :tagId AND file = :file """
-	freqTripleTIncStm = """ UPDATE FreqTriples SET freq=freq+1 WHERE tupel = :tId AND tagId = :tagId AND file = :file """
+	freqTripleTIncStm = """ UPDATE FreqTriples SET freq=freq+1 WHERE triple = :tId AND tagId = :tagId AND file = :file """
 	print "prepared Statements"
 	for f in files:
 		print "Processing "+f
@@ -224,7 +224,7 @@ def genDB(sqlcon, book, files):
 						continue
 					temp['wId3'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w3']}))
 					temp['tag3'] = tokenedSentence[i+2][1]
-					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, triInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2'],'wId3':temp['wId3']}))
+					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tripleInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2'],'wId3':temp['wId3']}))
 					temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2'],'tag3':temp['tag3']}))
 					insertIfNotExists(cursor, freqTripleTStm, freqTripleTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
 					cursor.execute(freqTripleTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
