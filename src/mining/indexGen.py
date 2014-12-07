@@ -219,6 +219,15 @@ def genDB(sqlcon, book, files):
 					cursor.execute(freqTTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
 					if i > len(tokenedSentence)-3:
 						continue
+					temp['w3'] = normalizeWord(tokenedSentence[i+2][0])
+					if len(temp['w3'].strip(":-_1234567890")) <= 1:
+						continue
+					temp['wId3'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w3']}))
+					temp['tag3'] = tokenedSentence[i+2][1]
+					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, triInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2'],'wId3':temp['wId3']}))
+					temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2'],'tag3':temp['tag3']}))
+					insertIfNotExists(cursor, freqTripleTStm, freqTripleTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
+					cursor.execute(freqTripleTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
 	sqlcon.commit()
 	print "data committed to db"
 
