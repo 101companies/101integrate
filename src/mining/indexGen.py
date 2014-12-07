@@ -17,7 +17,7 @@ def sqlExec(cursor, statement, values):
 	pass  
       
 def normalizeWord(word):
-  return re.sub("[^\w\-]", " ", word.lower()).strip()
+  return re.sub("[^\w\-\_]", " ", word.lower()).strip()
 
 
 def transformParagraphToLine(path):
@@ -139,10 +139,10 @@ def setUpTables(cursor):
 	
 def setUpViews(cursor):
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelOverwiew AS SELECT * FROM Words w1, Words w2, Tupels t , TupelTags tt, FreqTupels ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TripleOverwiew AS SELECT * FROM Words w1, Words w2, Words w3, Triples t, TripleTags tt, FreqTriples ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND w3.ID = t.w3 AND tt.tupel=t.ID AND ft.tagID=tt.ID""")
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TripleOverwiew AS SELECT * FROM Words w1, Words w2, Words w3, Triples t, TripleTags tt, FreqTriples ft WHERE w1.ID = t.w1 AND w2.ID = t.w2 AND w3.ID = t.w3 AND tt.triple=t.ID AND ft.tagID=tt.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordOverview AS SELECT * FROM Words w, FreqSingle f WHERE w.ID = f.word""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS TupelFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, SUM(f.freq) as freq FROM Words w1, Words w2, Tupels t, FreqTupels f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.tupel GROUP BY t.ID """)
-	cursor.execute("""CREATE VIEW IF NOT EXISTS TripleFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, w3.word as word3, SUM(f.freq) as freq FROM Words w1, Words w2, Words w3, Triples t, FreqTriples f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND t.ID == f.triple GROUP BY t.ID """)
+	cursor.execute("""CREATE VIEW IF NOT EXISTS TripleFreq AS SELECT t.ID as tID, w1.word as word1, w2.word as word2, w3.word as word3, SUM(f.freq) as freq FROM Words w1, Words w2, Words w3, Triples t, FreqTriples f WHERE w1.ID == t.w1 AND w2.ID == t.w2 AND w3.ID = t.w3  AND t.ID == f.triple GROUP BY t.ID """)
 	cursor.execute("""CREATE VIEW IF NOT EXISTS WordFreq AS SELECT w.* , SUM(f.freq) as freq FROM Words w, FreqSingle f WHERE w.ID = f.word GROUP BY w.ID""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS CommonNouns AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "NN%" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
 	cursor.execute("""CREATE VIEW IF NOT EXISTS ForeignWords AS SELECT DISTINCT w.* FROM WordFreq w, (SELECT word as ID FROM FreqSingle WHERE tag LIKE "FW" AND freq > 1) i WHERE i.ID = w.ID ORDER BY w.freq DESC""")
@@ -168,7 +168,7 @@ def genDB(sqlcon, book, files):
 	tupelIdStm = """SELECT ID FROM Tupels WHERE w1 = :wId1 AND w2 = :wId2"""
 	tripleIdStm = """SELECT ID FROM Triples WHERE w1 = :wId1 AND w2 = :wId2 AND w3 = :wId3"""
 	tupelTagIdStm = """ SELECT ID FROM  TupelTags WHERE tag1 = :tag1 AND tag2 = :tag2 AND tupel = :tId"""
-	tripleTagIdStm = """ SELECT ID FROM  TupelTags WHERE tag1 = :tag1 AND tag2 = :tag2 AND tag3 = :tag3 AND triple = :tId"""
+	tripleTagIdStm = """ SELECT ID FROM  TripleTags WHERE tag1 = :tag1 AND tag2 = :tag2 AND tag3 = :tag3 AND triple = :tId"""
 	freqTTStm = """ SELECT freq FROM FreqTupels WHERE tagID = :tagId AND file = :file  AND tupel = :tId"""
 	freqTripleTStm = """ SELECT freq FROM FreqTriples WHERE tagID = :tagId AND file = :file  AND triple = :tId"""
 	freqWordStm = """ SELECT freq FROM FreqSingle WHERE word = :wId1 AND tag = :tag1 AND file = :file"""
@@ -176,7 +176,7 @@ def genDB(sqlcon, book, files):
 	wordInsStm = """ INSERT INTO Words(word) VALUES( :word)"""
 	fileInsStm = """ INSERT INTO Files(file) VALUES( :file)"""
 	tupelInsStm = """ INSERT INTO Tupels(w1, w2) VALUES( :wId1, :wId2)"""
-	tripleInsStm = """ INSERT INTO Tupels(w1, w2, w3) VALUES( :wId1, :wId2, :wId3)"""
+	tripleInsStm = """ INSERT INTO Triples(w1, w2, w3) VALUES( :wId1, :wId2, :wId3)"""
 	tupelTagInsStm = """ INSERT INTO TupelTags(tupel, tag1, tag2) VALUES( :tId, :tag1, :tag2) """
 	tripleTagInsStm = """ INSERT INTO TripleTags(triple, tag1, tag2, tag3) VALUES( :tId, :tag1, :tag2, :tag3) """
 	freqTTInsStm = """ INSERT INTO FreqTupels(tupel, tagID, file) VALUES( :tId, :tagId, :file)"""
@@ -224,8 +224,8 @@ def genDB(sqlcon, book, files):
 						continue
 					temp['wId3'] = str(insertIfNotExists(cursor, wordIdStm, wordInsStm, {'word':temp['w3']}))
 					temp['tag3'] = tokenedSentence[i+2][1]
-					temp['tId'] =  str(insertIfNotExists(cursor, tupelIdStm, tripleInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2'],'wId3':temp['wId3']}))
-					temp['tagId'] = str(insertIfNotExists(cursor, tupelTagIdStm, tupelTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2'],'tag3':temp['tag3']}))
+					temp['tId'] =  str(insertIfNotExists(cursor, tripleIdStm, tripleInsStm, {'wId1':temp['wId1'],'wId2':temp['wId2'],'wId3':temp['wId3']}))
+					temp['tagId'] = str(insertIfNotExists(cursor, tripleTagIdStm, tripleTagInsStm, {'tId':temp['tId'],'tag1':temp['tag1'],'tag2':temp['tag2'],'tag3':temp['tag3']}))
 					insertIfNotExists(cursor, freqTripleTStm, freqTripleTInsStm, {'tagId':temp['tagId'], 'file':temp['file'],'tId':temp['tId']})
 					cursor.execute(freqTripleTIncStm, {'tagId':temp['tagId'], 'file':temp['file'], 'tId':temp['tId']})
 	sqlcon.commit()
