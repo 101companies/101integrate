@@ -27,7 +27,7 @@
 		"posAttr" : "id",
         		"exclude-elements": ["pre","form","link","script","noscript","head","img"],
         		"exclude-classes": ["toc", "navfooter", "rwhfooter", "navheader", "catlinks", "visualClear", "vectorTabs", "portal", "noprint", "printfooter", "mw-editsection","subpages","portal","body","selflink","flaggedrevs_notice", "plainlinks", "metadata","metadata plainlinks ambox ambox-notice","mw-jump","external text","mbox-text","mw-fr-revisiontag","vectorMenu emptyPortlet","references"],
-        		"exclude-ids": ["mw-navigation","footer","contentSub","siteSub"],
+        		"exclude-ids": ["mw-navigation","footer","contentSub","siteSub","See_also"],
 		"kind" : "../../books",
 		"title" : "Wikibooks Python Programming",
 		"folder" : "WBPP",
