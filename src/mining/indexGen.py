@@ -303,7 +303,7 @@ def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50
 		temp = cursor.fetchone()
 		while (temp is not None):
 			#print temp
-			if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords and temp[2] not in commonEnglishWords:
+			if temp[0] not in commonEnglishWords and temp[2] not in commonEnglishWords:
 				words.add(temp[0]+" "+temp[1]+" "+temp[2])
 			temp = cursor.fetchone()
 		print "\t\t triples fetched"
