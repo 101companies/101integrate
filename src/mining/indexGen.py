@@ -196,7 +196,7 @@ def genDB(sqlcon, book, files):
 		temp['file']= f
 		for l in open(conPath+f).readlines():
 			for s in re.split("[\.\?!]",l):
-				tokenedSentence = nltk.pos_tag(nltk.word_tokenize(s))
+				tokenedSentence = nltk.pos_tag(nltk.word_tokenize(s.replace("/"," ")))
 				for (i, w) in enumerate(tokenedSentence):
 					word = normalizeWord(w[0])
 					if (len(word.strip(":-_1234567890"))<=1):
@@ -325,7 +325,7 @@ if __name__ == "__main__":
 		print "Processing " + book
 		conPath = constants.getContentPath(book)
 		files = os.listdir(conPath)
-		sqlcon = sql.connect(constants.getBookPath(book)+"Frequencies.db")
+		sqlcon = sql.connect(conPath+"Frequencies.db")
 		mode = None
 		if len(sys.argv) >= 3:
 			mode = sys.argv[2]
