@@ -59,10 +59,12 @@ def writeJSON(dic, outFile):
   writer.write(json.dumps(dic, indent="\t"))
   writer.close()
   
-def main(file1, file2, outSel="", outFormat="", outFile="diff.txt"):
+def main(file1, file2, outSel="", outFormat="", outFile=""):
+  print [file1, file2, outSel, outFormat, outFile]
   diffs = getDiff(file1, file2)
   if outSel:
     diffs = {outSel:diffs[outSel]}
+  print [file1, file2, outSel, outFormat, outFile]
   if ((not outFormat) and (not outFile)):
     print diffs
   else:
@@ -78,3 +80,11 @@ if __name__ == "__main__":
     print "too few arguments \n exiting."
   elif len(sys.argv) is 3:
     main(sys.argv[1],sys.argv[2])
+  elif len(sys.argv) is 4:
+    main(sys.argv[1],sys.argv[2],sys.argv[3])
+  elif len(sys.argv) is 5:
+    main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],"diff."+sys.argv[5])
+  elif len(sys.argv) is 6:
+    main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5])
+    
+  
