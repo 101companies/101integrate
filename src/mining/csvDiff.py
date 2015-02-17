@@ -10,6 +10,7 @@ def readFile(file):
     return content
 
 
+
 def getDiff(file1,file2):
   f1 = readFile(file1)
   f2 = readFile(file2)
@@ -27,12 +28,15 @@ def getDiff(file1,file2):
     return {"del":deletions, "add":additions}
 
 
+
 def transformToJSON(dic):
   newdic = []
   for key in dic:
     for e in dic[key]:
 	newdic.append({"value":e,"type":key,"reason":""})
   return newdic
+
+
 
 def transformToCSV(dic):
   newdic= []
@@ -47,6 +51,7 @@ def transformToCSV(dic):
 
 
 
+
 def writeCsv(dic, outFile):
   with open(outFile, "wb") as csvfile:
       writer = csv.writer(csvfile, delimiter=";", quotechar="\"")
@@ -54,10 +59,13 @@ def writeCsv(dic, outFile):
 	writer.writerow(l)
       
 
+
 def writeJSON(dic, outFile):
   writer = open(outFile, "w")
   writer.write(json.dumps(dic, indent="\t"))
   writer.close()
+  
+  
   
 def main(file1, file2, outSel="", outFormat="", outFile=""):
   print [file1, file2, outSel, outFormat, outFile]
@@ -74,6 +82,8 @@ def main(file1, file2, outSel="", outFormat="", outFile=""):
 	writeCsv(diffs.lower(), outFile)
       else:
 	print "Unknown output type: " + outFormat
+
+
 
 if __name__ == "__main__":
   if len(sys.argv) < 3:
