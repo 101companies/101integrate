@@ -44,6 +44,8 @@ def transformToCSV(dic):
   if ("columnHeader" in temp):
     newdic.append(dic["columnHeader"]+["Type","Reason"])
     temp.remove("columnHeader")
+  else:
+    newdic.append(["Value","Type","Reason"])
   for key in temp:
     for e in dic[key]:
       newdic.append(e+[key,""])
