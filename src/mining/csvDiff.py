@@ -51,22 +51,23 @@ def transformToCSV(dic):
 
 
 
-
 def writeCsv(dic, outFile):
   with open(outFile, "wb") as csvfile:
       writer = csv.writer(csvfile, delimiter=";", quotechar="\"")
       for l in dic:
 	writer.writerow(l)
-      
+
+
 
 
 def writeJSON(dic, outFile):
   writer = open(outFile, "w")
   writer.write(json.dumps(dic, indent="\t"))
   writer.close()
-  
-  
-  
+
+
+
+
 def main(file1, file2, outSel="", outFormat="", outFile=""):
   print [file1, file2, outSel, outFormat, outFile]
   diffs = getDiff(file1, file2)
