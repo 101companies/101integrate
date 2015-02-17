@@ -69,18 +69,17 @@ def writeJSON(dic, outFile):
 
 
 def main(file1, file2, outSel="", outFormat="", outFile=""):
-  print [file1, file2, outSel, outFormat, outFile]
+  #print [file1, file2, outSel, outFormat, outFile]
   diffs = getDiff(file1, file2)
   if outSel:
     diffs = {outSel:diffs[outSel]}
-  print [file1, file2, outSel, outFormat, outFile]
   if ((not outFormat) and (not outFile)):
     print diffs
   else:
-      if outFormat.lower() is "json":
-	writeJSON(diffs, outFile)
-      elif outFormat is "csv":
-	writeCsv(diffs.lower(), outFile)
+      if outFormat.lower() == "json":
+	writeJSON(transformToJSON(diffs), outFile)
+      elif outFormat.lower() == "csv":
+	writeCsv(transformToCSV(diffs), outFile)
       else:
 	print "Unknown output type: " + outFormat
 
@@ -94,7 +93,7 @@ if __name__ == "__main__":
   elif len(sys.argv) is 4:
     main(sys.argv[1],sys.argv[2],sys.argv[3])
   elif len(sys.argv) is 5:
-    main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],"diff."+sys.argv[5])
+    main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],"diff."+sys.argv[5].lower())
   elif len(sys.argv) is 6:
     main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5])
     
