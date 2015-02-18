@@ -59,3 +59,8 @@ deployBacklinks:
 
 termCoverage:
 	python termCoverage.py $(DATAFOLDER)/allbooks/
+	
+indexBlacklist:
+	for b in ${LINKED_BOOKS}; do \
+		python csvDiff.py $(DATAFOLDER)/perbook/"$$b"/IndexGen.csv $(DATAFOLDER)/perbook/"$$b"/Index.csv del csv $(DATAFOLDER)/perbook/"$$b"/indexBlacklist.csv
+	done
