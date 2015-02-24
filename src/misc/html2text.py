@@ -25,8 +25,13 @@ def main(file, args):
 	h.single_line_break = True
     with open(file, "r") as html:
 	return result = h.handle(html)
-
+      
+      
+def write(file, content):
+    writer = open(file, "w")
+    writer.write(content)
+    writer.close()
 
 
 if __name__ == "__main__":
-  print main(sys.argv[1],sys.argv[2:])
+  write(sys.argv[1].replace(".html",".txt"), main(sys.argv[1],sys.argv[2:]))
