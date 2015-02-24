@@ -19,8 +19,9 @@ backlink:
 # Clean online books once after download
 cleanOnlineBooks:
 	for b in ${LINKED_BOOKS}; do \
+		echo "$$b" ;\
 		for h in ../../data/perbook/"$$b"/contents/*; do \
-			 html2text "$$h" --ignore-links --ignore-images| tee "$$h".txt; \
+			html2text "$$h" --ignore-links --ignore-images > "$$h".txt; \
 			rm "$$h"; \
 		done \
 	done
