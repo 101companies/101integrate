@@ -24,7 +24,7 @@ def main(file, args):
     if "--single-line-break" in args:
 	h.single_line_break = True
     with open(file, "r") as html:
-	return result = h.handle(html)
+	return h.handle(html)
       
       
 def write(file, content):
