@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import nltk
 # default tagset see: https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
 import sqlite3 as sql
@@ -195,6 +196,7 @@ def genDB(sqlcon, book, files):
 		insertIfNotExists(cursor, fileIdStm, fileInsStm, temp)
 		temp['file']= f
 		for l in open(conPath+f).readlines():
+			l=l.decode("utf8")
 			for s in re.split("[\.\?!]",l):
 				tokenedSentence = nltk.pos_tag(nltk.word_tokenize(s.replace("/"," ")))
 				for (i, w) in enumerate(tokenedSentence):
@@ -325,7 +327,10 @@ if __name__ == "__main__":
 		print "Processing " + book
 		conPath = constants.getContentPath(book)
 		files = os.listdir(conPath)
-		sqlcon = sql.connect(conPath+"Frequencies.db")
+		for f in files[:]:
+			if not f.endswith(".txt"):
+				files.remove(f);
+		sqlcon = sql.connect(constants.getBookPath(book)+"Frequencies.db")
 		mode = None
 		if len(sys.argv) >= 3:
 			mode = sys.argv[2]

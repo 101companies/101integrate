@@ -42,6 +42,7 @@ download-googledocs:
 download-deps:
 	cd src/analytics; sudo R < dependencies.R --no-save
 	sudo easy_install BeautifulSoup
+	sudo easy_install numpy
 	sudo easy_install nltk
 	sudo easy_install inflect
 	sudo easy_install html2text
@@ -50,6 +51,7 @@ download-deps:
 	sudo easy_install mako
 	sudo easy_install asq
 	sudo easy_install simplejson
+	sudo easy_install sortedcontainers
 	python -m nltk.downloader all
 
 bootstrap:
