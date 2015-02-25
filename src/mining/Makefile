@@ -1,7 +1,7 @@
 include ../Makefile.vars
 
 
-DATAFOLDER = ../../data/
+DATAFOLDER = ../../data
 
 #HTML2TXT=../../bin/html2text 
 
@@ -32,16 +32,16 @@ cleanindecies:
 	done
 
 mergeindecies:
-	python merge.py $(DATAFOLDER) /perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) Index.csv allbooks/Index.csv allbooks/metaindex.json 30 allbooks/crosscuts.csv
+	python merge.py $(DATAFOLDER)/ /perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) Index.csv allbooks/Index.csv allbooks/metaindex.json 30 allbooks/crosscuts.csv
 
 frequencies:
 	for b in ${LINKED_BOOKS}; do \
-		python frequencies.py "$$b" $(DATAFOLDER) perbook/"$$b"/ perbook/"$$b"/ CleanIndex.csv metadata/chapters.json contents/ metaindex.json nonmerged; \
+		python frequencies.py "$$b" $(DATAFOLDER)/ perbook/"$$b"/ perbook/"$$b"/ CleanIndex.csv metadata/chapters.json contents/ metaindex.json nonmerged; \
 	done
 
 mergedfrequencies:
 	for b in ${LINKED_BOOKS}; do \
-		python frequencies.py "$$b" $(DATAFOLDER) perbook/"$$b"/ allbooks/ Index.csv metadata/chapters.json contents/ metaindex.json merged; \
+		python frequencies.py "$$b" $(DATAFOLDER)/ perbook/"$$b"/ allbooks/ Index.csv metadata/chapters.json contents/ metaindex.json merged; \
 	done
 
 backlinksMappings:
@@ -50,10 +50,10 @@ backlinksMappings:
 	done
 
 mergeBacklinkMappings:
-	python mergeBacklinks.py $(DATAFOLDER) perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) allbooks/
+	python mergeBacklinks.py $(DATAFOLDER)/ perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) allbooks/
 
 mergeMappings:
-	python mergeMappings.py $(DATAFOLDER) perbook/ $(foreach r,$(ALL_BOOKS), $(r)) allbooks/
+	python mergeMappings.py $(DATAFOLDER)/ perbook/ $(foreach r,$(ALL_BOOKS), $(r)) allbooks/
 
 deployBacklinks:
 	scp  ../../data/allbooks/backlinks.json ../../data/allbooks/mapping.json worker@black42.uni-koblenz.de:~/101worker/services/termResources/
@@ -63,5 +63,5 @@ termCoverage:
 	
 indexBlacklist:
 	for b in ${LINKED_BOOKS}; do \
-		python csvDiff.py $(DATAFOLDER)/perbook/"$$b"/IndexGen.csv $(DATAFOLDER)/perbook/"$$b"/Index.csv del csv $(DATAFOLDER)/perbook/"$$b"/indexBlacklist.csv
+		python csvDiff.py $(DATAFOLDER)/perbook/"$$b"/IndexGen.csv $(DATAFOLDER)/perbook/"$$b"/Index.csv del csv $(DATAFOLDER)/perbook/"$$b"/indexBlacklist.csv ; \
 	done
