@@ -7,8 +7,15 @@ nope:
 	
 	
 run:
-ifdef LOGGING
-ifeq $(LOGGING) "ON"
+ifndef LOGGING
+	$(MAKE) download-books
+	$(MAKE) mine
+	$(MAKE) from-cache
+	$(MAKE) analyze
+	$(MAKE) backlink
+	$(MAKE) integrate
+else
+ifeq ($(LOGGING),ON)
 	mkdir -p logs
 	$(MAKE) download-books | tee logs/downloadBooks.log
 	$(MAKE) mine           | tee logs/mine.log
@@ -24,13 +31,6 @@ else
 	$(MAKE) backlink
 	$(MAKE) integrate
 endif
-else
-	$(MAKE) download-books
-	$(MAKE) mine
-	$(MAKE) from-cache
-	$(MAKE) analyze
-	$(MAKE) backlink
-	$(MAKE) integrate
 endif
 
 # Download books that are available online
