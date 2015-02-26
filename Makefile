@@ -7,6 +7,16 @@ nope:
 	
 	
 run:
+ifndef LOGGING
+ifeq $(LOGGING) "ON"
+	$(MAKE) download-books
+	$(MAKE) mine
+	$(MAKE) from-cache
+	$(MAKE) analyze
+	$(MAKE) backlink
+	$(MAKE) integrate
+endif
+else
 	mkdir -p logs
 	$(MAKE) download-books | tee logs/downloadBooks.log
 	$(MAKE) mine           | tee logs/mine.log
@@ -14,6 +24,7 @@ run:
 	$(MAKE) analyze        | tee logs/analyze.log
 	$(MAKE) backlink       | tee logs/backlink.log
 	$(MAKE) integrate      | tee logs/integrate.log
+endif
 
 # Download books that are available online
 download-books:
