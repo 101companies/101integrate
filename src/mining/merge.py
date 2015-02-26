@@ -10,7 +10,7 @@ import re
 import patternCleaner
 p = inflect.engine()
 import nltk
-#from sortedcontainers import SortedDict, SortedList
+from sortedcontainers import SortedDict, SortedList
 from nltk.stem.wordnet import WordNetLemmatizer
 
 def isinWhitelist(term, list):
