@@ -7,8 +7,16 @@ nope:
 	
 	
 run:
-ifndef LOGGING
+ifdef LOGGING
 ifeq $(LOGGING) "ON"
+	mkdir -p logs
+	$(MAKE) download-books | tee logs/downloadBooks.log
+	$(MAKE) mine           | tee logs/mine.log
+	$(MAKE) from-cache     | tee logs/fromCache.log
+	$(MAKE) analyze        | tee logs/analyze.log
+	$(MAKE) backlink       | tee logs/backlink.log
+	$(MAKE) integrate      | tee logs/integrate.log
+else
 	$(MAKE) download-books
 	$(MAKE) mine
 	$(MAKE) from-cache
@@ -17,13 +25,12 @@ ifeq $(LOGGING) "ON"
 	$(MAKE) integrate
 endif
 else
-	mkdir -p logs
-	$(MAKE) download-books | tee logs/downloadBooks.log
-	$(MAKE) mine           | tee logs/mine.log
-	$(MAKE) from-cache     | tee logs/fromCache.log
-	$(MAKE) analyze        | tee logs/analyze.log
-	$(MAKE) backlink       | tee logs/backlink.log
-	$(MAKE) integrate      | tee logs/integrate.log
+	$(MAKE) download-books
+	$(MAKE) mine
+	$(MAKE) from-cache
+	$(MAKE) analyze
+	$(MAKE) backlink
+	$(MAKE) integrate
 endif
 
 # Download books that are available online
