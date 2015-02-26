@@ -44,11 +44,11 @@ coverageTables:
 nonProfileFrequencies:
 	cd integrate; $(MAKE) nonProfileFrequencies
 	
-# Clean it all
+# Clean it all 
 clean:
 	cd ../data/allbooks; rm -f *.tex *.csv *.json *.png *.html
 	cd ..; for b in ${ALL_BOOKS}; do \
-			cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ;\
+			cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ;\ #TODO DON'T REMOVE INDEX
 			cd ../../.. ;\
 			rm -rf data/perbook/"$$b"/contents; \
 	done
