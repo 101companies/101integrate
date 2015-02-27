@@ -43,11 +43,11 @@ cleanOnlineBooks:
 
 cleanindecies:
 	for b in ${LINKED_BOOKS}; do \
-		python merge.py $(DATAFOLDER)/ perbook/ "$$b" Index.csv perbook/"$$b"/CleanIndex.csv perbook/"$$b"/metaindex.json 30 nocrosscut; \
+		python merge.py $(DATAFOLDER)/ perbook/ "$$b" cache/Index.csv perbook/"$$b"/CleanIndex.csv perbook/"$$b"/metaindex.json 30 nocrosscut; \
 	done
 
 mergeindecies:
-	python merge.py $(DATAFOLDER)/ /perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) Index.csv allbooks/Index.csv allbooks/metaindex.json 30 allbooks/crosscuts.csv
+	python merge.py $(DATAFOLDER)/ /perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) cache/Index.csv allbooks/Index.csv allbooks/metaindex.json 30 allbooks/crosscuts.csv
 
 frequencies:
 	for b in ${LINKED_BOOKS}; do \
