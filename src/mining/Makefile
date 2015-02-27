@@ -1,4 +1,5 @@
 include ../Makefile.vars
+include ../../Makefile.vars
 
 
 DATAFOLDER = ../../data
@@ -43,40 +44,40 @@ cleanOnlineBooks:
 
 cleanindecies:
 	for b in ${LINKED_BOOKS}; do \
-		python merge.py $(DATAFOLDER)/ perbook/ "$$b" cache/Index.csv perbook/"$$b"/CleanIndex.csv perbook/"$$b"/metaindex.json 30 nocrosscut; \
+		$(PYTHON) merge.py $(DATAFOLDER)/ perbook/ "$$b" cache/Index.csv perbook/"$$b"/CleanIndex.csv perbook/"$$b"/metaindex.json 30 nocrosscut; \
 	done
 
 mergeindecies:
-	python merge.py $(DATAFOLDER)/ /perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) cache/Index.csv allbooks/Index.csv allbooks/metaindex.json 30 allbooks/crosscuts.csv
+	$(PYTHON) merge.py $(DATAFOLDER)/ /perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) cache/Index.csv allbooks/Index.csv allbooks/metaindex.json 30 allbooks/crosscuts.csv
 
 frequencies:
 	for b in ${LINKED_BOOKS}; do \
-		python frequencies.py "$$b" $(DATAFOLDER)/ perbook/"$$b"/ perbook/"$$b"/ CleanIndex.csv metadata/chapters.json contents/ metaindex.json nonmerged; \
+		$(PYTHON) frequencies.py "$$b" $(DATAFOLDER)/ perbook/"$$b"/ perbook/"$$b"/ CleanIndex.csv metadata/chapters.json contents/ metaindex.json nonmerged; \
 	done
 
 mergedfrequencies:
 	for b in ${LINKED_BOOKS}; do \
-		python frequencies.py "$$b" $(DATAFOLDER)/ perbook/"$$b"/ allbooks/ Index.csv metadata/chapters.json contents/ metaindex.json merged; \
+		$(PYTHON) frequencies.py "$$b" $(DATAFOLDER)/ perbook/"$$b"/ allbooks/ Index.csv metadata/chapters.json contents/ metaindex.json merged; \
 	done
 
 backlinksMappings:
 	for b in ${LINKED_BOOKS}; do \
-		python backlinksMapper.py "$$b" ../../data/perbook/ frequenciesDistributionDeepMerged.json contents/ 5; \
+		$(PYTHON) backlinksMapper.py "$$b" ../../data/perbook/ frequenciesDistributionDeepMerged.json contents/ 5; \
 	done
 
 mergeBacklinkMappings:
-	python mergeBacklinks.py $(DATAFOLDER)/ perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) allbooks/
+	$(PYTHON) mergeBacklinks.py $(DATAFOLDER)/ perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) allbooks/
 
 mergeMappings:
-	python mergeMappings.py $(DATAFOLDER)/ perbook/ $(foreach r,$(ALL_BOOKS), $(r)) allbooks/
+	$(PYTHON) mergeMappings.py $(DATAFOLDER)/ perbook/ $(foreach r,$(ALL_BOOKS), $(r)) allbooks/
 
 deployBacklinks:
 	scp  ../../data/allbooks/backlinks.json ../../data/allbooks/mapping.json worker@black42.uni-koblenz.de:~/101worker/services/termResources/
 
 termCoverage:
-	python termCoverage.py $(DATAFOLDER)/allbooks/
+	$(PYTHON) termCoverage.py $(DATAFOLDER)/allbooks/
 	
 indexBlacklist:
 	for b in ${LINKED_BOOKS}; do \
-		python csvDiff.py $(DATAFOLDER)/perbook/"$$b"/IndexGen.csv $(DATAFOLDER)/perbook/"$$b"/Index.csv del csv $(DATAFOLDER)/perbook/"$$b"/indexBlacklist.csv ; \
+		$(PYTHON) csvDiff.py $(DATAFOLDER)/perbook/"$$b"/IndexGen.csv $(DATAFOLDER)/perbook/"$$b"/Index.csv del csv $(DATAFOLDER)/perbook/"$$b"/indexBlacklist.csv ; \
 	done

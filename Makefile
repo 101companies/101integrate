@@ -1,3 +1,5 @@
+include Makefile.vars
+
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
 
@@ -28,12 +30,12 @@ endif
 download-books:
 ifndef BOOKS
 ifndef BOOK
-	cd src/mining; python bookDownloader.py all
+	cd src/mining; $(PYTHON) bookDownloader.py all
 else
-	cd src/mining; python bookDownloader.py $(BOOK)
+	cd src/mining; $(PYTHON) bookDownloader.py $(BOOK)
 endif
 else
-	cd src/mining; python bookDownloader.py $(BOOKS)
+	cd src/mining; $(PYTHON) bookDownloader.py $(BOOKS)
 endif
 	$(MAKE) bootstrap
 	cd src/mining; $(MAKE) cleanOnlineBooks
@@ -45,7 +47,7 @@ link-books:
 
 # Optionally renew google doc data
 download-googledocs:
-	python src/misc/downloader.py $(INDEXKEY) data/perbook/ LYAH RWH Craft PIH
+	$(PYTHON) src/misc/downloader.py $(INDEXKEY) data/perbook/ LYAH RWH Craft PIH
 
 # Get Python and R tools
 download-deps:
@@ -61,10 +63,10 @@ download-deps:
 	sudo easy_install asq
 	sudo easy_install simplejson
 	sudo easy_install sortedcontainers
-	python -m nltk.downloader all
+	$(PYTHON) -m nltk.downloader all
 
 bootstrap:
-	cd src; python bootstrap.py
+	cd src; $(PYTHON) bootstrap.py
 
 # Run mining scripts
 mine:

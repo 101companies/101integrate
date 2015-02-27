@@ -1,4 +1,5 @@
 include ../Makefile.vars
+include ../../Makefile.vars
 
 analyze:
 ifeq ($(LOGGING),ON)

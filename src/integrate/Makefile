@@ -1,4 +1,5 @@
 include ../Makefile.vars
+include ../../Makefile.vars
 DATAFOLDER = ../../data
 
 integrate:
@@ -14,12 +15,12 @@ else
 endif
 
 coverageTables:
-	python termsCoverage.py $(DATAFOLDER) allbooks/
+	$(PYTHON) termsCoverage.py $(DATAFOLDER) allbooks/
 
 nonProfileFrequencies:
 	for b in ${ALL_BOOKS}; do \
-		python nonProfileFrequencies.py $(DATAFOLDER)/ allbooks/cache/ /perbook/ "$$b" $(foreach r,$(LINKED_BOOKS), $(r)); \
+		$(PYTHON) nonProfileFrequencies.py $(DATAFOLDER)/ allbooks/cache/ /perbook/ "$$b" $(foreach r,$(LINKED_BOOKS), $(r)); \
 	done
 
 uniqueTerms:
-	python uniqueTerms.py
+	$(PYTHON) uniqueTerms.py

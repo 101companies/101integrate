@@ -1,5 +1,5 @@
 include Makefile.vars
-
+include ../Makefile.vars
 
 # Please, read the README.md.
 nope:
