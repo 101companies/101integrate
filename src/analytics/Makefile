@@ -1,9 +1,16 @@
 include ../Makefile.vars
 
 analyze:
+ifeq ($(LOGGING),ON)
+	mkdir -p ../../logs/analyze
+	$(MAKE) frequencies	| tee ../../logs/analyze/frequencies.log
+	$(MAKE) popular		| tee ../../logs/analyze/popular.log
+	$(MAKE) tex		| tee ../../logs/analyze/tex.log
+else
 	$(MAKE) frequencies
 	$(MAKE) popular
 	$(MAKE) tex
+endif
 
 frequencies:	
 	for b in ${ALL_BOOKS}; do \

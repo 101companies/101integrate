@@ -7,12 +7,12 @@ nope:
 
 # Run mining scripts
 mine:
-	cd mining; $(MAKE) mine
+	cd mining; $(MAKE) mine LOGGING=$(LOGGING)
 
 # Run analytics scripts
 analyze:
 	$(MAKE) from-cache
-	cd analytics; $(MAKE) analyze
+	cd analytics; $(MAKE) analyze LOGGING=$(LOGGING)
 
 # Copies post processed data from cache
 from-cache:
@@ -32,11 +32,11 @@ to-cache:
 
 #runs integration-scripts
 integrate:
-	cd integrate; $(MAKE) integrate	
+	cd integrate; $(MAKE) integrate	LOGGING=$(LOGGING)
 
 # Run backlinking scripts
 backlink:
-	cd mining; $(MAKE) backlink
+	cd mining; $(MAKE) backlink LOGGING=$(LOGGING)
 
 coverageTables:
 	cd integrate; $(MAKE) coverageTables

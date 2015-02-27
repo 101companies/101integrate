@@ -7,22 +7,14 @@ nope:
 	
 	
 run:
-ifndef LOGGING
-	$(MAKE) download-books
-	$(MAKE) mine
-	$(MAKE) from-cache
-	$(MAKE) analyze
-	$(MAKE) backlink
-	$(MAKE) integrate
-else
 ifeq ($(LOGGING),ON)
 	mkdir -p logs
 	$(MAKE) download-books | tee logs/downloadBooks.log
-	$(MAKE) mine           | tee logs/mine.log
+	$(MAKE) mine           LOGGING=ON
 	$(MAKE) from-cache     | tee logs/fromCache.log
-	$(MAKE) analyze        | tee logs/analyze.log
-	$(MAKE) backlink       | tee logs/backlink.log
-	$(MAKE) integrate      | tee logs/integrate.log
+	$(MAKE) analyze        LOGGING=ON
+	$(MAKE) backlink       LOGGING=ON
+	$(MAKE) integrate      LOGGING=ON
 else
 	$(MAKE) download-books
 	$(MAKE) mine
@@ -30,7 +22,6 @@ else
 	$(MAKE) analyze
 	$(MAKE) backlink
 	$(MAKE) integrate
-endif
 endif
 
 # Download books that are available online
@@ -77,11 +68,11 @@ bootstrap:
 
 # Run mining scripts
 mine:
-	cd src; $(MAKE) mine
+	cd src; $(MAKE) mine LOGGING=$(LOGGING)
 
 # Run analytics scripts
 analyze:
-	cd src; $(MAKE) analyze
+	cd src; $(MAKE) analyze LOGGING=$(LOGGING)
 
 # Copies post processed data from cache
 from-cache:
@@ -94,7 +85,7 @@ to-cache:
 
 # Run backlinking scripts
 backlink:
-	cd src; $(MAKE) backlink
+	cd src; $(MAKE) backlink LOGGING=$(LOGGING)
 
 coverageTables:
 	cd src $(MAKE) coverageTables
@@ -103,7 +94,7 @@ nonProfileFrequencies:
 	cd src; $(MAKE) nonProfileFrequencies
 	
 integrate:
-	cd src; $(MAKE) integrate
+	cd src; $(MAKE) integrate LOGGING=$(LOGGING)
 
 # Clean it all
 clean:
