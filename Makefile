@@ -11,9 +11,9 @@ nope:
 run:
 ifeq ($(LOGGING),ON)
 	mkdir -p logs
-	$(MAKE) download-books | tee logs/downloadBooks.log
+	$(MAKE) download-books 2>&1	| tee logs/downloadBooks.log
 	$(MAKE) mine           LOGGING=ON
-	$(MAKE) from-cache     | tee logs/fromCache.log
+	$(MAKE) from-cache     2>&1	| tee logs/fromCache.log
 	$(MAKE) analyze        LOGGING=ON
 	$(MAKE) backlink       LOGGING=ON
 	$(MAKE) integrate      LOGGING=ON

@@ -5,9 +5,9 @@ DATAFOLDER = ../../data
 integrate:
 ifeq ($(LOGGING),ON)
 	mkdir -p ../../logs/integrate
-	$(MAKE) coverageTables		| tee ../../logs/integrate/coverageTables.log
-	$(MAKE) uniqueTerms		| tee ../../logs/integrate/uniqueTerms.log
-	$(MAKE) nonProfileFrequencies	| tee ../../logs/integrate/nonProfileFrequencies.log
+	$(MAKE) coverageTables		2>&1	| tee ../../logs/integrate/coverageTables.log
+	$(MAKE) uniqueTerms		2>&1	| tee ../../logs/integrate/uniqueTerms.log
+	$(MAKE) nonProfileFrequencies	2>&1	| tee ../../logs/integrate/nonProfileFrequencies.log
 else
 	$(MAKE) coverageTables
 	$(MAKE) uniqueTerms

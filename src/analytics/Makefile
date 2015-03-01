@@ -4,9 +4,9 @@ include ../../Makefile.vars
 analyze:
 ifeq ($(LOGGING),ON)
 	mkdir -p ../../logs/analyze
-	$(MAKE) frequencies	| tee ../../logs/analyze/frequencies.log
-	$(MAKE) popular		| tee ../../logs/analyze/popular.log
-	$(MAKE) tex		| tee ../../logs/analyze/tex.log
+	$(MAKE) frequencies	2>&1	| tee ../../logs/analyze/frequencies.log
+	$(MAKE) popular		2>&1	| tee ../../logs/analyze/popular.log
+	$(MAKE) tex		2>&1	| tee ../../logs/analyze/tex.log
 else
 	$(MAKE) frequencies
 	$(MAKE) popular

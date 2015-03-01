@@ -9,10 +9,10 @@ DATAFOLDER = ../../data
 mine:
 ifeq ($(LOGGING),ON)
 	mkdir -p ../../logs/mining
-	$(MAKE) cleanindecies		| tee ../../logs/mining/cleanindecies.log
-	$(MAKE) mergeindecies		| tee ../../logs/mining/mergeindecies.log
-	$(MAKE) frequencies		| tee ../../logs/mining/frequencies.log
-	$(MAKE) mergedfrequencies	| tee ../../logs/mining/mergedfrequencies.log
+	$(MAKE) cleanindecies		2>&1	| tee ../../logs/mining/cleanindecies.log
+	$(MAKE) mergeindecies		2>&1	| tee ../../logs/mining/mergeindecies.log
+	$(MAKE) frequencies		2>&1	| tee ../../logs/mining/frequencies.log
+	$(MAKE) mergedfrequencies	2>&1	| tee ../../logs/mining/mergedfrequencies.log
 else
 	$(MAKE) cleanindecies
 	$(MAKE) mergeindecies
@@ -23,9 +23,9 @@ endif
 backlink:
 ifeq ($(LOGGING),ON)
 	mkdir -p ../../logs/backlink
-	$(MAKE) backlinksMappings	| tee ../../logs/backlink/backlinksMappings.log
-	$(MAKE) mergeBacklinkMappings	| tee ../../logs/backlink/mergeBacklinkMappings.log
-	$(MAKE) mergeMappings		| tee ../../logs/backlink/mergeMappings.log
+	$(MAKE) backlinksMappings	2>&1	| tee ../../logs/backlink/backlinksMappings.log
+	$(MAKE) mergeBacklinkMappings	2>&1	| tee ../../logs/backlink/mergeBacklinkMappings.log
+	$(MAKE) mergeMappings		2>&1	| tee ../../logs/backlink/mergeMappings.log
 else
 	$(MAKE) backlinksMappings
 	$(MAKE) mergeBacklinkMappings
