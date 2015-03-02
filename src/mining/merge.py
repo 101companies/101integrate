@@ -59,16 +59,16 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
   resInfos = json.loads(open("config/config.json", 'rb').read())
   commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
 
-  #changedByPattern = []
-  changedByPattern = SortedList()
+  changedByPattern = []
+  #changedByPattern = SortedList()
 
   blacklist = json.loads(open("config/blacklist.json", 'rb').read())['blacklist']
   whitelist = []
   whiteListReader = csv.reader(open("config/whitelist.csv", 'rb'), delimiter=',')
   for row in whiteListReader:
 	whitelist.append(row[0])
-  #input([resources])
-  for csvfn in [resources]:
+  #input(resources)
+  for csvfn in resources:
 	resourcename = datafldr + inputfldr+ csvfn + "/" + index
 
 	indexReader = csv.reader(open(resourcename, 'rb'), delimiter=',')
@@ -169,10 +169,11 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 	for i, term in enumerate(allTerms):
 		ccwriter.writerow([term] + (map(lambda x: x in allTerms[term]['resourcenames'], [resources])))
 	writer = csv.writer(open(datafldr + "changedByPatternAll.csv", "write"))
+	changedByPattern.sort()
 	for term in changedByPattern:
 		if not isinWhitelist(term[0],whitelist):
 			writer.writerow(term)
 
 
 if __name__ == "__main__":
-  merge(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7], sys.argv[8])
+  merge(sys.argv[1], sys.argv[2], sys.argv[3:-5], sys.argv[-5], sys.argv[-4], sys.argv[-3], sys.argv[-2], sys.argv[-1])
