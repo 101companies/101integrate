@@ -5,6 +5,7 @@ data/perbook/RWH/contents/
 data/perbook/WBPP/contents/
 data/languages
 data/themes
+logs/
 *.pyc
 .idea/
 *.log
