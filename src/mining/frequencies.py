@@ -75,7 +75,7 @@ def main(resource, datapath, resourcepath, indexpath, indexfile, chaptersfile, c
   posRegex = re.compile("(.*)\\$\\$\\$")
   for l in listing:
 	if not l.startswith(".") and l in realcnames:
-		chapter = open(resourcebase + contentfldr + l).read()
+		chapter = open(resourcebase + contentfldr + l).read().decode("utf8")
 		rawChapters[l] = chapter
 		print "Stemming chapter in", l
 		stemmedChapter = " " + " ".join(map(lambda t: lmtzr.lemmatize(t).lower(), nltk.wordpunct_tokenize(chapter))) + " "
