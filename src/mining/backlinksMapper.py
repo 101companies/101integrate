@@ -59,6 +59,6 @@ for i, term in enumerate(distribution):
 		for s in secondary:
 			print s
 f = open(resourcebase + "backlinks.json", "write")
-f.write(json.dumps(termlinks), indent= "\t")
+f.write(json.dumps(termlinks, indent= "\t"))
 
 
