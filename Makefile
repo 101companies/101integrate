@@ -90,7 +90,7 @@ backlink:
 	cd src; $(MAKE) backlink LOGGING=$(LOGGING)
 
 coverageTables:
-	cd src $(MAKE) coverageTables
+	cd src; $(MAKE) coverageTables
 
 nonProfileFrequencies:
 	cd src; $(MAKE) nonProfileFrequencies
