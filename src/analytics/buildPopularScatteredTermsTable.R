@@ -2,26 +2,39 @@ library("xtable")
 
 dataRoot <- "../../data"
 
-topScatteredCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/topScattered.csv", sep=""))
-topScatteredPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/topScattered.csv", sep=""))
-topScatteredRhw <- read.csv(paste(dataRoot, "/perbook/", "RWH/topScattered.csv", sep=""))
-topScatteredLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/topScattered.csv", sep=""))
+books <- commandArgs(trailingOnly = TRUE)
 
-scatteredCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/scattered.csv", sep=""), sep=",")
-scatteredPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/scattered.csv", sep=""), sep=",")
-scatteredRwh <- read.csv(paste(dataRoot, "/perbook/", "RWH/scattered.csv", sep=""), sep=",")
-scatteredLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/scattered.csv", sep=""), sep=",")
+topScattered = list()  
+for (i in 1:length(books))
+    topScattered <- read.csv(paste(dataRoot, "/perbook/", books[i] , "/topScattered.csv", sep=""))
+#topScatteredCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/topScattered.csv", sep=""))
+#topScatteredPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/topScattered.csv", sep=""))
+#topScatteredRhw <- read.csv(paste(dataRoot, "/perbook/", "RWH/topScattered.csv", sep=""))
+#topScatteredLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/topScattered.csv", sep=""))
+
+scattered = list() 
+for (i in 1:length(books))
+    scattered <- read.csv(paste(dataRoot, "/perbook/", books[i],"/scattered.csv", sep=""), sep=",")
+#scatteredCraft <- read.csv(paste(dataRoot, "/perbook/", "Craft/scattered.csv", sep=""), sep=",")
+#scatteredPih <- read.csv(paste(dataRoot, "/perbook/", "PIH/scattered.csv", sep=""), sep=",")
+#scatteredRwh <- read.csv(paste(dataRoot, "/perbook/", "RWH/scattered.csv", sep=""), sep=",")
+#scatteredLyah <- read.csv(paste(dataRoot, "/perbook/", "LYAH/scattered.csv", sep=""), sep=",")
 
 unionTopFrequencies <- read.csv(paste(dataRoot, "/allbooks/", "unionTopFrequencies.csv", sep=""), sep=",", stringsAsFactors=FALSE)
 topFrequentTerms <- as.vector(unionTopFrequencies$Term)
 
-scatteredCraft <- subset(scatteredCraft, select=c(1,2))
-scatteredPih <- subset(scatteredPih, select=c(1,2))
-scatteredRwh <- subset(scatteredRwh, select=c(1,2))
-scatteredLyah <- subset(scatteredLyah, select=c(1,2))
+for (s in scattered)
+  s subset(s, subset=TRUE, select=c(1,2))
+#scatteredCraft <- subset(scatteredCraft, select=c(1,2))
+#scatteredPih <- subset(scatteredPih, select=c(1,2))
+#scatteredRwh <- subset(scatteredRwh, select=c(1,2))
+#scatteredLyah <- subset(scatteredLyah, select=c(1,2))
 
 #take union of scattered terms across all books
-all <- rbind(topScatteredCraft, topScatteredPih, topScatteredRhw, topScatteredLyah)
+all <- NULL
+for (top in topScattered)
+all <- rbind (all, top)
+#all <- rbind(topScatteredCraft, topScatteredPih, topScatteredRhw, topScatteredLyah)
 union <- data.frame(sort(unique(all$Term), decreasing = FALSE))
 names(union) <- c("Term")
 v <- data.frame(vector(mode = "integer",length(union$Term)))
@@ -32,12 +45,15 @@ union <- cbind(union, v)
 union <- cbind(union, v)
 union <- cbind(union, v)
 
-names(union) <- c("Term", "Craft", "PIH", "RWH", "LYAH")
+names(union) <- c("Term", books)
+#names(union) <- c("Term", "Craft", "PIH", "RWH", "LYAH")
 
-for(t in union$Term) if(t %in% as.vector(scatteredCraft$Term)) union[which(union$Term == t),2] <- scatteredCraft[which(scatteredCraft$Term == t),2]
-for(t in union$Term) if(t %in% as.vector(scatteredPih$Term)) union[which(union$Term == t),3] <- scatteredPih[which(scatteredPih$Term == t),2]
-for(t in union$Term) if(t %in% as.vector(scatteredRwh$Term)) union[which(union$Term == t),4] <- scatteredRwh[which(scatteredRwh$Term == t),2]
-for(t in union$Term) if(t %in% as.vector(scatteredLyah$Term)) union[which(union$Term == t),5] <- scatteredLyah[which(scatteredLyah$Term == t),2]
+for (s in scattered)
+    for(t in union$Term) if(t %in% as.vector(s$Term)) union[which(union$Term == t),2] <- s[which(s$Term == t),2]
+#for(t in union$Term) if(t %in% as.vector(scatteredCraft$Term)) union[which(union$Term == t),2] <- scatteredCraft[which(scatteredCraft$Term == t),2]
+#for(t in union$Term) if(t %in% as.vector(scatteredPih$Term)) union[which(union$Term == t),3] <- scatteredPih[which(scatteredPih$Term == t),2]
+#for(t in union$Term) if(t %in% as.vector(scatteredRwh$Term)) union[which(union$Term == t),4] <- scatteredRwh[which(scatteredRwh$Term == t),2]
+#for(t in union$Term) if(t %in% as.vector(scatteredLyah$Term)) union[which(union$Term == t),5] <- scatteredLyah[which(scatteredLyah$Term == t),2]
 
 write.csv(union, paste(dataRoot, "/allbooks/", "unionTopScatterness.csv", sep=""))
 
@@ -53,17 +69,24 @@ write.csv(union, paste(dataRoot, "/allbooks/", "unionTopScatterness.csv", sep=""
 #* big circle = greater or above median
 #* biggest circle = in the top-n
 
-qCraft <- as.vector(quantile(union$Craft))
-qCraftMedian = qCraft[3]
+qBook = list() 
+qBookMedian <- book
+for (i in 1:length(books)){
+qBook[i] <- as.vector(quantile(union$(books[i])))
+qBookMedian[i] = qBook[i][3]
+}
 
-qRWH   <- as.vector(quantile(union$RWH))
-qRWHMedian <- qRWH[3]
+#qCraft <- as.vector(quantile(union$Craft))
+#qCraftMedian = qCraft[3]
 
-qPIH   <- as.vector(quantile(union$PIH))
-qPIHMedian <- qPIH[3]
+#qRWH   <- as.vector(quantile(union$RWH))
+#qRWHMedian <- qRWH[3]
 
-qLYAH  <- as.vector(quantile(union$LYAH))
-qLYAHMedian <- qLYAH[3]
+#qPIH   <- as.vector(quantile(union$PIH))
+#qPIHMedian <- qPIH[3]
+
+#qLYAH  <- as.vector(quantile(union$LYAH))
+#qLYAHMedian <- qLYAH[3]
 
 toTex <- function(column, M){
   r <- vector()
@@ -97,17 +120,24 @@ checkTerms <- function(column, topFrequentTerms){
 
 Y <- checkTerms(union$Term, topFrequentTerms)
 
-craftColumn <- toTex(union$Craf, qCraftMedian)
-pihColumn <- toTex(union$PIH, qPIHMedian)
-rwhColumn <- toTex(union$RWH, qRWHMedian)
-lyahColumn <- toTex(union$LYAH, qLYAHMedian)
+column = list() 
+for (i in 1:length(books))
+  column[i] <- toTex(union$(books[i]), qBookMedian[i])
+#craftColumn <- toTex(union$Craft, qCraftMedian)
+#pihColumn <- toTex(union$PIH, qPIHMedian)
+#rwhColumn <- toTex(union$RWH, qRWHMedian)
+#lyahColumn <- toTex(union$LYAH, qLYAHMedian)
 
-res <- cbind(Y, data.frame(craftColumn))
-res <- cbind(res, data.frame(pihColumn))
-res <- cbind(res, data.frame(rwhColumn))
-res <- cbind(res, data.frame(lyahColumn))
+res <- cbind(Y)
+for (c in column)
+  res <- cbind(res, data.frame(c))
+#res <- cbind(Y, data.frame(craftColumn))
+#res <- cbind(res, data.frame(pihColumn))
+#res <- cbind(res, data.frame(rwhColumn))
+#res <- cbind(res, data.frame(lyahColumn))
 
-names(res) <- c("Term", "Craft", "PIH", "RWH", "LYAH")
+names(res) <- c("Term", books)
+#names(res) <- c("Term", "Craft", "PIH", "RWH", "LYAH")
 
 #print(xtable(res, label=paste('F:unionTopScatternessVisual', sep = ""), 
 #             caption="Union of TOP 30 scattered terms from the books. empty cell - no occurrence in the given book.

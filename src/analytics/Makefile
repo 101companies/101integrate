@@ -19,8 +19,8 @@ frequencies:
 	done
 
 popular:	
-	R < buildPopularTermsTable.R --no-save
-	R < buildPopularScatteredTermsTable.R --no-save
+	R < buildPopularTermsTable.R --no-save --args ${ALL_BOOKS}
+	R < buildPopularScatteredTermsTable.R --no-save --args ${ALL_BOOKS}
 	R < rank.R --no-save
 
 tex:
