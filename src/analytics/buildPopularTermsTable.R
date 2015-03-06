@@ -37,10 +37,12 @@ names(union) <- c("Term")
 v <- data.frame(vector(mode = "integer",length(union$Term)),stringsAsFactors = FALSE) 
 
 #initialize columns per book with default values
-union <- cbind(union, v)
-union <- cbind(union, v)
-union <- cbind(union, v)
-union <- cbind(union, v)
+for (i in 1:kength(books)) union <- cbind(union, v)
+#union <- cbind(union, v)
+#union <- cbind(union, v)
+#union <- cbind(union, v)
+#union <- cbind(union, v)
+
 names(union) <- c("Term", books)
 #names(union) <- c("Term", "Craft", "PIH", "RWH", "LYAH")
 row.names(union) <- seq(nrow(union))
