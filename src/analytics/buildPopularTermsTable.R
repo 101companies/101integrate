@@ -29,8 +29,8 @@ for (i in 1:length(books))
 
 #take union of TOP terms across all books
 all <- NULL
-for (topF in topFrequency)
-      all <- rbind(all, topF)
+for (topF in topFrequency) all <- rbind(all, topF)
+rownames(all) <- books
 #all <- rbind(topFrequencyCraft, topFrequencyLyah, topFrequencyPih, topFrequencyRwh)
 union <- data.frame(sort(unique(all$Term), decreasing = FALSE))
 names(union) <- c("Term")
