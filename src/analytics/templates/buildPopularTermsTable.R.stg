@@ -1,0 +1,110 @@
+delimiters "<", ">"
+
+topFrequency(book) ::= "topFrequency<book>"
+frequency(book) ::= "frequency<book>"
+quotedBook(book) ::= "<book>"
+
+topFrequencies(books,seperator)	::= <trunc(books):topFrequecy(<it>) <seperator>> <last(books):topFrequency>
+frequencies(books,seperator) 	::= <trunc(books):frequency(<it>) <seperator>> <last(books):frequency>
+quotedBooks(books,seperator) 	::= <trunc(books):quotedBook(<it>) <seperator>> <last(books):quotedBook>
+
+template(books)  ::=
+<<
+library("xtable")
+
+dataRoot \<- "../../data"
+
+<books:
+{book|
+<topFrequency(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)>,"/topFrequency.csv", sep=""))
+
+<frequency(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)>,"/frequenciesMerged.csv", sep=""), sep=";")
+
+<frequency(book)> \<- subset(<frequency(book)>, select=c(0,3))
+}>
+
+#take union of TOP terms across all books
+all \<- rbind(<topFrequencies(books,",")>)
+union \<- data.frame(sort(unique(all$Term), decreasing = FALSE))
+names(union) \<- c("Term")
+v \<- data.frame(vector(mode = "integer",length(union$Term)),stringsAsFactors = FALSE) 
+
+#initialize columns per book with default values
+<books:{book|
+union \<- cbind(union, v)
+}>
+
+names(union) \<- c("Term", <quotedBooks(books,",")>)
+row.names(union) \<- seq(nrow(union))
+union$Term \<- as.character(union$Term)
+union \<- union[with(union, order(union$Term)),]
+
+<books:
+{book|
+for(t in union$Term) if(t %in% as.vector(<frequency(book)>$Term)) union[which(union$Term == t),2] \<- <frequency(book)>[which(<frequency(book)>$Term == t),2]
+}>
+
+write.csv(union, paste(dataRoot, "/allbooks/", "/unionTopFrequencies.csv", sep=""))
+
+#print(xtable(union, label=paste('F:unionTopFrequencies', sep = ""), caption="Union of TOP 30 frequent terms from the books"),
+#      file="unionTopFrequencies.tex", scalebox=0.7,
+#      include.rownames=FALSE,  
+#      rotate.colnames=FALSE)
+
+#- One column per book showing popularity per book in a percentile-based manner:
+#* empty cell = no occurrence in the given book
+#* dot = frequency is 1
+#* small circle = below median but larger than 1
+#* big circle = greater or above median
+#* biggest circle = in the top-n
+
+<books:
+{book|
+q<book> \<- as.vector(quantile(union$<book>))
+q<book>Median = q<book>[3]
+}>
+
+toTex \<- function(column, M){
+  r \<- vector()
+  topN \<- sort(as.vector(column), decreasing = TRUE)[5]
+  for(v in column){
+    c \<- as.integer(v)
+    if(c == 0){
+      r \<- c(r, "\\emptyDot{}")
+    } else if(c == 1){
+      r \<- c(r, "\\oneDot{}")
+    } else if ((c < M) & (c > 0)){
+      r \<- c(r, "\\belowMdot{}")
+    } else if ((c >= M) & (c < topN)) {
+      r \<- c(r, "\\greaterMdot")
+    } else r \<- c(r, "\\topNdot{}")
+  }
+ r
+}
+
+<books:
+{book|
+<book>Column \<- toTex(union$<book>, q<book>Median)
+}>
+
+res \<- cbind(union$Term)
+<books:
+{book|
+res \<- cbind(res, data.frame(<book>Column))
+}>
+
+names(res) \<- c("Term",<quotedBooks(book,",">)
+
+#print(xtable(res, label=paste('F:unionTopFrequenciesVisual', sep = ""), 
+#             caption="Union of TOP 30 frequent terms from the books. empty cell - no occurrence in the given book.
+#        \\oneDot{} -- frequency is 1.
+#        \\belowMdot{} -- below median but larger than 1.
+#        \\greaterMdot{} -- greater or above median.
+#        \\ensuremath{\\topNdot{}} -- in the top 5.", latex.environment="center"),
+#      file="unionTopFrequenciesVisual.tex",
+#      sanitize.text.function = function(x){x},
+#      scalebox=0.8, include.rownames=FALSE,  
+#      rotate.colnames=FALSE)
+
+write.csv(res, paste(dataRoot, "/allbooks/", "unionTopFrequenciesVisual.csv", sep=""), row.names=FALSE)
+>>
