@@ -1,12 +1,23 @@
 delimiters "<", ">"
 
-topFrequency(book) ::= "topFrequency<book>"
-frequency(book) ::= "frequency<book>"
-quotedBook(book) ::= "<book>"
+topFrequency(book) ::= << "topFrequency<book>" >>
+frequency(book) ::= << "frequency<book>" >>
+quotedBook(book) ::= << "<book>" >>
 
-topFrequencies(books,seperator)	::= <trunc(books):topFrequecy(<it>) <seperator>> <last(books):topFrequency>
-frequencies(books,seperator) 	::= <trunc(books):frequency(<it>) <seperator>> <last(books):frequency>
-quotedBooks(books,seperator) 	::= <trunc(books):quotedBook(<it>) <seperator>> <last(books):quotedBook>
+topFrequencies(books,seperator) ::= 
+<< 
+<trunc(books):{topFrequecy(<it>) <seperator>}> <last(books):topFrequency>
+>>
+
+frequencies(books,seperator) ::= 
+<<
+<trunc(books):{frequency(<it>) <seperator>}> <last(books):frequency> 
+>>
+
+quotedBooks(books,seperator) ::= 
+<<
+<trunc(books):{quotedBook(<it>) <seperator>}> <last(books):quotedBook>
+>>
 
 template(books)  ::=
 <<
