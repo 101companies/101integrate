@@ -7,13 +7,13 @@ import sys
 
 
 
-def main(infile,books):
+def main(infile, args):
 	# Use the constructor that accepts a Reader
 	group = stringtemplate.StringTemplateGroup(file=(open(infile, "r")))
 	#StringTemplateGroup.registerGroupLoader(CommonGroupLoader(infile,ErrorManager.getStringTemplateErrorListener()))
 	#group = StringTemplateGroup.loadGroup() 
 	t = group.getInstanceOf("template")
-	t["books"]=books
+	t["args"]=args
 	print str(t)
 
 if __name__ == '__main__':

@@ -1,5 +1,8 @@
 delimiters "<", ">"
 
+template(args) ::= <<buildPopularTermsTable(args)>>
+
+
 topFrequency(book) ::= << "topFrequency<book>" >>
 frequency(book) ::= << "frequency<book>" >>
 quotedBook(book) ::= << "<book>" >>
@@ -19,7 +22,7 @@ quotedBooks(books,seperator) ::=
 <trunc(books):{quotedBook(<it>) <seperator>}> <last(books):quotedBook>
 >>
 
-template(books)  ::=
+buildPopularTermsTable(books)  ::=
 <<
 library("xtable")
 
