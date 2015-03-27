@@ -7,19 +7,30 @@ INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
 nope:
 	@echo Please, read the README.md.
 	
-	
+#Complete Integration of resources	
 run:
 ifeq ($(LOGGING),ON)
 	mkdir -p logs
-	$(MAKE) download-books 2>&1	| tee logs/downloadBooks.log
+	$(MAKE) download-books BOOKS=$(BOOKS) 2>&1 | tee logs/downloadBooks.log
 	$(MAKE) mine           LOGGING=ON
+	$(MAKE) quickrun       LOGGING=ON
+else
+	$(MAKE) download-books BOOKS=$(BOOKS)
+	$(MAKE) mine
+	$(MAKE) quickrun
+endif
+
+#shorter run (skipping resource mining, only use cached Data)
+quickrun:
+ifeq ($(LOGGING),ON)
+	mkdir -p logs
+	$(MAKE) bootstrap
 	$(MAKE) from-cache     2>&1	| tee logs/fromCache.log
 	$(MAKE) analyze        LOGGING=ON
 	$(MAKE) backlink       LOGGING=ON
 	$(MAKE) integrate      LOGGING=ON
 else
-	$(MAKE) download-books
-	$(MAKE) mine
+	$(MAKE) bootstrap
 	$(MAKE) from-cache
 	$(MAKE) analyze
 	$(MAKE) backlink
