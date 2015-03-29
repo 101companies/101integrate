@@ -1,29 +1,33 @@
 delimiters "<", ">"
 
-template(args) ::= <<buildPopularTermsTable(args)>>
-
-
-topFrequency(book) ::= << "topFrequency<book>" >>
-frequency(book) ::= << "frequency<book>" >>
-quotedBook(book) ::= << "<book>" >>
-
-topFrequencies(books,seperator) ::= 
-<< 
-<trunc(books):{topFrequecy(<it>) <seperator>}> <last(books):topFrequency>
+template(args) ::=<<
+buildPopularTermsTable(args)
 >>
 
-frequencies(books,seperator) ::= 
-<<
-<trunc(books):{frequency(<it>) <seperator>}> <last(books):frequency> 
+
+topFrequency(book) ::=<<
+"topFrequency<book>"
+>>
+frequency(book) ::=<<
+"frequency<book>"
+>>
+quotedBook(book) ::=<<
+"<book>"
 >>
 
-quotedBooks(books,seperator) ::= 
-<<
-<trunc(books):{quotedBook(<it>) <seperator>}> <last(books):quotedBook>
+topFrequencies(books,sep) ::=<< 
+<books:{x|<topFrequency(x)>}; separator="<sep>">
 >>
 
-buildPopularTermsTable(books)  ::=
-<<
+frequencies(books,sep) ::=<<
+<books:{x|<frequency(x)>}; separator="<sep>">
+>>
+
+quotedBooks(books,sep) ::=<<
+<books:{x|<quotedBook(x)>}; separator="<sep>">
+>>
+
+buildPopularTermsTable(books)  ::=<<
 library("xtable")
 
 dataRoot \<- "../../data"
@@ -39,9 +43,9 @@ dataRoot \<- "../../data"
 
 #take union of TOP terms across all books
 all \<- rbind(<topFrequencies(books,",")>)
-union \<- data.frame(sort(unique(all$Term), decreasing = FALSE))
+union \<- data.frame(sort(unique(all\$Term), decreasing = FALSE))
 names(union) \<- c("Term")
-v \<- data.frame(vector(mode = "integer",length(union$Term)),stringsAsFactors = FALSE) 
+v \<- data.frame(vector(mode = "integer",length(union\$Term)),stringsAsFactors = FALSE) 
 
 #initialize columns per book with default values
 <books:{book|
@@ -50,12 +54,12 @@ union \<- cbind(union, v)
 
 names(union) \<- c("Term", <quotedBooks(books,",")>)
 row.names(union) \<- seq(nrow(union))
-union$Term \<- as.character(union$Term)
-union \<- union[with(union, order(union$Term)),]
+union\$Term \<- as.character(union\$Term)
+union \<- union[with(union, order(union\$Term)),]
 
 <books:
 {book|
-for(t in union$Term) if(t %in% as.vector(<frequency(book)>$Term)) union[which(union$Term == t),2] \<- <frequency(book)>[which(<frequency(book)>$Term == t),2]
+for(t in union\$Term) if(t %in% as.vector(<frequency(book)>\$Term)) union[which(union\$Term == t),2] \<- <frequency(book)>[which(<frequency(book)>\$Term == t),2]
 }>
 
 write.csv(union, paste(dataRoot, "/allbooks/", "/unionTopFrequencies.csv", sep=""))
@@ -74,7 +78,7 @@ write.csv(union, paste(dataRoot, "/allbooks/", "/unionTopFrequencies.csv", sep="
 
 <books:
 {book|
-q<book> \<- as.vector(quantile(union$<book>))
+q<book> \<- as.vector(quantile(union\$<book>))
 q<book>Median = q<book>[3]
 }>
 
@@ -98,10 +102,10 @@ toTex \<- function(column, M){
 
 <books:
 {book|
-<book>Column \<- toTex(union$<book>, q<book>Median)
+<book>Column \<- toTex(union\$<book>, q<book>Median)
 }>
 
-res \<- cbind(union$Term)
+res \<- cbind(union\$Term)
 <books:
 {book|
 res \<- cbind(res, data.frame(<book>Column))
