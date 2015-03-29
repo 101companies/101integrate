@@ -7,14 +7,18 @@ import sys
 
 
 
-def main(infile, args):
+def main(infile,outfile, args):
 	# Use the constructor that accepts a Reader
 	group = stringtemplate.StringTemplateGroup(file=(open(infile, "r")))
 	#StringTemplateGroup.registerGroupLoader(CommonGroupLoader(infile,ErrorManager.getStringTemplateErrorListener()))
 	#group = StringTemplateGroup.loadGroup() 
 	t = group.getInstanceOf("template")
 	t["args"]=args
-	print str(t)
+	out = str(t)
+	print out
+	writer = open(outfile, "w")
+	writer.write(out)
+	writer.close()
 
 if __name__ == '__main__':
-	main(sys.argv[1],sys.argv[2:])
+	main(sys.argv[1],sys.argv[2],sys.argv[3:])
