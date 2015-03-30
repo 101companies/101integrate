@@ -1,5 +1,8 @@
 include Makefile.vars
 
+#Programs
+PYTHON_PACKAGE_INSTALLER = easy_install
+
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
 
@@ -63,17 +66,17 @@ download-googledocs:
 # Get Python and R tools
 download-deps:
 	cd src/analytics; sudo R < dependencies.R --no-save
-	sudo easy_install BeautifulSoup
-	sudo easy_install numpy
-	sudo easy_install nltk
-	sudo easy_install inflect
-	sudo easy_install html2text
-	sudo easy_install gdata
-	sudo easy_install jinja2
-	sudo easy_install mako
-	sudo easy_install asq
-	sudo easy_install simplejson
-	sudo easy_install sortedcontainers
+	sudo $(PYTHON_PACKAGE_INSTALLER) BeautifulSoup
+	sudo $(PYTHON_PACKAGE_INSTALLER) numpy
+	sudo $(PYTHON_PACKAGE_INSTALLER) nltk
+	sudo $(PYTHON_PACKAGE_INSTALLER) inflect
+	sudo $(PYTHON_PACKAGE_INSTALLER) html2text
+	sudo $(PYTHON_PACKAGE_INSTALLER) gdata
+	sudo $(PYTHON_PACKAGE_INSTALLER) jinja2
+	sudo $(PYTHON_PACKAGE_INSTALLER) mako
+	sudo $(PYTHON_PACKAGE_INSTALLER) asq
+	sudo $(PYTHON_PACKAGE_INSTALLER) simplejson
+	sudo $(PYTHON_PACKAGE_INSTALLER) sortedcontainers
 	$(PYTHON) -m nltk.downloader all
 
 bootstrap:
