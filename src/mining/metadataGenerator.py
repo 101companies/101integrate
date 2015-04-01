@@ -36,7 +36,7 @@ def createAcceptor(urlBase, ext):
     regex=""
     for url in urlBase.split("/"):
 	regex ="("+regex+"("+url+"/))?"
-    regex += "((-|\w)*(/)?){1,3}"+ext+"($|\Z)" #\Z and $ indicates end of String
+    regex += "((_|-|\w)*(/)?){1,3}"+ext+"($|\Z)" #\Z and $ indicates end of String
     regex= "^(\/)?"+ regex.replace("/","\/").replace(".","\.") # escaping chars  ; ^indicates beginning of string
     return re.compile(regex)
 
@@ -44,7 +44,7 @@ def createAcceptor(urlBase, ext):
 ##
 # @param	url 	the url which links are to be extracted
 # @param	ext 	the file extension for the extracted links
-# @return	an Array of Arrays containing the the link and its descriptionackage
+# @return	an Array of Arrays containing the the link and its description
 def getLinks(url,ext):
 	    opener = urllib2.build_opener()
 	    opener.addheaders = [('User-agent', 'Mozilla/5.0')]
@@ -79,10 +79,9 @@ def cleanUrl(baseUrl, url):
 			cleaned = baseUrl +"/"+ url.replace(baseUrl,"").replace(matchingStr,"")
 			cleaned = cleaned.replace("//","/").replace(":/","://")
 			cleanedUrls+=cleaned
-	else:
-		if re.search("\/\/((\w|-|_|\.)+\/)+\/",url) is None:
+	elif (re.search("\/\/((\w|-|_|\.)+\/)+\/",url) is None) and (baseUrl in url):
 			cleanedUrls+=url
-	return cleanedUrls
+        return cleanedUrls
 
 
 ##
@@ -94,14 +93,14 @@ def generateMetadata(links, url):
   print "Processing links"
   for l in links:
 		print l
-		temp = l[0].split("/")
-		filename = temp[len(temp)-1]+".txt"
+		filename = (l[0].split("/"))[-1]+".txt"
 		if isRelative(l[0]):
-			if(url[len(url)-1] is not "/"):
+			if not (url[-1] == "/"):
 				url+="/"
-			writeUrl= cleanUrl(url, url+l[0])
+			writeUrl = cleanUrl(url, url+l[0])
 			if writeUrl:
 				chapters.append({"file": filename ,"title": l[1], "url":writeUrl})
+				print chapters[-1]
 			else:
 				print " \t rejected"
 		else:
