@@ -1,7 +1,7 @@
 delimiters "<", ">"
 
 template(args) ::=<<
-buildPopularTermsTable(args)
+<buildPopularTermsTable(args)>
 >>
 
 
@@ -82,23 +82,8 @@ q<book> \<- as.vector(quantile(union\$<book>))
 q<book>Median = q<book>[3]
 }>
 
-toTex \<- function(column, M){
-  r \<- vector()
-  topN \<- sort(as.vector(column), decreasing = TRUE)[5]
-  for(v in column){
-    c \<- as.integer(v)
-    if(c == 0){
-      r \<- c(r, "\\emptyDot{}")
-    } else if(c == 1){
-      r \<- c(r, "\\oneDot{}")
-    } else if ((c < M) & (c > 0)){
-      r \<- c(r, "\\belowMdot{}")
-    } else if ((c >= M) & (c < topN)) {
-      r \<- c(r, "\\greaterMdot")
-    } else r \<- c(r, "\\topNdot{}")
-  }
- r
-}
+
+<toTexEsc()>
 
 <books:
 {book|
@@ -106,12 +91,16 @@ toTex \<- function(column, M){
 }>
 
 res \<- cbind(union\$Term)
+
 <books:
 {book|
 res \<- cbind(res, data.frame(<book>Column))
 }>
 
-names(res) \<- c("Term",<quotedBooks(book,",">)
+
+names(res) \<- c("Term",<quotedBooks(book,",")>)
+
+
 
 #print(xtable(res, label=paste('F:unionTopFrequenciesVisual', sep = ""), 
 #             caption="Union of TOP 30 frequent terms from the books. empty cell - no occurrence in the given book.
@@ -125,4 +114,50 @@ names(res) \<- c("Term",<quotedBooks(book,",">)
 #      rotate.colnames=FALSE)
 
 write.csv(res, paste(dataRoot, "/allbooks/", "unionTopFrequenciesVisual.csv", sep=""), row.names=FALSE)
+>>
+
+toTex() ::= <<
+\toTex \<- function(column, M){
+  r \<- vector()
+  topN \<- sort(as.vector(column), decreasing = TRUE)[5]
+  for(v in column){
+    c \<- as.integer(v)
+    if
+      (c == 0){
+	r \<- c(r, "\\emptyDot{}")
+    } else if
+      (c == 1){
+	r \<- c(r, "\\oneDot{}")
+    } else if 
+      ((c < M) & (c > 0)){
+	r \<- c(r, "\\belowMdot{}")
+    } else if 
+      ((c >= M) & (c < topN)) {
+	 r \<- c(r, "\\greaterMdot")
+    } else { 
+	 r \<- c(r, "\\topNdot{}") 
+    }
+  }
+ r
+}
+>>
+
+toTexEsc() ::= <<
+\toTex </u003C></u002D> function</u0028>column</u002C> M</u0029></u007B>
+  r </u003C></u002D> vector</u0028></u0029>
+  topN </u003C></u002D> sort</u0028>as.vector</u0028>column</u0029></u002C> decreasing </u003D> TRUE</u0029></u005B>5</u005D>
+  for</u0028>v in column</u0029></u007B>
+    c </u003C></u002D> as.integer</u0028>v</u0029>
+    if</u0028>c </u003D></u003D> 0</u0029></u007B>
+      r </u003C></u002D> c</u0028>r</u002C> </u0022></u005C></u005C>emptyDot</u007B></u007D></u0022></u0029>
+    </u007D> else if</u0028>c </u003D></u003D> 1</u0029></u007B>
+      r </u003C></u002D> c</u0028>r</u002C> </u0022></u005C></u005C>oneDot</u007B></u007D></u0022></u0029>
+    </u007D> else if </u0028></u0028>c </u003C> M</u0029> & </u0028>c </u003E> 0</u0029></u0029></u007B>
+      r </u003C></u002D> c</u0028>r</u002C> </u0022></u005C></u005C>belowMdot</u007B></u007D></u0022></u0029>
+    </u007D> else if </u0028></u0028>c </u003E></u003D> M</u0029> & </u0028>c </u003E> topN</u0029></u0029> </u007B>
+      r </u003C></u002D> c</u0028>r</u002C> </u0022></u005C></u005C>greaterMdot</u0022></u0029>
+    </u007D> else r </u003C></u002D> c</u0028>r</u002C> </u0022></u005C></u005C>topNdot</u007B></u007D></u0022></u0029>
+  </u007D>
+ r
+</u007D>
 >>
