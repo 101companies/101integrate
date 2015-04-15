@@ -1,5 +1,3 @@
-delimiters "<", ">"
-
 template(args) ::=<<
 <buildPopularTermsTable(args)>
 >>
@@ -16,15 +14,15 @@ quotedBook(book) ::=<<
 >>
 
 topFrequencies(books,sep) ::=<< 
-<books:{x|<topFrequency(x)>}; separator="<sep>">
+<books:{x|<topFrequency(x)>}; separator=",">
 >>
 
 frequencies(books,sep) ::=<<
-<books:{x|<frequency(x)>}; separator="<sep>">
+<books:{x|<frequency(x)>}; separator=",">
 >>
 
 quotedBooks(books,sep) ::=<<
-<books:{x|<quotedBook(x)>}; separator="<sep>">
+<books:{x|<quotedBook(x)>}; separator=",">
 >>
 
 buildPopularTermsTable(books)  ::=<<
@@ -39,6 +37,7 @@ dataRoot \<- "../../data"
 <frequency(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)>,"/frequenciesMerged.csv", sep=""), sep=";")
 
 <frequency(book)> \<- subset(<frequency(book)>, select=c(0,3))
+
 }>
 
 #take union of TOP terms across all books
