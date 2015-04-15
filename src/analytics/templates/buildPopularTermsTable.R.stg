@@ -129,10 +129,10 @@ toTex() ::= <<
       (c == 1){
 	r \<- c(r, "\\oneDot{}")
     } else if 
-      ((c < M) & (c > 0)){
+      ((c \< M) & (c \> 0)){
 	r \<- c(r, "\\belowMdot{}")
     } else if 
-      ((c >= M) & (c < topN)) {
+      ((c \>= M) & (c \< topN)) {
 	 r \<- c(r, "\\greaterMdot")
     } else { 
 	 r \<- c(r, "\\topNdot{}") 
