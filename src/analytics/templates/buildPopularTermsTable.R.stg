@@ -1,3 +1,5 @@
+group buildPopularTermsTable;
+
 template(args) ::=<<
 <buildPopularTermsTable(args)>
 >>
@@ -6,22 +8,24 @@ template(args) ::=<<
 topFrequency(book) ::=<<
 "topFrequency<book>"
 >>
+
 frequency(book) ::=<<
 "frequency<book>"
 >>
+
 quotedBook(book) ::=<<
 "<book>"
 >>
 
-topFrequencies(books,sep) ::=<< 
+topFrequencies(books) ::=<< 
 <books:{x|<topFrequency(x)>}; separator=",">
 >>
 
-frequencies(books,sep) ::=<<
+frequencies(books) ::=<<
 <books:{x|<frequency(x)>}; separator=",">
 >>
 
-quotedBooks(books,sep) ::=<<
+quotedBooks(books) ::=<<
 <books:{x|<quotedBook(x)>}; separator=",">
 >>
 
@@ -33,15 +37,13 @@ dataRoot \<- "../../data"
 <books:
 {book|
 <topFrequency(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)>,"/topFrequency.csv", sep=""))
-
 <frequency(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)>,"/frequenciesMerged.csv", sep=""), sep=";")
-
 <frequency(book)> \<- subset(<frequency(book)>, select=c(0,3))
 
 }>
 
 #take union of TOP terms across all books
-all \<- rbind(<topFrequencies(books,",")>)
+all \<- rbind(<topFrequencies(books)>)
 union \<- data.frame(sort(unique(all$Term), decreasing = FALSE))
 names(union) \<- c("Term")
 v \<- data.frame(vector(mode = "integer",length(union$Term)),stringsAsFactors = FALSE) 
@@ -51,7 +53,7 @@ v \<- data.frame(vector(mode = "integer",length(union$Term)),stringsAsFactors = 
 union \<- cbind(union, v)
 }>
 
-names(union) \<- c("Term", <quotedBooks(books,",")>)
+names(union) \<- c("Term", <quotedBooks(books)>)
 row.names(union) \<- seq(nrow(union))
 union$Term \<- as.character(union$Term)
 union \<- union[with(union, order(union$Term)),]
@@ -97,7 +99,7 @@ res \<- cbind(res, data.frame(<book>Column))
 }>
 
 
-names(res) \<- c("Term",<quotedBooks(books,",")>)
+names(res) \<- c("Term",<quotedBooks(books)>)
 
 
 
