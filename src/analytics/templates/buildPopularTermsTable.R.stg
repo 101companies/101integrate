@@ -80,7 +80,7 @@ write.csv(union, paste(dataRoot, "/allbooks/", "/unionTopFrequencies.csv", sep="
 <books:
 {book|
 q<book> \<- as.vector(quantile(union$<book>))
-q<book>Median = q<book>[3]
+q<book>Median \<- q<book>[3]
 }>
 
 
@@ -118,7 +118,7 @@ write.csv(res, paste(dataRoot, "/allbooks/", "unionTopFrequenciesVisual.csv", se
 >>
 
 toTex() ::= <<
-\toTex \<- function(column, M){
+toTex \<- function(column, M){
   r \<- vector()
   topN \<- sort(as.vector(column), decreasing = TRUE)[5]
   for(v in column){
