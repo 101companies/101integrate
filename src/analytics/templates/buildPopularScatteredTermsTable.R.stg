@@ -93,14 +93,14 @@ toTex \<- function(column, M){
   for(v in column){
     c \<- as.integer(v)
     if(c == 0){
-      r \<- c(r, "\\emptyDot{}")
+      r \<- c(r, "<\u005C><\u005C>emptyDot{}")
     } else if(c == 1){
-      r \<- c(r, "\\oneDot{}")
+      r \<- c(r, "<\u005C><\u005C>oneDot{}")
     } else if ((c \< M) & (c > 0)){
-      r \<- c(r, "\\belowMdot{}")
+      r \<- c(r, "<\u005C><\u005C>belowMdot{}")
     } else if ((c >= M) & (c \< topN)) {
-      r \<- c(r, "\\greaterMdot")
-    } else r \<- c(r, "\\topNdot{}")
+      r \<- c(r, "<\u005C><\u005C>greaterMdot")
+    } else r \<- c(r, "<\u005C><\u005C>topNdot{}")
   }
   r
 }
@@ -109,7 +109,7 @@ checkTerms \<- function(column, topFrequentTerms){
   v \<- vector()
   for(t in as.vector(column)){
     if(t %in% topFrequentTerms){
-      v \<- c(v, paste("\\textbf{", t, "}", sep=""))
+      v \<- c(v, paste("<\u005C><\u005C>textbf{", t, "}", sep=""))
     } else {
       v \<- c(v, t)
     }
