@@ -1,0 +1,149 @@
+group buildPopularScatteredTermsTable;
+
+template(args) ::=<<
+<buildPopularScatteredTermsTable(args)>
+>>
+
+
+topScattered(book) ::=<<
+topScattered<book>
+>>
+
+scattered(book) ::=<<
+scattered<book>
+>>
+
+quotedBook(book) ::=<<
+"<book>"
+>>
+
+topScattereds(books) ::=<< 
+<books:{x|<topScattered(x)>}; separator=",">
+>>
+
+scattereds(books) ::=<<
+<books:{x|<scattered(x)>}; separator=",">
+>>
+
+quotedBooks(books) ::=<<
+<books:{x|<quotedBook(x)>}; separator=",">
+>>
+
+buildPopularScatteredTermsTable(books)  ::=<<
+library("xtable")
+
+dataRoot \<- "../../data"
+
+<books:
+{book|
+<topScattered(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)> , "/topScattered.csv", sep=""))
+<scattered(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)> , "/scattered.csv", sep=""), sep=",")
+}>
+
+unionTopFrequencies \<- read.csv(paste(dataRoot, "/allbooks/", "unionTopFrequencies.csv", sep=""), sep=",", stringsAsFactors=FALSE)
+topFrequentTerms \<- as.vector(unionTopFrequencies$Term)
+
+<books:
+{book|
+<scattered(book)>  \<- subset(<scattered(book)> , select=c(1,2))
+}>
+
+#take union of scattered terms across all books
+all \<- rbind(<topScattereds(books)>)
+union \<- data.frame(sort(unique(all$Term), decreasing = FALSE))
+names(union) \<- c("Term")
+v \<- data.frame(vector(mode = "integer",length(union$Term)))
+
+#initialize columns per book with default values
+<books:
+{book|
+union \<- cbind(union, v)
+}>
+
+names(union) \<- c("Term", <quotedBooks(books)>)
+
+<books:
+{book|
+for(t in union$Term) if(t %in% as.vector(<scattered(book)>$Term)) union[which(union$Term == t),2] \<- <scattered(book)>[which(<scattered(book)>$Term == t),2]
+}>
+
+write.csv(union, paste(dataRoot, "/allbooks/", "unionTopScatterness.csv", sep=""))
+
+#print(xtable(union, caption="Union of the terms scattered more than over 80\\% of the chapters"),
+#      file="unionTopScatterness.tex",
+#      include.rownames=FALSE,  
+#      rotate.colnames=FALSE)
+
+#- One column per book showing popularity per book in a percentile-based manner:
+#* empty cell = no occurrence in the given book
+#* dot = frequency is 1
+#* small circle = below median but larger than 1
+#* big circle = greater or above median
+#* biggest circle = in the top-n
+
+<books:
+{book|
+q<book> \<- as.vector(quantile(union$<book>))
+q<book>Median = q<book>[3]
+}>
+
+toTex \<- function(column, M){
+  r \<- vector()
+  topN \<- sort(as.vector(column), decreasing = TRUE)[5]
+  for(v in column){
+    c \<- as.integer(v)
+    if(c == 0){
+      r \<- c(r, "\\emptyDot{}")
+    } else if(c == 1){
+      r \<- c(r, "\\oneDot{}")
+    } else if ((c \< M) & (c > 0)){
+      r \<- c(r, "\\belowMdot{}")
+    } else if ((c >= M) & (c \< topN)) {
+      r \<- c(r, "\\greaterMdot")
+    } else r \<- c(r, "\\topNdot{}")
+  }
+  r
+}
+
+checkTerms \<- function(column, topFrequentTerms){
+  v \<- vector()
+  for(t in as.vector(column)){
+    if(t %in% topFrequentTerms){
+      v \<- c(v, paste("\\textbf{", t, "}", sep=""))
+    } else {
+      v \<- c(v, t)
+    }
+  } 
+  v
+}
+
+Y \<- checkTerms(union$Term, topFrequentTerms)
+
+<books:
+{book|
+<book>Column \<- toTex(union$<book>, q<book>Median)
+}>
+
+res \<- cbind(Y)
+
+<books:
+{book|
+res \<- cbind(res, data.frame(<book>Column))
+}>
+
+names(res) \<- c("Term", <quotedBooks(books)>)
+
+#print(xtable(res, label=paste('F:unionTopScatternessVisual', sep = ""), 
+#             caption="Union of TOP 30 scattered terms from the books. empty cell - no occurrence in the given book.
+#        \\oneDot{} -- frequency is 1.
+#             \\belowMdot{} -- below median but larger than 1.
+#             \\greaterMdot{} -- greater or above median.
+#             \\topNdot{} -- in the top 5.", latex.environment="center"),
+#      file="unionTopScatternessVisual.tex",
+#      scalebox=0.8,
+#      sanitize.text.function = function(x){x},
+#      include.rownames=FALSE,  
+#      rotate.colnames=FALSE)
+write.csv(res, paste(dataRoot, "/allbooks/", "unionTopScatternessVisual.csv", sep=""))
+
+>>

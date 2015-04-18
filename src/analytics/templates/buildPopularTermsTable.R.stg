@@ -6,11 +6,11 @@ template(args) ::=<<
 
 
 topFrequency(book) ::=<<
-"topFrequency<book>"
+topFrequency<book>
 >>
 
 frequency(book) ::=<<
-"frequency<book>"
+frequency<book>
 >>
 
 quotedBook(book) ::=<<
