@@ -5,10 +5,12 @@ analyze:
 ifeq ($(LOGGING),ON)
 	mkdir -p ../../logs/analyze
 	$(MAKE) frequencies	2>&1	| tee ../../logs/analyze/frequencies.log
+	$(MAKE) generatePopular	2>&1	| tee ../../logs/analyze/generatePopular.log
 	$(MAKE) popular		2>&1	| tee ../../logs/analyze/popular.log
 	$(MAKE) tex		2>&1	| tee ../../logs/analyze/tex.log
 else
 	$(MAKE) frequencies
+	$(MAKE) generatePopular
 	$(MAKE) popular
 	$(MAKE) tex
 endif
@@ -17,6 +19,10 @@ frequencies:
 	for b in ${ALL_BOOKS}; do \
 		R < frequencies.R --no-save --args ""$$b""; \
 	done
+	
+generatePopular:
+	$(PYTHON) ../misc/generateFromStringtemplate.py templates/buildPopularTermsTable.R.stg buildPopularTermsTable.R ${ALL_BOOKS}
+	$(PYTHON) ../misc/generateFromStringtemplate.py templates/buildPopularScatteredTermsTable.R.stg buildPopularScatteredTermsTable.R ${ALL_BOOKS}
 
 popular:	
 	R < buildPopularTermsTable.R --no-save --args ${ALL_BOOKS}
