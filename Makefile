@@ -65,7 +65,8 @@ download-googledocs:
 
 # Get Python and R tools
 download-deps:
-	cd src/analytics; sudo R < dependencies.R --no-save
+	cd src; touch Makefile.vars
+	cd src/analytics; $(MAKE) prepare
 	sudo $(PYTHON_PACKAGE_INSTALLER) BeautifulSoup
 	sudo $(PYTHON_PACKAGE_INSTALLER) numpy
 	sudo $(PYTHON_PACKAGE_INSTALLER) nltk
