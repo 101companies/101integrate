@@ -76,6 +76,7 @@ download-deps:
 	sudo $(PYTHON_PACKAGE_INSTALLER) mako
 	sudo $(PYTHON_PACKAGE_INSTALLER) asq
 	sudo $(PYTHON_PACKAGE_INSTALLER) simplejson
+	sudo $(PYTHON_PACKAGE_INSTALLER) stringtemplate3 #Still needs antlr, but not available on pypi
 	sudo $(PYTHON_PACKAGE_INSTALLER) sortedcontainers
 	$(PYTHON) -m nltk.downloader all
 
