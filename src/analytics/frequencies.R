@@ -12,12 +12,12 @@ args <- commandArgs(trailingOnly = TRUE)
 print(args)
 
 folder <- args[1]
-print(folder)
+#print(folder)
 
 dataRoot <- "../../data"
 
 frequencies <- read.csv(paste(dataRoot, "/perbook/", folder, "/frequenciesMerged.csv", sep=""), sep=";")
-print(frequencies)
+#print(frequencies)
 sorterFreq = frequencies[with(frequencies, order(-frequencies$Frequency)),]
 
 #png(file='top30.png')
@@ -52,7 +52,7 @@ top30 <- top30[order(top30$Term),]
 
 write.csv(top30, paste(dataRoot, "/perbook/", folder, '/topFrequency.csv', sep = ""))
 
-print(folder)
+#print(folder)
 frequenciesDistribution <- read.csv(paste(dataRoot, "/perbook/", folder, "/frequenciesDistributionMerged.csv", sep=""), sep=";", quote="\"")
 
 #the following line should be uncommented if R studio is used
@@ -116,14 +116,19 @@ row.names(frequenciesDistributionFiltered) <- seq(nrow(frequenciesDistributionFi
 
 # getting local terms
 getLocals <- function(col){
+  #print("getLocals")
   sorted <- as.vector(sort(col, decreasing = TRUE))
+  #print(sorted)
   #pick the top-q most popular terms per chapter. Q = 3
   #top25 <- as.vector(quantile(col,.75,names = TRUE))
+  #print(sorted[5])
   sorted[5]
 }
 
 #terms <- fequenciesDistribution[1:nrow(frequenciesDistribution),1]
 foo <- function(x, max){
+  #print("foo")
+  #print(NCOL(x))
   #print(max)
   #print(frequenciesDistribution$Term)
   y <- cbind(data.frame(frequenciesDistributionFiltered$Term), x)
@@ -138,19 +143,42 @@ foo <- function(x, max){
 }
 
 bar <- function(i){
+  #print("bar")
   print("Chapter #")
   print(i)
+  #print(NCOL(i))
   v <- as.vector(frequenciesDistributionFiltered[1:nrow(frequenciesDistributionFiltered),i])
   #print(length(v))
   ns <- names(frequenciesDistributionFiltered)
   r <- foo(frequenciesDistributionFiltered[1:nrow(frequenciesDistributionFiltered),i], 
            getLocals(frequenciesDistributionFiltered[,i]))
-  data.frame(x = names(frequenciesDistributionFiltered)[i],
-             y = r)
+  print("re-bar")
+  if (!identical(r, FALSE)){
+           #print(length(r))
+           #print(length(names(frequenciesDistributionFiltered)[i]))
+           data.frame(x = names(frequenciesDistributionFiltered)[i],
+               y = r)
+  }
+  else NULL
 }
 
-res <- foreach(i=4:ncol(frequenciesDistributionFiltered), .combine=rbind) %do% #
-  bar(i)
+barfoo <- function(i){
+  out <- tryCatch(
+     {bar(i)},
+     error=function(cond){
+        message(cond)
+        return(NULL)},
+     warning=function(cond){
+        message(cond)
+        return(NULL)},
+     finally={}
+  )
+  return(out)
+}
+
+#print(NCOL(frequenciesDistributionFiltered))
+
+res <- foreach(i=4:ncol(frequenciesDistributionFiltered), .combine=rbind) %do% bar(i)
 
 names(res) <- c("Chapter", "Term", "Frequency")  
 
@@ -164,7 +192,7 @@ localTerms <- res#res[!res$Term %in% top10percent$Term,]
 #         main="Local terms per chapter",
 #         xlab="Frequency", gcolor="red", color="black")
 
-print(localTerms)
+#print(localTerms)
 
 pv <- cast(localTerms, Term ~ Chapter)
 pivot <- pv[order(pv$Term),]
@@ -191,7 +219,7 @@ toTex <- function(row, M, top5){
       r <- c(r,NA)
     }else{
       c <- as.integer(v)
-      print(c)
+      #print(c)
       if(c == 0){
         r <- c(r, "\\emptyDot{}")
       } else if(c == 1){
@@ -214,7 +242,7 @@ pivot5 <- as.vector(pivot4)
 
 top5 <- sort(as.vector(pivot5), decreasing = TRUE)[5]
 m <- quantile(pivot5, na.rm = TRUE)[3]
-print(m)
+#print(m)
 
 res <- NULL
 
