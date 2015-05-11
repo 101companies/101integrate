@@ -18,4 +18,4 @@ for resName in resNames:
 	mappings[resName] = mapping
 
 f = open(datafolder + sys.argv[-1] + "mapping.json", 'write')
-f.write(json.dumps(mappings),indent="\t")
+f.write(json.dumps(mappings,indent="\t"))
