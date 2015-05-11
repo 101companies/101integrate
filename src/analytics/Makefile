@@ -77,3 +77,6 @@ tex:
 
 	#mv ranks.tex ../../data/allbooks/	
 	./csv2tex.py --input ../../data/allbooks/rank.csv --template "tabular_template.tex"
+	
+prepare:
+	sudo R < dependencies.R --no-save
