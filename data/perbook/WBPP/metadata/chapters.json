@@ -1,0 +1,244 @@
+{
+	"chapters": [
+		{
+			"file": "Overview.txt",
+			"title": "Overview"
+		},
+		{
+			"file": "Getting_Python.txt",
+			"title": "Getting Python"
+		},
+		{
+			"file": "Setting_it_up.txt",
+			"title": "Setting it up"
+		},
+		{
+			"file": "Interactive_mode.txt",
+			"title": "Interactive mode"
+		},
+		{
+			"file": "Self_Help.txt",
+			"title": "Self Help"
+		},
+		{
+			"file": "Creating_Python_programs.txt",
+			"title": "Creating Python programs"
+		},
+		{
+			"file": "Variables_and_Strings.txt",
+			"title": "Variables and Strings"
+		},
+		{
+			"file": "Basic_syntax.txt",
+			"title": "Basic syntax"
+		},
+		{
+			"file": "Sequences.txt",
+			"title": "Sequences"
+		},
+		{
+			"file": "Data_types.txt",
+			"title": "Data types"
+		},
+		{
+			"file": "Numbers.txt",
+			"title": "Numbers"
+		},
+		{
+			"file": "Strings.txt",
+			"title": "Strings"
+		},
+		{
+			"file": "Lists.txt",
+			"title": "Lists"
+		},
+		{
+			"file": "Tuples.txt",
+			"title": "Tuples"
+		},
+		{
+			"file": "Dictionaries.txt",
+			"title": "Dictionaries"
+		},
+		{
+			"file": "Sets.txt",
+			"title": "Sets"
+		},
+		{
+			"file": "Basic_Math.txt",
+			"title": "Basic Math"
+		},
+		{
+			"file": "Operators.txt",
+			"title": "Operators"
+		},
+		{
+			"file": "Control_Flow.txt",
+			"title": "Control Flow"
+		},
+		{
+			"file": "Decision_Control.txt",
+			"title": "Decision Control"
+		},
+		{
+			"file": "Conditional_Statements.txt",
+			"title": "Conditional Statements"
+		},
+		{
+			"file": "Loops.txt",
+			"title": "Loops"
+		},
+		{
+			"file": "Functions.txt",
+			"title": "Functions"
+		},
+		{
+			"file": "Scoping.txt",
+			"title": "Scoping"
+		},
+		{
+			"file": "Input_and_output.txt",
+			"title": "Input and output"
+		},
+		{
+			"file": "Files.txt",
+			"title": "Files"
+		},
+		{
+			"file": "Text.txt",
+			"title": "Text"
+		},
+		{
+			"file": "Modules.txt",
+			"title": "Modules"
+		},
+		{
+			"file": "Modules_and_how_to_use_them.txt",
+			"title": "Modules and how to use them"
+		},
+		{
+			"file": "Classes.txt",
+			"title": "Classes"
+		},
+		{
+			"file": "Exceptions.txt",
+			"title": "Exceptions"
+		},
+		{
+			"file": "Errors.txt",
+			"title": "Errors"
+		},
+		{
+			"file": "Source_Documentation_and_Comments.txt",
+			"title": "Source Documentation and Comments"
+		},
+		{
+			"file": "Idioms.txt",
+			"title": "Idioms"
+		},
+		{
+			"file": "Decorators.txt",
+			"title": "Decorators"
+		},
+		{
+			"file": "Context_Managers.txt",
+			"title": "Context Managers"
+		},
+		{
+			"file": "Reflection.txt",
+			"title": "Reflection"
+		},
+		{
+			"file": "Metaclasses.txt",
+			"title": "Metaclasses"
+		},
+		{
+			"file": "Tips_and_Tricks.txt",
+			"title": "Tips and Tricks"
+		},
+		{
+			"file": "Namespace.txt",
+			"title": "Namespace"
+		},
+		{
+			"file": "Standard_Library.txt",
+			"title": "Standard Library"
+		},
+		{
+			"file": "Regular_Expression.txt",
+			"title": "Regular Expression"
+		},
+		{
+			"file": "XML_Tools.txt",
+			"title": "XML Tools"
+		},
+		{
+			"file": "Email.txt",
+			"title": "Email"
+		},
+		{
+			"file": "Threading.txt",
+			"title": "Threading"
+		},
+		{
+			"file": "Sockets.txt",
+			"title": "Sockets"
+		},
+		{
+			"file": "GUI_Programming.txt",
+			"title": "GUI Programming"
+		},
+		{
+			"file": "WSGI_web_programming.txt",
+			"title": "WSGI web programming"
+		},
+		{
+			"file": "Web_Page_Harvesting.txt",
+			"title": "Extracting info from web pages"
+		},
+		{
+			"file": "Internet.txt",
+			"title": "Internet"
+		},
+		{
+			"file": "Networks.txt",
+			"title": "Networks"
+		},
+		{
+			"file": "Databases.txt",
+			"title": "Databases"
+		},
+		{
+			"file": "Database_Programming.txt",
+			"title": "Database Programming"
+		},
+		{
+			"file": "PyQt4.txt",
+			"title": "Qt4"
+		},
+		{
+			"file": "Dbus.txt",
+			"title": "Dbus"
+		},
+		{
+			"file": "Sorted_Container_Types.txt",
+			"title": "Sorted Container Types"
+		},
+		{
+			"file": "Extending_with_C.txt",
+			"title": "Extending with C"
+		},
+		{
+			"file": "Extending_with_Pyrex.txt",
+			"title": "Extending with Pyrex"
+		},
+		{
+			"file": "Extending_with_ctypes.txt",
+			"title": "Extending with ctypes"
+		},
+		{
+			"file": "Extending_with_Perl.txt",
+			"title": "Extending with Perl"
+		}
+	]
+}

@@ -2,16 +2,18 @@ import sys
 import urllib2
 import json
 import html2text
-from BeautifulSoup import BeautifulSoup
+import os
+from  BeautifulSoup import BeautifulSoup
+import constants
 
-def getChapter(url, outputfolder, ext, exElems, exClasses, posElements, posAttr):
-	dom = getRefinedHtml(url, exElems, exClasses, posElements, posAttr)
+def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, posAttr):
+	dom = getRefinedHtml(url, exElems, exClasses, exIds, posElements, posAttr)
 	fileName = url.split('/').pop()
 	f=open(outputfolder+fileName.strip(),"write")
 	f.write(dom.prettify())
 	f.close()
 
-def getRefinedHtml(url, exElem, exClasses, posElements, posAttr):
+def getRefinedHtml(url, exElem, exClasses, exIds, posElements, posAttr):
 	opener = urllib2.build_opener()
 	opener.addheaders = [('User-agent', 'Mozilla/5.0')]
 	print "Downloading:", url.rstrip()
@@ -27,6 +29,9 @@ def getRefinedHtml(url, exElem, exClasses, posElements, posAttr):
 			for exClass in exClasses:
 				for d in doc.findAll(True, {'class' : exClass}):
 					d.extract()
+			for exId in exIds:
+				for d in doc.findAll(True, {'id' : exId}):
+					d.extract()
 			for posElement in posElements:
 
 				for posTag in doc.findAll(posElement, {posAttr: True}):
@@ -38,6 +43,19 @@ def getRefinedHtml(url, exElem, exClasses, posElements, posAttr):
 			#print "Can't extract content of " + url + " properly."
 			print e
 
-resInfos = json.loads(open("config/config.json", 'rb').read())[sys.argv[1]]
-for url in open(sys.argv[2] + sys.argv[1] + "/metadata/chapters.txt").readlines():
-	getChapter(url.rstrip(), sys.argv[2] + sys.argv[1] + "/contents/" , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], resInfos['posElements'], resInfos['posAttr'])
+def crawl(book, perbookFldr):
+    resInfos = json.loads(open(constants.configPath, 'rb').read())[book]
+    for url in open((perbookFldr + book + "/metadata/chapters.txt").replace("/",os.path.sep)).readlines():
+	if not url.strip(" ").strip("\r").strip("\n"):#skip empty lines
+	  continue
+	try:
+	  exIds =  resInfos['exclude-ids']
+	except  KeyError:
+	  exIds = []
+	else:
+	  pass
+	getChapter(url.rstrip(),(perbookFldr + book + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'])
+
+
+if __name__ == "__main__":
+   crawl(sys.argv[1],sys.argv[2])

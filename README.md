@@ -1,6 +1,6 @@
 # Summary
 
-This repo contributes to the 101companies Project. 101integrate is a framework for the integration of knowledge resources. At this point, the framework specifically addresses vocabulary integration and cross-referencing betweem Haskell textbooks and 101wiki. Currently, 4 Haskell textbooks are supported.
+This repo contributes to the 101companies Project. 101integrate is a framework for the integration of knowledge resources. At this point, the framework specifically addresses vocabulary integration and cross-referencing betweem textbooks and 101wiki. Currently, 4 Haskell textbooks are supported.
 
 # Tool dependencies
 
@@ -8,19 +8,21 @@ Make sure all dependencies are installed.
 
 You need System R: http://www.r-project.org/
 
-You need a bunch of Python packages and some NLP support.
-
-This is taken care of by this command:
+You need a bunch of Python packages and some NLP support. This is taken care of by this command:
 
     make download-deps
 
-When the NLTK downloader pops up, select all corpora for download.
-
 # Online textbooks
 
-2 of the supported textbooks are available online. They are not included into the repo. They must be downloaded with the following command:
+Some of the supported textbooks are available online. They are not included into the repo. They must be downloaded with the following command:
 
     make download-books
+
+You can download tagged Books e.g. the Haskell-Books with the following command:
+
+    make download-books BOOKS="haskell"
+
+The available Tags can be looked up in docs/Tagset.md .
 
 # Offline textbooks
 
@@ -78,6 +80,7 @@ Paramters in order of usage:
 * Name of chapters file (relative to resource path)
 * Name of content folder (relative to resource path)
 * Name of metaindex file (relative to index path)
+* "merged" | "nonmerged"
 
 ## Script backlinksMapper.py
 

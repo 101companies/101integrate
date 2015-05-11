@@ -1,7 +1,7 @@
-include src/Makefile.vars
+include Makefile.vars
 
-# Books available online
-ONLINEBOOKS = RWH LYAH
+#Programs
+PYTHON_PACKAGE_INSTALLER = easy_install
 
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
@@ -9,16 +9,50 @@ INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
 # Please, read the README.md.
 nope:
 	@echo Please, read the README.md.
+	
+#Complete Integration of resources	
+run:
+ifeq ($(LOGGING),ON)
+	mkdir -p logs
+	$(MAKE) download-books BOOKS=$(BOOKS) 2>&1 | tee logs/downloadBooks.log
+	$(MAKE) mine           LOGGING=ON
+	$(MAKE) quickrun       LOGGING=ON
+else
+	$(MAKE) download-books BOOKS=$(BOOKS)
+	$(MAKE) mine
+	$(MAKE) quickrun
+endif
 
+#shorter run (skipping resource mining, only use cached Data)
+quickrun:
+ifeq ($(LOGGING),ON)
+	mkdir -p logs
+	$(MAKE) bootstrap
+	$(MAKE) from-cache     2>&1	| tee logs/fromCache.log
+	$(MAKE) analyze        LOGGING=ON
+	$(MAKE) backlink       LOGGING=ON
+	$(MAKE) integrate      LOGGING=ON
+else
+	$(MAKE) bootstrap
+	$(MAKE) from-cache
+	$(MAKE) analyze
+	$(MAKE) backlink
+	$(MAKE) integrate
+endif
 
 # Download books that are available online
 download-books:
-	for b in ${ONLINEBOOKS}; do \
-		mkdir -p data/perbook/"$$b"/contents; \
-		cd src/mining; python crawler.py "$$b" ../../data/perbook/;\
-		cd ../..;\
-	done
-	cd src/mining; make cleanOnlineBooks
+ifndef BOOKS
+ifndef BOOK
+	cd src/mining; $(PYTHON) bookDownloader.py all
+else
+	cd src/mining; $(PYTHON) bookDownloader.py $(BOOK)
+endif
+else
+	cd src/mining; $(PYTHON) bookDownloader.py $(BOOKS)
+endif
+	$(MAKE) bootstrap
+	cd src/mining; $(MAKE) cleanOnlineBooks
 
 # Optionally link offline books, as explained in the README.md
 link-books:
@@ -27,63 +61,59 @@ link-books:
 
 # Optionally renew google doc data
 download-googledocs:
-	python src/misc/downloader.py $(INDEXKEY) data/perbook/ LYAH RWH Craft PIH
+	$(PYTHON) src/misc/downloader.py $(INDEXKEY) data/perbook/ LYAH RWH Craft PIH
 
 # Get Python and R tools
 download-deps:
-	cd src/analytics; make prepare
-	sudo easy_install BeautifulSoup
-	sudo easy_install nltk
-	sudo easy_install inflect
-	sudo easy_install html2text
-	sudo easy_install gdata
-	sudo easy_install jinja2
-	sudo easy_install mako
-	sudo easy_install asq
-	src/misc/downloadnltk.py
+	cd src; touch Makefile.vars
+	cd src/analytics; $(MAKE) prepare
+	sudo $(PYTHON_PACKAGE_INSTALLER) BeautifulSoup
+	sudo $(PYTHON_PACKAGE_INSTALLER) numpy
+	sudo $(PYTHON_PACKAGE_INSTALLER) nltk
+	sudo $(PYTHON_PACKAGE_INSTALLER) inflect
+	sudo $(PYTHON_PACKAGE_INSTALLER) html2text
+	sudo $(PYTHON_PACKAGE_INSTALLER) gdata
+	sudo $(PYTHON_PACKAGE_INSTALLER) jinja2
+	sudo $(PYTHON_PACKAGE_INSTALLER) mako
+	sudo $(PYTHON_PACKAGE_INSTALLER) asq
+	sudo $(PYTHON_PACKAGE_INSTALLER) simplejson
+	sudo $(PYTHON_PACKAGE_INSTALLER) stringtemplate3 #Still needs antlr, but not available on pypi
+	sudo $(PYTHON_PACKAGE_INSTALLER) sortedcontainers
+	$(PYTHON) -m nltk.downloader all
 
 bootstrap:
-	cd src; python bootstrap.py
+	cd src; $(PYTHON) bootstrap.py
 
 # Run mining scripts
 mine:
-	cd src/mining; make mine
+	cd src; $(MAKE) mine LOGGING=$(LOGGING)
 
 # Run analytics scripts
 analyze:
-	make from-cache
-	cd src/analytics; make analyze
+	cd src; $(MAKE) analyze LOGGING=$(LOGGING)
 
-# Copies post processed data to cache
+# Copies post processed data from cache
 from-cache:
-	for b in ${NON_LINKED_BOOKS}; do \
-		cp data/perbook/$$b/cache/frequenciesMerged.csv  data/perbook/"$$b"/ ;\
-		cp data/perbook/$$b/cache/frequenciesDistributionMerged.csv  data/perbook/"$$b"/ ;\
-		cp data/perbook/$$b/cache/frequencies.json data/perbook/"$$b"/ ;\
-	done
+	cd src; $(MAKE) from-cache
 
 # Copies post-processed data, required for analytics, to cache
 to-cache:
-	for b in ${LINKED_BOOKS}; do \
-		cp data/perbook/$$b/frequenciesMerged.csv  data/perbook/"$$b"/cache ;\
-		cp data/perbook/$$b/frequenciesDistributionMerged.csv  data/perbook/"$$b"/cache ;\
-		cp data/perbook/$$b/frequencies.json  data/perbook/"$$b"/cache ;\
-	done
+	cd src; $(MAKE) to-cache
+
 
 # Run backlinking scripts
 backlink:
-	cd src/mining; make backlink
+	cd src; $(MAKE) backlink LOGGING=$(LOGGING)
 
 coverageTables:
-	cd src/integrate; make coverageTables
+	cd src; $(MAKE) coverageTables
 
 nonProfileFrequencies:
-	cd src/integrate; make nonProfileFrequencies
+	cd src; $(MAKE) nonProfileFrequencies
+	
+integrate:
+	cd src; $(MAKE) integrate LOGGING=$(LOGGING)
 
 # Clean it all
 clean:
-	cd data/allbooks; rm -f *.tex *.csv *.json *.png *.html
-	for b in ${ALL_BOOKS}; do \
-		cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ;\
-		cd ../../.. ;\
-	done
+	cd src; $(MAKE) clean

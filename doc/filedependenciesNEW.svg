@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="110cm" height="50cm" viewBox="-1749 -622 2191 994" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-525.396" y="-620.124" width="465.723" height="419.67"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-292.534" y="-406.389">
+      <tspan x="-292.534" y="-406.389"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-540.964" y="77.164" width="454.048" height="191.7"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-313.94" y="176.914">
+      <tspan x="-313.94" y="176.914"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-577.456" y="-143.373" width="482.755" height="192.7"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-336.078" y="-43.1234">
+      <tspan x="-336.078" y="-43.1234"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-1747.92" y="-577.08" width="398.746" height="583.728"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1548.55" y="-281.316">
+      <tspan x="-1548.55" y="-281.316"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1709.65" y="-547.518" width="314.349" height="40.6766"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1709.65" y="-547.518" width="314.349" height="40.6766"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1552.48" y="-523.28">
+      <tspan x="-1552.48" y="-523.28">Makefile</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1494.86 -459.686 L -1427.11,-459.686 C -1417.76,-459.686 -1410.18,-454.761 -1410.18,-448.686 C -1410.18,-442.611 -1417.76,-437.686 -1427.11,-437.686 L -1494.86,-437.686 C -1504.22,-437.686 -1511.8,-442.611 -1511.8,-448.686 C -1511.8,-454.761 -1504.22,-459.686 -1494.86,-459.686z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1494.86 -459.686 L -1427.11,-459.686 C -1417.76,-459.686 -1410.18,-454.761 -1410.18,-448.686 C -1410.18,-442.611 -1417.76,-437.686 -1427.11,-437.686 L -1494.86,-437.686 C -1504.22,-437.686 -1511.8,-442.611 -1511.8,-448.686 C -1511.8,-454.761 -1504.22,-459.686 -1494.86,-459.686"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1460.99" y="-444.686">
+      <tspan x="-1460.99" y="-444.686">bootstrap</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1260.18" y="-465.098" width="129" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1260.18" y="-465.098" width="129" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1195.68" y="-442.198">
+      <tspan x="-1195.68" y="-442.198">src/bootstrap.py</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1410.18" y1="-448.686" x2="-1264.65" y2="-446.175"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1272.5,-441.31 -1262.41,-446.137 -1272.32,-451.308 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1710.91 -499.178 L -1640.51,-499.178 L -1626.43,-486.643 L -1640.51,-474.107 L -1710.91,-474.107 L -1724.99,-486.643 L -1710.91,-499.178z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1710.91 -499.178 L -1640.51,-499.178 L -1626.43,-486.643 L -1640.51,-474.107 L -1710.91,-474.107 L -1724.99,-486.643 L -1710.91,-499.178"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1675.71" y="-482.643">
+      <tspan x="-1675.71" y="-482.643">INDEXKEY</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1507.99 -413.318 L -1397.54,-413.318 C -1382.29,-413.318 -1369.93,-408.393 -1369.93,-402.318 C -1369.93,-396.243 -1382.29,-391.318 -1397.54,-391.318 L -1507.99,-391.318 C -1523.24,-391.318 -1535.6,-396.243 -1535.6,-402.318 C -1535.6,-408.393 -1523.24,-413.318 -1507.99,-413.318z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1507.99 -413.318 L -1397.54,-413.318 C -1382.29,-413.318 -1369.93,-408.393 -1369.93,-402.318 C -1369.93,-396.243 -1382.29,-391.318 -1397.54,-391.318 L -1507.99,-391.318 C -1523.24,-391.318 -1535.6,-396.243 -1535.6,-402.318 C -1535.6,-408.393 -1523.24,-413.318 -1507.99,-413.318"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1452.76" y="-398.318">
+      <tspan x="-1452.76" y="-398.318">download-books</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1535.36 -285.046 L -1464.26,-285.046 C -1454.45,-285.046 -1446.49,-280.121 -1446.49,-274.046 C -1446.49,-267.971 -1454.45,-263.046 -1464.26,-263.046 L -1535.36,-263.046 C -1545.18,-263.046 -1553.14,-267.971 -1553.14,-274.046 C -1553.14,-280.121 -1545.18,-285.046 -1535.36,-285.046z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1535.36 -285.046 L -1464.26,-285.046 C -1454.45,-285.046 -1446.49,-280.121 -1446.49,-274.046 C -1446.49,-267.971 -1454.45,-263.046 -1464.26,-263.046 L -1535.36,-263.046 C -1545.18,-263.046 -1553.14,-267.971 -1553.14,-274.046 C -1553.14,-280.121 -1545.18,-285.046 -1535.36,-285.046"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1499.81" y="-270.046">
+      <tspan x="-1499.81" y="-270.046">link-books</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1548.29 -501.284 L -1402.59,-501.284 C -1382.48,-501.284 -1366.17,-496.359 -1366.17,-490.284 C -1366.17,-484.209 -1382.48,-479.284 -1402.59,-479.284 L -1548.29,-479.284 C -1568.41,-479.284 -1584.72,-484.209 -1584.72,-490.284 C -1584.72,-496.359 -1568.41,-501.284 -1548.29,-501.284z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1548.29 -501.284 L -1402.59,-501.284 C -1382.48,-501.284 -1366.17,-496.359 -1366.17,-490.284 C -1366.17,-484.209 -1382.48,-479.284 -1402.59,-479.284 L -1548.29,-479.284 C -1568.41,-479.284 -1584.72,-484.209 -1584.72,-490.284 C -1584.72,-496.359 -1568.41,-501.284 -1548.29,-501.284"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1475.44" y="-486.284">
+      <tspan x="-1475.44" y="-486.284">download-googledocs</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -971.961 -230.41 L -887.295,-230.41 C -875.605,-230.41 -866.128,-225.485 -866.128,-219.41 C -866.128,-213.335 -875.605,-208.41 -887.295,-208.41 L -971.961,-208.41 C -983.651,-208.41 -993.128,-213.335 -993.128,-219.41 C -993.128,-225.485 -983.651,-230.41 -971.961,-230.41z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -971.961 -230.41 L -887.295,-230.41 C -875.605,-230.41 -866.128,-225.485 -866.128,-219.41 C -866.128,-213.335 -875.605,-208.41 -887.295,-208.41 L -971.961,-208.41 C -983.651,-208.41 -993.128,-213.335 -993.128,-219.41 C -993.128,-225.485 -983.651,-230.41 -971.961,-230.41"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-929.628" y="-215.41">
+      <tspan x="-929.628" y="-215.41">mine</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1086.26 17.4932 L -1030.71,17.4932 C -1023.04,17.4932 -1016.82,22.418 -1016.82,28.4932 C -1016.82,34.5683 -1023.04,39.4932 -1030.71,39.4932 L -1086.26,39.4932 C -1093.93,39.4932 -1100.15,34.5683 -1100.15,28.4932 C -1100.15,22.418 -1093.93,17.4932 -1086.26,17.4932z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1086.26 17.4932 L -1030.71,17.4932 C -1023.04,17.4932 -1016.82,22.418 -1016.82,28.4932 C -1016.82,34.5683 -1023.04,39.4932 -1030.71,39.4932 L -1086.26,39.4932 C -1093.93,39.4932 -1100.15,34.5683 -1100.15,28.4932 C -1100.15,22.418 -1093.93,17.4932 -1086.26,17.4932"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1058.48" y="32.4932">
+      <tspan x="-1058.48" y="32.4932">analyze</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1038.61 -20.7912 L -960.311,-20.7912 C -949.5,-20.7912 -940.736,-15.7789 -940.736,-9.59591 C -940.736,-3.41293 -949.5,1.59937 -960.311,1.59937 L -1038.61,1.59937 C -1049.42,1.59937 -1058.19,-3.41293 -1058.19,-9.59591 C -1058.19,-15.7789 -1049.42,-20.7912 -1038.61,-20.7912z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1038.61 -20.7912 L -960.311,-20.7912 C -949.5,-20.7912 -940.736,-15.7789 -940.736,-9.59591 C -940.736,-3.41293 -949.5,1.59937 -960.311,1.59937 L -1038.61,1.59937 C -1049.42,1.59937 -1058.19,-3.41293 -1058.19,-9.59591 C -1058.19,-15.7789 -1049.42,-20.7912 -1038.61,-20.7912"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-999.461" y="-5.59591">
+      <tspan x="-999.461" y="-5.59591">from-cache</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1078.75 52.612 L -1017.1,52.612 C -1008.59,52.612 -1001.69,58.4176 -1001.69,65.5791 C -1001.69,72.7407 -1008.59,78.5463 -1017.1,78.5463 L -1078.75,78.5463 C -1087.26,78.5463 -1094.16,72.7407 -1094.16,65.5791 C -1094.16,58.4176 -1087.26,52.612 -1078.75,52.612z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1078.75 52.612 L -1017.1,52.612 C -1008.59,52.612 -1001.69,58.4176 -1001.69,65.5791 C -1001.69,72.7407 -1008.59,78.5463 -1017.1,78.5463 L -1078.75,78.5463 C -1087.26,78.5463 -1094.16,72.7407 -1094.16,65.5791 C -1094.16,58.4176 -1087.26,52.612 -1078.75,52.612"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1047.92" y="69.5791">
+      <tspan x="-1047.92" y="69.5791">to-cache</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -942.154 -193.595 L -883.104,-193.595 C -874.95,-193.595 -868.341,-187.101 -868.341,-179.09 C -868.341,-171.078 -874.95,-164.584 -883.104,-164.584 L -942.154,-164.584 C -950.307,-164.584 -956.916,-171.078 -956.916,-179.09 C -956.916,-187.101 -950.307,-193.595 -942.154,-193.595z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -942.154 -193.595 L -883.104,-193.595 C -874.95,-193.595 -868.341,-187.101 -868.341,-179.09 C -868.341,-171.078 -874.95,-164.584 -883.104,-164.584 L -942.154,-164.584 C -950.307,-164.584 -956.916,-171.078 -956.916,-179.09 C -956.916,-187.101 -950.307,-193.595 -942.154,-193.595"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-912.629" y="-175.09">
+      <tspan x="-912.629" y="-175.09">backlink</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1548.97 -238.298 L -1443.62,-238.298 C -1429.07,-238.298 -1417.28,-233.373 -1417.28,-227.298 C -1417.28,-221.223 -1429.07,-216.298 -1443.62,-216.298 L -1548.97,-216.298 C -1563.52,-216.298 -1575.31,-221.223 -1575.31,-227.298 C -1575.31,-233.373 -1563.52,-238.298 -1548.97,-238.298z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1548.97 -238.298 L -1443.62,-238.298 C -1429.07,-238.298 -1417.28,-233.373 -1417.28,-227.298 C -1417.28,-221.223 -1429.07,-216.298 -1443.62,-216.298 L -1548.97,-216.298 C -1563.52,-216.298 -1575.31,-221.223 -1575.31,-227.298 C -1575.31,-233.373 -1563.52,-238.298 -1548.97,-238.298"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1496.3" y="-223.298">
+      <tspan x="-1496.3" y="-223.298">coverageTables</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1056.12 -60.4012 L -909.617,-60.4012 C -889.39,-60.4012 -872.992,-55.4763 -872.992,-49.4012 C -872.992,-43.3261 -889.39,-38.4012 -909.617,-38.4012 L -1056.12,-38.4012 C -1076.34,-38.4012 -1092.74,-43.3261 -1092.74,-49.4012 C -1092.74,-55.4763 -1076.34,-60.4012 -1056.12,-60.4012z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1056.12 -60.4012 L -909.617,-60.4012 C -889.39,-60.4012 -872.992,-55.4763 -872.992,-49.4012 C -872.992,-43.3261 -889.39,-38.4012 -909.617,-38.4012 L -1056.12,-38.4012 C -1076.34,-38.4012 -1092.74,-43.3261 -1092.74,-49.4012 C -1092.74,-55.4763 -1076.34,-60.4012 -1056.12,-60.4012"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-982.867" y="-45.4012">
+      <tspan x="-982.867" y="-45.4012">nonProfileFrequencies</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1571.73 -64.3294 L -1531.28,-64.3294 C -1525.69,-64.3294 -1521.17,-58.9706 -1521.17,-52.3602 C -1521.17,-45.7498 -1525.69,-40.391 -1531.28,-40.391 L -1571.73,-40.391 C -1577.31,-40.391 -1581.84,-45.7498 -1581.84,-52.3602 C -1581.84,-58.9706 -1577.31,-64.3294 -1571.73,-64.3294z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1571.73 -64.3294 L -1531.28,-64.3294 C -1525.69,-64.3294 -1521.17,-58.9706 -1521.17,-52.3602 C -1521.17,-45.7498 -1525.69,-40.391 -1531.28,-40.391 L -1571.73,-40.391 C -1577.31,-40.391 -1581.84,-45.7498 -1581.84,-52.3602 C -1581.84,-58.9706 -1577.31,-64.3294 -1571.73,-64.3294"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1551.5" y="-48.3602">
+      <tspan x="-1551.5" y="-48.3602">clean</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-768.85" y="-218.68" width="129.6" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-768.85" y="-218.68" width="129.6" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-704.05" y="-195.78">
+      <tspan x="-704.05" y="-195.78">src/Makefile.vars</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1273.04" y="-533.508" width="172.7" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1273.04" y="-533.508" width="172.7" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1186.69" y="-510.608">
+      <tspan x="-1186.69" y="-510.608">src/misc/downloader.py</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1621.49 -31.2374 L -1518.09,-31.2374 C -1503.81,-31.2374 -1492.24,-26.3125 -1492.24,-20.2374 C -1492.24,-14.1623 -1503.81,-9.2374 -1518.09,-9.2374 L -1621.49,-9.2374 C -1635.76,-9.2374 -1647.34,-14.1623 -1647.34,-20.2374 C -1647.34,-26.3125 -1635.76,-31.2374 -1621.49,-31.2374z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1621.49 -31.2374 L -1518.09,-31.2374 C -1503.81,-31.2374 -1492.24,-26.3125 -1492.24,-20.2374 C -1492.24,-14.1623 -1503.81,-9.2374 -1518.09,-9.2374 L -1621.49,-9.2374 C -1635.76,-9.2374 -1647.34,-14.1623 -1647.34,-20.2374 C -1647.34,-26.3125 -1635.76,-31.2374 -1621.49,-31.2374"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1569.79" y="-16.2374">
+      <tspan x="-1569.79" y="-16.2374">download-deps</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="-883.733" y1="-248.234" x2="-769.843" y2="-217.459"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1492.24" y1="-20.2374" x2="-474.515" y2="310.82"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-483.445,313.173 -472.389,311.511 -480.352,303.663 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1385.73" y1="-501.021" x2="-1277.48" y2="-513.977"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1284.6,-508.089 -1275.26,-514.242 -1285.79,-518.018 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-533.208" y="83.0602" width="433.999" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-533.208" y="83.0602" width="433.999" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-316.208" y="105.96">
+      <tspan x="-316.208" y="105.96">src/analytics/Makefile</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="57.885" y="191.194" width="331.7" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="57.885" y="191.194" width="331.7" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="223.735" y="214.094">
+      <tspan x="223.735" y="214.094">src/analytics/buildPopularScatteredTermsTable.R</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="99.553" y="235.892" width="269.75" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="99.553" y="235.892" width="269.75" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="234.428" y="258.792">
+      <tspan x="234.428" y="258.792">src/analytics/buildPopularTermsTable.R</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="150.283" y="333.512" width="186.676" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="150.283" y="333.512" width="186.676" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="243.621" y="356.412">
+      <tspan x="243.621" y="356.412">src/analytics/csv2tex.py</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-522.676" y="313.186" width="227.688" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-522.676" y="313.186" width="227.688" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-408.832" y="336.086">
+      <tspan x="-408.832" y="336.086">src/analytics/dependencies.R</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="40.827" y="146.498" width="220.617" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="40.827" y="146.498" width="220.617" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="151.136" y="169.398">
+      <tspan x="151.136" y="169.398">src/analytics/frequencies.R</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="117.201" y="285.388" width="244.659" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="117.201" y="285.388" width="244.659" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="239.53" y="308.288">
+      <tspan x="239.53" y="308.288">src/analytics/rank.R</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -479.589 141.896 L -424.039,141.896 C -416.369,141.896 -410.151,146.821 -410.151,152.896 C -410.151,158.971 -416.369,163.896 -424.039,163.896 L -479.589,163.896 C -487.258,163.896 -493.476,158.971 -493.476,152.896 C -493.476,146.821 -487.258,141.896 -479.589,141.896z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -479.589 141.896 L -424.039,141.896 C -416.369,141.896 -410.151,146.821 -410.151,152.896 C -410.151,158.971 -416.369,163.896 -424.039,163.896 L -479.589,163.896 C -487.258,163.896 -493.476,158.971 -493.476,152.896 C -493.476,146.821 -487.258,141.896 -479.589,141.896"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-451.814" y="156.896">
+      <tspan x="-451.814" y="156.896">analyze</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -432.803 225.984 L -376.953,225.984 C -369.242,225.984 -362.991,230.909 -362.991,236.984 C -362.991,243.059 -369.242,247.984 -376.953,247.984 L -432.803,247.984 C -440.515,247.984 -446.766,243.059 -446.766,236.984 C -446.766,230.909 -440.515,225.984 -432.803,225.984z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -432.803 225.984 L -376.953,225.984 C -369.242,225.984 -362.991,230.909 -362.991,236.984 C -362.991,243.059 -369.242,247.984 -376.953,247.984 L -432.803,247.984 C -440.515,247.984 -446.766,243.059 -446.766,236.984 C -446.766,230.909 -440.515,225.984 -432.803,225.984"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-404.878" y="240.984">
+      <tspan x="-404.878" y="240.984">prepare</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-405.377" y1="248.989" x2="-407.816" y2="307.717"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-412.489,299.753 -407.909,309.952 -402.498,300.168 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -250.629 146.282 L -169.879,146.282 C -158.729,146.282 -149.691,151.207 -149.691,157.282 C -149.691,163.357 -158.729,168.282 -169.879,168.282 L -250.629,168.282 C -261.778,168.282 -270.816,163.357 -270.816,157.282 C -270.816,151.207 -261.778,146.282 -250.629,146.282z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -250.629 146.282 L -169.879,146.282 C -158.729,146.282 -149.691,151.207 -149.691,157.282 C -149.691,163.357 -158.729,168.282 -169.879,168.282 L -250.629,168.282 C -261.778,168.282 -270.816,163.357 -270.816,157.282 C -270.816,151.207 -261.778,146.282 -250.629,146.282"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-210.254" y="161.282">
+      <tspan x="-210.254" y="161.282">frequencies</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -244.071 185.74 L -189.171,185.74 C -181.591,185.74 -175.446,190.665 -175.446,196.74 C -175.446,202.815 -181.591,207.74 -189.171,207.74 L -244.071,207.74 C -251.651,207.74 -257.796,202.815 -257.796,196.74 C -257.796,190.665 -251.651,185.74 -244.071,185.74z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -244.071 185.74 L -189.171,185.74 C -181.591,185.74 -175.446,190.665 -175.446,196.74 C -175.446,202.815 -181.591,207.74 -189.171,207.74 L -244.071,207.74 C -251.651,207.74 -257.796,202.815 -257.796,196.74 C -257.796,190.665 -251.651,185.74 -244.071,185.74"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-216.621" y="200.74">
+      <tspan x="-216.621" y="200.74">popular</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -225.271 219.476 L -198.971,219.476 C -195.34,219.476 -192.396,224.401 -192.396,230.476 C -192.396,236.551 -195.34,241.476 -198.971,241.476 L -225.271,241.476 C -228.902,241.476 -231.846,236.551 -231.846,230.476 C -231.846,224.401 -228.902,219.476 -225.271,219.476z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -225.271 219.476 L -198.971,219.476 C -195.34,219.476 -192.396,224.401 -192.396,230.476 C -192.396,236.551 -195.34,241.476 -198.971,241.476 L -225.271,241.476 C -228.902,241.476 -231.846,236.551 -231.846,230.476 C -231.846,224.401 -228.902,219.476 -225.271,219.476"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-212.121" y="234.476">
+      <tspan x="-212.121" y="234.476">tex</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="-678.366" y1="-179.698" x2="-341.892" y2="82.078"/>
+  <g>
+    <polygon style="fill: #ffffff" points="-334.535,155.846 -309.073,179.376 -334.535,202.906 -359.996,179.376 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-334.535,155.846 -309.073,179.376 -334.535,202.906 -359.996,179.376 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-334.535" y="183.276">
+      <tspan x="-334.535" y="183.276"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-410.152" y1="152.896" x2="-358.001" y2="171.158"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-366.981,173.311 -355.891,171.897 -363.676,163.873 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-328.17" y1="161.729" x2="-275.275" y2="157.628"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-282.629,163.213 -273.045,157.455 -283.402,153.243 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-315.44" y1="185.258" x2="-262.182" y2="195.866"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-270.773,199.253 -259.989,196.303 -268.82,189.446 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-334.536" y1="202.906" x2="-236.165" y2="229.316"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-244.96,232.132 -234.006,229.896 -242.367,222.474 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-149.692" y1="157.282" x2="36.359" y2="165.305"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="28.3869,169.966 38.593,165.402 28.8177,159.975 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-192.397" y1="230.476" x2="146.07" y2="351.012"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="137.079,353.117 148.177,351.762 140.433,343.697 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-23.8837,188.166 0.469568,212.203 -23.8837,236.241 -48.237,212.203 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-23.8837,188.166 0.469568,212.203 -23.8837,236.241 -48.237,212.203 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-23.8837" y="216.103">
+      <tspan x="-23.8837" y="216.103"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-175.447" y1="196.74" x2="-52.6765" y2="211.664"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-60.987,215.691 -50.4567,211.934 -59.7803,205.764 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-23.8836" y1="188.166" x2="53.5668" y2="209.031"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="44.7695,211.839 55.7259,209.612 47.3707,202.183 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="0.469632" y1="212.204" x2="95.4458" y2="253.123"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="86.3371,254.643 97.4994,254.007 90.2938,245.459 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-23.8836" y1="236.24" x2="113.174" y2="302.443"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="104.008,303.568 115.188,303.415 108.358,294.564 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-777.372" y="-499.432" width="159.1" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-777.372" y="-499.432" width="159.1" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-697.822" y="-476.532">
+      <tspan x="-697.822" y="-476.532">src/mining/crawler.py</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1377.74" y1="-393.572" x2="-1033.08" y2="-353.393"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1041.37,-349.326 -1030.86,-353.134 -1040.21,-359.259 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-886.414,18.4316 -859.136,41.2559 -886.414,64.0803 -913.692,41.2559 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-886.414,18.4316 -859.136,41.2559 -886.414,64.0803 -913.692,41.2559 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-886.414" y="45.1559">
+      <tspan x="-886.414" y="45.1559"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1016.82" y1="28.4932" x2="-916.351" y2="38.3261"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-924.565,42.5461 -914.125,38.5439 -923.591,32.5936 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-900.052" y1="29.8438" x2="-937.525" y2="-6.48315"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-928.47,-4.66913 -939.131,-8.03954 -935.431,2.51088 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-872.774" y1="29.8438" x2="-497.73" y2="151.516"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-506.658,153.876 -495.603,152.206 -503.572,144.364 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-520.338" y="-607.108" width="450.92" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-520.338" y="-607.108" width="450.92" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-294.878" y="-584.208">
+      <tspan x="-294.878" y="-584.208">src/minig/Makefile</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -494.41 -540.322 L -439.49,-540.322 C -431.907,-540.322 -425.759,-535.065 -425.759,-528.58 C -425.759,-522.095 -431.907,-516.838 -439.49,-516.838 L -494.41,-516.838 C -501.993,-516.838 -508.14,-522.095 -508.14,-528.58 C -508.14,-535.065 -501.993,-540.322 -494.41,-540.322z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -494.41 -540.322 L -439.49,-540.322 C -431.907,-540.322 -425.759,-535.065 -425.759,-528.58 C -425.759,-522.095 -431.907,-516.838 -439.49,-516.838 L -494.41,-516.838 C -501.993,-516.838 -508.14,-522.095 -508.14,-528.58 C -508.14,-535.065 -501.993,-540.322 -494.41,-540.322"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-466.95" y="-524.58">
+      <tspan x="-466.95" y="-524.58">mine</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -502.185 -487.474 L -443.135,-487.474 C -434.982,-487.474 -428.373,-482.549 -428.373,-476.474 C -428.373,-470.399 -434.982,-465.474 -443.135,-465.474 L -502.185,-465.474 C -510.339,-465.474 -516.948,-470.399 -516.948,-476.474 C -516.948,-482.549 -510.339,-487.474 -502.185,-487.474z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -502.185 -487.474 L -443.135,-487.474 C -434.982,-487.474 -428.373,-482.549 -428.373,-476.474 C -428.373,-470.399 -434.982,-465.474 -443.135,-465.474 L -502.185,-465.474 C -510.339,-465.474 -516.948,-470.399 -516.948,-476.474 C -516.948,-482.549 -510.339,-487.474 -502.185,-487.474"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-472.661" y="-472.474">
+      <tspan x="-472.661" y="-472.474">backlink</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -475.511 -335.67 L -355.211,-335.67 C -338.601,-335.67 -325.136,-330.745 -325.136,-324.67 C -325.136,-318.595 -338.601,-313.67 -355.211,-313.67 L -475.511,-313.67 C -492.121,-313.67 -505.586,-318.595 -505.586,-324.67 C -505.586,-330.745 -492.121,-335.67 -475.511,-335.67z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -475.511 -335.67 L -355.211,-335.67 C -338.601,-335.67 -325.136,-330.745 -325.136,-324.67 C -325.136,-318.595 -338.601,-313.67 -355.211,-313.67 L -475.511,-313.67 C -492.121,-313.67 -505.586,-318.595 -505.586,-324.67 C -505.586,-330.745 -492.121,-335.67 -475.511,-335.67"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-415.361" y="-320.67">
+      <tspan x="-415.361" y="-320.67">cleanOnlineBooks</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -273.497 -549.964 L -180.197,-549.964 C -167.315,-549.964 -156.872,-545.039 -156.872,-538.964 C -156.872,-532.889 -167.315,-527.964 -180.197,-527.964 L -273.497,-527.964 C -286.379,-527.964 -296.822,-532.889 -296.822,-538.964 C -296.822,-545.039 -286.379,-549.964 -273.497,-549.964z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -273.497 -549.964 L -180.197,-549.964 C -167.315,-549.964 -156.872,-545.039 -156.872,-538.964 C -156.872,-532.889 -167.315,-527.964 -180.197,-527.964 L -273.497,-527.964 C -286.379,-527.964 -296.822,-532.889 -296.822,-538.964 C -296.822,-545.039 -286.379,-549.964 -273.497,-549.964"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-226.847" y="-534.964">
+      <tspan x="-226.847" y="-534.964">cleanindecies</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -277.519 -511.27 L -177.219,-511.27 C -163.37,-511.27 -152.144,-506.345 -152.144,-500.27 C -152.144,-494.195 -163.37,-489.27 -177.219,-489.27 L -277.519,-489.27 C -291.368,-489.27 -302.594,-494.195 -302.594,-500.27 C -302.594,-506.345 -291.368,-511.27 -277.519,-511.27z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -277.519 -511.27 L -177.219,-511.27 C -163.37,-511.27 -152.144,-506.345 -152.144,-500.27 C -152.144,-494.195 -163.37,-489.27 -177.219,-489.27 L -277.519,-489.27 C -291.368,-489.27 -302.594,-494.195 -302.594,-500.27 C -302.594,-506.345 -291.368,-511.27 -277.519,-511.27"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-227.369" y="-496.27">
+      <tspan x="-227.369" y="-496.27">mergeindecies</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -271.163 -472.022 L -190.412,-472.022 C -179.263,-472.022 -170.225,-467.097 -170.225,-461.022 C -170.225,-454.947 -179.263,-450.022 -190.412,-450.022 L -271.163,-450.022 C -282.312,-450.022 -291.35,-454.947 -291.35,-461.022 C -291.35,-467.097 -282.312,-472.022 -271.163,-472.022z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -271.163 -472.022 L -190.412,-472.022 C -179.263,-472.022 -170.225,-467.097 -170.225,-461.022 C -170.225,-454.947 -179.263,-450.022 -190.412,-450.022 L -271.163,-450.022 C -282.312,-450.022 -291.35,-454.947 -291.35,-461.022 C -291.35,-467.097 -282.312,-472.022 -271.163,-472.022"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-230.787" y="-457.022">
+      <tspan x="-230.787" y="-457.022">frequencies</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -287.887 -430.118 L -157.536,-430.118 C -139.539,-430.118 -124.949,-425.193 -124.949,-419.118 C -124.949,-413.043 -139.539,-408.118 -157.536,-408.118 L -287.887,-408.118 C -305.884,-408.118 -320.474,-413.043 -320.474,-419.118 C -320.474,-425.193 -305.884,-430.118 -287.887,-430.118z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -287.887 -430.118 L -157.536,-430.118 C -139.539,-430.118 -124.949,-425.193 -124.949,-419.118 C -124.949,-413.043 -139.539,-408.118 -157.536,-408.118 L -287.887,-408.118 C -305.884,-408.118 -320.474,-413.043 -320.474,-419.118 C -320.474,-425.193 -305.884,-430.118 -287.887,-430.118"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-222.712" y="-415.118">
+      <tspan x="-222.712" y="-415.118">mergedfrequencies</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -287.219 -379.19 L -159.869,-379.19 C -142.285,-379.19 -128.031,-374.265 -128.031,-368.19 C -128.031,-362.115 -142.285,-357.19 -159.869,-357.19 L -287.219,-357.19 C -304.802,-357.19 -319.056,-362.115 -319.056,-368.19 C -319.056,-374.265 -304.802,-379.19 -287.219,-379.19z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -287.219 -379.19 L -159.869,-379.19 C -142.285,-379.19 -128.031,-374.265 -128.031,-368.19 C -128.031,-362.115 -142.285,-357.19 -159.869,-357.19 L -287.219,-357.19 C -304.802,-357.19 -319.056,-362.115 -319.056,-368.19 C -319.056,-374.265 -304.802,-379.19 -287.219,-379.19"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-223.543" y="-364.19">
+      <tspan x="-223.543" y="-364.19">backlinksMappings</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -267.512 -343.374 L -104.712,-343.374 C -82.234,-343.374 -64.012,-338.449 -64.012,-332.374 C -64.012,-326.299 -82.234,-321.374 -104.712,-321.374 L -267.512,-321.374 C -289.99,-321.374 -308.212,-326.299 -308.212,-332.374 C -308.212,-338.449 -289.99,-343.374 -267.512,-343.374z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -267.512 -343.374 L -104.712,-343.374 C -82.234,-343.374 -64.012,-338.449 -64.012,-332.374 C -64.012,-326.299 -82.234,-321.374 -104.712,-321.374 L -267.512,-321.374 C -289.99,-321.374 -308.212,-326.299 -308.212,-332.374 C -308.212,-338.449 -289.99,-343.374 -267.512,-343.374"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-186.112" y="-328.374">
+      <tspan x="-186.112" y="-328.374">mergeBacklinkMappings</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -257.869 -296.532 L -148.769,-296.532 C -133.705,-296.532 -121.494,-291.607 -121.494,-285.532 C -121.494,-279.457 -133.705,-274.532 -148.769,-274.532 L -257.869,-274.532 C -272.933,-274.532 -285.144,-279.457 -285.144,-285.532 C -285.144,-291.607 -272.933,-296.532 -257.869,-296.532z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -257.869 -296.532 L -148.769,-296.532 C -133.705,-296.532 -121.494,-291.607 -121.494,-285.532 C -121.494,-279.457 -133.705,-274.532 -148.769,-274.532 L -257.869,-274.532 C -272.933,-274.532 -285.144,-279.457 -285.144,-285.532 C -285.144,-291.607 -272.933,-296.532 -257.869,-296.532"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-203.319" y="-281.532">
+      <tspan x="-203.319" y="-281.532">mergeMappings</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -471.434 -279.124 L -361.884,-279.124 C -346.759,-279.124 -334.497,-274.199 -334.497,-268.124 C -334.497,-262.049 -346.759,-257.124 -361.884,-257.124 L -471.434,-257.124 C -486.56,-257.124 -498.822,-262.049 -498.822,-268.124 C -498.822,-274.199 -486.56,-279.124 -471.434,-279.124z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -471.434 -279.124 L -361.884,-279.124 C -346.759,-279.124 -334.497,-274.199 -334.497,-268.124 C -334.497,-262.049 -346.759,-257.124 -361.884,-257.124 L -471.434,-257.124 C -486.56,-257.124 -498.822,-262.049 -498.822,-268.124 C -498.822,-274.199 -486.56,-279.124 -471.434,-279.124"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-416.659" y="-264.124">
+      <tspan x="-416.659" y="-264.124">deployBacklinks</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -255.614 -253.382 L -157.763,-253.382 C -144.253,-253.382 -133.301,-248.457 -133.301,-242.382 C -133.301,-236.307 -144.253,-231.382 -157.763,-231.382 L -255.614,-231.382 C -269.124,-231.382 -280.076,-236.307 -280.076,-242.382 C -280.076,-248.457 -269.124,-253.382 -255.614,-253.382z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -255.614 -253.382 L -157.763,-253.382 C -144.253,-253.382 -133.301,-248.457 -133.301,-242.382 C -133.301,-236.307 -144.253,-231.382 -157.763,-231.382 L -255.614,-231.382 C -269.124,-231.382 -280.076,-236.307 -280.076,-242.382 C -280.076,-248.457 -269.124,-253.382 -255.614,-253.382"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-206.688" y="-238.382">
+      <tspan x="-206.688" y="-238.382">termCoverage</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-866.128" y1="-219.41" x2="-511.525" y2="-525.657"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-514.132,-516.798 -509.832,-527.118 -520.669,-524.366 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-425.988" y1="-523.566" x2="-396.637" y2="-519.973"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-404.951,-515.954 -394.418,-519.702 -403.736,-525.88 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-369.836,-544.578 -347.475,-519.43 -369.836,-494.283 -392.198,-519.43 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-369.836,-544.578 -347.475,-519.43 -369.836,-494.283 -392.198,-519.43 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-369.836" y="-515.53">
+      <tspan x="-369.836" y="-515.53"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-364.246" y1="-538.292" x2="-302.249" y2="-538.595"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-309.989,-533.557 -300.013,-538.606 -310.038,-543.557 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-353.066" y1="-513.144" x2="-306.927" y2="-501.375"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-315.686,-498.449 -304.761,-500.823 -313.215,-508.139 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-369.838" y1="-494.282" x2="-295.468" y2="-462.767"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-304.567,-461.192 -293.409,-461.894 -300.665,-470.4 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-386.608" y1="-513.144" x2="-323.047" y2="-422.776"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-331.603,-426.25 -321.76,-420.947 -323.424,-432.003 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-382.689,-475.3 -358.594,-451.134 -382.689,-426.968 -406.784,-451.134 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-382.689,-475.3 -358.594,-451.134 -382.689,-426.968 -406.784,-451.134 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-382.689" y="-447.234">
+      <tspan x="-382.689" y="-447.234"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-428.374" y1="-476.474" x2="-409.684" y2="-454.538"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-418.525,-457.205 -408.234,-452.836 -410.914,-463.691 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-376.666" y1="-469.258" x2="-321.271" y2="-372.075"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-329.459,-376.344 -320.163,-370.133 -320.772,-381.296 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-373.007" y1="-435.695" x2="-310.588" y2="-336.163"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-318.949,-340.084 -309.4,-334.268 -310.477,-345.397 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-382.69" y1="-426.968" x2="-287.683" y2="-289.213"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-296.207,-292.766 -286.414,-287.373 -287.975,-298.443 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="95.501" y="-563.634" width="154.4" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="95.501" y="-563.634" width="154.4" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="172.701" y="-540.734">
+      <tspan x="172.701" y="-540.734">src/mining/merge.py</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-156.873" y1="-538.964" x2="91.0369" y2="-553.866"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="83.587,-548.409 93.269,-554 82.987,-558.391 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="-683.022" y1="-219.642" x2="-315.906" y2="-568.146"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-152.145" y1="-500.27" x2="91.0725" y2="-534.511"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="84.0814,-528.477 93.2868,-534.822 82.6874,-538.379 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="69.429" y="-510.558" width="187.7" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="69.429" y="-510.558" width="187.7" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="163.279" y="-487.658">
+      <tspan x="163.279" y="-487.658">src/mining/frequencies.py</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-170.226" y1="-461.022" x2="64.9927" y2="-490.993"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="57.923,-485.052 67.2109,-491.275 56.6591,-494.971 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-124.95" y1="-419.118" x2="65.1743" y2="-480.68"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="59.3283,-473.532 67.3017,-481.369 56.2477,-483.045 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="65.101" y="-455.794" width="219.85" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="65.101" y="-455.794" width="219.85" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="175.026" y="-432.894">
+      <tspan x="175.026" y="-432.894">src/mining/backlinksMapper.py</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-128.032" y1="-368.19" x2="60.8868" y2="-435.297"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="55.2444,-427.987 62.9939,-436.046 51.8971,-437.41 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="70.269" y="-410.692" width="214.75" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="70.269" y="-410.692" width="214.75" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="177.644" y="-387.792">
+      <tspan x="177.644" y="-387.792">src/mining/mergeBacklinks.py</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="77.893" y="-360.484" width="218.667" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="77.893" y="-360.484" width="218.667" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="187.227" y="-337.584">
+      <tspan x="187.227" y="-337.584">src/mining/mergeMapping.py</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-64.013" y1="-332.374" x2="66.1782" y2="-389.885"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="61.0967,-382.174 68.2236,-390.788 57.056,-391.321 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-121.495" y1="-285.532" x2="73.5872" y2="-340.276"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="67.4629,-333.364 75.7401,-340.88 64.7611,-342.992 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="83.703" y="-309.056" width="204.8" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="83.703" y="-309.056" width="204.8" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="186.103" y="-286.156">
+      <tspan x="186.103" y="-286.156">src/mining/termCoverage.py</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-133.302" y1="-242.382" x2="79.335" y2="-289.096"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="72.8248,-282.547 81.519,-289.576 70.6791,-292.314 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-868.34" y1="-179.09" x2="-520.362" y2="-473.585"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-523.058,-464.753 -518.655,-475.029 -529.518,-472.386 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-567.39" y="-133.489" width="413.574" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-567.39" y="-133.489" width="413.574" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-360.603" y="-110.589">
+      <tspan x="-360.603" y="-110.589">Src/integrate/Makefile</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -535.687 -75.2664 L -470.987,-75.2664 C -462.054,-75.2664 -454.812,-70.3415 -454.812,-64.2664 C -454.812,-58.1913 -462.054,-53.2664 -470.987,-53.2664 L -535.687,-53.2664 C -544.62,-53.2664 -551.862,-58.1913 -551.862,-64.2664 C -551.862,-70.3415 -544.62,-75.2664 -535.687,-75.2664z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -535.687 -75.2664 L -470.987,-75.2664 C -462.054,-75.2664 -454.812,-70.3415 -454.812,-64.2664 C -454.812,-58.1913 -462.054,-53.2664 -470.987,-53.2664 L -535.687,-53.2664 C -544.62,-53.2664 -551.862,-58.1913 -551.862,-64.2664 C -551.862,-70.3415 -544.62,-75.2664 -535.687,-75.2664"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-503.337" y="-60.2664">
+      <tspan x="-503.337" y="-60.2664">integrate</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-385.058,-77.718 -363.414,-52.0905 -385.058,-26.463 -406.702,-52.0905 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-385.058,-77.718 -363.414,-52.0905 -385.058,-26.463 -406.702,-52.0905 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-385.058" y="-48.1905">
+      <tspan x="-385.058" y="-48.1905"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-454.812" y1="-64.2664" x2="-411.037" y2="-53.1876"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-419.791,-50.2454 -408.87,-52.639 -417.337,-59.9397 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -284.914 -80.8768 L -179.565,-80.8768 C -165.019,-80.8768 -153.227,-74.0576 -153.227,-65.6456 C -153.227,-57.2337 -165.019,-50.4145 -179.565,-50.4145 L -284.914,-50.4145 C -299.46,-50.4145 -311.252,-57.2337 -311.252,-65.6456 C -311.252,-74.0576 -299.46,-80.8768 -284.914,-80.8768z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -284.914 -80.8768 L -179.565,-80.8768 C -165.019,-80.8768 -153.227,-74.0576 -153.227,-65.6456 C -153.227,-57.2337 -165.019,-50.4145 -179.565,-50.4145 L -284.914,-50.4145 C -299.46,-50.4145 -311.252,-57.2337 -311.252,-65.6456 C -311.252,-74.0576 -299.46,-80.8768 -284.914,-80.8768"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-232.24" y="-61.6456">
+      <tspan x="-232.24" y="-61.6456">coverageTables</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -287.929 -36.6202 L -141.429,-36.6202 C -121.202,-36.6202 -104.804,-31.1119 -104.804,-24.317 C -104.804,-17.5221 -121.202,-12.0137 -141.429,-12.0137 L -287.929,-12.0137 C -308.156,-12.0137 -324.554,-17.5221 -324.554,-24.317 C -324.554,-31.1119 -308.156,-36.6202 -287.929,-36.6202z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -287.929 -36.6202 L -141.429,-36.6202 C -121.202,-36.6202 -104.804,-31.1119 -104.804,-24.317 C -104.804,-17.5221 -121.202,-12.0137 -141.429,-12.0137 L -287.929,-12.0137 C -308.156,-12.0137 -324.554,-17.5221 -324.554,-24.317 C -324.554,-31.1119 -308.156,-36.6202 -287.929,-36.6202"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-214.679" y="-20.317">
+      <tspan x="-214.679" y="-20.317">nonProfileFrequencies</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -277.916 4.44084 L -190.316,4.44084 C -178.221,4.44084 -168.416,9.36571 -168.416,15.4408 C -168.416,21.516 -178.221,26.4408 -190.316,26.4408 L -277.916,26.4408 C -290.011,26.4408 -299.816,21.516 -299.816,15.4408 C -299.816,9.36571 -290.011,4.44084 -277.916,4.44084z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -277.916 4.44084 L -190.316,4.44084 C -178.221,4.44084 -168.416,9.36571 -168.416,15.4408 C -168.416,21.516 -178.221,26.4408 -190.316,26.4408 L -277.916,26.4408 C -290.011,26.4408 -299.816,21.516 -299.816,15.4408 C -299.816,9.36571 -290.011,4.44084 -277.916,4.44084"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-234.116" y="19.4408">
+      <tspan x="-234.116" y="19.4408">uniqueTerms</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-374.236" y1="-64.9042" x2="-315.724" y2="-65.593"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-323.428,-60.5019 -313.488,-65.6193 -323.546,-70.5012 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-368.743" y1="-44.6013" x2="-328.618" y2="-26.1827"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-337.76,-24.8776 -326.586,-25.2498 -333.588,-33.9658 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-379.648" y1="-32.8698" x2="-303.642" y2="13.1255"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-312.873,13.3835 -301.729,14.2832 -307.696,4.8281 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="-667.933" y1="-179.676" x2="-567.39" y2="-123.989"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-153.228" y1="-65.6456" x2="9.26128" y2="-67.6991"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1.56115,-62.6014 11.4972,-67.7273 1.43479,-72.6006 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-104.447" y1="-24.4027" x2="-17.9311" y2="-24.4699"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-25.6911,-19.4639 -15.695,-24.4717 -25.6989,-29.4639 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-168.417" y1="15.4408" x2="14.6787" y2="26.2825"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="6.63284,30.8148 16.9109,26.4146 7.22393,20.8323 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="228.631" y1="27.0128" x2="245.098" y2="27.086"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="237.312,32.0514 247.334,27.0959 237.356,22.0515 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="13.7331" y="-96.2556" width="226.9" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="13.7331" y="-96.2556" width="226.9" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="127.183" y="-73.3556">
+      <tspan x="127.183" y="-73.3556">src/integrate/TermsCoverage.py</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-13.4589" y="-43.4734" width="268.25" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-13.4589" y="-43.4734" width="268.25" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="120.666" y="-20.5734">
+      <tspan x="120.666" y="-20.5734">src/integrate/nonProfileFrequencies.py</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="19.1431" y="7.54684" width="209.35" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="19.1431" y="7.54684" width="209.35" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="123.818" y="30.4468">
+      <tspan x="123.818" y="30.4468">src/integrate/uniqueTerms.py</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="250.572" y="8.53264" width="190" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="250.572" y="8.53264" width="190" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="345.572" y="31.4326">
+      <tspan x="345.572" y="31.4326">src/integrate/constants.py</tspan>
+    </text>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="-1625.8" y1="-487.343" x2="-1584.67" y2="-488.148"/>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-879.618" y1="-86.8816" x2="-315.657" y2="-68.382"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-323.581,-63.6392 -313.422,-68.3087 -323.253,-73.6338 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-873.668" y1="-45.8355" x2="-328.605" y2="-28.0371"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-336.528,-23.2931 -326.37,-27.9641 -336.202,-33.2878 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1123.81" y="-304.21" width="269.318" height="54.9811"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1123.81" y="-304.21" width="269.318" height="54.9811"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-989.149" y="-272.819">
+      <tspan x="-989.149" y="-272.819">src/Makefile</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1011.31 -97.8816 L -905.957,-97.8816 C -891.411,-97.8816 -879.619,-92.9567 -879.619,-86.8816 C -879.619,-80.8065 -891.411,-75.8816 -905.957,-75.8816 L -1011.31,-75.8816 C -1025.85,-75.8816 -1037.64,-80.8065 -1037.64,-86.8816 C -1037.64,-92.9567 -1025.85,-97.8816 -1011.31,-97.8816z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1011.31 -97.8816 L -905.957,-97.8816 C -891.411,-97.8816 -879.619,-92.9567 -879.619,-86.8816 C -879.619,-80.8065 -891.411,-75.8816 -905.957,-75.8816 L -1011.31,-75.8816 C -1025.85,-75.8816 -1037.64,-80.8065 -1037.64,-86.8816 C -1037.64,-92.9567 -1025.85,-97.8816 -1011.31,-97.8816"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-958.632" y="-82.8816">
+      <tspan x="-958.632" y="-82.8816">coverageTables</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1562.21 -206.102 L -1415.71,-206.102 C -1395.49,-206.102 -1379.09,-201.177 -1379.09,-195.102 C -1379.09,-189.027 -1395.49,-184.102 -1415.71,-184.102 L -1562.21,-184.102 C -1582.44,-184.102 -1598.84,-189.027 -1598.84,-195.102 C -1598.84,-201.177 -1582.44,-206.102 -1562.21,-206.102z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1562.21 -206.102 L -1415.71,-206.102 C -1395.49,-206.102 -1379.09,-201.177 -1379.09,-195.102 C -1379.09,-189.027 -1395.49,-184.102 -1415.71,-184.102 L -1562.21,-184.102 C -1582.44,-184.102 -1598.84,-189.027 -1598.84,-195.102 C -1598.84,-201.177 -1582.44,-206.102 -1562.21,-206.102"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1488.96" y="-191.102">
+      <tspan x="-1488.96" y="-191.102">nonProfileFrequencies</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1544.39 -379.868 L -1459.73,-379.868 C -1448.04,-379.868 -1438.56,-374.943 -1438.56,-368.868 C -1438.56,-362.793 -1448.04,-357.868 -1459.73,-357.868 L -1544.39,-357.868 C -1556.08,-357.868 -1565.56,-362.793 -1565.56,-368.868 C -1565.56,-374.943 -1556.08,-379.868 -1544.39,-379.868z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1544.39 -379.868 L -1459.73,-379.868 C -1448.04,-379.868 -1438.56,-374.943 -1438.56,-368.868 C -1438.56,-362.793 -1448.04,-357.868 -1459.73,-357.868 L -1544.39,-357.868 C -1556.08,-357.868 -1565.56,-362.793 -1565.56,-368.868 C -1565.56,-374.943 -1556.08,-379.868 -1544.39,-379.868"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1502.06" y="-364.868">
+      <tspan x="-1502.06" y="-364.868">mine</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1526.12 -354.478 L -1467.07,-354.478 C -1458.92,-354.478 -1452.31,-347.984 -1452.31,-339.973 C -1452.31,-331.961 -1458.92,-325.467 -1467.07,-325.467 L -1526.12,-325.467 C -1534.28,-325.467 -1540.89,-331.961 -1540.89,-339.973 C -1540.89,-347.984 -1534.28,-354.478 -1526.12,-354.478z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1526.12 -354.478 L -1467.07,-354.478 C -1458.92,-354.478 -1452.31,-347.984 -1452.31,-339.973 C -1452.31,-331.961 -1458.92,-325.467 -1467.07,-325.467 L -1526.12,-325.467 C -1534.28,-325.467 -1540.89,-331.961 -1540.89,-339.973 C -1540.89,-347.984 -1534.28,-354.478 -1526.12,-354.478"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1496.6" y="-335.973">
+      <tspan x="-1496.6" y="-335.973">backlink</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1629.67 -126.336 L -1574.12,-126.336 C -1566.45,-126.336 -1560.23,-121.411 -1560.23,-115.336 C -1560.23,-109.261 -1566.45,-104.336 -1574.12,-104.336 L -1629.67,-104.336 C -1637.34,-104.336 -1643.56,-109.261 -1643.56,-115.336 C -1643.56,-121.411 -1637.34,-126.336 -1629.67,-126.336z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1629.67 -126.336 L -1574.12,-126.336 C -1566.45,-126.336 -1560.23,-121.411 -1560.23,-115.336 C -1560.23,-109.261 -1566.45,-104.336 -1574.12,-104.336 L -1629.67,-104.336 C -1637.34,-104.336 -1643.56,-109.261 -1643.56,-115.336 C -1643.56,-121.411 -1637.34,-126.336 -1629.67,-126.336"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1601.9" y="-111.336">
+      <tspan x="-1601.9" y="-111.336">analyze</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1587.76 -164.752 L -1509.46,-164.752 C -1498.65,-164.752 -1489.88,-159.828 -1489.88,-153.752 C -1489.88,-147.677 -1498.65,-142.752 -1509.46,-142.752 L -1587.76,-142.752 C -1598.57,-142.752 -1607.33,-147.677 -1607.33,-153.752 C -1607.33,-159.828 -1598.57,-164.752 -1587.76,-164.752z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1587.76 -164.752 L -1509.46,-164.752 C -1498.65,-164.752 -1489.88,-159.828 -1489.88,-153.752 C -1489.88,-147.677 -1498.65,-142.752 -1509.46,-142.752 L -1587.76,-142.752 C -1598.57,-142.752 -1607.33,-147.677 -1607.33,-153.752 C -1607.33,-159.828 -1598.57,-164.752 -1587.76,-164.752"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1548.61" y="-149.752">
+      <tspan x="-1548.61" y="-149.752">from-cache</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1590.62 -94.0436 L -1528.97,-94.0436 C -1520.46,-94.0436 -1513.56,-89.1187 -1513.56,-83.0436 C -1513.56,-76.9685 -1520.46,-72.0436 -1528.97,-72.0436 L -1590.62,-72.0436 C -1599.13,-72.0436 -1606.03,-76.9685 -1606.03,-83.0436 C -1606.03,-89.1187 -1599.13,-94.0436 -1590.62,-94.0436z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1590.62 -94.0436 L -1528.97,-94.0436 C -1520.46,-94.0436 -1513.56,-89.1187 -1513.56,-83.0436 C -1513.56,-76.9685 -1520.46,-72.0436 -1528.97,-72.0436 L -1590.62,-72.0436 C -1599.13,-72.0436 -1606.03,-76.9685 -1606.03,-83.0436 C -1606.03,-89.1187 -1599.13,-94.0436 -1590.62,-94.0436"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1559.79" y="-79.0436">
+      <tspan x="-1559.79" y="-79.0436">to-cache</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -978.427 -154.345 L -913.727,-154.345 C -904.794,-154.345 -897.552,-149.42 -897.552,-143.345 C -897.552,-137.27 -904.794,-132.345 -913.727,-132.345 L -978.427,-132.345 C -987.36,-132.345 -994.602,-137.27 -994.602,-143.345 C -994.602,-149.42 -987.36,-154.345 -978.427,-154.345z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -978.427 -154.345 L -913.727,-154.345 C -904.794,-154.345 -897.552,-149.42 -897.552,-143.345 C -897.552,-137.27 -904.794,-132.345 -913.727,-132.345 L -978.427,-132.345 C -987.36,-132.345 -994.602,-137.27 -994.602,-143.345 C -994.602,-149.42 -987.36,-154.345 -978.427,-154.345"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-946.077" y="-139.345">
+      <tspan x="-946.077" y="-139.345">integrate</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1532.59 -320.27 L -1467.89,-320.27 C -1458.95,-320.27 -1451.71,-315.345 -1451.71,-309.27 C -1451.71,-303.195 -1458.95,-298.27 -1467.89,-298.27 L -1532.59,-298.27 C -1541.52,-298.27 -1548.76,-303.195 -1548.76,-309.27 C -1548.76,-315.345 -1541.52,-320.27 -1532.59,-320.27z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1532.59 -320.27 L -1467.89,-320.27 C -1458.95,-320.27 -1451.71,-315.345 -1451.71,-309.27 C -1451.71,-303.195 -1458.95,-298.27 -1467.89,-298.27 L -1532.59,-298.27 C -1541.52,-298.27 -1548.76,-303.195 -1548.76,-309.27 C -1548.76,-315.345 -1541.52,-320.27 -1532.59,-320.27"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1500.24" y="-305.27">
+      <tspan x="-1500.24" y="-305.27">integrate</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-901.057" y1="-135.304" x2="-552.759" y2="-73.0938"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-561.281,-69.5369 -550.558,-72.7007 -559.523,-79.3811 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1066.28 87.9484 L -1025.83,87.9484 C -1020.24,87.9484 -1015.72,92.8733 -1015.72,98.9484 C -1015.72,105.024 -1020.24,109.948 -1025.83,109.948 L -1066.28,109.948 C -1071.86,109.948 -1076.39,105.024 -1076.39,98.9484 C -1076.39,92.8733 -1071.86,87.9484 -1066.28,87.9484z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1066.28 87.9484 L -1025.83,87.9484 C -1020.24,87.9484 -1015.72,92.8733 -1015.72,98.9484 C -1015.72,105.024 -1020.24,109.948 -1025.83,109.948 L -1066.28,109.948 C -1071.86,109.948 -1076.39,105.024 -1076.39,98.9484 C -1076.39,92.8733 -1071.86,87.9484 -1066.28,87.9484"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1046.05" y="102.948">
+      <tspan x="-1046.05" y="102.948">clean</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1438.56" y1="-368.868" x2="-997.368" y2="-220.833"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1006.32,-218.562 -995.248,-220.121 -1003.14,-228.043 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1452.31" y1="-339.972" x2="-961.169" y2="-180.471"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-970.098,-178.114 -959.043,-179.78 -967.009,-187.625 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1451.71" y1="-309.27" x2="-998.806" y2="-144.871"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1007.81,-142.82 -996.704,-144.108 -1004.4,-152.22 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1450.32" y1="-215.291" x2="-1008.93" y2="-100.019"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1017.71,-97.1428 -1006.77,-99.4537 -1015.18,-106.818 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1453.57" y1="-183.106" x2="-1086.25" y2="-58.6149"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1095.21,-56.3716 -1084.13,-57.8971 -1092,-65.8424 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1504.5" y1="-142.173" x2="-1048.47" y2="-22.46"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1057.24,-19.5951 -1046.3,-21.8922 -1054.71,-29.2674 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1565.56" y1="-105.717" x2="-1099.15" y2="17.7303"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1107.93,20.5773 -1096.99,18.3024 -1105.37,10.9102 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1522.24" y1="-72.14" x2="-1092.15" y2="52.7369"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1101,55.3737 -1090.01,53.3604 -1098.22,45.7703 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1522.97" y1="-43.8177" x2="-1078.25" y2="89.3093"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1087.13,91.8728 -1076.11,89.9506 -1084.26,82.2928 "/>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000000" x="-1133.77" y="-313.274" width="296.291" height="454.128"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-985.623" y="-82.3101">
+      <tspan x="-985.623" y="-82.3101"></tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -1712.25 -434.666 L -1666.68,-434.666 C -1660.39,-434.666 -1655.29,-429.741 -1655.29,-423.666 C -1655.29,-417.591 -1660.39,-412.666 -1666.68,-412.666 L -1712.25,-412.666 C -1718.54,-412.666 -1723.64,-417.591 -1723.64,-423.666 C -1723.64,-429.741 -1718.54,-434.666 -1712.25,-434.666z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1712.25 -434.666 L -1666.68,-434.666 C -1660.39,-434.666 -1655.29,-429.741 -1655.29,-423.666 C -1655.29,-417.591 -1660.39,-412.666 -1666.68,-412.666 L -1712.25,-412.666 C -1718.54,-412.666 -1723.64,-417.591 -1723.64,-423.666 C -1723.64,-429.741 -1718.54,-434.666 -1712.25,-434.666"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1689.46" y="-419.666">
+      <tspan x="-1689.46" y="-419.666">run</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-1630.06,-403.574 -1608.03,-378.211 -1630.06,-352.849 -1652.09,-378.211 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1630.06,-403.574 -1608.03,-378.211 -1630.06,-352.849 -1652.09,-378.211 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1630.06" y="-374.311">
+      <tspan x="-1630.06" y="-374.311"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1673.79" y1="-411.67" x2="-1647.44" y2="-391.505"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1656.64,-392.252 -1645.66,-390.146 -1650.56,-400.194 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1609.83" y1="-381.433" x2="-1531.93" y2="-393.837"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1538.81,-387.678 -1529.72,-394.188 -1540.38,-397.554 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1025.57" y1="-354.981" x2="-1411.98" y2="-438.139"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1403.34,-441.393 -1414.16,-438.609 -1405.44,-431.617 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1609.62" y1="-375.25" x2="-1569.99" y2="-369.509"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1578.39,-365.674 -1567.77,-369.189 -1576.95,-375.57 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1627.66" y1="-354.469" x2="-1607.78" y2="-158.202"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1613.54,-165.422 -1607.56,-155.977 -1603.59,-166.43 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1631.35" y1="-353.174" x2="-1643.33" y2="-119.802"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1647.93,-127.812 -1643.45,-117.569 -1637.94,-127.3 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1613.29" y1="-371.018" x2="-1545" y2="-341.734"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1554.1,-340.199 -1542.94,-340.853 -1550.16,-349.39 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1616.8" y1="-366.964" x2="-1552.17" y2="-312.162"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1561.33,-313.37 -1550.47,-310.716 -1554.86,-320.997 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="-1000.58,-371.25 -969.242,-349.605 -1000.58,-327.96 -1031.93,-349.605 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1000.58,-371.25 -969.242,-349.605 -1000.58,-327.96 -1031.93,-349.605 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-1000.58" y="-345.705">
+      <tspan x="-1000.58" y="-345.705"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-929.326" y="-605.714" width="197.95" height="53.1691"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-929.326" y="-605.714" width="197.95" height="53.1691"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-830.351" y="-575.229">
+      <tspan x="-830.351" y="-575.229">src/minig/config/config.json</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1027.95" y="-506.668" width="219.85" height="46.4769"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1027.95" y="-506.668" width="219.85" height="46.4769"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-918.021" y="-479.53">
+      <tspan x="-918.021" y="-479.53">src/mining/bookDownloader.py</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-990.785" y1="-365.488" x2="-935.305" y2="-455.414"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-935.127,-446.181 -934.131,-457.317 -943.637,-451.431 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-807.102" y1="-481.92" x2="-782.839" y2="-481.589"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-790.67,-476.695 -780.603,-481.559 -790.534,-486.695 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-969.705" y1="-348.289" x2="-508.792" y2="-328.651"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-516.762,-323.986 -506.558,-328.556 -516.336,-333.977 "/>
+  </g>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="-855.618" y1="-551.548" x2="-895.825" y2="-507.658"/>
+  <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x1="-793.32" y1="-551.551" x2="-724.685" y2="-500.438"/>
+</svg>
