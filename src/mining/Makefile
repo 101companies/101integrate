@@ -39,6 +39,7 @@ cleanOnlineBooks:
 		for h in ../../data/perbook/"$$b"/contents/*; do \
 			html2text "$$h" --ignore-links --ignore-images > "$$h".txt; \
 			rm "$$h"; \
+			python cleanFileNames.py "$$h".txt; \
 		done \
 	done
 
