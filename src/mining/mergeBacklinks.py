@@ -19,4 +19,4 @@ for resName in resNames:
 			allBacklinks['backlinks'][str(term)] = {resName: resources[term]}
 
 f = open(datafolder + sys.argv[-1] + "backlinks.json", 'write')
-f.write(json.dumps(allBacklinks), indent="\t")
+f.write(json.dumps(allBacklinks, indent="\t"))
