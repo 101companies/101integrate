@@ -46,6 +46,7 @@ nonProfileFrequencies:
 	
 # Clean it all
 clean:
+	cd ../; rm -rf logs/
 	cd ../data/allbooks; rm -f *.tex *.csv *.json *.png *.html
 	cd ..; for b in ${ALL_BOOKS}; do \
 			cd data/perbook/"$$b"; rm -rf contents *.tex *.csv *.json *.png *.html ; \
