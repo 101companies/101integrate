@@ -8,7 +8,7 @@ Make sure all dependencies are installed.
 
 You need System R: http://www.r-project.org/
 
-You need pyhton-antlr (not available throw pipi):  [Ubuntu](https://launchpad.net/ubuntu/+source/antlr)  [sonstige](https://theantlrguy.atlassian.net/wiki/display/ANTLR3/Python+runtime)
+You need pyhton-antlr (not available throw pipi):  [Ubuntu](https://launchpad.net/ubuntu/+source/antlr) , [sonstige](https://theantlrguy.atlassian.net/wiki/display/ANTLR3/Python+runtime)
 
 You need a bunch of Python packages and some NLP support. This is taken care of by this command:
 
