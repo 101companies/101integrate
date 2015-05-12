@@ -2,8 +2,11 @@
 #coding=utf-8
 
 # Generates a config for all existing books
-
+import sys
 import os
+sys.path.insert(0, './mining')
+import bookDownloader
+import json
 
 allBooks = []
 def get_immediate_subdirectories(dir):
@@ -12,7 +15,10 @@ def get_immediate_subdirectories(dir):
 
 linkedBooks = []
 nonLinkedBooks = []
-allBooks = get_immediate_subdirectories('../data/perbook')
+if len(sys.argv) == 1:
+  allBooks = get_immediate_subdirectories('../data/perbook')
+else:
+  allBooks = bookDownloader.selectBooks(sys.argv[1:],json.loads(open("./mining/config/config.json").read()))
 for bookDir in allBooks:
   print bookDir
   if os.path.exists('../data/perbook/' + bookDir + '/contents'):
@@ -21,4 +27,4 @@ for bookDir in allBooks:
     nonLinkedBooks.append(bookDir)
 
 with open ('Makefile.vars', 'w') as f: 
-  f.write ('#List of available Books \r\n'+'#downloadable books \nALL_BOOKS = ' + ' '.join(allBooks) + '\n#currently downloaded books\nLINKED_BOOKS = ' + ' '.join(linkedBooks) + '\n#not-downloaded Books \nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
+  f.write ('#List of available Books about '+str(sys.argv[1:])+'  \r\n ALL_BOOKS = ' + ' '.join(allBooks) + '\n#currently downloaded books\nLINKED_BOOKS = ' + ' '.join(linkedBooks) + '\n#not-downloaded Books \nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))

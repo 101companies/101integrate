@@ -16,42 +16,30 @@ ifeq ($(LOGGING),ON)
 	mkdir -p logs
 	$(MAKE) download-books BOOKS=$(BOOKS) 2>&1 | tee logs/downloadBooks.log
 	$(MAKE) mine           LOGGING=ON
-	$(MAKE) quickrun       LOGGING=ON
-else
-	$(MAKE) download-books BOOKS=$(BOOKS)
-	$(MAKE) mine
-	$(MAKE) quickrun
-endif
-
-#shorter run (skipping resource mining, only use cached Data)
-quickrun:
-ifeq ($(LOGGING),ON)
-	mkdir -p logs
-	$(MAKE) bootstrap
 	$(MAKE) from-cache     2>&1	| tee logs/fromCache.log
 	$(MAKE) analyze        LOGGING=ON
 	$(MAKE) backlink       LOGGING=ON
 	$(MAKE) integrate      LOGGING=ON
 else
-	$(MAKE) bootstrap
+	$(MAKE) download-books BOOKS=$(BOOKS)
+	$(MAKE) mine
 	$(MAKE) from-cache
 	$(MAKE) analyze
 	$(MAKE) backlink
 	$(MAKE) integrate
 endif
 
+
+
 # Download books that are available online
 download-books:
 ifndef BOOKS
-ifndef BOOK
 	cd src/mining; $(PYTHON) bookDownloader.py all
-else
-	cd src/mining; $(PYTHON) bookDownloader.py $(BOOK)
-endif
+	$(MAKE) bootstrap
 else
 	cd src/mining; $(PYTHON) bookDownloader.py $(BOOKS)
+	$(MAKE) bootstrap BOOKS=$(BOOKS)
 endif
-	$(MAKE) bootstrap
 	cd src/mining; $(MAKE) cleanOnlineBooks
 
 # Optionally link offline books, as explained in the README.md
@@ -82,7 +70,11 @@ download-deps:
 	$(PYTHON) -m nltk.downloader all
 
 bootstrap:
+ifndef BOOKS
 	cd src; $(PYTHON) bootstrap.py
+else
+	cd src; $(PYTHON) bootstrap.py $(BOOKS)
+endif
 
 # Run mining scripts
 mine:
