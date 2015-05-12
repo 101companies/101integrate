@@ -49,6 +49,7 @@ def selectBooks(args, config):
   if (nameIsIn("all",[args[0]]) or len(args) == 0 ):
     for data in bookData:
 	try:
+	      bookData[data]['fullName'] # for removing non-books
 	      books.add(data)
 	except KeyError:
 	    print "\t "+data + " skipped."
