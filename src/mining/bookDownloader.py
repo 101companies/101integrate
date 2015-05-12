@@ -26,8 +26,16 @@ def normalizeString(string):
     return re.sub("[^\w]", "", string).lower()
 
 
-
-
+##
+#@param	books	a Collection of books
+#@param 	config	the configuration
+#@return	the input collection without non-Linkable books
+def getLinkables(books, config):
+    for b in books.copy(): #so you con change books in iteration
+      if not config[b]['isLinkable']:
+	books.remove(b)
+    return books
+    
 
 
 ##
@@ -41,8 +49,7 @@ def selectBooks(args, config):
   if (nameIsIn("all",[args[0]]) or len(args) == 0 ):
     for data in bookData:
 	try:
-	    print bookData[data]['fullName'] # SKIP NONBOOKS
-	    if bookData[data]['isLinkable']:
+	      bookData[data]['fullName'] # for removing non-books
 	      books.add(data)
 	except KeyError:
 	    print "\t "+data + " skipped."
@@ -50,16 +57,17 @@ def selectBooks(args, config):
 	    pass
   else:
     for arg in args:
-	print " comparing " + arg
+	#print " comparing " + arg
 	for data in bookData:
 	    try:
-		  print "\t with " + data
-		  if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['tag'])) and bookData[data]['isLinkable']):
+		  #print "\t with " + data
+		  if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['tag']))):
 		      print "\t\t"+ arg+" recognized"
 		      books.add(data)
 		      print "\t\t"+ data+" added "
 	    except KeyError:
-		  print "\t "+data + " skipped."
+		  #print "\t "+data + " skipped."
+		  pass
 	    else:
 		  pass
 		
@@ -85,4 +93,5 @@ def downloadBooks(books, bookfldr):
     
     
 if __name__ == "__main__":
-   downloadBooks(selectBooks(sys.argv[1:], json.loads(open(constants.configPath, 'rb').read())),constants.bookPath)
+   conf = json.loads(open(constants.configPath, 'rb').read())
+   downloadBooks(getLinkables(selectBooks(sys.argv[1:],conf ),conf),constants.bookPath)
