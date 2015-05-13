@@ -53,8 +53,6 @@ download-googledocs:
 
 # Get Python and R tools
 download-deps:
-	cd src; touch Makefile.vars
-	cd src/analytics; $(MAKE) prepare
 	sudo $(PYTHON_PACKAGE_INSTALLER) BeautifulSoup
 	sudo $(PYTHON_PACKAGE_INSTALLER) numpy
 	sudo $(PYTHON_PACKAGE_INSTALLER) nltk
@@ -68,6 +66,8 @@ download-deps:
 	sudo $(PYTHON_PACKAGE_INSTALLER) stringtemplate3 #Still needs antlr, but not available on pypi
 	sudo $(PYTHON_PACKAGE_INSTALLER) sortedcontainers
 	$(PYTHON) -m nltk.downloader all
+	cd src; touch Makefile.vars
+	cd src/analytics; $(MAKE) prepare
 
 bootstrap:
 ifndef BOOKS
