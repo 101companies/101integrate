@@ -144,37 +144,25 @@ foo <- function(x, max){
 
 bar <- function(i){
   #print("bar")
-  print("Chapter #")
-  print(i)
+  #print("Chapter #")
+  #print(i)
   #print(NCOL(i))
   v <- as.vector(frequenciesDistributionFiltered[1:nrow(frequenciesDistributionFiltered),i])
   #print(length(v))
   ns <- names(frequenciesDistributionFiltered)
   r <- foo(frequenciesDistributionFiltered[1:nrow(frequenciesDistributionFiltered),i], 
            getLocals(frequenciesDistributionFiltered[,i]))
-  print("re-bar")
+  #print("re-bar")
   if (!identical(r, FALSE)){
            #print(length(r))
            #print(length(names(frequenciesDistributionFiltered)[i]))
            data.frame(x = names(frequenciesDistributionFiltered)[i],
                y = r)
   }
-  else NULL
+  else NULL #TODO: Replace with proper error handling
 }
 
-barfoo <- function(i){
-  out <- tryCatch(
-     {bar(i)},
-     error=function(cond){
-        message(cond)
-        return(NULL)},
-     warning=function(cond){
-        message(cond)
-        return(NULL)},
-     finally={}
-  )
-  return(out)
-}
+
 
 #print(NCOL(frequenciesDistributionFiltered))
 
