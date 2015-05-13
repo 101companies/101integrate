@@ -15,7 +15,7 @@ def main(infile,outfile, args):
 	t = group.getInstanceOf("template")
 	t["args"]=args
 	out = str(t)
-	print out
+	#print out
 	writer = open(outfile, "w")
 	writer.write(out)
 	writer.close()
