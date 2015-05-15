@@ -4,7 +4,7 @@
 import urllib2
 import simplejson as json
 
-datafldr = ../../data/
+datafldr = "../../data/"
 
 if __name__ == "__main__":
   topics = ["concepts","themes","vocabularies","technologies","languages"]
