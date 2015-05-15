@@ -9,6 +9,7 @@ import inflect
 p = inflect.engine()
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
+import logging
 
 def isinWhitelist(term, list):
 	for t in list:
@@ -118,7 +119,7 @@ def main(resource, datapath, resourcepath, indexpath, indexfile, chaptersfile, c
 
 		termtokens = map(lambda t: lmtzr.lemmatize(t).lower() , nltk.wordpunct_tokenize(term))
 		stemmedTerm = " ".join(termtokens).replace(" - ", "-")
-		print "Stemmed term:", term, "->", nltk.wordpunct_tokenize(term), "->", termtokens, "->", stemmedTerm
+		logging.info("Stemmed term:", term, "->", nltk.wordpunct_tokenize(term), "->", termtokens, "->", stemmedTerm)
 		stemmedTerms[term] = stemmedTerm
 		orginals[stemmedTerm] = term
 
@@ -174,7 +175,7 @@ def main(resource, datapath, resourcepath, indexpath, indexfile, chaptersfile, c
   w1.writerow(["Term", "Stemmed", "Variations", "Frequency"])
 
   for (i,freq) in enumerate(freqAll):
-	print "Writing " + str(i+1) + "/" + str(len(freqAll))
+	logging.info("Writing " + str(i+1) + "/" + str(len(freqAll)))
 	w1.writerow([orginals[freq], freq, ", ".join(map(lambda x: str(x), metainfo[freq]["synonyms"])), freqAll[freq]])
 
 
