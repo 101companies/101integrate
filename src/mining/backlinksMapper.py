@@ -29,8 +29,6 @@ for chapter in chapters:
 	filen = chapter['file']
 	filesn[filen] = chapter['title']
 for i, term in enumerate(distribution):
-	if term == "monad":
-		print "Yes"
 	shallow = map(lambda x : sum(x), distribution[term])
 	maxChapIndecies = [i[0] for i in sorted(enumerate(shallow), reverse=True, key=lambda x:x[1])][:int(sys.argv[5])]
 	primary = []
@@ -55,9 +53,6 @@ for i, term in enumerate(distribution):
 			else:
 				secondary.append(maxLink)
 	termlinks[term] = {'primary' : primary, 'secondary' : secondary}
-	if term == "monad":
-		for s in secondary:
-			print s
 f = open(resourcebase + "backlinks.json", "write")
 f.write(json.dumps(termlinks, indent= "\t"))
 
