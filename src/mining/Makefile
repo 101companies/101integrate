@@ -68,7 +68,7 @@ mergedfrequencies:
 
 backlinksMappings:
 	for b in ${LINKED_BOOKS}; do \
-		$(PYTHON) backlinksMapper.py "$$b" ../../data/perbook/ frequenciesDistributionDeepMerged.json contents/ 5; \
+		$(PYTHON) backlinksMapper.py "$$b" ../../data/perbook/ frequenciesDistributionDeepMerged.json 5; \
 	done
 
 mergeBacklinkMappings:
