@@ -1,5 +1,6 @@
 import json
 import re
+import logging
 
 def rchop(thestring, ending):
   if thestring.endswith(ending):
@@ -21,5 +22,5 @@ def cleanPatterns(term, patterninfo):
 				"suffix" : rchop(result, p['string'])
 			}[p['pos']]
 	if term != result:
-		print term, "->", result
+		logging.info(term, "->", result)
 	return result

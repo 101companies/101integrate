@@ -9,30 +9,27 @@ import re
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
 
-resourcename = sys.argv[1]
-root = sys.argv[2]
-resourcebase = root + sys.argv[1] + '/'
-resInfos = json.loads(open("config/config.json", 'rb').read())
-distributionraw = json.loads(open(resourcebase + sys.argv[3], 'rb').read())
-distribution = distributionraw['distribution']
-termlinks = {}
-structure = distributionraw['structure']
-hasUrl = 'urlBase' in resInfos[resourcename]
-filesn = {}
-print "Backlinking", resourcename, "..."
-profileReader = csv.reader(open(resourcebase + 'chapterProfile.numbers.csv'), delimiter=',')
-profile = {}
-for row in profileReader:
+def main(resourcename, root, distributionfile, limit):
+  resourcebase = root + resourcename + '/'
+  resInfos = json.loads(open("config/config.json", 'rb').read())
+  distributionraw = json.loads(open(resourcebase + distributionfile, 'rb').read())
+  distribution = distributionraw['distribution']
+  termlinks = {}
+  structure = distributionraw['structure']
+  hasUrl = 'urlBase' in resInfos[resourcename]
+  filesn = {}
+  print "Backlinking", resourcename, "..."
+  profileReader = csv.reader(open(resourcebase + 'chapterProfile.numbers.csv'), delimiter=',')
+  profile = {}
+  for row in profileReader:
 	profile[row[1]] = row[2:]
-chapters = json.loads(open(resourcebase + "metadata/chapters.json", 'rb').read())['chapters']
-for chapter in chapters:
+  chapters = json.loads(open(resourcebase + "metadata/chapters.json", 'rb').read())['chapters']
+  for chapter in chapters:
 	filen = chapter['file']
 	filesn[filen] = chapter['title']
-for i, term in enumerate(distribution):
-	if term == "monad":
-		print "Yes"
+  for i, term in enumerate(distribution):
 	shallow = map(lambda x : sum(x), distribution[term])
-	maxChapIndecies = [i[0] for i in sorted(enumerate(shallow), reverse=True, key=lambda x:x[1])][:int(sys.argv[5])]
+	maxChapIndecies = [i[0] for i in sorted(enumerate(shallow), reverse=True, key=lambda x:x[1])][:int(limit)]
 	primary = []
 	secondary = []
 	for maxChapIndex in maxChapIndecies:
@@ -55,10 +52,8 @@ for i, term in enumerate(distribution):
 			else:
 				secondary.append(maxLink)
 	termlinks[term] = {'primary' : primary, 'secondary' : secondary}
-	if term == "monad":
-		for s in secondary:
-			print s
-f = open(resourcebase + "backlinks.json", "write")
-f.write(json.dumps(termlinks, indent= "\t"))
+  f = open(resourcebase + "backlinks.json", "write")
+  f.write(json.dumps(termlinks, indent= "\t"))
 
-
+if __name__ == "__main__":
+  main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
