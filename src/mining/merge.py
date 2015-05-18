@@ -12,6 +12,7 @@ p = inflect.engine()
 import nltk
 from sortedcontainers import SortedDict, SortedList
 from nltk.stem.wordnet import WordNetLemmatizer
+import logging
 
 def isinWhitelist(term, list):
 	for t in list:
@@ -22,7 +23,7 @@ def isinWhitelist(term, list):
 def isAbb(term):
 	for i in range(0, len(term)):
 		if re.match("\/|\.|\-", term[i]):
-			print ">>>>>", term
+			logging.info(">>>>>", term)
 			return True
 	return False
 
@@ -91,33 +92,34 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 			else:
 				allTerms[term.lstrip(' ')] = dict(resourcenames = set([csvfn]))
 		else:
-			print "Blacklisted term", termU, "excluded"
+			logging.info("Blacklisted term", termU, "excluded")
 
   # detect synonyms
   synonyms = []
+  print "Detecting Synonyms"
   for i, term in enumerate(allTerms):
 	if not term in synonyms and not term.startswith('^') and not isinWhitelist(term,whitelist):
-		print str(i) + "/" + str(len(allTerms)), ":Detecting synonyms for \"" + term + "\" from", allTerms[term]['resourcenames']
+		logging.info(str(i) + "/" + str(len(allTerms)), ":Detecting synonyms for \"" + term + "\" from", allTerms[term]['resourcenames'])
 		cursyms =  allTerms[term]['synonyms'] = filter(lambda x: areSimilar(term,x) and term != x and not isinWhitelist(x, whitelist), allTerms)
 		for synonym in cursyms:
 			if not isinWhitelist(synonym, whitelist):
-				print "> \"" + synonym + "\" from", allTerms[synonym]['resourcenames']
+				logging.info("> \"" + synonym + "\" from", allTerms[synonym]['resourcenames'])
 				allTerms[term]['resourcenames'] |= allTerms[synonym]['resourcenames']
 		synonyms.extend(cursyms)
 	else:
 		allTerms[term]['synonyms'] = []
 	allTerms[term]['resourcenames'] = list(allTerms[term]['resourcenames'])
 	if isinWhitelist(term,whitelist):
-		print "Whitelisted term", term, "used as-is"
-  print len(synonyms), "synonym(s) detected"
+		logging.info("Whitelisted term", term, "used as-is")
+  logging.info(len(synonyms), "synonym(s) detected")
 
   # remove synoyms
   for synonym in synonyms:
 	allTerms.pop(synonym)
 
-  print len(allTerms), "term(s) left"
+  logging.info(len(allTerms), "term(s) left")
 
-  print "Final cleaning of plural/singular issue..."
+  logging.info("Final cleaning of plural/singular issue...")
   replacements = []
   for i, term in enumerate(allTerms):
 	try:
@@ -137,7 +139,7 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 	if newTerm in allTerms[newTerm]['synonyms']:
 		allTerms[newTerm]['synonyms'].remove(newTerm)
 	del allTerms[oldTerm]
-	print oldTerm, "replaced by", newTerm
+	logging.info(oldTerm, "replaced by", newTerm)
 
   print len(allTerms), "All done!"
 
