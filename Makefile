@@ -1,7 +1,7 @@
 include Makefile.vars
 
 #Programs
-PYTHON_PACKAGE_INSTALLER = easy_install
+PYTHON_PACKAGE_INSTALLER = pip install --upgrade
 
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
