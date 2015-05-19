@@ -4,9 +4,10 @@
 import sys
 import simplejson as json
 import csv
+import logging
 
 resNames = sys.argv[3:-1]
-print "Checking...", resNames
+logging.info("Checking...", resNames)
 datafolder = sys.argv[1]
 mappings = {}
 for resName in resNames:

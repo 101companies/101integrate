@@ -1,7 +1,7 @@
 include Makefile.vars
 
 #Programs
-PYTHON_PACKAGE_INSTALLER = easy_install
+PYTHON_PACKAGE_INSTALLER = pip install --upgrade
 
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
@@ -65,6 +65,7 @@ download-deps:
 	sudo $(PYTHON_PACKAGE_INSTALLER) simplejson
 	sudo $(PYTHON_PACKAGE_INSTALLER) stringtemplate3 #Still needs antlr, but not available on pypi
 	sudo $(PYTHON_PACKAGE_INSTALLER) sortedcontainers
+	sudo $(PYTHON_PACKAGE_INSTALLER) logging
 	$(PYTHON) -m nltk.downloader all
 	cd src; touch Makefile.vars
 	cd src/analytics; $(MAKE) prepare

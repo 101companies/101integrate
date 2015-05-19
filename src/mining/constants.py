@@ -1,4 +1,5 @@
 import os
+import logging #needed for nunning the whole project in debug/info-mode
 
 # the path for the data folder
 dataPath = ".."+os.path.sep+".."+os.path.sep+"data"+os.path.sep

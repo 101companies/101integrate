@@ -3,9 +3,10 @@
 
 import sys
 import simplejson as json
+import logging
 
 resNames = sys.argv[3:-1]
-print resNames
+logging.info(resNames)
 datafolder = sys.argv[1]
 allBacklinks = {"resources" : {}, "backlinks": {}}
 resInfos = json.loads(open("config/config.json", 'rb').read())

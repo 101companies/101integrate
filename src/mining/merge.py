@@ -12,6 +12,7 @@ p = inflect.engine()
 import nltk
 from sortedcontainers import SortedDict, SortedList
 from nltk.stem.wordnet import WordNetLemmatizer
+import logging
 
 def isinWhitelist(term, list):
 	for t in list:
@@ -22,7 +23,7 @@ def isinWhitelist(term, list):
 def isAbb(term):
 	for i in range(0, len(term)):
 		if re.match("\/|\.|\-", term[i]):
-			print ">>>>>", term
+			logging.debug(">>>>>", term)
 			return True
 	return False
 
@@ -72,7 +73,7 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 	resourcename = datafldr + inputfldr+ csvfn + "/" + index
 
 	indexReader = csv.reader(open(resourcename, 'rb'), delimiter=',')
-	print "Reading", resourcename
+	logging.info("Reading", resourcename)
 	preTerms = []
 	for row in indexReader:
 		exsplit = row[0].replace("\"", "").split("!")[0]
@@ -91,33 +92,34 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 			else:
 				allTerms[term.lstrip(' ')] = dict(resourcenames = set([csvfn]))
 		else:
-			print "Blacklisted term", termU, "excluded"
+			logging.debug("Blacklisted term", termU, "excluded")
 
   # detect synonyms
   synonyms = []
+  logging.info("Detecting Synonyms")
   for i, term in enumerate(allTerms):
 	if not term in synonyms and not term.startswith('^') and not isinWhitelist(term,whitelist):
-		print str(i) + "/" + str(len(allTerms)), ":Detecting synonyms for \"" + term + "\" from", allTerms[term]['resourcenames']
+		logging.debug(str(i) + "/" + str(len(allTerms)), ":Detecting synonyms for \"" + term + "\" from", allTerms[term]['resourcenames'])
 		cursyms =  allTerms[term]['synonyms'] = filter(lambda x: areSimilar(term,x) and term != x and not isinWhitelist(x, whitelist), allTerms)
 		for synonym in cursyms:
 			if not isinWhitelist(synonym, whitelist):
-				print "> \"" + synonym + "\" from", allTerms[synonym]['resourcenames']
+				logging.debug("> \"" + synonym + "\" from", allTerms[synonym]['resourcenames'])
 				allTerms[term]['resourcenames'] |= allTerms[synonym]['resourcenames']
 		synonyms.extend(cursyms)
 	else:
 		allTerms[term]['synonyms'] = []
 	allTerms[term]['resourcenames'] = list(allTerms[term]['resourcenames'])
 	if isinWhitelist(term,whitelist):
-		print "Whitelisted term", term, "used as-is"
-  print len(synonyms), "synonym(s) detected"
+		logging.debug("Whitelisted term", term, "used as-is")
+  logging.debug(len(synonyms), "synonym(s) detected")
 
   # remove synoyms
   for synonym in synonyms:
 	allTerms.pop(synonym)
 
-  print len(allTerms), "term(s) left"
+  logging.debug(len(allTerms), "term(s) left")
 
-  print "Final cleaning of plural/singular issue..."
+  logging.debug("Final cleaning of plural/singular issue...")
   replacements = []
   for i, term in enumerate(allTerms):
 	try:
@@ -128,7 +130,7 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 
 
 
-  print "Resolving singular/plural issues...", len(replacements)
+  logging.info("Resolving singular/plural issues...", len(replacements))
 
   for (oldTerm, newTerm) in replacements:
 	allTerms[newTerm] = dict(resourcenames=allTerms[oldTerm]['resourcenames'], synonyms=allTerms[oldTerm]['synonyms'])
@@ -137,9 +139,9 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 	if newTerm in allTerms[newTerm]['synonyms']:
 		allTerms[newTerm]['synonyms'].remove(newTerm)
 	del allTerms[oldTerm]
-	print oldTerm, "replaced by", newTerm
+	logging.debug(oldTerm, "replaced by", newTerm)
 
-  print len(allTerms), "All done!"
+  logging.info(len(allTerms), "All done!")
 
   lmtzr = WordNetLemmatizer()
   stemmedData = {}

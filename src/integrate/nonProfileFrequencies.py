@@ -5,6 +5,7 @@ import sys
 import csv
 import json
 from mako.template import Template
+import logging #needed for nunning the whole project in debug/info-mode
 
 root = sys.argv[1]
 allbooksbase =root + sys.argv[2]

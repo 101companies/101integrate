@@ -34,6 +34,7 @@ endif
 
 # Clean online books once after download
 cleanOnlineBooks:
+	$(MAKE) findhtml2text
 	for b in ${LINKED_BOOKS}; do \
 		echo "$$b" ;\
 		for h in ../../data/perbook/"$$b"/contents/*; do \
@@ -47,6 +48,16 @@ cleanOnlineBooks:
 			python cleanFileNames.py "$$h"; \
 		done \
 	done
+
+#helper-function as the program seems to make problems on some machines
+findhtml2text:
+	echo "html2text-location:"
+	type html2text
+	locate -b html2text
+	command -v html2text
+	whereis html2text
+
+
 
 cleanindecies:
 	for b in ${LINKED_BOOKS}; do \
@@ -68,7 +79,7 @@ mergedfrequencies:
 
 backlinksMappings:
 	for b in ${LINKED_BOOKS}; do \
-		$(PYTHON) backlinksMapper.py "$$b" ../../data/perbook/ frequenciesDistributionDeepMerged.json contents/ 5; \
+		$(PYTHON) backlinksMapper.py "$$b" ../../data/perbook/ frequenciesDistributionDeepMerged.json 5; \
 	done
 
 mergeBacklinkMappings:
