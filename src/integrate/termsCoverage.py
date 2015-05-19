@@ -8,6 +8,7 @@ import urllib2
 import json
 from asq.initiators import query
 from mako.template import Template
+import logging #needed for nunning the whole project in debug/info-mode
 
 from constants import *
 

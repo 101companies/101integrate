@@ -8,6 +8,7 @@ import csv
 import re
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
+import logging
 
 def main(resourcename, root, distributionfile, limit):
   resourcebase = root + resourcename + '/'
@@ -18,7 +19,7 @@ def main(resourcename, root, distributionfile, limit):
   structure = distributionraw['structure']
   hasUrl = 'urlBase' in resInfos[resourcename]
   filesn = {}
-  print "Backlinking", resourcename, "..."
+  logging.info("Backlinking", resourcename, "...")
   profileReader = csv.reader(open(resourcebase + 'chapterProfile.numbers.csv'), delimiter=',')
   profile = {}
   for row in profileReader:

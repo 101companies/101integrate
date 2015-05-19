@@ -1,6 +1,7 @@
 import urllib
 from string import Template
 import csv
+import logging #needed for nunning the whole project in debug/info-mode
 
 index = csv.reader(open(' ../../data/allbooks/Index.csv', 'rb'), delimiter=' ', quotechar='|')
 for row in index:

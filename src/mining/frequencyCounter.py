@@ -7,6 +7,7 @@ import csv
 from collections import defaultdict
 import inflect
 p = inflect.engine()
+import logging
 
 def allindices(string, sub):
     return [match.start() for match in re.finditer(re.escape(sub), string)]
@@ -59,12 +60,12 @@ if res['kind'] == "OnlyIndex":
 			pop[resInfos[resName7]['title']] = {}
 for term in terms:
 	fs = {}
-	print 'Processing "' + term + '" from index of ' + res['title']
+	logging.info('Processing "' + term + '" from index of ' + res['title'])
 	for resName3 in resInfos:
 		res3 = resInfos[resName3]
 		if res3['kind'] != "OnlyIndex":
 			resNames = list(set(resNames + [resName3]))
-			print "Processing folder", res3['kind']+"/"+res3['folder']
+			logging.info("Processing folder", res3['kind']+"/"+res3['folder'])
 			cur =  calculateFreqFolder(res3['kind']+"/"+res3['folder'] + "/" + 'data/',term)
 			fs[res3['title']] = dicts[res3['title']][term] = cur['freq']
 			if res['kind'] == "OnlyIndex":

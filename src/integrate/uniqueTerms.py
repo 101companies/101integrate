@@ -12,6 +12,7 @@ import os
 import urllib2
 from asq.initiators import query
 from jinja2 import Environment, FileSystemLoader
+import logging #needed for nunning the whole project in debug/info-mode
 
 env = Environment(line_statement_prefix='#', loader=FileSystemLoader('templates'), trim_blocks=True)
 

@@ -1,6 +1,7 @@
 import sys
 import constants
 import simplejson as json
+import logging #needed for nunning the whole project in debug/info-mode
 
 def generateBlacklist(args):
 	for a in args:

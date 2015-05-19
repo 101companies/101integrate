@@ -4,6 +4,7 @@
 import argparse
 from jinja2 import Environment, FileSystemLoader
 import csv
+import logging #needed for nunning the whole project in debug/info-mode
 
 if __name__ == "__main__":
     env = Environment(line_statement_prefix='#', loader=FileSystemLoader('templates'), trim_blocks=True)

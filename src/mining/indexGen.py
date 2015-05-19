@@ -8,6 +8,7 @@ import csv
 import re
 import constants
 from sortedcontainers import SortedSet
+import logging #needed for nunning the whole project in debug/info-mode
 
 def sqlExec(cursor, statement, values):
   try:

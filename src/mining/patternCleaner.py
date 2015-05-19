@@ -22,5 +22,5 @@ def cleanPatterns(term, patterninfo):
 				"suffix" : rchop(result, p['string'])
 			}[p['pos']]
 	if term != result:
-		logging.info(term, "->", result)
+		logging.debug(term, "->", result)
 	return result

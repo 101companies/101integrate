@@ -1,5 +1,6 @@
 import os
 import sys
+import logging #needed for nunning the whole project in debug/info-mode
 
 f = sys.argv[1]
 if f.endswith(".txt.txt"):

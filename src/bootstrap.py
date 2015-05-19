@@ -7,6 +7,7 @@ import os
 sys.path.insert(0, './mining')
 import bookDownloader
 import json
+import logging #needed for nunning the whole project in debug/info-mode
 
 allBooks = []
 def get_immediate_subdirectories(dir):

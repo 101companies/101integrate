@@ -4,6 +4,7 @@ import os
 import crawler
 import constants
 import re
+import logging
 
 
 ##
@@ -52,22 +53,21 @@ def selectBooks(args, config):
 	      bookData[data]['fullName'] # for removing non-books
 	      books.add(data)
 	except KeyError:
-	    print "\t "+data + " skipped."
+	    logging.info("\t "+data + " skipped.")
 	else:
 	    pass
   else:
     for arg in args:
-	#print " comparing " + arg
+	logging.debug(" comparing " + arg)
 	for data in bookData:
 	    try:
-		  #print "\t with " + data
+		  logging.debug("\t with " + data)
 		  if(nameIsIn(arg, ([data, bookData[data]['fullName'],bookData[data]['title']]+bookData[data]['tag']))):
-		      print "\t\t"+ arg+" recognized"
+		      logging.info("\t\t"+ arg+" recognized")
 		      books.add(data)
-		      print "\t\t"+ data+" added "
+		      logging.info("\t\t"+ data+" added ")
 	    except KeyError:
-		  #print "\t "+data + " skipped."
-		  pass
+		 logging.info("\t "+data + " skipped.")
 	    else:
 		  pass
 		
