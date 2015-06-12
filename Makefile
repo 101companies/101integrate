@@ -14,6 +14,7 @@ nope:
 run:
 ifeq ($(LOGGING),ON)
 	mkdir -p logs
+	cp src/config/pythonLoggingDebug.conf src/config/pythonLogging.conf
 	$(MAKE) download-books BOOKS=$(BOOKS) 2>&1 | tee logs/downloadBooks.log
 	$(MAKE) mine           LOGGING=ON
 	$(MAKE) from-cache     2>&1	| tee logs/fromCache.log
@@ -21,6 +22,7 @@ ifeq ($(LOGGING),ON)
 	$(MAKE) backlink       LOGGING=ON
 	$(MAKE) integrate      LOGGING=ON
 else
+	cp src/config/pythonLoggingRun.conf src/config/pythonLogging.conf
 	$(MAKE) download-books BOOKS=$(BOOKS)
 	$(MAKE) mine
 	$(MAKE) from-cache

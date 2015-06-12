@@ -5,7 +5,7 @@ import crawler
 import constants
 import re
 import logging
-
+import logging.config
 
 ##
 #@param compared	the string to be compared
@@ -93,5 +93,6 @@ def downloadBooks(books, bookfldr):
     
     
 if __name__ == "__main__":
-   conf = json.loads(open(constants.configPath, 'rb').read())
-   downloadBooks(getLinkables(selectBooks(sys.argv[1:],conf ),conf),constants.bookPath)
+	logging.config.fileConfig('../config/pythonLogging.conf'.replace('/',os.path.sep))
+	conf = json.loads(open(constants.configPath, 'rb').read())
+	downloadBooks(getLinkables(selectBooks(sys.argv[1:],conf ),conf),constants.bookPath)

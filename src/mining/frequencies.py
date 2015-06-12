@@ -10,6 +10,7 @@ p = inflect.engine()
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
 import logging
+import logging.config
 
 def isinWhitelist(term, list):
 	for t in list:
@@ -78,7 +79,7 @@ def main(resource, datapath, resourcepath, indexpath, indexfile, chaptersfile, c
 	if not l.startswith(".") and l in realcnames:
 		chapter = open(resourcebase + contentfldr + l).read().decode("utf8")
 		rawChapters[l] = chapter
-		logging.info("Stemming chapter in", l)
+		logging.info("Stemming chapter in"+ l)
 		stemmedChapter = " " + " ".join(map(lambda t: lmtzr.lemmatize(t).lower(), nltk.wordpunct_tokenize(chapter))) + " "
 		stemmedChapters[l] = stemmedChapter
 		stemmedChaptersParts[l] = {}
@@ -119,7 +120,7 @@ def main(resource, datapath, resourcepath, indexpath, indexfile, chaptersfile, c
 
 		termtokens = map(lambda t: lmtzr.lemmatize(t).lower() , nltk.wordpunct_tokenize(term))
 		stemmedTerm = " ".join(termtokens).replace(" - ", "-")
-		logging.debug("Stemmed term:", term, "->", nltk.wordpunct_tokenize(term), "->", termtokens, "->", stemmedTerm)
+		logging.debug("Stemmed term:"+ term + "->"+ str(nltk.wordpunct_tokenize(term)) + "->" + str(termtokens) + "->" + stemmedTerm)
 		stemmedTerms[term] = stemmedTerm
 		orginals[stemmedTerm] = term
 
@@ -206,4 +207,5 @@ def main(resource, datapath, resourcepath, indexpath, indexfile, chaptersfile, c
 
 
 if __name__ == "__main__":
-  main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7], sys.argv[8], sys.argv[9])
+	logging.config.fileConfig('../config/pythonLogging.conf'.replace('/',os.path.sep))
+	main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7], sys.argv[8], sys.argv[9])

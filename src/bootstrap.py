@@ -8,6 +8,9 @@ sys.path.insert(0, './mining')
 import bookDownloader
 import json
 import logging #needed for nunning the whole project in debug/info-mode
+import logging.config
+
+logging.config.fileConfig('config/pythonLogging.conf'.replace('/',os.path.sep))
 
 allBooks = []
 def get_immediate_subdirectories(dir):
