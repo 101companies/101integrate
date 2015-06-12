@@ -42,12 +42,6 @@ cleanOnlineBooks:
 			rm "$$h"; \
 		done \
 	done
-	for b in ${LINKED_BOOKS}; do \
-		echo "$$b" ;\
-		for h in ../../data/perbook/"$$b"/contents/*; do \
-			python cleanFileNames.py "$$h"; \
-		done \
-	done
 
 
 cleanindecies:
