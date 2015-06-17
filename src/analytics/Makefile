@@ -24,6 +24,8 @@ generatePopular:
 ifneq (${ALL_BOOKS}, ${LASTRUN_ALL})
 	$(PYTHON) ../misc/generateFromStringtemplate.py templates/buildPopularTermsTable.R.stg buildPopularTermsTable.R ${ALL_BOOKS}
 	$(PYTHON) ../misc/generateFromStringtemplate.py templates/buildPopularScatteredTermsTable.R.stg buildPopularScatteredTermsTable.R ${ALL_BOOKS}
+else
+	echo "using previously generated Scripts"
 endif
 
 popular:	
