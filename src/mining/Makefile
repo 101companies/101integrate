@@ -80,7 +80,7 @@ termCoverage:
 	$(PYTHON) termCoverage.py $(DATAFOLDER)/allbooks/
 	
 rankTerms:
-	$(PYTHON) ranker.py ../../data/allbooks/Index.csv ../../data/allbooks/rank.csv
+	$(PYTHON) ranker.py ../../data/perbook/ /cache/Index.csv $(foreach r,$(ALL_BOOKS), $(r)) ../../data/allbooks/rank.csv
 	
 indexBlacklist:
 	for b in ${LINKED_BOOKS}; do \

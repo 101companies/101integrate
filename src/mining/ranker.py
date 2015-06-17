@@ -7,7 +7,7 @@ import logging
 import logging.config
 
 def normalizeWord(word):
-  return re.sub("[^\w\-\_\.\+']", " ", word.lower()).strip()
+  return re.sub("[^\w\-\_\.\+']", "", word).strip()
 
 
 def getRankFromWordnet(word):
@@ -26,8 +26,11 @@ def getRankFromWordnet(word):
 	logging.debug("NOT FOUND")
 	return False
 
-def main(infile, outfile):
-    index = csv.reader(open(sys.argv[1], 'rb'), delimiter=' ', quotechar='|')
+def main(directory, infile, resource,  outfile):
+    index = []
+    for r in resource:
+	index = index + list(csv.reader(open(directory+r+infile, 'rb'), delimiter=' ', quotechar='|'))
+    logging.info("Read indices")
     used = []
     result = []
     for row in index:
@@ -47,4 +50,4 @@ def main(infile, outfile):
 
 if __name__ == "__main__":
 	logging.config.fileConfig('../config/pythonLogging.conf')
-	main(sys.argv[1],sys.argv[2])
+	main(sys.argv[1],sys.argv[2],sys.argv[3:-1],sys.argv[-1])
