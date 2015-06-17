@@ -32,7 +32,6 @@ The available Tags can be looked up in docs/Tagset.md .
 
     make link-books
 
-Most likely, you don't have access to the books' sources. In this case, the scripts need to be adjusted to ignore these books. We will make the process adaptive so that you don't need to bother, but for the moment you need to.
 
 # Mining and analyzing
 
