@@ -79,6 +79,9 @@ deployBacklinks:
 termCoverage:
 	$(PYTHON) termCoverage.py $(DATAFOLDER)/allbooks/
 	
+rankTerms:
+	$(PYTHON) ranker.py ../../data/allbooks/Index.csv ../../data/allbooks/rank.csv
+	
 indexBlacklist:
 	for b in ${LINKED_BOOKS}; do \
 		$(PYTHON) ../misc/csvDiff.py $(DATAFOLDER)/perbook/"$$b"/IndexGen.csv $(DATAFOLDER)/perbook/"$$b"/Index.csv del csv $(DATAFOLDER)/perbook/"$$b"/indexBlacklist.csv ; \
