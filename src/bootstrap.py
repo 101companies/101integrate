@@ -7,16 +7,26 @@ import os
 sys.path.insert(0, './mining')
 import bookDownloader
 import json
-import logging #needed for nunning the whole project in debug/info-mode
-import logging.config
 
-logging.config.fileConfig('config/pythonLogging.conf'.replace('/',os.path.sep))
 
-allBooks = []
 def get_immediate_subdirectories(dir):
 	return [name for name in os.listdir(dir)
             if os.path.isdir(os.path.join(dir, name))]
 
+lastAll = ''
+lastLinked = ''
+try:
+  for l in open('Makefile.vars','r').readlines():
+      if lastAll and lastLinked:
+	  break
+      elif l.startswith('ALL_BOOKS'):
+	  lastAll = l.replace('ALL_BOOKS = ','')
+      elif l.startswith('LINKED_BOOKS'):
+	  lastLinked = l.replace('LINKED_BOOKS = ','')
+except IOError:
+  pass
+      
+allBooks = []
 linkedBooks = []
 nonLinkedBooks = []
 if len(sys.argv) == 1:
@@ -31,4 +41,12 @@ for bookDir in allBooks:
     nonLinkedBooks.append(bookDir)
 
 with open ('Makefile.vars', 'w') as f: 
-  f.write ('#List of available Books about '+str(sys.argv[1:])+'  \r\n ALL_BOOKS = ' + ' '.join(allBooks) + '\n#currently downloaded books\nLINKED_BOOKS = ' + ' '.join(linkedBooks) + '\n#not-downloaded Books \nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
+  f.write('#List of available Books about '+str(sys.argv[1:]))
+  f.write('\r\nALL_BOOKS = ' + ' '.join(allBooks))
+  f.write('\r\n#currently downloaded books')
+  f.write('\r\nLINKED_BOOKS = ' + ' '.join(linkedBooks))
+  f.write('\r\n#not-downloaded Books')
+  f.write('\r\nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
+  f.write('\r\n#last run processed books')
+  f.write('\r\nLASTRUN_ALL = '+ lastAll)
+  f.write('\r\nLASTRUN_LINKED = '+ lastLinked)
