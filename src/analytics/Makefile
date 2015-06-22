@@ -21,7 +21,7 @@ frequencies:
 	done
 	
 generatePopular:
-ifneq (${ALL_BOOKS}, ${LASTRUN_ALL})
+ifneq ( , $(strip $(shell diff ../Makefile.vars ../last.vars)))
 	$(PYTHON) ../misc/generateFromStringtemplate.py templates/buildPopularTermsTable.R.stg buildPopularTermsTable.R ${ALL_BOOKS}
 	$(PYTHON) ../misc/generateFromStringtemplate.py templates/buildPopularScatteredTermsTable.R.stg buildPopularScatteredTermsTable.R ${ALL_BOOKS}
 else

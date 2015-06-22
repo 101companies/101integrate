@@ -12,6 +12,8 @@ nope:
 	
 #Complete Integration of resources	
 run:
+	touch src/Makefile.vars
+	cp src/Makefile.vars src/last.vars
 ifeq ($(LOGGING),ON)
 	mkdir -p logs
 	cp src/config/pythonLoggingDebug.conf src/config/pythonLogging.conf
