@@ -40,6 +40,7 @@ cleanOnlineBooks:
 		for h in ../../data/perbook/"$$b"/contents/*; do \
 			$(HTML2TXT) "$$h" --ignore-links --ignore-images > "$$h".txt; \
 			rm "$$h"; \
+			mv "$$h".txt "$$h" ;\
 		done \
 	done
 
@@ -84,5 +85,6 @@ rankTerms:
 	
 indexBlacklist:
 	for b in ${LINKED_BOOKS}; do \
-		$(PYTHON) ../misc/csvDiff.py $(DATAFOLDER)/perbook/"$$b"/IndexGen.csv $(DATAFOLDER)/perbook/"$$b"/Index.csv del csv $(DATAFOLDER)/perbook/"$$b"/indexBlacklist.csv ; \
+		$(PYTHON) ../misc/csvDiff.py $(DATAFOLDER)/perbook/"$$b"/IndexGen.csv $(DATAFOLDER)/perbook/"$$b"/cache/Index.csv del csv $(DATAFOLDER)/perbook/"$$b"/cache/indexBlacklist.csv ; \
 	done
+	
