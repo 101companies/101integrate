@@ -13,7 +13,7 @@ def get_immediate_subdirectories(dir):
 	return [name for name in os.listdir(dir)
             if os.path.isdir(os.path.join(dir, name))]
 
-lastAll = ''
+"""lastAll = ''
 lastLinked = ''
 try:
   for l in open('Makefile.vars','r').readlines():
@@ -24,7 +24,7 @@ try:
       elif l.startswith('LINKED_BOOKS'):
 	  lastLinked = l.replace('LINKED_BOOKS = ','')
 except IOError:
-  pass
+  pass"""
       
 allBooks = []
 linkedBooks = []
@@ -47,6 +47,6 @@ with open ('Makefile.vars', 'w') as f:
   f.write('\r\nLINKED_BOOKS = ' + ' '.join(linkedBooks))
   f.write('\r\n#not-downloaded Books')
   f.write('\r\nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
-  f.write('\r\n#last run processed books')
+  """f.write('\r\n#last run processed books')
   f.write('\r\nLASTRUN_ALL = '+ lastAll)
-  f.write('\r\nLASTRUN_LINKED = '+ lastLinked)
+  f.write('\r\nLASTRUN_LINKED = '+ lastLinked)"""
