@@ -7,16 +7,30 @@ from  BeautifulSoup import BeautifulSoup
 import constants
 import logging
 import logging.config
+import re
 
 
 
 
-def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, posAttr):
+def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, posAttr, useFullPath=False):
 	dom = getRefinedHtml(url, exElems, exClasses, exIds, posElements, posAttr)
 	fileName = url.split('/').pop()
-	f=open(outputfolder+fileName.strip(),"write")
+	if not fileName:
+		fileName = url.split('/')[-2]
+	elif fileName.startswith("index."):
+		fileName = ".".join(url.split('/')[-2:])
+	elif useFullPath:
+		logging.debug("using Full Path")
+		dataFile = outputfolder.replace(outputfolder.split("/")[-2], "metadata")+"chapterData.json"
+		#logging.debug("Reading filename from "+dataFile)
+		fileName = ([x['file'] for x in json.loads(open(dataFile,"r").read())['chapters']  if x['url'] == url ][0]).replace(".txt","")
+	#logging.debug(fileName)
+	fileName = fileName.strip()+".txt"
+	logging.debug("Writing "+fileName)
+	f=open(outputfolder+fileName,"write")
 	f.write(dom.prettify())
 	f.close()
+	logging.debug("Finished writing")
 
 def getRefinedHtml(url, exElem, exClasses, exIds, posElements, posAttr):
 	opener = urllib2.build_opener()
@@ -53,13 +67,17 @@ def crawl(book, perbookFldr):
     for url in open((perbookFldr + book + "/metadata/chapters.txt").replace("/",os.path.sep)).readlines():
 	if not url.strip(" ").strip("\r").strip("\n"):#skip empty lines
 	  continue
+	exIds=[]
 	try:
 	  exIds =  resInfos['exclude-ids']
 	except  KeyError:
 	  exIds = []
-	else:
-	  pass
-	getChapter(url.rstrip(),(perbookFldr + book + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'])
+	useFullPath = False
+	try:
+	  useFullPath =  resInfos['useFullPathAsFilename']
+	except  KeyError:
+	  useFullPath = False
+	getChapter(url.rstrip(),(perbookFldr + book + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'],useFullPath)
 
 
 if __name__ == "__main__":

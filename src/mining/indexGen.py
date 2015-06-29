@@ -235,7 +235,7 @@ def genDB(sqlcon, book, files):
 	sqlcon.commit()
 	print "data committed to db"
 
-def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50):
+def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50, crosscut=True):
 	cursor = sqlcon.cursor()
 	commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
 	words = SortedSet() #TODO switch back to set once word filtering is acceptable
@@ -244,32 +244,36 @@ def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50
 	temp = cursor.fetchone()
 	while (temp is not None):
 		#print temp
-		if temp[0] not in commonEnglishWords:
+		if crosscut and temp[0] not in commonEnglishWords:
 			words.add(temp[0])
+		else: words.add(temp[0])
 		temp = cursor.fetchone()
 	print "single words fetched"
 	cursor.execute("""SELECT word FROM ForeignWords WHERE freq > 1 AND freq >= (SELECT freq FROM ForeignWords ORDER BY freq DESC LIMIT 1 OFFSET ?)  ORDER BY freq DESC""", (str(generalSel), ))
 	temp = cursor.fetchone()
 	while (temp is not None):
 		#print temp
-		if temp[0] not in commonEnglishWords:
+		if crosscut and temp[0] not in commonEnglishWords:
 			words.add(temp[0])
+		else: words.add(temp[0])
 		temp = cursor.fetchone()
 	print "foreign Words fetched"
 	cursor.execute("""SELECT word1, word2 FROM CommonTupelsWNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonTupelsWNouns ORDER BY freq DESC LIMIT 1 OFFSET ?)   ORDER BY freq DESC""", (str(generalSel),))
 	temp = cursor.fetchone()
 	while (temp is not None):
 		#print temp
-		if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords:
+		if crosscut and temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords:
 			words.add(temp[0]+" "+temp[1])
+		else: words.add(temp[0]+" "+temp[1])
 		temp = cursor.fetchone()
 	print "tupels fetched"
 	cursor.execute("""SELECT word1, word2, word3 FROM CommonTriplesWNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonTriplesWNouns ORDER BY freq DESC LIMIT 1 OFFSET ?)   ORDER BY freq DESC""", (str(generalSel),))
 	temp = cursor.fetchone()
 	while (temp is not None):
 		#print temp
-		if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords and temp[2] not in commonEnglishWords:
+		if crosscut and temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords and temp[2] not in commonEnglishWords:
 			words.add(temp[0]+" "+temp[1]+" "+temp[2])
+		else: words.add(temp[0]+" "+temp[1]+" "+temp[2])
 		temp = cursor.fetchone()
 	print "triples fetched"
 	print "fetching file terms"
@@ -283,32 +287,36 @@ def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50
 		temp = cursor.fetchone()
 		while (temp is not None):
 			#print temp
-			if temp[0] not in commonEnglishWords:
+			if crosscut and temp[0] not in commonEnglishWords:
 				words.add(temp[0])
+			else: words.add(temp[0])
 			temp = cursor.fetchone()
 		print "\t\t single words fetched"
 		cursor.execute(fwFetchStm, {'file':f, 'number':fileSel})
 		temp = cursor.fetchone()
 		while (temp is not None):
 			#print temp
-			if temp[0] not in commonEnglishWords:
+			if crosscut and crosscut and temp[0] not in commonEnglishWords:
 				words.add(temp[0])
+			else: words.add(temp[0])
 			temp = cursor.fetchone()
 		print "\t\t foreign words fetched"
 		cursor.execute(tupelFetchStm,{'file':f, 'number':fileSel})
 		temp = cursor.fetchone()
 		while (temp is not None):
 			#print temp
-			if temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords:
+			if crosscut and temp[0] not in commonEnglishWords and temp[1] not in commonEnglishWords:
 				words.add(temp[0]+" "+temp[1])
+			else: words.add(temp[0]+" "+temp[1])
 			temp = cursor.fetchone()
 		print "\t\t tupels fetched"
 		cursor.execute(tripleFetchStm,{'file':f, 'number':fileSel})
 		temp = cursor.fetchone()
 		while (temp is not None):
 			#print temp
-			if temp[0] not in commonEnglishWords and temp[2] not in commonEnglishWords:
+			if crosscut and temp[0] not in commonEnglishWords and temp[2] not in commonEnglishWords:
 				words.add(temp[0]+" "+temp[1]+" "+temp[2])
+			else: words.add(temp[0]+" "+temp[1]+" "+temp[2])
 			temp = cursor.fetchone()
 		print "\t\t triples fetched"
 	sqlcon.close()
@@ -336,21 +344,16 @@ if __name__ == "__main__":
 		sqlcon = sql.connect(constants.getBookPath(book)+"Frequencies.db")
 		mode = None
 		if len(sys.argv) >= 3:
-			mode = sys.argv[2]
-		if mode == None:
-			genDB(sqlcon, book,files)
-			selectTerms(sqlcon, book,files)
-		elif mode == "generate":
-			genDB(sqlcon, book,files)
-		elif mode == "select":
-			if len(sys.argv) == 3:
-			    selectTerms(sqlcon, book, files)
-			elif len(sys.argv) == 4:
-			    selectTerms(sqlcon, book, files, sys.argv[3])
-			elif len(sys.argv) == 5:
-			    selectTerms(sqlcon, book, files, sys.argv[3], sys.argv[4])
-			elif len(sys.argv) == 6:
-			    selectTerms(sqlcon, book, files, sys.argv[3], sys.argv[4], sys.argv[5])
+			if not sys.argv[2] == "run":
+				mode = sys.argv[2]
+		if mode in ["generate","select",None]:
+			if mode == "generate" or mode == None:
+				genDB(sqlcon, book,files)
+			if mode == "select" or mode == None:
+				if len(sys.argv) <= 3:
+					selectTerms(sqlcon, book, files)
+				elif len(sys.argv) >= 4:
+					selectTerms(sqlcon, book, files, *sys.argv[3:])
 		else:
 			print mode + " not recognized"
 
