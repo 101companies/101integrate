@@ -5,6 +5,11 @@ import html2text
 import os
 from  BeautifulSoup import BeautifulSoup
 import constants
+import logging
+import logging.config
+
+
+
 
 def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, posAttr):
 	dom = getRefinedHtml(url, exElems, exClasses, exIds, posElements, posAttr)
@@ -16,11 +21,11 @@ def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, p
 def getRefinedHtml(url, exElem, exClasses, exIds, posElements, posAttr):
 	opener = urllib2.build_opener()
 	opener.addheaders = [('User-agent', 'Mozilla/5.0')]
-	print "Downloading:", url.rstrip()
+	logging.info("Downloading:"+ url.rstrip())
 	infile = opener.open(url)
 	if (infile.info()['content-type'].count('text/html') > 0):
 		html = infile.read()
-		print "Cleaning..."
+		logging.info("Cleaning...")
 		try:
 			doc = BeautifulSoup(html)
 			for exElem in exElem:
@@ -58,4 +63,5 @@ def crawl(book, perbookFldr):
 
 
 if __name__ == "__main__":
-   crawl(sys.argv[1],sys.argv[2])
+	logging.config.fileConfig('../config/pythonLogging.conf'.replace('/',os.path.sep))
+	crawl(sys.argv[1],sys.argv[2])

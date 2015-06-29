@@ -21,8 +21,12 @@ frequencies:
 	done
 	
 generatePopular:
+ifneq ( , $(strip $(shell diff ../Makefile.vars ../last.vars)))
 	$(PYTHON) ../misc/generateFromStringtemplate.py templates/buildPopularTermsTable.R.stg buildPopularTermsTable.R ${ALL_BOOKS}
 	$(PYTHON) ../misc/generateFromStringtemplate.py templates/buildPopularScatteredTermsTable.R.stg buildPopularScatteredTermsTable.R ${ALL_BOOKS}
+else
+	echo "using previously generated Scripts"
+endif
 
 popular:	
 	R < buildPopularTermsTable.R --no-save --args ${ALL_BOOKS}

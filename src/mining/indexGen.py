@@ -8,6 +8,8 @@ import csv
 import re
 import constants
 from sortedcontainers import SortedSet
+import logging #needed for nunning the whole project in debug/info-mode
+import logging.config
 
 def sqlExec(cursor, statement, values):
   try:
@@ -320,6 +322,7 @@ def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50
 	print "Created IndexGen.csv"
 
 if __name__ == "__main__":
+	logging.config.fileConfig('../config/pythonLogging.conf'.replace('/',os.path.sep))
 	if len(sys.argv) < 2:
 		print "exiting"
 	else:

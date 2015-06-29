@@ -1,4 +1,5 @@
 import csv
+import logging #needed for nunning the whole project in debug/info-mode
 
 def fromCsv(stem):
     reader = csv.reader(open(stem+".csv", 'rb'), delimiter=',', quotechar='"')

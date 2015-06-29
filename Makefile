@@ -1,7 +1,7 @@
 include Makefile.vars
 
 #Programs
-PYTHON_PACKAGE_INSTALLER = easy_install
+PYTHON_PACKAGE_INSTALLER = pip install --upgrade
 
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
@@ -12,8 +12,11 @@ nope:
 	
 #Complete Integration of resources	
 run:
+	touch src/Makefile.vars
+	cp src/Makefile.vars src/last.vars
 ifeq ($(LOGGING),ON)
 	mkdir -p logs
+	cp src/config/pythonLoggingDebug.conf src/config/pythonLogging.conf
 	$(MAKE) download-books BOOKS=$(BOOKS) 2>&1 | tee logs/downloadBooks.log
 	$(MAKE) mine           LOGGING=ON
 	$(MAKE) from-cache     2>&1	| tee logs/fromCache.log
@@ -21,6 +24,7 @@ ifeq ($(LOGGING),ON)
 	$(MAKE) backlink       LOGGING=ON
 	$(MAKE) integrate      LOGGING=ON
 else
+	cp src/config/pythonLoggingRun.conf src/config/pythonLogging.conf
 	$(MAKE) download-books BOOKS=$(BOOKS)
 	$(MAKE) mine
 	$(MAKE) from-cache

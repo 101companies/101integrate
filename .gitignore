@@ -9,3 +9,7 @@ logs/
 *.pyc
 .idea/
 *.log
+src/config/pythonLogging.conf
+src/analytics/buildPopularScatteredTermsTable.R
+src/analytics/buildPopularTermsTable.R
+

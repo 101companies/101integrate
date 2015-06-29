@@ -8,6 +8,8 @@ import csv
 import re
 import nltk
 from nltk.stem.wordnet import WordNetLemmatizer
+import logging
+import logging.config
 
 def main(resourcename, root, distributionfile, limit):
   resourcebase = root + resourcename + '/'
@@ -18,7 +20,7 @@ def main(resourcename, root, distributionfile, limit):
   structure = distributionraw['structure']
   hasUrl = 'urlBase' in resInfos[resourcename]
   filesn = {}
-  print "Backlinking", resourcename, "..."
+  logging.info("Backlinking" +  resourcename + "...")
   profileReader = csv.reader(open(resourcebase + 'chapterProfile.numbers.csv'), delimiter=',')
   profile = {}
   for row in profileReader:
@@ -56,4 +58,5 @@ def main(resourcename, root, distributionfile, limit):
   f.write(json.dumps(termlinks, indent= "\t"))
 
 if __name__ == "__main__":
-  main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])
+	logging.config.fileConfig('../config/pythonLogging.conf')
+	main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4])

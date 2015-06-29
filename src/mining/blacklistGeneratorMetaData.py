@@ -1,6 +1,8 @@
 import sys
 import constants
 import simplejson as json
+import logging #needed for nunning the whole project in debug/info-mode
+import logging.config
 
 def generateBlacklist(args):
 	for a in args:
@@ -46,4 +48,5 @@ def generateBlacklist(args):
 		print "Wrote File"
 
 if __name__ == "__main__":
-  generateBlacklist(sys.argv[1:])
+	logging.config.fileConfig('../config/pythonLogging.conf'.replace('/',os.path.sep))
+	generateBlacklist(sys.argv[1:])

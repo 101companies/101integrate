@@ -37,5 +37,5 @@ def write(file, content):
 
 
 if __name__ == "__main__":
-  write(sys.argv[1].replace(".html",".txt"), main(sys.argv[1],sys.argv[2:]))
+  write(sys.argv[1]+".txt", main(sys.argv[1],sys.argv[2:]))
   

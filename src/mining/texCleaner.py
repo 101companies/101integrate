@@ -2,6 +2,7 @@ import sys
 import re
 import os
 import json
+import logging #needed for nunning the whole project in debug/info-mode
 
 rid = sys.argv[1]
 config = json.loads(open("config/config.json").read())[rid]

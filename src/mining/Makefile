@@ -5,6 +5,7 @@ include ../../Makefile.vars
 DATAFOLDER = ../../data
 
 #HTML2TXT=../../bin/html2text 
+HTML2TXT := $(subst html2text: ,,$(shell whereis html2text))
 
 mine:
 ifeq ($(LOGGING),ON)
@@ -37,16 +38,11 @@ cleanOnlineBooks:
 	for b in ${LINKED_BOOKS}; do \
 		echo "$$b" ;\
 		for h in ../../data/perbook/"$$b"/contents/*; do \
-			html2text "$$h" --ignore-links --ignore-images > "$$h".txt; \
+			$(HTML2TXT) "$$h" --ignore-links --ignore-images > "$$h".txt; \
 			rm "$$h"; \
 		done \
 	done
-	for b in ${LINKED_BOOKS}; do \
-		echo "$$b" ;\
-		for h in ../../data/perbook/"$$b"/contents/*; do \
-			python cleanFileNames.py "$$h"; \
-		done \
-	done
+
 
 cleanindecies:
 	for b in ${LINKED_BOOKS}; do \
@@ -82,6 +78,9 @@ deployBacklinks:
 
 termCoverage:
 	$(PYTHON) termCoverage.py $(DATAFOLDER)/allbooks/
+	
+rankTerms:
+	$(PYTHON) ranker.py ../../data/perbook/ /cache/Index.csv $(foreach r,$(ALL_BOOKS), $(r)) ../../data/allbooks/rank.csv
 	
 indexBlacklist:
 	for b in ${LINKED_BOOKS}; do \
