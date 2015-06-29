@@ -1,6 +1,4 @@
 https://en.wikibooks.org/wiki/Python_Programming/Overview
-https://en.wikibooks.org/wiki/Python_Programming/Getting_Python
-https://en.wikibooks.org/wiki/Python_Programming/Setting_it_up
 https://en.wikibooks.org/wiki/Python_Programming/Interactive_mode
 https://en.wikibooks.org/wiki/Python_Programming/Self_Help
 https://en.wikibooks.org/wiki/Python_Programming/Creating_Python_programs
@@ -45,14 +43,17 @@ https://en.wikibooks.org/wiki/Python_Programming/Email
 https://en.wikibooks.org/wiki/Python_Programming/Threading
 https://en.wikibooks.org/wiki/Python_Programming/Sockets
 https://en.wikibooks.org/wiki/Python_Programming/GUI_Programming
+https://en.wikibooks.org/wiki/Python_Programming/CGI_interface
 https://en.wikibooks.org/wiki/Python_Programming/WSGI_web_programming
 https://en.wikibooks.org/wiki/Python_Programming/Web_Page_Harvesting
 https://en.wikibooks.org/wiki/Python_Programming/Internet
 https://en.wikibooks.org/wiki/Python_Programming/Networks
 https://en.wikibooks.org/wiki/Python_Programming/Databases
 https://en.wikibooks.org/wiki/Python_Programming/Database_Programming
+https://en.wikibooks.org/wiki/Python_Programming/numpy
 https://en.wikibooks.org/wiki/Python_Programming/PyQt4
 https://en.wikibooks.org/wiki/Python_Programming/Dbus
+https://en.wikibooks.org/wiki/Python_Programming/matplotlib
 https://en.wikibooks.org/wiki/Python_Programming/Sorted_Container_Types
 https://en.wikibooks.org/wiki/Python_Programming/Extending_with_C
 https://en.wikibooks.org/wiki/Python_Programming/Extending_with_Pyrex
