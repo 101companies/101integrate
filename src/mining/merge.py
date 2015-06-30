@@ -10,7 +10,6 @@ import re
 import patternCleaner
 p = inflect.engine()
 import nltk
-from sortedcontainers import SortedDict, SortedList
 from nltk.stem.wordnet import WordNetLemmatizer
 import logging
 import logging.config
@@ -57,12 +56,11 @@ def areSimilar(term1, term2):
 def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore, crosscut):
   # merge term indecies
   #allTerms = {}
-  allTerms = SortedDict()
+  allTerms = {}
   resInfos = json.loads(open("config/config.json", 'rb').read())
   commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
 
   changedByPattern = []
-  #changedByPattern = SortedList()
 
   blacklist = json.loads(open("config/blacklist.json", 'rb').read())['blacklist']
   whitelist = []
