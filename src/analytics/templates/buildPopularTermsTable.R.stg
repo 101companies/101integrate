@@ -38,7 +38,7 @@ dataRoot \<- "../../data"
 {book|
 <topFrequency(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)>,"/topFrequency.csv", sep=""))
 <frequency(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)>,"/frequenciesMerged.csv", sep=""), sep=";")
-#<frequency(book)> \<- subset(<frequency(book)>, select=c(0,3))
+<frequency(book)> \<- subset(<frequency(book)>, select=c(Term,Frequency))
 #print(<frequency(book)>)
 }>
 
@@ -55,7 +55,7 @@ union \<- cbind(union, v)
 
 names(union) \<- c("Term", <quotedBooks(books)>)
 row.names(union) \<- seq(nrow(union))
-#union$Term \<- as.character(union$Term)
+union$Term \<- as.character(union$Term)
 union \<- union[with(union, order(union$Term)),]
 
 <books:
