@@ -60,7 +60,7 @@ def getLinks(baseurl,tocurl,ext):
 		if (infile.info()['content-type'].count('text/html') > 0):
 			doc = BeautifulSoup(infile.read())
 			for l in doc.findAll('body')[0].findAll('a'):
-				info = [ l.get('href'), l.string, l.get('title')]
+				info = [ l.get('href'), l.string, l.get('title'), l.get('id')]
 				info = [i.strip() for i in info if i is not None]
 				#print info
 				if len(info) >=2:
@@ -150,7 +150,7 @@ def writeMetadata(book, onlyFirstTitle=False):
 		links = getLinks(url,tocurl, bookData[book]['ext'])
 		path = constants.getMetaPath(book)
 		constants.mkdir(path)
-		#print links
+		print links
 		chapters=[]
 		try:
 			chapters = generateMetadata(links, url,bookData[book]['useFullPathAsFilename'],bool(onlyFirstTitle))
