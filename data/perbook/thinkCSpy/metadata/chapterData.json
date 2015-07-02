@@ -1,0 +1,193 @@
+{
+	"chapters": [
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/foreword.html",
+			"file": "foreword.html.txt",
+			"title": [
+				"Foreword"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/preface.html",
+			"file": "preface.html.txt",
+			"title": [
+				"Preface"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/contrib.html",
+			"file": "contrib.html.txt",
+			"title": [
+				"Contributor List"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap01.html",
+			"file": "chap01.html.txt",
+			"title": [
+				"Chapter 1: The way of the program"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap02.html",
+			"file": "chap02.html.txt",
+			"title": [
+				"Chapter 2: Variables, expressions and statements"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap03.html",
+			"file": "chap03.html.txt",
+			"title": [
+				"Chapter 3: Functions"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap04.html",
+			"file": "chap04.html.txt",
+			"title": [
+				"Chapter 4: Conditionals and recursion"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap05.html",
+			"file": "chap05.html.txt",
+			"title": [
+				"Chapter 5: Fruitful functions"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap06.html",
+			"file": "chap06.html.txt",
+			"title": [
+				"Chapter 6: Iteration"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap07.html",
+			"file": "chap07.html.txt",
+			"title": [
+				"Chapter 7: Strings"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap08.html",
+			"file": "chap08.html.txt",
+			"title": [
+				"Chapter 8: Lists"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap09.html",
+			"file": "chap09.html.txt",
+			"title": [
+				"Chapter 9: Tuples"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap10.html",
+			"file": "chap10.html.txt",
+			"title": [
+				"Chapter 10: Dictionaries"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap11.html",
+			"file": "chap11.html.txt",
+			"title": [
+				"Chapter 11: Files and exceptions"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap12.html",
+			"file": "chap12.html.txt",
+			"title": [
+				"Chapter 12: Classes and objects"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap13.html",
+			"file": "chap13.html.txt",
+			"title": [
+				"Chapter 13: Classes and functions"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap14.html",
+			"file": "chap14.html.txt",
+			"title": [
+				"Chapter 14: Classes and methods"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap15.html",
+			"file": "chap15.html.txt",
+			"title": [
+				"Chapter 15: Sets of objects"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap16.html",
+			"file": "chap16.html.txt",
+			"title": [
+				"Chapter 16: Inheritance"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap17.html",
+			"file": "chap17.html.txt",
+			"title": [
+				"Chapter 17: Linked lists"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap18.html",
+			"file": "chap18.html.txt",
+			"title": [
+				"Chapter 18: Stacks"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap19.html",
+			"file": "chap19.html.txt",
+			"title": [
+				"Chapter 19: Queues"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/chap20.html",
+			"file": "chap20.html.txt",
+			"title": [
+				"Chapter 20: Trees"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/app01.html",
+			"file": "app01.html.txt",
+			"title": [
+				"Appendix A: Debugging"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/app02.html",
+			"file": "app02.html.txt",
+			"title": [
+				"Appendix B: Creating a new data type"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/app04.html",
+			"file": "app04.html.txt",
+			"title": [
+				"Appendix D: Recommendations for further reading"
+			]
+		},
+		{
+			"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/dex.html",
+			"file": "dex.html.txt",
+			"title": [
+				"Index"
+			]
+		}
+	]
+}

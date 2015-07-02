@@ -1,0 +1,42 @@
+[
+	{
+		"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/preface.html",
+		"reason": "",
+		"file": "preface.html.txt",
+		"title": [
+			"Preface"
+		]
+	},
+	{
+		"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/app04.html",
+		"reason": "",
+		"file": "app04.html.txt",
+		"title": [
+			"Appendix D: Recommendations for further reading"
+		]
+	},
+	{
+		"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/dex.html",
+		"reason": "",
+		"file": "dex.html.txt",
+		"title": [
+			"Index"
+		]
+	},
+	{
+		"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/contrib.html",
+		"reason": "",
+		"file": "contrib.html.txt",
+		"title": [
+			"Contributor List"
+		]
+	},
+	{
+		"url": "http://www.greenteapress.com/thinkpython/thinkCSpy/html/foreword.html",
+		"reason": "",
+		"file": "foreword.html.txt",
+		"title": [
+			"Foreword"
+		]
+	}
+]
