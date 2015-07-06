@@ -11,41 +11,33 @@ import json
 def get_immediate_subdirectories(dir):
 	return [name for name in os.listdir(dir)
             if os.path.isdir(os.path.join(dir, name))]
+ 
+def bootstrap(resources="",useNonLinkables=False):
+	allBooks = []
+	linkedBooks = []
+	nonLinkedBooks = []
+	config = json.loads(open("./mining/config/config.json","r").read())
+	if not resources:
+		allBooks = list(config.keys())
+		allBooks.remove("OnlyIndex")
+	else:
+		allBooks = bookDownloader.selectBooks([resources],config)
+	if not useNonLinkables:
+		allBooks = bookDownloader.getLinkables(allBooks,config)
+	for bookDir in allBooks:
+		print bookDir
+		if os.path.exists('../data/perbook/' + bookDir + '/contents'):
+			linkedBooks.append(bookDir)
+		else:
+			nonLinkedBooks.append(bookDir)
 
-"""lastAll = ''
-lastLinked = ''
-try:
-  for l in open('Makefile.vars','r').readlines():
-      if lastAll and lastLinked:
-	  break
-      elif l.startswith('ALL_BOOKS'):
-	  lastAll = l.replace('ALL_BOOKS = ','')
-      elif l.startswith('LINKED_BOOKS'):
-	  lastLinked = l.replace('LINKED_BOOKS = ','')
-except IOError:
-  pass"""
-      
-allBooks = []
-linkedBooks = []
-nonLinkedBooks = []
-if len(sys.argv) == 1:
-  allBooks = get_immediate_subdirectories('../data/perbook')
-else:
-  allBooks = bookDownloader.selectBooks(sys.argv[1:],json.loads(open("./mining/config/config.json").read()))
-for bookDir in allBooks:
-  print bookDir
-  if os.path.exists('../data/perbook/' + bookDir + '/contents'):
-    linkedBooks.append(bookDir)
-  else:
-    nonLinkedBooks.append(bookDir)
+	with open ('Makefile.vars', 'w') as f: 
+	  f.write('#List of available Books about '+str(resources))
+	  f.write('\r\nALL_BOOKS = ' + ' '.join(allBooks))
+	  f.write('\r\n#currently downloaded books')
+	  f.write('\r\nLINKED_BOOKS = ' + ' '.join(linkedBooks))
+	  f.write('\r\n#not-downloaded Books')
+	  f.write('\r\nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
 
-with open ('Makefile.vars', 'w') as f: 
-  f.write('#List of available Books about '+str(sys.argv[1:]))
-  f.write('\r\nALL_BOOKS = ' + ' '.join(allBooks))
-  f.write('\r\n#currently downloaded books')
-  f.write('\r\nLINKED_BOOKS = ' + ' '.join(linkedBooks))
-  f.write('\r\n#not-downloaded Books')
-  f.write('\r\nNON_LINKED_BOOKS = ' + ' '.join(nonLinkedBooks))
-  """f.write('\r\n#last run processed books')
-  f.write('\r\nLASTRUN_ALL = '+ lastAll)
-  f.write('\r\nLASTRUN_LINKED = '+ lastLinked)"""
+if __name__ == "__main__":
+	bootstrap(*sys.argv[1:])
