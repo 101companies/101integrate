@@ -12,7 +12,7 @@ import re
 
 
 
-def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, posAttr, useFullPath=False):
+def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, posAttr, useFullPath, baseUrl):
 	dom = getRefinedHtml(url, exElems, exClasses, exIds, posElements, posAttr)
 	fileName = url.split('/').pop()
 	if not fileName:
@@ -21,9 +21,7 @@ def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, p
 		fileName = ".".join(url.split('/')[-2:])
 	elif useFullPath:
 		logging.debug("using Full Path")
-		dataFile = outputfolder.replace(outputfolder.split("/")[-2], "metadata")+"chapterData.json"
-		#logging.debug("Reading filename from "+dataFile)
-		fileName = ([x['file'] for x in json.loads(open(dataFile,"r").read())['chapters']  if x['url'] == url ][0]).replace(".txt","")
+		fileName = url.replace(baseUrl,"").replace("/",".")
 	#logging.debug(fileName)
 	fileName = fileName.strip()+".txt"
 	logging.debug("Writing "+fileName)
@@ -52,11 +50,9 @@ def getRefinedHtml(url, exElem, exClasses, exIds, posElements, posAttr):
 				for d in doc.findAll(True, {'id' : exId}):
 					d.extract()
 			for posElement in posElements:
-
 				for posTag in doc.findAll(posElement, {posAttr: True}):
 					posTag.insert(0, "$$$$" + posTag[posAttr] + "$$$ ")
 					posTag.name = "a"
-
 			return doc
 		except ExpatError, e:
 			#print "Can't extract content of " + url + " properly."
@@ -77,7 +73,7 @@ def crawl(book, perbookFldr):
 	  useFullPath =  resInfos['useFullPathAsFilename']
 	except  KeyError:
 	  useFullPath = False
-	getChapter(url.rstrip(),(perbookFldr + book + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'],useFullPath)
+	getChapter(url.rstrip(),(perbookFldr + book + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'],useFullPath, resInfos['urlBase'])
 
 
 if __name__ == "__main__":

@@ -2,19 +2,27 @@ include ../Makefile.vars
 include ../../Makefile.vars
 
 
-DATAFOLDER = ../../data
+DATAFOLDER := ../../data
+MLOGFOLDER := ../../logs/mining
+BLOGFOLDER := ../../logs/backlink
 
 #HTML2TXT=../../bin/html2text 
 HTML2TXT := $(subst html2text: ,,$(shell whereis html2text))
 
 mine:
 ifeq ($(LOGGING),ON)
-	mkdir -p ../../logs/mining
-	$(MAKE) cleanindecies		2>&1	| tee ../../logs/mining/cleanindecies.log
-	$(MAKE) mergeindecies		2>&1	| tee ../../logs/mining/mergeindecies.log
-	$(MAKE) frequencies		2>&1	| tee ../../logs/mining/frequencies.log
-	$(MAKE) mergedfrequencies	2>&1	| tee ../../logs/mining/mergedfrequencies.log
+	mkdir -p  $(MLOGFOLDER)
+ifneq (,$(strip $(shell diff ../Makefile.vars ../last.vars)))
+	$(MAKE) rankTerms	2>&1	|	tee $(MLOGFOLDER)/rankTerms.log
+endif
+	$(MAKE) cleanindecies		2>&1	| tee $(MLOGFOLDER)/cleanindecies.log
+	$(MAKE) mergeindecies		2>&1	| tee $(MLOGFOLDER)/mergeindecies.log
+	$(MAKE) frequencies		2>&1	| tee $(MLOGFOLDER)/frequencies.log
+	$(MAKE) mergedfrequencies	2>&1	| tee $(MLOGFOLDER)/mergedfrequencies.log
 else
+ifneq (,$(strip $(shell diff ../Makefile.vars ../last.vars)))
+	$(MAKE) rankTerms
+endif
 	$(MAKE) cleanindecies
 	$(MAKE) mergeindecies
 	$(MAKE) frequencies
@@ -23,10 +31,10 @@ endif
 	
 backlink:
 ifeq ($(LOGGING),ON)
-	mkdir -p ../../logs/backlink
-	$(MAKE) backlinksMappings	2>&1	| tee ../../logs/backlink/backlinksMappings.log
-	$(MAKE) mergeBacklinkMappings	2>&1	| tee ../../logs/backlink/mergeBacklinkMappings.log
-	$(MAKE) mergeMappings		2>&1	| tee ../../logs/backlink/mergeMappings.log
+	mkdir -p  $(BLOGFOLDER)/
+	$(MAKE) backlinksMappings	2>&1	| tee $(BLOGFOLDER)/backlinksMappings.log
+	$(MAKE) mergeBacklinkMappings	2>&1	| tee $(BLOGFOLDER)/mergeBacklinkMappings.log
+	$(MAKE) mergeMappings		2>&1	| tee $(BLOGFOLDER)/mergeMappings.log
 else
 	$(MAKE) backlinksMappings
 	$(MAKE) mergeBacklinkMappings
@@ -47,11 +55,11 @@ cleanOnlineBooks:
 
 cleanindecies:
 	for b in ${LINKED_BOOKS}; do \
-		$(PYTHON) merge.py $(DATAFOLDER)/ perbook/ "$$b" cache/Index.csv perbook/"$$b"/CleanIndex.csv perbook/"$$b"/metaindex.json 30 nocrosscut; \
+		$(PYTHON) merge.py $(DATAFOLDER)/ perbook/ "$$b" cache/Index.csv perbook/"$$b"/CleanIndex.csv perbook/"$$b"/metaindex.json 50 nocrosscut; \
 	done
 
 mergeindecies:
-	$(PYTHON) merge.py $(DATAFOLDER)/ /perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) cache/Index.csv allbooks/Index.csv allbooks/metaindex.json 30 allbooks/crosscuts.csv
+	$(PYTHON) merge.py $(DATAFOLDER)/ /perbook/ $(foreach r,$(LINKED_BOOKS), $(r)) cache/Index.csv allbooks/Index.csv allbooks/metaindex.json 50 allbooks/crosscuts.csv
 
 frequencies:
 	for b in ${LINKED_BOOKS}; do \
@@ -81,7 +89,7 @@ termCoverage:
 	$(PYTHON) termCoverage.py $(DATAFOLDER)/allbooks/
 	
 rankTerms:
-	$(PYTHON) ranker.py ../../data/perbook/ /cache/Index.csv $(foreach r,$(ALL_BOOKS), $(r)) ../../data/allbooks/rank.csv
+	$(PYTHON) ranker.py $(DATAFOLDER)/perbook/ /cache/Index.csv $(foreach r,$(ALL_BOOKS), $(r)) $(DATAFOLDER)/allbooks/cache/rank.csv
 	
 indexBlacklist:
 	for b in ${LINKED_BOOKS}; do \

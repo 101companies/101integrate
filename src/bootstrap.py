@@ -4,8 +4,7 @@
 # Generates a config for all existing books
 import sys
 import os
-sys.path.insert(0, './mining')
-import bookDownloader
+from mining import bookDownloader
 import json
 
 
