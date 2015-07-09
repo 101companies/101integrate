@@ -26,7 +26,7 @@ def bootstrap(resources="",useNonLinkables=False):
 		allBooks = bookDownloader.getLinkables(allBooks,config)
 	for bookDir in allBooks:
 		print bookDir
-		if os.path.exists('../data/perbook/' + bookDir + '/contents'):
+		if os.path.exists('../data/perbook/' + bookDir.strip() + '/contents'):
 			linkedBooks.append(bookDir)
 		else:
 			nonLinkedBooks.append(bookDir)
