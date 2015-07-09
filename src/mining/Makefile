@@ -46,9 +46,9 @@ cleanOnlineBooks:
 	for b in ${LINKED_BOOKS}; do \
 		echo "$$b" ;\
 		for h in ../../data/perbook/"$$b"/contents/*; do \
-			$(HTML2TXT) "$$h" --ignore-links --ignore-images > "$$h".txt; \
+			$(HTML2TXT) "$$h" --ignore-links --ignore-images > "$$h".temp; \
 			rm "$$h"; \
-			mv "$$h".txt "$$h" ;\
+			mv "$$h".temp "$$h" ;\
 		done \
 	done
 
