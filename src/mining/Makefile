@@ -91,6 +91,16 @@ termCoverage:
 rankTerms:
 	$(PYTHON) ranker.py $(DATAFOLDER)/perbook/ /cache/Index.csv $(foreach r,$(ALL_BOOKS), $(r)) $(DATAFOLDER)/allbooks/cache/rank.csv
 	
+mappingTerms:
+	for b in ${LINKED_BOOKS}; do \
+		$(PYTHON) mappingTerms.py $(DATAFOLDER)/perbook/"$$b"/ frequenciesDistribution.csv metadata/mapping.csv 10 3 2 ; \
+	done
+	
+indexTerms:
+	for b in ${LINKED_BOOKS}; do \
+		$(PYTHON) indexGen.py "$$b" run 25 10 False ; \
+	done
+
 indexBlacklist:
 	for b in ${LINKED_BOOKS}; do \
 		$(PYTHON) ../misc/csvDiff.py $(DATAFOLDER)/perbook/"$$b"/IndexGen.csv $(DATAFOLDER)/perbook/"$$b"/cache/Index.csv del csv $(DATAFOLDER)/perbook/"$$b"/cache/indexBlacklist.csv ; \
