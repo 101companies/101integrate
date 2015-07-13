@@ -1,6 +1,6 @@
 # Summary
 
-This repo contributes to the 101companies Project. 101integrate is a framework for the integration of knowledge resources. At this point, the framework specifically addresses vocabulary integration and cross-referencing betweem textbooks and 101wiki. Currently, 4 Haskell textbooks are supported.
+This repo contributes to the 101companies Project. 101integrate is a framework for the integration of knowledge resources. At this point, the framework specifically addresses vocabulary integration and cross-referencing betweem textbooks and 101wiki. Currently, 4 Haskell and 4 Python textbooks are supported.
 
 # Tool dependencies
 
