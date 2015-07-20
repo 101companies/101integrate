@@ -2,7 +2,7 @@ Kind,IndexTerm,WikiTerm,Comment
 CHAP,__name__,,
 CHAP,actual search,,
 CHAP,address book,,
-CHAP,ancestor tree,,
+CHAP,ancestor tree,Tree,
 CHAP,antecedents test,,
 CHAP,application,,
 CHAP,area code,,
@@ -25,7 +25,7 @@ CHAP,chapter,,
 CHAP,character,Character,automatically assigned
 CHAP,check,,
 CHAP,class,Class,automatically assigned
-CHAP,class instance,,
+CHAP,class instance,OO class,
 CHAP,class method,,
 CHAP,class name,,
 CHAP,code,Code,automatically assigned
@@ -40,7 +40,7 @@ CHAP,current working,,
 CHAP,current working directory,,
 CHAP,custom url,,
 CHAP,data attribute,,
-CHAP,datatype,,
+CHAP,datatype,Data type,
 CHAP,default,,
 CHAP,default processing,,
 CHAP,developer kit,,
@@ -58,14 +58,14 @@ CHAP,everything,,
 CHAP,examples directory,,
 CHAP,exception,Exception,automatically assigned
 CHAP,expression,Expression,automatically assigned
-CHAP,file object,,
+CHAP,file object,File,
 CHAP,file-like object,,
 CHAP,flag,,
 CHAP,formatting,Formatting,automatically assigned
 CHAP,full pathname,,
 CHAP,fundamental rule,,
 CHAP,getattr,,
-CHAP,grammar file,,
+CHAP,grammar file,,example
 CHAP,handler class,,
 CHAP,handling,,
 CHAP,html,Language:HTML,automatically assigned
@@ -179,10 +179,10 @@ CHAP,support function,,
 CHAP,syntax,Syntax,automatically assigned
 CHAP,tag name,,
 CHAP,temporary redirect,,
-CHAP,test,,
+CHAP,test,Testing,
 CHAP,test case,Test case,automatically assigned
-CHAP,test pass,,
-CHAP,test suite,,
+CHAP,test pass,Testing,
+CHAP,test suite,Testing,
 CHAP,testing,Testing,automatically assigned
 CHAP,text,Text,automatically assigned
 CHAP,text substitution,,
@@ -192,7 +192,7 @@ CHAP,try,,
 CHAP,tuple,Tuple,automatically assigned
 CHAP,type,Type,automatically assigned
 CHAP,unit,,
-CHAP,unit test,,
+CHAP,unit test,v,
 CHAP,unit testing,Unit testing,automatically assigned
 CHAP,uppercase input,,
 CHAP,url,,
@@ -217,8 +217,9 @@ CHAP,wsdl proxy,,
 CHAP,xml,Language:XML,automatically assigned
 CHAP,xml document,,
 CHAP,xml element,,
-CHAP,xml library,,
-CHAP,xml schema,,
+CHAP,xml library,XML data binding,
+CHAP,xml library,XML serialization,
+CHAP,xml schema,Language:XSD,
 FREQ,example,,
 FREQ,file,File,automatically assigned
 FREQ,function,Function,automatically assigned
