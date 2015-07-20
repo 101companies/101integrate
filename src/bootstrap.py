@@ -16,7 +16,7 @@ def bootstrap(resources="",useNonLinkables=False):
 	allBooks = []
 	linkedBooks = []
 	nonLinkedBooks = []
-	config = json.loads(open("./mining/config/config.json","r").read())
+	config = json.loads(open("./config/config.json","r").read())
 	if not resources:
 		allBooks = list(config.keys())
 		allBooks.remove("OnlyIndex")

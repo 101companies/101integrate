@@ -19,7 +19,7 @@ def sqlExec(cursor, statement, values):
 	pass  
       
 def normalizeWord(word):
-	if word in open("./config/whitelist.csv","r").readlines():
+	if word in open("../config/whitelist.csv","r").readlines():
 		return word
 	else:
 		return re.sub("[^\w\-\_]", " ", word.lower()).strip()

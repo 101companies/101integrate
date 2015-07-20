@@ -13,7 +13,7 @@ import logging.config
 
 def main(resourcename, root, distributionfile, limit):
   resourcebase = root + resourcename + '/'
-  resInfos = json.loads(open("config/config.json", 'rb').read())
+  resInfos = json.loads(open("../config/config.json", 'rb').read())
   distributionraw = json.loads(open(resourcebase + distributionfile, 'rb').read())
   distribution = distributionraw['distribution']
   termlinks = {}

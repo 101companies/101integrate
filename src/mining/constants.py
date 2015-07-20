@@ -5,7 +5,7 @@ import logging #needed for nunning the whole project in debug/info-mode
 dataPath = ".."+os.path.sep+".."+os.path.sep+"data"+os.path.sep
 
 # the Path to the configuration-file
-configPath = "config"+os.path.sep+"config.json"
+configPath = ".."+os.path.sep+"config"+os.path.sep+"config.json"
 
 #the path to the books' folder
 bookPath = dataPath + "perbook" + os.path.sep

@@ -57,14 +57,14 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
   # merge term indecies
   #allTerms = {}
   allTerms = {}
-  resInfos = json.loads(open("config/config.json", 'rb').read())
+  resInfos = json.loads(open("../config/config.json", 'rb').read())
   commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
 
   changedByPattern = []
 
-  blacklist = json.loads(open("config/blacklist.json", 'rb').read())['blacklist']
+  blacklist = json.loads(open("../config/blacklist.json", 'rb').read())['blacklist']
   whitelist = []
-  whiteListReader = csv.reader(open("config/whitelist.csv", 'rb'), delimiter=',')
+  whiteListReader = csv.reader(open("../config/whitelist.csv", 'rb'), delimiter=',')
   for row in whiteListReader:
 	whitelist.append(row[0])
   #input(resources)
