@@ -64,7 +64,11 @@ names(union) \<- c("Term", <quotedBooks(books)>)
 
 <books:
 {book|
-for(t in union$Term) if(t %in% as.vector(<scattered(book)>$Term)) union[which(union$Term == t),2] \<- <scattered(book)>[which(<scattered(book)>$Term == t),2]
+for(t in union$Term) {
+		if(t %in% as.vector(<scattered(book)>$Term)) {
+				union[which(union$Term == t),(2+<i0>)] \<- <scattered(book)>[which(<scattered(book)>$Term == t),2]
+		}
+}
 }>
 
 write.csv(union, paste(dataRoot, "/allbooks/", "unionTopScatterness.csv", sep=""))

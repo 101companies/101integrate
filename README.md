@@ -1,6 +1,6 @@
 # Summary
 
-This repo contributes to the 101companies Project. 101integrate is a framework for the integration of knowledge resources. At this point, the framework specifically addresses vocabulary integration and cross-referencing betweem textbooks and 101wiki. Currently, 4 Haskell textbooks are supported.
+This repo contributes to the 101companies Project. 101integrate is a framework for the integration of knowledge resources. At this point, the framework specifically addresses vocabulary integration and cross-referencing betweem textbooks and 101wiki. Currently, 4 Haskell and 4 Python textbooks are supported.
 
 # Tool dependencies
 
@@ -32,7 +32,6 @@ The available Tags can be looked up in docs/Tagset.md .
 
     make link-books
 
-Most likely, you don't have access to the books' sources. In this case, the scripts need to be adjusted to ignore these books. We will make the process adaptive so that you don't need to bother, but for the moment you need to.
 
 # Mining and analyzing
 

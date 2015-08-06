@@ -7,8 +7,8 @@ import sys
 import csv
 import re
 import constants
-from sortedcontainers import SortedSet
 import logging #needed for nunning the whole project in debug/info-mode
+import logging.config
 
 def sqlExec(cursor, statement, values):
   try:
@@ -19,7 +19,10 @@ def sqlExec(cursor, statement, values):
 	pass  
       
 def normalizeWord(word):
-  return re.sub("[^\w\-\_]", " ", word.lower()).strip()
+	if word in open("../config/whitelist.csv","r").readlines():
+		return word
+	else:
+		return re.sub("[^\w\-\_]", " ", word.lower()).strip()
 
 
 def transformParagraphToLine(path):
@@ -234,10 +237,13 @@ def genDB(sqlcon, book, files):
 	sqlcon.commit()
 	print "data committed to db"
 
-def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50):
+def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, crosscut=False, nIgnore = 50):
+	crosscut = bool(crosscut)
 	cursor = sqlcon.cursor()
-	commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
-	words = SortedSet() #TODO switch back to set once word filtering is acceptable
+	commonEnglishWords = []
+	if crosscut:
+		commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
+	words = set()
 	print "fetching global terms"
 	cursor.execute("""SELECT word FROM CommonNouns WHERE freq > 1 AND freq >= (SELECT freq FROM CommonNouns ORDER BY freq DESC LIMIT 1 OFFSET ?)  ORDER BY freq DESC""", (str(generalSel), ))
 	temp = cursor.fetchone()
@@ -306,21 +312,28 @@ def selectTerms(sqlcon, book, files, generalSel = 25, fileSel = 10, nIgnore = 50
 		temp = cursor.fetchone()
 		while (temp is not None):
 			#print temp
-			if temp[0] not in commonEnglishWords and temp[2] not in commonEnglishWords:
+			if  temp[0] not in commonEnglishWords and temp[2] not in commonEnglishWords:
 				words.add(temp[0]+" "+temp[1]+" "+temp[2])
 			temp = cursor.fetchone()
 		print "\t\t triples fetched"
 	sqlcon.close()
 	print "Fetched Data from DB"
 	path = constants.getBookPath(book)
-	constants.mkdir(path)
+	try:
+		blacklist = list(csv.reader(open(path+"cache/indexBlacklist.csv", 'rb'), delimiter=';', quotechar='\"'))
+		blacklist = [b[0] for b in blacklist if b[1].strip() == "del"]
+		print "loaded blacklist"
+		words = [w for w in words if w not in blacklist]
+	except IOError:
+		pass
 	writer = open(path+"IndexGen.csv","w")
-	for w in words:
+	for w in sorted(words):
 		writer.write(w)
 		writer.write("\n")
 	print "Created IndexGen.csv"
 
 if __name__ == "__main__":
+	logging.config.fileConfig('../config/pythonLogging.conf'.replace('/',os.path.sep))
 	if len(sys.argv) < 2:
 		print "exiting"
 	else:
@@ -334,21 +347,16 @@ if __name__ == "__main__":
 		sqlcon = sql.connect(constants.getBookPath(book)+"Frequencies.db")
 		mode = None
 		if len(sys.argv) >= 3:
-			mode = sys.argv[2]
-		if mode == None:
-			genDB(sqlcon, book,files)
-			selectTerms(sqlcon, book,files)
-		elif mode == "generate":
-			genDB(sqlcon, book,files)
-		elif mode == "select":
-			if len(sys.argv) == 3:
-			    selectTerms(sqlcon, book, files)
-			elif len(sys.argv) == 4:
-			    selectTerms(sqlcon, book, files, sys.argv[3])
-			elif len(sys.argv) == 5:
-			    selectTerms(sqlcon, book, files, sys.argv[3], sys.argv[4])
-			elif len(sys.argv) == 6:
-			    selectTerms(sqlcon, book, files, sys.argv[3], sys.argv[4], sys.argv[5])
+			if not sys.argv[2] == "run":
+				mode = sys.argv[2]
+		if mode in ["generate","select",None]:
+			if mode == "generate" or mode == None:
+				genDB(sqlcon, book,files)
+			if mode == "select" or mode == None:
+				if len(sys.argv) <= 3:
+					selectTerms(sqlcon, book, files)
+				elif len(sys.argv) >= 4:
+					selectTerms(sqlcon, book, files, *sys.argv[3:])
 		else:
 			print mode + " not recognized"
 

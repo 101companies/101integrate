@@ -5,7 +5,7 @@ import crawler
 import constants
 import re
 import logging
-
+import logging.config
 
 ##
 #@param compared	the string to be compared
@@ -32,11 +32,12 @@ def normalizeString(string):
 #@param 	config	the configuration
 #@return	the input collection without non-Linkable books
 def getLinkables(books, config):
-    for b in books.copy(): #so you con change books in iteration
-      if not config[b]['isLinkable']:
-	books.remove(b)
-    return books
-    
+	books = list(books)
+	for b in books[:]: #so you con change books in iteration
+		if not config[b]['isLinkable']:
+			books.remove(b)
+	return books
+
 
 
 ##
@@ -93,5 +94,6 @@ def downloadBooks(books, bookfldr):
     
     
 if __name__ == "__main__":
-   conf = json.loads(open(constants.configPath, 'rb').read())
-   downloadBooks(getLinkables(selectBooks(sys.argv[1:],conf ),conf),constants.bookPath)
+	logging.config.fileConfig('../config/pythonLogging.conf'.replace('/',os.path.sep))
+	conf = json.loads(open(constants.configPath, 'rb').read())
+	downloadBooks(getLinkables(selectBooks(sys.argv[1:],conf ),conf),constants.bookPath)

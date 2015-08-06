@@ -90,13 +90,9 @@ def main(file1, file2, outSel="", outFormat="", outFile=""):
 if __name__ == "__main__":
   if len(sys.argv) < 3:
     print "too few arguments \n exiting."
-  elif len(sys.argv) is 3:
-    main(sys.argv[1],sys.argv[2])
-  elif len(sys.argv) is 4:
-    main(sys.argv[1],sys.argv[2],sys.argv[3])
   elif len(sys.argv) is 5:
-    main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],"diff."+sys.argv[5].lower())
-  elif len(sys.argv) is 6:
-    main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],sys.argv[5])
+    main(sys.argv[1],sys.argv[2],sys.argv[3],sys.argv[4],"diff."+sys.argv[4].lower())
+  else len(sys.argv):
+    main(*sys.argv[1:])
     
   

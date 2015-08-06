@@ -10,9 +10,9 @@ import re
 import patternCleaner
 p = inflect.engine()
 import nltk
-from sortedcontainers import SortedDict, SortedList
 from nltk.stem.wordnet import WordNetLemmatizer
 import logging
+import logging.config
 
 def isinWhitelist(term, list):
 	for t in list:
@@ -23,7 +23,7 @@ def isinWhitelist(term, list):
 def isAbb(term):
 	for i in range(0, len(term)):
 		if re.match("\/|\.|\-", term[i]):
-			logging.debug(">>>>>", term)
+			logging.debug(">>>>>" + term)
 			return True
 	return False
 
@@ -56,16 +56,15 @@ def areSimilar(term1, term2):
 def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore, crosscut):
   # merge term indecies
   #allTerms = {}
-  allTerms = SortedDict()
-  resInfos = json.loads(open("config/config.json", 'rb').read())
+  allTerms = {}
+  resInfos = json.loads(open("../config/config.json", 'rb').read())
   commonEnglishWords = map(lambda x: x[0], list(csv.reader(open("../../data/allbooks/cache/rank.csv", 'rU'), delimiter=','))[:int(nIgnore)])
 
   changedByPattern = []
-  #changedByPattern = SortedList()
 
-  blacklist = json.loads(open("config/blacklist.json", 'rb').read())['blacklist']
+  blacklist = json.loads(open("../config/blacklist.json", 'rb').read())['blacklist']
   whitelist = []
-  whiteListReader = csv.reader(open("config/whitelist.csv", 'rb'), delimiter=',')
+  whiteListReader = csv.reader(open("../config/whitelist.csv", 'rb'), delimiter=',')
   for row in whiteListReader:
 	whitelist.append(row[0])
   #input(resources)
@@ -73,7 +72,7 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 	resourcename = datafldr + inputfldr+ csvfn + "/" + index
 
 	indexReader = csv.reader(open(resourcename, 'rb'), delimiter=',')
-	logging.info("Reading", resourcename)
+	logging.info("Reading" + resourcename)
 	preTerms = []
 	for row in indexReader:
 		exsplit = row[0].replace("\"", "").split("!")[0]
@@ -92,32 +91,32 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 			else:
 				allTerms[term.lstrip(' ')] = dict(resourcenames = set([csvfn]))
 		else:
-			logging.debug("Blacklisted term", termU, "excluded")
+			logging.debug("Blacklisted term" + termU + "excluded")
 
   # detect synonyms
   synonyms = []
   logging.info("Detecting Synonyms")
   for i, term in enumerate(allTerms):
 	if not term in synonyms and not term.startswith('^') and not isinWhitelist(term,whitelist):
-		logging.debug(str(i) + "/" + str(len(allTerms)), ":Detecting synonyms for \"" + term + "\" from", allTerms[term]['resourcenames'])
+		logging.debug(str(i) + "/" + str(len(allTerms)) + ":Detecting synonyms for \"" + term + "\" from" + str(allTerms[term]['resourcenames']))
 		cursyms =  allTerms[term]['synonyms'] = filter(lambda x: areSimilar(term,x) and term != x and not isinWhitelist(x, whitelist), allTerms)
 		for synonym in cursyms:
 			if not isinWhitelist(synonym, whitelist):
-				logging.debug("> \"" + synonym + "\" from", allTerms[synonym]['resourcenames'])
+				logging.debug("> \"" + synonym + "\" from" + str(allTerms[synonym]['resourcenames']))
 				allTerms[term]['resourcenames'] |= allTerms[synonym]['resourcenames']
 		synonyms.extend(cursyms)
 	else:
 		allTerms[term]['synonyms'] = []
 	allTerms[term]['resourcenames'] = list(allTerms[term]['resourcenames'])
 	if isinWhitelist(term,whitelist):
-		logging.debug("Whitelisted term", term, "used as-is")
-  logging.debug(len(synonyms), "synonym(s) detected")
+		logging.debug("Whitelisted term" + term + "used as-is")
+  logging.debug(str(len(synonyms)) + "synonym(s) detected")
 
   # remove synoyms
   for synonym in synonyms:
 	allTerms.pop(synonym)
 
-  logging.debug(len(allTerms), "term(s) left")
+  logging.debug(str(len(allTerms)) + "term(s) left")
 
   logging.debug("Final cleaning of plural/singular issue...")
   replacements = []
@@ -130,7 +129,7 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 
 
 
-  logging.info("Resolving singular/plural issues...", len(replacements))
+  logging.info("Resolving singular/plural issues..." + str(len(replacements)))
 
   for (oldTerm, newTerm) in replacements:
 	allTerms[newTerm] = dict(resourcenames=allTerms[oldTerm]['resourcenames'], synonyms=allTerms[oldTerm]['synonyms'])
@@ -139,9 +138,9 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 	if newTerm in allTerms[newTerm]['synonyms']:
 		allTerms[newTerm]['synonyms'].remove(newTerm)
 	del allTerms[oldTerm]
-	logging.debug(oldTerm, "replaced by", newTerm)
+	logging.debug(oldTerm + "replaced by" + newTerm)
 
-  logging.info(len(allTerms), "All done!")
+  logging.info(str(len(allTerms)) + "All done!")
 
   lmtzr = WordNetLemmatizer()
   stemmedData = {}
@@ -178,4 +177,5 @@ def merge(datafldr, inputfldr, resources, index, mergedindex, metaindex, nIgnore
 
 
 if __name__ == "__main__":
-  merge(sys.argv[1], sys.argv[2], sys.argv[3:-5], sys.argv[-5], sys.argv[-4], sys.argv[-3], sys.argv[-2], sys.argv[-1])
+	logging.config.fileConfig('../config/pythonLogging.conf')
+	merge(sys.argv[1], sys.argv[2], sys.argv[3:-5], sys.argv[-5], sys.argv[-4], sys.argv[-3], sys.argv[-2], sys.argv[-1])

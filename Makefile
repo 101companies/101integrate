@@ -12,22 +12,25 @@ nope:
 	
 #Complete Integration of resources	
 run:
+	touch src/Makefile.vars
+	cp src/Makefile.vars src/last.vars
 ifeq ($(LOGGING),ON)
+	export LOGGING
 	mkdir -p logs
-	$(MAKE) download-books BOOKS=$(BOOKS) 2>&1 | tee logs/downloadBooks.log
-	$(MAKE) mine           LOGGING=ON
+	cp src/config/pythonLoggingDebug.conf src/config/pythonLogging.conf
+	$(MAKE) download-books  2>&1 | tee logs/downloadBooks.log
+	$(MAKE) mine           
 	$(MAKE) from-cache     2>&1	| tee logs/fromCache.log
-	$(MAKE) analyze        LOGGING=ON
-	$(MAKE) backlink       LOGGING=ON
-	$(MAKE) integrate      LOGGING=ON
 else
-	$(MAKE) download-books BOOKS=$(BOOKS)
+	cp src/config/pythonLoggingRun.conf src/config/pythonLogging.conf
+	$(MAKE) download-books
 	$(MAKE) mine
 	$(MAKE) from-cache
+endif
 	$(MAKE) analyze
 	$(MAKE) backlink
 	$(MAKE) integrate
-endif
+
 
 
 
@@ -35,11 +38,11 @@ endif
 download-books:
 ifndef BOOKS
 	cd src/mining; $(PYTHON) bookDownloader.py all
-	$(MAKE) bootstrap
 else
+	export BOOKS
 	cd src/mining; $(PYTHON) bookDownloader.py $(BOOKS)
-	$(MAKE) bootstrap BOOKS=$(BOOKS)
 endif
+	$(MAKE) bootstrap
 	cd src/mining; $(MAKE) cleanOnlineBooks
 
 # Optionally link offline books, as explained in the README.md
@@ -79,11 +82,13 @@ endif
 
 # Run mining scripts
 mine:
-	cd src; $(MAKE) mine LOGGING=$(LOGGING)
+	export LOGGING
+	cd src; $(MAKE) mine 
 
 # Run analytics scripts
 analyze:
-	cd src; $(MAKE) analyze LOGGING=$(LOGGING)
+	export LOGGING
+	cd src; $(MAKE) analyze
 
 # Copies post processed data from cache
 from-cache:
@@ -96,7 +101,8 @@ to-cache:
 
 # Run backlinking scripts
 backlink:
-	cd src; $(MAKE) backlink LOGGING=$(LOGGING)
+	export LOGGING
+	cd src; $(MAKE) backlink
 
 coverageTables:
 	cd src; $(MAKE) coverageTables
@@ -105,7 +111,8 @@ nonProfileFrequencies:
 	cd src; $(MAKE) nonProfileFrequencies
 	
 integrate:
-	cd src; $(MAKE) integrate LOGGING=$(LOGGING)
+	export LOGGING
+	cd src; $(MAKE) integrate
 
 # Clean it all
 clean:

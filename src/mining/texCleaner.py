@@ -5,7 +5,7 @@ import json
 import logging #needed for nunning the whole project in debug/info-mode
 
 rid = sys.argv[1]
-config = json.loads(open("config/config.json").read())[rid]
+config = json.loads(open("../config/config.json").read())[rid]
 root = sys.argv[2]
 realcnamesraw = json.loads(open(root + "/metadata/chapters.json", 'rb').read())['chapters']
 realcnames = {}

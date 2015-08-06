@@ -30,4 +30,5 @@ All Programming Technologies are valid tags
 Other tags can be an experience level, origin type, ...
 
 ###Used
+* Production	Used to signal the 101worker that the "new" Resource is fully integrated in the Sytem and can be used
 

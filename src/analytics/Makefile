@@ -5,12 +5,20 @@ analyze:
 ifeq ($(LOGGING),ON)
 	mkdir -p ../../logs/analyze
 	$(MAKE) frequencies	2>&1	| tee ../../logs/analyze/frequencies.log
+ifneq (,$(strip $(shell diff ../Makefile.vars ../last.vars)))
 	$(MAKE) generatePopular	2>&1	| tee ../../logs/analyze/generatePopular.log
+else
+	echo "using previously generated Scripts"
+endif
 	$(MAKE) popular		2>&1	| tee ../../logs/analyze/popular.log
 	$(MAKE) tex		2>&1	| tee ../../logs/analyze/tex.log
 else
 	$(MAKE) frequencies
+ifneq (,$(strip $(shell diff ../Makefile.vars ../last.vars)))
 	$(MAKE) generatePopular
+else
+	echo "using previously generated Scripts"
+endif
 	$(MAKE) popular
 	$(MAKE) tex
 endif

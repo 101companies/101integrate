@@ -1,0 +1,100 @@
+Kind,IndexTerm,WikiTerm,Comment
+CHAP,ADT,Abstract data type,
+CHAP,abecedarian,,example
+CHAP,algorithm,Algorithm,automatically assigned
+CHAP,boolean expression,Expression,
+CHAP,bracket operator,,
+CHAP,branch,,
+CHAP,bug,,
+CHAP,cargo,,example
+CHAP,child class,Class inheritance,
+CHAP,class attribute,OO class,
+CHAP,client,Client,automatically assigned
+CHAP,coercion,,
+CHAP,comment,,
+CHAP,compound data type,,
+CHAP,concatenation,,
+CHAP,conditional statement,Conditional,
+CHAP,constant time,,
+CHAP,cursor,,
+CHAP,debugging,,
+CHAP,deck,,
+CHAP,decrement,,
+CHAP,delimiter,,
+CHAP,denominator,,
+CHAP,dictionary,,
+CHAP,directory,Directory,automatically assigned
+CHAP,dot product,,
+CHAP,element,,
+CHAP,encapsulation,,
+CHAP,encode,,
+CHAP,equality,Equality,automatically assigned
+CHAP,euclid,,
+CHAP,exception,Exception,automatically assigned
+CHAP,expression tree,,
+CHAP,file,File,automatically assigned
+CHAP,formal language,Software Language, not enterly fitting
+CHAP,fraction,,
+CHAP,function definition,Function definition,automatically assigned
+CHAP,guardian,,
+CHAP,high-level language,Software Language, onlysubtype of wiki-Term
+CHAP,immutable,,
+CHAP,in operator,,unclear context
+CHAP,increment,,
+CHAP,incremental development,,
+CHAP,infinite loop,Loop,
+CHAP,infinite recursion,Recursion,
+CHAP,infix,,
+CHAP,inheritance,class inheritance,
+CHAP,initialization method,OO class,
+CHAP,instance,OO class,
+CHAP,instantiate,OO class,
+CHAP,integer division,,
+CHAP,interface,OO interface,
+CHAP,invariant,Invariant,automatically assigned
+CHAP,key,,
+CHAP,key-value pair,,
+CHAP,leaf node,tree,
+CHAP,linkedlist,Linked list,
+CHAP,multiple assignment,,
+CHAP,natural language,,
+CHAP,parent class,class Inheritance,
+CHAP,priority queue,Queue,
+CHAP,pure function,Pure function,automatically assigned
+CHAP,queue,Queue,automatically assigned
+CHAP,stack,Stack,automatically assigned
+CHAP,tuple,Tuple,automatically assigned
+CHAP,tuple assignment,Tuple,
+FREQ,argument,Argument,automatically assigned
+FREQ,card,,
+FREQ,class,Class,automatically assigned
+FREQ,expression,Expression,automatically assigned
+FREQ,function,Function,automatically assigned
+FREQ,index,,
+FREQ,language,,
+FREQ,list,List,automatically assigned
+FREQ,node,,
+FREQ,type,Type,automatically assigned
+TITLE,Chapter 1: The way of the program,,
+TITLE,"Chapter 2: Variables, expressions and statements",,
+TITLE,Chapter 3: Functions,Function,
+TITLE,Chapter 4: Conditionals and recursion,Conditional,
+TITLE,Chapter 4: Conditionals and recursion,Recursion,
+TITLE,Chapter 5: Fruitful functions,,
+TITLE,Chapter 6: Iteration,,
+TITLE,Chapter 7: Strings,String,
+TITLE,Chapter 8: Lists,List,
+TITLE,Chapter 9: Tuples,Tuple,
+TITLE,Chapter 10: Dictionaries,,
+TITLE,Chapter 11: Files and exceptions,,
+TITLE,Chapter 12: Classes and objects,,
+TITLE,Chapter 13: Classes and functions,,
+TITLE,Chapter 14: Classes and methods,,
+TITLE,Chapter 15: Sets of objects,,
+TITLE,Chapter 16: Inheritance,Class Inheritance,
+TITLE,Chapter 17: Linked lists,Linked list,
+TITLE,Chapter 18: Stacks,Stack,
+TITLE,Chapter 19: Queues,Queue,
+TITLE,Chapter 20: Trees,Tree,
+TITLE,Appendix A: Debugging,,
+TITLE,Appendix B: Creating a new data type,,
