@@ -37,7 +37,7 @@ CHAP,formal language,Software Language, not enterly fitting
 CHAP,fraction,,
 CHAP,function definition,Function definition,automatically assigned
 CHAP,guardian,,
-CHAP,high-level language,,
+CHAP,high-level language,Software Language, onlysubtype of wiki-Term
 CHAP,immutable,,
 CHAP,in operator,,unclear context
 CHAP,increment,,

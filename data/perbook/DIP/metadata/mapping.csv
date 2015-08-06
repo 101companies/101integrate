@@ -26,7 +26,7 @@ CHAP,character,Character,automatically assigned
 CHAP,check,,
 CHAP,class,Class,automatically assigned
 CHAP,class instance,OO class,
-CHAP,class method,,
+CHAP,class method,OO class,
 CHAP,class name,,
 CHAP,code,Code,automatically assigned
 CHAP,code block,,
@@ -69,7 +69,7 @@ CHAP,grammar file,,example
 CHAP,handler class,,
 CHAP,handling,,
 CHAP,html,Language:HTML,automatically assigned
-CHAP,html tag,,
+CHAP,html tag,Language:HTML,
 CHAP,http,Technology:HTTP,automatically assigned
 CHAP,http layer,,
 CHAP,http web service,,
@@ -82,7 +82,7 @@ CHAP,input test,,
 CHAP,instance,,
 CHAP,invalid roman,,
 CHAP,known value,,
-CHAP,lambda,,
+CHAP,lambda,Lambda abstraction,
 CHAP,language,,
 CHAP,library,Library,automatically assigned
 CHAP,line,,
@@ -115,7 +115,7 @@ CHAP,pattern object,,
 CHAP,processing instruction,,
 CHAP,program,Program,automatically assigned
 CHAP,proxy class,,
-CHAP,python class,,
+CHAP,python class,OO class,
 CHAP,python interpreter,,
 CHAP,python library,,
 CHAP,python library reference,,
@@ -226,7 +226,7 @@ FREQ,function,Function,automatically assigned
 FREQ,list,List,automatically assigned
 FREQ,method,Method,automatically assigned
 FREQ,module,Module,automatically assigned
-FREQ,os,,
+FREQ,os,Operating system,
 FREQ,python,Language:Python,automatically assigned
 FREQ,string,String,automatically assigned
 FREQ,value,,

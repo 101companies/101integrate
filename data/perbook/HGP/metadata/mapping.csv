@@ -59,7 +59,7 @@ CHAP,string,String,automatically assigned
 CHAP,support,,
 CHAP,supports python,,
 CHAP,template,Template Engine,
-CHAP,test suite,,
+CHAP,test suite,Testing,
 CHAP,testing,Testing,automatically assigned
 CHAP,testing code,Testing,
 CHAP,todo,,
@@ -82,7 +82,7 @@ TITLE,Continuous Integration,,
 TITLE,Command-line Applications,,
 TITLE,Network Applications,,
 TITLE,Cryptography,,
-TITLE,Databases,,
+TITLE,Databases,Database programming,
 TITLE,GUI Applications,GUI Programming,
 TITLE,Image Manipulation,,
 TITLE,JSON,Language:JSON,automatically assigned

@@ -63,7 +63,7 @@ CHAP,order,,
 CHAP,output,Output,automatically assigned
 CHAP,pattern object,Regular expression,
 CHAP,print,,
-CHAP,print statement,,
+CHAP,print statement,output,
 CHAP,program,Program,automatically assigned
 CHAP,programming,Programming,automatically assigned
 CHAP,programming language,Programming language,automatically assigned
@@ -91,7 +91,7 @@ CHAP,statement,,
 CHAP,string object,String,
 CHAP,style class,,
 CHAP,syntax,Syntax,automatically assigned
-CHAP,syntax error,,
+CHAP,syntax error,Error,
 CHAP,text,Text,automatically assigned
 CHAP,text editor,,
 CHAP,tool,Tool,automatically assigned
@@ -106,7 +106,7 @@ CHAP,web,,
 CHAP,while loop,Loop,
 CHAP,write,,
 CHAP,xml,Language:XML,automatically assigned
-FREQ,class,Class,automatically assigned
+FREQ,class,,too many different contexts
 FREQ,example,,
 FREQ,function,Function,automatically assigned
 FREQ,list,List,automatically assigned
@@ -131,7 +131,7 @@ TITLE,Tuples,Tupel,
 TITLE,Dictionaries,,
 TITLE,Sets,Set,
 TITLE,Basic Math,,
-TITLE,Operators,,
+TITLE,Operators,Operator,
 TITLE,Control Flow,,
 TITLE,Decision Control,,
 TITLE,Conditional Statements,Condition,
