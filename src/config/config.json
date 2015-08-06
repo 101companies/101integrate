@@ -15,7 +15,7 @@
 		"folder" : "RWH",
 		"index" : "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
-		"tag" : ["Haskell"]
+		"tag" : ["Production","Haskell"]
 	},
 	"WBPP" :{
 		"fullName": "Wikibooks Python Programming",
@@ -33,7 +33,7 @@
 		"folder" : "WBPP",
 		"index" : "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
-		"tag" : ["Python"]
+		"tag" : ["Production","Python"]
 	},
 	"PIH": {
 		"fullName": "Programming in Haskell",
@@ -67,6 +67,7 @@
 		"crawl": "false",
          		"ext": "",
          		"urlBase": "http://learnyouahaskell.com/",
+         		"tocUrl": "http://learnyouahaskell.com/chapters",
 		"posElements" : ["a"],
 		"posAttr" : "name",
         		"exclude-elements": ["pre", "script"],
@@ -77,7 +78,7 @@
 		"folder" : "LYAH",
 		"index" : "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " of"}],
-		"tag" : ["Haskell"]
+		"tag" : ["Production","Haskell"]
 	},
 	"HGP":	{
 		"fullName": "The Hitchhiker’s Guide to Python!",
@@ -95,7 +96,7 @@
 		"folder" : "HGP",
 		"index" : "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
-		"tag" : ["Python"]
+		"tag" : ["Production","Python"]
 	},
 	"DIP":	{
 		"fullName": "Dive into Python",
@@ -115,7 +116,7 @@
 		"folder" : "DIP",
 		"index" : "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
-		"tag" : ["Python"]
+		"tag" : ["Production","Python"]
 	},
 	"thinkCSpy":		{
 		"fullName": "How to Think Like a Computer Scientist - Python Edition",
@@ -133,7 +134,7 @@
 		"folder" : "thinkCSpy",
 		"index" : "Index.csv",
 		"exclude-patterns": [{"pos" : "suffix", "string" : " module", "mustcontain" : "."}, {"pos" : "suffix", "string" : " of"},{"pos":"suffix", "string":" and"}],
-		"tag" : ["Python"]
+		"tag" : ["Production","Python"]
 	},
     "OnlyIndex" : {
         "kind" : "../../data/allbooks",
