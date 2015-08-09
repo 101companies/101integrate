@@ -44,7 +44,7 @@ def main(resourcename, root, distributionfile, limit):
 			parapraphDistribution = distribution[term][maxChapIndex]
 			firstOcc = parapraphDistribution.index(filter(lambda x : x > 0, parapraphDistribution)[0])
 			if hasUrl:
-				maxLinkID = resInfos[resourcename]['urlBase'] + maxFileName.split('.')[0] + resInfos[resourcename]['ext']
+				maxLinkID = resInfos[resourcename]['urlBase'] + "/".join(maxFileName.split('.')[:-2]) + resInfos[resourcename]['ext']
 				maxLinkID += "#" + structure[maxChapIndex]['partids'][firstOcc]
 			else:
 				maxLinkID = resInfos[resourcename]['cite'].replace("$$$",filesn[maxFileName])
