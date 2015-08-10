@@ -111,7 +111,7 @@ def generateMetadata(links, url, useFullPath=False, onlyFirstTitle=False):
 		print "\t"+str(l)
 		filename =  "" #Getting Filename
 		if useFullPath:
-			filename = re.sub("((\.)+)|((\/)+)", ".", l[0].replace(url,"")+".txt")
+			filename = (re.sub("((\.)+)|((\/)+)", ".", l[0].replace(url,"")+".txt")).replace("..",".")
 		elif (l[0].split("/"))[-1]:
 			filename = (l[0].split("/"))[-1]+".txt"
 			if filename.startswith("index."):
