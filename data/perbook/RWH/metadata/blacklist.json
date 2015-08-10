@@ -1,0 +1,34 @@
+[
+	{
+		"url": "http://book.realworldhaskell.org/read/why-functional-programming-why-haskell.html",
+		"reason": "",
+		"file": "why-functional-programming-why-haskell.html.txt",
+		"title": [
+			"Why functional programming? Why Haskell?"
+		]
+	},
+	{
+		"url": "http://book.realworldhaskell.org/read/web-site-and-comment-system-usage-and-policies.html",
+		"reason": "",
+		"file": "web-site-and-comment-system-usage-and-policies.html.txt",
+		"title": [
+			"Web site and comment system usage and policies"
+		]
+	},
+	{
+		"url": "http://book.realworldhaskell.org/read/installing-ghc-and-haskell-libraries.html",
+		"reason": "",
+		"file": "installing-ghc-and-haskell-libraries.html.txt",
+		"title": [
+			"Installing GHC and Haskell libraries"
+		]
+	},
+	{
+		"url": "http://book.realworldhaskell.org/read/characters-strings-and-escaping-rules.html",
+		"reason": "",
+		"file": "characters-strings-and-escaping-rules.html.txt",
+		"title": [
+			"Characters, strings, and escaping rules"
+		]
+	}
+]

@@ -86,6 +86,7 @@
 		"crawl": "true",
        	 	"ext": "",
        	 	"urlBase": "http://docs.python-guide.org/en/latest/",
+       	 	"useFullPathAsFilename": true,
 		"posElements" : ["h2", "p"],
 		"posAttr" : "id",
         		"exclude-elements": ["pre","form","link","script","noscript","head","img"],

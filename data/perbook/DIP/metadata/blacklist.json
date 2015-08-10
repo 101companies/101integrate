@@ -1,68 +1,59 @@
 [
 	{
-		"url": "http://www.diveintopython.net/installing_python/macosx.html",
-		"reason": "",
-		"file": "macosx.html.txt",
-		"title": [
-			"1.3. Python on Mac OS X"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/installing_python/debian.html",
-		"reason": "",
-		"file": "debian.html.txt",
-		"title": [
-			"1.6. Python on Debian GNU/Linux"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/fdl_applicability.html",
-		"reason": "",
-		"file": "fdl_applicability.html.txt",
-		"title": [
-			"G.1. Applicability and definitions"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/about.html",
-		"reason": "",
-		"file": "about.html.txt",
-		"title": [
-			"F. About the book"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/fdl_modifications.html",
-		"reason": "",
-		"file": "fdl_modifications.html.txt",
-		"title": [
-			"G.4. Modifications"
-		]
-	},
-	{
 		"url": "http://www.diveintopython.net/appendix/history.html",
 		"reason": "",
-		"file": "history.html.txt",
+		"file": "appendix.history.html.txt",
 		"title": [
 			"E. Revision history"
 		]
 	},
 	{
-		"url": "http://www.diveintopython.net/appendix/fdl_howto.html",
+		"url": "http://www.diveintopython.net/appendix/license.html",
 		"reason": "",
-		"file": "fdl_howto.html.txt",
+		"file": "appendix.license.html.txt",
 		"title": [
-			"G.11. How to use this License for your documents"
+			"Appendix&nbsp;H.&nbsp;Python license",
+			"H. Python license"
 		]
 	},
 	{
-		"url": "http://www.diveintopython.net/appendix/fdl.html",
+		"url": "http://www.diveintopython.net/appendix/fdl_copyinginquantity.html",
 		"reason": "",
-		"file": "fdl.html.txt",
+		"file": "appendix.fdl_copyinginquantity.html.txt",
 		"title": [
-			"Appendix&nbsp;G.&nbsp;GNU Free Documentation License",
-			"",
-			"G. GNU Free Documentation License"
+			"G.3. Copying in quantity"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/installing_python/macos9.html",
+		"reason": "",
+		"file": "installing_python.macos9.html.txt",
+		"title": [
+			"1.4. Python on Mac OS 9"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/fdl_translation.html",
+		"reason": "",
+		"file": "appendix.fdl_translation.html.txt",
+		"title": [
+			"G.8. Translation"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/fdl_copying.html",
+		"reason": "",
+		"file": "appendix.fdl_copying.html.txt",
+		"title": [
+			"G.2. Verbatim copying"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/fdl_howto.html",
+		"reason": "",
+		"file": "appendix.fdl_howto.html.txt",
+		"title": [
+			"G.11. How to use this License for your documents"
 		]
 	},
 	{
@@ -75,152 +66,159 @@
 		]
 	},
 	{
-		"url": "http://www.diveintopython.net/appendix/fdl_termination.html",
-		"reason": "",
-		"file": "fdl_termination.html.txt",
-		"title": [
-			"G.9. Termination"
-		]
-	},
-	{
 		"url": "http://www.diveintopython.net/appendix/fdl_future.html",
 		"reason": "",
-		"file": "fdl_future.html.txt",
+		"file": "appendix.fdl_future.html.txt",
 		"title": [
 			"G.10. Future revisions of this license"
 		]
 	},
 	{
-		"url": "http://www.diveintopython.net/installing_python/windows.html",
-		"reason": "",
-		"file": "windows.html.txt",
-		"title": [
-			"1.2. Python on Windows"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/fdl_copyinginquantity.html",
-		"reason": "",
-		"file": "fdl_copyinginquantity.html.txt",
-		"title": [
-			"G.3. Copying in quantity"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/examples.html",
-		"reason": "",
-		"file": "examples.html.txt",
-		"title": [
-			"D. List of examples"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/abstracts.html",
-		"reason": "",
-		"file": "abstracts.html.txt",
-		"title": [
-			"B. A 5-minute review"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/fdl_aggregation.html",
-		"reason": "",
-		"file": "fdl_aggregation.html.txt",
-		"title": [
-			"G.7. Aggregation with independent works"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/license.html",
-		"reason": "",
-		"file": "license.html.txt",
-		"title": [
-			"Appendix&nbsp;H.&nbsp;Python license",
-			"",
-			"H. Python license"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/license_terms.html",
-		"reason": "",
-		"file": "license_terms.html.txt",
-		"title": [
-			"H.B. Terms and conditions for accessing or otherwise using Python"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/fdl_combining.html",
-		"reason": "",
-		"file": "fdl_combining.html.txt",
-		"title": [
-			"G.5. Combining documents"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/fdl_copying.html",
-		"reason": "",
-		"file": "fdl_copying.html.txt",
-		"title": [
-			"G.2. Verbatim copying"
-		]
-	},
-	{
-		"url": "http://www.diveintopython.net/appendix/fdl_translation.html",
-		"reason": "",
-		"file": "fdl_translation.html.txt",
-		"title": [
-			"G.8. Translation"
-		]
-	},
-	{
 		"url": "http://www.diveintopython.net/installing_python/redhat.html",
 		"reason": "",
-		"file": "redhat.html.txt",
+		"file": "installing_python.redhat.html.txt",
 		"title": [
 			"1.5. Python on RedHat Linux"
 		]
 	},
 	{
-		"url": "http://www.diveintopython.net/installing_python/macos9.html",
+		"url": "http://www.diveintopython.net/appendix/fdl_collections.html",
 		"reason": "",
-		"file": "macos9.html.txt",
+		"file": "appendix.fdl_collections.html.txt",
 		"title": [
-			"1.4. Python on Mac OS 9"
+			"G.6. Collections of documents"
 		]
 	},
 	{
-		"url": "http://www.diveintopython.net/installing_python/index.html",
+		"url": "http://www.diveintopython.net/installing_python/windows.html",
 		"reason": "",
-		"file": "index.html.txt",
+		"file": "installing_python.windows.html.txt",
 		"title": [
-			"Next: \u201cInstalling Python\u201d",
-			"&gt;&gt;",
-			"1. Installing Python",
-			"Installing Python&nbsp;&gt;&gt;"
+			"1.2. Python on Windows"
 		]
 	},
 	{
-		"url": "http://www.diveintopython.net/appendix/furtherreading.html",
+		"url": "http://www.diveintopython.net/appendix/fdl_termination.html",
 		"reason": "",
-		"file": "furtherreading.html.txt",
+		"file": "appendix.fdl_termination.html.txt",
 		"title": [
-			"A. Further reading"
+			"G.9. Termination"
 		]
 	},
 	{
 		"url": "http://www.diveintopython.net/installing_python/source.html",
 		"reason": "",
-		"file": "source.html.txt",
+		"file": "installing_python.source.html.txt",
 		"title": [
 			"1.7. Python Installation from Source"
 		]
 	},
 	{
-		"url": "http://www.diveintopython.net/appendix/fdl_collections.html",
+		"url": "http://www.diveintopython.net/appendix/fdl.html",
 		"reason": "",
-		"file": "fdl_collections.html.txt",
+		"file": "appendix.fdl.html.txt",
 		"title": [
-			"G.6. Collections of documents"
+			"Appendix&nbsp;G.&nbsp;GNU Free Documentation License",
+			"G. GNU Free Documentation License"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/furtherreading.html",
+		"reason": "",
+		"file": "appendix.furtherreading.html.txt",
+		"title": [
+			"A. Further reading"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/fdl_combining.html",
+		"reason": "",
+		"file": "appendix.fdl_combining.html.txt",
+		"title": [
+			"G.5. Combining documents"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/fdl_modifications.html",
+		"reason": "",
+		"file": "appendix.fdl_modifications.html.txt",
+		"title": [
+			"G.4. Modifications"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/installing_python/macosx.html",
+		"reason": "",
+		"file": "installing_python.macosx.html.txt",
+		"title": [
+			"1.3. Python on Mac OS X"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/installing_python/debian.html",
+		"reason": "",
+		"file": "installing_python.debian.html.txt",
+		"title": [
+			"1.6. Python on Debian GNU/Linux"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/license_terms.html",
+		"reason": "",
+		"file": "appendix.license_terms.html.txt",
+		"title": [
+			"H.B. Terms and conditions for accessing or otherwise using Python"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/fdl_aggregation.html",
+		"reason": "",
+		"file": "appendix.fdl_aggregation.html.txt",
+		"title": [
+			"G.7. Aggregation with independent works"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/examples.html",
+		"reason": "",
+		"file": "appendix.examples.html.txt",
+		"title": [
+			"D. List of examples"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/about.html",
+		"reason": "",
+		"file": "appendix.about.html.txt",
+		"title": [
+			"F. About the book"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/abstracts.html",
+		"reason": "",
+		"file": "appendix.abstracts.html.txt",
+		"title": [
+			"B. A 5-minute review"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/appendix/fdl_applicability.html",
+		"reason": "",
+		"file": "appendix.fdl_applicability.html.txt",
+		"title": [
+			"G.1. Applicability and definitions"
+		]
+	},
+	{
+		"url": "http://www.diveintopython.net/installing_python/index.html",
+		"reason": "",
+		"file": "installing_python.index.html.txt",
+		"title": [
+			"&gt;&gt;",
+			"Next: \u201cInstalling Python\u201d",
+			"1. Installing Python",
+			"Installing Python&nbsp;&gt;&gt;"
 		]
 	}
 ]

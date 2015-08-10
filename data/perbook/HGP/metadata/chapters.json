@@ -1,96 +1,96 @@
 {
 	"chapters": [
 		{
-			"file": "admin.txt",
-			"title": "Systems Administration"
-		},
-		{
-			"file": "ci.txt",
-			"title": "Continuous Integration"
-		},
-		{
-			"file": "cli.txt",
-			"title": "Command-line Applications"
-		},
-		{
-			"file": "client.txt",
-			"title": "Network Applications"
-		},
-		{
-			"file": "crypto.txt",
-			"title": "Cryptography"
-		},
-		{
-			"file": "db.txt",
-			"title": "Databases"
-		},
-		{
-			"file": "gui.txt",
-			"title": "GUI Applications"
-		},
-		{
-			"file": "imaging.txt",
-			"title": "Image Manipulation"
-		},
-		{
-			"file": "json.txt",
-			"title": "JSON"
-		},
-		{
-			"file": "network.txt",
-			"title": "Networking"
-		},
-		{
-			"file": "scientific.txt",
-			"title": "Scientific Applications"
-		},
-		{
-			"file": "scrape.txt",
-			"title": "HTML Scraping"
-		},
-		{
-			"file": "speed.txt",
-			"title": "Speed"
-		},
-		{
-			"file": "web.txt",
-			"title": "Web Applications"
-		},
-		{
-			"file": "xml.txt",
-			"title": "XML parsing"
-		},
-		{
-			"file": "documentation.txt",
-			"title": "Documentation"
-		},
-		{
-			"file": "gotchas.txt",
-			"title": "Common Gotchas"
-		},
-		{
-			"file": "license.txt",
-			"title": "Choosing a License"
-		},
-		{
-			"file": "logging.txt",
-			"title": "Logging"
-		},
-		{
-			"file": "reading.txt",
-			"title": "Reading Great Code"
-		},
-		{
-			"file": "structure.txt",
+			"file": "writing.structure.txt",
 			"title": "Structuring Your Project"
 		},
 		{
-			"file": "style.txt",
+			"file": "writing.style.txt",
 			"title": "Code Style"
 		},
 		{
-			"file": "tests.txt",
+			"file": "writing.reading.txt",
+			"title": "Reading Great Code"
+		},
+		{
+			"file": "writing.documentation.txt",
+			"title": "Documentation"
+		},
+		{
+			"file": "writing.tests.txt",
 			"title": "Testing Your Code"
+		},
+		{
+			"file": "writing.logging.txt",
+			"title": "Logging"
+		},
+		{
+			"file": "writing.gotchas.txt",
+			"title": "Common Gotchas"
+		},
+		{
+			"file": "writing.license.txt",
+			"title": "Choosing a License"
+		},
+		{
+			"file": "scenarios.client.txt",
+			"title": "Network Applications"
+		},
+		{
+			"file": "scenarios.web.txt",
+			"title": "Web Applications"
+		},
+		{
+			"file": "scenarios.scrape.txt",
+			"title": "HTML Scraping"
+		},
+		{
+			"file": "scenarios.cli.txt",
+			"title": "Command-line Applications"
+		},
+		{
+			"file": "scenarios.gui.txt",
+			"title": "GUI Applications"
+		},
+		{
+			"file": "scenarios.db.txt",
+			"title": "Databases"
+		},
+		{
+			"file": "scenarios.network.txt",
+			"title": "Networking"
+		},
+		{
+			"file": "scenarios.admin.txt",
+			"title": "Systems Administration"
+		},
+		{
+			"file": "scenarios.ci.txt",
+			"title": "Continuous Integration"
+		},
+		{
+			"file": "scenarios.speed.txt",
+			"title": "Speed"
+		},
+		{
+			"file": "scenarios.scientific.txt",
+			"title": "Scientific Applications"
+		},
+		{
+			"file": "scenarios.imaging.txt",
+			"title": "Image Manipulation"
+		},
+		{
+			"file": "scenarios.xml.txt",
+			"title": "XML parsing"
+		},
+		{
+			"file": "scenarios.json.txt",
+			"title": "JSON"
+		},
+		{
+			"file": "scenarios.crypto.txt",
+			"title": "Cryptography"
 		}
 	]
 }
