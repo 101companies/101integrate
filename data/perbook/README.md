@@ -1,4 +1,15 @@
-List of data files "per book"
+## Lincenses of the books:
+
+- Craft: propriatary
+- DIP: [GNU Free Documentation License](http://www.diveintopython.net/appendix/fdl.html)
+- HGP: [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+- LYAH: [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+- PIH: propriatary
+- RWH: [CC-BY-NC 3.0](http://creativecommons.org/licenses/by-nc/3.0/)
+- WBPP: [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
+- thinkCSpy: [GNU Free Documentation License](http://www.gnu.org/copyleft/fdl.html)
+
+## List of data files "per book"
 
 - frequency.html: some term frequency table including stemming information
 - frequency.png: distribution of term frequency
