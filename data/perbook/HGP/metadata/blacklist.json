@@ -1,104 +1,141 @@
 [
 	{
-		"url": "http://docs.python-guide.org/en/latest/dev/env",
-		"reason": "",
-		"file": "env.txt",
-		"title": "Your Development Environment"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/dev/virtualenvs",
-		"reason": "",
-		"file": "virtualenvs.txt",
-		"title": "Virtual Environments"
-	},
-	{
 		"url": "http://docs.python-guide.org/en/latest/genindex",
 		"reason": "",
 		"file": "genindex.txt",
-		"title": "General Index"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/intro/community",
-		"reason": "",
-		"file": "community.txt",
-		"title": "The Community"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/intro/documentation",
-		"reason": "",
-		"file": "documentation.txt",
-		"title": "Documentation"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/intro/duction",
-		"reason": "",
-		"file": "duction.txt",
-		"title": "Introduction"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/intro/learning",
-		"reason": "",
-		"file": "learning.txt",
-		"title": "Learning Python"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/intro/news",
-		"reason": "",
-		"file": "news.txt",
-		"title": "News"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/notes/contribute",
-		"reason": "",
-		"file": "contribute.txt",
-		"title": "Contribute"
+		"title": [
+			"index",
+			"General Index"
+		]
 	},
 	{
 		"url": "http://docs.python-guide.org/en/latest/notes/license",
 		"reason": "",
-		"file": "license.txt",
-		"title": "License"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/notes/styleguide",
-		"reason": "",
-		"file": "styleguide.txt",
-		"title": "The Guide Style Guide"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/shipping/freezing",
-		"reason": "",
-		"file": "freezing.txt",
-		"title": "Freezing Your Code"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/shipping/packaging",
-		"reason": "",
-		"file": "packaging.txt",
-		"title": "Packaging Your Code"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/starting/install/linux",
-		"reason": "",
-		"file": "linux.txt",
-		"title": "Installing Python on Linux"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/starting/install/osx",
-		"reason": "",
-		"file": "osx.txt",
-		"title": "Installing Python on Mac OS X"
-	},
-	{
-		"url": "http://docs.python-guide.org/en/latest/starting/install/win",
-		"reason": "",
-		"file": "win.txt",
-		"title": "Installing Python on Windows"
+		"file": "notes.license.txt",
+		"title": [
+			"License"
+		]
 	},
 	{
 		"url": "http://docs.python-guide.org/en/latest/starting/which-python",
 		"reason": "",
-		"file": "which-python.txt",
-		"title": "Picking an Interpreter"
+		"file": "starting.which-python.txt",
+		"title": [
+			"next",
+			"Picking an Interpreter",
+			"Picking an Interpreter"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/shipping/freezing",
+		"reason": "",
+		"file": "shipping.freezing.txt",
+		"title": [
+			"Freezing Your Code"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/intro/news",
+		"reason": "",
+		"file": "intro.news.txt",
+		"title": [
+			"News"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/intro/documentation",
+		"reason": "",
+		"file": "intro.documentation.txt",
+		"title": [
+			"Documentation"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/starting/install/osx",
+		"reason": "",
+		"file": "starting.install.osx.txt",
+		"title": [
+			"Installing Python on Mac OS X"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/shipping/packaging",
+		"reason": "",
+		"file": "shipping.packaging.txt",
+		"title": [
+			"Packaging Your Code"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/starting/install/win",
+		"reason": "",
+		"file": "starting.install.win.txt",
+		"title": [
+			"Installing Python on Windows"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/dev/virtualenvs",
+		"reason": "",
+		"file": "dev.virtualenvs.txt",
+		"title": [
+			"Virtual Environments"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/intro/duction",
+		"reason": "",
+		"file": "intro.duction.txt",
+		"title": [
+			"Introduction"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/intro/community",
+		"reason": "",
+		"file": "intro.community.txt",
+		"title": [
+			"The Community"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/notes/contribute",
+		"reason": "",
+		"file": "notes.contribute.txt",
+		"title": [
+			"Contribute"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/intro/learning",
+		"reason": "",
+		"file": "intro.learning.txt",
+		"title": [
+			"Learning Python"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/notes/styleguide",
+		"reason": "",
+		"file": "notes.styleguide.txt",
+		"title": [
+			"The Guide Style Guide"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/starting/install/linux",
+		"reason": "",
+		"file": "starting.install.linux.txt",
+		"title": [
+			"Installing Python on Linux"
+		]
+	},
+	{
+		"url": "http://docs.python-guide.org/en/latest/dev/env",
+		"reason": "",
+		"file": "dev.env.txt",
+		"title": [
+			"Your Development Environment"
+		]
 	}
 ]

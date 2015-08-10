@@ -1,38 +1,20 @@
 [
 	{
+		"url": "https://en.wikibooks.org/wiki/Python_Programming/Print_version",
+		"reason": "Dupliecates all seperate chapters",
+		"file": "Print_version.txt",
+		"title": [
+			"printable version",
+			"Python Programming/Print version"
+		]
+	},
+	{
 		"url": "https://en.wikibooks.org/wiki/Python_Programming/Setting_it_up",
 		"reason": "",
 		"file": "Setting_it_up.txt",
 		"title": [
-			"Python Programming/Setting it up",
-			"Setting it up"
-		]
-	},
-	{
-		"url": "https://en.wikibooks.org/wiki/Python_Programming/Links",
-		"reason": "Only sources and links",
-		"file": "Links.txt",
-		"title": [
-			"Python Programming/Links",
-			"Links"
-		]
-	},
-	{
-		"url": "https://en.wikibooks.org/wiki/Python_Programming/pyFormex",
-		"reason": "3dmodeling",
-		"file": "pyFormex.txt",
-		"title": [
-			"Python Programming/pyFormex",
-			"pyFormex"
-		]
-	},
-	{
-		"url": "https://en.wikibooks.org/wiki/Python_Programming/Authors",
-		"reason": "No 101companies-related Data",
-		"file": "Authors.txt",
-		"title": [
-			"Python Programming/Authors",
-			"Authors"
+			"Setting it up",
+			"Python Programming/Setting it up"
 		]
 	},
 	{
@@ -40,8 +22,8 @@
 		"reason": "too specific",
 		"file": "Game_Programming_in_Python.txt",
 		"title": [
-			"Python Programming/Game Programming in Python",
-			"Game Programming in Python"
+			"Game Programming in Python",
+			"Python Programming/Game Programming in Python"
 		]
 	},
 	{
@@ -49,17 +31,35 @@
 		"reason": "",
 		"file": "Getting_Python.txt",
 		"title": [
-			"Python Programming/Getting Python",
-			"Getting Python"
+			"Getting Python",
+			"Python Programming/Getting Python"
 		]
 	},
 	{
-		"url": "https://en.wikibooks.org/wiki/Python_Programming/Print_version",
-		"reason": "Dupliecates all seperate chapters",
-		"file": "Print_version.txt",
+		"url": "https://en.wikibooks.org/wiki/Python_Programming/pyFormex",
+		"reason": "3dmodeling",
+		"file": "pyFormex.txt",
 		"title": [
-			"Python Programming/Print version",
-			"printable version"
+			"pyFormex",
+			"Python Programming/pyFormex"
+		]
+	},
+	{
+		"url": "https://en.wikibooks.org/wiki/Python_Programming/Authors",
+		"reason": "No 101companies-related Data",
+		"file": "Authors.txt",
+		"title": [
+			"Authors",
+			"Python Programming/Authors"
+		]
+	},
+	{
+		"url": "https://en.wikibooks.org/wiki/Python_Programming/Links",
+		"reason": "Only sources and links",
+		"file": "Links.txt",
+		"title": [
+			"Links",
+			"Python Programming/Links"
 		]
 	}
 ]
