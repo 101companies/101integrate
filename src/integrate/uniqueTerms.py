@@ -7,7 +7,7 @@
 from constants import *
 import csv
 import itertools
-import json
+import simplejson as json
 import os
 import urllib2
 from asq.initiators import query
@@ -114,7 +114,7 @@ def toTex(list, file):
 
 def toJson(list, file):
   with open ('../../data/summary/'+ file, 'w') as f:
-    f.write(json.dumps(list))
+    f.write(json.dumps(list, indent="\t"))
 
 def toHtml(list, file):
   # Open and read template

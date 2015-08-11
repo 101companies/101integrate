@@ -7,4 +7,4 @@ import os
 themes = json.load(urllib2.urlopen('http://data.101companies.org/resources/themes/members.json'))
 languages = json.load(urllib2.urlopen('http://data.101companies.org/resources/languages/members.json'))
 
-books = os.listdir("../../data/perbook")
+books = [b for b in os.listdir("../../data/perbook/") if os.path.exists('../../data/perbook/' + b + '/contents')  ]

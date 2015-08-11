@@ -5,7 +5,7 @@ import sys
 import os
 import urllib
 import urllib2
-import json
+import simplejson as json
 from asq.initiators import query
 from mako.template import Template
 import logging #needed for nunning the whole project in debug/info-mode
@@ -86,7 +86,7 @@ def createTable(resource, contribs, classification, classname):
         coverage[term]['level0'] = filter(lambda c: term.lower() in map(lambda t: t.lower(), level0Links[c]), contribs)
         coverage[term]['level1'] = filter(lambda c: term.lower() in map(lambda t: t.lower(), level1Links[c]) and not c in coverage[term]['level0'], contribs)
     with open(classBase + "/" + resource + '/coverage.json', 'write') as tablefjson:
-        json.dump(coverage, tablefjson)
+        json.dump(coverage, tablefjson,indent=5 )
 
 
 print 'Loading JSON dump...'
