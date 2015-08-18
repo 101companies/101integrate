@@ -105,7 +105,7 @@ CHAP,version,,
 CHAP,web,,
 CHAP,while loop,Loop,
 CHAP,write,,
-CHAP,xml,Language:XML,automatically assigned
+CHAP,xml,XML processing,automatically assigned
 FREQ,class,,too many different contexts
 FREQ,example,,
 FREQ,function,Function,automatically assigned
@@ -127,7 +127,7 @@ TITLE,Data types,Data type,
 TITLE,Numbers,,
 TITLE,Strings,String,
 TITLE,Lists,List,
-TITLE,Tuples,Tupel,
+TITLE,Tuples,Tuple,
 TITLE,Dictionaries,,
 TITLE,Sets,Set,
 TITLE,Basic Math,,
@@ -155,7 +155,7 @@ TITLE,Tips and Tricks,,
 TITLE,Namespace,Namespace,automatically assigned
 TITLE,Standard Library,,
 TITLE,Regular Expression,Regular expression,automatically assigned
-TITLE,XML Tools,Language:XML,
+TITLE,XML Tools,XML processing,
 TITLE,Email,,
 TITLE,Threading,Multithreading,
 TITLE,Sockets,,

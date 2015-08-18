@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 #coding=utf-8
+import json
+import urllib2
+import os
 
-themes = ['Haskell_data', 'Haskell_genericity', 'Haskell_potpourri', 'Haskell_introduction']
-languages = ['Haskell']
+themes = json.load(urllib2.urlopen('http://data.101companies.org/resources/themes/members.json'))
+languages = json.load(urllib2.urlopen('http://data.101companies.org/resources/languages/members.json'))
 
-books = ['Craft', 'LYAH', 'RWH', 'PIH']
+books = [b for b in os.listdir("../../data/perbook/") if os.path.exists('../../data/perbook/' + b + '/contents')  ]
