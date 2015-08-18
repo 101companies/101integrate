@@ -66,7 +66,7 @@ CHAP,todo,,
 CHAP,version,,
 CHAP,web application,Web application,automatically assigned
 CHAP,web server,Web server,automatically assigned
-CHAP,xml,Language:XML,automatically assigned
+CHAP,xml,XML processing,automatically assigned
 FREQ,application,,
 FREQ,code,Code,automatically assigned
 FREQ,file,File,automatically assigned
@@ -90,8 +90,8 @@ TITLE,Networking,,
 TITLE,Scientific Applications,,
 TITLE,HTML Scraping,,
 TITLE,Speed,,
-TITLE,Web Applications,,
-TITLE,XML parsing,Language:XML,
+TITLE,Web Applications,Technology:HTTP,
+TITLE,XML parsing,XML processing,
 TITLE,Documentation,Documentation,automatically assigned
 TITLE,Common Gotchas,,
 TITLE,Choosing a License,,
