@@ -22,23 +22,23 @@ CHAP,deck,,
 CHAP,decrement,,
 CHAP,delimiter,,
 CHAP,denominator,,
-CHAP,dictionary,,
+CHAP,dictionary,Dictionary,
 CHAP,directory,Directory,automatically assigned
-CHAP,dot product,,
+CHAP,dot product,,example
 CHAP,element,,
 CHAP,encapsulation,,
 CHAP,encode,,
 CHAP,equality,Equality,automatically assigned
-CHAP,euclid,,
+CHAP,euclid,,example
 CHAP,exception,Exception,automatically assigned
 CHAP,expression tree,tree,
 CHAP,file,File,automatically assigned
 CHAP,formal language,Software Language, not enterly fitting
-CHAP,fraction,,
+CHAP,fraction,,example
 CHAP,function definition,Function definition,automatically assigned
 CHAP,guardian,,
 CHAP,high-level language,Software Language, onlysubtype of wiki-Term
-CHAP,immutable,,
+CHAP,immutable,Immutable data type,
 CHAP,in operator,,unclear context
 CHAP,increment,,
 CHAP,incremental development,,
@@ -85,7 +85,7 @@ TITLE,Chapter 6: Iteration,,
 TITLE,Chapter 7: Strings,String,
 TITLE,Chapter 8: Lists,List,
 TITLE,Chapter 9: Tuples,Tuple,
-TITLE,Chapter 10: Dictionaries,,
+TITLE,Chapter 10: Dictionaries,Dictionary,
 TITLE,Chapter 11: Files and exceptions,File,
 TITLE,Chapter 11: Files and exceptions,Exception,
 TITLE,Chapter 12: Classes and objects,OO programming,

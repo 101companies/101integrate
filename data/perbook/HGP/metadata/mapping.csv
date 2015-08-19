@@ -8,9 +8,9 @@ CHAP,continuous integration,,
 CHAP,database,Database,automatically assigned
 CHAP,default,,
 CHAP,default argument,,
-CHAP,dictionary,,
+CHAP,dictionary,Dictionary,
 CHAP,distribution,Distribution,automatically assigned
-CHAP,django,,
+CHAP,django,Technology:Django,
 CHAP,documentation,Documentation,automatically assigned
 CHAP,element,,
 CHAP,example,,
@@ -21,7 +21,7 @@ CHAP,grains system,,
 CHAP,html,Language:HTML,automatically assigned
 CHAP,http,Technology:HTTP,automatically assigned
 CHAP,image,,
-CHAP,immutable type,,
+CHAP,immutable type,immutable data type,
 CHAP,install,,
 CHAP,installation,,
 CHAP,integration,,
@@ -54,7 +54,7 @@ CHAP,server,Server,automatically assigned
 CHAP,simple,,
 CHAP,software,,
 CHAP,source,,
-CHAP,standard library,,
+CHAP,standard library,Python Standart Library,
 CHAP,string,String,automatically assigned
 CHAP,support,,
 CHAP,supports python,,
@@ -75,7 +75,7 @@ FREQ,library,Library,automatically assigned
 FREQ,list,List,automatically assigned
 FREQ,module,Module,automatically assigned
 FREQ,python,Language:Python,automatically assigned
-FREQ,test,,
+FREQ,test,Testing,
 FREQ,web,,
 TITLE,Systems Administration,,
 TITLE,Continuous Integration,,
@@ -88,7 +88,7 @@ TITLE,Image Manipulation,,
 TITLE,JSON,Language:JSON,automatically assigned
 TITLE,Networking,,
 TITLE,Scientific Applications,,
-TITLE,HTML Scraping,,
+TITLE,HTML Scraping,Technology:Web crawler,
 TITLE,Speed,,
 TITLE,Web Applications,Technology:HTTP,
 TITLE,XML parsing,XML processing,

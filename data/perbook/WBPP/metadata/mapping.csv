@@ -16,14 +16,14 @@ CHAP,copy,,
 CHAP,data type,Data type,automatically assigned
 CHAP,database,Database,automatically assigned
 CHAP,decorator,,no functional relevance
-CHAP,dict,,
-CHAP,dictionary,,
+CHAP,dict,Dictionary,
+CHAP,dictionary,Dictionary,
 CHAP,directory,Directory,automatically assigned
 CHAP,doc,,
 CHAP,documentation,Documentation,automatically assigned
 CHAP,dom,Technology:DOM,automatically assigned
 CHAP,element,,too general Term
-CHAP,email,,
+CHAP,email,Technology:Email,
 CHAP,error,Error,automatically assigned
 CHAP,exception,Exception,automatically assigned
 CHAP,expression,Expression,automatically assigned
@@ -40,7 +40,7 @@ CHAP,index,,
 CHAP,instance,Object,
 CHAP,int,Integer,
 CHAP,integer,Integer,automatically assigned
-CHAP,interactive mode,,
+CHAP,interactive mode,Interactive Mode,
 CHAP,interface,OO interface,
 CHAP,item,,
 CHAP,language,,
@@ -55,7 +55,7 @@ CHAP,minimal example,,
 CHAP,mode,,
 CHAP,module,Module,automatically assigned
 CHAP,mutable object,Object,
-CHAP,none,,
+CHAP,none,Null value,
 CHAP,note,,
 CHAP,operation,Operation,automatically assigned
 CHAP,operator,Operator,automatically assigned
@@ -84,9 +84,9 @@ CHAP,script,,
 CHAP,server,Server,automatically assigned
 CHAP,set,Set,automatically assigned
 CHAP,simple,,
-CHAP,socket,,
+CHAP,socket,Network socket,
 CHAP,standard,Standard,automatically assigned
-CHAP,standard library,,
+CHAP,standard library,Python Standard Library,
 CHAP,statement,,
 CHAP,string object,String,
 CHAP,style class,,
@@ -117,14 +117,15 @@ FREQ,string,String,automatically assigned
 FREQ,type,Type,automatically assigned
 FREQ,value,,
 TITLE,Overview,,
-TITLE,Interactive mode,,
+TITLE,Interactive mode,Interactive Mode,
 TITLE,Self Help,,
 TITLE,Creating Python programs,,
 TITLE,Variables and Strings,,
 TITLE,Basic syntax,Concrete Syntax,
 TITLE,Sequences,,
 TITLE,Data types,Data type,
-TITLE,Numbers,,
+TITLE,Numbers,Integer,
+TLE,Numbers,Float,
 TITLE,Strings,String,
 TITLE,Lists,List,
 TITLE,Tuples,Tuple,
@@ -153,22 +154,22 @@ TITLE,Reflection,Reflection,automatically assigned
 TITLE,Metaclasses,Metaprogramming,
 TITLE,Tips and Tricks,,
 TITLE,Namespace,Namespace,automatically assigned
-TITLE,Standard Library,,
+TITLE,Standard Library,Python Standard Library,
 TITLE,Regular Expression,Regular expression,automatically assigned
 TITLE,XML Tools,XML processing,
-TITLE,Email,,
+TITLE,Email,Technology:Email,
 TITLE,Threading,Multithreading,
-TITLE,Sockets,,
+TITLE,Sockets,Network socket,
 TITLE,GUI Programming,GUI programming,automatically assigned
 TITLE,CGI interface,Technology:CGI,
 TITLE,WSGI web programming,,
-TITLE,Extracting info from web pages,,
+TITLE,Extracting info from web pages,Technology:Web crawling,
 TITLE,Internet,,
 TITLE,Networks,,
 TITLE,Databases,Database,
 TITLE,Database Programming,Database programming,automatically assigned
 TITLE,numpy,,
-TITLE,Qt4,,
+TITLE,Qt4,Technology:Qt,
 TITLE,Dbus,,
 TITLE,matplotlib,,
 TITLE,Sorted Container Types,,
