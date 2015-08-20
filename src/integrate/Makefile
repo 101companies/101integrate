@@ -23,4 +23,5 @@ nonProfileFrequencies:
 	done
 
 uniqueTerms:
-	$(PYTHON) uniqueTerms.py
+	mkdir -p ../../data/summary
+	$(PYTHON) uniqueTerms.py $(foreach r,$(LINKED_BOOKS), $(r))
