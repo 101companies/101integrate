@@ -35,12 +35,12 @@ to-cache:
 
 #runs integration-scripts
 integrate:
-	export BOOKS
+	export LOGGING
 	cd integrate; $(MAKE) integrate
 
 # Run backlinking scripts
 backlink:
-	export BOOKS
+	export LOGGING
 	cd mining; $(MAKE) backlink
 
 coverageTables:
