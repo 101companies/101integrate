@@ -14,6 +14,7 @@ nope:
 run:
 	touch src/Makefile.vars
 	cp src/Makefile.vars src/last.vars
+	export BOOKS
 ifeq ($(LOGGING),ON)
 	export LOGGING
 	mkdir -p logs
