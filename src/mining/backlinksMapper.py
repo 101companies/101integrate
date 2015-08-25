@@ -13,7 +13,7 @@ import logging.config
 
 def main(resourcename, root, distributionfile, limit):
   resourcebase = root + resourcename + '/'
-  resInfos = json.loads(open("config/config.json", 'rb').read())
+  resInfos = json.loads(open("../config/config.json", 'rb').read())
   distributionraw = json.loads(open(resourcebase + distributionfile, 'rb').read())
   distribution = distributionraw['distribution']
   termlinks = {}
@@ -44,7 +44,14 @@ def main(resourcename, root, distributionfile, limit):
 			parapraphDistribution = distribution[term][maxChapIndex]
 			firstOcc = parapraphDistribution.index(filter(lambda x : x > 0, parapraphDistribution)[0])
 			if hasUrl:
-				maxLinkID = resInfos[resourcename]['urlBase'] + maxFileName.split('.')[0] + resInfos[resourcename]['ext']
+				urlBase = resInfos[resourcename]['urlBase']
+				if not urlBase.endswith("/"):
+				    urlBase +="/"
+				ext = resInfos[resourcename]['ext']
+				if ext:
+				    maxLinkID = urlBase + "/".join(maxFileName.split('.')[:-2])+ext
+				else:
+				    maxLinkID = urlBase + "/".join(maxFileName.split('.')[:-1])
 				maxLinkID += "#" + structure[maxChapIndex]['partids'][firstOcc]
 			else:
 				maxLinkID = resInfos[resourcename]['cite'].replace("$$$",filesn[maxFileName])

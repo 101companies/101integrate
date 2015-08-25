@@ -9,7 +9,7 @@ import logging.config
 def main(datafolder,origin, resNames, destination):
 	logging.info(str(resNames))
 	allBacklinks = {"resources" : {}, "backlinks": {}}
-	resInfos = json.loads(open("config/config.json", 'rb').read())
+	resInfos = json.loads(open("../config/config.json", 'rb').read())
 	for resName in resNames:
 		allBacklinks['resources'][resName] = {'fullName' : resInfos[resName]['fullName'], 'isLinkable': resInfos[resName]['isLinkable']}
 		resources = json.load(open(datafolder + origin  + resName + "/backlinks.json", "read"))

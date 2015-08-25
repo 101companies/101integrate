@@ -38,8 +38,8 @@ dataRoot \<- "../../data"
 {book|
 <topFrequency(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)>,"/topFrequency.csv", sep=""))
 <frequency(book)> \<- read.csv(paste(dataRoot, "/perbook/", <quotedBook(book)>,"/frequenciesMerged.csv", sep=""), sep=";")
-<frequency(book)> \<- subset(<frequency(book)>, select=c(0,3))
-
+<frequency(book)> \<- subset(<frequency(book)>, select=c(Term,Frequency))
+#print(<frequency(book)>)
 }>
 
 #take union of TOP terms across all books
@@ -60,10 +60,14 @@ union \<- union[with(union, order(union$Term)),]
 
 <books:
 {book|
-for(t in union$Term) if(t %in% as.vector(<frequency(book)>$Term)) union[which(union$Term == t),2] \<- <frequency(book)>[which(<frequency(book)>$Term == t),2]
+for(t in union$Term) if(t %in% as.vector(<frequency(book)>$Term)) union[which(union$Term == t),(2+<i0>)] \<- <frequency(book)>[which(<frequency(book)>$Term == t),2]
 }>
 
-write.csv(union, paste(dataRoot, "/allbooks/", "/unionTopFrequencies.csv", sep=""))
+#print("Dataset")
+
+#print(union)
+
+write.csv(union, paste(dataRoot, "/allbooks", "/unionTopFrequencies.csv", sep=""))
 
 #print(xtable(union, label=paste('F:unionTopFrequencies', sep = ""), caption="Union of TOP 30 frequent terms from the books"),
 #      file="unionTopFrequencies.tex", scalebox=0.7,

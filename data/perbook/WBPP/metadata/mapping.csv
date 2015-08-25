@@ -1,0 +1,179 @@
+Kind,IndexTerm,WikiTerm,Comment
+CHAP,access,,
+CHAP,actual parameter,,
+CHAP,argument,Argument,automatically assigned
+CHAP,block,,
+CHAP,call,,
+CHAP,calling function,function application,
+CHAP,character,Character,automatically assigned
+CHAP,class definition,OO class,
+CHAP,client,Client,automatically assigned
+CHAP,code,Code,automatically assigned
+CHAP,comment,,
+CHAP,context manager,,
+CHAP,control flow,Condition,
+CHAP,copy,,
+CHAP,data type,Data type,automatically assigned
+CHAP,database,Database,automatically assigned
+CHAP,decorator,,no functional relevance
+CHAP,dict,Dictionary,
+CHAP,dictionary,Dictionary,
+CHAP,directory,Directory,automatically assigned
+CHAP,doc,,
+CHAP,documentation,Documentation,automatically assigned
+CHAP,dom,Technology:DOM,automatically assigned
+CHAP,element,,too general Term
+CHAP,email,Technology:Email,
+CHAP,error,Error,automatically assigned
+CHAP,exception,Exception,automatically assigned
+CHAP,expression,Expression,automatically assigned
+CHAP,false,Boolean,
+CHAP,file,File,automatically assigned
+CHAP,file object,File,
+CHAP,formal parameter,,
+CHAP,function call,function application,
+CHAP,function object,Function object,automatically assigned
+CHAP,html,Language:HTML,automatically assigned
+CHAP,http,Technology:HTTP,automatically assigned
+CHAP,import,Import,automatically assigned
+CHAP,index,,
+CHAP,instance,Object,
+CHAP,int,Integer,
+CHAP,integer,Integer,automatically assigned
+CHAP,interactive mode,Interactive Mode,
+CHAP,interface,OO interface,
+CHAP,item,,
+CHAP,language,,
+CHAP,library,Library,automatically assigned
+CHAP,line,,
+CHAP,list comprehension,List comprehension,automatically assigned
+CHAP,long integer,Integer,
+CHAP,loop,Loop,automatically assigned
+CHAP,match object,Regular expression,
+CHAP,method,Method,automatically assigned
+CHAP,minimal example,,
+CHAP,mode,,
+CHAP,module,Module,automatically assigned
+CHAP,mutable object,Object,
+CHAP,none,Null value,
+CHAP,note,,
+CHAP,operation,Operation,automatically assigned
+CHAP,operator,Operator,automatically assigned
+CHAP,order,,
+CHAP,output,Output,automatically assigned
+CHAP,pattern object,Regular expression,
+CHAP,print,,
+CHAP,print statement,output,
+CHAP,program,Program,automatically assigned
+CHAP,programming,Programming,automatically assigned
+CHAP,programming language,Programming language,automatically assigned
+CHAP,py,,
+CHAP,python database api,Database,
+CHAP,python documentation,,
+CHAP,python interpreter,,
+CHAP,python programming,,
+CHAP,quoted string,String,
+CHAP,regular expression,Regular expression,automatically assigned
+CHAP,resource,,
+CHAP,resource management,,
+CHAP,return,,
+CHAP,returns true,,
+CHAP,same list,,
+CHAP,scope,Local Scope,
+CHAP,script,,
+CHAP,server,Server,automatically assigned
+CHAP,set,Set,automatically assigned
+CHAP,simple,,
+CHAP,socket,Network socket,
+CHAP,standard,Standard,automatically assigned
+CHAP,standard library,Python Standard Library,
+CHAP,statement,,
+CHAP,string object,String,
+CHAP,style class,,
+CHAP,syntax,Syntax,automatically assigned
+CHAP,syntax error,Error,
+CHAP,text,Text,automatically assigned
+CHAP,text editor,,
+CHAP,tool,Tool,automatically assigned
+CHAP,true,Boolean,
+CHAP,true division,,
+CHAP,try,,
+CHAP,tuple,Tuple,automatically assigned
+CHAP,user,,
+CHAP,variable,,
+CHAP,version,,
+CHAP,web,,
+CHAP,while loop,Loop,
+CHAP,write,,
+CHAP,xml,XML processing,automatically assigned
+FREQ,class,,too many different contexts
+FREQ,example,,
+FREQ,function,Function,automatically assigned
+FREQ,list,List,automatically assigned
+FREQ,number,,
+FREQ,object,Object,automatically assigned
+FREQ,python,Language:Python,automatically assigned
+FREQ,string,String,automatically assigned
+FREQ,type,Type,automatically assigned
+FREQ,value,,
+TITLE,Overview,,
+TITLE,Interactive mode,Interactive Mode,
+TITLE,Self Help,,
+TITLE,Creating Python programs,,
+TITLE,Variables and Strings,,
+TITLE,Basic syntax,Concrete Syntax,
+TITLE,Sequences,,
+TITLE,Data types,Data type,
+TITLE,Numbers,Integer,
+TLE,Numbers,Float,
+TITLE,Strings,String,
+TITLE,Lists,List,
+TITLE,Tuples,Tuple,
+TITLE,Dictionaries,,
+TITLE,Sets,Set,
+TITLE,Basic Math,,
+TITLE,Operators,Operator,
+TITLE,Control Flow,,
+TITLE,Decision Control,,
+TITLE,Conditional Statements,Condition,
+TITLE,Loops,Loop,
+TITLE,Functions,Function,
+TITLE,Scoping,Scoping,automatically assigned
+TITLE,Input and output,I/O,
+TITLE,Files,File,
+TITLE,Text,Text,automatically assigned
+TITLE,Modules,Module,
+TITLE,Modules and how to use them,Module,
+TITLE,Classes,OO Class,
+TITLE,Exceptions,Error,
+TITLE,Source Documentation and Comments,,
+TITLE,Idioms,,
+TITLE,Decorators,,
+TITLE,Context Managers,,
+TITLE,Reflection,Reflection,automatically assigned
+TITLE,Metaclasses,Metaprogramming,
+TITLE,Tips and Tricks,,
+TITLE,Namespace,Namespace,automatically assigned
+TITLE,Standard Library,Python Standard Library,
+TITLE,Regular Expression,Regular expression,automatically assigned
+TITLE,XML Tools,XML processing,
+TITLE,Email,Technology:Email,
+TITLE,Threading,Multithreading,
+TITLE,Sockets,Network socket,
+TITLE,GUI Programming,GUI programming,automatically assigned
+TITLE,CGI interface,Technology:CGI,
+TITLE,WSGI web programming,,
+TITLE,Extracting info from web pages,Technology:Web crawling,
+TITLE,Internet,,
+TITLE,Networks,,
+TITLE,Databases,Database,
+TITLE,Database Programming,Database programming,automatically assigned
+TITLE,numpy,,
+TITLE,Qt4,Technology:Qt,
+TITLE,Dbus,,
+TITLE,matplotlib,,
+TITLE,Sorted Container Types,,
+TITLE,Extending with C,Language:C,
+TITLE,Extending with Pyrex,,
+TITLE,Extending with ctypes,,
+TITLE,Extending with Perl,Language:Perl,

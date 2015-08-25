@@ -3,42 +3,63 @@
 		"url": "https://en.wikibooks.org/wiki/Python_Programming/Print_version",
 		"reason": "Dupliecates all seperate chapters",
 		"file": "Print_version.txt",
-		"title": "printable version"
+		"title": [
+			"printable version",
+			"Python Programming/Print version"
+		]
 	},
 	{
-		"url": "https://en.wikibooks.org/wiki/Python_Programming/numpy",
-		"reason": "Numeric Library",
-		"file": "numpy.txt",
-		"title": "numpy"
+		"url": "https://en.wikibooks.org/wiki/Python_Programming/Setting_it_up",
+		"reason": "",
+		"file": "Setting_it_up.txt",
+		"title": [
+			"Setting it up",
+			"Python Programming/Setting it up"
+		]
 	},
 	{
 		"url": "https://en.wikibooks.org/wiki/Python_Programming/Game_Programming_in_Python",
 		"reason": "too specific",
 		"file": "Game_Programming_in_Python.txt",
-		"title": "Game Programming in Python"
+		"title": [
+			"Game Programming in Python",
+			"Python Programming/Game Programming in Python"
+		]
+	},
+	{
+		"url": "https://en.wikibooks.org/wiki/Python_Programming/Getting_Python",
+		"reason": "",
+		"file": "Getting_Python.txt",
+		"title": [
+			"Getting Python",
+			"Python Programming/Getting Python"
+		]
 	},
 	{
 		"url": "https://en.wikibooks.org/wiki/Python_Programming/pyFormex",
 		"reason": "3dmodeling",
 		"file": "pyFormex.txt",
-		"title": "pyFormex"
-	},
-	{
-		"url": "https://en.wikibooks.org/wiki/Python_Programming/matplotlib",
-		"reason": "mathematic plots",
-		"file": "matplotlib.txt",
-		"title": "matplotlib"
-	},
-	{
-		"url": "https://en.wikibooks.org/wiki/Python_Programming/Links",
-		"reason": "Only sources and links",
-		"file": "Links.txt",
-		"title": "Links"
+		"title": [
+			"pyFormex",
+			"Python Programming/pyFormex"
+		]
 	},
 	{
 		"url": "https://en.wikibooks.org/wiki/Python_Programming/Authors",
 		"reason": "No 101companies-related Data",
 		"file": "Authors.txt",
-		"title": "Authors"
+		"title": [
+			"Authors",
+			"Python Programming/Authors"
+		]
+	},
+	{
+		"url": "https://en.wikibooks.org/wiki/Python_Programming/Links",
+		"reason": "Only sources and links",
+		"file": "Links.txt",
+		"title": [
+			"Links",
+			"Python Programming/Links"
+		]
 	}
 ]

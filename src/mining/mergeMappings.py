@@ -14,8 +14,9 @@ def main(datafolder, origin, resNames, destination):
 		rawmapping = csv.reader(open(datafolder + origin  + resName + "/metadata/mapping.csv"), delimiter=',')
 		mapping = {}
 		for row in rawmapping:
-			if row[0] != 'Kind' and row[2]:
-				mapping[row[2]] = row[1]
+			if len(row) >=3:
+				if row[0] != 'Kind' and row[2]:
+					mapping[row[2]] = row[1]
 		mappings[resName] = mapping
 
 	f = open(datafolder + destination + "mapping.json", 'write')

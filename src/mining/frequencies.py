@@ -48,7 +48,7 @@ def nonAbbtoLower(term):
 #
 #Computes frequencies of words for a given set of terms in a given set of resourcesmerged;
 def main(resource, datapath, resourcepath, indexpath, indexfile, chaptersfile, contentfldr, metaindexfile, merged):
-  resInfos = json.loads(open("config/config.json", 'rb').read())
+  resInfos = json.loads(open("../config/config.json", 'rb').read())
   # read index file
   root = datapath
   resourcebase = root + resourcepath
@@ -56,7 +56,7 @@ def main(resource, datapath, resourcepath, indexpath, indexfile, chaptersfile, c
   index = csv.reader(open(indexbase + indexfile), delimiter=',')
   #input(index)
   whitelist = []
-  whiteListReader = csv.reader(open("config/whitelist.csv", 'rb'), delimiter=',')
+  whiteListReader = csv.reader(open("../config/whitelist.csv", 'rb'), delimiter=',')
   for row in whiteListReader:
 	whitelist.append(row[0])
   lmtzr = WordNetLemmatizer()

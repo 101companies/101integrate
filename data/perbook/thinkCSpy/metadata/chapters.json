@@ -1,0 +1,92 @@
+{
+	"chapters": [
+		{
+			"file": "chap01.html.txt",
+			"title": "Chapter 1: The way of the program"
+		},
+		{
+			"file": "chap02.html.txt",
+			"title": "Chapter 2: Variables, expressions and statements"
+		},
+		{
+			"file": "chap03.html.txt",
+			"title": "Chapter 3: Functions"
+		},
+		{
+			"file": "chap04.html.txt",
+			"title": "Chapter 4: Conditionals and recursion"
+		},
+		{
+			"file": "chap05.html.txt",
+			"title": "Chapter 5: Fruitful functions"
+		},
+		{
+			"file": "chap06.html.txt",
+			"title": "Chapter 6: Iteration"
+		},
+		{
+			"file": "chap07.html.txt",
+			"title": "Chapter 7: Strings"
+		},
+		{
+			"file": "chap08.html.txt",
+			"title": "Chapter 8: Lists"
+		},
+		{
+			"file": "chap09.html.txt",
+			"title": "Chapter 9: Tuples"
+		},
+		{
+			"file": "chap10.html.txt",
+			"title": "Chapter 10: Dictionaries"
+		},
+		{
+			"file": "chap11.html.txt",
+			"title": "Chapter 11: Files and exceptions"
+		},
+		{
+			"file": "chap12.html.txt",
+			"title": "Chapter 12: Classes and objects"
+		},
+		{
+			"file": "chap13.html.txt",
+			"title": "Chapter 13: Classes and functions"
+		},
+		{
+			"file": "chap14.html.txt",
+			"title": "Chapter 14: Classes and methods"
+		},
+		{
+			"file": "chap15.html.txt",
+			"title": "Chapter 15: Sets of objects"
+		},
+		{
+			"file": "chap16.html.txt",
+			"title": "Chapter 16: Inheritance"
+		},
+		{
+			"file": "chap17.html.txt",
+			"title": "Chapter 17: Linked lists"
+		},
+		{
+			"file": "chap18.html.txt",
+			"title": "Chapter 18: Stacks"
+		},
+		{
+			"file": "chap19.html.txt",
+			"title": "Chapter 19: Queues"
+		},
+		{
+			"file": "chap20.html.txt",
+			"title": "Chapter 20: Trees"
+		},
+		{
+			"file": "app01.html.txt",
+			"title": "Appendix A: Debugging"
+		},
+		{
+			"file": "app02.html.txt",
+			"title": "Appendix B: Creating a new data type"
+		}
+	]
+}

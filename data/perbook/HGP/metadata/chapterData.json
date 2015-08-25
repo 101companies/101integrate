@@ -1,0 +1,287 @@
+{
+	"chapters": [
+		{
+			"url": "http://docs.python-guide.org/en/latest/genindex",
+			"file": "genindex.txt",
+			"title": [
+				"index",
+				"General Index"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/starting/which-python",
+			"file": "starting.which-python.txt",
+			"title": [
+				"next",
+				"Picking an Interpreter",
+				"Picking an Interpreter"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/starting/install/osx",
+			"file": "starting.install.osx.txt",
+			"title": [
+				"Installing Python on Mac OS X"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/starting/install/win",
+			"file": "starting.install.win.txt",
+			"title": [
+				"Installing Python on Windows"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/starting/install/linux",
+			"file": "starting.install.linux.txt",
+			"title": [
+				"Installing Python on Linux"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/writing/structure",
+			"file": "writing.structure.txt",
+			"title": [
+				"Structuring Your Project"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/writing/style",
+			"file": "writing.style.txt",
+			"title": [
+				"Code Style"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/writing/reading",
+			"file": "writing.reading.txt",
+			"title": [
+				"Reading Great Code"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/writing/documentation",
+			"file": "writing.documentation.txt",
+			"title": [
+				"Documentation"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/writing/tests",
+			"file": "writing.tests.txt",
+			"title": [
+				"Testing Your Code"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/writing/logging",
+			"file": "writing.logging.txt",
+			"title": [
+				"Logging"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/writing/gotchas",
+			"file": "writing.gotchas.txt",
+			"title": [
+				"Common Gotchas"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/writing/license",
+			"file": "writing.license.txt",
+			"title": [
+				"Choosing a License"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/client",
+			"file": "scenarios.client.txt",
+			"title": [
+				"Network Applications"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/web",
+			"file": "scenarios.web.txt",
+			"title": [
+				"Web Applications"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/scrape",
+			"file": "scenarios.scrape.txt",
+			"title": [
+				"HTML Scraping"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/cli",
+			"file": "scenarios.cli.txt",
+			"title": [
+				"Command-line Applications"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/gui",
+			"file": "scenarios.gui.txt",
+			"title": [
+				"GUI Applications"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/db",
+			"file": "scenarios.db.txt",
+			"title": [
+				"Databases"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/network",
+			"file": "scenarios.network.txt",
+			"title": [
+				"Networking"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/admin",
+			"file": "scenarios.admin.txt",
+			"title": [
+				"Systems Administration"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/ci",
+			"file": "scenarios.ci.txt",
+			"title": [
+				"Continuous Integration"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/speed",
+			"file": "scenarios.speed.txt",
+			"title": [
+				"Speed"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/scientific",
+			"file": "scenarios.scientific.txt",
+			"title": [
+				"Scientific Applications"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/imaging",
+			"file": "scenarios.imaging.txt",
+			"title": [
+				"Image Manipulation"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/xml",
+			"file": "scenarios.xml.txt",
+			"title": [
+				"XML parsing"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/json",
+			"file": "scenarios.json.txt",
+			"title": [
+				"JSON"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/scenarios/crypto",
+			"file": "scenarios.crypto.txt",
+			"title": [
+				"Cryptography"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/shipping/packaging",
+			"file": "shipping.packaging.txt",
+			"title": [
+				"Packaging Your Code"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/shipping/freezing",
+			"file": "shipping.freezing.txt",
+			"title": [
+				"Freezing Your Code"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/dev/env",
+			"file": "dev.env.txt",
+			"title": [
+				"Your Development Environment"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/dev/virtualenvs",
+			"file": "dev.virtualenvs.txt",
+			"title": [
+				"Virtual Environments"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/intro/duction",
+			"file": "intro.duction.txt",
+			"title": [
+				"Introduction"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/intro/community",
+			"file": "intro.community.txt",
+			"title": [
+				"The Community"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/intro/learning",
+			"file": "intro.learning.txt",
+			"title": [
+				"Learning Python"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/intro/documentation",
+			"file": "intro.documentation.txt",
+			"title": [
+				"Documentation"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/intro/news",
+			"file": "intro.news.txt",
+			"title": [
+				"News"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/notes/contribute",
+			"file": "notes.contribute.txt",
+			"title": [
+				"Contribute"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/notes/license",
+			"file": "notes.license.txt",
+			"title": [
+				"License"
+			]
+		},
+		{
+			"url": "http://docs.python-guide.org/en/latest/notes/styleguide",
+			"file": "notes.styleguide.txt",
+			"title": [
+				"The Guide Style Guide"
+			]
+		}
+	]
+}

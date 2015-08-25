@@ -1,0 +1,102 @@
+Kind,IndexTerm,WikiTerm,Comment
+CHAP,api,API,automatically assigned
+CHAP,argument,Argument,automatically assigned
+CHAP,client code,,
+CHAP,command-line,,
+CHAP,configuration,,
+CHAP,continuous integration,,
+CHAP,database,Database,automatically assigned
+CHAP,default,,
+CHAP,default argument,,
+CHAP,dictionary,Dictionary,
+CHAP,distribution,Distribution,automatically assigned
+CHAP,django,Technology:Django,
+CHAP,documentation,Documentation,automatically assigned
+CHAP,element,,
+CHAP,example,,
+CHAP,framework,Framework,automatically assigned
+CHAP,function body,,
+CHAP,global variable,,
+CHAP,grains system,,
+CHAP,html,Language:HTML,automatically assigned
+CHAP,http,Technology:HTTP,automatically assigned
+CHAP,image,,
+CHAP,immutable type,immutable data type,
+CHAP,install,,
+CHAP,installation,,
+CHAP,integration,,
+CHAP,interpreter,Interpreter,automatically assigned
+CHAP,json,Language:JSON,automatically assigned
+CHAP,keyword argument,,
+CHAP,language,,
+CHAP,layer,,
+CHAP,license,,
+CHAP,line,,
+CHAP,logging,Logging,automatically assigned
+CHAP,manipulation,,
+CHAP,message,,
+CHAP,networking,,
+CHAP,numpy,,
+CHAP,open source,,
+CHAP,orm,,
+CHAP,package,Package,automatically assigned
+CHAP,pattern,,
+CHAP,platform,Platform,automatically assigned
+CHAP,project,,
+CHAP,puppet master,,
+CHAP,pure function,Pure function,automatically assigned
+CHAP,python code,,
+CHAP,python programmer,,
+CHAP,reading,,
+CHAP,running code,,
+CHAP,scientific python,,
+CHAP,server,Server,automatically assigned
+CHAP,simple,,
+CHAP,software,,
+CHAP,source,,
+CHAP,standard library,Python Standart Library,
+CHAP,string,String,automatically assigned
+CHAP,support,,
+CHAP,supports python,,
+CHAP,template,Template Engine,
+CHAP,test suite,Testing,
+CHAP,testing,Testing,automatically assigned
+CHAP,testing code,Testing,
+CHAP,todo,,
+CHAP,version,,
+CHAP,web application,Web application,automatically assigned
+CHAP,web server,Web server,automatically assigned
+CHAP,xml,XML processing,automatically assigned
+FREQ,application,,
+FREQ,code,Code,automatically assigned
+FREQ,file,File,automatically assigned
+FREQ,function,Function,automatically assigned
+FREQ,library,Library,automatically assigned
+FREQ,list,List,automatically assigned
+FREQ,module,Module,automatically assigned
+FREQ,python,Language:Python,automatically assigned
+FREQ,test,Testing,
+FREQ,web,,
+TITLE,Systems Administration,,
+TITLE,Continuous Integration,,
+TITLE,Command-line Applications,,
+TITLE,Network Applications,,
+TITLE,Cryptography,,
+TITLE,Databases,Database programming,
+TITLE,GUI Applications,GUI Programming,
+TITLE,Image Manipulation,,
+TITLE,JSON,Language:JSON,automatically assigned
+TITLE,Networking,,
+TITLE,Scientific Applications,,
+TITLE,HTML Scraping,Technology:Web crawler,
+TITLE,Speed,,
+TITLE,Web Applications,Technology:HTTP,
+TITLE,XML parsing,XML processing,
+TITLE,Documentation,Documentation,automatically assigned
+TITLE,Common Gotchas,,
+TITLE,Choosing a License,,
+TITLE,Logging,Logging,automatically assigned
+TITLE,Reading Great Code,,
+TITLE,Structuring Your Project,,
+TITLE,Code Style,,
+TITLE,Testing Your Code,Testing,

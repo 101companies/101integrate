@@ -1,0 +1,102 @@
+{
+	"chapters": [
+		{
+			"url": "http://learnyouahaskell.com/introduction",
+			"file": "introduction.txt",
+			"title": [
+				"Introduction"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/starting-out",
+			"file": "starting-out.txt",
+			"title": [
+				"Starting Out"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/types-and-typeclasses",
+			"file": "types-and-typeclasses.txt",
+			"title": [
+				"Types and Typeclasses"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/syntax-in-functions",
+			"file": "syntax-in-functions.txt",
+			"title": [
+				"Syntax in Functions"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/recursion",
+			"file": "recursion.txt",
+			"title": [
+				"Recursion"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/higher-order-functions",
+			"file": "higher-order-functions.txt",
+			"title": [
+				"Higher Order Functions"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/modules",
+			"file": "modules.txt",
+			"title": [
+				"Modules"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/making-our-own-types-and-typeclasses",
+			"file": "making-our-own-types-and-typeclasses.txt",
+			"title": [
+				"Making Our Own Types and Typeclasses"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/input-and-output",
+			"file": "input-and-output.txt",
+			"title": [
+				"Input and Output"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/functionally-solving-problems",
+			"file": "functionally-solving-problems.txt",
+			"title": [
+				"Functionally Solving Problems"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/functors-applicative-functors-and-monoids",
+			"file": "functors-applicative-functors-and-monoids.txt",
+			"title": [
+				"Functors, Applicative Functors and Monoids"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/a-fistful-of-monads",
+			"file": "a-fistful-of-monads.txt",
+			"title": [
+				"A Fistful of Monads"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/for-a-few-monads-more",
+			"file": "for-a-few-monads-more.txt",
+			"title": [
+				"For a Few Monads More"
+			]
+		},
+		{
+			"url": "http://learnyouahaskell.com/zippers",
+			"file": "zippers.txt",
+			"title": [
+				"Zippers"
+			]
+		}
+	]
+}

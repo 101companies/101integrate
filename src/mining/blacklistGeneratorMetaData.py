@@ -3,6 +3,7 @@ import constants
 import simplejson as json
 import logging #needed for nunning the whole project in debug/info-mode
 import logging.config
+import copy
 
 def generateBlacklist(args):
 	for a in args:
@@ -17,15 +18,18 @@ def generateBlacklist(args):
 		try:
 			chapters = json.loads(open(path + "chapterData.json", 'rb').read())['chapters']
 			usedChapters =  json.loads(open(path + "chapters.json", 'rb').read())['chapters']
-			for c in chapters[:]:
+			notInTxt = copy.copy(chapters)
+			for c in chapters:
 				for l in open(path  + "chapters.txt").readlines():
-					if c['url'] == l.replace("\r","").replace("\n",""):
-						chapters.remove(c)
-			for c in chapters[:]:
+					if c['url'] == l.strip():
+						notInTxt.remove(c)
+			notInJSON = copy.copy(chapters)
+			for c in chapters:
 				for u in usedChapters:
-					if c['file'] == u['file'] and c['title'] == u['title']:
-						chapters.remove(c) 
-			newBlacklist = chapters
+					if u['file'] == c['file'] and u['title'] in c['title']:
+						notInJSON.remove(c) 
+			newBlacklist= [json.loads(b) for b in set([json.dumps(b) for b in (notInTxt + notInJSON)])]# remove duplicates
+			print newBlacklist
 			print "generated Blacklist"
 			for b in newBlacklist:
 				b['reason'] = ""
@@ -34,7 +38,7 @@ def generateBlacklist(args):
 			    print "copying reasons"
 			for b in blacklist:
 			    for n in newBlacklist:
-				if b['url'] == n['url'] and b['title'] == n['title']:
+				if b['url'] == n['url']:
 				    n['reason']=b['reason']
 			blacklist = newBlacklist
 		except IOError, e:
@@ -48,5 +52,5 @@ def generateBlacklist(args):
 		print "Wrote File"
 
 if __name__ == "__main__":
-	logging.config.fileConfig('../config/pythonLogging.conf'.replace('/',os.path.sep))
+	logging.config.fileConfig('../config/pythonLogging.conf')
 	generateBlacklist(sys.argv[1:])

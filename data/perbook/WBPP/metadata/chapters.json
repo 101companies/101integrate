@@ -5,14 +5,6 @@
 			"title": "Overview"
 		},
 		{
-			"file": "Getting_Python.txt",
-			"title": "Getting Python"
-		},
-		{
-			"file": "Setting_it_up.txt",
-			"title": "Setting it up"
-		},
-		{
 			"file": "Interactive_mode.txt",
 			"title": "Interactive mode"
 		},
@@ -189,6 +181,10 @@
 			"title": "GUI Programming"
 		},
 		{
+			"file": "CGI_interface.txt",
+			"title": "CGI interface"
+		},
+		{
 			"file": "WSGI_web_programming.txt",
 			"title": "WSGI web programming"
 		},
@@ -213,12 +209,20 @@
 			"title": "Database Programming"
 		},
 		{
+			"file": "numpy.txt",
+			"title": "numpy"
+		},
+		{
 			"file": "PyQt4.txt",
 			"title": "Qt4"
 		},
 		{
 			"file": "Dbus.txt",
 			"title": "Dbus"
+		},
+		{
+			"file": "matplotlib.txt",
+			"title": "matplotlib"
 		},
 		{
 			"file": "Sorted_Container_Types.txt",

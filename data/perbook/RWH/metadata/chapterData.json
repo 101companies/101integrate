@@ -1,0 +1,228 @@
+{
+	"chapters": [
+		{
+			"url": "http://book.realworldhaskell.org/read/why-functional-programming-why-haskell.html",
+			"file": "why-functional-programming-why-haskell.html.txt",
+			"title": [
+				"Why functional programming? Why Haskell?"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/getting-started.html",
+			"file": "getting-started.html.txt",
+			"title": [
+				"Getting started"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/types-and-functions.html",
+			"file": "types-and-functions.html.txt",
+			"title": [
+				"Types and functions"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/defining-types-streamlining-functions.html",
+			"file": "defining-types-streamlining-functions.html.txt",
+			"title": [
+				"Defining types, streamlining functions"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/functional-programming.html",
+			"file": "functional-programming.html.txt",
+			"title": [
+				"Functional programming"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/writing-a-library-working-with-json-data.html",
+			"file": "writing-a-library-working-with-json-data.html.txt",
+			"title": [
+				"Writing a library: working with JSON data"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/using-typeclasses.html",
+			"file": "using-typeclasses.html.txt",
+			"title": [
+				"Using typeclasses"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/io.html",
+			"file": "io.html.txt",
+			"title": [
+				"Input and output"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/efficient-file-processing-regular-expressions-and-file-name-matching.html",
+			"file": "efficient-file-processing-regular-expressions-and-file-name-matching.html.txt",
+			"title": [
+				"Efficient file processing, regular expressions, and file name matching"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/io-case-study-a-library-for-searching-the-filesystem.html",
+			"file": "io-case-study-a-library-for-searching-the-filesystem.html.txt",
+			"title": [
+				"I/O case study: a library for searching the filesystem"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/code-case-study-parsing-a-binary-data-format.html",
+			"file": "code-case-study-parsing-a-binary-data-format.html.txt",
+			"title": [
+				"Code case study: parsing a binary data format"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/testing-and-quality-assurance.html",
+			"file": "testing-and-quality-assurance.html.txt",
+			"title": [
+				"Testing and quality assurance"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/barcode-recognition.html",
+			"file": "barcode-recognition.html.txt",
+			"title": [
+				"Barcode recognition"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/data-structures.html",
+			"file": "data-structures.html.txt",
+			"title": [
+				"Data structures"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/monads.html",
+			"file": "monads.html.txt",
+			"title": [
+				"Monads"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/programming-with-monads.html",
+			"file": "programming-with-monads.html.txt",
+			"title": [
+				"Programming with monads"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/using-parsec.html",
+			"file": "using-parsec.html.txt",
+			"title": [
+				"The Parsec parsing library"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/interfacing-with-c-the-ffi.html",
+			"file": "interfacing-with-c-the-ffi.html.txt",
+			"title": [
+				"The foreign function interface"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/monad-transformers.html",
+			"file": "monad-transformers.html.txt",
+			"title": [
+				"Monad transformers"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/error-handling.html",
+			"file": "error-handling.html.txt",
+			"title": [
+				"Error handling"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/systems-programming-in-haskell.html",
+			"file": "systems-programming-in-haskell.html.txt",
+			"title": [
+				"Systems programming"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/using-databases.html",
+			"file": "using-databases.html.txt",
+			"title": [
+				"Working with databases"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/extended-example-web-client-programming.html",
+			"file": "extended-example-web-client-programming.html.txt",
+			"title": [
+				"Web client programming"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/gui-programming-with-gtk-hs.html",
+			"file": "gui-programming-with-gtk-hs.html.txt",
+			"title": [
+				"GUI programming"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/concurrent-and-multicore-programming.html",
+			"file": "concurrent-and-multicore-programming.html.txt",
+			"title": [
+				"Basic concurrent and parallel programming"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/profiling-and-optimization.html",
+			"file": "profiling-and-optimization.html.txt",
+			"title": [
+				"Profiling and tuning for performance"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/advanced-library-design-building-a-bloom-filter.html",
+			"file": "advanced-library-design-building-a-bloom-filter.html.txt",
+			"title": [
+				"Advanced library design: building a Bloom filter"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/sockets-and-syslog.html",
+			"file": "sockets-and-syslog.html.txt",
+			"title": [
+				"Network programming"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/software-transactional-memory.html",
+			"file": "software-transactional-memory.html.txt",
+			"title": [
+				"Software transactional memory"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/installing-ghc-and-haskell-libraries.html",
+			"file": "installing-ghc-and-haskell-libraries.html.txt",
+			"title": [
+				"Installing GHC and Haskell libraries"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/characters-strings-and-escaping-rules.html",
+			"file": "characters-strings-and-escaping-rules.html.txt",
+			"title": [
+				"Characters, strings, and escaping rules"
+			]
+		},
+		{
+			"url": "http://book.realworldhaskell.org/read/web-site-and-comment-system-usage-and-policies.html",
+			"file": "web-site-and-comment-system-usage-and-policies.html.txt",
+			"title": [
+				"Web site and comment system usage and policies"
+			]
+		}
+	]
+}

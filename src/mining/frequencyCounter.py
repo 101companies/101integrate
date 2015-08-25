@@ -38,7 +38,7 @@ def calculateFreqFolder(path, term):
 def main():
 	# read index file
 	#indexReader = csv.reader(open(sys.argv[1], 'rb'), delimiter=',')
-	resInfos = json.loads(open("config/config.json", 'rb').read())
+	resInfos = json.loads(open("../config/config.json", 'rb').read())
 	res = resInfos["OnlyIndex"]
 	indexReader = csv.reader(open(res['kind']+"/"+res['folder'] + "/" +res['index'], 'rb'), delimiter=',')
 	dicts = {}

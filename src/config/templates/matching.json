@@ -1,0 +1,10 @@
+[
+  {
+    "url": ["wikibooks.org"],
+    "template": "mediawiki"
+  },
+  {
+    "url": [],
+    "template": "generalHtml"
+  }
+]

@@ -7,16 +7,28 @@ from  BeautifulSoup import BeautifulSoup
 import constants
 import logging
 import logging.config
+import re
 
 
 
 
-def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, posAttr):
+def getChapter(url, outputfolder, ext, exElems, exClasses, exIds, posElements, posAttr, useFullPath, baseUrl):
 	dom = getRefinedHtml(url, exElems, exClasses, exIds, posElements, posAttr)
 	fileName = url.split('/').pop()
-	f=open(outputfolder+fileName.strip(),"write")
+	if not fileName:
+		fileName = url.split('/')[-2]
+	elif fileName.startswith("index."):
+		fileName = ".".join(url.split('/')[-2:])
+	elif useFullPath:
+		logging.debug("using Full Path")
+		fileName = url.replace(baseUrl,"").replace("/",".")
+	#logging.debug(fileName)
+	fileName = fileName.strip()+".txt"
+	logging.debug("Writing "+fileName)
+	f=open(outputfolder+fileName,"write")
 	f.write(dom.prettify())
 	f.close()
+	logging.debug("Finished writing")
 
 def getRefinedHtml(url, exElem, exClasses, exIds, posElements, posAttr):
 	opener = urllib2.build_opener()
@@ -38,11 +50,9 @@ def getRefinedHtml(url, exElem, exClasses, exIds, posElements, posAttr):
 				for d in doc.findAll(True, {'id' : exId}):
 					d.extract()
 			for posElement in posElements:
-
 				for posTag in doc.findAll(posElement, {posAttr: True}):
 					posTag.insert(0, "$$$$" + posTag[posAttr] + "$$$ ")
 					posTag.name = "a"
-
 			return doc
 		except ExpatError, e:
 			#print "Can't extract content of " + url + " properly."
@@ -53,13 +63,17 @@ def crawl(book, perbookFldr):
     for url in open((perbookFldr + book + "/metadata/chapters.txt").replace("/",os.path.sep)).readlines():
 	if not url.strip(" ").strip("\r").strip("\n"):#skip empty lines
 	  continue
+	exIds=[]
 	try:
 	  exIds =  resInfos['exclude-ids']
 	except  KeyError:
 	  exIds = []
-	else:
-	  pass
-	getChapter(url.rstrip(),(perbookFldr + book + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'])
+	useFullPath = False
+	try:
+	  useFullPath =  resInfos['useFullPathAsFilename']
+	except  KeyError:
+	  useFullPath = False
+	getChapter(url.rstrip(),(perbookFldr + book + "/contents/").replace("/",os.path.sep) , resInfos['ext'], resInfos['exclude-elements'], resInfos['exclude-classes'], exIds, resInfos['posElements'], resInfos['posAttr'],useFullPath, resInfos['urlBase'])
 
 
 if __name__ == "__main__":

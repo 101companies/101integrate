@@ -1,0 +1,1130 @@
+{
+	"chapters": [
+		{
+			"url": "http://www.diveintopython.net/index.html",
+			"file": "index.html.txt",
+			"title": [
+				"Home",
+				"Dive Into Python"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/installing_python/windows.html",
+			"file": "installing_python.windows.html.txt",
+			"title": [
+				"1.2. Python on Windows"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/installing_python/macosx.html",
+			"file": "installing_python.macosx.html.txt",
+			"title": [
+				"1.3. Python on Mac OS X"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/installing_python/macos9.html",
+			"file": "installing_python.macos9.html.txt",
+			"title": [
+				"1.4. Python on Mac OS 9"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/installing_python/redhat.html",
+			"file": "installing_python.redhat.html.txt",
+			"title": [
+				"1.5. Python on RedHat Linux"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/installing_python/debian.html",
+			"file": "installing_python.debian.html.txt",
+			"title": [
+				"1.6. Python on Debian GNU/Linux"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/installing_python/source.html",
+			"file": "installing_python.source.html.txt",
+			"title": [
+				"1.7. Python Installation from Source"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/installing_python/shell.html",
+			"file": "installing_python.shell.html.txt",
+			"title": [
+				"1.8. The Interactive Shell"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/installing_python/summary.html",
+			"file": "installing_python.summary.html.txt",
+			"title": [
+				"1.9. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/getting_to_know_python/index.html",
+			"file": "getting_to_know_python.index.html.txt",
+			"title": [
+				"2. Your First Python Program"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/getting_to_know_python/declaring_functions.html",
+			"file": "getting_to_know_python.declaring_functions.html.txt",
+			"title": [
+				"2.2. Declaring Functions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/getting_to_know_python/documenting_functions.html",
+			"file": "getting_to_know_python.documenting_functions.html.txt",
+			"title": [
+				"2.3. Documenting Functions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/getting_to_know_python/everything_is_an_object.html",
+			"file": "getting_to_know_python.everything_is_an_object.html.txt",
+			"title": [
+				"2.4. Everything Is an Object"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/getting_to_know_python/indenting_code.html",
+			"file": "getting_to_know_python.indenting_code.html.txt",
+			"title": [
+				"2.5. Indenting Code"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/getting_to_know_python/testing_modules.html",
+			"file": "getting_to_know_python.testing_modules.html.txt",
+			"title": [
+				"2.6. Testing Modules"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/native_data_types/index.html",
+			"file": "native_data_types.index.html.txt",
+			"title": [
+				"3. Native Datatypes"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/native_data_types/lists.html",
+			"file": "native_data_types.lists.html.txt",
+			"title": [
+				"3.2. Introducing Lists"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/native_data_types/tuples.html",
+			"file": "native_data_types.tuples.html.txt",
+			"title": [
+				"3.3. Introducing Tuples"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/native_data_types/declaring_variables.html",
+			"file": "native_data_types.declaring_variables.html.txt",
+			"title": [
+				"3.4. Declaring variables"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/native_data_types/formatting_strings.html",
+			"file": "native_data_types.formatting_strings.html.txt",
+			"title": [
+				"3.5. Formatting Strings"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/native_data_types/mapping_lists.html",
+			"file": "native_data_types.mapping_lists.html.txt",
+			"title": [
+				"3.6. Mapping Lists"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/native_data_types/joining_lists.html",
+			"file": "native_data_types.joining_lists.html.txt",
+			"title": [
+				"3.7. Joining Lists and Splitting Strings"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/native_data_types/summary.html",
+			"file": "native_data_types.summary.html.txt",
+			"title": [
+				"3.8. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/power_of_introspection/index.html",
+			"file": "power_of_introspection.index.html.txt",
+			"title": [
+				"4. The Power Of Introspection"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/power_of_introspection/optional_arguments.html",
+			"file": "power_of_introspection.optional_arguments.html.txt",
+			"title": [
+				"4.2. Using Optional and Named Arguments"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/power_of_introspection/built_in_functions.html",
+			"file": "power_of_introspection.built_in_functions.html.txt",
+			"title": [
+				"4.3. Using type, str, dir, and Other Built-In Functions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/power_of_introspection/getattr.html",
+			"file": "power_of_introspection.getattr.html.txt",
+			"title": [
+				"4.4. Getting Object References With getattr"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/power_of_introspection/filtering_lists.html",
+			"file": "power_of_introspection.filtering_lists.html.txt",
+			"title": [
+				"4.5. Filtering Lists"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/power_of_introspection/and_or.html",
+			"file": "power_of_introspection.and_or.html.txt",
+			"title": [
+				"4.6. The Peculiar Nature of and and or"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/power_of_introspection/lambda_functions.html",
+			"file": "power_of_introspection.lambda_functions.html.txt",
+			"title": [
+				"4.7. Using lambda Functions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/power_of_introspection/all_together.html",
+			"file": "power_of_introspection.all_together.html.txt",
+			"title": [
+				"4.8. Putting It All Together"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/power_of_introspection/summary.html",
+			"file": "power_of_introspection.summary.html.txt",
+			"title": [
+				"4.9. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/index.html",
+			"file": "object_oriented_framework.index.html.txt",
+			"title": [
+				"5. Objects and Object-Orientation"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/importing_modules.html",
+			"file": "object_oriented_framework.importing_modules.html.txt",
+			"title": [
+				"5.2. Importing Modules Using from module import"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/defining_classes.html",
+			"file": "object_oriented_framework.defining_classes.html.txt",
+			"title": [
+				"5.3. Defining Classes"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/instantiating_classes.html",
+			"file": "object_oriented_framework.instantiating_classes.html.txt",
+			"title": [
+				"5.4. Instantiating Classes"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/userdict.html",
+			"file": "object_oriented_framework.userdict.html.txt",
+			"title": [
+				"5.5. Exploring UserDict: A Wrapper Class"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/special_class_methods.html",
+			"file": "object_oriented_framework.special_class_methods.html.txt",
+			"title": [
+				"5.6. Special Class Methods"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/special_class_methods2.html",
+			"file": "object_oriented_framework.special_class_methods2.html.txt",
+			"title": [
+				"5.7. Advanced Special Class Methods"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/class_attributes.html",
+			"file": "object_oriented_framework.class_attributes.html.txt",
+			"title": [
+				"5.8. Introducing Class Attributes"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/private_functions.html",
+			"file": "object_oriented_framework.private_functions.html.txt",
+			"title": [
+				"5.9. Private Functions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/object_oriented_framework/summary.html",
+			"file": "object_oriented_framework.summary.html.txt",
+			"title": [
+				"5.10. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/file_handling/index.html",
+			"file": "file_handling.index.html.txt",
+			"title": [
+				"6. Exceptions and File Handling"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/file_handling/file_objects.html",
+			"file": "file_handling.file_objects.html.txt",
+			"title": [
+				"6.2. Working with File Objects"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/file_handling/for_loops.html",
+			"file": "file_handling.for_loops.html.txt",
+			"title": [
+				"6.3. Iterating with for Loops"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/file_handling/more_on_modules.html",
+			"file": "file_handling.more_on_modules.html.txt",
+			"title": [
+				"6.4. Using sys.modules"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/file_handling/os_module.html",
+			"file": "file_handling.os_module.html.txt",
+			"title": [
+				"6.5. Working with Directories"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/file_handling/all_together.html",
+			"file": "file_handling.all_together.html.txt",
+			"title": [
+				"6.6. Putting It All Together"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/file_handling/summary.html",
+			"file": "file_handling.summary.html.txt",
+			"title": [
+				"6.7. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/regular_expressions/index.html",
+			"file": "regular_expressions.index.html.txt",
+			"title": [
+				"7. Regular Expressions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/regular_expressions/street_addresses.html",
+			"file": "regular_expressions.street_addresses.html.txt",
+			"title": [
+				"7.2. Case Study: Street Addresses"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/regular_expressions/roman_numerals.html",
+			"file": "regular_expressions.roman_numerals.html.txt",
+			"title": [
+				"7.3. Case Study: Roman Numerals"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/regular_expressions/n_m_syntax.html",
+			"file": "regular_expressions.n_m_syntax.html.txt",
+			"title": [
+				"7.4. Using the {n,m} Syntax"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/regular_expressions/verbose.html",
+			"file": "regular_expressions.verbose.html.txt",
+			"title": [
+				"7.5. Verbose Regular Expressions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/regular_expressions/phone_numbers.html",
+			"file": "regular_expressions.phone_numbers.html.txt",
+			"title": [
+				"7.6. Case study: Parsing Phone Numbers"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/regular_expressions/summary.html",
+			"file": "regular_expressions.summary.html.txt",
+			"title": [
+				"7.7. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/index.html",
+			"file": "html_processing.index.html.txt",
+			"title": [
+				"8. HTML Processing"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/introducing_sgmllib.html",
+			"file": "html_processing.introducing_sgmllib.html.txt",
+			"title": [
+				"8.2. Introducing sgmllib.py"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/extracting_data.html",
+			"file": "html_processing.extracting_data.html.txt",
+			"title": [
+				"8.3. Extracting data from HTML documents"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/basehtmlprocessor.html",
+			"file": "html_processing.basehtmlprocessor.html.txt",
+			"title": [
+				"8.4. Introducing BaseHTMLProcessor.py"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/locals_and_globals.html",
+			"file": "html_processing.locals_and_globals.html.txt",
+			"title": [
+				"8.5. locals and globals"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/dictionary_based_string_formatting.html",
+			"file": "html_processing.dictionary_based_string_formatting.html.txt",
+			"title": [
+				"8.6. Dictionary-based string formatting"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/quoting_attribute_values.html",
+			"file": "html_processing.quoting_attribute_values.html.txt",
+			"title": [
+				"8.7. Quoting attribute values"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/dialect.html",
+			"file": "html_processing.dialect.html.txt",
+			"title": [
+				"8.8. Introducing dialect.py"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/all_together.html",
+			"file": "html_processing.all_together.html.txt",
+			"title": [
+				"8.9. Putting it all together"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/html_processing/summary.html",
+			"file": "html_processing.summary.html.txt",
+			"title": [
+				"8.10. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/xml_processing/index.html",
+			"file": "xml_processing.index.html.txt",
+			"title": [
+				"9. XML Processing"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/xml_processing/packages.html",
+			"file": "xml_processing.packages.html.txt",
+			"title": [
+				"9.2. Packages"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/xml_processing/parsing_xml.html",
+			"file": "xml_processing.parsing_xml.html.txt",
+			"title": [
+				"9.3. Parsing XML"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/xml_processing/unicode.html",
+			"file": "xml_processing.unicode.html.txt",
+			"title": [
+				"9.4. Unicode"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/xml_processing/searching.html",
+			"file": "xml_processing.searching.html.txt",
+			"title": [
+				"9.5. Searching for elements"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/xml_processing/attributes.html",
+			"file": "xml_processing.attributes.html.txt",
+			"title": [
+				"9.6. Accessing element attributes"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/xml_processing/summary.html",
+			"file": "xml_processing.summary.html.txt",
+			"title": [
+				"9.7. Segue"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/scripts_and_streams/index.html",
+			"file": "scripts_and_streams.index.html.txt",
+			"title": [
+				"10. Scripts and Streams"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/scripts_and_streams/stdin_stdout_stderr.html",
+			"file": "scripts_and_streams.stdin_stdout_stderr.html.txt",
+			"title": [
+				"10.2. Standard input, output, and error"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/scripts_and_streams/caching.html",
+			"file": "scripts_and_streams.caching.html.txt",
+			"title": [
+				"10.3. Caching node lookups"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/scripts_and_streams/child_nodes.html",
+			"file": "scripts_and_streams.child_nodes.html.txt",
+			"title": [
+				"10.4. Finding direct children of a node"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/scripts_and_streams/handlers_by_node_type.html",
+			"file": "scripts_and_streams.handlers_by_node_type.html.txt",
+			"title": [
+				"10.5. Creating separate handlers by node type"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/scripts_and_streams/command_line_arguments.html",
+			"file": "scripts_and_streams.command_line_arguments.html.txt",
+			"title": [
+				"10.6. Handling command-line arguments"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/scripts_and_streams/all_together.html",
+			"file": "scripts_and_streams.all_together.html.txt",
+			"title": [
+				"10.7. Putting it all together"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/scripts_and_streams/summary.html",
+			"file": "scripts_and_streams.summary.html.txt",
+			"title": [
+				"10.8. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/index.html",
+			"file": "http_web_services.index.html.txt",
+			"title": [
+				"11. HTTP Web Services"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/review.html",
+			"file": "http_web_services.review.html.txt",
+			"title": [
+				"11.2. How not to fetch data over HTTP"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/http_features.html",
+			"file": "http_web_services.http_features.html.txt",
+			"title": [
+				"11.3. Features of HTTP"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/debugging.html",
+			"file": "http_web_services.debugging.html.txt",
+			"title": [
+				"11.4. Debugging HTTP web services"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/user_agent.html",
+			"file": "http_web_services.user_agent.html.txt",
+			"title": [
+				"11.5. Setting the User-Agent"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/etags.html",
+			"file": "http_web_services.etags.html.txt",
+			"title": [
+				"11.6. Handling Last-Modified and ETag"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/redirects.html",
+			"file": "http_web_services.redirects.html.txt",
+			"title": [
+				"11.7. Handling redirects"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/gzip_compression.html",
+			"file": "http_web_services.gzip_compression.html.txt",
+			"title": [
+				"11.8. Handling compressed data"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/alltogether.html",
+			"file": "http_web_services.alltogether.html.txt",
+			"title": [
+				"11.9. Putting it all together"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/http_web_services/summary.html",
+			"file": "http_web_services.summary.html.txt",
+			"title": [
+				"11.10. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/soap_web_services/index.html",
+			"file": "soap_web_services.index.html.txt",
+			"title": [
+				"12. SOAP Web Services"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/soap_web_services/install.html",
+			"file": "soap_web_services.install.html.txt",
+			"title": [
+				"12.2. Installing the SOAP Libraries"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/soap_web_services/first_steps.html",
+			"file": "soap_web_services.first_steps.html.txt",
+			"title": [
+				"12.3. First Steps with SOAP"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/soap_web_services/debugging.html",
+			"file": "soap_web_services.debugging.html.txt",
+			"title": [
+				"12.4. Debugging SOAP Web Services"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/soap_web_services/wsdl.html",
+			"file": "soap_web_services.wsdl.html.txt",
+			"title": [
+				"12.5. Introducing WSDL"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/soap_web_services/introspection.html",
+			"file": "soap_web_services.introspection.html.txt",
+			"title": [
+				"12.6. Introspecting SOAP Web Services with WSDL"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/soap_web_services/google.html",
+			"file": "soap_web_services.google.html.txt",
+			"title": [
+				"12.7. Searching Google"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/soap_web_services/troubleshooting.html",
+			"file": "soap_web_services.troubleshooting.html.txt",
+			"title": [
+				"12.8. Troubleshooting SOAP Web Services"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/soap_web_services/summary.html",
+			"file": "soap_web_services.summary.html.txt",
+			"title": [
+				"12.9. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/index.html",
+			"file": "unit_testing.index.html.txt",
+			"title": [
+				"13. Unit Testing"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/diving_in.html",
+			"file": "unit_testing.diving_in.html.txt",
+			"title": [
+				"13.2. Diving in"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/romantest.html",
+			"file": "unit_testing.romantest.html.txt",
+			"title": [
+				"13.3. Introducing romantest.py"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/testing_for_success.html",
+			"file": "unit_testing.testing_for_success.html.txt",
+			"title": [
+				"13.4. Testing for success"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/testing_for_failure.html",
+			"file": "unit_testing.testing_for_failure.html.txt",
+			"title": [
+				"13.5. Testing for failure"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/testing_for_sanity.html",
+			"file": "unit_testing.testing_for_sanity.html.txt",
+			"title": [
+				"13.6. Testing for sanity"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/stage_1.html",
+			"file": "unit_testing.stage_1.html.txt",
+			"title": [
+				"14. Test-First Programming"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/stage_2.html",
+			"file": "unit_testing.stage_2.html.txt",
+			"title": [
+				"14.2. roman.py, stage 2"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/stage_3.html",
+			"file": "unit_testing.stage_3.html.txt",
+			"title": [
+				"14.3. roman.py, stage 3"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/stage_4.html",
+			"file": "unit_testing.stage_4.html.txt",
+			"title": [
+				"14.4. roman.py, stage 4"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/unit_testing/stage_5.html",
+			"file": "unit_testing.stage_5.html.txt",
+			"title": [
+				"14.5. roman.py, stage 5"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/refactoring/index.html",
+			"file": "refactoring.index.html.txt",
+			"title": [
+				"15. Refactoring"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/refactoring/handling_changing_requirements.html",
+			"file": "refactoring.handling_changing_requirements.html.txt",
+			"title": [
+				"15.2. Handling changing requirements"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/refactoring/refactoring.html",
+			"file": "refactoring.refactoring.html.txt",
+			"title": [
+				"15.3. Refactoring"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/refactoring/postscript.html",
+			"file": "refactoring.postscript.html.txt",
+			"title": [
+				"15.4. Postscript"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/refactoring/summary.html",
+			"file": "refactoring.summary.html.txt",
+			"title": [
+				"15.5. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/functional_programming/index.html",
+			"file": "functional_programming.index.html.txt",
+			"title": [
+				"16. Functional Programming"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/functional_programming/finding_the_path.html",
+			"file": "functional_programming.finding_the_path.html.txt",
+			"title": [
+				"16.2. Finding the path"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/functional_programming/filtering_lists.html",
+			"file": "functional_programming.filtering_lists.html.txt",
+			"title": [
+				"16.3. Filtering lists revisited"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/functional_programming/mapping_lists.html",
+			"file": "functional_programming.mapping_lists.html.txt",
+			"title": [
+				"16.4. Mapping lists revisited"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/functional_programming/data_centric.html",
+			"file": "functional_programming.data_centric.html.txt",
+			"title": [
+				"16.5. Data-centric programming"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/functional_programming/dynamic_import.html",
+			"file": "functional_programming.dynamic_import.html.txt",
+			"title": [
+				"16.6. Dynamically importing modules"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/functional_programming/all_together.html",
+			"file": "functional_programming.all_together.html.txt",
+			"title": [
+				"16.7. Putting it all together"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/functional_programming/summary.html",
+			"file": "functional_programming.summary.html.txt",
+			"title": [
+				"16.8. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/dynamic_functions/index.html",
+			"file": "dynamic_functions.index.html.txt",
+			"title": [
+				"17. Dynamic functions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/dynamic_functions/stage1.html",
+			"file": "dynamic_functions.stage1.html.txt",
+			"title": [
+				"17.2. plural.py, stage 1"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/dynamic_functions/stage2.html",
+			"file": "dynamic_functions.stage2.html.txt",
+			"title": [
+				"17.3. plural.py, stage 2"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/dynamic_functions/stage3.html",
+			"file": "dynamic_functions.stage3.html.txt",
+			"title": [
+				"17.4. plural.py, stage 3"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/dynamic_functions/stage4.html",
+			"file": "dynamic_functions.stage4.html.txt",
+			"title": [
+				"17.5. plural.py, stage 4"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/dynamic_functions/stage5.html",
+			"file": "dynamic_functions.stage5.html.txt",
+			"title": [
+				"17.6. plural.py, stage 5"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/dynamic_functions/stage6.html",
+			"file": "dynamic_functions.stage6.html.txt",
+			"title": [
+				"17.7. plural.py, stage 6"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/dynamic_functions/summary.html",
+			"file": "dynamic_functions.summary.html.txt",
+			"title": [
+				"17.8. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/performance_tuning/index.html",
+			"file": "performance_tuning.index.html.txt",
+			"title": [
+				"18. Performance Tuning"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/performance_tuning/timeit.html",
+			"file": "performance_tuning.timeit.html.txt",
+			"title": [
+				"18.2. Using the timeit Module"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/performance_tuning/regular_expressions.html",
+			"file": "performance_tuning.regular_expressions.html.txt",
+			"title": [
+				"18.3. Optimizing Regular Expressions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/performance_tuning/dictionary_lookups.html",
+			"file": "performance_tuning.dictionary_lookups.html.txt",
+			"title": [
+				"18.4. Optimizing Dictionary Lookups"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/performance_tuning/list_operations.html",
+			"file": "performance_tuning.list_operations.html.txt",
+			"title": [
+				"18.5. Optimizing List Operations"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/performance_tuning/string_manipulation.html",
+			"file": "performance_tuning.string_manipulation.html.txt",
+			"title": [
+				"18.6. Optimizing String Manipulation"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/performance_tuning/summary.html",
+			"file": "performance_tuning.summary.html.txt",
+			"title": [
+				"18.7. Summary"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/furtherreading.html",
+			"file": "appendix.furtherreading.html.txt",
+			"title": [
+				"A. Further reading"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/abstracts.html",
+			"file": "appendix.abstracts.html.txt",
+			"title": [
+				"B. A 5-minute review"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/tips.html",
+			"file": "appendix.tips.html.txt",
+			"title": [
+				"C. Tips and tricks"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/examples.html",
+			"file": "appendix.examples.html.txt",
+			"title": [
+				"D. List of examples"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/history.html",
+			"file": "appendix.history.html.txt",
+			"title": [
+				"E. Revision history"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/about.html",
+			"file": "appendix.about.html.txt",
+			"title": [
+				"F. About the book"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl.html",
+			"file": "appendix.fdl.html.txt",
+			"title": [
+				"Appendix&nbsp;G.&nbsp;GNU Free Documentation License",
+				"G. GNU Free Documentation License"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_applicability.html",
+			"file": "appendix.fdl_applicability.html.txt",
+			"title": [
+				"G.1. Applicability and definitions"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_copying.html",
+			"file": "appendix.fdl_copying.html.txt",
+			"title": [
+				"G.2. Verbatim copying"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_copyinginquantity.html",
+			"file": "appendix.fdl_copyinginquantity.html.txt",
+			"title": [
+				"G.3. Copying in quantity"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_modifications.html",
+			"file": "appendix.fdl_modifications.html.txt",
+			"title": [
+				"G.4. Modifications"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_combining.html",
+			"file": "appendix.fdl_combining.html.txt",
+			"title": [
+				"G.5. Combining documents"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_collections.html",
+			"file": "appendix.fdl_collections.html.txt",
+			"title": [
+				"G.6. Collections of documents"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_aggregation.html",
+			"file": "appendix.fdl_aggregation.html.txt",
+			"title": [
+				"G.7. Aggregation with independent works"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_translation.html",
+			"file": "appendix.fdl_translation.html.txt",
+			"title": [
+				"G.8. Translation"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_termination.html",
+			"file": "appendix.fdl_termination.html.txt",
+			"title": [
+				"G.9. Termination"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_future.html",
+			"file": "appendix.fdl_future.html.txt",
+			"title": [
+				"G.10. Future revisions of this license"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/fdl_howto.html",
+			"file": "appendix.fdl_howto.html.txt",
+			"title": [
+				"G.11. How to use this License for your documents"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/license.html",
+			"file": "appendix.license.html.txt",
+			"title": [
+				"Appendix&nbsp;H.&nbsp;Python license",
+				"H. Python license"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/appendix/license_terms.html",
+			"file": "appendix.license_terms.html.txt",
+			"title": [
+				"H.B. Terms and conditions for accessing or otherwise using Python"
+			]
+		},
+		{
+			"url": "http://www.diveintopython.net/installing_python/index.html",
+			"file": "installing_python.index.html.txt",
+			"title": [
+				"&gt;&gt;",
+				"Next: \u201cInstalling Python\u201d",
+				"1. Installing Python",
+				"Installing Python&nbsp;&gt;&gt;"
+			]
+		}
+	]
+}

@@ -9,12 +9,13 @@ nope:
 
 # Run mining scripts
 mine:
-	cd mining; $(MAKE) mine LOGGING=$(LOGGING)
+	export LOGGING
+	cd mining; $(MAKE) mine
 
 # Run analytics scripts
 analyze:
-	$(MAKE) from-cache
-	cd analytics; $(MAKE) analyze LOGGING=$(LOGGING)
+	export BOOKS
+	cd analytics; $(MAKE) analyze
 
 # Copies post processed data from cache
 from-cache:
@@ -34,11 +35,13 @@ to-cache:
 
 #runs integration-scripts
 integrate:
-	cd integrate; $(MAKE) integrate	LOGGING=$(LOGGING)
+	export LOGGING
+	cd integrate; $(MAKE) integrate
 
 # Run backlinking scripts
 backlink:
-	cd mining; $(MAKE) backlink LOGGING=$(LOGGING)
+	export LOGGING
+	cd mining; $(MAKE) backlink
 
 coverageTables:
 	cd integrate; $(MAKE) coverageTables

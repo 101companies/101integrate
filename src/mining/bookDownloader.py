@@ -32,11 +32,12 @@ def normalizeString(string):
 #@param 	config	the configuration
 #@return	the input collection without non-Linkable books
 def getLinkables(books, config):
-    for b in books.copy(): #so you con change books in iteration
-      if not config[b]['isLinkable']:
-	books.remove(b)
-    return books
-    
+	books = list(books)
+	for b in books[:]: #so you con change books in iteration
+		if not config[b]['isLinkable']:
+			books.remove(b)
+	return books
+
 
 
 ##

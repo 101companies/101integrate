@@ -1,0 +1,536 @@
+{
+	"chapters": [
+		{
+			"file": "installing_python.shell.html.txt",
+			"title": "1.8. The Interactive Shell"
+		},
+		{
+			"file": "installing_python.summary.html.txt",
+			"title": "1.9. Summary"
+		},
+		{
+			"file": "getting_to_know_python.index.html.txt",
+			"title": "2. Your First Python Program"
+		},
+		{
+			"file": "getting_to_know_python.declaring_functions.html.txt",
+			"title": "2.2. Declaring Functions"
+		},
+		{
+			"file": "getting_to_know_python.documenting_functions.html.txt",
+			"title": "2.3. Documenting Functions"
+		},
+		{
+			"file": "getting_to_know_python.everything_is_an_object.html.txt",
+			"title": "2.4. Everything Is an Object"
+		},
+		{
+			"file": "getting_to_know_python.indenting_code.html.txt",
+			"title": "2.5. Indenting Code"
+		},
+		{
+			"file": "getting_to_know_python.testing_modules.html.txt",
+			"title": "2.6. Testing Modules"
+		},
+		{
+			"file": "native_data_types.index.html.txt",
+			"title": "3. Native Datatypes"
+		},
+		{
+			"file": "native_data_types.lists.html.txt",
+			"title": "3.2. Introducing Lists"
+		},
+		{
+			"file": "native_data_types.tuples.html.txt",
+			"title": "3.3. Introducing Tuples"
+		},
+		{
+			"file": "native_data_types.declaring_variables.html.txt",
+			"title": "3.4. Declaring variables"
+		},
+		{
+			"file": "native_data_types.formatting_strings.html.txt",
+			"title": "3.5. Formatting Strings"
+		},
+		{
+			"file": "native_data_types.mapping_lists.html.txt",
+			"title": "3.6. Mapping Lists"
+		},
+		{
+			"file": "native_data_types.joining_lists.html.txt",
+			"title": "3.7. Joining Lists and Splitting Strings"
+		},
+		{
+			"file": "native_data_types.summary.html.txt",
+			"title": "3.8. Summary"
+		},
+		{
+			"file": "power_of_introspection.index.html.txt",
+			"title": "4. The Power Of Introspection"
+		},
+		{
+			"file": "power_of_introspection.optional_arguments.html.txt",
+			"title": "4.2. Using Optional and Named Arguments"
+		},
+		{
+			"file": "power_of_introspection.built_in_functions.html.txt",
+			"title": "4.3. Using type, str, dir, and Other Built-In Functions"
+		},
+		{
+			"file": "power_of_introspection.getattr.html.txt",
+			"title": "4.4. Getting Object References With getattr"
+		},
+		{
+			"file": "power_of_introspection.filtering_lists.html.txt",
+			"title": "4.5. Filtering Lists"
+		},
+		{
+			"file": "power_of_introspection.and_or.html.txt",
+			"title": "4.6. The Peculiar Nature of and and or"
+		},
+		{
+			"file": "power_of_introspection.lambda_functions.html.txt",
+			"title": "4.7. Using lambda Functions"
+		},
+		{
+			"file": "power_of_introspection.all_together.html.txt",
+			"title": "4.8. Putting It All Together"
+		},
+		{
+			"file": "power_of_introspection.summary.html.txt",
+			"title": "4.9. Summary"
+		},
+		{
+			"file": "object_oriented_framework.index.html.txt",
+			"title": "5. Objects and Object-Orientation"
+		},
+		{
+			"file": "object_oriented_framework.importing_modules.html.txt",
+			"title": "5.2. Importing Modules Using from module import"
+		},
+		{
+			"file": "object_oriented_framework.defining_classes.html.txt",
+			"title": "5.3. Defining Classes"
+		},
+		{
+			"file": "object_oriented_framework.instantiating_classes.html.txt",
+			"title": "5.4. Instantiating Classes"
+		},
+		{
+			"file": "object_oriented_framework.userdict.html.txt",
+			"title": "5.5. Exploring UserDict: A Wrapper Class"
+		},
+		{
+			"file": "object_oriented_framework.special_class_methods.html.txt",
+			"title": "5.6. Special Class Methods"
+		},
+		{
+			"file": "object_oriented_framework.special_class_methods2.html.txt",
+			"title": "5.7. Advanced Special Class Methods"
+		},
+		{
+			"file": "object_oriented_framework.class_attributes.html.txt",
+			"title": "5.8. Introducing Class Attributes"
+		},
+		{
+			"file": "object_oriented_framework.private_functions.html.txt",
+			"title": "5.9. Private Functions"
+		},
+		{
+			"file": "object_oriented_framework.summary.html.txt",
+			"title": "5.10. Summary"
+		},
+		{
+			"file": "file_handling.index.html.txt",
+			"title": "6. Exceptions and File Handling"
+		},
+		{
+			"file": "file_handling.file_objects.html.txt",
+			"title": "6.2. Working with File Objects"
+		},
+		{
+			"file": "file_handling.for_loops.html.txt",
+			"title": "6.3. Iterating with for Loops"
+		},
+		{
+			"file": "file_handling.more_on_modules.html.txt",
+			"title": "6.4. Using sys.modules"
+		},
+		{
+			"file": "file_handling.os_module.html.txt",
+			"title": "6.5. Working with Directories"
+		},
+		{
+			"file": "file_handling.all_together.html.txt",
+			"title": "6.6. Putting It All Together"
+		},
+		{
+			"file": "file_handling.summary.html.txt",
+			"title": "6.7. Summary"
+		},
+		{
+			"file": "regular_expressions.index.html.txt",
+			"title": "7. Regular Expressions"
+		},
+		{
+			"file": "regular_expressions.street_addresses.html.txt",
+			"title": "7.2. Case Study: Street Addresses"
+		},
+		{
+			"file": "regular_expressions.roman_numerals.html.txt",
+			"title": "7.3. Case Study: Roman Numerals"
+		},
+		{
+			"file": "regular_expressions.n_m_syntax.html.txt",
+			"title": "7.4. Using the {n,m} Syntax"
+		},
+		{
+			"file": "regular_expressions.verbose.html.txt",
+			"title": "7.5. Verbose Regular Expressions"
+		},
+		{
+			"file": "regular_expressions.phone_numbers.html.txt",
+			"title": "7.6. Case study: Parsing Phone Numbers"
+		},
+		{
+			"file": "regular_expressions.summary.html.txt",
+			"title": "7.7. Summary"
+		},
+		{
+			"file": "html_processing.index.html.txt",
+			"title": "8. HTML Processing"
+		},
+		{
+			"file": "html_processing.introducing_sgmllib.html.txt",
+			"title": "8.2. Introducing sgmllib.py"
+		},
+		{
+			"file": "html_processing.extracting_data.html.txt",
+			"title": "8.3. Extracting data from HTML documents"
+		},
+		{
+			"file": "html_processing.basehtmlprocessor.html.txt",
+			"title": "8.4. Introducing BaseHTMLProcessor.py"
+		},
+		{
+			"file": "html_processing.locals_and_globals.html.txt",
+			"title": "8.5. locals and globals"
+		},
+		{
+			"file": "html_processing.dictionary_based_string_formatting.html.txt",
+			"title": "8.6. Dictionary-based string formatting"
+		},
+		{
+			"file": "html_processing.quoting_attribute_values.html.txt",
+			"title": "8.7. Quoting attribute values"
+		},
+		{
+			"file": "html_processing.dialect.html.txt",
+			"title": "8.8. Introducing dialect.py"
+		},
+		{
+			"file": "html_processing.all_together.html.txt",
+			"title": "8.9. Putting it all together"
+		},
+		{
+			"file": "html_processing.summary.html.txt",
+			"title": "8.10. Summary"
+		},
+		{
+			"file": "xml_processing.index.html.txt",
+			"title": "9. XML Processing"
+		},
+		{
+			"file": "xml_processing.packages.html.txt",
+			"title": "9.2. Packages"
+		},
+		{
+			"file": "xml_processing.parsing_xml.html.txt",
+			"title": "9.3. Parsing XML"
+		},
+		{
+			"file": "xml_processing.unicode.html.txt",
+			"title": "9.4. Unicode"
+		},
+		{
+			"file": "xml_processing.searching.html.txt",
+			"title": "9.5. Searching for elements"
+		},
+		{
+			"file": "xml_processing.attributes.html.txt",
+			"title": "9.6. Accessing element attributes"
+		},
+		{
+			"file": "xml_processing.summary.html.txt",
+			"title": "9.7. Segue"
+		},
+		{
+			"file": "scripts_and_streams.index.html.txt",
+			"title": "10. Scripts and Streams"
+		},
+		{
+			"file": "scripts_and_streams.stdin_stdout_stderr.html.txt",
+			"title": "10.2. Standard input, output, and error"
+		},
+		{
+			"file": "scripts_and_streams.caching.html.txt",
+			"title": "10.3. Caching node lookups"
+		},
+		{
+			"file": "scripts_and_streams.child_nodes.html.txt",
+			"title": "10.4. Finding direct children of a node"
+		},
+		{
+			"file": "scripts_and_streams.handlers_by_node_type.html.txt",
+			"title": "10.5. Creating separate handlers by node type"
+		},
+		{
+			"file": "scripts_and_streams.command_line_arguments.html.txt",
+			"title": "10.6. Handling command-line arguments"
+		},
+		{
+			"file": "scripts_and_streams.all_together.html.txt",
+			"title": "10.7. Putting it all together"
+		},
+		{
+			"file": "scripts_and_streams.summary.html.txt",
+			"title": "10.8. Summary"
+		},
+		{
+			"file": "http_web_services.index.html.txt",
+			"title": "11. HTTP Web Services"
+		},
+		{
+			"file": "http_web_services.review.html.txt",
+			"title": "11.2. How not to fetch data over HTTP"
+		},
+		{
+			"file": "http_web_services.http_features.html.txt",
+			"title": "11.3. Features of HTTP"
+		},
+		{
+			"file": "http_web_services.debugging.html.txt",
+			"title": "11.4. Debugging HTTP web services"
+		},
+		{
+			"file": "http_web_services.user_agent.html.txt",
+			"title": "11.5. Setting the User-Agent"
+		},
+		{
+			"file": "http_web_services.etags.html.txt",
+			"title": "11.6. Handling Last-Modified and ETag"
+		},
+		{
+			"file": "http_web_services.redirects.html.txt",
+			"title": "11.7. Handling redirects"
+		},
+		{
+			"file": "http_web_services.gzip_compression.html.txt",
+			"title": "11.8. Handling compressed data"
+		},
+		{
+			"file": "http_web_services.alltogether.html.txt",
+			"title": "11.9. Putting it all together"
+		},
+		{
+			"file": "http_web_services.summary.html.txt",
+			"title": "11.10. Summary"
+		},
+		{
+			"file": "soap_web_services.index.html.txt",
+			"title": "12. SOAP Web Services"
+		},
+		{
+			"file": "soap_web_services.install.html.txt",
+			"title": "12.2. Installing the SOAP Libraries"
+		},
+		{
+			"file": "soap_web_services.first_steps.html.txt",
+			"title": "12.3. First Steps with SOAP"
+		},
+		{
+			"file": "soap_web_services.debugging.html.txt",
+			"title": "12.4. Debugging SOAP Web Services"
+		},
+		{
+			"file": "soap_web_services.wsdl.html.txt",
+			"title": "12.5. Introducing WSDL"
+		},
+		{
+			"file": "soap_web_services.introspection.html.txt",
+			"title": "12.6. Introspecting SOAP Web Services with WSDL"
+		},
+		{
+			"file": "soap_web_services.google.html.txt",
+			"title": "12.7. Searching Google"
+		},
+		{
+			"file": "soap_web_services.troubleshooting.html.txt",
+			"title": "12.8. Troubleshooting SOAP Web Services"
+		},
+		{
+			"file": "soap_web_services.summary.html.txt",
+			"title": "12.9. Summary"
+		},
+		{
+			"file": "unit_testing.index.html.txt",
+			"title": "13. Unit Testing"
+		},
+		{
+			"file": "unit_testing.diving_in.html.txt",
+			"title": "13.2. Diving in"
+		},
+		{
+			"file": "unit_testing.romantest.html.txt",
+			"title": "13.3. Introducing romantest.py"
+		},
+		{
+			"file": "unit_testing.testing_for_success.html.txt",
+			"title": "13.4. Testing for success"
+		},
+		{
+			"file": "unit_testing.testing_for_failure.html.txt",
+			"title": "13.5. Testing for failure"
+		},
+		{
+			"file": "unit_testing.testing_for_sanity.html.txt",
+			"title": "13.6. Testing for sanity"
+		},
+		{
+			"file": "unit_testing.stage_1.html.txt",
+			"title": "14. Test-First Programming"
+		},
+		{
+			"file": "unit_testing.stage_2.html.txt",
+			"title": "14.2. roman.py, stage 2"
+		},
+		{
+			"file": "unit_testing.stage_3.html.txt",
+			"title": "14.3. roman.py, stage 3"
+		},
+		{
+			"file": "unit_testing.stage_4.html.txt",
+			"title": "14.4. roman.py, stage 4"
+		},
+		{
+			"file": "unit_testing.stage_5.html.txt",
+			"title": "14.5. roman.py, stage 5"
+		},
+		{
+			"file": "refactoring.index.html.txt",
+			"title": "15. Refactoring"
+		},
+		{
+			"file": "refactoring.handling_changing_requirements.html.txt",
+			"title": "15.2. Handling changing requirements"
+		},
+		{
+			"file": "refactoring.refactoring.html.txt",
+			"title": "15.3. Refactoring"
+		},
+		{
+			"file": "refactoring.postscript.html.txt",
+			"title": "15.4. Postscript"
+		},
+		{
+			"file": "refactoring.summary.html.txt",
+			"title": "15.5. Summary"
+		},
+		{
+			"file": "functional_programming.index.html.txt",
+			"title": "16. Functional Programming"
+		},
+		{
+			"file": "functional_programming.finding_the_path.html.txt",
+			"title": "16.2. Finding the path"
+		},
+		{
+			"file": "functional_programming.filtering_lists.html.txt",
+			"title": "16.3. Filtering lists revisited"
+		},
+		{
+			"file": "functional_programming.mapping_lists.html.txt",
+			"title": "16.4. Mapping lists revisited"
+		},
+		{
+			"file": "functional_programming.data_centric.html.txt",
+			"title": "16.5. Data-centric programming"
+		},
+		{
+			"file": "functional_programming.dynamic_import.html.txt",
+			"title": "16.6. Dynamically importing modules"
+		},
+		{
+			"file": "functional_programming.all_together.html.txt",
+			"title": "16.7. Putting it all together"
+		},
+		{
+			"file": "functional_programming.summary.html.txt",
+			"title": "16.8. Summary"
+		},
+		{
+			"file": "dynamic_functions.index.html.txt",
+			"title": "17. Dynamic functions"
+		},
+		{
+			"file": "dynamic_functions.stage1.html.txt",
+			"title": "17.2. plural.py, stage 1"
+		},
+		{
+			"file": "dynamic_functions.stage2.html.txt",
+			"title": "17.3. plural.py, stage 2"
+		},
+		{
+			"file": "dynamic_functions.stage3.html.txt",
+			"title": "17.4. plural.py, stage 3"
+		},
+		{
+			"file": "dynamic_functions.stage4.html.txt",
+			"title": "17.5. plural.py, stage 4"
+		},
+		{
+			"file": "dynamic_functions.stage5.html.txt",
+			"title": "17.6. plural.py, stage 5"
+		},
+		{
+			"file": "dynamic_functions.stage6.html.txt",
+			"title": "17.7. plural.py, stage 6"
+		},
+		{
+			"file": "dynamic_functions.summary.html.txt",
+			"title": "17.8. Summary"
+		},
+		{
+			"file": "performance_tuning.index.html.txt",
+			"title": "18. Performance Tuning"
+		},
+		{
+			"file": "performance_tuning.timeit.html.txt",
+			"title": "18.2. Using the timeit Module"
+		},
+		{
+			"file": "performance_tuning.regular_expressions.html.txt",
+			"title": "18.3. Optimizing Regular Expressions"
+		},
+		{
+			"file": "performance_tuning.dictionary_lookups.html.txt",
+			"title": "18.4. Optimizing Dictionary Lookups"
+		},
+		{
+			"file": "performance_tuning.list_operations.html.txt",
+			"title": "18.5. Optimizing List Operations"
+		},
+		{
+			"file": "performance_tuning.string_manipulation.html.txt",
+			"title": "18.6. Optimizing String Manipulation"
+		},
+		{
+			"file": "performance_tuning.summary.html.txt",
+			"title": "18.7. Summary"
+		},
+		{
+			"file": "appendix.tips.html.txt",
+			"title": "C. Tips and tricks"
+		}
+	]
+}
