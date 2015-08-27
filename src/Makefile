@@ -14,7 +14,7 @@ mine:
 
 # Run analytics scripts
 analyze:
-	export BOOKS
+	export LOGGING
 	cd analytics; $(MAKE) analyze
 
 # Copies post processed data from cache
