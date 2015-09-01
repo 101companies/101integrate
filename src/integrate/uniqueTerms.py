@@ -17,6 +17,7 @@ import logging
 import logging.config
 
 env = Environment(line_statement_prefix='#', loader=FileSystemLoader('templates'), trim_blocks=True)
+sorter = lambda x: x.lower()
 
 # terms contributed uniquely by each textbook
 def getUniqueContributionPerBook(bookConcepts):
@@ -131,13 +132,14 @@ def main(books):
 
 def toTex(list, file):
 	with open ('../../data/summary/'+ file, 'w') as f:
-		f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  list)))
+		f.write(',\n'.join(map(lambda x: "\wikipage{" + x + "}",  sorted(list, key=sorter))))
 
 def toJson(list, file):
 	with open ('../../data/summary/'+ file, 'w') as f:
-		f.write(json.dumps(list, indent="\t"))
+		f.write(json.dumps(sorted(list, key=sorter), indent="\t"))
 
 def toHtml(list, file):
+	list = sorted(list, key=sorter)
 	# Open and read template
 	t = env.get_template('table.html')
 	output = t.render(list = list)
