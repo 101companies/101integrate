@@ -78,7 +78,8 @@ tex:
 	#mv unionTopFrequencies.csv ../../data/allbooks/
 	#mv unionTopFrequenciesVisual.tex ../../data/allbooks/
 
-	./csv2tex.py --input ../../data/allbooks/unionTopScatternessVisual.csv --template "tabular_template.tex" #--caption "Union Top Frequencies" --label "t:union"
+	./csv2tex.py --input ../../data/allbooks/unionTopScatterness.csv --template "tabular_template.tex" #--caption "Union Top Scatterness" --label "t:unionScattered"
+	./csv2tex.py --input ../../data/allbooks/unionTopScatternessVisual.csv --template "tabular_template.tex" #--caption "Union Top Scatterness Visual" --label "t:unionScatteredVisual"
 
 	#mv unionTopScatterness.csv ../../data/allbooks/
 	#mv unionTopScatternessVisual.tex ../../data/allbooks/
