@@ -47,8 +47,12 @@ circular buffer
 circular definition
 class
 class attribute
+Card
+Golfer
 LinkedList
 Node
+OldMaidGame
+OldMaidHand
 parent class
 Point class
 Stack
@@ -126,6 +130,7 @@ directory
 integer directory
 documentation
 dot notation
+Arthur Conan Doyle
 dot product
 element
 embedded reference
@@ -188,11 +193,13 @@ tuple as return value
 wrapper function
 functional programming style
 fundamental ambiguity theorem
+animal
 gamma function
 generalization
 generalize
 generic data structure
 geometric sequence
+Golfer
 greatest common divisor
 guardian
 handle exception
@@ -204,11 +211,12 @@ helper method
 high-level language
 hint
 histogram
+Sherlock Holmes
 identity
 immutable
 immutable string
 immutable type
-Queue
+immutable Queue
 improved queue
 in operator
 increment
@@ -275,3 +283,287 @@ list element
 for loop
 infinite list
 list length
+linked list
+loop
+list membership
+modifying list
+mutable list
+nested list
+list of objects
+printing list
+printing list backwards
+slice list
+list traversal
+list traverse recursively
+well-formedlist
+literalness
+local variable
+logarithm
+logical operator
+long integer
+loop
+loop variable
+loop body
+loop condition
+for loop
+loop in list
+infinite loop
+nested loop
+loop traversal
+while loop
+low-level language
+lowercase
+Make Way for Ducklings
+map to
+math function
+mathematical operator
+matrix
+sparsematrix
+Robert McCloskey,
+mental model
+method
+dictionary method
+method initialization
+method invocation
+list method
+mental list
+modifier
+modifying lists
+module
+copy module
+string module
+modulus operator
+multiple assignment
+multiple fraction assignment
+mutable
+mutable type
+list
+object
+NameError
+natural language
+negation
+nested list
+nested structure
+nesting
+newline
+node
+Node class
+None
+random
+numerator
+object
+object code
+object instance
+object invariant
+list of object invariant
+mutable object invariant
+object-oriented design
+object-oriented programming
+object-oriented programming language
+operand
+dictionary operand
+list operand
+operator
+operator overloading
+binary operator overloading
+bracket operator overloading
+conditional operator overloading
+operator overloading format
+in operator overloading
+logical operator overloading
+modulus operator overloading
+overloading operator overloading
+order of evaluation
+order of operations
+ordering
+overload
+overloading
+operator
+override
+parameter
+list parameter
+parent class
+parent node
+parse
+partial ordering
+pass statement
+path
+pattern
+pattern matching
+Pentium
+performance
+performance hazard
+pickle
+pickling
+planned development
+poetry
+Point class
+polymorphic
+polymorphism
+pop
+portability
+portable
+postfix
+postorder
+precedence
+precondition
+prefix
+preorder
+print statement
+deck object
+hand of cards
+object print statement
+priority
+priority queue
+ADT
+priority queueing
+problem-solving
+product
+program
+program encapsulation
+program generalization
+program development
+programming language
+prompt
+prose
+prototype development
+provider
+pseudocode
+pseudorandom
+pure function
+push
+Python Library Reference
+queue
+Queue ADT
+improved implementation
+linked implementation
+List implementation
+queueing policy
+raise exception
+random
+random number
+randrange
+rank
+rational
+rectangle
+recursion
+base case
+infinite recursion
+recursive data structure
+recursive definition
+reduce
+redundancy
+reference
+aliasing reference
+embedded refernece
+regular expression
+removing cards
+list
+return statement
+return value
+tuple
+variable
+root node
+row
+rules of precedence
+runtime error
+safe language
+sameness
+scaffolding
+scalar multiplication
+script
+semantic error
+semantics
+sequence
+shallow copy
+shallow equality
+shuffle
+sibling node
+singleton
+slice
+source code
+split function
+Stack
+stack
+stack diagram
+state diagram
+statement
+assignment statement
+block statement
+break statement
+compound statement
+conditional statement
+continue statement
+except statement
+pass statement
+print statement
+return statement
+try statement
+while statement
+straight flush
+string
+string comparison
+string module
+string operation
+immutable string
+string length
+string slice
+subclass
+subexpression
+suit
+sum
+swap
+syntax
+syntax error
+tab
+table
+two-dimensional table
+temporary variable
+text file
+fundamental ambiguity
+token
+traceback
+traversal
+list traversal
+traverse
+tree
+tree node
+empty tree node
+tree node expression
+tree node traversal
+try
+try statement
+tuple
+tuple assignment
+Turing Thesis
+Alan Turing
+type
+type checking
+type coercion
+type conversion
+dict
+file
+float
+int
+list
+long
+str
+tuple
+TypeError
+unary negation
+unary operator
+underscore character
+uppercase
+user-defined data type
+value
+tuple value
+variable
+local variable
+loop variable
+variable roles
+temporary variable
+veneer
+while statement
+whitespace
+wrapper
+wrapper function
