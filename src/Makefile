@@ -36,7 +36,7 @@ to-cache:
 #runs integration-scripts
 integrate:
 	export LOGGING
-	cd integrate; $(MAKE) integrate
+	cd integration; $(MAKE) integrate
 
 # Run backlinking scripts
 backlink:
