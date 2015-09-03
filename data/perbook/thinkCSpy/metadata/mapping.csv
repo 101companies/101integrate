@@ -1,80 +1,80 @@
 Kind,IndexTerm,WikiTerm,Comment
-CHAP,ADT,Abstract data type,
-CHAP,abecedarian,,example
-CHAP,algorithm,Algorithm,automatically assigned
-CHAP,boolean expression,Expression,
-CHAP,bracket operator,,
-CHAP,branch,,
-CHAP,bug,Error,
-CHAP,cargo,,example
-CHAP,child class,Class inheritance,
-CHAP,class attribute,OO class,
-CHAP,client,Client,automatically assigned
-CHAP,coercion,,
-CHAP,comment,,
-CHAP,compound data type,,
-CHAP,list concatenation,List comprehension,
-CHAP,conditional statement,Conditional,
-CHAP,constant time,,
-CHAP,cursor,,
-CHAP,debugging,,
-CHAP,deck,,
-CHAP,decrement,,
-CHAP,delimiter,,
-CHAP,denominator,,
-CHAP,dictionary,Dictionary,
-CHAP,directory,Directory,automatically assigned
-CHAP,dot product,,example
-CHAP,element,,
-CHAP,encapsulation,,
-CHAP,encode,,
-CHAP,equality,Equality,automatically assigned
-CHAP,euclid,,example
-CHAP,exception,Exception,automatically assigned
-CHAP,expression tree,tree,
-CHAP,file,File,automatically assigned
 CHAP,formal language,Software Language, not enterly fitting
-CHAP,fraction,,example
+CHAP,high-level language,Software Language, only subtype of wiki-Term
+CHAP,language,,too general term
+CHAP,integer division,integer,
+CHAP,precedence,,too general term
+CHAP,print statement,Output,
 CHAP,function definition,Function definition,automatically assigned
-CHAP,guardian,,
-CHAP,high-level language,Software Language, onlysubtype of wiki-Term
-CHAP,immutable,Immutable data type,
-CHAP,in operator,,unclear context
-CHAP,increment,,
-CHAP,incremental development,,
-CHAP,infinite loop,Loop,
-CHAP,infinite recursion,Recursion,
-CHAP,infix,,
-CHAP,inheritance,Class inheritance,
-CHAP,initialization method,OO class,
-CHAP,instance,OO class,
-CHAP,instantiate,OO class,
-CHAP,integer division,,
-CHAP,interface,OO interface,
-CHAP,invariant,Invariant,automatically assigned
-CHAP,key,,
-CHAP,key-value pair,,
-CHAP,leaf node,Tree,
-CHAP,linkedlist,Linked list,
-CHAP,multiple assignment,,
-CHAP,natural language,,
-CHAP,parent class,Class inheritance,
-CHAP,priority queue,Queue
-CHAP,pure function,Pure function,automatically assigned
-CHAP,queue,Queue,automatically assigned
+CHAP,newline,,special character
 CHAP,stack,Stack,automatically assigned
+CHAP,boolean expression,Expression,
+CHAP,branch,,unclear contex
+CHAP,conditional statement,Conditional,
+CHAP,guardian,,no technical term
+CHAP,incremental development,,
+CHAP,return value,Function,
+CHAP,multiple assignment,,
+CHAP,tab,,special character
+CHAP,table,Table,automatically assigned
+CHAP,index,List,postion in a list
+CHAP,lowercase,String,
+CHAP,whitespace,,special character
+CHAP,element,,too general term
+CHAP,matrix,List,two-dimensional list
+CHAP,nested list,List,
+CHAP,random,,unclear context
+CHAP,random number,Random number,automatically assigned
 CHAP,tuple,Tuple,automatically assigned
-CHAP,tuple assignment,Tuple,
-FREQ,argument,Argument,automatically assigned
-FREQ,card,,
-FREQ,class,Class,automatically assigned
+CHAP,dictionary,Dictionary,
+CHAP,key,Dictionary,
+CHAP,key-value pair,Assosiative Array,base of this datastructure
+CHAP,directory,Directory,automatically assigned
+CHAP,exception,Exception,automatically assigned
+CHAP,file,File,automatically assigned
+CHAP,equality,Equality,automatically assigned
+CHAP,instance,OO class,
+CHAP,rectangle,,shape example
+CHAP,modifier,,book invention: call-by-reference function changing parameter
+CHAP,pure function,Pure function,automatically assigned
+CHAP,sum,,example
+CHAP,object-oriented programming,OO programming,
+CHAP,overloading,,unclar context
+CHAP,str,String,
+CHAP,card,,example
+CHAP,deck,,example
+CHAP,suit,,example
+CHAP,inheritance,Class inheritance,
+CHAP,oldmaidgame,,example
+CHAP,oldmaidhand,,example
+CHAP,cargo,,example
+CHAP,linkedlist,Linked List,
+CHAP,node,,to many contexts List node, Tree node
+CHAP,ADT,Abstract data Type,
+CHAP,postfix,,example
+CHAP,push,Stack,Stack operation
+CHAP,priority,,too general term
+CHAP,priority queue,Queue,introduce specific concept later on
+CHAP,queue,Queue,automatically assigned
+CHAP,animal,,example
+CHAP,expression tree,Tree,
+CHAP,tree,Tree,automatically assigned
+CHAP,bug,Error,
+CHAP,infinite recursion,Recursion,
+CHAP,recursion,Recursion,automatically assigned
+CHAP,denominator,,example
+CHAP,fraction,,example
+CHAP,numerator,,example
 FREQ,expression,Expression,automatically assigned
 FREQ,function,Function,automatically assigned
-FREQ,index,,
-FREQ,language,,
 FREQ,list,List,automatically assigned
-FREQ,node,,
+FREQ,method,Method,automatically assigned
+FREQ,object,Object,automatically assigned
+FREQ,program,Program,automatically assigned
+FREQ,statement,Expression,
+FREQ,string,String,automatically assigned
 FREQ,type,Type,automatically assigned
+FREQ,value,,too general term
 TITLE,Chapter 1: The way of the program,,
 TITLE,"Chapter 2: Variables, expressions and statements",,
 TITLE,Chapter 3: Functions,Function,
@@ -89,9 +89,11 @@ TITLE,Chapter 10: Dictionaries,Dictionary,
 TITLE,Chapter 11: Files and exceptions,File,
 TITLE,Chapter 11: Files and exceptions,Exception,
 TITLE,Chapter 12: Classes and objects,OO programming,
-TITLE,Chapter 13: Classes and functions,,
-TITLE,Chapter 14: Classes and methods,,
-TITLE,Chapter 15: Sets of objects,,
+TITLE,Chapter 13: Classes and functions,OO class,
+TITLE,Chapter 13: Classes and functions,Function,
+TITLE,Chapter 14: Classes and methods,OO class,
+TITLE,Chapter 14: Classes and methods,Method,
+TITLE,Chapter 15: Sets of objects,,describes common errors when dealing with object collections
 TITLE,Chapter 16: Inheritance,Class inheritance,
 TITLE,Chapter 17: Linked lists,Linked list,
 TITLE,Chapter 18: Stacks,Stack,
