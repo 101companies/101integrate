@@ -54,7 +54,7 @@ CHAP,server,Server,automatically assigned
 CHAP,simple,,
 CHAP,software,,
 CHAP,source,,
-CHAP,standard library,Python Standart Library,
+CHAP,standard library,Python Standard Library,
 CHAP,string,String,automatically assigned
 CHAP,support,,
 CHAP,supports python,,
@@ -83,7 +83,7 @@ TITLE,Command-line Applications,,
 TITLE,Network Applications,,
 TITLE,Cryptography,,
 TITLE,Databases,Database programming,
-TITLE,GUI Applications,GUI Programming,
+TITLE,GUI Applications,GUI programming,
 TITLE,Image Manipulation,,
 TITLE,JSON,Language:JSON,automatically assigned
 TITLE,Networking,,

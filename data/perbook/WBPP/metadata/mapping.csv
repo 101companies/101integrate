@@ -4,7 +4,7 @@ CHAP,actual parameter,,
 CHAP,argument,Argument,automatically assigned
 CHAP,block,,
 CHAP,call,,
-CHAP,calling function,function application,
+CHAP,calling function,Function application,
 CHAP,character,Character,automatically assigned
 CHAP,class definition,OO class,
 CHAP,client,Client,automatically assigned
@@ -31,7 +31,7 @@ CHAP,false,Boolean,
 CHAP,file,File,automatically assigned
 CHAP,file object,File,
 CHAP,formal parameter,,
-CHAP,function call,function application,
+CHAP,function call,Function application,
 CHAP,function object,Function object,automatically assigned
 CHAP,html,Language:HTML,automatically assigned
 CHAP,http,Technology:HTTP,automatically assigned
@@ -63,7 +63,7 @@ CHAP,order,,
 CHAP,output,Output,automatically assigned
 CHAP,pattern object,Regular expression,
 CHAP,print,,
-CHAP,print statement,output,
+CHAP,print statement,Output,
 CHAP,program,Program,automatically assigned
 CHAP,programming,Programming,automatically assigned
 CHAP,programming language,Programming language,automatically assigned
@@ -163,7 +163,7 @@ TITLE,Sockets,Network socket,
 TITLE,GUI Programming,GUI programming,automatically assigned
 TITLE,CGI interface,Technology:CGI,
 TITLE,WSGI web programming,,
-TITLE,Extracting info from web pages,Technology:Web crawling,
+TITLE,Extracting info from web pages,Technology:Web crawler,
 TITLE,Internet,,
 TITLE,Networks,,
 TITLE,Databases,Database,
