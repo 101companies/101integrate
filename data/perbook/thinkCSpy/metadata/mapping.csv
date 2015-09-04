@@ -2,7 +2,7 @@ Kind,IndexTerm,WikiTerm,Comment
 CHAP,formal language,Software Language, not enterly fitting
 CHAP,high-level language,Software Language, only subtype of wiki-Term
 CHAP,language,,too general term
-CHAP,integer division,integer,
+CHAP,integer division,Integer,
 CHAP,precedence,,too general term
 CHAP,print statement,Output,
 CHAP,function definition,Function definition,automatically assigned
@@ -48,8 +48,8 @@ CHAP,inheritance,Class inheritance,
 CHAP,oldmaidgame,,example
 CHAP,oldmaidhand,,example
 CHAP,cargo,,example
-CHAP,linkedlist,Linked List,
-CHAP,node,,to many contexts List node, Tree node
+CHAP,linkedlist,Linked list,
+CHAP,node,,to many contexts List node or Tree node
 CHAP,ADT,Abstract data Type,
 CHAP,postfix,,example
 CHAP,push,Stack,Stack operation

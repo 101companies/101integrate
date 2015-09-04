@@ -4,7 +4,7 @@ CHAP,actual parameter,,
 CHAP,argument,Argument,automatically assigned
 CHAP,block,,
 CHAP,call,,
-CHAP,calling function,function application,
+CHAP,calling function,Function application,
 CHAP,character,Character,automatically assigned
 CHAP,class definition,OO class,
 CHAP,client,Client,automatically assigned
@@ -31,7 +31,7 @@ CHAP,false,Boolean,
 CHAP,file,File,automatically assigned
 CHAP,file object,File,
 CHAP,formal parameter,,
-CHAP,function call,function application,
+CHAP,function call,Function application,
 CHAP,function object,Function object,automatically assigned
 CHAP,html,Language:HTML,automatically assigned
 CHAP,http,Technology:HTTP,automatically assigned
