@@ -16,15 +16,22 @@ def main(books):
 		temp = readCSV("../../data/perbook/"+b+"/metadata/mapping.csv")[1:]
 		overview += [[b]+t for t in temp]
 		data={}
-		data['non-mapped']= len([t for t in temp if not t[-2]])
-		data['mapped']= len([t for t in temp if t[-2]])
-		data['auto-mapped']= len([t for t in temp if t[-1] == "automatically assigned"])
-		data['terms']= sorted(list(set([t[-2] for t in temp if t[-2]])), key=(lambda x: x.lower()))
+		data['non-mapped'] = len([t for t in temp if not t[-2]])
+		data['mapped'] = len([t for t in temp if t[-2]])
+		data['auto-mapped'] = len([t for t in temp if t[-1] == "automatically assigned"])
+		data['terms'] = sorted(list(set([t[-2] for t in temp if t[-2]])), key=(lambda x: x.lower()))
 		data['wikiTerms'] = len(data['terms'])
-		stats[b]=data
+		stats[b] = data
 	writer = open("../../data/allbooks/MappingStats.json","w")
 	writer.write(json.dumps(stats, indent="\t"))
 	writer.close()
+	f = open("../../data/allbooks/MappingStats.csv","w")
+	csvwriter = csv.writer(f)
+	cols = ["mapped","non-mapped","auto-mapped","wikiTerms"]
+	csvwriter.writerow(["book"]+cols)
+	for k in stats.keys():
+		csvwriter.writerow([k]+[stats[k][i] for i in cols])
+	f.close()
 	f = open("../../data/allbooks/MappingOverview.csv","w")
 	csvwriter = csv.writer(f)
 	csvwriter.writerow(overview[0])
