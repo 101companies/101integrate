@@ -38,6 +38,13 @@ def main(books):
 	for line in sorted(overview[1:], key=(lambda x: x[-2])):
 		csvwriter.writerow(line)
 	f.close()
+	allWikiTerms = sorted(set([term for k in stats.keys() for term in stats[k]['terms']]), key=(lambda x: x.lower()))
+	termBookOverview = [[t] +["X" if t in stats[k]['terms'] else "" for k in stats.keys()] for t in allWikiTerms]
+	termBookOverview = [["Term"]+stats.keys()] + termBookOverview
+	f = open("../../data/allbooks/wikiTermsBook.csv","w")
+	csvwriter = csv.writer(f)
+	csvwriter.writerows(termBookOverview)
+	f.close()
 
 if __name__ == '__main__':
 	main(sys.argv[1:])
