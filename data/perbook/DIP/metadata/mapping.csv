@@ -24,7 +24,7 @@ CHAP,case study,,
 CHAP,chapter,,
 CHAP,character,Character,automatically assigned
 CHAP,check,,
-CHAP,class,Class,automatically assigned
+CHAP,class,OO class,
 CHAP,class instance,OO class,
 CHAP,class method,OO class,
 CHAP,class name,,
