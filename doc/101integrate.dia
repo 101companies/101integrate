@@ -631,7 +631,7 @@ Merge Indicies#</dia:string>
               <dia:real val="0.80000000000000004"/>
             </dia:attribute>
             <dia:attribute name="pos">
-              <dia:point val="94.4333,4.36149"/>
+              <dia:point val="94.4332,4.36149"/>
             </dia:attribute>
             <dia:attribute name="color">
               <dia:color val="#000000"/>
@@ -719,7 +719,7 @@ Merge Indicies#</dia:string>
           <dia:point val="84.2034,-4.28471"/>
         </dia:attribute>
         <dia:attribute name="obj_bb">
-          <dia:rectangle val="84.2034,-4.28471;89.0261,-2.38471"/>
+          <dia:rectangle val="84.2034,-4.28471;89.026,-2.38471"/>
         </dia:attribute>
         <dia:attribute name="elem_corner">
           <dia:point val="84.2034,-4.28471"/>
@@ -754,7 +754,7 @@ Merge Indicies#</dia:string>
               <dia:real val="0.80000000000000004"/>
             </dia:attribute>
             <dia:attribute name="pos">
-              <dia:point val="86.6148,-3.13971"/>
+              <dia:point val="86.6147,-3.13971"/>
             </dia:attribute>
             <dia:attribute name="color">
               <dia:color val="#000000"/>
@@ -770,7 +770,7 @@ Merge Indicies#</dia:string>
           <dia:point val="83.6675,-1.31307"/>
         </dia:attribute>
         <dia:attribute name="obj_bb">
-          <dia:rectangle val="83.6175,-1.36307;92.7782,1.47647"/>
+          <dia:rectangle val="83.6175,-1.36307;92.7782,1.47646"/>
         </dia:attribute>
         <dia:attribute name="elem_corner">
           <dia:point val="83.6675,-1.31307"/>
@@ -802,7 +802,7 @@ Merge Indicies#</dia:string>
               <dia:real val="0.80000000000000004"/>
             </dia:attribute>
             <dia:attribute name="pos">
-              <dia:point val="88.1979,0.251701"/>
+              <dia:point val="88.1979,0.251697"/>
             </dia:attribute>
             <dia:attribute name="color">
               <dia:color val="#000000"/>
@@ -1039,7 +1039,7 @@ Merge Indicies#</dia:string>
               <dia:real val="0.80000000000000004"/>
             </dia:attribute>
             <dia:attribute name="pos">
-              <dia:point val="87.3942,10.4303"/>
+              <dia:point val="87.3941,10.4304"/>
             </dia:attribute>
             <dia:attribute name="color">
               <dia:color val="#000000"/>
@@ -1064,7 +1064,7 @@ Merge Indicies#</dia:string>
           <dia:point val="99.9863,-0.473366"/>
         </dia:attribute>
         <dia:attribute name="obj_bb">
-          <dia:rectangle val="99.9359,-0.75999;106.139,-0.0982084"/>
+          <dia:rectangle val="99.9359,-0.759991;106.139,-0.098209"/>
         </dia:attribute>
         <dia:attribute name="conn_endpoints">
           <dia:point val="99.9863,-0.473366"/>
@@ -1112,7 +1112,7 @@ Merge Indicies#</dia:string>
           <dia:point val="99.8523,4.14874"/>
         </dia:attribute>
         <dia:attribute name="obj_bb">
-          <dia:rectangle val="99.8019,3.86211;106.004,4.52389"/>
+          <dia:rectangle val="99.8019,3.86211;106.004,4.5239"/>
         </dia:attribute>
         <dia:attribute name="conn_endpoints">
           <dia:point val="99.8523,4.14874"/>
@@ -1187,7 +1187,7 @@ Merge Indicies#</dia:string>
           <dia:point val="93.7341,-1.35027"/>
         </dia:attribute>
         <dia:attribute name="obj_bb">
-          <dia:rectangle val="93.7341,-1.35027;99.3533,0.20874"/>
+          <dia:rectangle val="93.7341,-1.35027;99.3532,0.208736"/>
         </dia:attribute>
         <dia:attribute name="elem_corner">
           <dia:point val="93.7341,-1.35027"/>
@@ -1222,7 +1222,7 @@ Merge Indicies#</dia:string>
               <dia:real val="0.80000000000000004"/>
             </dia:attribute>
             <dia:attribute name="pos">
-              <dia:point val="93.7341,-0.375763"/>
+              <dia:point val="93.7341,-0.375767"/>
             </dia:attribute>
             <dia:attribute name="color">
               <dia:color val="#000000"/>
@@ -6138,7 +6138,7 @@ Occurence per FIle
         <dia:point val="-17.098,92.5512"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="-17.098,92.5512;2.41201,96.6313"/>
+        <dia:rectangle val="-17.098,92.5512;2.412,96.6313"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -6183,7 +6183,7 @@ Occurence per FIle
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="-7.34299,94.2084"/>
+            <dia:point val="-7.343,94.2084"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -6205,13 +6205,13 @@ Occurence per FIle
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O134">
       <dia:attribute name="obj_pos">
-        <dia:point val="-6.54483,95.9342"/>
+        <dia:point val="-6.54484,95.9342"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="-6.54483,95.9342;1.43174,109.355"/>
+        <dia:rectangle val="-6.54484,95.9342;1.43174,109.355"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="-6.54483,95.9342"/>
+        <dia:point val="-6.54484,95.9342"/>
         <dia:point val="1.43174,109.355"/>
       </dia:attribute>
       <dia:attribute name="numcp">
@@ -6236,14 +6236,14 @@ Occurence per FIle
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O135">
       <dia:attribute name="obj_pos">
-        <dia:point val="0.137532,112.137"/>
+        <dia:point val="0.137524,112.137"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="-7.03242,112.137;0.137532,116.84"/>
+        <dia:rectangle val="-7.03246,112.137;0.137524,116.84"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="0.137532,112.137"/>
-        <dia:point val="-7.03242,116.84"/>
+        <dia:point val="0.137524,112.137"/>
+        <dia:point val="-7.03246,116.84"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -6270,7 +6270,7 @@ Occurence per FIle
         <dia:point val="16.8439,138.632"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="16.8439,138.632;32.6239,142.526"/>
+        <dia:rectangle val="16.8439,138.632;32.6239,142.525"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -6315,7 +6315,7 @@ Occurence per FIle
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="24.7339,140.223"/>
+            <dia:point val="24.7339,140.222"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -6500,14 +6500,14 @@ Occurence per FIle
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O141">
       <dia:attribute name="obj_pos">
-        <dia:point val="1.12628,112.137"/>
+        <dia:point val="1.12627,112.137"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="-7.10897,112.137;1.12628,122.251"/>
+        <dia:rectangle val="-7.10899,112.137;1.12627,122.252"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="1.12628,112.137"/>
-        <dia:point val="-7.10897,122.251"/>
+        <dia:point val="1.12627,112.137"/>
+        <dia:point val="-7.10899,122.252"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -6604,7 +6604,7 @@ Occurence per FIle
         <dia:point val="-18.0325,116.84"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="-18.0325,116.84;-2.25245,120.92"/>
+        <dia:rectangle val="-18.0325,116.84;-2.2525,120.92"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -6649,7 +6649,7 @@ Occurence per FIle
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="-10.1425,118.498"/>
+            <dia:point val="-10.1425,118.497"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -6803,16 +6803,16 @@ Occurence per FIle
     </dia:object>
     <dia:object type="Flowchart - Document" version="1" id="O147">
       <dia:attribute name="obj_pos">
-        <dia:point val="11.0232,116.898"/>
+        <dia:point val="35.9428,97.7139"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="11.0232,116.898;27.8167,121.025"/>
+        <dia:rectangle val="35.9428,97.7139;52.7362,101.841"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="11.0232,116.898"/>
+        <dia:point val="35.9428,97.7139"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="16.793435435387366"/>
@@ -6851,7 +6851,7 @@ Occurence per FIle
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="19.4199,118.572"/>
+            <dia:point val="44.3395,99.3879"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -6873,14 +6873,14 @@ Occurence per FIle
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O148">
       <dia:attribute name="obj_pos">
-        <dia:point val="31.5288,113.011"/>
+        <dia:point val="36.0645,109.837"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="23.6188,113.011;31.5288,116.902"/>
+        <dia:rectangle val="36.0645,101.466;42.9501,109.837"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="31.5288,113.011"/>
-        <dia:point val="23.6188,116.898"/>
+        <dia:point val="36.0645,109.837"/>
+        <dia:point val="42.9501,101.466"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -6938,7 +6938,7 @@ Occurence per FIle
         <dia:point val="-17.3287,122.25"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="-17.3287,122.25;-0.208667,126.33"/>
+        <dia:rectangle val="-17.3287,122.25;-0.2087,126.33"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -6983,7 +6983,7 @@ Occurence per FIle
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="-8.76867,123.907"/>
+            <dia:point val="-8.7687,123.907"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -7106,14 +7106,14 @@ Occurence per FIle
     </dia:object>
     <dia:object type="Standard - Line" version="0" id="O153">
       <dia:attribute name="obj_pos">
-        <dia:point val="27.2859,138.634"/>
+        <dia:point val="27.286,138.633"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="27.2859,113.126;60.75,138.634"/>
+        <dia:rectangle val="27.286,113.125;60.75,138.633"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="27.2859,138.634"/>
-        <dia:point val="60.75,113.126"/>
+        <dia:point val="27.286,138.633"/>
+        <dia:point val="60.75,113.125"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -7236,86 +7236,16 @@ Occurence per FIle
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Flowchart - Document" version="1" id="O156">
+    <dia:object type="Standard - Line" version="0" id="O156">
       <dia:attribute name="obj_pos">
-        <dia:point val="40.3279,92.4902"/>
+        <dia:point val="46.2109,100.965"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="40.3279,92.4902;53.8481,95.6924"/>
-      </dia:attribute>
-      <dia:attribute name="meta">
-        <dia:composite type="dict"/>
-      </dia:attribute>
-      <dia:attribute name="elem_corner">
-        <dia:point val="40.3279,92.4902"/>
-      </dia:attribute>
-      <dia:attribute name="elem_width">
-        <dia:real val="13.520138697981338"/>
-      </dia:attribute>
-      <dia:attribute name="elem_height">
-        <dia:real val="3.2021381126797905"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0"/>
-      </dia:attribute>
-      <dia:attribute name="line_colour">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_colour">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="show_background">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="line_style">
-        <dia:enum val="0"/>
-        <dia:real val="1"/>
-      </dia:attribute>
-      <dia:attribute name="padding">
-        <dia:real val="0.10000000000000001"/>
-      </dia:attribute>
-      <dia:attribute name="text">
-        <dia:composite type="text">
-          <dia:attribute name="string">
-            <dia:string>#data/allbooks/unionTopFrequencies.csv#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="font">
-            <dia:font family="sans" style="0" name="Helvetica"/>
-          </dia:attribute>
-          <dia:attribute name="height">
-            <dia:real val="0.80000000000000004"/>
-          </dia:attribute>
-          <dia:attribute name="pos">
-            <dia:point val="47.088,93.8339"/>
-          </dia:attribute>
-          <dia:attribute name="color">
-            <dia:color val="#000000"/>
-          </dia:attribute>
-          <dia:attribute name="alignment">
-            <dia:enum val="1"/>
-          </dia:attribute>
-        </dia:composite>
-      </dia:attribute>
-      <dia:attribute name="flip_horizontal">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="flip_vertical">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="subscale">
-        <dia:real val="1"/>
-      </dia:attribute>
-    </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O157">
-      <dia:attribute name="obj_pos">
-        <dia:point val="47.9932,95.0926"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="47.9932,95.0926;61.4023,109.924"/>
+        <dia:rectangle val="46.2109,100.965;60.3268,109.924"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
-        <dia:point val="47.9932,95.0926"/>
-        <dia:point val="61.4023,109.924"/>
+        <dia:point val="46.2109,100.965"/>
+        <dia:point val="60.3268,109.924"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -7333,11 +7263,11 @@ Occurence per FIle
         <dia:real val="0.5"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O156" connection="16"/>
+        <dia:connection handle="0" to="O147" connection="16"/>
         <dia:connection handle="1" to="O151" connection="16"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Flowchart - Document" version="1" id="O158">
+    <dia:object type="Flowchart - Document" version="1" id="O157">
       <dia:attribute name="obj_pos">
         <dia:point val="47.5629,131.999"/>
       </dia:attribute>
@@ -7387,7 +7317,7 @@ Occurence per FIle
             <dia:real val="0.80000000000000004"/>
           </dia:attribute>
           <dia:attribute name="pos">
-            <dia:point val="54.6748,134.017"/>
+            <dia:point val="54.6747,134.017"/>
           </dia:attribute>
           <dia:attribute name="color">
             <dia:color val="#000000"/>
@@ -7407,7 +7337,7 @@ Occurence per FIle
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O159">
+    <dia:object type="Standard - Line" version="0" id="O158">
       <dia:attribute name="obj_pos">
         <dia:point val="62.2818,113.124"/>
       </dia:attribute>
@@ -7416,7 +7346,7 @@ Occurence per FIle
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="62.2818,113.124"/>
-        <dia:point val="55.5779,132.001"/>
+        <dia:point val="55.5778,132.001"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -7435,15 +7365,15 @@ Occurence per FIle
       </dia:attribute>
       <dia:connections>
         <dia:connection handle="0" to="O151" connection="16"/>
-        <dia:connection handle="1" to="O158" connection="16"/>
+        <dia:connection handle="1" to="O157" connection="16"/>
       </dia:connections>
     </dia:object>
-    <dia:object type="Flowchart - Document" version="1" id="O160">
+    <dia:object type="Flowchart - Document" version="1" id="O159">
       <dia:attribute name="obj_pos">
         <dia:point val="59.7953,125.03"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="59.7953,125.03;74.019,130.12"/>
+        <dia:rectangle val="59.7953,125.03;74.019,130.121"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -7508,16 +7438,16 @@ Occurence per FIle
         <dia:real val="1"/>
       </dia:attribute>
     </dia:object>
-    <dia:object type="Standard - Line" version="0" id="O161">
+    <dia:object type="Standard - Line" version="0" id="O160">
       <dia:attribute name="obj_pos">
         <dia:point val="63.2544,113.126"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="63.2544,113.126;66.3834,125.029"/>
+        <dia:rectangle val="63.2544,113.126;66.3834,125.03"/>
       </dia:attribute>
       <dia:attribute name="conn_endpoints">
         <dia:point val="63.2544,113.126"/>
-        <dia:point val="66.2636,125.029"/>
+        <dia:point val="66.2636,125.03"/>
       </dia:attribute>
       <dia:attribute name="numcp">
         <dia:int val="1"/>
@@ -7536,7 +7466,7 @@ Occurence per FIle
       </dia:attribute>
       <dia:connections>
         <dia:connection handle="0" to="O151" connection="16"/>
-        <dia:connection handle="1" to="O160" connection="16"/>
+        <dia:connection handle="1" to="O159" connection="16"/>
       </dia:connections>
     </dia:object>
   </dia:layer>

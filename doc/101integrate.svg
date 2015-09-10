@@ -1,501 +1,218 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="75cm" height="82cm" viewBox="-626 -9 1486 1636" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="142cm" height="170cm" viewBox="-665 -534 2834 3384" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
-    <rect style="fill: #ffffff" x="-614.506" y="105.141" width="214.002" height="109"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-614.506" y="105.141" width="214.002" height="109"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-507.505" y="163.541">
-      <tspan x="-507.505" y="163.541">download-books</tspan>
+    <rect style="fill: #ffffff" x="-624.778" y="939.668" width="186.232" height="119.095"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-624.778" y="939.668" width="186.232" height="119.095"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-531.662" y="1003.12">
+      <tspan x="-531.662" y="1003.12">mine</tspan>
     </text>
   </g>
   <g>
-    <path style="fill: #ffffff" d="M -392.124 11.149 C -355.724,-1.35101 -337.524,-5.51768 -301.124,-5.51768 C -264.724,-5.51768 -246.524,-1.35101 -210.124,11.149 L -210.124,77.8157 C -246.524,90.3157 -264.724,94.4823 -301.124,94.4823 C -337.524,94.4823 -355.724,90.3157 -392.124,77.8157 L -392.124,11.149z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -392.124 11.149 C -355.724,-1.35101 -337.524,-5.51768 -301.124,-5.51768 C -264.724,-5.51768 -246.524,-1.35101 -210.124,11.149 L -210.124,77.8157 C -246.524,90.3157 -264.724,94.4823 -301.124,94.4823 C -337.524,94.4823 -355.724,90.3157 -392.124,77.8157 L -392.124,11.149"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -392.124 11.149 C -355.724,23.649 -337.524,27.8157 -301.124,27.8157 C -264.724,27.8157 -246.524,23.649 -210.124,11.149"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-301.124" y="48.8157">
-      <tspan x="-301.124" y="48.8157">online-resources</tspan>
-      <tspan x="-301.124" y="64.8157">(e-books)</tspan>
-    </text>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 3.94976 136 L 95.3248,136 C 81.6185,144.4 77.0498,148.6 77.0498,157 C 77.0498,165.4 81.6185,169.6 95.3248,178 L 3.94976,178 C -9.75649,169.6 -14.3252,165.4 -14.3252,157 C -14.3252,148.6 -9.75649,144.4 3.94976,136z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 3.94976 136 L 95.3248,136 C 81.6185,144.4 77.0498,148.6 77.0498,157 C 77.0498,165.4 81.6185,169.6 95.3248,178 L 3.94976,178 C -9.75649,169.6 -14.3252,165.4 -14.3252,157 C -14.3252,148.6 -9.75649,144.4 3.94976,136"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="40.4998" y="161">
-      <tspan x="40.4998" y="161">crawler.py</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-265.725" y1="93.4441" x2="-245.108" y2="121.959"/>
-    <polygon style="fill: #ffffff" points="-242.715,133.803 -232.218,139.788 -234.611,127.944 "/>
-    <polygon style="fill: #ffffff" points="-249.16,124.889 -238.663,130.874 -241.056,119.03 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-242.129,134.613 -232.218,139.788 -234.025,128.754 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-249.16,124.889 -239.249,130.063 -241.056,119.03 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 375.89 259.397 C 407.89,247.897 423.89,244.064 455.89,244.064 C 487.89,244.064 503.89,247.897 535.89,259.397 L 535.89,320.731 C 503.89,332.231 487.89,336.064 455.89,336.064 C 423.89,336.064 407.89,332.231 375.89,320.731 L 375.89,259.397z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 375.89 259.397 C 407.89,247.897 423.89,244.064 455.89,244.064 C 487.89,244.064 503.89,247.897 535.89,259.397 L 535.89,320.731 C 503.89,332.231 487.89,336.064 455.89,336.064 C 423.89,336.064 407.89,332.231 375.89,320.731 L 375.89,259.397"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 375.89 259.397 C 407.89,270.897 423.89,274.731 455.89,274.731 C 487.89,274.731 503.89,270.897 535.89,259.397"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="455.89" y="293.731">
-      <tspan x="455.89" y="293.731">local resource</tspan>
-      <tspan x="455.89" y="309.731">data/perbook</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-400.504" y1="159.641" x2="-311.604" y2="159.989"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-319.387,164.959 -309.368,159.998 -319.348,154.959 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 508.631 140.638 L 659.006,140.638 C 636.45,148.838 628.931,152.938 628.931,161.138 C 628.931,169.338 636.45,173.438 659.006,181.638 L 508.631,181.638 C 486.075,173.438 478.556,169.338 478.556,161.138 C 478.556,152.938 486.075,148.838 508.631,140.638z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 508.631 140.638 L 659.006,140.638 C 636.45,148.838 628.931,152.938 628.931,161.138 C 628.931,169.338 636.45,173.438 659.006,181.638 L 508.631,181.638 C 486.075,173.438 478.556,169.338 478.556,161.138 C 478.556,152.938 486.075,148.838 508.631,140.638"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="568.781" y="157.138">
-      <tspan x="568.781" y="157.138">cleanOnlineBooks</tspan>
-      <tspan x="568.781" y="173.138">(src/Mining)</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="76.4622" y1="157" x2="259.719" y2="158.255"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="251.921,163.202 261.955,158.27 251.989,153.202 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="78.1919" y1="159.671" x2="392.433" y2="241.323"/>
-    <polygon style="fill: #ffffff" points="401.822,248.929 413.726,246.856 404.337,239.25 "/>
-    <polygon style="fill: #ffffff" points="391.175,246.162 403.079,244.089 393.69,236.484 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="402.79,249.18 413.726,246.856 405.305,239.501 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="391.175,246.162 402.111,243.838 393.69,236.484 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 691.748 282.861 C 725.068,273.361 741.728,270.194 775.048,270.194 C 808.368,270.194 825.028,273.361 858.348,282.861 L 858.348,333.527 C 825.028,343.027 808.368,346.194 775.048,346.194 C 741.728,346.194 725.068,343.027 691.748,333.527 L 691.748,282.861z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 691.748 282.861 C 725.068,273.361 741.728,270.194 775.048,270.194 C 808.368,270.194 825.028,273.361 858.348,282.861 L 858.348,333.527 C 825.028,343.027 808.368,346.194 775.048,346.194 C 741.728,346.194 725.068,343.027 691.748,333.527 L 691.748,282.861"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 691.748 282.861 C 725.068,292.361 741.728,295.527 775.048,295.527 C 808.368,295.527 825.028,292.361 858.348,282.861"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="775.048" y="310.527">
-      <tspan x="775.048" y="310.527">"cleaned" resource (txt)</tspan>
-      <tspan x="775.048" y="326.527">data/perbook</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="495.89" y1="247.418" x2="564.929" y2="196.939"/>
-    <polygon style="fill: #ffffff" points="576.76,194.483 582.688,183.954 570.858,186.41 "/>
-    <polygon style="fill: #ffffff" points="567.88,200.975 573.809,190.446 561.978,192.903 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="577.567,193.892 582.688,183.954 571.665,185.82 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="567.88,200.975 573.002,191.037 561.978,192.903 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="583.818" y1="181.638" x2="753.056" y2="260.01"/>
-    <polygon style="fill: #ffffff" points="760.936,269.169 773.019,269.254 765.138,260.095 "/>
-    <polygon style="fill: #ffffff" points="750.955,264.547 763.037,264.632 755.157,255.472 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="761.844,269.589 773.019,269.254 766.046,260.515 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="750.955,264.547 762.13,264.212 755.157,255.472 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 287.013 139.966 L 396.451,139.966 C 380.035,147.566 374.563,151.366 374.563,158.966 C 374.563,166.566 380.035,170.366 396.451,177.966 L 287.013,177.966 C 270.598,170.366 265.126,166.566 265.126,158.966 C 265.126,151.366 270.598,147.566 287.013,139.966z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 287.013 139.966 L 396.451,139.966 C 380.035,147.566 374.563,151.366 374.563,158.966 C 374.563,166.566 380.035,170.366 396.451,177.966 L 287.013,177.966 C 270.598,170.366 265.126,166.566 265.126,158.966 C 265.126,151.366 270.598,147.566 287.013,139.966"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="330.788" y="162.966">
-      <tspan x="330.788" y="162.966">bootstrap.py</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="370.436" y1="138.98" x2="392.36" y2="74.6997"/>
-    <polygon style="fill: #ffffff" points="400.643,65.9026 399.461,53.8775 391.178,62.6746 "/>
-    <polygon style="fill: #ffffff" points="397.092,76.3137 395.91,64.2886 387.627,73.0857 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="400.965,64.9561 399.461,53.8775 391.501,61.7281 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="397.092,76.3137 395.587,65.2351 387.627,73.0857 "/>
-  </g>
-  <g>
-    <rect style="fill: #ffffff" x="-624.777" y="939.669" width="186.232" height="119.095"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-624.777" y="939.669" width="186.232" height="119.095"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-531.661" y="1003.12">
-      <tspan x="-531.661" y="1003.12">mine</tspan>
-    </text>
-  </g>
-  <g>
-    <rect style="fill: #ffffff" x="-623.518" y="389.678" width="205.892" height="123.384"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-623.518" y="389.678" width="205.892" height="123.384"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-520.572" y="455.27">
-      <tspan x="-520.572" y="455.27">link-books</tspan>
-    </text>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M -354.476 364.962 C -330.806,357.202 -318.971,354.616 -295.301,354.616 C -271.632,354.616 -259.797,357.202 -236.127,364.962 L -236.127,406.345 C -259.797,414.105 -271.632,416.691 -295.301,416.691 C -318.971,416.691 -330.806,414.105 -354.476,406.345 L -354.476,364.962z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -354.476 364.962 C -330.806,357.202 -318.971,354.616 -295.301,354.616 C -271.632,354.616 -259.797,357.202 -236.127,364.962 L -236.127,406.345 C -259.797,414.105 -271.632,416.691 -295.301,416.691 C -318.971,416.691 -330.806,414.105 -354.476,406.345 L -354.476,364.962"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -354.476 364.962 C -330.806,372.721 -318.971,375.308 -295.301,375.308 C -271.632,375.308 -259.797,372.721 -236.127,364.962"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-295.301" y="394.826">
-      <tspan x="-295.301" y="394.826">Dropbox-Books</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="190.716" y1="426.142" x2="345.398" y2="187.124"/>
-    <polygon style="fill: #000000" points="349.472,180.827 348.237,191.939 345.398,187.124 339.842,186.506 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="349.472,180.827 348.237,191.939 345.398,187.124 339.842,186.506 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20 4 4 4 4 4; stroke: #000000" x1="-416.625" y1="450.657" x2="-134.202" y2="448.721"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-141.932,453.774 -131.966,448.706 -142,443.774 "/>
-  </g>
-  <g>
-    <polygon style="fill: #ffffff" points="-95.4944,427.23 -62.2585,448.455 -95.4944,469.681 -128.73,448.455 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-95.4944,427.23 -62.2585,448.455 -95.4944,469.681 -128.73,448.455 "/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-95.4944" y="452.355">
-      <tspan x="-95.4944" y="452.355"></tspan>
-    </text>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 118.222 435.064 C 140.231,428.285 151.236,426.026 173.245,426.026 C 195.255,426.026 206.259,428.285 228.269,435.064 L 228.269,471.214 C 206.259,477.993 195.255,480.252 173.245,480.252 C 151.236,480.252 140.231,477.993 118.222,471.214 L 118.222,435.064z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 118.222 435.064 C 140.231,428.285 151.236,426.026 173.245,426.026 C 195.255,426.026 206.259,428.285 228.269,435.064 L 228.269,471.214 C 206.259,477.993 195.255,480.252 173.245,480.252 C 151.236,480.252 140.231,477.993 118.222,471.214 L 118.222,435.064"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 118.222 435.064 C 140.231,441.842 151.236,444.101 173.245,444.101 C 195.255,444.101 206.259,441.842 228.269,435.064"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="173.245" y="461.658">
-      <tspan x="173.245" y="461.658">local-Books</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-235.119" y1="400.387" x2="-113.26" y2="430.221"/>
-    <polygon style="fill: #000000" points="-105.975,432.004 -116.877,434.483 -113.26,430.221 -114.499,424.77 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-105.975,432.004 -116.877,434.483 -113.26,430.221 -114.499,424.77 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-70.5674" y1="453.762" x2="108.491" y2="459.599"/>
-    <polygon style="fill: #000000" points="115.987,459.843 105.829,464.515 108.491,459.599 106.155,454.52 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="115.987,459.843 105.829,464.515 108.491,459.599 106.155,454.52 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M -272.736 141.6 L -105.423,141.6 C -130.52,149.2 -138.886,153 -138.886,160.6 C -138.886,168.2 -130.52,172 -105.423,179.6 L -272.736,179.6 C -297.832,172 -306.198,168.2 -306.198,160.6 C -306.198,153 -297.832,149.2 -272.736,141.6z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -272.736 141.6 L -105.423,141.6 C -130.52,149.2 -138.886,153 -138.886,160.6 C -138.886,168.2 -130.52,172 -105.423,179.6 L -272.736,179.6 C -297.832,172 -306.198,168.2 -306.198,160.6 C -306.198,153 -297.832,149.2 -272.736,141.6"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-205.811" y="164.6">
-      <tspan x="-205.811" y="164.6">bookDownloader.py</tspan>
-    </text>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M -163.924 232.665 C -132.3,222.991 -116.489,219.766 -84.8646,219.766 C -53.2407,219.766 -37.4287,222.991 -5.80477,232.665 L -5.80477,284.262 C -37.4287,293.936 -53.2407,297.161 -84.8646,297.161 C -116.489,297.161 -132.3,293.936 -163.924,284.262 L -163.924,232.665z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -163.924 232.665 C -132.3,222.991 -116.489,219.766 -84.8646,219.766 C -53.2407,219.766 -37.4287,222.991 -5.80477,232.665 L -5.80477,284.262 C -37.4287,293.936 -53.2407,297.161 -84.8646,297.161 C -116.489,297.161 -132.3,293.936 -163.924,284.262 L -163.924,232.665"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -163.924 232.665 C -132.3,242.339 -116.489,245.564 -84.8646,245.564 C -53.2407,245.564 -37.4287,242.339 -5.80477,232.665"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-84.8646" y="260.913">
-      <tspan x="-84.8646" y="260.913">selection of</tspan>
-      <tspan x="-84.8646" y="276.913">online-resources</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-141.155" y1="180.604" x2="-126.862" y2="200.374"/>
-    <polygon style="fill: #ffffff" points="-124.469,212.217 -113.972,218.202 -116.365,206.359 "/>
-    <polygon style="fill: #ffffff" points="-130.913,203.303 -120.417,209.288 -122.81,197.444 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-123.883,213.028 -113.972,218.202 -115.779,207.169 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-130.913,203.303 -121.003,208.478 -122.81,197.444 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-33.0842" y1="224.075" x2="14.5921" y2="192.411"/>
-    <polygon style="fill: #ffffff" points="26.5216,190.491 32.9187,180.24 20.9892,182.161 "/>
-    <polygon style="fill: #ffffff" points="17.3583,196.577 23.7554,186.326 11.826,188.246 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="27.3546,189.938 32.9187,180.24 21.8223,181.607 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="17.3583,196.577 22.9224,186.879 11.826,188.246 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-137.83" y1="160.149" x2="-17.9334" y2="157.113"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-25.5683,162.308 -15.6981,157.057 -25.8215,152.311 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-95.2695" y1="59.1552" x2="-138.746" y2="132.24"/>
-    <polygon style="fill: #000000" points="-142.581,138.686 -141.765,127.535 -138.746,132.24 -133.171,132.648 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-142.581,138.686 -141.765,127.535 -138.746,132.24 -133.171,132.648 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-61.2039" y1="53.2254" x2="32.9535" y2="128.903"/>
-    <polygon style="fill: #000000" points="38.7994,133.601 27.8725,131.234 32.9535,128.903 34.1372,123.439 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="38.7994,133.601 27.8725,131.234 32.9535,128.903 34.1372,123.439 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 49.4234 -0.502026 L 268.923,-0.502026 L 268.923,64.298 C 225.023,53.498 203.073,53.498 159.173,64.298 C 115.273,75.098 93.3234,75.098 49.4234,64.298 L 49.4234,-0.502026z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 49.4234 -0.502026 L 268.923,-0.502026 L 268.923,64.298 C 225.023,53.498 203.073,53.498 159.173,64.298 C 115.273,75.098 93.3234,75.098 49.4234,64.298 L 49.4234,-0.502026"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="159.173" y="14.498">
-      <tspan x="159.173" y="14.498">data/perbook/$bookfldr$/</tspan>
-      <tspan x="159.173" y="30.498">metadata/chapters.txt</tspan>
-      <tspan x="159.173" y="46.498">(per-book-file with chapters' urls)</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="159.173" y1="64.298" x2="96.4048" y2="128.058"/>
-    <polygon style="fill: #000000" points="91.1432,133.402 94.5956,122.768 96.4048,128.058 101.722,129.784 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="91.1432,133.402 94.5956,122.768 96.4048,128.058 101.722,129.784 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="374.564" y1="158.966" x2="473.206" y2="159.861"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="465.398,164.791 475.442,159.882 465.488,154.791 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="437.02" y1="43.8808" x2="573.365" y2="134.27"/>
-    <polygon style="fill: #000000" points="579.617,138.414 568.519,137.056 573.365,134.27 574.045,128.721 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="579.617,138.414 568.519,137.056 573.365,134.27 574.045,128.721 "/>
-  </g>
-  <g>
-    <rect style="fill: #ffffff" x="-615.93" y="586.598" width="196.906" height="88.8639"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-615.93" y="586.598" width="196.906" height="88.8639"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-517.477" y="634.93">
-      <tspan x="-517.477" y="634.93">bootstap</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="425.614" y1="247.048" x2="383.292" y2="186.916"/>
-    <polygon style="fill: #000000" points="378.975,180.783 388.819,186.083 383.292,186.916 380.642,191.838 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="378.975,180.783 388.819,186.083 383.292,186.916 380.642,191.838 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 211.204 595.186 L 320.642,595.186 C 304.226,602.786 298.754,606.586 298.754,614.186 C 298.754,621.786 304.226,625.586 320.642,633.186 L 211.204,633.186 C 194.788,625.586 189.317,621.786 189.317,614.186 C 189.317,606.586 194.788,602.786 211.204,595.186z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 211.204 595.186 L 320.642,595.186 C 304.226,602.786 298.754,606.586 298.754,614.186 C 298.754,621.786 304.226,625.586 320.642,633.186 L 211.204,633.186 C 194.788,625.586 189.317,621.786 189.317,614.186 C 189.317,606.586 194.788,602.786 211.204,595.186"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="254.979" y="618.186">
-      <tspan x="254.979" y="618.186">bootstrap.py</tspan>
-    </text>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M -180.889 9.82792 L 17.161,9.82792 L 17.161,55.7578 C -22.449,48.1028 -42.254,48.1028 -81.864,55.7578 C -121.474,63.4127 -141.279,63.4127 -180.889,55.7578 L -180.889,9.82792z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -180.889 9.82792 L 17.161,9.82792 L 17.161,55.7578 C -22.449,48.1028 -42.254,48.1028 -81.864,55.7578 C -121.474,63.4127 -141.279,63.4127 -180.889,55.7578 L -180.889,9.82792"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-81.864" y="24.9654">
-      <tspan x="-81.864" y="24.9654">src/mining/config/config.json</tspan>
-      <tspan x="-81.864" y="40.9654">(information about the books)</tspan>
-    </text>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 320.818 -7.2218 L 497.518,-7.2218 L 497.518,48.7291 C 462.178,39.404 444.508,39.404 409.168,48.7291 C 373.828,58.0543 356.158,58.0543 320.818,48.7291 L 320.818,-7.2218z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 320.818 -7.2218 L 497.518,-7.2218 L 497.518,48.7291 C 462.178,39.404 444.508,39.404 409.168,48.7291 C 373.828,58.0543 356.158,58.0543 320.818,48.7291 L 320.818,-7.2218"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="409.168" y="12.0911">
-      <tspan x="409.168" y="12.0911">src/Makefile.vars</tspan>
-      <tspan x="409.168" y="28.0911">(Status of  available Books</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-418.033" y1="628.95" x2="183.999" y2="616.357"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="176.342,621.519 186.235,616.311 176.132,611.521 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="192.614" y1="480.367" x2="266.495" y2="584.222"/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="262.42,587.12 272.291,592.371 270.569,581.324 "/>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="721.162" y1="342.035" x2="330.008" y2="587.686"/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="327.348,583.451 321.539,593.004 332.667,591.92 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 584.155 590.113 L 760.855,590.113 L 760.855,646.064 C 725.515,636.738 707.845,636.738 672.505,646.064 C 637.165,655.389 619.495,655.389 584.155,646.064 L 584.155,590.113z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 584.155 590.113 L 760.855,590.113 L 760.855,646.064 C 725.515,636.738 707.845,636.738 672.505,646.064 C 637.165,655.389 619.495,655.389 584.155,646.064 L 584.155,590.113"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="672.505" y="609.426">
-      <tspan x="672.505" y="609.426">src/Makefile.vars</tspan>
-      <tspan x="672.505" y="625.426">(Status of  available Books</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="299.762" y1="614.452" x2="558.934" y2="620.222"/>
-    <polygon style="fill: #ffffff" points="569.82,625.466 580.929,620.712 570.043,615.468 "/>
-    <polygon style="fill: #ffffff" points="558.823,625.221 569.931,620.467 559.045,615.223 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="570.82,625.488 580.929,620.712 571.042,615.49 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="558.823,625.221 568.932,620.445 559.045,615.223 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M -267.47 965.757 L -94.4702,965.757 C -120.42,976.557 -129.07,981.957 -129.07,992.757 C -129.07,1003.56 -120.42,1008.96 -94.4702,1019.76 L -267.47,1019.76 C -293.42,1008.96 -302.07,1003.56 -302.07,992.757 C -302.07,981.957 -293.42,976.557 -267.47,965.757z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -267.47 965.757 L -94.4702,965.757 C -120.42,976.557 -129.07,981.957 -129.07,992.757 C -129.07,1003.56 -120.42,1008.96 -94.4702,1019.76 L -267.47,1019.76 C -293.42,1008.96 -302.07,1003.56 -302.07,992.757 C -302.07,981.957 -293.42,976.557 -267.47,965.757"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-198.27" y="980.757">
-      <tspan x="-198.27" y="980.757">src/mining/merge.py</tspan>
-      <tspan x="-198.27" y="996.757"></tspan>
+    <path style="fill: #ffffff" d="M -267.47 965.756 L -94.47,965.756 C -120.42,976.556 -129.07,981.956 -129.07,992.756 C -129.07,1003.56 -120.42,1008.96 -94.47,1019.76 L -267.47,1019.76 C -293.42,1008.96 -302.07,1003.56 -302.07,992.756 C -302.07,981.956 -293.42,976.556 -267.47,965.756z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -267.47 965.756 L -94.47,965.756 C -120.42,976.556 -129.07,981.956 -129.07,992.756 C -129.07,1003.56 -120.42,1008.96 -94.47,1019.76 L -267.47,1019.76 C -293.42,1008.96 -302.07,1003.56 -302.07,992.756 C -302.07,981.956 -293.42,976.556 -267.47,965.756"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-198.27" y="980.756">
+      <tspan x="-198.27" y="980.756">src/mining/merge.py</tspan>
+      <tspan x="-198.27" y="996.756"></tspan>
       <tspan x="-198.27" y="1012.76">Clean Indicies</tspan>
     </text>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-437.537" y1="997.638" x2="-307.296" y2="995.455"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-314.975,1000.58 -305.06,995.417 -315.142,990.586 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-437.538" y1="997.638" x2="-307.296" y2="995.454"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-314.975,1000.58 -305.06,995.416 -315.142,990.585 "/>
   </g>
   <g>
-    <path style="fill: #ffffff" d="M -54.3211 805.554 L 175.679,805.554 L 175.679,889.554 C 129.679,875.554 106.679,875.554 60.6789,889.554 C 14.6789,903.554 -8.32105,903.554 -54.3211,889.554 L -54.3211,805.554z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -54.3211 805.554 L 175.679,805.554 L 175.679,889.554 C 129.679,875.554 106.679,875.554 60.6789,889.554 C 14.6789,903.554 -8.32105,903.554 -54.3211,889.554 L -54.3211,805.554"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="60.6789" y="820.554">
-      <tspan x="60.6789" y="820.554">data/perbook/$bookfldr$/Index.csv</tspan>
-      <tspan x="60.6789" y="836.554">List of Terms of Interest /</tspan>
-      <tspan x="60.6789" y="852.554">Book Index</tspan>
-      <tspan x="60.6789" y="868.554">per book</tspan>
+    <path style="fill: #ffffff" d="M -473.334 706.392 L -243.334,706.392 L -243.334,790.392 C -289.334,776.392 -312.334,776.392 -358.334,790.392 C -404.334,804.392 -427.334,804.392 -473.334,790.392 L -473.334,706.392z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -473.334 706.392 L -243.334,706.392 L -243.334,790.392 C -289.334,776.392 -312.334,776.392 -358.334,790.392 C -404.334,804.392 -427.334,804.392 -473.334,790.392 L -473.334,706.392"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-358.334" y="721.392">
+      <tspan x="-358.334" y="721.392">data/perbook/$bookfldr$/Index.csv</tspan>
+      <tspan x="-358.334" y="737.392">List of Terms of Interest /</tspan>
+      <tspan x="-358.334" y="753.392">Book Index</tspan>
+      <tspan x="-358.334" y="769.392">per book</tspan>
     </text>
   </g>
   <g>
-    <path style="fill: #ffffff" d="M -384.077 842.17 L -101.677,842.17 L -101.677,894.541 C -158.157,885.813 -186.397,885.813 -242.877,894.541 C -299.357,903.27 -327.597,903.27 -384.077,894.541 L -384.077,842.17z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -384.077 842.17 L -101.677,842.17 L -101.677,894.541 C -158.157,885.813 -186.397,885.813 -242.877,894.541 C -299.357,903.27 -327.597,903.27 -384.077,894.541 L -384.077,842.17"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-242.877" y="859.991">
-      <tspan x="-242.877" y="859.991">data/perbook/$bookfldr$/CleanedIndex.csv</tspan>
-      <tspan x="-242.877" y="875.991">(Cleaned) List of Terms of Interest</tspan>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-127.114" y1="987.462" x2="717.213" y2="755.339"/>
+    <polygon style="fill: #ffffff" points="729.145,757.244 738.426,749.507 726.494,747.602 "/>
+    <polygon style="fill: #ffffff" points="718.539,760.16 727.82,752.423 715.888,750.518 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="730.11,756.979 738.426,749.507 727.459,747.337 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="718.539,760.16 726.856,752.688 715.888,750.518 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-332.33" y1="784.512" x2="-179.528" y2="955.625"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-183.257,958.955 -172.867,963.084 -175.798,952.294 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -140.126 1096.3 L 58.3244,1096.3 L 58.3244,1161.1 C 18.6344,1150.3 -1.2106,1150.3 -40.9006,1161.1 C -80.5906,1171.9 -100.436,1171.9 -140.126,1161.1 L -140.126,1096.3z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -140.126 1096.3 L 58.3244,1096.3 L 58.3244,1161.1 C 18.6344,1150.3 -1.2106,1150.3 -40.9006,1161.1 C -80.5906,1171.9 -100.436,1171.9 -140.126,1161.1 L -140.126,1096.3"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-40.9006" y="1111.3">
+      <tspan x="-40.9006" y="1111.3">data/allbooks/cache/rank.csv</tspan>
+      <tspan x="-40.9006" y="1127.3"></tspan>
+      <tspan x="-40.9006" y="1143.3">List of common English Words</tspan>
     </text>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-137.72" y1="965.757" x2="-202.493" y2="908.45"/>
-    <polygon style="fill: #ffffff" points="-207.418,897.416 -218.969,893.872 -214.044,904.906 "/>
-    <polygon style="fill: #ffffff" points="-199.179,904.705 -210.731,901.161 -205.806,912.195 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-208.167,896.754 -218.969,893.872 -214.793,904.243 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-199.179,904.705 -209.982,901.824 -205.806,912.195 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-69.8493" y1="1095.31" x2="-118.163" y2="1030.56"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-114.156,1027.57 -124.144,1022.54 -122.171,1033.55 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-8.18158" y1="900.517" x2="-94.2878" y2="957.992"/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-97.0637,953.834 -102.605,963.544 -91.512,962.151 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M -152.445 1091.68 L 46.0051,1091.68 L 46.0051,1156.48 C 6.31506,1145.68 -13.5299,1145.68 -53.2199,1156.48 C -92.9099,1167.28 -112.755,1167.28 -152.445,1156.48 L -152.445,1091.68z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -152.445 1091.68 L 46.0051,1091.68 L 46.0051,1156.48 C 6.31506,1145.68 -13.5299,1145.68 -53.2199,1156.48 C -92.9099,1167.28 -112.755,1167.28 -152.445,1156.48 L -152.445,1091.68"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-53.2199" y="1106.68">
-      <tspan x="-53.2199" y="1106.68">data/allbooks/cache/rank.csv</tspan>
-      <tspan x="-53.2199" y="1122.68"></tspan>
-      <tspan x="-53.2199" y="1138.68">List of common English Words</tspan>
-    </text>
-  </g>
-  <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-79.6516" y1="1090.69" x2="-120.412" y2="1030.86"/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-116.28,1028.04 -126.042,1022.59 -124.544,1033.67 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 33.1419 965.011 L 206.142,965.011 C 180.192,975.811 171.542,981.211 171.542,992.011 C 171.542,1002.81 180.192,1008.21 206.142,1019.01 L 33.1419,1019.01 C 7.1919,1008.21 -1.4581,1002.81 -1.4581,992.011 C -1.4581,981.211 7.1919,975.811 33.1419,965.011z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 33.1419 965.011 L 206.142,965.011 C 180.192,975.811 171.542,981.211 171.542,992.011 C 171.542,1002.81 180.192,1008.21 206.142,1019.01 L 33.1419,1019.01 C 7.1919,1008.21 -1.4581,1002.81 -1.4581,992.011 C -1.4581,981.211 7.1919,975.811 33.1419,965.011"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="102.342" y="980.011">
-      <tspan x="102.342" y="980.011">src/mining/merge.py</tspan>
-      <tspan x="102.342" y="996.011"></tspan>
+    <path style="fill: #ffffff" d="M 33.1419 965.012 L 206.142,965.012 C 180.192,975.812 171.542,981.212 171.542,992.012 C 171.542,1002.81 180.192,1008.21 206.142,1019.01 L 33.1419,1019.01 C 7.1919,1008.21 -1.4581,1002.81 -1.4581,992.012 C -1.4581,981.212 7.1919,975.812 33.1419,965.012z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 33.1419 965.012 L 206.142,965.012 C 180.192,975.812 171.542,981.212 171.542,992.012 C 171.542,1002.81 180.192,1008.21 206.142,1019.01 L 33.1419,1019.01 C 7.1919,1008.21 -1.4581,1002.81 -1.4581,992.012 C -1.4581,981.212 7.1919,975.812 33.1419,965.012"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="102.342" y="980.012">
+      <tspan x="102.342" y="980.012">src/mining/merge.py</tspan>
+      <tspan x="102.342" y="996.012"></tspan>
       <tspan x="102.342" y="1012.01">Merge Indicies</tspan>
     </text>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-128.077" y1="992.711" x2="-6.89383" y2="992.411"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-14.6453,997.43 -4.65777,992.405 -14.6701,987.43 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-128.077" y1="992.711" x2="-6.89372" y2="992.411"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-14.6452,997.43 -4.65765,992.405 -14.67,987.43 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="5.34396" y1="1090.68" x2="101.787" y2="1026.77"/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="104.549,1030.94 110.123,1021.25 99.0254,1022.6 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="12.3872" y1="1095.3" x2="105.891" y2="1027.22"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="108.834,1031.26 113.975,1021.33 102.948,1023.18 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="81.38" y1="884.966" x2="128.3" y2="953.899"/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="124.167,956.713 133.927,962.166 132.434,951.086 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-302.959" y1="780.955" x2="82.5018" y2="958.895"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="80.4062,963.434 91.5811,963.086 84.5974,954.355 "/>
   </g>
   <g>
     <g>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-614.187" y="1274.91" width="494.929" height="351.224"/>
-      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-366.722" y="1454.42">
-        <tspan x="-366.722" y="1454.42"></tspan>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1641.2" y="-92.2822" width="494.929" height="351.224"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1888.66" y="87.2299">
+        <tspan x="1888.66" y="87.2299"></tspan>
       </text>
     </g>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-366.722" y="1450.52">
-      <tspan x="-366.722" y="1450.52"></tspan>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1888.67" y="83.3298">
+      <tspan x="1888.67" y="83.3298"></tspan>
     </text>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-366.722" y="1450.52">
-      <tspan x="-366.722" y="1450.52"></tspan>
-    </text>
-    <g>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke-dasharray: 4; stroke: #000000" x="-571.319" y="1281.5" width="96.4527" height="38"/>
-      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-523.093" y="1304.4">
-        <tspan x="-523.093" y="1304.4">Legend</tspan>
-      </text>
-    </g>
-    <g>
-      <rect style="fill: #ffffff" x="-582.037" y="1340.93" width="181.214" height="54.7907"/>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-582.037" y="1340.93" width="181.214" height="54.7907"/>
-      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-491.43" y="1372.22">
-        <tspan x="-491.43" y="1372.22">Main command</tspan>
-      </text>
-    </g>
-    <g>
-      <path style="fill: #ffffff" d="M -555.848 1416.67 L -414.286,1416.67 C -435.52,1423.29 -442.598,1426.6 -442.598,1433.23 C -442.598,1439.85 -435.52,1443.17 -414.286,1449.79 L -555.848,1449.79 C -577.083,1443.17 -584.161,1439.85 -584.161,1433.23 C -584.161,1426.6 -577.083,1423.29 -555.848,1416.67z"/>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -555.848 1416.67 L -414.286,1416.67 C -435.52,1423.29 -442.598,1426.6 -442.598,1433.23 C -442.598,1439.85 -435.52,1443.17 -414.286,1449.79 L -555.848,1449.79 C -577.083,1443.17 -584.161,1439.85 -584.161,1433.23 C -584.161,1426.6 -577.083,1423.29 -555.848,1416.67"/>
-      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-499.223" y="1437.23">
-        <tspan x="-499.223" y="1437.23">Script/Command</tspan>
-      </text>
-    </g>
-    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-491.43" y="1368.32">
-      <tspan x="-491.43" y="1368.32"></tspan>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1888.67" y="83.3298">
+      <tspan x="1888.67" y="83.3298"></tspan>
     </text>
     <g>
-      <path style="fill: #ffffff" d="M -565.547 1473.37 L -434.847,1473.37 L -434.847,1518.97 C -460.987,1511.37 -474.057,1511.37 -500.197,1518.97 C -526.337,1526.57 -539.407,1526.57 -565.547,1518.97 L -565.547,1473.37z"/>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -565.547 1473.37 L -434.847,1473.37 L -434.847,1518.97 C -460.987,1511.37 -474.057,1511.37 -500.197,1518.97 C -526.337,1526.57 -539.407,1526.57 -565.547,1518.97 L -565.547,1473.37"/>
-      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-500.197" y="1496.37">
-        <tspan x="-500.197" y="1496.37">File</tspan>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke-dasharray: 4; stroke: #000000" x="1684.07" y="-85.6942" width="96.4527" height="38"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1732.29" y="-62.7942">
+        <tspan x="1732.29" y="-62.7942">Legend</tspan>
       </text>
     </g>
     <g>
-      <path style="fill: #ffffff" d="M -572.293 1546.2 C -546.377,1538.52 -533.42,1535.96 -507.504,1535.96 C -481.588,1535.96 -468.631,1538.52 -442.715,1546.2 L -442.715,1587.16 C -468.631,1594.83 -481.588,1597.39 -507.504,1597.39 C -533.42,1597.39 -546.377,1594.83 -572.293,1587.16 L -572.293,1546.2z"/>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -572.293 1546.2 C -546.377,1538.52 -533.42,1535.96 -507.504,1535.96 C -481.588,1535.96 -468.631,1538.52 -442.715,1546.2 L -442.715,1587.16 C -468.631,1594.83 -481.588,1597.39 -507.504,1597.39 C -533.42,1597.39 -546.377,1594.83 -572.293,1587.16 L -572.293,1546.2"/>
-      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -572.293 1546.2 C -546.377,1553.88 -533.42,1556.44 -507.504,1556.44 C -481.588,1556.44 -468.631,1553.88 -442.715,1546.2"/>
-      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-507.504" y="1575.8">
-        <tspan x="-507.504" y="1575.8">resource</tspan>
+      <rect style="fill: #ffffff" x="1673.35" y="-26.2614" width="181.214" height="54.7907"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1673.35" y="-26.2614" width="181.214" height="54.7907"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1763.96" y="5.03393">
+        <tspan x="1763.96" y="5.03393">Main command</tspan>
       </text>
     </g>
     <g>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-255.657" y1="1357.72" x2="-147.083" y2="1358.6"/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-147.123,1363.6 -137.083,1358.68 -147.042,1353.6 "/>
-    </g>
-    <g>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-250.653" y1="1403.4" x2="-154.08" y2="1404.18"/>
-      <polygon style="fill: #ffffff" points="-143.121,1409.27 -132.081,1404.35 -143.04,1399.27 "/>
-      <polygon style="fill: #ffffff" points="-154.121,1409.18 -143.081,1404.27 -154.04,1399.18 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-142.121,1409.27 -132.081,1404.35 -142.04,1399.27 "/>
-      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-154.121,1409.18 -144.081,1404.26 -154.04,1399.18 "/>
-    </g>
-    <g>
-      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-258.351" y1="1450.17" x2="-142.013" y2="1451.1"/>
-      <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-149.817,1456.04 -139.777,1451.12 -149.736,1446.04 "/>
-    </g>
-    <g>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke-dasharray: 4; stroke: #000000" x="-380.265" y="1432.74" width="110.969" height="38"/>
-      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-380.265" y="1455.64">
-        <tspan x="-380.265" y="1455.64">program flow</tspan>
+      <path style="fill: #ffffff" d="M 1699.54 49.4748 L 1841.1,49.4748 C 1819.87,56.0998 1812.79,59.4123 1812.79,66.0374 C 1812.79,72.6624 1819.87,75.9749 1841.1,82.6 L 1699.54,82.6 C 1678.3,75.9749 1671.23,72.6624 1671.23,66.0374 C 1671.23,59.4123 1678.3,56.0998 1699.54,49.4748z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1699.54 49.4748 L 1841.1,49.4748 C 1819.87,56.0998 1812.79,59.4123 1812.79,66.0374 C 1812.79,72.6624 1819.87,75.9749 1841.1,82.6 L 1699.54,82.6 C 1678.3,75.9749 1671.23,72.6624 1671.23,66.0374 C 1671.23,59.4123 1678.3,56.0998 1699.54,49.4748"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1756.16" y="70.0374">
+        <tspan x="1756.16" y="70.0374">Script/Command</tspan>
       </text>
     </g>
-    <g>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke-dasharray: 4; stroke: #000000" x="-380.705" y="1340.19" width="112.383" height="31.1801"/>
-      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-380.705" y="1359.68">
-        <tspan x="-380.705" y="1359.68">simple data flow</tspan>
-      </text>
-    </g>
-    <g>
-      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke-dasharray: 4; stroke: #000000" x="-380.873" y="1386.95" width="120.346" height="38"/>
-      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="-380.873" y="1409.85">
-        <tspan x="-380.873" y="1409.85">editing data flow</tspan>
-      </text>
-    </g>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M 246.536 800.727 L 519.286,800.727 L 519.286,874.297 C 464.736,862.035 437.461,862.035 382.911,874.297 C 328.361,886.559 301.086,886.559 246.536,874.297 L 246.536,800.727z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 246.536 800.727 L 519.286,800.727 L 519.286,874.297 C 464.736,862.035 437.461,862.035 382.911,874.297 C 328.361,886.559 301.086,886.559 246.536,874.297 L 246.536,800.727"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="382.911" y="819.381">
-      <tspan x="382.911" y="819.381">data/allbooks/Index.csv</tspan>
-      <tspan x="382.911" y="835.381"></tspan>
-      <tspan x="382.911" y="851.381">List of Terms of Interest for all local books</tspan>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1763.96" y="1.13402">
+      <tspan x="1763.96" y="1.13402"></tspan>
     </text>
+    <g>
+      <path style="fill: #ffffff" d="M 1689.84 106.175 L 1820.54,106.175 L 1820.54,151.775 C 1794.4,144.175 1781.33,144.175 1755.19,151.775 C 1729.05,159.375 1715.98,159.375 1689.84,151.775 L 1689.84,106.175z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1689.84 106.175 L 1820.54,106.175 L 1820.54,151.775 C 1794.4,144.175 1781.33,144.175 1755.19,151.775 C 1729.05,159.375 1715.98,159.375 1689.84,151.775 L 1689.84,106.175"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1755.19" y="129.175">
+        <tspan x="1755.19" y="129.175">File</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 1683.09 179.011 C 1709.01,171.332 1721.97,168.773 1747.88,168.773 C 1773.8,168.773 1786.76,171.332 1812.67,179.011 L 1812.67,219.965 C 1786.76,227.643 1773.8,230.203 1747.88,230.203 C 1721.97,230.203 1709.01,227.643 1683.09,219.965 L 1683.09,179.011z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1683.09 179.011 C 1709.01,171.332 1721.97,168.773 1747.88,168.773 C 1773.8,168.773 1786.76,171.332 1812.67,179.011 L 1812.67,219.965 C 1786.76,227.643 1773.8,230.203 1747.88,230.203 C 1721.97,230.203 1709.01,227.643 1683.09,219.965 L 1683.09,179.011"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1683.09 179.011 C 1709.01,186.69 1721.97,189.249 1747.88,189.249 C 1773.8,189.249 1786.76,186.69 1812.67,179.011"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1747.88" y="208.607">
+        <tspan x="1747.88" y="208.607">resource</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1999.73" y1="-9.46732" x2="2108.3" y2="-8.59196"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2108.26,-3.59213 2118.3,-8.51135 2108.34,-13.5918 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="2004.72" y1="36.2088" x2="2101.3" y2="36.9874"/>
+      <polygon style="fill: #ffffff" points="2112.26,42.0759 2123.3,37.1648 2112.34,32.0763 "/>
+      <polygon style="fill: #ffffff" points="2101.26,41.9873 2112.3,37.0761 2101.35,31.9876 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2113.26,42.084 2123.3,37.1648 2113.34,32.0843 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2101.26,41.9873 2111.3,37.068 2101.35,31.9876 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1997.05" y1="82.9748" x2="2113.37" y2="83.9127"/>
+      <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="2105.56,88.85 2115.6,83.9308 2105.64,78.8503 "/>
+    </g>
+    <g>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke-dasharray: 4; stroke: #000000" x="1875.12" y="65.5508" width="110.969" height="38"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1875.12" y="88.4508">
+        <tspan x="1875.12" y="88.4508">program flow</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke-dasharray: 4; stroke: #000000" x="1874.68" y="-27.0054" width="112.383" height="31.1801"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1874.68" y="-7.51534">
+        <tspan x="1874.68" y="-7.51534">simple data flow</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2.35099e-37; stroke-dasharray: 4; stroke: #000000" x="1874.51" y="19.7608" width="120.346" height="38"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1874.51" y="42.6608">
+        <tspan x="1874.51" y="42.6608">editing data flow</tspan>
+      </text>
+    </g>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="162.892" y1="965.011" x2="287.924" y2="896.04"/>
-    <polygon style="fill: #ffffff" points="299.971,895.105 307.188,885.414 295.141,886.349 "/>
-    <polygon style="fill: #ffffff" points="290.339,900.418 297.556,890.727 285.509,891.662 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="300.847,894.622 307.188,885.414 296.017,885.866 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="290.339,900.418 296.681,891.21 285.509,891.662 "/>
-  </g>
-  <g>
-    <path style="fill: #ffffff" d="M -469.646 1090.23 L -201.846,1090.23 L -201.846,1178.97 C -255.406,1165.66 -282.186,1161.22 -335.746,1161.22 C -389.306,1161.22 -416.086,1156.78 -469.646,1143.47 L -469.646,1090.23z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -469.646 1090.23 L -201.846,1090.23 L -201.846,1178.97 C -255.406,1165.66 -282.186,1161.22 -335.746,1161.22 C -389.306,1161.22 -416.086,1156.78 -469.646,1143.47 L -469.646,1090.23"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-335.746" y="1112.85">
-      <tspan x="-335.746" y="1112.85">data/perbook/$bookfldr$/metaindex.json</tspan>
-      <tspan x="-335.746" y="1128.85">Terms and their synonyms</tspan>
+    <path style="fill: #ffffff" d="M 948.866 396.758 L 1221.62,396.758 L 1221.62,470.328 C 1167.07,458.066 1139.79,458.066 1085.24,470.328 C 1030.69,482.589 1003.42,482.589 948.866,470.328 L 948.866,396.758z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 948.866 396.758 L 1221.62,396.758 L 1221.62,470.328 C 1167.07,458.066 1139.79,458.066 1085.24,470.328 C 1030.69,482.589 1003.42,482.589 948.866,470.328 L 948.866,396.758"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1085.24" y="415.412">
+      <tspan x="1085.24" y="415.412">data/allbooks/Index.csv</tspan>
+      <tspan x="1085.24" y="431.412"></tspan>
+      <tspan x="1085.24" y="447.412">List of Terms of Interest for all local books</tspan>
     </text>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-212.091" y1="1021.85" x2="-268.07" y2="1072.89"/>
-    <polygon style="fill: #ffffff" points="-279.567,1076.61 -284.327,1087.71 -272.829,1084 "/>
-    <polygon style="fill: #ffffff" points="-271.438,1069.2 -276.198,1080.3 -264.701,1076.59 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-280.306,1077.28 -284.327,1087.71 -273.568,1084.67 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-271.438,1069.2 -275.459,1079.63 -264.701,1076.59 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="162.892" y1="965.012" x2="992.658" y2="492.406"/>
+    <polygon style="fill: #ffffff" points="1004.69,491.307 1011.77,481.518 999.741,482.617 "/>
+    <polygon style="fill: #ffffff" points="995.132,496.751 1002.22,486.962 990.183,488.061 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1005.56,490.812 1011.77,481.518 1000.61,482.122 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="995.132,496.751 1001.35,487.457 990.183,488.061 "/>
   </g>
   <g>
-    <path style="fill: #ffffff" d="M 198.799 1090.94 L 482.149,1090.94 L 482.149,1179.68 C 425.479,1166.37 397.144,1161.93 340.474,1161.93 C 283.804,1161.93 255.469,1157.49 198.799,1144.18 L 198.799,1090.94z"/>
-    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 198.799 1090.94 L 482.149,1090.94 L 482.149,1179.68 C 425.479,1166.37 397.144,1161.93 340.474,1161.93 C 283.804,1161.93 255.469,1157.49 198.799,1144.18 L 198.799,1090.94"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="340.474" y="1113.56">
-      <tspan x="340.474" y="1113.56">data/perbook/$bookfldr$/metaindex.json</tspan>
-      <tspan x="340.474" y="1129.56">terms, their containers and their synonyms</tspan>
+    <path style="fill: #ffffff" d="M -435.27 1087.14 L -167.47,1087.14 L -167.47,1177.14 C -221.03,1163.64 -247.81,1159.14 -301.37,1159.14 C -354.93,1159.14 -381.71,1154.64 -435.27,1141.14 L -435.27,1087.14z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -435.27 1087.14 L -167.47,1087.14 L -167.47,1177.14 C -221.03,1163.64 -247.81,1159.14 -301.37,1159.14 C -354.93,1159.14 -381.71,1154.64 -435.27,1141.14 L -435.27,1087.14"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-301.37" y="1102.14">
+      <tspan x="-301.37" y="1102.14">data/perbook/$bookfldr$/metaindex.json</tspan>
+      <tspan x="-301.37" y="1118.14"></tspan>
+      <tspan x="-301.37" y="1134.14">Terms and their synonyms</tspan>
     </text>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="190.627" y1="1020.01" x2="262.318" y2="1075.17"/>
-    <polygon style="fill: #ffffff" points="267.987,1085.84 279.754,1088.59 274.085,1077.91 "/>
-    <polygon style="fill: #ffffff" points="259.269,1079.13 271.036,1081.88 265.367,1071.21 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="268.78,1086.45 279.754,1088.59 274.878,1078.52 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="259.269,1079.13 270.244,1081.27 265.367,1071.21 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-177.495" y1="1020.75" x2="-232.338" y2="1070.06"/>
+    <polygon style="fill: #ffffff" points="-243.861,1073.7 -248.697,1084.77 -237.174,1081.14 "/>
+    <polygon style="fill: #ffffff" points="-235.681,1066.35 -240.517,1077.42 -228.995,1073.78 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-244.604,1074.37 -248.697,1084.77 -237.918,1081.81 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-235.681,1066.35 -239.774,1076.75 -228.995,1073.78 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 507.946 382.852 L 791.296,382.852 L 791.296,472.852 C 734.626,459.352 706.291,454.852 649.621,454.852 C 592.951,454.852 564.616,450.352 507.946,436.852 L 507.946,382.852z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 507.946 382.852 L 791.296,382.852 L 791.296,472.852 C 734.626,459.352 706.291,454.852 649.621,454.852 C 592.951,454.852 564.616,450.352 507.946,436.852 L 507.946,382.852"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="649.621" y="397.852">
+      <tspan x="649.621" y="397.852">data/perbook/$bookfldr$/metaindex.json</tspan>
+      <tspan x="649.621" y="413.852"></tspan>
+      <tspan x="649.621" y="429.852">terms, their containers and their synonyms</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="178.831" y1="964.009" x2="609.373" y2="473.688"/>
+    <polygon style="fill: #ffffff" points="620.388,468.721 623.889,457.157 612.874,462.123 "/>
+    <polygon style="fill: #ffffff" points="613.13,476.987 616.631,465.422 605.616,470.389 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="621.048,467.97 623.889,457.157 613.534,461.372 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="613.13,476.987 615.971,466.174 605.616,470.389 "/>
   </g>
   <g>
     <path style="fill: #ffffff" d="M 28.8426 1171.69 L 268.543,1171.69 L 268.543,1237.78 C 220.603,1226.77 196.633,1226.77 148.693,1237.78 C 100.753,1248.8 76.7826,1248.8 28.8426,1237.78 L 28.8426,1171.69z"/>
     <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 28.8426 1171.69 L 268.543,1171.69 L 268.543,1237.78 C 220.603,1226.77 196.633,1226.77 148.693,1237.78 C 100.753,1248.8 76.7826,1248.8 28.8426,1237.78 L 28.8426,1171.69"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="148.693" y="1187.23">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="148.693" y="1187.23">
       <tspan x="148.693" y="1187.23">data/allbooks/crosscuts.csv</tspan>
       <tspan x="148.693" y="1203.23"></tspan>
       <tspan x="148.693" y="1219.23">Tells which term is in which resource</tspan>
@@ -509,7 +226,818 @@
     <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="145.316,1146.34 150.06,1156.47 155.313,1146.6 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="172.552" y1="992.239" x2="449.461" y2="995.692"/>
-    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="441.635,1000.59 451.697,995.719 441.76,990.595 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="172.46" y1="992.033" x2="698.219" y2="992.652"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="690.449,997.643 700.455,992.655 690.461,987.643 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 746.509 965.886 L 961.134,965.886 C 928.94,976.686 918.209,982.086 918.209,992.886 C 918.209,1003.69 928.94,1009.09 961.134,1019.89 L 746.509,1019.89 C 714.315,1009.09 703.584,1003.69 703.584,992.886 C 703.584,982.086 714.315,976.686 746.509,965.886z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 746.509 965.886 L 961.134,965.886 C 928.94,976.686 918.209,982.086 918.209,992.886 C 918.209,1003.69 928.94,1009.09 961.134,1019.89 L 746.509,1019.89 C 714.315,1009.09 703.584,1003.69 703.584,992.886 C 703.584,982.086 714.315,976.686 746.509,965.886"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="832.359" y="980.886">
+      <tspan x="832.359" y="980.886">src/mining/frequencies.py</tspan>
+      <tspan x="832.359" y="996.886"></tspan>
+      <tspan x="832.359" y="1012.89">frequencies</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="861.432" y1="744.067" x2="891.054" y2="952.777"/>
+    <polygon style="fill: #ffffff" points="886.104,953.48 892.459,962.678 896.004,952.075 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="886.104,953.48 892.459,962.678 896.004,952.075 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="661.906" y1="455.942" x2="879.626" y2="953.741"/>
+    <polygon style="fill: #ffffff" points="875.045,955.744 883.633,962.903 884.207,951.737 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="875.045,955.744 883.633,962.903 884.207,951.737 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1140.21" y1="889.528" x2="972.397" y2="960.77"/>
+    <polygon style="fill: #ffffff" points="970.443,956.167 963.192,964.678 974.351,965.372 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="970.443,956.167 963.192,964.678 974.351,965.372 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 100.678 400.126 L 298.728,400.126 L 298.728,464.926 C 259.118,454.126 239.313,454.126 199.703,464.926 C 160.093,475.726 140.288,475.726 100.678,464.926 L 100.678,400.126z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 100.678 400.126 L 298.728,400.126 L 298.728,464.926 C 259.118,454.126 239.313,454.126 199.703,464.926 C 160.093,475.726 140.288,475.726 100.678,464.926 L 100.678,400.126"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="199.703" y="415.126">
+      <tspan x="199.703" y="415.126">src/mining/config/config.json</tspan>
+      <tspan x="199.703" y="431.126"></tspan>
+      <tspan x="199.703" y="447.126">(information about the books)</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="227.144" y1="459.773" x2="852.011" y2="957.269"/>
+    <polygon style="fill: #ffffff" points="848.897,961.181 859.834,963.498 855.125,953.358 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="848.897,961.181 859.834,963.498 855.125,953.358 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -290.858 469.846 L -91.108,469.846 L -91.108,534.646 C -131.058,523.846 -151.033,523.846 -190.983,534.646 C -230.933,545.446 -250.908,545.446 -290.858,534.646 L -290.858,469.846z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -290.858 469.846 L -91.108,469.846 L -91.108,534.646 C -131.058,523.846 -151.033,523.846 -190.983,534.646 C -230.933,545.446 -250.908,545.446 -290.858,534.646 L -290.858,469.846"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-190.983" y="484.846">
+      <tspan x="-190.983" y="484.846">src/mining/config/whitelist.csv</tspan>
+      <tspan x="-190.983" y="500.846"></tspan>
+      <tspan x="-190.983" y="516.846">Whitelisted Terms</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-146.037" y1="527.697" x2="822.834" y2="959.913"/>
+    <polygon style="fill: #ffffff" points="820.797,964.479 831.966,963.987 824.871,955.347 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="820.797,964.479 831.966,963.987 824.871,955.347 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 271.626 1260.06 L 551.676,1260.06 L 551.676,1344.06 C 495.666,1330.06 467.661,1330.06 411.651,1344.06 C 355.641,1358.06 327.636,1358.06 271.626,1344.06 L 271.626,1260.06z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 271.626 1260.06 L 551.676,1260.06 L 551.676,1344.06 C 495.666,1330.06 467.661,1330.06 411.651,1344.06 C 355.641,1358.06 327.636,1358.06 271.626,1344.06 L 271.626,1260.06"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="411.651" y="1275.06">
+      <tspan x="411.651" y="1275.06">data/perbook/$bookfldr$/frequencies.csv</tspan>
+      <tspan x="411.651" y="1291.06"></tspan>
+      <tspan x="411.651" y="1307.06">Terms, variatons and number of occurence</tspan>
+      <tspan x="411.651" y="1323.06"></tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 878.374 1237.53 L 1222.37,1237.53 L 1222.37,1302.33 C 1153.57,1291.53 1119.17,1291.53 1050.37,1302.33 C 981.574,1313.13 947.174,1313.13 878.374,1302.33 L 878.374,1237.53z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 878.374 1237.53 L 1222.37,1237.53 L 1222.37,1302.33 C 1153.57,1291.53 1119.17,1291.53 1050.37,1302.33 C 981.574,1313.13 947.174,1313.13 878.374,1302.33 L 878.374,1237.53"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1050.37" y="1252.53">
+      <tspan x="1050.37" y="1252.53">data/perbook/$bookfldr$/frequenciesDistribution.csv</tspan>
+      <tspan x="1050.37" y="1268.53"></tspan>
+      <tspan x="1050.37" y="1284.53">Terms, variations, occurence per chapter</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="640.998" y1="1121.4" x2="491.523" y2="1243.7"/>
+    <polygon style="fill: #ffffff" points="479.843,1246.8 474.496,1257.64 486.176,1254.54 "/>
+    <polygon style="fill: #ffffff" points="488.357,1239.83 483.01,1250.67 494.689,1247.57 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="479.069,1247.43 474.496,1257.64 485.402,1255.17 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="488.357,1239.83 483.784,1250.04 494.689,1247.57 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="675.268" y1="1118.31" x2="935.351" y2="1227.18"/>
+    <polygon style="fill: #ffffff" points="943.567,1236.04 955.645,1235.67 947.429,1226.81 "/>
+    <polygon style="fill: #ffffff" points="933.42,1231.79 945.498,1231.43 937.282,1222.57 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="944.49,1236.42 955.645,1235.67 948.351,1227.2 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="933.42,1231.79 944.575,1231.04 937.282,1222.57 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 405.974 1380.54 L 680.224,1380.54 L 680.224,1462.14 C 625.374,1448.54 597.949,1448.54 543.099,1462.14 C 488.249,1475.74 460.824,1475.74 405.974,1462.14 L 405.974,1380.54z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 405.974 1380.54 L 680.224,1380.54 L 680.224,1462.14 C 625.374,1448.54 597.949,1448.54 543.099,1462.14 C 488.249,1475.74 460.824,1475.74 405.974,1462.14 L 405.974,1380.54"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="543.099" y="1402.54">
+      <tspan x="543.099" y="1402.54">data/perbook/$bookfldr$/frequencies.json</tspan>
+      <tspan x="543.099" y="1418.54"></tspan>
+      <tspan x="543.099" y="1434.54">Total number of occurence</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 747.836 1379.8 L 1096.69,1379.8 L 1096.69,1463.8 C 1026.92,1449.8 992.031,1449.8 922.261,1463.8 C 852.491,1477.8 817.606,1477.8 747.836,1463.8 L 747.836,1379.8z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 747.836 1379.8 L 1096.69,1379.8 L 1096.69,1463.8 C 1026.92,1449.8 992.031,1449.8 922.261,1463.8 C 852.491,1477.8 817.606,1477.8 747.836,1463.8 L 747.836,1379.8"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="922.261" y="1394.8">
+      <tspan x="922.261" y="1394.8">data/perbook/$bookfldr$/frequenciesDistribution.json</tspan>
+      <tspan x="922.261" y="1410.8"></tspan>
+      <tspan x="922.261" y="1426.8">Occurence per FIle</tspan>
+      <tspan x="922.261" y="1442.8"></tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 530.05 1515.11 L 912.7,1515.11 L 912.7,1579.91 C 836.17,1569.11 797.905,1569.11 721.375,1579.91 C 644.845,1590.71 606.58,1590.71 530.05,1579.91 L 530.05,1515.11z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 530.05 1515.11 L 912.7,1515.11 L 912.7,1579.91 C 836.17,1569.11 797.905,1569.11 721.375,1579.91 C 644.845,1590.71 606.58,1590.71 530.05,1579.91 L 530.05,1515.11"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="721.375" y="1530.11">
+      <tspan x="721.375" y="1530.11">data/perbook/$bookfldr$/frequenciesDistributionDeep.json</tspan>
+      <tspan x="721.375" y="1546.11"></tspan>
+      <tspan x="721.375" y="1562.11"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="649.531" y1="1125.69" x2="568.241" y2="1356.69"/>
+    <polygon style="fill: #ffffff" points="559.873,1365.41 560.938,1377.44 569.306,1368.73 "/>
+    <polygon style="fill: #ffffff" points="563.524,1355.03 564.589,1367.07 572.957,1358.35 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="559.541,1366.35 560.938,1377.44 568.974,1369.67 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="563.524,1355.03 564.921,1366.13 572.957,1358.35 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="666.073" y1="1122.97" x2="864.815" y2="1360.22"/>
+    <polygon style="fill: #ffffff" points="868.046,1371.87 878.942,1377.09 875.712,1365.44 "/>
+    <polygon style="fill: #ffffff" points="860.982,1363.43 871.879,1368.65 868.648,1357.01 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="868.688,1372.63 878.942,1377.09 876.354,1366.21 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="860.982,1363.43 871.237,1367.89 868.648,1357.01 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="657.689" y1="1127.18" x2="711.987" y2="1490.15"/>
+    <polygon style="fill: #ffffff" points="708.669,1501.77 715.241,1511.91 718.559,1500.29 "/>
+    <polygon style="fill: #ffffff" points="707.042,1490.89 713.614,1501.03 716.932,1489.41 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="708.817,1502.76 715.241,1511.91 718.707,1501.28 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="707.042,1490.89 713.466,1500.04 716.932,1489.41 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="197.354" y1="466.554" x2="157.352" y2="954.109"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="152.368,953.7 156.534,964.076 162.335,954.518 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="179.145" y1="470.884" x2="-123.619" y2="956.281"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="-127.861,953.634 -128.911,964.765 -119.376,958.927 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="-173.952" y1="531.541" x2="128.477" y2="955.863"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="124.406,958.765 134.281,964.006 132.549,952.961 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="-188.464" y1="535.042" x2="-149.859" y2="954.816"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="-154.838,955.273 -148.943,964.773 -144.88,954.358 "/>
+  </g>
+  <g>
+    <g>
+      <path style="fill: #ffffff" d="M -283.784 -515.629 C -247.384,-528.129 -229.184,-532.296 -192.784,-532.296 C -156.384,-532.296 -138.184,-528.129 -101.784,-515.629 L -101.784,-448.963 C -138.184,-436.463 -156.384,-432.296 -192.784,-432.296 C -229.184,-432.296 -247.384,-436.463 -283.784,-448.963 L -283.784,-515.629z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -283.784 -515.629 C -247.384,-528.129 -229.184,-532.296 -192.784,-532.296 C -156.384,-532.296 -138.184,-528.129 -101.784,-515.629 L -101.784,-448.963 C -138.184,-436.463 -156.384,-432.296 -192.784,-432.296 C -229.184,-432.296 -247.384,-436.463 -283.784,-448.963 L -283.784,-515.629"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -283.784 -515.629 C -247.384,-503.129 -229.184,-498.963 -192.784,-498.963 C -156.384,-498.963 -138.184,-503.129 -101.784,-515.629"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-192.784" y="-477.963">
+        <tspan x="-192.784" y="-477.963">online-resources</tspan>
+        <tspan x="-192.784" y="-461.963">(e-books)</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 171.108 -515.842 L 390.608,-515.842 L 390.608,-451.042 C 346.708,-461.842 324.758,-461.842 280.858,-451.042 C 236.958,-440.242 215.008,-440.242 171.108,-451.042 L 171.108,-515.842z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 171.108 -515.842 L 390.608,-515.842 L 390.608,-451.042 C 346.708,-461.842 324.758,-461.842 280.858,-451.042 C 236.958,-440.242 215.008,-440.242 171.108,-451.042 L 171.108,-515.842"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="280.858" y="-500.842">
+        <tspan x="280.858" y="-500.842">data/perbook/$bookfldr$/</tspan>
+        <tspan x="280.858" y="-484.842">metadata/chapters.txt</tspan>
+        <tspan x="280.858" y="-468.842">(per-book-file with chapters' urls)</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 467.286 -516.844 L 643.986,-516.844 L 643.986,-460.893 C 608.646,-470.218 590.976,-470.218 555.636,-460.893 C 520.296,-451.568 502.626,-451.568 467.286,-460.893 L 467.286,-516.844z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 467.286 -516.844 L 643.986,-516.844 L 643.986,-460.893 C 608.646,-470.218 590.976,-470.218 555.636,-460.893 C 520.296,-451.568 502.626,-451.568 467.286,-460.893 L 467.286,-516.844"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="555.636" y="-497.531">
+        <tspan x="555.636" y="-497.531">src/Makefile.vars</tspan>
+        <tspan x="555.636" y="-481.531">(Status of  available Books</tspan>
+      </text>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="-496.97" y="-413.482" width="214.002" height="109"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-496.97" y="-413.482" width="214.002" height="109"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-389.969" y="-355.082">
+        <tspan x="-389.969" y="-355.082">download-books</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 121.487 -382.622 L 212.862,-382.622 C 199.155,-374.222 194.587,-370.022 194.587,-361.622 C 194.587,-353.222 199.155,-349.022 212.862,-340.622 L 121.487,-340.622 C 107.78,-349.022 103.212,-353.222 103.212,-361.622 C 103.212,-370.022 107.78,-374.222 121.487,-382.622z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 121.487 -382.622 L 212.862,-382.622 C 199.155,-374.222 194.587,-370.022 194.587,-361.622 C 194.587,-353.222 199.155,-349.022 212.862,-340.622 L 121.487,-340.622 C 107.78,-349.022 103.212,-353.222 103.212,-361.622 C 103.212,-370.022 107.78,-374.222 121.487,-382.622"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="158.037" y="-357.622">
+        <tspan x="158.037" y="-357.622">crawler.py</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-155.976" y1="-433.501" x2="-127.966" y2="-396.37"/>
+      <polygon style="fill: #ffffff" points="-125.333,-384.578 -114.717,-378.807 -117.35,-390.6 "/>
+      <polygon style="fill: #ffffff" points="-131.958,-393.359 -121.341,-387.589 -123.974,-399.381 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-124.731,-383.779 -114.717,-378.807 -116.748,-389.802 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-131.958,-393.359 -121.944,-388.387 -123.974,-399.381 "/>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 493.426 -259.225 C 525.426,-270.725 541.426,-274.558 573.426,-274.558 C 605.426,-274.558 621.426,-270.725 653.426,-259.225 L 653.426,-197.891 C 621.426,-186.391 605.426,-182.558 573.426,-182.558 C 541.426,-182.558 525.426,-186.391 493.426,-197.891 L 493.426,-259.225z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 493.426 -259.225 C 525.426,-270.725 541.426,-274.558 573.426,-274.558 C 605.426,-274.558 621.426,-270.725 653.426,-259.225 L 653.426,-197.891 C 621.426,-186.391 605.426,-182.558 573.426,-182.558 C 541.426,-182.558 525.426,-186.391 493.426,-197.891 L 493.426,-259.225"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 493.426 -259.225 C 525.426,-247.725 541.426,-243.891 573.426,-243.891 C 605.426,-243.891 621.426,-247.725 653.426,-259.225"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="573.426" y="-224.891">
+        <tspan x="573.426" y="-224.891">local resource</tspan>
+        <tspan x="573.426" y="-208.891">data/perbook</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-282.968" y1="-358.982" x2="-194.067" y2="-358.633"/>
+      <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-201.851,-353.664 -191.831,-358.625 -201.812,-363.664 "/>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 626.167 -377.984 L 776.542,-377.984 C 753.986,-369.784 746.467,-365.684 746.467,-357.484 C 746.467,-349.284 753.986,-345.184 776.542,-336.984 L 626.167,-336.984 C 603.611,-345.184 596.092,-349.284 596.092,-357.484 C 596.092,-365.684 603.611,-369.784 626.167,-377.984z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 626.167 -377.984 L 776.542,-377.984 C 753.986,-369.784 746.467,-365.684 746.467,-357.484 C 746.467,-349.284 753.986,-345.184 776.542,-336.984 L 626.167,-336.984 C 603.611,-345.184 596.092,-349.284 596.092,-357.484 C 596.092,-365.684 603.611,-369.784 626.167,-377.984"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="686.317" y="-361.484">
+        <tspan x="686.317" y="-361.484">cleanOnlineBooks</tspan>
+        <tspan x="686.317" y="-345.484">(src/Mining)</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="194.587" y1="-361.622" x2="377.249" y2="-360.369"/>
+      <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="369.451,-355.422 379.485,-360.354 369.519,-365.422 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="195.729" y1="-358.951" x2="509.969" y2="-277.299"/>
+      <polygon style="fill: #ffffff" points="519.358,-269.693 531.262,-271.766 521.873,-279.372 "/>
+      <polygon style="fill: #ffffff" points="508.711,-272.46 520.615,-274.533 511.226,-282.138 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="520.326,-269.442 531.262,-271.766 522.841,-279.121 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="508.711,-272.46 519.647,-274.784 511.226,-282.138 "/>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 809.284 -235.761 C 842.604,-245.261 859.264,-248.428 892.584,-248.428 C 925.904,-248.428 942.564,-245.261 975.884,-235.761 L 975.884,-185.095 C 942.564,-175.595 925.904,-172.428 892.584,-172.428 C 859.264,-172.428 842.604,-175.595 809.284,-185.095 L 809.284,-235.761z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 809.284 -235.761 C 842.604,-245.261 859.264,-248.428 892.584,-248.428 C 925.904,-248.428 942.564,-245.261 975.884,-235.761 L 975.884,-185.095 C 942.564,-175.595 925.904,-172.428 892.584,-172.428 C 859.264,-172.428 842.604,-175.595 809.284,-185.095 L 809.284,-235.761"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 809.284 -235.761 C 842.604,-226.261 859.264,-223.095 892.584,-223.095 C 925.904,-223.095 942.564,-226.261 975.884,-235.761"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="892.584" y="-208.095">
+        <tspan x="892.584" y="-208.095">"cleaned" resource (txt)</tspan>
+        <tspan x="892.584" y="-192.095">data/perbook</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="613.426" y1="-271.204" x2="682.465" y2="-321.683"/>
+      <polygon style="fill: #ffffff" points="694.296,-324.139 700.224,-334.668 688.394,-332.212 "/>
+      <polygon style="fill: #ffffff" points="685.416,-317.647 691.345,-328.175 679.514,-325.719 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="695.103,-324.73 700.224,-334.668 689.201,-332.802 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="685.416,-317.647 690.538,-327.585 679.514,-325.719 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="701.356" y1="-336.984" x2="870.592" y2="-258.612"/>
+      <polygon style="fill: #ffffff" points="878.472,-249.453 890.555,-249.368 882.674,-258.527 "/>
+      <polygon style="fill: #ffffff" points="868.491,-254.075 880.573,-253.99 872.693,-263.15 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="879.38,-249.033 890.555,-249.368 883.582,-258.107 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="868.491,-254.075 879.666,-254.41 872.693,-263.15 "/>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 404.549 -378.656 L 513.987,-378.656 C 497.571,-371.056 492.099,-367.256 492.099,-359.656 C 492.099,-352.056 497.571,-348.256 513.987,-340.656 L 404.549,-340.656 C 388.134,-348.256 382.662,-352.056 382.662,-359.656 C 382.662,-367.256 388.134,-371.056 404.549,-378.656z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 404.549 -378.656 L 513.987,-378.656 C 497.571,-371.056 492.099,-367.256 492.099,-359.656 C 492.099,-352.056 497.571,-348.256 513.987,-340.656 L 404.549,-340.656 C 388.134,-348.256 382.662,-352.056 382.662,-359.656 C 382.662,-367.256 388.134,-371.056 404.549,-378.656"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="448.324" y="-355.656">
+        <tspan x="448.324" y="-355.656">bootstrap.py</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="493.102" y1="-379.634" x2="526.277" y2="-435.111"/>
+      <polygon style="fill: #ffffff" points="536.214,-441.986 537.568,-453.992 527.632,-447.118 "/>
+      <polygon style="fill: #ffffff" points="530.569,-432.545 531.923,-444.552 521.986,-437.677 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="536.727,-442.844 537.568,-453.992 528.145,-447.976 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="530.569,-432.545 531.41,-443.693 521.986,-437.677 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="-505.982" y="-128.945" width="205.892" height="123.384"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-505.982" y="-128.945" width="205.892" height="123.384"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-403.036" y="-63.3524">
+        <tspan x="-403.036" y="-63.3524">link-books</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M -236.94 -153.661 C -213.27,-161.42 -201.435,-164.007 -177.765,-164.007 C -154.096,-164.007 -142.261,-161.42 -118.591,-153.661 L -118.591,-112.277 C -142.261,-104.518 -154.096,-101.931 -177.765,-101.931 C -201.435,-101.931 -213.27,-104.518 -236.94,-112.277 L -236.94,-153.661z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -236.94 -153.661 C -213.27,-161.42 -201.435,-164.007 -177.765,-164.007 C -154.096,-164.007 -142.261,-161.42 -118.591,-153.661 L -118.591,-112.277 C -142.261,-104.518 -154.096,-101.931 -177.765,-101.931 C -201.435,-101.931 -213.27,-104.518 -236.94,-112.277 L -236.94,-153.661"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -236.94 -153.661 C -213.27,-145.901 -201.435,-143.315 -177.765,-143.315 C -154.096,-143.315 -142.261,-145.901 -118.591,-153.661"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-177.765" y="-123.796">
+        <tspan x="-177.765" y="-123.796">Dropbox-Books</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="308.252" y1="-92.4801" x2="461.575" y2="-329.4"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="465.773,-326.683 467.008,-337.795 457.378,-332.116 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20 4 4 4 4 4; stroke: #000000" x1="-299.088" y1="-67.9651" x2="-16.6655" y2="-69.9017"/>
+      <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-24.395,-64.8486 -14.4295,-69.917 -24.4636,-74.8483 "/>
+    </g>
+    <g>
+      <polygon style="fill: #ffffff" points="22.0425,-91.3926 55.2784,-70.1671 22.0425,-48.9416 -11.1935,-70.1671 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="22.0425,-91.3926 55.2784,-70.1671 22.0425,-48.9416 -11.1935,-70.1671 "/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="22.0425" y="-66.2671">
+        <tspan x="22.0425" y="-66.2671"></tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 235.758 -83.5589 C 257.767,-90.3372 268.772,-92.5966 290.782,-92.5966 C 312.791,-92.5966 323.796,-90.3372 345.805,-83.5589 L 345.805,-47.4081 C 323.796,-40.6299 312.791,-38.3705 290.782,-38.3705 C 268.772,-38.3705 257.767,-40.6299 235.758,-47.4081 L 235.758,-83.5589z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 235.758 -83.5589 C 257.767,-90.3372 268.772,-92.5966 290.782,-92.5966 C 312.791,-92.5966 323.796,-90.3372 345.805,-83.5589 L 345.805,-47.4081 C 323.796,-40.6299 312.791,-38.3705 290.782,-38.3705 C 268.772,-38.3705 257.767,-40.6299 235.758,-47.4081 L 235.758,-83.5589"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 235.758 -83.5589 C 257.767,-76.7806 268.772,-74.5212 290.782,-74.5212 C 312.791,-74.5212 323.796,-76.7806 345.805,-83.5589"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="290.782" y="-56.9647">
+        <tspan x="290.782" y="-56.9647">local-Books</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-117.583" y1="-118.235" x2="1.84839" y2="-88.9959"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="0.659399,-84.1393 11.5615,-86.6179 3.03738,-93.8525 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="46.9694" y1="-64.8606" x2="223.528" y2="-59.1039"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="223.365,-54.1066 233.523,-58.7781 223.691,-64.1013 "/>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M -155.198 -377.022 L 12.114,-377.022 C -12.9829,-369.422 -21.3485,-365.622 -21.3485,-358.022 C -21.3485,-350.422 -12.9829,-346.622 12.114,-339.022 L -155.198,-339.022 C -180.295,-346.622 -188.661,-350.422 -188.661,-358.022 C -188.661,-365.622 -180.295,-369.422 -155.198,-377.022z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -155.198 -377.022 L 12.114,-377.022 C -12.9829,-369.422 -21.3485,-365.622 -21.3485,-358.022 C -21.3485,-350.422 -12.9829,-346.622 12.114,-339.022 L -155.198,-339.022 C -180.295,-346.622 -188.661,-350.422 -188.661,-358.022 C -188.661,-365.622 -180.295,-369.422 -155.198,-377.022"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-88.2735" y="-354.022">
+        <tspan x="-88.2735" y="-354.022">bookDownloader.py</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M -46.3874 -285.957 C -14.7635,-295.631 1.04849,-298.856 32.6724,-298.856 C 64.2963,-298.856 80.1083,-295.631 111.732,-285.957 L 111.732,-234.36 C 80.1083,-224.686 64.2963,-221.461 32.6724,-221.461 C 1.04849,-221.461 -14.7635,-224.686 -46.3874,-234.36 L -46.3874,-285.957z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -46.3874 -285.957 C -14.7635,-295.631 1.04849,-298.856 32.6724,-298.856 C 64.2963,-298.856 80.1083,-295.631 111.732,-285.957 L 111.732,-234.36 C 80.1083,-224.686 64.2963,-221.461 32.6724,-221.461 C 1.04849,-221.461 -14.7635,-224.686 -46.3874,-234.36 L -46.3874,-285.957"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -46.3874 -285.957 C -14.7635,-276.283 1.04849,-273.058 32.6724,-273.058 C 64.2963,-273.058 80.1083,-276.283 111.732,-285.957"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="32.6724" y="-257.709">
+        <tspan x="32.6724" y="-257.709">selection of</tspan>
+        <tspan x="32.6724" y="-241.709">online-resources</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-23.6175" y1="-338.018" x2="-9.32455" y2="-318.248"/>
+      <polygon style="fill: #ffffff" points="-6.93174,-306.404 3.56499,-300.42 1.17218,-312.263 "/>
+      <polygon style="fill: #ffffff" points="-13.3765,-315.319 -2.87978,-309.334 -5.27259,-321.178 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-6.34585,-305.594 3.56499,-300.42 1.75807,-311.453 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-13.3765,-315.319 -3.46567,-310.144 -5.27259,-321.178 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="84.4527" y1="-294.547" x2="132.129" y2="-326.211"/>
+      <polygon style="fill: #ffffff" points="144.058,-328.131 150.456,-338.382 138.526,-336.461 "/>
+      <polygon style="fill: #ffffff" points="134.895,-322.045 141.292,-332.296 129.363,-330.376 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="144.891,-328.684 150.456,-338.382 139.359,-337.015 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="134.895,-322.045 140.459,-331.743 129.363,-330.376 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-20.3493" y1="-358.474" x2="98.7409" y2="-361.508"/>
+      <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="91.1069,-356.312 100.976,-361.565 90.8521,-366.309 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="22.2675" y1="-459.467" x2="-19.931" y2="-388.53"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-24.2281,-391.087 -25.0436,-379.936 -15.6339,-385.974 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="56.333" y1="-465.396" x2="148.542" y2="-391.286"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="145.409,-387.388 156.336,-385.021 151.674,-395.183 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="253.203" y1="-444.297" x2="211.24" y2="-393.092"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="207.373,-396.262 204.901,-385.358 215.107,-389.923 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="492.1" y1="-359.656" x2="590.742" y2="-358.761"/>
+      <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="582.933,-353.831 592.978,-358.74 583.024,-363.831 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="581.666" y1="-465.442" x2="691.697" y2="-386.126"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="688.773,-382.07 699.809,-380.278 694.621,-390.182 "/>
+    </g>
+    <g>
+      <rect style="fill: #ffffff" x="-498.394" y="67.9754" width="196.906" height="88.8639"/>
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-498.394" y="67.9754" width="196.906" height="88.8639"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-399.941" y="116.307">
+        <tspan x="-399.941" y="116.307">bootstap</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="543.15" y1="-271.575" x2="502.266" y2="-329.662"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="506.355,-332.54 496.511,-337.839 498.178,-326.784 "/>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 328.741 76.5634 L 438.179,76.5634 C 421.763,84.1634 416.291,87.9634 416.291,95.5634 C 416.291,103.163 421.763,106.963 438.179,114.563 L 328.741,114.563 C 312.326,106.963 306.854,103.163 306.854,95.5634 C 306.854,87.9634 312.326,84.1634 328.741,76.5634z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 328.741 76.5634 L 438.179,76.5634 C 421.763,84.1634 416.291,87.9634 416.291,95.5634 C 416.291,103.163 421.763,106.963 438.179,114.563 L 328.741,114.563 C 312.326,106.963 306.854,103.163 306.854,95.5634 C 306.854,87.9634 312.326,84.1634 328.741,76.5634"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="372.516" y="99.5634">
+        <tspan x="372.516" y="99.5634">bootstrap.py</tspan>
+      </text>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M -63.352 -508.794 L 134.698,-508.794 L 134.698,-462.864 C 95.088,-470.519 75.283,-470.519 35.673,-462.864 C -3.937,-455.209 -23.742,-455.209 -63.352,-462.864 L -63.352,-508.794z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -63.352 -508.794 L 134.698,-508.794 L 134.698,-462.864 C 95.088,-470.519 75.283,-470.519 35.673,-462.864 C -3.937,-455.209 -23.742,-455.209 -63.352,-462.864 L -63.352,-508.794"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="35.673" y="-493.657">
+        <tspan x="35.673" y="-493.657">src/mining/config/config.json</tspan>
+        <tspan x="35.673" y="-477.657">(information about the books)</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-300.496" y1="110.327" x2="301.536" y2="97.7348"/>
+      <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="293.879,102.896 303.772,97.688 293.67,92.8982 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="310.151" y1="-38.2557" x2="384.032" y2="65.5996"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="379.958,68.4979 389.829,73.7481 388.106,62.7012 "/>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="838.698" y1="-176.587" x2="447.545" y2="69.0629"/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="444.886,64.8287 439.076,74.3813 450.204,73.2972 "/>
+    </g>
+    <g>
+      <path style="fill: #ffffff" d="M 701.692 71.4894 L 878.392,71.4894 L 878.392,127.44 C 843.052,118.115 825.382,118.115 790.042,127.44 C 754.702,136.765 737.032,136.765 701.692,127.44 L 701.692,71.4894z"/>
+      <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 701.692 71.4894 L 878.392,71.4894 L 878.392,127.44 C 843.052,118.115 825.382,118.115 790.042,127.44 C 754.702,136.765 737.032,136.765 701.692,127.44 L 701.692,71.4894"/>
+      <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="790.042" y="90.8023">
+        <tspan x="790.042" y="90.8023">src/Makefile.vars</tspan>
+        <tspan x="790.042" y="106.802">(Status of  available Books</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="417.299" y1="95.8295" x2="676.471" y2="101.599"/>
+      <polygon style="fill: #ffffff" points="687.357,106.843 698.466,102.089 687.58,96.8452 "/>
+      <polygon style="fill: #ffffff" points="676.36,106.598 687.468,101.844 676.582,96.6004 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="688.357,106.865 698.466,102.089 688.579,96.8674 "/>
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="676.36,106.598 686.469,101.822 676.582,96.6004 "/>
+    </g>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="1134.17" y1="672.863" x2="923.471" y2="956.864"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="919.456,953.885 917.513,964.895 927.487,959.843 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1544.07 963.994 L 1758.69,963.994 C 1726.5,974.794 1715.77,980.194 1715.77,990.994 C 1715.77,1001.79 1726.5,1007.19 1758.69,1017.99 L 1544.07,1017.99 C 1511.87,1007.19 1501.14,1001.79 1501.14,990.994 C 1501.14,980.194 1511.87,974.794 1544.07,963.994z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1544.07 963.994 L 1758.69,963.994 C 1726.5,974.794 1715.77,980.194 1715.77,990.994 C 1715.77,1001.79 1726.5,1007.19 1758.69,1017.99 L 1544.07,1017.99 C 1511.87,1007.19 1501.14,1001.79 1501.14,990.994 C 1501.14,980.194 1511.87,974.794 1544.07,963.994"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1629.92" y="978.994">
+      <tspan x="1629.92" y="978.994">src/mining/frequencies.py</tspan>
+      <tspan x="1629.92" y="994.994"></tspan>
+      <tspan x="1629.92" y="1010.99">merge frequencies</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="919.188" y1="992.833" x2="1500.27" y2="991.454"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1490.28,996.478 1500.27,991.454 1490.26,986.478 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="1113.96" y1="465.668" x2="1655.95" y2="956.276"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1652.6,959.983 1663.36,962.987 1659.31,952.57 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="1293.82" y1="873.676" x2="1589.12" y2="960.183"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1587.72,964.981 1598.72,962.994 1590.53,955.384 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="705.796" y1="458.133" x2="1633.57" y2="958.252"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1631.19,962.654 1642.37,962.997 1635.94,953.851 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="-90.1108" y1="533.508" x2="1575.39" y2="960.506"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1574.14,965.349 1585.07,962.989 1576.63,955.663 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="253.935" y1="457.994" x2="1609.3" y2="959.539"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1607.56,964.228 1618.68,963.009 1611.04,954.849 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 716.356 678.956 L 998.756,678.956 L 998.756,743.756 C 942.276,732.956 914.036,732.956 857.556,743.756 C 801.076,754.556 772.836,754.556 716.356,743.756 L 716.356,678.956z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 716.356 678.956 L 998.756,678.956 L 998.756,743.756 C 942.276,732.956 914.036,732.956 857.556,743.756 C 801.076,754.556 772.836,754.556 716.356,743.756 L 716.356,678.956"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="857.556" y="693.956">
+      <tspan x="857.556" y="693.956">data/perbook/$bookfldr$/CleanedIndex.csv</tspan>
+      <tspan x="857.556" y="709.956"></tspan>
+      <tspan x="857.556" y="725.956">(Cleaned) List of Terms of Interest</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1064.12 815.722 L 1385.92,815.722 L 1385.92,880.522 C 1321.56,869.722 1289.38,869.722 1225.02,880.522 C 1160.66,891.322 1128.48,891.322 1064.12,880.522 L 1064.12,815.722z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1064.12 815.722 L 1385.92,815.722 L 1385.92,880.522 C 1321.56,869.722 1289.38,869.722 1225.02,880.522 C 1160.66,891.322 1128.48,891.322 1064.12,880.522 L 1064.12,815.722"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1225.02" y="830.722">
+      <tspan x="1225.02" y="830.722">data/perbook/$bookfldr$/metadata/chapters.json</tspan>
+      <tspan x="1225.02" y="846.722"></tspan>
+      <tspan x="1225.02" y="862.722">File-Chapter-Mapping</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="655.099,1091.26 692.312,1109.86 655.099,1128.47 617.886,1109.86 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="655.099,1091.26 692.312,1109.86 655.099,1128.47 617.886,1109.86 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="655.099" y="1113.76">
+      <tspan x="655.099" y="1113.76"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="838.901" y1="1020.89" x2="691.998" y2="1092"/>
+    <polygon style="fill: #ffffff" points="680.817,1091.86 673.995,1100.72 685.174,1100.86 "/>
+    <polygon style="fill: #ffffff" points="689.818,1087.5 682.995,1096.36 694.175,1096.5 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="680.817,1091.86 673.995,1100.72 685.174,1100.86 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="689.818,1087.5 682.995,1096.36 694.175,1096.5 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1084.77 613.39 C 1114.81,604.075 1129.83,600.97 1159.87,600.97 C 1189.91,600.97 1204.93,604.075 1234.96,613.39 L 1234.96,663.068 C 1204.93,672.383 1189.91,675.488 1159.87,675.488 C 1129.83,675.488 1114.81,672.383 1084.77,663.068 L 1084.77,613.39z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 1084.77 613.39 C 1114.81,604.075 1129.83,600.97 1159.87,600.97 C 1189.91,600.97 1204.93,604.075 1234.96,613.39 L 1234.96,663.068 C 1204.93,672.383 1189.91,675.488 1159.87,675.488 C 1129.83,675.488 1114.81,672.383 1084.77,663.068 L 1084.77,613.39"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 1084.77 613.39 C 1114.81,622.704 1129.83,625.809 1159.87,625.809 C 1189.91,625.809 1204.93,622.704 1234.96,613.39"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1159.87" y="640.439">
+      <tspan x="1159.87" y="640.439">resource</tspan>
+      <tspan x="1159.87" y="656.439">data/perbook/</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="1208.54" y1="670.353" x2="1643.54" y2="957.483"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1640.78,961.656 1651.88,962.992 1646.29,953.31 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="1293.82" y1="873.676" x2="1589.12" y2="960.183"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1587.72,964.981 1598.72,962.994 1590.53,955.384 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1208.72 1332.61 L 1526.32,1332.61 L 1526.32,1416.61 C 1462.8,1402.61 1431.04,1402.61 1367.52,1416.61 C 1304,1430.61 1272.24,1430.61 1208.72,1416.61 L 1208.72,1332.61z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1208.72 1332.61 L 1526.32,1332.61 L 1526.32,1416.61 C 1462.8,1402.61 1431.04,1402.61 1367.52,1416.61 C 1304,1430.61 1272.24,1430.61 1208.72,1416.61 L 1208.72,1332.61"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1367.52" y="1347.61">
+      <tspan x="1367.52" y="1347.61">data/perbook/$bookfldr$/frequenciesMerged.csv</tspan>
+      <tspan x="1367.52" y="1363.61"></tspan>
+      <tspan x="1367.52" y="1379.61">Terms, variatons and number of occurence</tspan>
+      <tspan x="1367.52" y="1395.61"></tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1775.65 1282.49 L 2167.85,1282.49 L 2167.85,1347.29 C 2089.41,1336.49 2050.19,1336.49 1971.75,1347.29 C 1893.31,1358.09 1854.09,1358.09 1775.65,1347.29 L 1775.65,1282.49z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1775.65 1282.49 L 2167.85,1282.49 L 2167.85,1347.29 C 2089.41,1336.49 2050.19,1336.49 1971.75,1347.29 C 1893.31,1358.09 1854.09,1358.09 1775.65,1347.29 L 1775.65,1282.49"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1971.75" y="1297.49">
+      <tspan x="1971.75" y="1297.49">data/perbook/$bookfldr$/frequenciesDistributionMerged.csv</tspan>
+      <tspan x="1971.75" y="1313.49"></tspan>
+      <tspan x="1971.75" y="1329.49">Terms, variations, occurence per chapter</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1604.65" y1="1150.05" x2="1435.83" y2="1314.91"/>
+    <polygon style="fill: #ffffff" points="1424.47,1319.02 1420.09,1330.28 1431.46,1326.17 "/>
+    <polygon style="fill: #ffffff" points="1432.34,1311.33 1427.96,1322.59 1439.33,1318.48 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1423.75,1319.71 1420.09,1330.28 1430.74,1326.87 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1432.34,1311.33 1428.68,1321.89 1439.33,1318.48 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1635.42" y1="1147.11" x2="1874.86" y2="1270.4"/>
+    <polygon style="fill: #ffffff" points="1882.35,1279.88 1894.42,1280.47 1886.93,1270.99 "/>
+    <polygon style="fill: #ffffff" points="1872.57,1274.84 1884.64,1275.43 1877.15,1265.95 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1883.24,1280.34 1894.42,1280.47 1887.82,1271.45 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1872.57,1274.84 1883.75,1274.97 1877.15,1265.95 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1318.77 1458.27 L 1641.22,1458.27 L 1641.22,1539.87 C 1576.73,1526.27 1544.49,1526.27 1480,1539.87 C 1415.51,1553.47 1383.26,1553.47 1318.77,1539.87 L 1318.77,1458.27z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1318.77 1458.27 L 1641.22,1458.27 L 1641.22,1539.87 C 1576.73,1526.27 1544.49,1526.27 1480,1539.87 C 1415.51,1553.47 1383.26,1553.47 1318.77,1539.87 L 1318.77,1458.27"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1480" y="1480.27">
+      <tspan x="1480" y="1480.27">data/perbook/$bookfldr$/frequenciesMerged.json</tspan>
+      <tspan x="1480" y="1496.27"></tspan>
+      <tspan x="1480" y="1512.27">Total number of occurence</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1665.81 1417.86 L 2062.86,1417.86 L 2062.86,1501.86 C 1983.45,1487.86 1943.75,1487.86 1864.34,1501.86 C 1784.93,1515.86 1745.22,1515.86 1665.81,1501.86 L 1665.81,1417.86z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1665.81 1417.86 L 2062.86,1417.86 L 2062.86,1501.86 C 1983.45,1487.86 1943.75,1487.86 1864.34,1501.86 C 1784.93,1515.86 1745.22,1515.86 1665.81,1501.86 L 1665.81,1417.86"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1864.34" y="1432.86">
+      <tspan x="1864.34" y="1432.86">data/perbook/$bookfldr$/frequenciesDistributionMerged.json</tspan>
+      <tspan x="1864.34" y="1448.86"></tspan>
+      <tspan x="1864.34" y="1464.86">Occurence per FIle</tspan>
+      <tspan x="1864.34" y="1480.86"></tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1456.65 1556.62 L 1887.5,1556.62 L 1887.5,1621.42 C 1801.33,1610.62 1758.24,1610.62 1672.07,1621.42 C 1585.9,1632.22 1542.82,1632.22 1456.65,1621.42 L 1456.65,1556.62z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 1456.65 1556.62 L 1887.5,1556.62 L 1887.5,1621.42 C 1801.33,1610.62 1758.24,1610.62 1672.07,1621.42 C 1585.9,1632.22 1542.82,1632.22 1456.65,1621.42 L 1456.65,1556.62"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1672.07" y="1571.62">
+      <tspan x="1672.07" y="1571.62">data/perbook/$bookfldr$/frequenciesDistributionDeepMerged.json</tspan>
+      <tspan x="1672.07" y="1587.62"></tspan>
+      <tspan x="1672.07" y="1603.62"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1611.41" y1="1153.41" x2="1506.59" y2="1434.56"/>
+    <polygon style="fill: #ffffff" points="1498.06,1443.12 1498.9,1455.17 1507.43,1446.61 "/>
+    <polygon style="fill: #ffffff" points="1501.9,1432.81 1502.74,1444.86 1511.27,1436.3 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1497.71,1444.05 1498.9,1455.17 1507.08,1447.55 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1501.9,1432.81 1503.09,1443.93 1511.27,1436.3 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1627.4" y1="1151.27" x2="1812.25" y2="1397.48"/>
+    <polygon style="fill: #ffffff" points="1814.85,1409.28 1825.46,1415.07 1822.85,1403.27 "/>
+    <polygon style="fill: #ffffff" points="1808.25,1400.48 1818.85,1406.28 1816.25,1394.48 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1815.45,1410.08 1825.46,1415.07 1823.45,1404.07 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1808.25,1400.48 1818.25,1405.48 1816.25,1394.48 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1619.35" y1="1155.28" x2="1664.53" y2="1531.55"/>
+    <polygon style="fill: #ffffff" points="1660.87,1543.07 1667.15,1553.4 1670.8,1541.88 "/>
+    <polygon style="fill: #ffffff" points="1659.56,1532.15 1665.84,1542.47 1669.49,1530.96 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1660.99,1544.06 1667.15,1553.4 1670.92,1542.87 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1659.56,1532.15 1665.72,1541.48 1669.49,1530.96 "/>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="1617.25,1119.14 1654.46,1137.75 1617.25,1156.35 1580.03,1137.75 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1617.25,1119.14 1654.46,1137.75 1617.25,1156.35 1580.03,1137.75 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1617.25" y="1141.65">
+      <tspan x="1617.25" y="1141.65"></tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="1680.28" y1="1018.49" x2="1635.64" y2="1105.97"/>
+    <polygon style="fill: #ffffff" points="1626.64,1112.61 1626.55,1123.79 1635.55,1117.15 "/>
+    <polygon style="fill: #ffffff" points="1631.19,1103.7 1631.1,1114.88 1640.09,1108.25 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1626.64,1112.61 1626.55,1123.79 1635.55,1117.15 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1631.19,1103.7 1631.1,1114.88 1640.09,1108.25 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-665" y="2159.7" width="228.982" height="122.088"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x="-665" y="2159.7" width="228.982" height="122.088"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-550.509" y="2224.64">
+      <tspan x="-550.509" y="2224.64">analyze</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -59.7712 2187.1 L 90.1396,2187.1 C 67.653,2198.23 60.1574,2203.79 60.1574,2214.92 C 60.1574,2226.05 67.653,2231.62 90.1396,2242.75 L -59.7712,2242.75 C -82.2579,2231.62 -89.7534,2226.05 -89.7534,2214.92 C -89.7534,2203.79 -82.2579,2198.23 -59.7712,2187.1z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M -59.7712 2187.1 L 90.1396,2187.1 C 67.653,2198.23 60.1574,2203.79 60.1574,2214.92 C 60.1574,2226.05 67.653,2231.62 90.1396,2242.75 L -59.7712,2242.75 C -82.2579,2231.62 -89.7534,2226.05 -89.7534,2214.92 C -89.7534,2203.79 -82.2579,2198.23 -59.7712,2187.1"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="0.193109" y="2218.92">
+      <tspan x="0.193109" y="2218.92">frequencies.R</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="-436.011" y1="2219.63" x2="-89.6595" y2="2216.24"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="-99.6079,2221.34 -89.6573,2216.24 -99.7056,2211.34 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 130.702 1867.66 L 446.302,1867.66 L 446.302,1937.61 C 383.182,1925.95 351.622,1925.95 288.502,1937.61 C 225.382,1949.27 193.822,1949.27 130.702,1937.61 L 130.702,1867.66z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 130.702 1867.66 L 446.302,1867.66 L 446.302,1937.61 C 383.182,1925.95 351.622,1925.95 288.502,1937.61 C 225.382,1949.27 193.822,1949.27 130.702,1937.61 L 130.702,1867.66"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="288.502" y="1900.81">
+      <tspan x="288.502" y="1900.81">data/perbook/$bookfldr$/frequenciesMerged.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="261.85" y1="1942.03" x2="73.3671" y2="2179.41"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="69.4514,2176.3 67.1488,2187.24 77.2829,2182.52 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -341.96 1851.02 L 48.24,1851.02 L 48.24,1920.97 C -29.8,1909.31 -68.82,1909.31 -146.86,1920.97 C -224.9,1932.63 -263.92,1932.63 -341.96,1920.97 L -341.96,1851.02z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M -341.96 1851.02 L 48.24,1851.02 L 48.24,1920.97 C -29.8,1909.31 -68.82,1909.31 -146.86,1920.97 C -224.9,1932.63 -263.92,1932.63 -341.96,1920.97 L -341.96,1851.02"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-146.86" y="1884.17">
+      <tspan x="-146.86" y="1884.17">data/perbook/$bookfldr$/frequenciesDistributionMerged.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="-130.897" y1="1918.68" x2="23.5246" y2="2178.51"/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="19.2264,2181.06 28.6337,2187.11 27.8228,2175.96 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="2.75048" y1="2242.75" x2="-123.922" y2="2325.83"/>
+    <polygon style="fill: #ffffff" points="-135.028,2327.14 -140.647,2336.8 -129.543,2335.5 "/>
+    <polygon style="fill: #ffffff" points="-126.666,2321.65 -132.285,2331.32 -121.181,2330.01 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="-135.028,2327.14 -140.647,2336.8 -129.543,2335.5 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="-126.666,2321.65 -132.285,2331.32 -121.181,2330.01 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 336.878 2772.64 L 652.478,2772.64 L 652.478,2839.38 C 589.358,2828.26 557.798,2828.26 494.678,2839.38 C 431.558,2850.51 399.998,2850.51 336.878,2839.38 L 336.878,2772.64z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 336.878 2772.64 L 652.478,2772.64 L 652.478,2839.38 C 589.358,2828.26 557.798,2828.26 494.678,2839.38 C 431.558,2850.51 399.998,2850.51 336.878,2839.38 L 336.878,2772.64"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="494.678" y="2804.45">
+      <tspan x="494.678" y="2804.45">data/perbook/$bookfldr$/scatered.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="61.3392" y1="2242.69" x2="289.1" y2="2633.74"/>
+    <polygon style="fill: #ffffff" points="289.814,2644.9 299.167,2651.02 298.455,2639.86 "/>
+    <polygon style="fill: #ffffff" points="284.781,2636.26 294.134,2642.38 293.422,2631.22 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="289.814,2644.9 299.167,2651.02 298.455,2639.86 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="284.781,2636.26 294.134,2642.38 293.422,2631.22 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="66.1343" y1="2242.76" x2="453.305" y2="2756.66"/>
+    <polygon style="fill: #ffffff" points="455.33,2767.66 465.341,2772.63 463.317,2761.64 "/>
+    <polygon style="fill: #ffffff" points="449.313,2759.67 459.323,2764.65 457.3,2753.65 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="455.33,2767.66 465.341,2772.63 463.317,2761.64 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="449.313,2759.67 459.323,2764.65 457.3,2753.65 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="27.4923" y1="2242.75" x2="-157.798" y2="2534.45"/>
+    <polygon style="fill: #ffffff" points="-167.381,2540.21 -168.522,2551.33 -158.94,2545.57 "/>
+    <polygon style="fill: #ffffff" points="-162.019,2531.77 -163.161,2542.89 -153.578,2537.13 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="-167.381,2540.21 -168.522,2551.33 -158.94,2545.57 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="-162.019,2531.77 -163.161,2542.89 -153.578,2537.13 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 165.119 2651 L 480.719,2651 L 480.719,2720.94 C 417.599,2709.29 386.039,2709.29 322.919,2720.94 C 259.799,2732.6 228.239,2732.6 165.119,2720.94 L 165.119,2651z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 165.119 2651 L 480.719,2651 L 480.719,2720.94 C 417.599,2709.29 386.039,2709.29 322.919,2720.94 C 259.799,2732.6 228.239,2732.6 165.119,2720.94 L 165.119,2651"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="322.919" y="2684.14">
+      <tspan x="322.919" y="2684.14">data/perbook/$bookfldr$/topScattered.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="22.5254" y1="2242.73" x2="-129.55" y2="2429.52"/>
+    <polygon style="fill: #ffffff" points="-139.742,2434.12 -142.178,2445.03 -131.987,2440.43 "/>
+    <polygon style="fill: #ffffff" points="-133.428,2426.36 -135.865,2437.27 -125.674,2432.68 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="-139.742,2434.12 -142.178,2445.03 -131.987,2440.43 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="-133.428,2426.36 -135.865,2437.27 -125.674,2432.68 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -365.646 2551.34 L -23.246,2551.34 L -23.246,2621.28 C -91.726,2609.63 -125.966,2609.63 -194.446,2621.28 C -262.926,2632.94 -297.166,2632.94 -365.646,2621.28 L -365.646,2551.34z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M -365.646 2551.34 L -23.246,2551.34 L -23.246,2621.28 C -91.726,2609.63 -125.966,2609.63 -194.446,2621.28 C -262.926,2632.94 -297.166,2632.94 -365.646,2621.28 L -365.646,2551.34"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-194.446" y="2584.48">
+      <tspan x="-194.446" y="2584.48">data/perbook/$bookfldr$/chapterProfile.numbers.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -360.65 2336.8 L -45.05,2336.8 L -45.05,2406.74 C -108.17,2395.09 -139.73,2395.09 -202.85,2406.74 C -265.97,2418.4 -297.53,2418.4 -360.65,2406.74 L -360.65,2336.8z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M -360.65 2336.8 L -45.05,2336.8 L -45.05,2406.74 C -108.17,2395.09 -139.73,2395.09 -202.85,2406.74 C -265.97,2418.4 -297.53,2418.4 -360.65,2406.74 L -360.65,2336.8"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-202.85" y="2369.94">
+      <tspan x="-202.85" y="2369.94">data/perbook/$bookfldr$/topFrequency.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 544.9 2196.72 L 759.578,2196.72 C 727.377,2209.42 716.643,2215.77 716.643,2228.48 C 716.643,2241.18 727.377,2247.53 759.578,2260.23 L 544.9,2260.23 C 512.698,2247.53 501.964,2241.18 501.964,2228.48 C 501.964,2215.77 512.698,2209.42 544.9,2196.72z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 544.9 2196.72 L 759.578,2196.72 C 727.377,2209.42 716.643,2215.77 716.643,2228.48 C 716.643,2241.18 727.377,2247.53 759.578,2260.23 L 544.9,2260.23 C 512.698,2247.53 501.964,2241.18 501.964,2228.48 C 501.964,2215.77 512.698,2209.42 544.9,2196.72"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="630.771" y="2232.48">
+      <tspan x="630.771" y="2232.48">buildPopularTermsTable.R</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="60.1574" y1="2214.92" x2="502.444" y2="2224.36"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="492.342,2229.15 502.447,2224.36 492.556,2219.15 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="319.132" y1="1932.57" x2="646.98" y2="2190.55"/>
+    <polygon style="fill: #ffffff" points="643.888,2194.48 654.838,2196.74 650.072,2186.62 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="643.888,2194.48 654.838,2196.74 650.072,2186.62 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 718.855 1954.28 L 1054.72,1954.28 L 1054.72,2025.03 C 987.55,2013.24 953.963,2013.24 886.789,2025.03 C 819.616,2036.82 786.029,2036.82 718.855,2025.03 L 718.855,1954.28z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 718.855 1954.28 L 1054.72,1954.28 L 1054.72,2025.03 C 987.55,2013.24 953.963,2013.24 886.789,2025.03 C 819.616,2036.82 786.029,2036.82 718.855,2025.03 L 718.855,1954.28"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="886.789" y="1987.76">
+      <tspan x="886.789" y="1987.76">data/allbooks/unionTopFrequencies.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="721.29" y1="2196.73" x2="846.293" y2="2044.78"/>
+    <polygon style="fill: #ffffff" points="856.509,2040.23 859,2029.33 848.786,2033.88 "/>
+    <polygon style="fill: #ffffff" points="850.156,2047.95 852.647,2037.05 842.433,2041.6 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="856.509,2040.23 859,2029.33 848.786,2033.88 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="850.156,2047.95 852.647,2037.05 842.433,2041.6 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="728.213" y1="2260.17" x2="778.394" y2="2308.32"/>
+    <polygon style="fill: #ffffff" points="782.15,2318.85 792.828,2322.16 789.073,2311.63 "/>
+    <polygon style="fill: #ffffff" points="774.934,2311.92 785.612,2315.24 781.857,2304.71 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="782.15,2318.85 792.828,2322.16 789.073,2311.63 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="774.934,2311.92 785.612,2315.24 781.857,2304.71 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M -346.574 2445 L -4.174,2445 L -4.174,2514.94 C -72.654,2503.29 -106.894,2503.29 -175.374,2514.94 C -243.854,2526.6 -278.094,2526.6 -346.574,2514.94 L -346.574,2445z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M -346.574 2445 L -4.174,2445 L -4.174,2514.94 C -72.654,2503.29 -106.894,2503.29 -175.374,2514.94 C -243.854,2526.6 -278.094,2526.6 -346.574,2514.94 L -346.574,2445"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="-175.374" y="2478.14">
+      <tspan x="-175.374" y="2478.14">data/perbook/$bookfldr$/chapterProfile.visual.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1016.24 2198.48 L 1360.17,2198.48 C 1308.58,2211.29 1291.39,2217.69 1291.39,2230.5 C 1291.39,2243.31 1308.58,2249.71 1360.17,2262.52 L 1016.24,2262.52 C 964.649,2249.71 947.452,2243.31 947.452,2230.5 C 947.452,2217.69 964.649,2211.29 1016.24,2198.48z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 1016.24 2198.48 L 1360.17,2198.48 C 1308.58,2211.29 1291.39,2217.69 1291.39,2230.5 C 1291.39,2243.31 1308.58,2249.71 1360.17,2262.52 L 1016.24,2262.52 C 964.649,2249.71 947.452,2243.31 947.452,2230.5 C 947.452,2217.69 964.649,2211.29 1016.24,2198.48"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1153.81" y="2234.5">
+      <tspan x="1153.81" y="2234.5">buildPopularScatteredTermsTable.R</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="716.642" y1="2228.48" x2="947.615" y2="2229.34"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="937.599,2234.31 947.618,2229.34 937.636,2224.31 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="545.719" y1="2772.67" x2="1207.05" y2="2268.57"/>
+    <polygon style="fill: #ffffff" points="1210.08,2272.55 1215,2262.51 1204.01,2264.6 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1210.08,2272.55 1215,2262.51 1204.01,2264.6 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="405.543" y1="2651" x2="1183.2" y2="2266.94"/>
+    <polygon style="fill: #ffffff" points="1185.42,2271.43 1192.17,2262.52 1180.99,2262.46 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1185.42,2271.43 1192.17,2262.52 1180.99,2262.46 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 667.91 2322.16 L 1003.78,2322.16 L 1003.78,2392.91 C 936.605,2381.12 903.018,2381.12 835.844,2392.91 C 768.671,2404.7 735.084,2404.7 667.91,2392.91 L 667.91,2322.16z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 667.91 2322.16 L 1003.78,2322.16 L 1003.78,2392.91 C 936.605,2381.12 903.018,2381.12 835.844,2392.91 C 768.671,2404.7 735.084,2404.7 667.91,2392.91 L 667.91,2322.16"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="835.844" y="2355.64">
+      <tspan x="835.844" y="2355.64">data/allbooks/unionTopFrequenciesVisual.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="924.219" y1="2019.3" x2="1198.09" y2="2193.12"/>
+    <polygon style="fill: #ffffff" points="1195.41,2197.34 1206.53,2198.48 1200.77,2188.9 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1195.41,2197.34 1206.53,2198.48 1200.77,2188.9 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 951.258 2639.98 L 1235.73,2639.98 L 1235.73,2727.25 C 1178.84,2712.7 1150.39,2712.7 1093.49,2727.25 C 1036.6,2741.79 1008.15,2741.79 951.258,2727.25 L 951.258,2639.98z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 951.258 2639.98 L 1235.73,2639.98 L 1235.73,2727.25 C 1178.84,2712.7 1150.39,2712.7 1093.49,2727.25 C 1036.6,2741.79 1008.15,2741.79 951.258,2727.25 L 951.258,2639.98"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1093.49" y="2680.34">
+      <tspan x="1093.49" y="2680.34">allbooks/unionTopScatterness.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="1245.64" y1="2262.48" x2="1118.25" y2="2621.17"/>
+    <polygon style="fill: #ffffff" points="1110.19,2628.93 1111.56,2640.02 1119.62,2632.27 "/>
+    <polygon style="fill: #ffffff" points="1113.54,2619.5 1114.9,2630.6 1122.96,2622.85 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1110.19,2628.93 1111.56,2640.02 1119.62,2632.27 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1113.54,2619.5 1114.9,2630.6 1122.96,2622.85 "/>
+  </g>
+  <g>
+    <path style="fill: #ffffff" d="M 1195.91 2500.6 L 1480.38,2500.6 L 1480.38,2587.87 C 1423.48,2573.32 1395.04,2573.32 1338.14,2587.87 C 1281.25,2602.41 1252.8,2602.41 1195.91,2587.87 L 1195.91,2500.6z"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" d="M 1195.91 2500.6 L 1480.38,2500.6 L 1480.38,2587.87 C 1423.48,2573.32 1395.04,2573.32 1338.14,2587.87 C 1281.25,2602.41 1252.8,2602.41 1195.91,2587.87 L 1195.91,2500.6"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1338.14" y="2540.96">
+      <tspan x="1338.14" y="2540.96">allbooks/unionTopScatternessVisual.csv</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" x1="1265.09" y1="2262.53" x2="1320.37" y2="2481.2"/>
+    <polygon style="fill: #ffffff" points="1317.97,2492.12 1325.27,2500.59 1327.67,2489.67 "/>
+    <polygon style="fill: #ffffff" points="1315.52,2482.43 1322.82,2490.9 1325.22,2479.98 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1317.97,2492.12 1325.27,2500.59 1327.67,2489.67 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 0.02; stroke: #000000" points="1315.52,2482.43 1322.82,2490.9 1325.22,2479.98 "/>
   </g>
 </svg>
