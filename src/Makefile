@@ -28,10 +28,16 @@ from-cache:
 # Copies post-processed data, required for analytics, to cache
 to-cache:
 	for b in ${LINKED_BOOKS}; do \
-		for f in ${CACHE_FILES}; do \
-			cp ../data/perbook/"$$b"/"$$f"  ../data/perbook/"$$b"/cache ;\
+		for f in $(filter-out %.json, $(CACHE_FILES)); do \
+			cp ../data/perbook/"$$b"/"$$f"  ../data/perbook/"$$b"/cache/"$$f" ;\
 		done \
 	done
+	for b in ${LINKED_BOOKS}; do \
+		for f in $(filter %.json, $(CACHE_FILES)); do \
+			$(PYTHON) misc/reduceJson.py ../data/perbook/"$$b"/"$$f"  ../data/perbook/"$$b"/cache/"$$f" ;\
+		done \
+	done
+
 
 #runs integration-scripts
 integrate:
