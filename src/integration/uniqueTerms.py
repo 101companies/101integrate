@@ -53,7 +53,7 @@ def getUniqueConcepts(input, sourceToSearch):
 def distinct(seq):
 	noDupes = []
 	[noDupes.append(i) for i in seq if not noDupes.count(i)]
-	return noDupes
+	return [d for d in noDupes if d]#removes empty values
 
 
 def main(books):
