@@ -1,7 +1,7 @@
 include Makefile.vars
 include ../Makefile.vars
 
-CACHE_FILES = frequenciesMerged.csv frequenciesDistributionMerged.csv frequencies.json
+CACHE_FILES = frequenciesMerged.csv frequenciesDistributionMerged.csv frequencies.json frequenciesDistributionDeepMerged.json chapterProfile.numbers.csv
 
 # Please, read the README.md.
 nope:
