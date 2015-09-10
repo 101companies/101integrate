@@ -1,7 +1,7 @@
 include Makefile.vars
 
 #Programs
-PYTHON_PACKAGE_INSTALLER = pip install --upgrade
+PYTHON_PACKAGE_INSTALLER = pip install
 
 # Key for Google Docs
 INDEXKEY = 0AtMdJdyllDEfdC1YMHE5NmNzNEc3bGx3aV9NbDc2V0E
@@ -15,15 +15,14 @@ run:
 	touch src/Makefile.vars
 	cp src/Makefile.vars src/last.vars
 	export BOOKS
-ifeq ($(LOGGING),ON)
 	export LOGGING
+	$(MAKE) setMode
+ifeq ($(LOGGING),ON)
 	mkdir -p logs
-	cp src/config/pythonLoggingDebug.conf src/config/pythonLogging.conf
 	$(MAKE) download-books  2>&1 | tee logs/downloadBooks.log
 	$(MAKE) mine           
 	$(MAKE) from-cache     2>&1	| tee logs/fromCache.log
 else
-	cp src/config/pythonLoggingRun.conf src/config/pythonLogging.conf
 	$(MAKE) download-books
 	$(MAKE) mine
 	$(MAKE) from-cache
@@ -32,8 +31,13 @@ endif
 	$(MAKE) backlink
 	$(MAKE) integrate
 
-
-
+#initalize Python Logging config-file
+setMode:
+ifeq ($(LOGGING),ON)
+	cp src/config/pythonLoggingDebug.conf src/config/pythonLogging.conf
+else
+	cp src/config/pythonLoggingRun.conf src/config/pythonLogging.conf
+endif
 
 # Download books that are available online
 download-books:
@@ -104,12 +108,6 @@ to-cache:
 backlink:
 	export LOGGING
 	cd src; $(MAKE) backlink
-
-coverageTables:
-	cd src; $(MAKE) coverageTables
-
-nonProfileFrequencies:
-	cd src; $(MAKE) nonProfileFrequencies
 	
 integrate:
 	export LOGGING

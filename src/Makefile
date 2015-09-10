@@ -43,12 +43,6 @@ backlink:
 	export LOGGING
 	cd mining; $(MAKE) backlink
 
-coverageTables:
-	cd integrate; $(MAKE) coverageTables
-
-nonProfileFrequencies:
-	cd integrate; $(MAKE) nonProfileFrequencies
-	
 # Clean it all
 clean:
 	cd ../; rm -rf logs/
