@@ -111,7 +111,7 @@ backlink:
 	
 integrate:
 	export LOGGING
-	cd src; $(MAKE) integrate
+	cd src; $(MAKE) --always-make integrate
 
 # Clean it all
 clean:
