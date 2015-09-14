@@ -2,7 +2,7 @@
 
 A Resource can be tagged by its content, creation process (origin), expected Skils of the Reader or type.
 
-##Exampels
+##Examples
 * "XML-Programming in Java" -> XML, Java
 * "A Beginner's Guide to C Programming" -> Beginner, C
 * "Python Programming" from en.wikibooks.org -> Python, community project

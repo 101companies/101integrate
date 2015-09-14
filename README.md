@@ -32,7 +32,6 @@ The available Tags can be looked up in docs/Tagset.md .
 
     make link-books
 
-
 # Mining and analyzing
 
 Run these commands:
@@ -42,60 +41,18 @@ Run these commands:
 
 These commands will create various data files in data/allbooks and data/perbook/*.
 
-# Mining phase
+# Backlinking
 
-See folder "mining" for the scripts.
+Run this commands:
+  
+    make backlink
+    
+This will create the mapping.json and baklinks.json in data/allbooks which are used by the external environment
 
-## Script downloader.py
+# Integrate
 
-Description: Downloads indecies of terms for the books used
-
-Paramters in order of usage:
-* Indexkey for GoogleDocs
-* Path to data folder
-* List of folders (relative to data folder) to put index files into
-
-## Script merge.py
-
-Description: Merges and cleans a list of given index files. Creates clean index and optionally a file of crosscut betweens given indecies.
-
-Paramters in order of usage:
-* Base path of datafolder
-* Base path of inputfolder
-* Path of resources (relative to data path + input path)
-* Path of index files relative to data path + input path + resource name)
-* Path of merged index file (relative to data path)
-* Path of metaindex file (relative to data path)
-* Number n of common English words to ignore
-* "nocrosscut" | Path to crosscut file (relative to data path)
-
-## Script frequencies.py
-
-Description: Computes frequencies of words for a given set of terms in a given set of resourcesmerged; \
-Paramters in order of usage:
-* Name of the resource
-* Base path to datafolder
-* Base path of resource (relative to data path)
-* Base path of index folder (relative to data path)
-* Name of index file (relative to index path)
-* Name of chapters file (relative to resource path)
-* Name of content folder (relative to resource path)
-* Name of metaindex file (relative to index path)
-* "merged" | "nonmerged"
-
-## Script backlinksMapper.py
-
-Description: Computes files for backlinks from terms to resouces
-Paramters in order of usage:
-* Name of the resource
-* Base path to datafolder for resources
-* Name of frequency file (relative to resource path)
-* Name of content folder (relative to resource path)
-
-All other scripts are only used indirectly.
-
-## Analytics phase
-
-See folder "analytics" for the scripts.
-
-TODO
+Run this commands:
+  
+    make integrate
+    
+This will create various data in data/summary, data/languages und data/themes
