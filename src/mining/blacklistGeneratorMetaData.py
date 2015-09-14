@@ -5,6 +5,8 @@ import logging #needed for nunning the whole project in debug/info-mode
 import logging.config
 import copy
 
+##
+# @param	args	the resource from which to retrieve the blacklisted chapters
 def generateBlacklist(args):
 	for a in args:
 		blacklist =[]

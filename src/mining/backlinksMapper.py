@@ -11,6 +11,11 @@ from nltk.stem.wordnet import WordNetLemmatizer
 import logging
 import logging.config
 
+## retrieves term location in book for backlinking
+# @param	resourcename		the resource's folder name
+# @param	root			the book data root folder (perbook-folder)
+# @param	distributionfile	a json-file containing the frequencies of terms per book section 
+# @param	limit			which n chapters with higest term frequency to use
 def main(resourcename, root, distributionfile, limit):
   resourcebase = root + resourcename + '/'
   resInfos = json.loads(open("../config/config.json", 'rb').read())
@@ -30,7 +35,7 @@ def main(resourcename, root, distributionfile, limit):
 	filen = chapter['file']
 	filesn[filen] = chapter['title']
   for i, term in enumerate(distribution):
-	shallow = map(lambda x : sum(x), distribution[term])
+	shallow = map(lambda x : sum(x), distribution[term])#Term occurence in whole chapters
 	maxChapIndecies = [i[0] for i in sorted(enumerate(shallow), reverse=True, key=lambda x:x[1])][:int(limit)]
 	primary = []
 	secondary = []
