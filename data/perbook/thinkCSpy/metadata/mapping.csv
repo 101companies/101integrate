@@ -28,7 +28,7 @@ CHAP,random number,Random number,automatically assigned
 CHAP,tuple,Tuple,automatically assigned
 CHAP,dictionary,Dictionary,
 CHAP,key,Dictionary,
-CHAP,key-value pair,Assosiative Array,base of this datastructure
+CHAP,key-value pair,Associative Array,base of this datastructure
 CHAP,directory,Directory,automatically assigned
 CHAP,exception,Exception,automatically assigned
 CHAP,file,File,automatically assigned
